@@ -1,0 +1,54 @@
+---
+type Node = {
+  eyebrow?: string;
+  title: string;
+  detail: string;
+  items?: string[];
+};
+
+type Props = {
+  eyebrow?: string;
+  title: string;
+  summary?: string;
+  nodes: Node[];
+  caption?: string;
+  variant?: "flow" | "stack";
+};
+
+const {
+  eyebrow = "System diagram",
+  title,
+  summary,
+  nodes,
+  caption,
+  variant = "flow",
+} = Astro.props;
+---
+
+<figure class={`work-mdx-architecture work-mdx-architecture--${variant}`}>
+  <header>
+    <span>{eyebrow}</span>
+    <h3>{title}</h3>
+    {summary && <p>{summary}</p>}
+  </header>
+  <ol class="work-mdx-architecture__flow" aria-label={title}>
+    {
+      nodes.map((node, index) => (
+        <li>
+          <span class="work-mdx-architecture__step">{String(index + 1).padStart(2, "0")}</span>
+          <div>
+            {node.eyebrow && <span class="work-mdx-architecture__eyebrow">{node.eyebrow}</span>}
+            <strong>{node.title}</strong>
+            <p>{node.detail}</p>
+            {node.items && node.items.length > 0 && (
+              <ul>
+                {node.items.map((item) => <li>{item}</li>)}
+              </ul>
+            )}
+          </div>
+        </li>
+      ))
+    }
+  </ol>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

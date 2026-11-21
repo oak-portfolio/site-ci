@@ -1,0 +1,10 @@
+{
+ "answer-openui-project-one-claim": {
+  "iconOnly": true,
+  "reason": "178: a one-claim work answer is its case study's Project card, which wears that page's own cover, so no pose is added."
+ },
+ "answer-openui-project-multi-cite": {
+  "iconOnly": true,
+  "reason": "211: a claim about several case studies prints as the plain list with no project card, so there is no page cover to wear and no pose is added."
+ }
+}

@@ -1,0 +1,26 @@
+{
+ "kind-decisions": {
+  "iconOnly": true,
+  "reason": "60: request-kind fixture, decisions: the rows and labels carry it, with no pose of its own."
+ },
+ "kind-decisions-off": {
+  "iconOnly": true,
+  "reason": "60: request-kind fixture, decisions-off: the rows and labels carry it, with no pose of its own."
+ },
+ "kind-similar": {
+  "iconOnly": true,
+  "reason": "60: request-kind fixture, similar: the rows and labels carry it, with no pose of its own."
+ },
+ "kind-similar-off": {
+  "iconOnly": true,
+  "reason": "60: request-kind fixture, similar-off: the rows and labels carry it, with no pose of its own."
+ },
+ "kind-unresolved": {
+  "iconOnly": true,
+  "reason": "60: request-kind fixture, unresolved: the rows and labels carry it, with no pose of its own."
+ },
+ "kind-unresolved-off": {
+  "iconOnly": true,
+  "reason": "60: request-kind fixture, unresolved-off: the rows and labels carry it, with no pose of its own."
+ }
+}

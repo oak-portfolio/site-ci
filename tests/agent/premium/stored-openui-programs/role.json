@@ -1,0 +1,38 @@
+[
+ {
+  "id": "answer-openui-role-entry",
+  "question": "Where did Steve work on EcoSmartLoop?",
+  "program": "root = Answer([r])\nr = Role([\"claim-1\", \"claim-2\"], \"entry\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Completed an M.S. in Computer Science while working part-time on student support and contributing to EcoSmartLoop, a team-built AI waste-sorting capstone.",
+     "citations": [
+      {
+       "documentId": "experience:sanfranciscobayuniversity",
+       "passageId": "experience:sanfranciscobayuniversity:passage-001",
+       "sectionId": "experience:sanfranciscobayuniversity",
+       "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "Completed an M.S. in Computer Science with a 3.89 / 4.0 GPA and a 100% Presidential Scholarship.",
+     "citations": [
+      {
+       "documentId": "experience:sanfranciscobayuniversity",
+       "passageId": "experience:sanfranciscobayuniversity:passage-002",
+       "sectionId": "experience:sanfranciscobayuniversity",
+       "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

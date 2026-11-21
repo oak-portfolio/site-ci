@@ -1,0 +1,66 @@
+{
+ "selection-off": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "selection-explain-on": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "selection-explain-openui-on": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "brief-ready-off": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "brief-summary-on": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "brief-sent-on": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "brief-invalid-off": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "brief-invalid-on": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "earlier-edit-off": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "earlier-edit-on": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "earlier-edit-note-on": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "selection-explain-on-reduced": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "brief-sent-on-reduced": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "earlier-edit-note-on-reduced": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "brief-summary-two-passages": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ },
+ "earlier-edit-quoted-on": {
+  "iconOnly": true,
+  "reason": "PR 1e: text, chips and buttons in the chat or brief panel; no new art."
+ }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "Source",
+  "claims": "one",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": "source",
+  "view": null,
+  "planned": false,
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "prefix": "[source card, opens the cited page] "
+  },
+  "taughtPresets": []
+}

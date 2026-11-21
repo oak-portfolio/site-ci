@@ -1,0 +1,25 @@
+{
+  "name": "EvidenceChart",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": "views/evidence-chart.ts",
+  "plan": {
+    "in": {
+      "results-metrics": 3
+    },
+    "count": "documents"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

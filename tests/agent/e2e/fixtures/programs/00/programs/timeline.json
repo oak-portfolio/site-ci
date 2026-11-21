@@ -1,0 +1,84 @@
+{
+ "id": "replay-sample-timeline",
+ "component": "Timeline",
+ "question": "How do EcoSmartLoop and Agentic Brain fit in Steve's timeline?",
+ "answer": {
+  "schema": "oak.answer.v1",
+  "speaker": "oak-ai-host",
+  "characterVersion": "c",
+  "hardPolicyVersion": "h",
+  "operations": [
+   "search",
+   "read"
+  ],
+  "kind": "sourced",
+  "knowledgeRevision": "k",
+  "acknowledgment": null,
+  "claims": [
+   {
+    "id": "claim-1",
+    "text": "EcoSmartLoop was a team capstone built from September to December 2025, during Steve's SFBU graduate period. That capstone was a project, not an employer role. The timeline separately mentions part-time student support.",
+    "citations": [
+     {
+      "documentId": "experience:sanfranciscobayuniversity",
+      "passageId": "experience:sanfranciscobayuniversity:passage-001",
+      "sectionId": "experience:sanfranciscobayuniversity",
+      "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+     },
+     {
+      "documentId": "experience:sanfranciscobayuniversity",
+      "passageId": "experience:sanfranciscobayuniversity:passage-006",
+      "sectionId": "experience:sanfranciscobayuniversity",
+      "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+     }
+    ]
+   },
+   {
+    "id": "claim-2",
+    "text": "The older article was published on January 30, 2026. The later Agentic Brain page describes a newer memory-systems workstream after that January experiment and lists May 2026 as its project period. Publication dates and project periods do not establish current employment or availability.",
+    "citations": [
+     {
+      "documentId": "legacy:agentic-brain",
+      "passageId": "legacy:agentic-brain:section-001:passage-001",
+      "sectionId": "legacy:agentic-brain:section-001",
+      "url": "https://independent-performance-642823.framer.app/codex/ai-memory-hallucination-solution"
+     },
+     {
+      "documentId": "work:agentic-brain",
+      "passageId": "work:agentic-brain:section-001:passage-001",
+      "sectionId": "work:agentic-brain:section-001",
+      "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+     }
+    ]
+   },
+   {
+    "id": "claim-3",
+    "text": "He put that training to work in the EcoSmartLoop case study and an older memory experiment.",
+    "citations": [
+     {
+      "documentId": "work:ecosmartloop",
+      "passageId": "work:ecosmartloop:section-001:passage-001",
+      "sectionId": "work:ecosmartloop:section-001",
+      "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+     }
+    ]
+   }
+  ]
+ },
+ "stream": [
+  {
+   "atMs": 0,
+   "program": "root = Answer([h, t, p, src, next])\nh = Heading(\"In order\")"
+  },
+  {
+   "atMs": 120,
+   "program": "root = Answer([h, t, p, src, next])\nh = Heading(\"In order\")\nt = Timeline([a, b])\na = TimelineItem(\"September to December 2025\", \"claim-1\")\nb = TimelineItem(\"January 30, 2026\", \"claim-2\")"
+  },
+  {
+   "atMs": 260,
+   "program": "root = Answer([h, t, p, src, next])\nh = Heading(\"In order\")\nt = Timeline([a, b])\na = TimelineItem(\"September to December 2025\", \"claim-1\")\nb = TimelineItem(\"January 30, 2026\", \"claim-2\")\np = Prose(\"claim-3\")\nsrc = Sources()"
+  }
+ ],
+ "program": "root = Answer([h, t, p, src, next])\nh = Heading(\"In order\")\nt = Timeline([a, b])\na = TimelineItem(\"September to December 2025\", \"claim-1\")\nb = TimelineItem(\"January 30, 2026\", \"claim-2\")\np = Prose(\"claim-3\")\nsrc = Sources()\nnext = Pills([\"What did EcoSmartLoop ship?\", \"What is Agentic Brain about?\"])",
+ "status": "done"
+}

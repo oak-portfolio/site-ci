@@ -1,0 +1,10 @@
+---
+import { getMachinePageByPath, renderMachinePageMarkdown } from "@/data/machineContent.server";
+
+export const partial = true;
+
+const page = await getMachinePageByPath("/work");
+const markdown = page ? renderMachinePageMarkdown(page) : "Machine page not found.\n";
+Astro.response.headers.set("Content-Type", "text/markdown; charset=utf-8");
+---
+{markdown}

@@ -1,0 +1,197 @@
+/* Ticket 33: Table. The claims as the lead list, then one raised frame holding a native table. Rows are even and split by inset
+ * hairlines; the even columns carry a soft tint that fades in and out (Oak, thread row 27: no abrupt, sharp cut between columns).
+ * Below 520px the table never squeezes or scrolls: each row becomes a stacked group whose cells sit in two columns, label over value. */
+.oak-table {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+  --oak-table-tint: color-mix(in oklab, var(--text) 4%, transparent);
+}
+
+/* The frame holds the caption and the grid, one nest step in on every side, so every line clears the 48px curve. */
+.oak-table__frame {
+  padding: var(--oak-pad-nest) var(--oak-pad-nest) calc(var(--oak-pad-nest) - var(--space-xs));
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+}
+
+.oak-table__grid {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  font-size: var(--text-ui-sm);
+  font-variant-numeric: tabular-nums;
+  line-height: var(--leading-ui);
+}
+
+.oak-table__caption {
+  caption-side: top;
+  padding: 0 var(--space-xs) var(--space-xs);
+  color: var(--muted);
+  text-align: start;
+}
+
+.oak-table__grid th,
+.oak-table__grid td {
+  padding: var(--space-sm);
+  text-align: start;
+  vertical-align: top;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: manual;
+}
+
+.oak-table__grid thead th {
+  color: var(--text);
+  font-weight: 500;
+}
+
+.oak-table__grid tr > :first-child { min-width: 9rem; }
+
+/* The frame's bottom pad stays on the 12px floor, so the last row gives back that step and the bottom inset matches the top. */
+.oak-table__grid tbody tr:last-child > * { padding-block-end: var(--space-xs); }
+
+.oak-table__grid tbody th {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.oak-table__grid td {
+  color: var(--text);
+}
+
+.oak-table__grid tbody tr > * {
+  box-shadow: inset 0 1px 0 var(--line-soft);
+}
+
+.oak-table__grid tr > :nth-child(even) {
+  background: linear-gradient(90deg, transparent, var(--oak-table-tint) 24%, var(--oak-table-tint) 76%, transparent);
+}
+
+/* The corner label is muted, the column names in body tone. */
+.oak-table__grid thead th:first-child {
+  color: var(--muted);
+}
+
+.oak-table__grid td[data-empty] {
+  color: var(--quiet);
+}
+
+@container oak-openui (min-width: 520px) {
+  .oak-table__grid [data-fit] {
+    white-space: nowrap;
+  }
+}
+
+.oak-table__ghost-lead,
+.oak-table__ghost-lead > span,
+.oak-table__ghost-cell {
+  display: grid;
+  gap: var(--space-micro);
+}
+
+.oak-table__ghost-lead {
+  gap: var(--space-md);
+}
+
+.oak-table__ghost-frame {
+  display: grid;
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+  box-shadow: inset 0 0 0 1px var(--line-soft);
+}
+
+.oak-table__ghost-row {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  gap: var(--space-sm);
+  padding: var(--space-md) var(--oak-pad-frame);
+}
+
+.oak-table__ghost-row:not([data-head]) {
+  min-height: 11rem;
+  box-shadow: inset 0 1px 0 var(--line-soft);
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-table__grid,
+  .oak-table__grid tbody {
+    display: grid;
+  }
+
+  .oak-table__caption {
+    display: block;
+  }
+
+  .oak-table__grid thead {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+
+  /* One frame, each record a block split by a hairline (no card inside the frame). */
+  .oak-table__grid tbody tr {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    box-shadow: inset 0 1px 0 var(--line-soft);
+  }
+
+  .oak-table__grid tbody tr > * {
+    display: grid;
+    align-content: start;
+    gap: var(--space-micro);
+    background: none;
+    box-shadow: none;
+  }
+
+  .oak-table__grid tbody th,
+  .oak-table__grid td[data-wide],
+  /* A narrow cell with no narrow partner beside it spans too, never a half-width strip beside empty space. */
+  .oak-table__grid td:not([data-wide]):has(+ td[data-wide]),
+  .oak-table__grid th + td:not([data-wide]):last-child,
+  .oak-table__grid td[data-wide] + td:not([data-wide]):last-child {
+    grid-column: 1 / -1;
+  }
+
+  .oak-table__grid td::before {
+    content: attr(data-label);
+    color: var(--muted);
+  }
+
+  .oak-table__ghost-row[data-head] {
+    display: none;
+  }
+
+  .oak-table__ghost-row:not([data-head]) {
+    grid-auto-flow: row;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    min-height: 24rem;
+    align-content: start;
+  }
+
+  .oak-table__ghost-row > * {
+    grid-column: 1 / -1;
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-table__frame,
+  .oak-table__grid tbody tr {
+    border: 1px solid CanvasText;
+  }
+
+  .oak-table__grid tbody tr > * {
+    border-block-start: 1px solid CanvasText;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-table.oak-openui-skel * {
+    animation: none;
+  }
+}

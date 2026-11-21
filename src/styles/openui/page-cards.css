@@ -1,0 +1,256 @@
+/* Ticket 41: PageCards. One frame per cited page (R14), its cover one --oak-pad-nest in, so the cover corner is the frame's less
+ * that inset. At 640px of container the open card takes its own full row, its cover beside the text, and the closed cards pair
+ * up in two columns at one height (R19); narrower, one column with the open cover full width above. DOM order is reading order.
+ * The open card is the quick look: it turns to the overlay glass, so glass never sits on a filled card. */
+.oak-page-cards {
+  container-type: inline-size;
+  min-width: 0;
+}
+
+.oak-page-cards__grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-sm);
+}
+
+.oak-page-card {
+  display: grid;
+  min-width: 0;
+  padding: calc(var(--oak-pad-nest) - 1px);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+  overflow-wrap: break-word;
+  transition: background-color var(--motion-quick) var(--motion-standard);
+}
+
+.oak-page-card > [data-slot="collapsible"] { display: grid; }
+
+.oak-page-card[data-open] {
+  border-color: var(--glass-edge);
+  background: var(--glass-sheen), var(--glass-fill-solid);
+  box-shadow: var(--shadow-glass);
+}
+
+.oak-page-card__head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: var(--oak-r-card);
+  background: transparent;
+  color: inherit;
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.oak-page-card__head:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+/* Open, the cover keeps the page's frame before the image loads: 2:1 for a page, 1.91:1 for a case study (DESIGN.md "Answer cards"). */
+.oak-page-card__cover {
+  position: relative;
+  grid-column: 1;
+  align-self: stretch;
+  display: block;
+  width: 88px;
+  min-height: 88px;
+  max-height: 120px;
+  overflow: hidden;
+  border-radius: var(--oak-r-card);
+  background: var(--oak-well);
+}
+
+.oak-page-card[data-open] .oak-page-card__cover {
+  grid-column: 1 / -1;
+  align-self: center;
+  width: 100%;
+  min-height: 0;
+  max-height: none;
+  aspect-ratio: 2 / 1;
+}
+
+.oak-page-card[data-open][data-kind="work"] .oak-page-card__cover { aspect-ratio: 1.91 / 1; }
+
+.oak-page-card__cover img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.oak-page-card__text {
+  grid-column: 2;
+  display: grid;
+  gap: var(--space-micro);
+  min-width: 0;
+}
+
+.oak-page-card[data-open] .oak-page-card__text { grid-column: 1 / 3; }
+
+.oak-page-card__kind,
+.oak-page-card__section {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-page-card__title {
+  color: var(--text);
+  font-size: var(--text-card-title);
+  font-weight: 600;
+  line-height: var(--leading-title);
+}
+
+.oak-page-card__dek {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+}
+
+.oak-page-card[data-open] .oak-page-card__dek { -webkit-line-clamp: 2; }
+
+@container (min-width: 640px) {
+  .oak-page-cards:not([data-count="1"]) .oak-page-cards__grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .oak-page-card[data-open] { grid-column: 1 / -1; }
+  .oak-page-card[data-open] .oak-page-card__head:has(.oak-page-card__cover) { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) auto; }
+  .oak-page-card[data-open] .oak-page-card__cover { grid-column: 1; }
+  .oak-page-card[data-open] .oak-page-card__text { grid-column: 2; }
+  /* A closed card with no row partner spans the row, so no half row stays empty and DOM order holds. */
+  .oak-page-card:nth-child(odd):has(+ .oak-page-card[data-open]),
+  .oak-page-card[data-open]:nth-last-child(even) ~ .oak-page-card:last-child,
+  .oak-page-cards__grid:not(:has(> [data-open])) > .oak-page-card:last-child:nth-child(odd) { grid-column: 1 / -1; }
+}
+
+/* With no cover the frame holds copy directly, so it takes the frame pad (R14) and the text spans the empty cover track. */
+.oak-page-card:not([data-ghost]):not(:has(.oak-page-card__cover)) { padding: var(--oak-pad-frame); }
+.oak-page-card__head:not(:has(.oak-page-card__cover)) .oak-page-card__text { grid-column: 1 / 3; }
+
+.oak-page-card__chevron {
+  grid-column: 3;
+  display: inline-grid;
+  place-items: center;
+  width: var(--space-lg);
+  height: var(--space-lg);
+  border-radius: var(--radius-pill);
+  background: var(--oak-well);
+  color: var(--text);
+  transition: transform var(--motion-quick) var(--motion-standard);
+}
+
+.oak-page-card[data-open] .oak-page-card__chevron { transform: rotate(180deg); }
+
+.oak-page-card__panel {
+  height: var(--collapsible-panel-height);
+  overflow: hidden;
+  transition: height 240ms var(--motion-standard);
+}
+
+.oak-page-card__panel[data-starting-style],
+.oak-page-card__panel[data-ending-style] { height: 0; }
+
+.oak-page-card__look {
+  display: grid;
+  gap: var(--space-sm);
+  padding-top: var(--space-md);
+}
+
+.oak-page-card__section { margin: 0; }
+
+.oak-page-card__quote {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--text-body-md);
+  line-height: var(--leading-body);
+}
+
+.oak-page-card__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.oak-page-card__open,
+.oak-page-card__ask {
+  position: relative;
+  display: inline-flex;
+  flex: 1 1 auto;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-micro);
+  min-height: 44px;
+  padding: 0 var(--space-sm);
+  border: 0;
+  border-radius: var(--radius-pill);
+  font: inherit;
+  font-size: var(--text-ui-md);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.oak-page-card__open {
+  background: var(--text);
+  color: var(--bg);
+}
+
+.oak-page-card__open a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.oak-page-card__open a::before {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  content: "";
+}
+
+.oak-page-card__open:has(a:focus-visible),
+.oak-page-card__ask:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+.oak-page-card__open a:focus-visible { outline: none; }
+
+.oak-page-card__ask {
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--line-soft);
+  color: var(--text);
+  cursor: pointer;
+}
+
+.oak-page-card__ask:hover { background: var(--oak-well); }
+
+.oak-page-card[data-ghost] .oak-page-card__head { cursor: default; }
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .oak-page-card[data-open] {
+    background: var(--glass-fill-solid);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-page-card,
+  .oak-page-card__chevron,
+  .oak-page-card__panel { transition: none; }
+}
+
+@media (forced-colors: active) {
+  .oak-page-card { border: 1px solid CanvasText; }
+  .oak-page-card[data-open] { border-width: 2px; }
+  .oak-page-card__open,
+  .oak-page-card__ask { border: 1px solid ButtonText; }
+}

@@ -1,0 +1,1730 @@
+[
+ {
+  "id": "screens-one",
+  "label": "Screens (ticket 39): one mapped image, the frame alone with no filmstrip, arrows or counter (fixture claim)",
+  "screens": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Show me OmniSocial"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "OmniSocial runs specialized agents that collect, curate and publish content across platforms.",
+        "citations": [
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-002",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000039000",
+      "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "recordFacts": {
+   "work:omnisocial": {
+    "kind": "work",
+    "dek": "An agentic content-production system where specialized AI agents discover and queue content ideas, route them through evergreen or human approval flows, and turn approved ideas into platform-specific social text, video and audio concepts, SEO/AEO articles, and publishing workflows through APIs, browser-control harnesses, CLIs, agents, skills, and plugins.",
+    "category": "Agentic content production, browser harness, API publishing",
+    "badge": "Content agents",
+    "articleStatus": "in-progress-stub",
+    "statusLabel": "Case study in progress",
+    "datePublished": "2026-05-09",
+    "dateUpdated": "2026-05-09",
+    "cover": {
+     "src": "/assets/generated/work/omnisocial/omnisocial-cover-900.webp",
+     "alt": "OmniSocial cover showing Browser greater than API with social platform icons",
+     "ratio": 1.905
+    },
+    "coverTint": "#8cd7ea",
+    "systemMap": [
+     {
+      "label": "Inspiration discovery",
+      "description": "Agents and browser workflows collect ideas, examples, trends, source pages, and reusable context before a production pass starts."
+     },
+     {
+      "label": "Human approval",
+      "description": "A human review step decides what idea, source angle, brand constraint, or client direction should move forward."
+     },
+     {
+      "label": "Content production",
+      "description": "Specialized agents turn the approved idea into platform-aware drafts for social text, video and audio concepts, and article surfaces."
+     },
+     {
+      "label": "SEO/AEO article path",
+      "description": "Long-form output keeps source context, answer-engine usefulness, and visible claim boundaries close to the human-readable draft."
+     },
+     {
+      "label": "Publishing harness",
+      "description": "The system can publish or prepare handoff through official APIs where available and browser-control harnesses where UI execution is the realistic path."
+     },
+     {
+      "label": "Reusable tooling",
+      "description": "CLIs, skills, plugins, and agent roles keep recurring production steps repeatable instead of trapped in one-off prompts."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Content Creation cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/omnisocial/omnisocial-cover-900.webp",
+       "alt": "OmniSocial cover showing Browser greater than API with social platform icons",
+       "ratio": 1.905
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "State",
+      "value": "Case study in progress"
+     },
+     {
+      "label": "Cover source",
+      "value": "2000x1050 PNG"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "screens-three",
+  "label": "Screens (ticket 39): three mapped images, the frame, arrows, counter and an outlined current thumbnail (fixture claim)",
+  "screens": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Show me EcoSmartLoop"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000039001",
+      "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "AI agents, behavior change, California SB 1383",
+    "badge": "Applied AI",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "dateUpdated": "2025-12-15",
+    "cover": {
+     "src": "/assets/generated/work/ecosmartloop/ecosmartloop-cover-900.webp",
+     "alt": "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context",
+     "ratio": 1.905
+    },
+    "coverTint": "#a286e7",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/orbi-guidance-actions-combined-900.webp",
+       "alt": "Orbi AI assistant screens showing cited guidance, sources, related prompts, and product-aware tool actions",
+       "ratio": 2.266
+      }
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/rewards-behavior-loop-900.webp",
+       "alt": "EcoSmartLoop rewards behavior loop shown across app cards and dashboard",
+       "ratio": 1.302
+      }
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/organization-analytics-900.webp",
+       "alt": "EcoSmartLoop organization analytics dashboard",
+       "ratio": 1.698
+      }
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Dataset",
+      "value": "8K+ images"
+     },
+     {
+      "label": "Model output",
+      "value": "4 classes"
+     },
+     {
+      "label": "Role",
+      "value": "Product-side full stack"
+     },
+     {
+      "label": "Context",
+      "value": "California SB 1383"
+     },
+     {
+      "label": "Global problem",
+      "value": "$640.3B"
+     },
+     {
+      "label": "California scale",
+      "value": "450K businesses"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "screens-six",
+  "label": "Screens (ticket 39): six mapped images, the filmstrip wraps under the frame (fixture claim)",
+  "screens": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What does the app look like?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000039002",
+      "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "AI agents, behavior change, California SB 1383",
+    "badge": "Applied AI",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "dateUpdated": "2025-12-15",
+    "cover": {
+     "src": "/assets/generated/work/ecosmartloop/ecosmartloop-cover-900.webp",
+     "alt": "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context",
+     "ratio": 1.905
+    },
+    "coverTint": "#a286e7",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/orbi-guidance-actions-combined-900.webp",
+       "alt": "Orbi AI assistant screens showing cited guidance, sources, related prompts, and product-aware tool actions",
+       "ratio": 2.266
+      }
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/rewards-behavior-loop-900.webp",
+       "alt": "EcoSmartLoop rewards behavior loop shown across app cards and dashboard",
+       "ratio": 1.302
+      }
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/organization-analytics-900.webp",
+       "alt": "EcoSmartLoop organization analytics dashboard",
+       "ratio": 1.698
+      }
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     },
+     {
+      "label": "Capstone poster and flyer",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/capstone-poster-board-900.webp",
+       "alt": "EcoSmartLoop capstone poster showing vision, intelligence, growth loop, and architecture",
+       "ratio": 1.776
+      }
+     },
+     {
+      "label": "Team-origin grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/team-capstone-origin-900.webp",
+       "alt": "EcoSmartLoop teammates at an SFBU Startup Grind event with public role labels for Glenn, Frank, and Oak",
+       "ratio": 1.333
+      }
+     },
+     {
+      "label": "B2B direction context",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/b2b-career-fair-context-900.webp",
+       "alt": "LinkedIn building and rooftop context from the career-fair moment that shaped EcoSmartLoop's B2B direction",
+       "ratio": 1.778
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Dataset",
+      "value": "8K+ images"
+     },
+     {
+      "label": "Model output",
+      "value": "4 classes"
+     },
+     {
+      "label": "Role",
+      "value": "Product-side full stack"
+     },
+     {
+      "label": "Context",
+      "value": "California SB 1383"
+     },
+     {
+      "label": "Global problem",
+      "value": "$640.3B"
+     },
+     {
+      "label": "California scale",
+      "value": "450K businesses"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "screens-off-ratio",
+  "label": "Screens (ticket 39): a tall phone grid beside a landscape studio, each shown whole on its backdrop (fixture claim)",
+  "screens": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Show me Oakminder"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000039003",
+      "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "screens-viewer",
+  "label": "Screens (ticket 39): the viewer open in place on the first screen, caption shown (fixture claim)",
+  "screens": true,
+  "open": "screens-viewer",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Show me EcoSmartLoop"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000039004",
+      "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "AI agents, behavior change, California SB 1383",
+    "badge": "Applied AI",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "dateUpdated": "2025-12-15",
+    "cover": {
+     "src": "/assets/generated/work/ecosmartloop/ecosmartloop-cover-900.webp",
+     "alt": "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context",
+     "ratio": 1.905
+    },
+    "coverTint": "#a286e7",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/orbi-guidance-actions-combined-900.webp",
+       "alt": "Orbi AI assistant screens showing cited guidance, sources, related prompts, and product-aware tool actions",
+       "ratio": 2.266
+      }
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/rewards-behavior-loop-900.webp",
+       "alt": "EcoSmartLoop rewards behavior loop shown across app cards and dashboard",
+       "ratio": 1.302
+      }
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/organization-analytics-900.webp",
+       "alt": "EcoSmartLoop organization analytics dashboard",
+       "ratio": 1.698
+      }
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Dataset",
+      "value": "8K+ images"
+     },
+     {
+      "label": "Model output",
+      "value": "4 classes"
+     },
+     {
+      "label": "Role",
+      "value": "Product-side full stack"
+     },
+     {
+      "label": "Context",
+      "value": "California SB 1383"
+     },
+     {
+      "label": "Global problem",
+      "value": "$640.3B"
+     },
+     {
+      "label": "California scale",
+      "value": "450K businesses"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "screens-viewer-no-caption",
+  "label": "Screens (ticket 39): the viewer open with its caption hidden (fixture claim)",
+  "screens": true,
+  "open": "screens-viewer-no-caption",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Show me EcoSmartLoop"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000039005",
+      "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "AI agents, behavior change, California SB 1383",
+    "badge": "Applied AI",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "dateUpdated": "2025-12-15",
+    "cover": {
+     "src": "/assets/generated/work/ecosmartloop/ecosmartloop-cover-900.webp",
+     "alt": "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context",
+     "ratio": 1.905
+    },
+    "coverTint": "#a286e7",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/orbi-guidance-actions-combined-900.webp",
+       "alt": "Orbi AI assistant screens showing cited guidance, sources, related prompts, and product-aware tool actions",
+       "ratio": 2.266
+      }
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/rewards-behavior-loop-900.webp",
+       "alt": "EcoSmartLoop rewards behavior loop shown across app cards and dashboard",
+       "ratio": 1.302
+      }
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/organization-analytics-900.webp",
+       "alt": "EcoSmartLoop organization analytics dashboard",
+       "ratio": 1.698
+      }
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Dataset",
+      "value": "8K+ images"
+     },
+     {
+      "label": "Model output",
+      "value": "4 classes"
+     },
+     {
+      "label": "Role",
+      "value": "Product-side full stack"
+     },
+     {
+      "label": "Context",
+      "value": "California SB 1383"
+     },
+     {
+      "label": "Global problem",
+      "value": "$640.3B"
+     },
+     {
+      "label": "California scale",
+      "value": "450K businesses"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ]
+   }
+  }
+ },
+ {
+  "id": "screens-streaming",
+  "label": "Screens (ticket 39): while the record facts load, the frame ghost (fixture)",
+  "screens": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Show me EcoSmartLoop"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000039006",
+      "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "recordFacts": "pending"
+ },
+ {
+  "id": "screens-off",
+  "label": "Screens (ticket 39): constant off, the plain Source card (fixture claim)",
+  "screens": false,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Show me EcoSmartLoop"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000039007",
+      "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "AI agents, behavior change, California SB 1383",
+    "badge": "Applied AI",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "dateUpdated": "2025-12-15",
+    "cover": {
+     "src": "/assets/generated/work/ecosmartloop/ecosmartloop-cover-900.webp",
+     "alt": "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context",
+     "ratio": 1.905
+    },
+    "coverTint": "#a286e7",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/orbi-guidance-actions-combined-900.webp",
+       "alt": "Orbi AI assistant screens showing cited guidance, sources, related prompts, and product-aware tool actions",
+       "ratio": 2.266
+      }
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/rewards-behavior-loop-900.webp",
+       "alt": "EcoSmartLoop rewards behavior loop shown across app cards and dashboard",
+       "ratio": 1.302
+      }
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/ecosmartloop/organization-analytics-900.webp",
+       "alt": "EcoSmartLoop organization analytics dashboard",
+       "ratio": 1.698
+      }
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Dataset",
+      "value": "8K+ images"
+     },
+     {
+      "label": "Model output",
+      "value": "4 classes"
+     },
+     {
+      "label": "Role",
+      "value": "Product-side full stack"
+     },
+     {
+      "label": "Context",
+      "value": "California SB 1383"
+     },
+     {
+      "label": "Global problem",
+      "value": "$640.3B"
+     },
+     {
+      "label": "California scale",
+      "value": "450K businesses"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ]
+   }
+  }
+ }
+]

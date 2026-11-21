@@ -1,0 +1,11 @@
+{
+ "interrupted": {
+  "asset": "paused"
+ },
+ "failed": {
+  "asset": "oak-retry"
+ },
+ "budget-paused": {
+  "asset": "budget-paused"
+ }
+}

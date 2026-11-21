@@ -1,0 +1,25 @@
+---
+type Metric = {
+  label: string;
+  value: string;
+  note?: string;
+};
+
+type Props = {
+  metrics: Metric[];
+};
+
+const { metrics } = Astro.props;
+---
+
+<div class="work-mdx-metric-strip">
+  {
+    metrics.map((metric) => (
+      <article>
+        <span>{metric.label}</span>
+        <strong>{metric.value}</strong>
+        {metric.note && <p>{metric.note}</p>}
+      </article>
+    ))
+  }
+</div>

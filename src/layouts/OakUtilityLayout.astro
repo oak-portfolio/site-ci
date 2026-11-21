@@ -1,0 +1,50 @@
+---
+import { media } from '@/data/homePage';
+import { getProfileJson } from '@/data/machineContent';
+import { knowledgeRevision } from '@/lib/knowledge/snapshot';
+import { jsonForScript } from '@/lib/jsonForScript';
+import '../styles/theme.css';
+interface Props { title: string; description: string }
+const { title, description } = Astro.props;
+const canonical = new URL(Astro.url.pathname, 'https://steveoak.com').href;
+const image = new URL(media.openGraph, 'https://steveoak.com').href;
+const schema = { '@context': 'https://schema.org', '@graph': [getProfileJson(),
+  { '@type': 'WebSite', '@id': 'https://steveoak.com/#website', url: 'https://steveoak.com/', name: 'SteveOak.com' },
+  { '@type': 'WebPage', url: canonical, name: title, description }] };
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <slot name="early-head" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="referrer" content="no-referrer" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="knowledge-revision" content={knowledgeRevision} />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="icon" href="/favicon.ico" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={image} />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Steve Oak portfolio preview" />
+    <meta property="og:site_name" content="SteveOak.com" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={image} />
+    <meta name="twitter:image:alt" content="Steve Oak portfolio preview" />
+    <script type="application/ld+json" set:html={jsonForScript(schema)} />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    <main id="main-content" tabindex="-1"><slot /></main>
+  </body>
+</html>

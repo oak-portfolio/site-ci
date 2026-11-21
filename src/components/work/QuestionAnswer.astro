@@ -1,0 +1,13 @@
+---
+type Props = {
+  question: string;
+  answer: string;
+};
+
+const { question, answer } = Astro.props;
+---
+
+<aside class="work-mdx-qa">
+  <p>{question}</p>
+  <strong>{answer}</strong>
+</aside>

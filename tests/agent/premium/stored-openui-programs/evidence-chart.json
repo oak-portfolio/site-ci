@@ -1,0 +1,218 @@
+[
+ {
+  "id": "answer-openui-evidence-proof",
+  "question": "How much of this work is verified?",
+  "program": "root = Answer([chart])\nchart = EvidenceChart([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"])",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "LinkedIn Growth Loop has the most published proof: its posts, charts and outreach screens.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "EcoSmartLoop's case study shows its published dataset, model output and demo screens.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-001:passage-001",
+       "sectionId": "work:ecosmartloop:section-001",
+       "url": "https://steveoak.com/work/ecosmartloop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-3",
+     "text": "OakMinder's write-up carries its launch screens and docs.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-003",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/"
+      }
+     ]
+    },
+    {
+     "id": "claim-4",
+     "text": "Agentic Brain shows its memory cover and the legacy memory case study; the rest is still held.",
+     "citations": [
+      {
+       "documentId": "work:agentic-brain",
+       "passageId": "work:agentic-brain:section-001:passage-002",
+       "sectionId": "work:agentic-brain:section-001",
+       "url": "https://steveoak.com/work/agentic-brain/"
+      }
+     ]
+    },
+    {
+     "id": "claim-5",
+     "text": "OmniSocial shows one published artifact so far, its content creation cover.",
+     "citations": [
+      {
+       "documentId": "work:omnisocial",
+       "passageId": "work:omnisocial:section-001:passage-005",
+       "sectionId": "work:omnisocial:section-001",
+       "url": "https://steveoak.com/work/omnisocial/"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-evidence-donut",
+  "question": "How much of this work is verified?",
+  "program": "root = Answer([chart])\nchart = EvidenceChart([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"], \"donut\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "LinkedIn Growth Loop has the most published proof: its posts, charts and outreach screens.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "EcoSmartLoop's case study shows its published dataset, model output and demo screens.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-001:passage-001",
+       "sectionId": "work:ecosmartloop:section-001",
+       "url": "https://steveoak.com/work/ecosmartloop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-3",
+     "text": "OakMinder's write-up carries its launch screens and docs.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-003",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/"
+      }
+     ]
+    },
+    {
+     "id": "claim-4",
+     "text": "Agentic Brain shows its memory cover and the legacy memory case study; the rest is still held.",
+     "citations": [
+      {
+       "documentId": "work:agentic-brain",
+       "passageId": "work:agentic-brain:section-001:passage-002",
+       "sectionId": "work:agentic-brain:section-001",
+       "url": "https://steveoak.com/work/agentic-brain/"
+      }
+     ]
+    },
+    {
+     "id": "claim-5",
+     "text": "OmniSocial shows one published artifact so far, its content creation cover.",
+     "citations": [
+      {
+       "documentId": "work:omnisocial",
+       "passageId": "work:omnisocial:section-001:passage-005",
+       "sectionId": "work:omnisocial:section-001",
+       "url": "https://steveoak.com/work/omnisocial/"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-evidence-sankey",
+  "question": "What proof is there for each project?",
+  "program": "root = Answer([chart])\nchart = EvidenceChart([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"], \"sankey\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "LinkedIn Growth Loop has the most published proof: its posts, charts and outreach screens.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "EcoSmartLoop's case study shows its published dataset, model output and demo screens.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-001:passage-001",
+       "sectionId": "work:ecosmartloop:section-001",
+       "url": "https://steveoak.com/work/ecosmartloop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-3",
+     "text": "OakMinder's write-up carries its launch screens and docs.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-003",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/"
+      }
+     ]
+    },
+    {
+     "id": "claim-4",
+     "text": "Agentic Brain shows its memory cover and the legacy memory case study; the rest is still held.",
+     "citations": [
+      {
+       "documentId": "work:agentic-brain",
+       "passageId": "work:agentic-brain:section-001:passage-002",
+       "sectionId": "work:agentic-brain:section-001",
+       "url": "https://steveoak.com/work/agentic-brain/"
+      }
+     ]
+    },
+    {
+     "id": "claim-5",
+     "text": "OmniSocial shows one published artifact so far, its content creation cover.",
+     "citations": [
+      {
+       "documentId": "work:omnisocial",
+       "passageId": "work:omnisocial:section-001:passage-005",
+       "sectionId": "work:omnisocial:section-001",
+       "url": "https://steveoak.com/work/omnisocial/"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

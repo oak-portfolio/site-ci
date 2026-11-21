@@ -1,0 +1,1429 @@
+{
+  "schema": "oak.knowledge-review.v1",
+  "policyVersion": "oak-public-knowledge-2026-10-03-v1",
+  "authority": "Approved SPEC D01/D02, Q44 public corpus intake and CONTRACT T01 historical initial review baseline. No claim of current factual verification.",
+  "documents": {
+    "work:agentic-brain": {
+      "sourceFingerprint": "1992ac38902e80eb0723e013cfe3b94faaf7945493b1bd9259aa45a486e6a7ac",
+      "sections": [
+        {
+          "id": "work:agentic-brain:section-001",
+          "anchor": "work-in-progress-panel-title",
+          "heading": "Case study in progress"
+        }
+      ],
+      "exceptions": [],
+      "publicQualifiers": [
+        "The page describes Agentic Brain as a memory-systems workstream; the case study is in progress."
+      ],
+      "publicCollaborators": []
+    },
+    "work:ecosmartloop": {
+      "sourceFingerprint": "d04acd4d6a85a9de1eafc8cac728cce6badea2be01908a8aa4a7b13d86a87b00",
+      "sections": [
+        {
+          "id": "work:ecosmartloop:section-001",
+          "anchor": "the-three-bin-pause",
+          "heading": "The three-bin pause"
+        },
+        {
+          "id": "work:ecosmartloop:section-002",
+          "anchor": "the-questions-going-in",
+          "heading": "The questions going in"
+        },
+        {
+          "id": "work:ecosmartloop:section-003",
+          "anchor": "where-the-direction-came-from",
+          "heading": "Where the direction came from"
+        },
+        {
+          "id": "work:ecosmartloop:section-004",
+          "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+          "heading": "Why a California waste-sorting prototype was worth building"
+        },
+        {
+          "id": "work:ecosmartloop:section-005",
+          "anchor": "what-i-had-to-make-work",
+          "heading": "What I had to make work"
+        },
+        {
+          "id": "work:ecosmartloop:section-006",
+          "anchor": "the-decision-loop",
+          "heading": "The decision loop"
+        },
+        {
+          "id": "work:ecosmartloop:section-007",
+          "anchor": "leaf-engine-classified-orbi-explained",
+          "heading": "LEAF Engine classified. Orbi explained."
+        },
+        {
+          "id": "work:ecosmartloop:section-008",
+          "anchor": "from-scanner-to-behavior-loop",
+          "heading": "From scanner to behavior loop"
+        },
+        {
+          "id": "work:ecosmartloop:section-009",
+          "anchor": "the-tradeoffs-that-made-it-real",
+          "heading": "The tradeoffs that made it real"
+        },
+        {
+          "id": "work:ecosmartloop:section-010",
+          "anchor": "the-stack-behind-the-scan",
+          "heading": "The stack behind the scan"
+        },
+        {
+          "id": "work:ecosmartloop:section-011",
+          "anchor": "what-the-evidence-actually-showed",
+          "heading": "What the evidence actually showed"
+        },
+        {
+          "id": "work:ecosmartloop:section-012",
+          "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+          "heading": "Why we did not turn it into a company yet"
+        },
+        {
+          "id": "work:ecosmartloop:section-013",
+          "anchor": "what-i-took-with-me",
+          "heading": "What I took with me"
+        }
+      ],
+      "exceptions": [],
+      "publicQualifiers": [
+        "EcoSmartLoop is a team-built prototype case study; its source does not claim production adoption or measured behavior-change impact."
+      ],
+      "publicCollaborators": [
+        "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+        "Neelofar contributed frontend and data-analytics work.",
+        "Professor Ahmed Banafa advised the capstone."
+      ],
+      "figureProjections": [
+        {
+          "id": "sb1383-context",
+          "sourceFingerprint": "d04acd4d6a85a9de1eafc8cac728cce6badea2be01908a8aa4a7b13d86a87b00",
+          "title": "The operating pressure was real before the prototype existed",
+          "caption": "CalRecycle context for why a bin-side sorting product had a real operating problem behind it. These are external targets and requirements, not EcoSmartLoop outcomes.",
+          "propsFingerprint": "63c7beeaa0f9f2cbe08840c99571513e219ab190dd4cfaf09d9679d52833545f",
+          "projection": "numeric-percent",
+          "categoryKey": "label",
+          "valueKey": "percent",
+          "qualifiers": [
+            "The dated EcoSmartLoop article attributes these figures to CalRecycle as external policy and capacity context, not project outcomes or independently verified current CalRecycle status.",
+            "The food-recovery target has no year in the chart. The organics-capacity reporting period is unspecified, and current capacity status is not established."
+          ]
+        }
+      ]
+    },
+    "work:linkedin-growth-loop": {
+      "sourceFingerprint": "2156eb2fea23a3150c2f804cacef44f95ce330563665efc6e17bdbd65fc0cf43",
+      "sections": [
+        {
+          "id": "work:linkedin-growth-loop:section-001",
+          "anchor": "agents-are-overhyped-until-they-own-the-work",
+          "heading": "Agents Are Overhyped Until They Own The Work"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-002",
+          "anchor": "the-in-house-need-made-it-serious",
+          "heading": "The In-House Need Made It Serious"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-003",
+          "anchor": "linkedin-became-the-first-real-success",
+          "heading": "LinkedIn Became The First Real Success"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-004",
+          "anchor": "the-first-daily-loop",
+          "heading": "The First Daily Loop"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-005",
+          "anchor": "orchestrator-workers-validators",
+          "heading": "Orchestrator, Workers, Validators"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-006",
+          "anchor": "harnesses-were-just-the-tools",
+          "heading": "Harnesses Were Just The Tools"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-007",
+          "anchor": "telegram-became-the-control-room",
+          "heading": "Telegram Became The Control Room"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-008",
+          "anchor": "browser-control-kept-the-cost-honest",
+          "heading": "Browser Control Kept The Cost Honest"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-009",
+          "anchor": "evaluation-turned-runs-into-learning",
+          "heading": "Evaluation Turned Runs Into Learning"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-010",
+          "anchor": "one-failure-that-forced-better-rules",
+          "heading": "One Failure That Forced Better Rules"
+        },
+        {
+          "id": "work:linkedin-growth-loop:section-011",
+          "anchor": "what-moved-out-of-my-head",
+          "heading": "What Moved Out Of My Head"
+        }
+      ],
+      "exceptions": [],
+      "publicQualifiers": [
+        "The page describes a bounded professional-relationship workflow with operator controls and a feedback loop."
+      ],
+      "publicCollaborators": [],
+      "figureProjections": [
+        {
+          "id": "autonomy-boundary",
+          "sourceFingerprint": "2156eb2fea23a3150c2f804cacef44f95ce330563665efc6e17bdbd65fc0cf43",
+          "title": "Where Autonomy Was Allowed",
+          "caption": "Trust came from the boundary: routine work could move, sensitive changes had to ask, and risky changes needed a way back.",
+          "propsFingerprint": "d4f299741a8cbcb3966eb441821e08b568e605743948b26b8a9ba19b5df4e388",
+          "projection": "detail-only",
+          "categoryKey": "boundary",
+          "qualifiers": [
+            "This is a qualitative operating boundary, not a measured score."
+          ]
+        }
+      ]
+    },
+    "work:oakminder": {
+      "sourceFingerprint": "ab842ffe7a53bf0e8966e070b1148887fbe9434c6326e597c5951caa352a859a",
+      "sections": [
+        {
+          "id": "work:oakminder:section-001",
+          "anchor": "why-i-built-another-reminder-app",
+          "heading": "Why I Built Another Reminder App"
+        },
+        {
+          "id": "work:oakminder:section-002",
+          "anchor": "from-tap-flow-to-voice-agent",
+          "heading": "From Tap Flow To Voice Agent"
+        },
+        {
+          "id": "work:oakminder:section-003",
+          "anchor": "notification-actions-had-to-carry-more",
+          "heading": "Notification Actions Had To Carry More"
+        },
+        {
+          "id": "work:oakminder:section-004",
+          "anchor": "the-architecture-behind-a-simple-tap",
+          "heading": "The Architecture Behind A Simple Tap"
+        },
+        {
+          "id": "work:oakminder:section-005",
+          "anchor": "voice-became-the-action-layer",
+          "heading": "Voice Became The Action Layer"
+        },
+        {
+          "id": "work:oakminder:section-006",
+          "anchor": "onboarding-had-to-earn-trust",
+          "heading": "Onboarding Had To Earn Trust"
+        },
+        {
+          "id": "work:oakminder:section-007",
+          "anchor": "docs-became-part-of-distribution",
+          "heading": "Docs Became Part Of Distribution"
+        },
+        {
+          "id": "work:oakminder:section-008",
+          "anchor": "after-the-app-store-distribution-started",
+          "heading": "After The App Store, Distribution Started"
+        },
+        {
+          "id": "work:oakminder:section-009",
+          "anchor": "the-distribution-studio-around-the-app",
+          "heading": "The Distribution Studio Around The App"
+        },
+        {
+          "id": "work:oakminder:section-010",
+          "anchor": "the-phone-became-the-research-bridge",
+          "heading": "The Phone Became The Research Bridge"
+        },
+        {
+          "id": "work:oakminder:section-011",
+          "anchor": "saving-the-visual-pattern",
+          "heading": "Saving The Visual Pattern"
+        },
+        {
+          "id": "work:oakminder:section-012",
+          "anchor": "creative-studio",
+          "heading": "Creative Studio"
+        },
+        {
+          "id": "work:oakminder:section-013",
+          "anchor": "ugc-briefs-and-ai-assisted-drafts",
+          "heading": "UGC Briefs And AI-Assisted Drafts"
+        },
+        {
+          "id": "work:oakminder:section-014",
+          "anchor": "publishing-and-feedback",
+          "heading": "Publishing And Feedback"
+        },
+        {
+          "id": "work:oakminder:section-015",
+          "anchor": "what-i-would-build-again",
+          "heading": "What I Would Build Again"
+        }
+      ],
+      "exceptions": [],
+      "publicQualifiers": [
+        "The case study describes Oakminder as App Store live and its TikTok/UGC studio as internal; usage and performance metrics remain private."
+      ],
+      "publicCollaborators": []
+    },
+    "work:omnisocial": {
+      "sourceFingerprint": "90ba30e572c527658969ced13befd14c398e149aa59d9b169cb99da9eff46dc8",
+      "sections": [
+        {
+          "id": "work:omnisocial:section-001",
+          "anchor": "work-in-progress-panel-title",
+          "heading": "Case study in progress"
+        }
+      ],
+      "exceptions": [],
+      "publicQualifiers": [
+        "A case study in progress on an agentic content-production system with human approval and API/browser publishing paths."
+      ],
+      "publicCollaborators": []
+    },
+    "experience:oaklabs": {
+      "sourceFingerprint": "01c92422d95ea4923834fb1a384047c3b6e74b0d8927a27622c1591c3dd985c4",
+      "sections": [],
+      "exceptions": [],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "experience:hyperskalers": {
+      "sourceFingerprint": "c6b65880a6bd6dbb8993159c6a4aae11580e6b635e1def9b39e2695360fec17a",
+      "sections": [],
+      "exceptions": [],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "experience:sanfranciscobayuniversity": {
+      "sourceFingerprint": "6ae188f445d887237b2afbe749ba4449649f453772e15c87792c5bc110d75acf",
+      "sections": [],
+      "exceptions": [],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "experience:uhttention": {
+      "sourceFingerprint": "fca877da12272e5a5ba932a2577a8217781b43dd0ece745afb656ee001ce5dfd",
+      "sections": [],
+      "exceptions": [
+        {
+          "textIncludes": "900% revenue increase",
+          "conflict": "uhttention-growth-attribution",
+          "disclosure": "public"
+        }
+      ],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "experience:globaledtechorganization": {
+      "sourceFingerprint": "df47bb68c66c6bf45353fb9735e002d7c39d1f3583c34476853b55cff1e31be5",
+      "sections": [],
+      "exceptions": [
+        {
+          "textIncludes": "$100M MRR",
+          "conflict": "global-edtech-revenue",
+          "disclosure": "public"
+        }
+      ],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "experience:pnppsolutions": {
+      "sourceFingerprint": "9dc2e4481ac63e6373ed0a1377e2540a98d7551cbc57f9d8e687500c29d26d42",
+      "sections": [],
+      "exceptions": [],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "profile:steve-oak": {
+      "sourceFingerprint": "6a554af9e7d9c2e0e54e9b730834b22ff3cf10711833a9acc8ce77d3f5121ccc",
+      "sections": [
+        {
+          "id": "profile:steve-oak:section-001",
+          "anchor": "hero-title",
+          "heading": "Hi, I'm Steve Oak"
+        },
+        {
+          "id": "profile:steve-oak:section-002",
+          "anchor": "standard-heading",
+          "heading": "Here's the bet I am making"
+        },
+        {
+          "id": "profile:steve-oak:section-003",
+          "anchor": "workspace-heading",
+          "heading": "A few things I keep coming back to"
+        }
+      ],
+      "exceptions": [],
+      "publicQualifiers": [
+        "Steve Oak is Okkar Kyaw; the public profile describes him as a Bay Area AI/design engineer."
+      ],
+      "publicCollaborators": []
+    },
+    "resource:kusala-daily": {
+      "sourceFingerprint": "df33151d6087b205aa378ff59aa31ecf3e47bf6aca46b5c56a1b35bc8f9473fa",
+      "sections": [
+        {
+          "id": "resource:kusala-daily:section-001",
+          "anchor": "kusala-overview-heading",
+          "heading": "A calm daily practice space"
+        },
+        {
+          "id": "resource:kusala-daily:section-002",
+          "anchor": "kusala-availability-heading",
+          "heading": "Availability"
+        },
+        {
+          "id": "resource:kusala-daily:section-003",
+          "anchor": "kusala-links-heading",
+          "heading": "App information"
+        }
+      ],
+      "exceptions": [],
+      "publicQualifiers": [
+        "The overview says Kusala Daily is in release preparation and is not yet available for download; public release follows App Store review, with no promised date."
+      ],
+      "publicCollaborators": []
+    },
+    "resource:kusala-daily:support": {
+      "sourceFingerprint": "4451e7a9ffd8b47cefb07358312aebb389b8e2e2d6ad8c20ac854d73be26547f",
+      "sections": [
+        {
+          "id": "resource:kusala-daily:support:section-001",
+          "anchor": "support-basics-heading",
+          "heading": "Using Kusala Daily"
+        },
+        {
+          "id": "resource:kusala-daily:support:section-002",
+          "anchor": "support-troubleshooting-heading",
+          "heading": "Troubleshooting"
+        },
+        {
+          "id": "resource:kusala-daily:support:section-003",
+          "anchor": "support-accessibility-heading",
+          "heading": "Accessibility"
+        },
+        {
+          "id": "resource:kusala-daily:support:section-004",
+          "anchor": "support-contact-heading",
+          "heading": "Contact support"
+        }
+      ],
+      "exceptions": [],
+      "publicQualifiers": [
+        "The support page covers prayer-count use, the Paccayo reader, troubleshooting, accessibility, and contact."
+      ],
+      "publicCollaborators": []
+    },
+    "resource:kusala-daily:privacy": {
+      "sourceFingerprint": "861e35ca9b203e86a99a5d5803deeaac06fed450c6767f187a5ccbe134015414",
+      "sections": [
+        {
+          "id": "resource:kusala-daily:privacy:section-001",
+          "anchor": "privacy-summary-heading",
+          "heading": "No data collected"
+        },
+        {
+          "id": "resource:kusala-daily:privacy:section-002",
+          "anchor": "privacy-device-heading",
+          "heading": "Information stored on your device"
+        },
+        {
+          "id": "resource:kusala-daily:privacy:section-003",
+          "anchor": "privacy-services-heading",
+          "heading": "Apple services"
+        },
+        {
+          "id": "resource:kusala-daily:privacy:section-004",
+          "anchor": "privacy-contact-heading",
+          "heading": "Questions"
+        }
+      ],
+      "exceptions": [],
+      "publicQualifiers": [
+        "The privacy page says the app has no account, analytics, advertising, cloud service, or network feature, and describes locally stored prayer and reader preferences."
+      ],
+      "publicCollaborators": []
+    },
+    "legacy-personal-software-era": {
+      "sourceFingerprint": "720aa96b6267abad464e5096883ed0656bfd621c257f34fec02af4c4d5e6f8c6",
+      "sections": [
+        {
+          "id": "legacy-personal-software-era:section-001",
+          "heading": "I Built 5 Apps for 2 Hackathons in 4 Weeks And I realized we're living in the Personal Software era."
+        },
+        {
+          "id": "legacy-personal-software-era:section-002",
+          "heading": "Discovering the Hackathons"
+        },
+        {
+          "id": "legacy-personal-software-era:section-003",
+          "heading": "1. Craftie Essence"
+        },
+        {
+          "id": "legacy-personal-software-era:section-004",
+          "heading": "What It Does"
+        },
+        {
+          "id": "legacy-personal-software-era:section-005",
+          "heading": "The \"Achieve More\" Insight"
+        },
+        {
+          "id": "legacy-personal-software-era:section-006",
+          "heading": "Heavy on Motion and Interaction"
+        },
+        {
+          "id": "legacy-personal-software-era:section-007",
+          "heading": "The Win"
+        },
+        {
+          "id": "legacy-personal-software-era:section-008",
+          "heading": "Some Highlights"
+        },
+        {
+          "id": "legacy-personal-software-era:section-009",
+          "heading": "The AI Tooling Journey"
+        },
+        {
+          "id": "legacy-personal-software-era:section-010",
+          "heading": "2. Craftie Clarity"
+        },
+        {
+          "id": "legacy-personal-software-era:section-011",
+          "heading": "What It Does"
+        },
+        {
+          "id": "legacy-personal-software-era:section-012",
+          "heading": "3. Craftie Import Extension"
+        },
+        {
+          "id": "legacy-personal-software-era:section-013",
+          "heading": "Why Extensions?"
+        },
+        {
+          "id": "legacy-personal-software-era:section-014",
+          "heading": "The Signal-Based Approach"
+        },
+        {
+          "id": "legacy-personal-software-era:section-015",
+          "heading": "4. Craftie Mail"
+        },
+        {
+          "id": "legacy-personal-software-era:section-016",
+          "heading": "The Three AI Modes"
+        },
+        {
+          "id": "legacy-personal-software-era:section-017",
+          "heading": "The Commitment Tracker"
+        },
+        {
+          "id": "legacy-personal-software-era:section-018",
+          "heading": "5. YouSoul Vibe Productivity System"
+        },
+        {
+          "id": "legacy-personal-software-era:section-019",
+          "heading": "Why Build This?"
+        },
+        {
+          "id": "legacy-personal-software-era:section-020",
+          "heading": "The Bigger Picture"
+        },
+        {
+          "id": "legacy-personal-software-era:section-021",
+          "heading": "On Energy Usage"
+        },
+        {
+          "id": "legacy-personal-software-era:section-022",
+          "heading": "The Personal Software Era"
+        }
+      ],
+      "exceptions": [
+        {
+          "textIncludes": "millions of users",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Complex Prize winner",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "prize money",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Ranked #1",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Never had to worry",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "73 designed features",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Grand Prize",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "most trending tool",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Prefer Audio Experience?",
+          "conflict": "reading-chrome",
+          "disclosure": "public"
+        }
+      ],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "legacy-matcha-by-maryam": {
+      "sourceFingerprint": "20866c50b98fdfff95eddddc38a0b1b6de05db028c3d2de62669a31447bbf98c",
+      "sections": [
+        {
+          "id": "legacy-matcha-by-maryam:section-001",
+          "heading": "Vibe coding won't make your product stand out. Here's what will + CASE STUDY"
+        },
+        {
+          "id": "legacy-matcha-by-maryam:section-002",
+          "heading": "The Slopidemic"
+        },
+        {
+          "id": "legacy-matcha-by-maryam:section-003",
+          "heading": "The hierarchy that works"
+        },
+        {
+          "id": "legacy-matcha-by-maryam:section-004",
+          "heading": "MBM Case Study"
+        },
+        {
+          "id": "legacy-matcha-by-maryam:section-005",
+          "heading": "The multiplier"
+        },
+        {
+          "id": "legacy-matcha-by-maryam:section-006",
+          "heading": "Closing"
+        }
+      ],
+      "exceptions": [
+        {
+          "textIncludes": "actual brand deals",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Apple software engineer",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "she built",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "82%",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "1.2%",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "55%",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Word of the Year",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "+65%",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Prefer Audio Experience?",
+          "conflict": "reading-chrome",
+          "disclosure": "public"
+        }
+      ],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "legacy-sparkit-ai-automation-cloud": {
+      "sourceFingerprint": "0aaa18f67945dae7d6c7bf2e825d010412ba24d6c0c1dd90e9e7dc602f0dafb4",
+      "sections": [
+        {
+          "id": "legacy-sparkit-ai-automation-cloud:section-001",
+          "heading": "AI, Automation & Cloud"
+        },
+        {
+          "id": "legacy-sparkit-ai-automation-cloud:section-002",
+          "heading": "**Spark.It **✨"
+        },
+        {
+          "id": "legacy-sparkit-ai-automation-cloud:section-003",
+          "heading": "Highlights"
+        },
+        {
+          "id": "legacy-sparkit-ai-automation-cloud:section-004",
+          "heading": "MVP (Before)"
+        },
+        {
+          "id": "legacy-sparkit-ai-automation-cloud:section-005",
+          "heading": "MVP (After)"
+        },
+        {
+          "id": "legacy-sparkit-ai-automation-cloud:section-006",
+          "heading": "Waitlist Page"
+        }
+      ],
+      "exceptions": [
+        {
+          "textIncludes": "Prefer Audio Experience?",
+          "conflict": "reading-chrome",
+          "disclosure": "public"
+        }
+      ],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "legacy-b2b-b2c-growth-uhttention": {
+      "sourceFingerprint": "775a8c9541e9360eef6db701361044581917aa60268561df04bdc08b3f1696d0",
+      "sections": [
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-001",
+          "heading": "B2C & B2B Growth"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-002",
+          "heading": "Highlights 🏆"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-003",
+          "heading": "SunnySideKick Solar"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-004",
+          "heading": "ProHouse"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-005",
+          "heading": "Wava AI"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-006",
+          "heading": "Women Capital Club"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-007",
+          "heading": "NFTYEA"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-008",
+          "heading": "PeakRankings"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-009",
+          "heading": "Crow"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-010",
+          "heading": "FacelessFlow"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-011",
+          "heading": "AlfaTracker"
+        },
+        {
+          "id": "legacy-b2b-b2c-growth-uhttention:section-012",
+          "heading": "YouTubePreneur"
+        }
+      ],
+      "exceptions": [
+        {
+          "textIncludes": "900%",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "seven-figure",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Prefer Audio Experience?",
+          "conflict": "reading-chrome",
+          "disclosure": "public"
+        }
+      ],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "legacy-weird-fun-impact": {
+      "sourceFingerprint": "55e1a5c3dc483aacf21d8c32eb3c89fca89919adad946b1fa0ac512564760416",
+      "sections": [
+        {
+          "id": "legacy-weird-fun-impact:section-001",
+          "heading": "Weird, Fun & Impact"
+        },
+        {
+          "id": "legacy-weird-fun-impact:section-002",
+          "heading": "Highlights 🏆"
+        },
+        {
+          "id": "legacy-weird-fun-impact:section-003",
+          "heading": "Mars Madness (2025)"
+        },
+        {
+          "id": "legacy-weird-fun-impact:section-004",
+          "heading": "Ame (2021)"
+        },
+        {
+          "id": "legacy-weird-fun-impact:section-005",
+          "heading": "Online Registration Tool (2019)"
+        },
+        {
+          "id": "legacy-weird-fun-impact:section-006",
+          "heading": "Oakfolio (2021)"
+        },
+        {
+          "id": "legacy-weird-fun-impact:section-007",
+          "heading": "COVID Dashboard (2020)"
+        },
+        {
+          "id": "legacy-weird-fun-impact:section-008",
+          "heading": "Linkfo (2023)"
+        },
+        {
+          "id": "legacy-weird-fun-impact:section-009",
+          "heading": "Educational Projects (2010-2013)"
+        }
+      ],
+      "exceptions": [
+        {
+          "textIncludes": "700+",
+          "conflict": "legacy-unverified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Prefer Audio Experience?",
+          "conflict": "reading-chrome",
+          "disclosure": "public"
+        }
+      ],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "legacy-research-to-redesign": {
+      "sourceFingerprint": "6ee0e45a7f1e9d04b626b0e252e9fb9ebbc8ad703db55f36faec0762a4c27876",
+      "sections": [
+        {
+          "id": "legacy-research-to-redesign:section-001",
+          "heading": "Research to Redesign"
+        },
+        {
+          "id": "legacy-research-to-redesign:section-002",
+          "heading": "Highlights 🏆"
+        },
+        {
+          "id": "legacy-research-to-redesign:section-003",
+          "heading": "mmlink (telecom)"
+        },
+        {
+          "id": "legacy-research-to-redesign:section-004",
+          "heading": "foodieOak (food ordering)"
+        },
+        {
+          "id": "legacy-research-to-redesign:section-005",
+          "heading": "queens (beauty community)"
+        },
+        {
+          "id": "legacy-research-to-redesign:section-006",
+          "heading": "Certificates 🔰"
+        }
+      ],
+      "exceptions": [
+        {
+          "textIncludes": "Prefer Audio Experience?",
+          "conflict": "reading-chrome",
+          "disclosure": "public"
+        }
+      ],
+      "publicQualifiers": [],
+      "publicCollaborators": []
+    },
+    "legacy:agentic-brain": {
+      "sourceFingerprint": "7c3fd25b0e5140176a9146cc69c81ef19d9b1a214fd18ec1879b3a860e938376",
+      "sections": [
+        {
+          "id": "legacy:agentic-brain:section-001",
+          "heading": "How a Small ML Project Accidentally Helped Me Solve AI's Biggest Problems: Memory & Hallucination"
+        },
+        {
+          "id": "legacy:agentic-brain:section-002",
+          "heading": "The origin story"
+        },
+        {
+          "id": "legacy:agentic-brain:section-003",
+          "heading": "SOKK: the job search project"
+        },
+        {
+          "id": "legacy:agentic-brain:section-004",
+          "heading": "The dual-gate architecture"
+        },
+        {
+          "id": "legacy:agentic-brain:section-005",
+          "heading": "Why the cost trade-off works"
+        },
+        {
+          "id": "legacy:agentic-brain:section-006",
+          "heading": "The revelation"
+        },
+        {
+          "id": "legacy:agentic-brain:section-007",
+          "heading": "UOCE: my context engine"
+        },
+        {
+          "id": "legacy:agentic-brain:section-008",
+          "heading": "The memory solution"
+        },
+        {
+          "id": "legacy:agentic-brain:section-009",
+          "heading": "Automation with hooks"
+        },
+        {
+          "id": "legacy:agentic-brain:section-010",
+          "heading": "Recommendations"
+        },
+        {
+          "id": "legacy:agentic-brain:section-011",
+          "heading": "What I'd do differently"
+        },
+        {
+          "id": "legacy:agentic-brain:section-012",
+          "heading": "Metrics and research"
+        },
+        {
+          "id": "legacy:agentic-brain:section-013",
+          "heading": "Broader application"
+        },
+        {
+          "id": "legacy:agentic-brain:section-014",
+          "heading": "Tech stack"
+        },
+        {
+          "id": "legacy:agentic-brain:section-015",
+          "heading": "Highlights"
+        },
+        {
+          "id": "legacy:agentic-brain:section-016",
+          "heading": "Step 1: 📋 Import Job"
+        },
+        {
+          "id": "legacy:agentic-brain:section-017",
+          "heading": "Step 2: 🎯 Job Analysis"
+        },
+        {
+          "id": "legacy:agentic-brain:section-018",
+          "heading": "Step 3: 📄 Resume Tailoring"
+        },
+        {
+          "id": "legacy:agentic-brain:section-019",
+          "heading": "Step 4: 💬 Outreach"
+        },
+        {
+          "id": "legacy:agentic-brain:section-020",
+          "heading": "Profile Page"
+        }
+      ],
+      "exceptions": [
+        {
+          "sectionId": "legacy:agentic-brain:section-012",
+          "conflict": "agentic-unverified-metrics-and-research",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "24%",
+          "conflict": "agentic-unverified-quantified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "67-95%",
+          "conflict": "agentic-unverified-quantified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "$640 billion",
+          "conflict": "agentic-unverified-quantified-claim",
+          "disclosure": "public"
+        },
+        {
+          "textIncludes": "Prefer Audio Experience?",
+          "conflict": "reading-chrome",
+          "disclosure": "public"
+        }
+      ],
+      "publicQualifiers": [
+        "The January 30, 2026 article is Steve Oak (Okkar Kyaw)’s first-person account of SOKK and UOCE; its figures are reported by the article itself."
+      ],
+      "publicCollaborators": []
+    },
+    "credential:mobile-ui-1": {
+      "sourceFingerprint": "c0c817418d1603bb076cfea82128103c4355dca2638aa745668ae04659c1cbbc",
+      "exceptions": [],
+      "publicQualifiers": [
+        "The certificate uses Oak Kar, another name used by Steve Oak (Okkar Kyaw).",
+        "Certificate page identifies Michal Malewicz as Course Instructor and says the final exercise was reviewed, tested, and approved."
+      ],
+      "publicCollaborators": [],
+      "sections": []
+    },
+    "credential:hifi-ui-2": {
+      "sourceFingerprint": "5d36ef5d0a6df5a8099221efadce9ee7db801fa1d80598cc93c063dc20f0da28",
+      "exceptions": [],
+      "publicQualifiers": [
+        "The certificate uses Oak Kar, another name used by Steve Oak (Okkar Kyaw).",
+        "Certificate page identifies Michal Malewicz as Course Instructor and says the final exercise was reviewed, tested, and approved."
+      ],
+      "publicCollaborators": [],
+      "sections": []
+    },
+    "credential:google-ux": {
+      "sourceFingerprint": "c661d32409b3e2aab796ea1c9e43d5d49f60ba8967807b5189fd24d720f0ffe1",
+      "exceptions": [],
+      "publicQualifiers": [],
+      "publicCollaborators": [],
+      "sections": []
+    }
+  },
+  "retrievalExclusions": {
+    "schema": "oak.knowledge-retrieval-exclusions.v1",
+    "authority": "Conservative T01 retrieval boundary only. This is not a claim of remote-content ownership or a grant to import linked material.",
+    "fingerprintAlgorithm": "sha256(JSON.stringify(sorted [[id, sourceFingerprint], ...]))",
+    "cohorts": [
+      {
+        "id": "source-linked-public-resources",
+        "state": "excluded",
+        "scope": "retrieval-only",
+        "reason": "Linked URLs remain authored context. Remote body and claim scope have not been reviewed for retrieval.",
+        "selector": {
+          "kind": "resource",
+          "reason": "Source-linked public resource. Remote body and claim scope require separate review."
+        },
+        "memberCount": 62,
+        "memberSetFingerprint": "ff6bb5ed813beb49f9f1a7e748c17c832397e3d4d82e79a6ef1939ebbaaa8258",
+        "members": [
+          {
+            "id": "linked-resource:06c5bce708810e3f",
+            "sourceFingerprint": "ff72b13250758f2bbf52019d807eb8bbec06c8d2efab8f6a30327610eb86b55e"
+          },
+          {
+            "id": "linked-resource:0871766731173082",
+            "sourceFingerprint": "bd6861c7ea038c9c6b3cfcaebb7d79b41a0739347d6e76b460f125eb1126841a"
+          },
+          {
+            "id": "linked-resource:09a8d39b88333e63",
+            "sourceFingerprint": "39f5798f3dbfad02dfb02964ec877466634c6fbd3cc51ae7e70226146748a086"
+          },
+          {
+            "id": "linked-resource:0a7cd803774a02e5",
+            "sourceFingerprint": "d1a0227e33cf4a15f478b3f49f73dcfcbd835104b56820314ae8eb19a841f51b"
+          },
+          {
+            "id": "linked-resource:0abf55dc3a28f4ff",
+            "sourceFingerprint": "dbd5c0d8b2c64a44bf60e72cbb28bd8cf16c06e3c61f5140e624231848ad4e60"
+          },
+          {
+            "id": "linked-resource:0d676da8cd04816c",
+            "sourceFingerprint": "32fe8355a39be4c9aa8632cbba7ef8c498310539d6482a14e28f4d357dd8ef08"
+          },
+          {
+            "id": "linked-resource:126b458f433ab623",
+            "sourceFingerprint": "3601a4e08845567736447258fea67906647661a13e1c0fb1ad73a62432fbe76f"
+          },
+          {
+            "id": "linked-resource:13b163371aa46c24",
+            "sourceFingerprint": "fffbbd8a24ea2055e97d1081c3099774ab4adb00b50b552474d91add7c7ef5a2"
+          },
+          {
+            "id": "linked-resource:1542faed5afc82db",
+            "sourceFingerprint": "9a8ef3627c2014a2051e8e964c77ba4f980c0e3e792db5a862419bf0e9911c53"
+          },
+          {
+            "id": "linked-resource:1d3d969be1449001",
+            "sourceFingerprint": "01799c4ef87525ea13c633881856f54af9f35f2a32c63dd72b18715f744b2a74"
+          },
+          {
+            "id": "linked-resource:1e576792930010b2",
+            "sourceFingerprint": "f95bfa1230c9f27e0938852fd165e209430c358339ce56a89480d97b72fea1de"
+          },
+          {
+            "id": "linked-resource:1f0ffe05cbb025cc",
+            "sourceFingerprint": "27f0fa08dbbc7186dcf935118370578f9710f2d18ac34e9eb92fca386052d07a"
+          },
+          {
+            "id": "linked-resource:2277d52f352f5a3a",
+            "sourceFingerprint": "63e91f1d1e40f72fd64aeeb1dafbd1f10cf88e0a93ddaf4ab0b10777912fcdf3"
+          },
+          {
+            "id": "linked-resource:22ed02a688820d3f",
+            "sourceFingerprint": "45fb28c6c5d3946bf04b4431b6b7bef37fd0367f39c9d4872b18ae3fe6338a31"
+          },
+          {
+            "id": "linked-resource:2bd18f4a8aadbe32",
+            "sourceFingerprint": "dd5526a5da7d2617d8cbd06bd101e73f73972a17a9c9cc2cbb6e5ddc458e7bb4"
+          },
+          {
+            "id": "linked-resource:34cd330923061f45",
+            "sourceFingerprint": "9065808bcab3651e3b0f0852e63e102ffcda74e716ed307d27343d45fa1cc67d"
+          },
+          {
+            "id": "linked-resource:3865bb6045f9ddf2",
+            "sourceFingerprint": "6feeb3faa98fb542deec42005885116546444920a5efa23d5c86f29715657f1d"
+          },
+          {
+            "id": "linked-resource:3946df25f029bc6f",
+            "sourceFingerprint": "6916cd5ce94f6e01817d6df9da1e2c042faa00d9f0c404aaa2bea68f9940162b"
+          },
+          {
+            "id": "linked-resource:3a7e9a128f6482ce",
+            "sourceFingerprint": "7210bc7ab534d75216bb926ec27507a768e7a444152f6203650fcd149d5e622c"
+          },
+          {
+            "id": "linked-resource:42264b8510994e79",
+            "sourceFingerprint": "660756e27f9a04154f596a48f22e5b93e930a43d367f29dc6f68298a75afd3de"
+          },
+          {
+            "id": "linked-resource:447d92e2259b6f36",
+            "sourceFingerprint": "0802d3cf9501327e2012354803ea49d441d87ff72c713ccf01a369302b4b98ee"
+          },
+          {
+            "id": "linked-resource:455005f14f8c6bbe",
+            "sourceFingerprint": "0d30234f509afe8186bbd7453300c562d6414fff38a5cc0ebae2034fa6110228"
+          },
+          {
+            "id": "linked-resource:47cf937ae3cc18d5",
+            "sourceFingerprint": "86e3ae768f6b296809311375d656e079dbbbf551bb70652c83e9019f75fa587c"
+          },
+          {
+            "id": "linked-resource:4e5aa1519d0487ff",
+            "sourceFingerprint": "d9d5a6a5a9eaf5cdf74b20403f7058e75117518670d0296bad176e81551be991"
+          },
+          {
+            "id": "linked-resource:53b0f48bada41177",
+            "sourceFingerprint": "af4d5f1d0e61b9f91e2c73f512d6855644d45938ba97328fa92821f708663565"
+          },
+          {
+            "id": "linked-resource:5424a130cbe20a5c",
+            "sourceFingerprint": "4484ad0f225af8ce2a78a99d76c4057125d3798998c39ab6c9516b73a57ef619"
+          },
+          {
+            "id": "linked-resource:5b2cde247c42322e",
+            "sourceFingerprint": "f60e71b616acdd880c4a5e541c022fc921c44d4c16a0a65ce27e6dbf1bd29c34"
+          },
+          {
+            "id": "linked-resource:61dd1f060ffb6e7a",
+            "sourceFingerprint": "0efcc147f3ec08a91b24ba93acc353bca766f3f3713efb9d1a618c715d2b60e7"
+          },
+          {
+            "id": "linked-resource:63f71f50bac313eb",
+            "sourceFingerprint": "b5a27c5319cc36343d16590bff82173ae6bc9d61935c33a81d2bc897f044bdc2"
+          },
+          {
+            "id": "linked-resource:67057349d6f3e748",
+            "sourceFingerprint": "f79e8fccc7dbb57955d705d95e0e277114ce4868f97014f22c5bcdd6f04267e5"
+          },
+          {
+            "id": "linked-resource:67a8f995946e6d59",
+            "sourceFingerprint": "3c9e823a1dbeb8f0afd76d53950cc3d0e328775aac3dea489b2a5808f62966b6"
+          },
+          {
+            "id": "linked-resource:6a72bf5f4e5ac6d8",
+            "sourceFingerprint": "19833b22360bd13983d8528a7efccf89eafbcd45e2b680175043034bf1eac9b0"
+          },
+          {
+            "id": "linked-resource:6af0fec4a5b846d5",
+            "sourceFingerprint": "3698c9d664935d90955ea4f404d416aa0638cd1df168746bc66ad79dcdfaffd7"
+          },
+          {
+            "id": "linked-resource:6c790a16de0afd2b",
+            "sourceFingerprint": "473b2d3bd622ab0b0543daeda527c0bc0bc5b00f436384e5f21ade6fbf937714"
+          },
+          {
+            "id": "linked-resource:6db7a0e61936cfa8",
+            "sourceFingerprint": "79962d45483a4358fe71726d72ab4b72046beed320b66682969cfd55649bde23"
+          },
+          {
+            "id": "linked-resource:6e6f293d07aa413e",
+            "sourceFingerprint": "65d32616e8d885ca3785e7661b2a3cdd776f8237041c79e7f7903d24707899b5"
+          },
+          {
+            "id": "linked-resource:73b836bfc2f5b8a6",
+            "sourceFingerprint": "7bbbcc11a4a0fdc9b03fe4a48c1c6061f50be4fa135c2514729a4c342e2123c3"
+          },
+          {
+            "id": "linked-resource:7bddc74969c80ef5",
+            "sourceFingerprint": "d16e02de60e56de5cd2a345553a102d263fa6b2a6c609941a36639a48f94ee9b"
+          },
+          {
+            "id": "linked-resource:7ca1b76aeeaa9a88",
+            "sourceFingerprint": "99d6b4f16a6770ed9016c4647bb179a22f1ba600b90c11db9d81c912e170a576"
+          },
+          {
+            "id": "linked-resource:7d8ba6da84d33b15",
+            "sourceFingerprint": "a7466bf8813d30433aea448c0f70527889c20e0be1679a7f0f75dec2b5129bd8"
+          },
+          {
+            "id": "linked-resource:7f7a70a676497580",
+            "sourceFingerprint": "a4e41349375701f2c528704a76d851cf726f594a9a61720c0781bcacabfc2e48"
+          },
+          {
+            "id": "linked-resource:8181f9ccf41af9f0",
+            "sourceFingerprint": "73761dc32f0b6aef75ec0174ac4c5c939c5edbe487e65a4f6be843c5ad48af29"
+          },
+          {
+            "id": "linked-resource:8c8c30858995143b",
+            "sourceFingerprint": "6a50c678180c1dffbefc7febe675fc06fbabe1c89fe34746903334cbf8f98523"
+          },
+          {
+            "id": "linked-resource:99e58642fe77e6e1",
+            "sourceFingerprint": "2dac4f294e3b3d7dabc3de3a8c2869d4e04ec7b89e74a9bc8b17ca7f3db9b5d8"
+          },
+          {
+            "id": "linked-resource:a5e43b1572bfaf36",
+            "sourceFingerprint": "4f66aceab7b367084fbf0a52c44e10f47ef41805448e38b24b3e252869edcfdd"
+          },
+          {
+            "id": "linked-resource:b4bed4a15af5c6fa",
+            "sourceFingerprint": "4db4591767e293b422d0fde7131b4a9b439dd8d116509311ca4a532108c0fedf"
+          },
+          {
+            "id": "linked-resource:bfba4cd5131daa71",
+            "sourceFingerprint": "d8b2fe96dd5fd7239fe956e87c9d5e2e68a6fd00b00b1dc4c18b020e84554974"
+          },
+          {
+            "id": "linked-resource:ca94858c34234475",
+            "sourceFingerprint": "a0bdc0b2e1db3fca1154edb0eacb26e015e0f86247e103b72bc4a2f9821d47a3"
+          },
+          {
+            "id": "linked-resource:cb945e2e57a9756d",
+            "sourceFingerprint": "d39dcb75767046be4e3133caee39d768293bc2396aef9fff3685a53b2043aa4b"
+          },
+          {
+            "id": "linked-resource:ccc312444a108435",
+            "sourceFingerprint": "a33c8f8e83677ef3aab3014f03d437a0877e34404b7463a83419ae484d3710d1"
+          },
+          {
+            "id": "linked-resource:cd6e174750c91648",
+            "sourceFingerprint": "caae91814e2d4835cc34073ba8e59f86d4087d15ad800567464865954c10bf66"
+          },
+          {
+            "id": "linked-resource:cd70599b665ca9ba",
+            "sourceFingerprint": "e74cc699dd2dd388966761a1ba530d730958813b7d3cdd874e9f46c9dcb6a359"
+          },
+          {
+            "id": "linked-resource:dad22c08457358af",
+            "sourceFingerprint": "d6276eea6768a6ac464099f688bd72bc1c03217fa48485eb0a356c6d6fef1f7d"
+          },
+          {
+            "id": "linked-resource:e2600ab14038ffd9",
+            "sourceFingerprint": "7504ed2458925b54fa1e4de36da2214ef5243e50ac91b3fb523c42eabc6fa8e8"
+          },
+          {
+            "id": "linked-resource:e287a91854dd0d84",
+            "sourceFingerprint": "e661d511a54be87594187ed9a945d98c780143c44dc5441ad792a3045a07765b"
+          },
+          {
+            "id": "linked-resource:e43bede4e6e6601f",
+            "sourceFingerprint": "597b7c30bd765fa530d91532f94cc96adf4426c182068142154dd15a048caf6d"
+          },
+          {
+            "id": "linked-resource:eff32c0dd6cc2eef",
+            "sourceFingerprint": "7004adcc6b6cf4917faeb066db700e95d7ff9d861b5ec41e4856d5cb4654b2f7"
+          },
+          {
+            "id": "linked-resource:f0a7f6b9fded32e4",
+            "sourceFingerprint": "83ec9d69586b5b24c597d56ca49709becbc67b4cd303c418a6fdf9d5c13eb5f0"
+          },
+          {
+            "id": "linked-resource:f1eb5d9617a89372",
+            "sourceFingerprint": "9d42f4487adb931aa9cfcb034db1a005c99b95376c86ae0e9b6e028a7f7375e1"
+          },
+          {
+            "id": "linked-resource:f226959a357fcf27",
+            "sourceFingerprint": "1da3e71560810a999d24c4a253f77b8652f576f763dac58cb0fe8a390af82a5f"
+          },
+          {
+            "id": "linked-resource:f5702b6fdf2cd3df",
+            "sourceFingerprint": "c879e0cb1bcf75f56b05779ee568c849fa8299edb86d4135f1f47d3ded81f8d0"
+          },
+          {
+            "id": "linked-resource:ff5c240da6fdafc5",
+            "sourceFingerprint": "30b4515b7d069e108e0342e76a70f8436f615e4c9c238719ca592f759b0b66e2"
+          }
+        ]
+      },
+      {
+        "id": "explicit-linked-artifacts",
+        "state": "excluded",
+        "scope": "retrieval-only",
+        "reason": "Linked artifact URLs remain intact. Remote body and current state have not been reviewed for retrieval.",
+        "selector": {
+          "kind": "resource",
+          "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state."
+        },
+        "memberCount": 9,
+        "memberSetFingerprint": "d9b75284c4b225f1744a3e51a307ff749ff6d4855e6469ddad73d33c480263f1",
+        "members": [
+          {
+            "id": "linked-resource:5142090b294807f3",
+            "sourceFingerprint": "60562e4156ed0d27dcb79fa32afd74afc9c6b8eb17030180d9014beb0ba7a4ef"
+          },
+          {
+            "id": "linked-resource:7aff9c894a8888e1",
+            "sourceFingerprint": "d97d83d1bfee95293b75a0c7899971fd779b453c17f9e149805138c6efd3e645"
+          },
+          {
+            "id": "linked-resource:95e7f1710b5743c3",
+            "sourceFingerprint": "21f63711fc7b5b2f3f40fe2028f7328f0828ff570c429b73cc4db58290bc816e"
+          },
+          {
+            "id": "linked-resource:a21bc531a63afa21",
+            "sourceFingerprint": "54e985f8f5a308b8b73313c088573e3570e8fc7067bd1c88198fcbff79d28474"
+          },
+          {
+            "id": "linked-resource:b440b051e9b1d47d",
+            "sourceFingerprint": "c01f1377047cfe5b0c68d5cdf40fa84ba8ea1dbb8aef4265a53eaaed5eea3cf9"
+          },
+          {
+            "id": "linked-resource:bc8923f1059b7d21",
+            "sourceFingerprint": "ae1122854e7b7c60f661ca8cc6392d316f4ef457a5bc9a8b9fb0c04175b8aff6"
+          },
+          {
+            "id": "linked-resource:c816aa7251acba64",
+            "sourceFingerprint": "8f2a009a7202f3ff2b548cfa8a5da79aa691fbaf0f8b71af3310aa2962428ac1"
+          },
+          {
+            "id": "linked-resource:cf62901d12abd3a8",
+            "sourceFingerprint": "d3af8e8aca6106d89f3ee817a28829ffd8f439514655f87711ed065cfe6c4b3b"
+          },
+          {
+            "id": "linked-resource:e287653cfa00a046",
+            "sourceFingerprint": "91b6be0315c1701c44d82522f02656b8d4c85d89306a18b0a16b243df6b88808"
+          }
+        ]
+      },
+      {
+        "id": "whole-account-external-profiles",
+        "state": "excluded",
+        "scope": "retrieval-only",
+        "reason": "Whole-account intake is not authorized. Existing public account links remain intact.",
+        "selector": {
+          "kind": "external-profile",
+          "reason": "Account link only. Whole account content intake is not authorized."
+        },
+        "memberCount": 5,
+        "memberSetFingerprint": "b0b9d9939fdf7d5b273414ba707f5842baae5a5d40b4aa7e9fbc1c5cc78d38ed",
+        "members": [
+          {
+            "id": "external-profile:16474adb3c04b537",
+            "sourceFingerprint": "4773112c9fae67645d85224f0bafcebc7e456df3b4bb2bf6a879c663e7253cc3"
+          },
+          {
+            "id": "external-profile:32595f4e7a23606a",
+            "sourceFingerprint": "ff4cab158da4fb0f971e37a6352bcb26757880fee57388697df95718024ec7bf"
+          },
+          {
+            "id": "external-profile:58530f2580a6d63f",
+            "sourceFingerprint": "f9d60d25083919ca021c4b8d7e012825cc40fa9d1bb87dc077490c992ea0b6e3"
+          },
+          {
+            "id": "external-profile:d3882238c1e28776",
+            "sourceFingerprint": "61a30ee0e61f9c9c96435a6045fd26e4e6573c9f4f590536547d775319142ab0"
+          },
+          {
+            "id": "external-profile:de228bc890f4ba8c",
+            "sourceFingerprint": "93c74bbb023b65c1fb1e36faefa944f2702247b8ca6b673c0eda4e1f0e9799bd"
+          }
+        ]
+      },
+      {
+        "id": "linkedin-aggregate-snapshot",
+        "state": "excluded",
+        "scope": "retrieval-only",
+        "reason": "The aggregate snapshot is incomplete and unreviewed. Selected owner statements require a separate exact intake.",
+        "selector": {
+          "ids": [
+            "external-profile:linkedin"
+          ]
+        },
+        "memberCount": 1,
+        "memberSetFingerprint": "3ebd899dadc73914a724a6f71d63a3c4cb6239dcb3aaeca57450d958fe44730b",
+        "members": [
+          {
+            "id": "external-profile:linkedin",
+            "sourceFingerprint": "f6719f3ddff434323a7484b26a559772643ad9916ed457e371b637521a750ba6"
+          }
+        ]
+      }
+    ]
+  },
+  "conflicts": [
+    {
+      "id": "global-edtech-revenue",
+      "state": "excluded",
+      "reason": "Current timeline organization revenue differs from retrieved LinkedIn amount. Neither number is selected."
+    },
+    {
+      "id": "uhttention-growth-attribution",
+      "state": "excluded",
+      "reason": "Legacy article company growth and timeline client-product growth use the same 900% number with different attribution. Numeric claim excluded."
+    }
+  ],
+  "missingContent": [
+    "No dedicated public resume or structured credential collection exists in the public source tree.",
+    "LinkedIn selected profile/story/experience/education body and issuer identity approval remain pending.",
+    "Agentic Brain and OmniSocial full case-study bodies remain intentionally unfinished.",
+    "External docs/videos/repositories are source-linked candidates. Their links are covered; unreviewed remote bodies are not article evidence.",
+    "Client-only visual numeric data is not recovered from serialized component props. Use semantic captions/tables or later approved projection."
+  ],
+  "externalCandidatesPath": "knowledge/external-candidates.json",
+  "initialT02Review": {
+    "basis": "Approved T02 initial locally reviewed revision under accepted Q44 historical intake.",
+    "changes": [
+      "EcoSmartLoop clarifies its existing team-built prototype qualifier in Human prose, descriptions, schema and Machine summary. Dates, named collaborators and product-side/classifier ownership remain unchanged.",
+      "Profile source adapter now binds generated public resources to the immutable reviewed revision. No biography fact changes."
+    ],
+    "priorSourceFingerprints": {
+      "work:ecosmartloop": "b75da32ce03e29436205c9e24326dd07f6674ab8c50671e1553d8e68a47f0d59",
+      "profile:steve-oak": "6dd380f2d85e7d0d2caed633046d34e4f0498f486e2a7d0b777fe356eeea0a66"
+    }
+  }
+}

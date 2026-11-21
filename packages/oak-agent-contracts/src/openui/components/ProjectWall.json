@@ -1,0 +1,31 @@
+{
+  "name": "ProjectWall",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": {
+    "line": "From Steve's projects:"
+  },
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": "views/project-wall.ts",
+  "plan": {
+    "in": {
+      "overview": 1
+    },
+    "count": "projects",
+    "replaces": [
+      "Project"
+    ]
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "text": "[project tiles: cover, title, status and year, all from the cited case study pages; visitor filter and sort chips]",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

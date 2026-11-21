@@ -1,0 +1,110 @@
+[
+ {
+  "id": "answer-openui-quote",
+  "question": "How does Steve approach evals?",
+  "program": "root = Answer([q])\nq = Quote([\"claim-1\", \"claim-2\"])",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Steve checks every agent run against evals so a run ends as something he can learn from.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "He sets the checks up before the agents run, so each result is comparable.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-quote-quotes",
+  "question": "What has Steve written about agents?",
+  "program": "root = Answer([q])\nq = Quote([\"claim-1\", \"claim-2\"], \"quotes\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Steve checks every agent run against evals so a run ends as something he can learn from.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "He sets the checks up before the agents run, so each result is comparable.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-quote-bridge",
+  "question": "How does Steve approach evals?",
+  "program": "root = Answer([q])\nq = Quote([\"claim-1\", \"claim-2\"], \"bridge\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Steve checks every agent run against evals so a run ends as something he can learn from.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "He sets the checks up before the agents run, so each result is comparable.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

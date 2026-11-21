@@ -1,0 +1,26 @@
+{
+ "table-matrix-2": {
+  "iconOnly": true,
+  "reason": "33: Table fixture, matrix-2: the rows and their caption carry it, with no pose of its own."
+ },
+ "table-matrix-4": {
+  "iconOnly": true,
+  "reason": "33: Table fixture, matrix-4: the rows and their caption carry it, with no pose of its own."
+ },
+ "table-sctable": {
+  "iconOnly": true,
+  "reason": "33: Table fixture, sctable: the rows and their caption carry it, with no pose of its own."
+ },
+ "table-smap": {
+  "iconOnly": true,
+  "reason": "33: Table fixture, smap: the rows and their caption carry it, with no pose of its own."
+ },
+ "table-streaming": {
+  "iconOnly": true,
+  "reason": "33: Table fixture, streaming: the ghost rows carry it, with no pose of its own."
+ },
+ "table-off": {
+  "iconOnly": true,
+  "reason": "33: Table fixture, off: the plain Points list carries it, with no pose of its own."
+ }
+}

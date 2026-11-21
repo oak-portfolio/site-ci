@@ -1,0 +1,21 @@
+{
+ "empty": {
+  "asset": "greeting-loop"
+ },
+ "empty-recruiter": {
+  "iconOnly": true,
+  "reason": "Q08: the same welcome as empty, whose greeting-loop it shows; only the starters change with the audience."
+ },
+ "empty-collaborator": {
+  "iconOnly": true,
+  "reason": "Q08: the same welcome as empty, whose greeting-loop it shows; only the starters change with the audience."
+ },
+ "empty-learner": {
+  "iconOnly": true,
+  "reason": "Q08: the same welcome as empty, whose greeting-loop it shows; only the starters change with the audience."
+ },
+ "empty-recruiter-initials": {
+  "iconOnly": true,
+  "reason": "R12: the same welcome as empty, whose greeting-loop it shows; only the visitor's avatar falls back to initials."
+ }
+}

@@ -1,0 +1,77 @@
+/* Ticket 19: the Show me as capsule, Undo and switch under an arranged answer. Nothing animates, so a reorder never moves on its own. */
+.oak-show-me-as__bar,
+.oak-show-me-as__switch {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  margin-top: var(--space-sm);
+}
+
+.oak-show-me-as__capsule,
+.oak-show-me-as__undo {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-micro);
+  min-height: 32px;
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: var(--text-ui-sm);
+  cursor: pointer;
+}
+
+.oak-show-me-as__label {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-show-me-as__switch .ui-radio-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-micro);
+  padding: var(--space-micro);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-pill);
+}
+
+.oak-show-me-as__switch .ui-radio-segment {
+  display: inline-flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 0 var(--space-sm);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: var(--text-ui-sm);
+  cursor: pointer;
+}
+
+.oak-show-me-as__switch .ui-radio-segment[data-checked] {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+}
+
+.oak-show-me-as__capsule:hover,
+.oak-show-me-as__undo:hover,
+.oak-show-me-as__switch .ui-radio-segment:hover {
+  color: var(--text);
+}
+
+.oak-show-me-as__capsule:focus-visible,
+.oak-show-me-as__undo:focus-visible,
+.oak-show-me-as__switch .ui-radio-segment:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+@media (forced-colors: active) {
+  .oak-show-me-as__switch .ui-radio-segment[data-checked] {
+    outline: 2px solid CanvasText;
+  }
+}

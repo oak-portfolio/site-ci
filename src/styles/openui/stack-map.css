@@ -1,0 +1,296 @@
+/* Ticket 32: StackMap. Tools: an even grid of raised tiles (mark, name, "used in N" with one pip per cited page), each a
+ * disclosure that lists and links the pages using it. Venn: OakFigure is the band; three flat zones split by hairlines,
+ * only A, both, only B; the zones stack under 520px. Meaning is in the words (zone titles, counts), never hue alone. */
+.oak-stack-map {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.oak-stack-map__tools {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(13rem, 1fr));
+  align-items: stretch;
+  gap: var(--oak-pad-block);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-stack-map__tool {
+  --tile-py: calc(var(--space-xs) + var(--space-micro));
+  --tile-px: var(--space-sm);
+  min-width: 0;
+  padding: var(--tile-py) var(--tile-px);
+  border-radius: var(--oak-r-row);
+  background: var(--oak-raised);
+  box-shadow: inset 0 0 0 1px var(--line-soft);
+}
+
+/* The trigger spans the whole tile (negative margins over the tile's padding), so every pixel of the tile opens it. */
+.oak-stack-map__trigger {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-sm);
+  width: calc(100% + 2 * var(--tile-px));
+  min-height: 4rem;
+  margin: calc(-1 * var(--tile-py)) calc(-1 * var(--tile-px));
+  padding: var(--tile-py) var(--tile-px);
+  border: 0;
+  border-radius: inherit;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  text-align: start;
+  cursor: pointer;
+}
+
+.oak-stack-map__trigger:hover {
+  background: color-mix(in srgb, var(--text) 5%, transparent);
+}
+
+/* An open tile holds the hover tone across the whole tile, so the open one reads as selected. */
+.oak-stack-map__tool:has(.oak-stack-map__trigger[data-panel-open]) {
+  background: color-mix(in srgb, var(--text) 5%, var(--oak-raised));
+}
+
+.oak-stack-map__trigger:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+.oak-stack-map__mark {
+  display: grid;
+  place-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: var(--oak-r-row);
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  color: var(--muted);
+}
+
+.oak-stack-map__mark img {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.oak-stack-map__label {
+  display: grid;
+  min-width: 0;
+}
+
+.oak-stack-map__name {
+  overflow-wrap: anywhere;
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-stack-map__count {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-variant-numeric: tabular-nums;
+  line-height: var(--leading-ui);
+}
+
+.oak-stack-map__pips {
+  display: inline-flex;
+  gap: var(--space-micro);
+}
+
+.oak-stack-map__pips > span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px var(--line-soft);
+}
+
+.oak-stack-map__pips > span[data-on] {
+  background: var(--muted);
+  box-shadow: none;
+}
+
+.oak-stack-map__tool[data-shared] .oak-stack-map__pips > span[data-on] {
+  background: var(--text);
+}
+
+.oak-stack-map__chevron {
+  color: var(--muted);
+  transition: transform 160ms ease;
+}
+
+.oak-stack-map__trigger[data-panel-open] .oak-stack-map__chevron {
+  transform: rotate(180deg);
+}
+
+/* Wide tiles stack the mark above the name, with the chevron pinned top right. */
+@container oak-openui (min-width: 520px) {
+  .oak-stack-map__tool {
+    --tile-py: calc(var(--space-sm) + var(--space-micro));
+    --tile-px: calc(var(--space-sm) + var(--space-micro));
+  }
+
+  .oak-stack-map__trigger {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas: "mark chevron" "label label";
+    align-items: start;
+    gap: var(--space-xs);
+  }
+
+  .oak-stack-map__mark { grid-area: mark; }
+  .oak-stack-map__label { grid-area: label; }
+  .oak-stack-map__chevron { grid-area: chevron; }
+  .oak-stack-map__tool .oak-stack-map__records { padding-inline-start: 0; }
+}
+
+/* The padding sits on the list: a closed hidden-until-found panel keeps its own box, so padding there would pad every tile.
+ * The top padding clears the trigger's bottom padding, which the trigger's negative margin lets the panel overlap. */
+.oak-stack-map__records {
+  display: grid;
+  gap: var(--space-micro);
+  margin: 0;
+  padding: var(--tile-py) 0 0 calc(var(--space-sm) + 2rem);
+  list-style: none;
+  font-size: var(--text-ui-sm);
+}
+
+.oak-stack-map__records li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  min-height: 36px;
+}
+
+.oak-stack-map__go {
+  flex: none;
+  color: var(--muted);
+}
+
+.oak-stack-map__records a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--line-soft);
+  text-underline-offset: 3px;
+}
+
+.oak-stack-map__venn {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-stack-map__venn {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.oak-stack-map__zone {
+  display: grid;
+  align-content: start;
+  gap: var(--space-xs);
+  min-width: 0;
+  padding: 0 var(--space-sm);
+}
+
+.oak-stack-map__zone + .oak-stack-map__zone {
+  border-inline-start: 1px solid var(--line-soft);
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-stack-map__zone {
+    padding: var(--space-sm) 0;
+  }
+
+  .oak-stack-map__zone:first-child {
+    padding-block-start: 0;
+  }
+
+  .oak-stack-map__zone:last-child {
+    padding-block-end: 0;
+  }
+
+  .oak-stack-map__zone + .oak-stack-map__zone {
+    border-inline-start: 0;
+    border-block-start: 1px solid var(--line-soft);
+  }
+}
+
+.oak-stack-map__zone-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-xs);
+}
+
+.oak-stack-map__zone-count {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-stack-map__zone .oak-openui-chip {
+  min-height: var(--space-gutter);
+}
+
+.oak-stack-map__zone-title {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  overflow-wrap: anywhere;
+}
+
+.oak-stack-map__zone[data-zone="both"] .oak-stack-map__zone-title {
+  color: var(--text);
+}
+
+.oak-stack-map__none {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-stack-map__tools[data-pending] .oak-stack-map__label {
+  align-self: center;
+}
+
+.oak-stack-map__ghost-lead,
+.oak-stack-map__ghost-lead > span {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.oak-stack-map__ghost-lead {
+  gap: var(--space-md);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-stack-map__chevron {
+    transition: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-stack-map__tool,
+  .oak-stack-map__zone {
+    border: 1px solid CanvasText;
+  }
+
+  .oak-stack-map__pips > span {
+    border: 1px solid CanvasText;
+  }
+
+  .oak-stack-map__pips > span[data-on],
+  .oak-stack-map__tool[data-shared] .oak-stack-map__pips > span[data-on] {
+    background: CanvasText;
+  }
+
+  .oak-stack-map__trigger:focus-visible {
+    outline-color: Highlight;
+  }
+}

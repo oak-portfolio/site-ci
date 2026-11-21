@@ -1,0 +1,1479 @@
+[
+ {
+  "id": "table-matrix-2",
+  "label": "Table (ticket 33): matrix, two projects side by side on stack, Steve's part and the year a claim states",
+  "table": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "category": "AI agents, behavior change, California SB 1383",
+    "datePublished": "2025-12-15",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ],
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack: scanner, upload/API flow, product backend, Orbi AI, cited guidance UX, rewards, quizzes, analytics, admin surfaces, responsive UI, and Capacitor iOS shell.",
+      "Integrated LEAF Engine classification output into a user-facing decision loop with confidence, uncertainty handling, saved history, and organization context.",
+      "Led the V1 to V2 product shift from scanner/dashboard utility into a rewards-backed behavior-change flow with gift cards, quizzes, leaderboards, user history, and organization controls."
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+      "Neelofar contributed frontend and data-analytics work.",
+      "Professor Ahmed Banafa advised the capstone."
+     ]
+    }
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "datePublished": "2026-03-09",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ],
+    "ownership": {
+     "oak": [
+      "Built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe.",
+      "Built the voice-agent lane with speech commands, structured backend actions, RevenueCat subscriptions, Water Drops credits, and Convex account state.",
+      "Built the native urgency lane with notification actions, AlarmKit, Live Activity, silent cleanup, device registration, and cross-device state.",
+      "Built the App Store launch surface, documentation surface, and observability stack around the product.",
+      "Built the internal TikTok and UGC distribution studio around Oakminder context: dashboard command center, product memory, source libraries, download and trace intake, Cloud Vision text extraction, trace-to-slideshow drafts, slideshow editor, caption and text refinement, hook production, Remotion editing, mobile review, Postiz handoff, and ops checks."
+     ],
+     "collaborators": [
+      "Solo build across the app, docs, and distribution studio.",
+      "External platforms and tools are implementation choices, not sponsors or proof of platform endorsement."
+     ]
+    }
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Compare EcoSmartLoop and Oakminder"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop, published in 2025, is an AI recycling coach Steve led from product requirements to the mobile app.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-002",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder, published in 2026, is Steve's productivity agent with a voice agent and native reminders.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-002",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e1",
+      "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\"], \"matrix\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "table-matrix-4",
+  "label": "Table (ticket 33): matrix, four projects; at 390 every row stacks into a card",
+  "table": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "category": "AI agents, behavior change, California SB 1383",
+    "datePublished": "2025-12-15",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ],
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack: scanner, upload/API flow, product backend, Orbi AI, cited guidance UX, rewards, quizzes, analytics, admin surfaces, responsive UI, and Capacitor iOS shell.",
+      "Integrated LEAF Engine classification output into a user-facing decision loop with confidence, uncertainty handling, saved history, and organization context.",
+      "Led the V1 to V2 product shift from scanner/dashboard utility into a rewards-backed behavior-change flow with gift cards, quizzes, leaderboards, user history, and organization controls."
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+      "Neelofar contributed frontend and data-analytics work.",
+      "Professor Ahmed Banafa advised the capstone."
+     ]
+    }
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "datePublished": "2026-03-09",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ],
+    "ownership": {
+     "oak": [
+      "Built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe.",
+      "Built the voice-agent lane with speech commands, structured backend actions, RevenueCat subscriptions, Water Drops credits, and Convex account state.",
+      "Built the native urgency lane with notification actions, AlarmKit, Live Activity, silent cleanup, device registration, and cross-device state.",
+      "Built the App Store launch surface, documentation surface, and observability stack around the product.",
+      "Built the internal TikTok and UGC distribution studio around Oakminder context: dashboard command center, product memory, source libraries, download and trace intake, Cloud Vision text extraction, trace-to-slideshow drafts, slideshow editor, caption and text refinement, hook production, Remotion editing, mobile review, Postiz handoff, and ops checks."
+     ],
+     "collaborators": [
+      "Solo build across the app, docs, and distribution studio.",
+      "External platforms and tools are implementation choices, not sponsors or proof of platform endorsement."
+     ]
+    }
+   },
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "category": "High-autonomy agents, Agent orchestration, Browser control, Trace-based evals",
+    "datePublished": "2026-04-20",
+    "systemMap": [
+     {
+      "label": "Daily list",
+      "description": "CRM and LinkedIn Navigator sources produced a bounded list of people to inspect, score, and act on."
+     },
+     {
+      "label": "Networking Connector",
+      "description": "Handles target discovery, scoring, queueing, connection-note generation, send-or-skip decisions, and follow-up state."
+     },
+     {
+      "label": "Feed Engager",
+      "description": "Reads relevant feed and target-audience posts, scores fit, respects cooldowns, checks duplicates, and records interaction outcomes."
+     },
+     {
+      "label": "OpenClaw orchestrator",
+      "description": "Runs the agent lanes, coordinates reporting, and owns the improvement path around observed outcomes."
+     },
+     {
+      "label": "Hermes research advisor",
+      "description": "Collects outside research, platform drift, memory context, and risk signals before future changes are proposed."
+     },
+     {
+      "label": "Telegram control room",
+      "description": "Shows human-readable summaries first, then keeps run details, metrics, proof trail, and controls available underneath."
+     },
+     {
+      "label": "Learning history",
+      "description": "Preserves accepted, pending, failed, skipped, response, run-note, good-example, and proposed-change signals for future review."
+     },
+     {
+      "label": "Cost-aware browser control",
+      "description": "Uses programmatic SOPs, page calibration, recorder flows, and minimal-intelligence recovery before paying for heavier model judgment."
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "agents-are-overhyped-until-they-own-the-work",
+      "title": "Agents Are Overhyped Until They Own The Work"
+     },
+     {
+      "anchor": "the-in-house-need-made-it-serious",
+      "title": "The In-House Need Made It Serious"
+     },
+     {
+      "anchor": "linkedin-became-the-first-real-success",
+      "title": "LinkedIn Became The First Real Success"
+     },
+     {
+      "anchor": "the-first-daily-loop",
+      "title": "The First Daily Loop"
+     },
+     {
+      "anchor": "orchestrator-workers-validators",
+      "title": "Orchestrator, Workers, Validators"
+     },
+     {
+      "anchor": "harnesses-were-just-the-tools",
+      "title": "Harnesses Were Just The Tools"
+     },
+     {
+      "anchor": "telegram-became-the-control-room",
+      "title": "Telegram Became The Control Room"
+     },
+     {
+      "anchor": "browser-control-kept-the-cost-honest",
+      "title": "Browser Control Kept The Cost Honest"
+     },
+     {
+      "anchor": "evaluation-turned-runs-into-learning",
+      "title": "Evaluation Turned Runs Into Learning"
+     },
+     {
+      "anchor": "one-failure-that-forced-better-rules",
+      "title": "One Failure That Forced Better Rules"
+     },
+     {
+      "anchor": "what-moved-out-of-my-head",
+      "title": "What Moved Out Of My Head"
+     }
+    ],
+    "ownership": {
+     "oak": [
+      "Designed and implemented the bounded relationship workflow, starting from CRM and LinkedIn Navigator target lists and expanding into connector and feed-engagement agent lanes.",
+      "Built the Telegram control room so run summaries, metrics, run details, and operator controls stayed readable instead of becoming another pile of logs.",
+      "Paired OpenClaw as the worker/orchestrator with Hermes as the research and improvement advisor so execution, research, evaluation, and improvement could work together.",
+      "Designed cost-aware browser-control paths with programmatic SOPs, page calibration, recorder flows, and selective model calls for judgment-heavy steps."
+     ],
+     "collaborators": [
+      "No project collaborators are confirmed for this internal build.",
+      "External platforms and tools include LinkedIn, Telegram Bot API, Convex, Playwright/Patchright, OpenClaw, Hermes, model providers, and related agent frameworks. Avoid describing them as sponsors, partners, endorsers, or proof of platform approval."
+     ]
+    }
+   },
+   "work:agentic-brain": {
+    "kind": "work",
+    "category": "Agentic memory, RAG, context engineering",
+    "datePublished": "2026-05-27",
+    "systemMap": [
+     {
+      "label": "Short-term context",
+      "description": "Keep the current task, constraints, active files, and working decisions close enough for the next agent step."
+     },
+     {
+      "label": "Durable memory",
+      "description": "Store cross-session decisions, taste rules, failure history, and source references where future sessions can retrieve them."
+     },
+     {
+      "label": "Retrieval",
+      "description": "Route questions through RAG, contextual codebase search, Graphify, wiki pages, or direct source reads depending on what needs to be trusted."
+     },
+     {
+      "label": "Instruction surfaces",
+      "description": "Use AGENTS.md, CLAUDE.md, skills, and plugin instructions to make repeated behavior explicit instead of relying on chat memory."
+     },
+     {
+      "label": "MCP collections",
+      "description": "Group specialized external and local tools so agents can reach the right source, action, or dataset without rebuilding the route each time."
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ],
+    "ownership": {
+     "oak": [
+      "Experimented across short-term and long-term memory techniques for agentic development workflows.",
+      "Compared RAG, contextual codebase search, context engines, memory graphs, Obsidian-style graph workflows, instruction-file management, and MCP collections as practical memory surfaces.",
+      "Designed the public case-study boundary so the page can explain the system shape before the full article, diagrams, and screenshots are ready."
+     ],
+     "collaborators": [
+      "Public collaborator and tool attribution is not yet finalized.",
+      "Named techniques describe workflow categories, not tool sponsorship, endorsement, or official integration claims."
+     ]
+    }
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Compare Steve's four case studies"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop, published in 2025, is an AI recycling coach Steve led from product requirements to the mobile app.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-002",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder, published in 2026, is Steve's productivity agent with a voice agent and native reminders.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-002",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "LinkedIn Growth Loop, published in 2026, runs high-autonomy agents that Steve orchestrates and evaluates from traces.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/#agents-are-overhyped-until-they-own-the-work"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Agentic Brain, published in 2026, is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e2",
+      "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\"], \"matrix\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "table-sctable",
+  "label": "Table (ticket 33): sctable, career contexts by engagement type and the period each claim states",
+  "table": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Which roles were contract and which were full time?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "HyperSkalers was a contract role, Feb 2026 - May 2026, building agent evaluation and call pipelines.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-001",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "At Uhttention Steve worked part-time with founders, Jan 2024 - Jan 2025, on AI products and automation.",
+        "citations": [
+         {
+          "documentId": "experience:uhttention",
+          "passageId": "experience:uhttention:passage-001",
+          "sectionId": "experience:uhttention",
+          "url": "https://steveoak.com/work#uhttention"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "PNPP Solutions was full-time full-stack engineering and design, Nov 2018 - Jan 2024.",
+        "citations": [
+         {
+          "documentId": "experience:pnppsolutions",
+          "passageId": "experience:pnppsolutions:passage-001",
+          "sectionId": "experience:pnppsolutions",
+          "url": "https://steveoak.com/work#pnppsolutions"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e3",
+      "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\", \"claim-3\"], \"sctable\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "table-smap",
+  "label": "Table (ticket 33): smap, public pages and their tagged sections, sitemap paths only",
+  "table": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "datePublished": "2026-03-09",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ],
+    "ownership": {
+     "oak": [
+      "Built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe.",
+      "Built the voice-agent lane with speech commands, structured backend actions, RevenueCat subscriptions, Water Drops credits, and Convex account state.",
+      "Built the native urgency lane with notification actions, AlarmKit, Live Activity, silent cleanup, device registration, and cross-device state.",
+      "Built the App Store launch surface, documentation surface, and observability stack around the product.",
+      "Built the internal TikTok and UGC distribution studio around Oakminder context: dashboard command center, product memory, source libraries, download and trace intake, Cloud Vision text extraction, trace-to-slideshow drafts, slideshow editor, caption and text refinement, hook production, Remotion editing, mobile review, Postiz handoff, and ops checks."
+     ],
+     "collaborators": [
+      "Solo build across the app, docs, and distribution studio.",
+      "External platforms and tools are implementation choices, not sponsors or proof of platform endorsement."
+     ]
+    }
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What pages does the site have?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "The home page introduces Steve and the AI products he designs and builds.",
+        "citations": [
+         {
+          "documentId": "profile:steve-oak",
+          "passageId": "profile:steve-oak:section-001:passage-001",
+          "sectionId": "profile:steve-oak:section-001",
+          "url": "https://steveoak.com/#hero-title"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The work page holds the case studies and the career timeline, starting with Oak Labs.",
+        "citations": [
+         {
+          "documentId": "experience:oaklabs",
+          "passageId": "experience:oaklabs:passage-001",
+          "sectionId": "experience:oaklabs",
+          "url": "https://steveoak.com/work#oaklabs"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Each case study has its own page, such as Oakminder's.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-002",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e4",
+      "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\", \"claim-3\"], \"smap\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "table-streaming",
+  "label": "Table (ticket 33): streaming, the ghost rows while record facts load",
+  "table": true,
+  "recordFacts": "pending",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Compare EcoSmartLoop and Oakminder"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop, published in 2025, is an AI recycling coach Steve led from product requirements to the mobile app.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-002",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder, published in 2026, is Steve's productivity agent with a voice agent and native reminders.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-002",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e5",
+      "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\"], \"matrix\")",
+      "status": "streaming"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "table-off",
+  "label": "Table (ticket 33): constant off, the same claims as plain Points",
+  "table": false,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "category": "AI agents, behavior change, California SB 1383",
+    "datePublished": "2025-12-15",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ],
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack: scanner, upload/API flow, product backend, Orbi AI, cited guidance UX, rewards, quizzes, analytics, admin surfaces, responsive UI, and Capacitor iOS shell.",
+      "Integrated LEAF Engine classification output into a user-facing decision loop with confidence, uncertainty handling, saved history, and organization context.",
+      "Led the V1 to V2 product shift from scanner/dashboard utility into a rewards-backed behavior-change flow with gift cards, quizzes, leaderboards, user history, and organization controls."
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+      "Neelofar contributed frontend and data-analytics work.",
+      "Professor Ahmed Banafa advised the capstone."
+     ]
+    }
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "datePublished": "2026-03-09",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ],
+    "ownership": {
+     "oak": [
+      "Built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe.",
+      "Built the voice-agent lane with speech commands, structured backend actions, RevenueCat subscriptions, Water Drops credits, and Convex account state.",
+      "Built the native urgency lane with notification actions, AlarmKit, Live Activity, silent cleanup, device registration, and cross-device state.",
+      "Built the App Store launch surface, documentation surface, and observability stack around the product.",
+      "Built the internal TikTok and UGC distribution studio around Oakminder context: dashboard command center, product memory, source libraries, download and trace intake, Cloud Vision text extraction, trace-to-slideshow drafts, slideshow editor, caption and text refinement, hook production, Remotion editing, mobile review, Postiz handoff, and ops checks."
+     ],
+     "collaborators": [
+      "Solo build across the app, docs, and distribution studio.",
+      "External platforms and tools are implementation choices, not sponsors or proof of platform endorsement."
+     ]
+    }
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Compare EcoSmartLoop and Oakminder"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop, published in 2025, is an AI recycling coach Steve led from product requirements to the mobile app.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-002",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder, published in 2026, is Steve's productivity agent with a voice agent and native reminders.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-002",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e6",
+      "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\"], \"matrix\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ }
+]

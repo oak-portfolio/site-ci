@@ -1,0 +1,301 @@
+.oak-openui__timeline {
+  display: grid;
+  gap: var(--space-sm);
+  padding: 0;
+  list-style: none;
+}
+
+.oak-openui__timeline-item {
+  display: grid;
+  gap: var(--space-micro);
+  padding-left: var(--space-sm);
+  border-left: 2px solid var(--line-soft);
+}
+
+.oak-openui__timeline-date {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-openui__timeline-item.oak-openui-skel .oak-openui-skel__mark[data-node] {
+  grid-row: 1 / span 2;
+  width: 24px;
+  height: 24px;
+}
+
+.oak-openui__timeline-item.oak-openui-skel .oak-openui-card__bar[data-short] {
+  grid-column: 2;
+  width: calc(var(--space-lg) * 2);
+  height: calc(var(--space-sm) + var(--space-micro));
+}
+
+.oak-openui__timeline-item.oak-openui-skel .oak-openui-skel__claim {
+  grid-column: 2;
+}
+
+.oak-workspace .oak-openui__timeline {
+  position: relative;
+  display: grid;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-workspace .oak-openui__timeline::before {
+  position: absolute;
+  inset-block: 12px 12px;
+  inset-inline-start: 11px;
+  width: 2px;
+  border-radius: var(--radius-pill);
+  background: var(--line-soft);
+  content: "";
+}
+
+.oak-workspace .oak-openui__timeline-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  column-gap: var(--space-sm);
+  row-gap: var(--space-micro);
+  padding: 0;
+  border: 0;
+}
+
+.oak-openui__timeline-node {
+  display: grid;
+  grid-row: 1 / span 2;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border: 1px solid color-mix(in srgb, var(--oak-violet) 45%, var(--line-soft));
+  border-radius: var(--radius-pill);
+  background: var(--oak-tint-violet);
+  color: color-mix(in srgb, var(--oak-violet) 70%, var(--text));
+}
+
+.oak-workspace .oak-openui__timeline-date {
+  justify-self: start;
+  padding: calc(var(--space-micro) / 2) var(--space-xs);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  font-weight: 500;
+}
+
+.oak-openui__timeline-claim {
+  grid-column: 2;
+}
+
+/* Arranged answers: label, body and source each look like what they are. A date or step number is a tinted label on the
+   rail (no pill), the claim is the primary text, and the source chip stays the only quiet pill. */
+.oak-workspace .oak-openui__timeline {
+  gap: var(--space-md);
+}
+
+.oak-workspace .oak-openui__timeline-date {
+  padding: 0;
+  border-radius: 0;
+  background: none;
+  color: color-mix(in srgb, var(--oak-violet) 45%, var(--text));
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--space-md);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-openui__timeline-claim {
+  color: var(--text);
+  line-height: var(--leading-body);
+}
+
+/* Ticket 57: lanes on one month axis. The name column and every month track share --oak-lanes-name, so the single grid
+   layer lines up with each bar and its column lines run unbroken from the axis to the last lane. */
+.oak-lanes {
+  --oak-lanes-name: 11rem;
+  --oak-lanes-cols: repeat(var(--oak-lanes-months), minmax(0, 1fr));
+  position: relative;
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.oak-lanes__axis,
+.oak-lanes__track {
+  display: grid;
+  grid-template-columns: var(--oak-lanes-cols);
+}
+
+.oak-lanes__axis {
+  margin-inline-start: var(--oak-lanes-name);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-variant-numeric: tabular-nums;
+  line-height: var(--leading-ui);
+}
+
+.oak-lanes__month {
+  display: grid;
+  padding-inline-start: var(--space-micro);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.oak-lanes__year {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.oak-lanes__month:not([data-year]) .oak-lanes__year {
+  display: none;
+}
+
+.oak-lanes__grid {
+  position: absolute;
+  inset-block: 0;
+  inset-inline: var(--oak-lanes-name) 0;
+  display: grid;
+  grid-template-columns: var(--oak-lanes-cols);
+  pointer-events: none;
+}
+
+.oak-lanes__col {
+  border-inline-start: 1px solid var(--line-soft);
+}
+
+.oak-lanes__col:last-of-type {
+  border-inline-end: 1px solid var(--line-soft);
+}
+
+.oak-lanes__today {
+  position: absolute;
+  /* Starts under the two-line axis (month, year) so it never strikes through a label. */
+  inset-block: calc(2lh + var(--space-xs)) 0;
+  inset-inline-start: calc(100% * var(--oak-lanes-at));
+  width: 2px;
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  background: var(--oak-violet);
+}
+
+.oak-lanes__lanes {
+  position: relative;
+  display: grid;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-lanes__lane {
+  display: grid;
+  grid-template-columns: var(--oak-lanes-name) minmax(0, 1fr);
+  align-items: center;
+  min-height: calc(var(--space-lg) + var(--space-xs));
+}
+
+.oak-lanes__name {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-width: 0;
+  padding-inline-end: var(--space-sm);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+  overflow-wrap: anywhere;
+}
+
+.oak-lanes__cover {
+  flex: none;
+  width: var(--space-lg);
+  aspect-ratio: 1;
+  border-radius: var(--radius-pill);
+  object-fit: cover;
+}
+
+.oak-lanes__bar {
+  grid-column: var(--oak-lanes-from) / span var(--oak-lanes-span);
+  height: var(--space-sm);
+  border-radius: var(--radius-pill);
+  background: var(--oak-lanes-tint, var(--oak-violet));
+}
+
+.oak-lanes__bar[data-open] {
+  margin-inline-end: calc(100% * var(--oak-lanes-cut, 0) / var(--oak-lanes-span));
+  outline: 1px solid var(--oak-lanes-tint, var(--oak-violet));
+  outline-offset: -1px;
+  background: color-mix(in srgb, var(--oak-lanes-tint, var(--oak-violet)) 35%, transparent);
+}
+
+.oak-lanes__claims {
+  display: grid;
+  gap: var(--space-sm);
+  margin: var(--space-sm) 0 0;
+  padding: 0;
+  list-style: none;
+  color: var(--text);
+  line-height: var(--leading-body);
+}
+
+.oak-lanes__date {
+  display: block;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+/* At phone widths a lane stacks: its name, then its bar on the full-width axis. Only the key months label the axis:
+   the first reads from its column start, the last ends at its column end, and Today centres on its column. */
+@container oak-openui (max-width: 519px) {
+  .oak-lanes {
+    --oak-lanes-name: 0px;
+  }
+
+  .oak-lanes__lane {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-micro);
+  }
+
+  .oak-lanes__month:not([data-key]) {
+    visibility: hidden;
+  }
+
+  .oak-lanes__month[data-key] {
+    overflow: visible;
+  }
+
+  .oak-lanes__month[data-key] .oak-lanes__year {
+    display: block;
+  }
+
+  .oak-lanes__month[data-key="last"] {
+    justify-items: end;
+    padding-inline: 0;
+  }
+
+  .oak-lanes__month[data-key="now"] {
+    justify-items: center;
+    padding-inline: 0;
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-lanes__bar {
+    background: CanvasText;
+  }
+
+  .oak-lanes__bar[data-open] {
+    border: 1px solid CanvasText;
+    background: Canvas;
+  }
+
+  .oak-lanes__today {
+    background: Highlight;
+  }
+}

@@ -1,0 +1,69 @@
+---
+import WorkImageCarouselIsland from "@/components/work/WorkImageCarousel";
+import { getOptimizedImage, type OptimizedImageEntry } from "@/data/generated/optimizedImages";
+
+type CarouselImage = {
+  src: string;
+  alt: string;
+  label?: string;
+};
+
+type CarouselImagePayload = CarouselImage & {
+  width: number;
+  height: number;
+  aspectRatio: number;
+  sizes: string;
+  fallbackSrc: string;
+  sources: OptimizedImageEntry["sources"];
+};
+
+type Props = {
+  eyebrow?: string;
+  title?: string;
+  summary?: string;
+  images: CarouselImage[];
+  caption?: string;
+  autoplaySeconds?: number;
+  sizes?: string;
+};
+
+const { eyebrow, title, summary, images, caption, autoplaySeconds = 3.5, sizes } = Astro.props;
+
+if (!Array.isArray(images) || images.length === 0) {
+  throw new Error("WorkImageCarousel requires at least one image.");
+}
+
+const carouselImages: CarouselImagePayload[] = images.map((image) => {
+  const optimized = getOptimizedImage(image.src);
+
+  if (!optimized) {
+    throw new Error(`WorkImageCarousel image is missing from the optimized image manifest: ${image.src}`);
+  }
+
+  return {
+    ...image,
+    width: optimized.width,
+    height: optimized.height,
+    aspectRatio: optimized.aspectRatio,
+    sizes: sizes ?? optimized.sizes,
+    fallbackSrc: optimized.fallbackFormat === "avif" ? optimized.imageSet.webp ?? image.src : image.src,
+    sources: optimized.sources,
+  };
+});
+---
+
+<figure class="work-mdx-image-carousel">
+  {
+    (eyebrow || title || summary) && (
+      <header class="work-mdx-image-carousel__header">
+        {eyebrow && <span>{eyebrow}</span>}
+        {title && <h3>{title}</h3>}
+        {summary && <p>{summary}</p>}
+      </header>
+    )
+  }
+
+  <WorkImageCarouselIsland client:visible images={carouselImages} autoplaySeconds={autoplaySeconds} />
+
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

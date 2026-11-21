@@ -1,0 +1,21 @@
+{
+  "name": "PageCards",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "planned": false,
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "text": "[page cards: one card per cited page with its cover and title; the first open in place with the cited section, Open page and Ask about this]",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

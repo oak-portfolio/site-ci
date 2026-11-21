@@ -1,0 +1,26 @@
+---
+type Step = {
+  label: string;
+  description: string;
+};
+
+type Props = {
+  steps: Step[];
+};
+
+const { steps } = Astro.props;
+---
+
+<ol class="work-mdx-process">
+  {
+    steps.map((step, index) => (
+      <li>
+        <span>{String(index + 1).padStart(2, "0")}</span>
+        <div>
+          <strong>{step.label}</strong>
+          <p>{step.description}</p>
+        </div>
+      </li>
+    ))
+  }
+</ol>

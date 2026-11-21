@@ -1,0 +1,178 @@
+[
+ {
+  "id": "answer-openui-page-cards",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc4101-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00004101-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Where can I read more about EcoSmartLoop?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00004101-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.\n\nOakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00004101-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([pages])\npages = PageCards([\"claim-1\", \"claim-2\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00004101-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-page-cards-four",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc4102-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00004102-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Which pages talk about AI agents?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00004102-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.\n\nOakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.\n\nLinkedIn Growth Loop began as one small daily job: review a list of people, write a note, then record what happened.\n\nAgentic Brain separates short-term working context from durable project memory.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "LinkedIn Growth Loop began as one small daily job: review a list of people, write a note, then record what happened.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/#the-first-daily-loop"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Agentic Brain separates short-term working context from durable project memory.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00004102-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([pages])\npages = PageCards([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00004102-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ }
+]

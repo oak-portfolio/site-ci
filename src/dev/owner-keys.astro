@@ -1,0 +1,44 @@
+---
+// Dev-only (injected in astro.config.mjs): the owner Key queue on fixture data, so P08-G4 can be judged without signing in.
+import { OakOwnerKeyQueue } from "@/components/owner/OakOwnerKeyQueue";
+import "../styles/theme.css";
+import "../styles/oakOwner.css";
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Owner key queue states</title>
+    <script is:inline>
+      (() => {
+        const day = 86400000, now = Date.now(), M = 1e6;
+        const slot = (id, label, last4, state, position, credit, used, extra = {}) => ({ slotId: id, label, last4, state, position, knownCreditMicroUsd: credit,
+          usedMicroUsd: used, remainingMicroUsd: credit === null ? null : Math.max(0, credit - used), percentUsed: credit ? Math.round(used * 100 / credit) : null,
+          runwayDays: null, expiresAt: null, addedAt: now - 9 * day, testedAt: now - day, promotedAt: null, endedAt: null, reason: null, ...extra });
+        const state = new URLSearchParams(location.search).get("state") ?? "healthy";
+        const low = state === "low", empty = state === "empty";
+        const openrouter = empty ? { active: null, queue: [], history: [] } : {
+          active: slot("a1", "Oakfolio sponsor", "a91f", "active", 0, 110 * M, (low ? 96.4 : 43.2) * M, { promotedAt: now - 12 * day, runwayDays: low ? 3 : 19 }),
+          queue: low ? [slot("q1", "Oakfolio sponsor 2", "c3d2", "queued", 1, 110 * M, 0)] :
+            [slot("q1", "Oakfolio sponsor 2", "c3d2", "queued", 1, 110 * M, 0), slot("q2", "Oakfolio sponsor 3", "77be", "queued", 2, null, 0, { testedAt: now - 3 * day })],
+          history: [slot("h1", "Launch key", "0e11", "exhausted", 0, 20 * M, 20 * M, { endedAt: now - 12 * day, reason: "credit used up" })] };
+        const view = { sealing: empty ? "master-key-missing" : "ready", alerts: [],
+          vertex: empty ? [] : [{ budgetId: "b1", name: "oakfoliocredits", costMicroUsd: (low ? 172 : 61.4) * M, budgetMicroUsd: 200 * M, percentUsed: low ? 86 : 31, intervalStart: "2026-10-16", at: now }],
+          providers: [
+            { provider: "openrouter", ...openrouter, needsAttention: empty || low, events: empty ? [] : [{ kind: "promoted", slotId: "a1", detail: "credit used up", at: now - 12 * day }] },
+            { provider: "exa", active: empty ? null : slot("e1", "Exa account 1", "5b20", "active", 0, 10 * M, 2.1 * M, { promotedAt: now - 4 * day, runwayDays: 15 }), queue: empty ? [] : [slot("e2", "Exa account 2", "9f0c", "queued", 1, 10 * M, 0)], history: [], needsAttention: empty, events: [] },
+            { provider: "deepgram", active: empty ? null : slot("d1", "Deepgram main", "71aa", "active", 0, 200 * M, 3.5 * M, { promotedAt: now - 20 * day }), queue: [], history: [], needsAttention: true, events: [] },
+          ] };
+        const original = window.fetch.bind(window);
+        window.fetch = (input, init) => String(input).includes("/api/oak/owner/keys")
+          ? new Promise(resolve => setTimeout(() => resolve(new Response(JSON.stringify({ result: init?.method === "POST" ? { passed: true } : null, view }), { headers: { "content-type": "application/json" } })), 250))
+          : original(input, init);
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="oak-owner"><header><h1>Service usage</h1></header><div class="oak-owner__content"><OakOwnerKeyQueue client:only="react" /></div></div>
+  </body>
+</html>

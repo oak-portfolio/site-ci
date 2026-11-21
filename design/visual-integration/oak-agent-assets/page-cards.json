@@ -1,0 +1,26 @@
+{
+ "page-cards-two": {
+  "iconOnly": true,
+  "reason": "41: PageCards fixture, the two page cards and the open quick look carry it, with no pose of its own."
+ },
+ "page-cards-four": {
+  "iconOnly": true,
+  "reason": "41: PageCards fixture, the four page cards and their covers carry it, with no pose of its own."
+ },
+ "page-cards-look-second": {
+  "iconOnly": true,
+  "reason": "41: PageCards fixture, the second card's open quick look carries it, with no pose of its own."
+ },
+ "page-cards-no-cover": {
+  "iconOnly": true,
+  "reason": "146: PageCards fixture, the open case study and the closed credential page card carry it, with no pose of its own."
+ },
+ "page-cards-streaming": {
+  "iconOnly": true,
+  "reason": "41: PageCards fixture, the card ghosts carry it, with no pose of its own."
+ },
+ "page-cards-off": {
+  "iconOnly": true,
+  "reason": "41: PageCards fixture, the plain Source cards carry it, with no pose of its own."
+ }
+}

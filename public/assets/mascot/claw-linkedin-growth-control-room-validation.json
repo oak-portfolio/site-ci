@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "asset": "/assets/mascot/claw-linkedin-growth-control-room.webp",
+  "runtimeAssetUrl": "/assets/mascot/claw-linkedin-growth-control-room.webp",
+  "contextId": "linkedin-growth.hero",
+  "animation": "clawLinkedinGrowthControl",
+  "format": "WEBP",
+  "width": 1536,
+  "height": 208,
+  "frameWidth": 192,
+  "frameHeight": 208,
+  "columns": 8,
+  "rows": 1,
+  "frames": 8,
+  "fps": 6,
+  "chromaKey": "#FF00FF",
+  "keyThreshold": 80
+}

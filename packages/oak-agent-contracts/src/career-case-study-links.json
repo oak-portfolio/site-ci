@@ -1,0 +1,19 @@
+{
+  "note": "Draft for Oak's review (O2, sitting 1). Nothing reads a row until its approved flag is true.",
+  "links": [
+    {
+      "entry": "experience:sanfranciscobayuniversity",
+      "caseStudy": "work:ecosmartloop",
+      "sentence": "Completed an M.S. in Computer Science while working part-time on student support and contributing to EcoSmartLoop, a team-built AI waste-sorting capstone.",
+      "source": "src/data/careerTimeline.ts",
+      "approved": false
+    },
+    {
+      "entry": "experience:hyperskalers",
+      "caseStudy": "work:linkedin-growth-loop",
+      "sentence": "The need became concrete during a brief HyperSkalers project.",
+      "source": "src/content/work/linkedin-growth-loop.mdx",
+      "approved": false
+    }
+  ]
+}

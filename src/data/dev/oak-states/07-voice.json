@@ -1,0 +1,7 @@
+[
+  {"id":"voice-recording","label":"Voice recording","workspace":{},"voice":{"phase":"recording","seconds":12,"levels":[0.08,0.22,0.41,0.63,0.52,0.34,0.71,0.86,0.58,0.29,0.12,0.38,0.66,0.78,0.47,0.21,0.55,0.9,0.62,0.33,0.18,0.44,0.69,0.51,0.27,0.09,0.36,0.74,0.6,0.31,0.15,0.48]}},
+  {"id":"voice-transcribing","label":"Voice transcribing","workspace":{},"voice":{"phase":"transcribing","seconds":18}},
+  {"id":"voice-off","label":"Voice input switched off","workspace":{},"voice":{"phase":"idle","available":false}},
+  {"id":"voice-daily-limit","label":"Voice clips used up for today","workspace":{},"voice":{"phase":"failed","failure":"daily"}},
+  {"id":"voice-review","label":"Voice transcript review","workspace":{},"voice":{"phase":"review","seconds":18,"transcript":"How did Steve decide what the memory system should keep long term?"}}
+]

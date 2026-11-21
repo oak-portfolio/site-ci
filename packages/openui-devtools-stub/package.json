@@ -1,0 +1,9 @@
+{
+  "name": "@openuidev/devtools",
+  "version": "0.3.0-oak.stub",
+  "private": true,
+  "description": "Q17: empty stand-in for OpenUI's development widget, which ships lucide icons this site never loads. Installed through package.json overrides.",
+  "type": "module",
+  "main": "index.js",
+  "exports": { ".": "./index.js" }
+}

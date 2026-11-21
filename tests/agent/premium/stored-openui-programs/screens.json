@@ -1,0 +1,26 @@
+[
+ {
+  "id": "answer-openui-screens",
+  "question": "Show me EcoSmartLoop",
+  "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-007:passage-003",
+       "sectionId": "work:ecosmartloop:section-007",
+       "url": "https://steveoak.com/work/ecosmartloop/"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

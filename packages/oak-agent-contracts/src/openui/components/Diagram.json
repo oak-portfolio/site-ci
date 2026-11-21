@@ -1,0 +1,26 @@
+{
+  "name": "Diagram",
+  "claims": "one",
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": "views/diagram.ts",
+  "plan": {
+    "in": {
+      "how-it-works": 1
+    },
+    "count": "hits"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "text": "[diagram shown with this claim: the cited project's own steps from its page, each a labeled box, joined in order by arrows]",
+    "prefix": ""
+  },
+  "taughtPresets": ["flow", "layers", "blockdiag"]
+}

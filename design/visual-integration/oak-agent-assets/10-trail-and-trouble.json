@@ -1,0 +1,45 @@
+{
+ "reasoning-restarted": {
+  "asset": "rewind"
+ },
+ "model-busy": {
+  "asset": "busy-line"
+ },
+ "trail-stopped": {
+  "asset": "busy-line",
+  "variantOf": "model-busy",
+  "reason": "PR 1c: the same stopped read step as model-busy, with the trail open and Continue on the step; it keeps the busy-line art."
+ },
+ "trail-interrupted": {
+  "asset": "paused",
+  "variantOf": "interrupted",
+  "reason": "PR 1c: the same stopped read step as interrupted, with the trail open and Continue on the step; it keeps the paused art."
+ },
+ "trail-stopped-reduced": {
+  "asset": "busy-line",
+  "variantOf": "model-busy",
+  "reason": "PR 1c: the same stopped read step as model-busy, with the trail open and Continue on the step; it keeps the busy-line art."
+ },
+ "trail-steps": {
+  "iconOnly": true,
+  "reason": "PR 1c: a settled answer whose open trail rows and results-found count carry the result."
+ },
+ "trail-steps-none": {
+  "iconOnly": true,
+  "reason": "PR 1c: a settled answer whose open trail rows and results-found count carry the result."
+ },
+ "trail-steps-count": {
+  "iconOnly": true,
+  "reason": "genui 11: a settled answer whose open trail rows and per-step search count carry the result."
+ },
+ "answers-paused": {
+  "asset": "short-break"
+ },
+ "injection-blocked": {
+  "iconOnly": true,
+  "reason": "R19: a guardrail stop, shown with the lock icon; every refusal sprite already belongs to another state."
+ },
+ "server-unreachable": {
+  "asset": "far-server"
+ }
+}

@@ -1,0 +1,15 @@
+# Ticket 243 assumption check: one job that only proves Actions runs on this repo. A push to the actions-check
+# branch or a manual dispatch starts it; pushes to main never do.
+name: actions-check
+on:
+  push:
+    branches: [actions-check]
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  hello:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    steps:
+      - run: echo "Actions runs on $GITHUB_REPOSITORY at $GITHUB_SHA"

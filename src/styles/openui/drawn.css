@@ -1,0 +1,121 @@
+/* Ticket 54: the model-written Explainer presets. Mermaid draws at its natural size so text stays readable; an over-wide
+   drawing scrolls inside its own frame and the page never scrolls sideways. */
+.oak-drawn__svg {
+  display: block;
+  inline-size: 100%;
+  min-inline-size: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  overscroll-behavior-x: contain;
+  /* Tab scrolls the frame clear of the transcript's fades: its focus ring below (review 187 F3), and above it the hint row,
+     which stays in view even when frame and hint together are taller than the transcript (390x664). */
+  scroll-margin-block-start: calc(var(--leading-ui) + var(--space-xs) + var(--space-md));
+  scroll-margin-block-end: calc(var(--space-gutter) + var(--space-xs));
+  --oak-drawn-start: #000;
+  --oak-drawn-end: #000;
+  --oak-drawn-ring: 0px;
+}
+
+/* A side with more drawing beyond it fades out; while focused, the outer 2px stay opaque so the inset ring shows. */
+.oak-drawn__svg[data-more-start] {
+  --oak-drawn-start: transparent;
+}
+
+.oak-drawn__svg[data-more-end] {
+  --oak-drawn-end: transparent;
+}
+
+.oak-drawn__svg:is([data-more-start], [data-more-end]) {
+  mask-image: linear-gradient(to right, #000 var(--oak-drawn-ring), var(--oak-drawn-start) var(--oak-drawn-ring),
+    #000 calc(var(--oak-drawn-ring) + var(--space-gutter)), #000 calc(100% - var(--oak-drawn-ring) - var(--space-gutter)),
+    var(--oak-drawn-end) calc(100% - var(--oak-drawn-ring)), #000 calc(100% - var(--oak-drawn-ring)));
+}
+
+.oak-drawn__svg:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: -2px;
+  --oak-drawn-ring: 2px;
+}
+
+.oak-drawn__svg svg {
+  display: block;
+  max-inline-size: none;
+  margin-inline: auto;
+}
+
+/* Ticket 187: scaled to the frame only when its smallest text stays at 12px or more (mermaid.tsx decides). */
+.oak-drawn__svg[data-fit] svg {
+  inline-size: 100%;
+  block-size: auto;
+}
+
+.oak-drawn {
+  display: grid;
+  gap: var(--space-xs);
+  min-inline-size: 0;
+}
+
+/* The fade alone does not say a drawing scrolls, so a labelled hint above the frame shows while more lies to the right. */
+.oak-drawn__cue {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  /* mermaid.tsx scrolls the hint into view on focus; this keeps it below the transcript's top fade. */
+  scroll-margin-block-start: var(--space-md);
+}
+
+.oak-drawn__cue:has(+ .oak-drawn__svg:not([data-more-start], [data-more-end])) {
+  display: none;
+}
+
+/* Scrolled to the end, the hint keeps its row so the figure does not jump in height mid-gesture. */
+.oak-drawn__cue:has(+ .oak-drawn__svg[data-more-start]:not([data-more-end])) {
+  visibility: hidden;
+}
+
+.oak-drawn__svg svg * {
+  filter: none !important;
+}
+
+.oak-drawn__svg[data-type="c4"] text[fill] {
+  fill: var(--muted);
+}
+
+.oak-drawn__svg[data-type="journey"] text.journey-section {
+  fill: var(--text) !important;
+}
+
+.oak-drawn__space {
+  display: grid;
+  gap: var(--space-xs);
+  align-content: center;
+  min-block-size: 12rem;
+}
+
+.oak-drawn__fallback {
+  margin: 0;
+  padding-inline-start: var(--space-md);
+  color: var(--muted);
+}
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more), (forced-colors: active) {
+  .oak-drawn__svg {
+    mask-image: none !important;
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-drawn__svg svg :is(rect, path, line, polyline, polygon, circle, ellipse) {
+    fill: Canvas !important;
+    stroke: CanvasText !important;
+  }
+
+  .oak-drawn__svg svg :is(text, tspan) {
+    fill: CanvasText !important;
+    stroke: none !important;
+  }
+}

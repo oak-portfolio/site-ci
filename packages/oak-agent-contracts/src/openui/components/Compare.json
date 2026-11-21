@@ -1,0 +1,25 @@
+{
+  "name": "Compare",
+  "claims": null,
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": "compare",
+  "pendingCap": 5,
+  "salvageContainer": true,
+  "skeleton": null,
+  "view": "views/compare.ts",
+  "plan": {
+    "in": {
+      "compare-projects": 1
+    },
+    "count": "hits"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "walk",
+    "prop": "rows"
+  },
+  "taughtPresets": []
+}

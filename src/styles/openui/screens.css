@@ -1,0 +1,248 @@
+/* Ticket 39: Screens. One large frame per screen, the image whole over a blurred copy of itself (the Source media backdrop,
+   ticket 15), neighbours peeking at both edges with soft side fades, round arrows, a counter and an outlined active thumbnail. */
+.oak-screens {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.oak-screens__rail {
+  position: relative;
+  min-width: 0;
+}
+
+.oak-screens__viewport {
+  --oak-screens-fade: 6;
+  min-width: 0;
+  padding-inline: 8%;
+  overflow: clip;
+  mask-image: linear-gradient(to right, transparent, #000 calc(var(--oak-screens-fade) * 1%), #000 calc(100% - var(--oak-screens-fade) * 1%), transparent);
+}
+
+.oak-screens__slide {
+  width: 100%;
+  min-width: 0;
+}
+
+.oak-screens__open {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  border-radius: var(--oak-r-row);
+  background: none;
+  cursor: zoom-in;
+}
+
+.oak-screens__open:focus-visible,
+.oak-screens__thumb:focus-visible,
+.oak-screens__arrow:focus-visible,
+.oak-screens-viewer__toggle:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+.oak-screens__media,
+.oak-screens-viewer__media,
+.oak-screens__frame {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-well);
+  isolation: isolate;
+}
+
+.oak-screens__frame[data-ghost] {
+  aspect-ratio: 16 / 10;
+}
+
+.oak-screens__media,
+.oak-screens-viewer__media {
+  border: 0;
+  border-radius: var(--oak-r-row);
+  background: none;
+}
+
+.oak-screens picture,
+.oak-screens-viewer picture {
+  display: contents;
+}
+
+.oak-screens__backdrop {
+  position: absolute;
+  z-index: var(--z-under);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  border-radius: var(--oak-r-row);
+  transform: scale(1.12);
+  filter: blur(18px) saturate(1.1) brightness(0.65);
+}
+
+.oak-screens__image {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+.oak-screens__controls {
+  display: grid;
+  gap: var(--space-xs);
+  margin-top: var(--space-xs);
+}
+
+.oak-screens__nav {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.oak-screens__count {
+  min-width: 4.5em;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-variant-numeric: tabular-nums;
+  text-align: center;
+}
+
+.oak-screens__arrow,
+.oak-screens-viewer__toggle {
+  display: inline-grid;
+  place-items: center;
+  min-height: 44px;
+  border: 1px solid var(--line-soft);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.oak-screens__arrow {
+  width: 44px;
+  border-radius: var(--radius-pill);
+}
+
+.oak-screens__arrow:disabled,
+.oak-screens__arrow[aria-disabled="true"] {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.oak-screens__strip {
+  display: flex;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: var(--space-micro);
+  overflow-x: auto;
+  scroll-padding-inline: var(--space-micro);
+  list-style: none;
+  scrollbar-width: thin;
+}
+
+.oak-screens__thumb {
+  display: block;
+  height: 48px;
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-row);
+  background: var(--oak-well);
+  cursor: pointer;
+}
+
+.oak-screens__thumb[aria-current="true"] {
+  outline: 2px solid var(--text);
+  outline-offset: 1px;
+}
+
+.oak-screens__thumb img {
+  display: block;
+  width: auto;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 519px) {
+  .oak-screens__strip > li {
+    flex: none;
+  }
+
+  .oak-screens__thumb {
+    display: flex;
+    justify-content: center;
+    min-width: 44px;
+  }
+}
+
+.oak-screens__claim {
+  margin: 0;
+}
+
+.oak-screens-viewer {
+  display: grid;
+  gap: var(--space-sm);
+}
+
+.oak-screens-viewer__bar {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-sm);
+}
+
+.oak-screens-viewer__bar .oak-screens__count {
+  margin-right: auto;
+}
+
+.oak-screens-viewer__toggle {
+  grid-auto-flow: column;
+  gap: var(--space-micro);
+  padding: 0 var(--space-sm);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-screens-viewer__toggle[aria-pressed="true"] {
+  background: var(--oak-well);
+}
+
+.oak-screens-viewer__figure {
+  display: grid;
+  gap: var(--space-xs);
+  margin: 0;
+}
+
+.oak-screens-viewer__media {
+  aspect-ratio: auto;
+  height: min(50svh, 640px);
+}
+
+.oak-screens-viewer__caption {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-screens__viewport,
+  .oak-screens__viewport * {
+    transition: none;
+    scroll-behavior: auto;
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-screens__thumb[aria-current="true"] {
+    outline-color: Highlight;
+  }
+
+  .oak-screens__viewport {
+    mask-image: none;
+  }
+}

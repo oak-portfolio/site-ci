@@ -1,0 +1,69 @@
+{
+ "kind": "arrange-probe",
+ "teach": [],
+ "failedTests": 0,
+ "runs": [
+  {
+   "set": "pr-aud-recruiter@run1",
+   "status": "done",
+   "program": "root = Answer([points, src, prop, pills])\npoints = Points([\"claim-1\", \"claim-2\"])\nsrc = Sources()\nprop = Proposal(\"prepareBrief\", \"Prepare a brief for Steve\")\npills = Pills([\"What production LLM architectures has he built?\", \"Can we see his evaluation frameworks?\"])",
+   "streamed": "root = Answer([points, src, prop, pills])\npoints = Points([\"claim-1\", \"claim-2\"])\nsrc = Sources()\nprop = Proposal(\"prepareBrief\", \"Prepare a brief for Steve\")\npills = Pills([\"What production LLM architectures has he built?\", \"Can we see his evaluation frameworks?\"])",
+   "reasons": [
+    "hedged"
+   ],
+   "totalMs": 3635,
+   "firstStreamMs": 3034,
+   "stream": [
+    [
+     3034,
+     6
+    ],
+    [
+     3127,
+     69
+    ],
+    [
+     3291,
+     159
+    ],
+    [
+     3512,
+     266
+    ]
+   ],
+   "settledMicroUsd": [
+    4157
+   ]
+  },
+  {
+   "set": "pr-openui-timeline@run2",
+   "status": "done",
+   "program": "root = Answer([eco, brain, src, next])\neco = Project([\"claim-1\"])\nbrain = Project([\"claim-2\"])\nsrc = Sources()\nnext = Pills([\"What tech stack did he use for both?\", \"How does Agentic Brain handle memory?\"])",
+   "streamed": "root = Answer([eco, brain, src, next])\neco = Project([\"claim-1\"])\nbrain = Project([\"claim-2\"])\nsrc = Sources()\nnext = Pills([\"What tech stack did he use for both?\", \"How does Agentic Brain handle memory?\"])\n",
+   "reasons": [],
+   "totalMs": 1731,
+   "firstStreamMs": 1409,
+   "stream": [
+    [
+     1409,
+     4
+    ],
+    [
+     1485,
+     61
+    ],
+    [
+     1568,
+     161
+    ],
+    [
+     1644,
+     207
+    ]
+   ],
+   "settledMicroUsd": [
+    4065
+   ]
+  }
+ ]
+}

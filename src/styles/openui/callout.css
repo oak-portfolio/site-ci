@@ -1,0 +1,52 @@
+/* R20 (the new answer-openui-callout state, R14 surface roles): a callout is a top-level frame in the reading column, so it
+   takes the 48px frame corner and the frame pad, like the composer and every answer card beside it. */
+.oak-openui__callout {
+  padding: var(--oak-pad-frame);
+  border: 1px solid color-mix(in srgb, var(--oak-gold) 30%, var(--line-soft));
+  border-radius: var(--oak-r-frame);
+  /* Ticket 14 (the explored banner): a flat warm wash marks the one caveat without a second color, a shadow or a gradient (DESIGN.md:408). */
+  background: color-mix(in srgb, var(--oak-gold) 8%, var(--panel-soft));
+}
+
+.oak-openui__callout-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.oak-workspace .oak-openui__callout {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: start;
+  gap: var(--space-sm);
+}
+
+.oak-openui__callout-icon {
+  display: grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-pill);
+  background: var(--oak-tint-gold);
+  color: var(--oak-gold);
+}
+
+/* Ticket 57 (map Callout row): a typed banner names its kind in words above the claim, and its icon tile takes the kind's tint. */
+.oak-openui__callout-kind {
+  display: block;
+  margin-block-end: var(--space-micro);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-openui__callout[data-kind="now"] .oak-openui__callout-icon {
+  background: var(--oak-tint-blue);
+  color: var(--oak-blue);
+}
+
+.oak-openui__callout[data-kind="off"] .oak-openui__callout-icon,
+.oak-openui__callout[data-kind="guard"] .oak-openui__callout-icon {
+  background: var(--oak-tint-violet);
+  color: color-mix(in srgb, var(--oak-violet) 70%, var(--text));
+}

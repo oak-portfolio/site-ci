@@ -1,0 +1,22 @@
+{
+ "answer-ornament-focus": {
+  "iconOnly": true,
+  "reason": "58: Answer ornament fixture, focus: the capsule, sheet or popover carries it, with no pose of its own."
+ },
+ "answer-ornament-sheet": {
+  "iconOnly": true,
+  "reason": "58: Answer ornament fixture, sheet open: the capsule, sheet or popover carries it, with no pose of its own."
+ },
+ "answer-ornament-chip": {
+  "iconOnly": true,
+  "reason": "58: Answer ornament fixture, chip popover: the capsule, sheet or popover carries it, with no pose of its own."
+ },
+ "answer-ornament-long": {
+  "iconOnly": true,
+  "reason": "58: Answer ornament fixture, long answer: the capsule, sheet or popover carries it, with no pose of its own."
+ },
+ "answer-ornament-off": {
+  "iconOnly": true,
+  "reason": "58: Answer ornament fixture, constant off: the capsule, sheet or popover carries it, with no pose of its own."
+ }
+}

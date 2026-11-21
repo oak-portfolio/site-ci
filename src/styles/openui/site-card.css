@@ -1,0 +1,242 @@
+/* Ticket 59: SiteCard. One frame per site item: a one-hue kind tile, the item's own title and claims, its own rows, and a
+   "From <page>" link. Only icons carry hue, and nothing animates. */
+.oak-site {
+  gap: var(--space-sm);
+  --oak-kind: var(--oak-violet);
+}
+
+.oak-site[data-kind="app"],
+.oak-site[data-kind="career-rail"] { --oak-kind: var(--oak-leaf); }
+.oak-site[data-kind="resource"] { --oak-kind: var(--oak-gold); }
+
+.oak-site__head {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.oak-site__tile {
+  display: inline-grid;
+  flex: none;
+  place-items: center;
+  width: calc(var(--space-lg) + var(--space-sm));
+  aspect-ratio: 1;
+  border-radius: var(--oak-r-row);
+  background: var(--oak-well);
+  color: var(--oak-kind);
+}
+
+.oak-site__status {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-site__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--oak-leaf);
+}
+
+.oak-site__facts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-site__fact {
+  max-width: 100%;
+  padding: var(--space-micro) var(--space-sm);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-pill);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  overflow-wrap: anywhere;
+}
+
+.oak-site__privacy {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-site__rows,
+.oak-site__values,
+.oak-site__social,
+.oak-site__rail {
+  display: grid;
+  gap: var(--space-micro);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* R14 reads a bordered row taller than 40px as a nested frame, so a row's divider is a hairline shadow (as diagram.css). */
+.oak-site__row {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  min-height: 40px;
+  padding: var(--space-xs) 0;
+  box-shadow: inset 0 1px var(--line-soft);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  text-decoration: none;
+}
+
+.oak-site__row > .hugeicon:last-child,
+.oak-site__row > svg:last-child { margin-left: auto; color: var(--muted); }
+
+.oak-site__icon {
+  display: inline-grid;
+  place-items: center;
+  color: var(--oak-kind);
+}
+
+.oak-site__label {
+  min-width: 0;
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.oak-site__path,
+.oak-site__eyebrow {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  overflow-wrap: anywhere;
+}
+
+.oak-site__values {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--space-sm);
+}
+
+.oak-site__value {
+  display: grid;
+  gap: var(--space-xs);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-site__art {
+  position: relative;
+  display: block;
+  aspect-ratio: 1;
+  max-width: 56px;
+  overflow: hidden;
+  border-radius: var(--oak-r-row);
+  background: var(--oak-well);
+}
+
+.oak-site__art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.oak-site__art .oak-site__icon {
+  position: absolute;
+  inset: 0;
+  color: var(--text);
+}
+
+.oak-site__cover {
+  border-radius: var(--oak-r-row);
+}
+
+.oak-site__social {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.oak-site__chip {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-height: 36px;
+  padding: 0 var(--space-sm);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-pill);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  text-decoration: none;
+}
+
+.oak-site__rail { gap: 0; }
+
+.oak-site__stop {
+  position: relative;
+  padding: 0 0 var(--space-sm) var(--space-lg);
+  border-left: 1px solid var(--line-soft);
+  margin-left: var(--space-xs);
+}
+
+.oak-site__stop-link {
+  display: grid;
+  gap: var(--space-micro);
+  text-decoration: none;
+}
+
+.oak-site__marker {
+  position: absolute;
+  top: 4px;
+  left: -6px;
+  width: 11px;
+  height: 11px;
+  border: 2px solid var(--muted);
+  border-radius: var(--radius-pill);
+  background: var(--oak-raised);
+}
+
+.oak-site__stop[data-current] .oak-site__marker {
+  border-color: var(--oak-leaf);
+  background: var(--oak-leaf);
+}
+
+.oak-site__from {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  text-decoration: none;
+}
+
+.oak-site :is(a):focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+.oak-site-quiet {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-site__values { grid-template-columns: minmax(0, 1fr); }
+
+  .oak-site__value {
+    grid-template-columns: 40px minmax(0, 1fr);
+    align-items: center;
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-site__row { border-top: 1px solid CanvasText; }
+  .oak-site__marker { border-color: CanvasText; }
+  .oak-site__stop[data-current] .oak-site__marker { background: Highlight; border-color: Highlight; }
+  .oak-site__dot { background: CanvasText; }
+}

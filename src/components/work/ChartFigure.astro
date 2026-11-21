@@ -1,0 +1,109 @@
+---
+import WorkChartGraphic, {
+  type WorkChartDatum,
+  type WorkChartFormat,
+  type WorkChartSeries,
+  type WorkChartType,
+} from "@/components/work/WorkChartGraphic";
+
+type Props = {
+  eyebrow?: string;
+  title?: string;
+  summary?: string;
+  caption?: string;
+  layout?: "narrow" | "wide" | "pair";
+  aspectRatio?: string;
+  minWidth?: number | string;
+  type: WorkChartType;
+  data: WorkChartDatum[];
+  series: WorkChartSeries[];
+  xKey?: string;
+  categoryKey?: string;
+  valueKey?: string;
+  stacked?: boolean;
+  maxValue?: number;
+  unit?: string;
+  valueFormatter?: WorkChartFormat;
+  axisFormatter?: WorkChartFormat;
+  centerLabel?: string;
+  centerValue?: string;
+  orientation?: "horizontal" | "vertical";
+  yAxisLabel?: string;
+  ticks?: number[];
+};
+
+const {
+  eyebrow,
+  title,
+  summary,
+  caption,
+  layout = "wide",
+  aspectRatio,
+  minWidth,
+  type,
+  data,
+  series,
+  xKey,
+  categoryKey,
+  valueKey,
+  stacked = false,
+  maxValue,
+  unit,
+  valueFormatter = "number",
+  axisFormatter = "raw",
+  centerLabel,
+  centerValue,
+  orientation = "horizontal",
+  yAxisLabel,
+  ticks,
+} = Astro.props;
+
+const minWidthValue = typeof minWidth === "number" ? `${minWidth}px` : minWidth;
+const hasHeader = Boolean(eyebrow || title || summary);
+const chartStyle = [
+  aspectRatio ? `--work-chart-aspect: ${aspectRatio};` : "",
+  minWidthValue ? `--work-chart-min-width: ${minWidthValue};` : "",
+]
+  .filter(Boolean)
+  .join(" ");
+---
+
+<figure class={`work-mdx-chart work-mdx-chart--${layout} work-mdx-chart--type-${type}`}>
+  {
+    hasHeader && (
+      <header class="work-mdx-chart__header">
+        {eyebrow && <span class="work-mdx-chart__eyebrow">{eyebrow}</span>}
+        {title && (
+          <div class="work-mdx-chart__title-row">
+            <h3>{title}</h3>
+          </div>
+        )}
+        {summary && <p>{summary}</p>}
+      </header>
+    )
+  }
+  <div class="work-mdx-chart__viewport" style={chartStyle || undefined}>
+    <div class="work-mdx-chart__plot">
+      <WorkChartGraphic
+        client:visible={{ rootMargin: "240px" }}
+        type={type}
+        data={data}
+        series={series}
+        xKey={xKey}
+        categoryKey={categoryKey}
+        valueKey={valueKey}
+        stacked={stacked}
+        maxValue={maxValue}
+        unit={unit}
+        valueFormatter={valueFormatter}
+        axisFormatter={axisFormatter}
+        centerLabel={centerLabel}
+        centerValue={centerValue}
+        orientation={orientation}
+        yAxisLabel={yAxisLabel}
+        ticks={ticks}
+      />
+    </div>
+  </div>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

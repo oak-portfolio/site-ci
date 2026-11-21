@@ -1,0 +1,279 @@
+{
+  "schema": "oak.mascot-copy-review.v1",
+  "baseline": {
+    "schema": "oak.worker-base.v1",
+    "ticket": "T04",
+    "files": {
+      "src/data/oakMascot.ts": "f29a0990725947678ee9e641ae617efdf8cc1ae261709323794fc7bf1a09c91d",
+      "src/components/OakMascot.tsx": "133e0beb5ac1447acd5ac48becac3fd770f5fda6ed7acd2ba775d78afc651d86"
+    },
+    "rootHead": "87541ed",
+    "acceptedKnowledgeRevision": "oak-7de137a393006ca5e8f1e3e100cb775bb201e3f5ba013a0bf863f3872ef0718f"
+  },
+  "notes": [
+    {
+      "contextId": "home.hero",
+      "text": "Hey, I’m Steve Oak 👋 but Oak is what people actually call me.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "I’m also Oak 🌱 the tiny crowned mascot is here to represent that side of me.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "Okkar Kyaw is my name from home 🌱 Steve Oak is the site version.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "I love design 🎨 and my lane is agentic applied AI plus design engineering.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "Let’s get to know Oak 👋 the human one first, then the systems brain right after.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "This hero is the hello layer 🙂 name, face, and a tiny mascot doing the hosting.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "The short version: Oak builds AI systems with design taste and real workflow use 🛠️",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "Oak is the easy name here 🌱 Okkar Kyaw is the original one.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "Mascot Oak is basically me in tiny site-host mode 😄 same taste, smaller crown.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "This is me saying hi 👋 before the page gets into proof, systems, and taste.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "That intro line is literal 🙂 I design the layer between raw AI and useful products.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "If you remember one thing: agentic applied AI + design engineering is my lane 🧠",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "The design part is not decoration 🎨 it’s how the AI becomes understandable.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "Tiny mascot translation: Oak likes useful AI, clear interfaces, and fewer weird demos 🫡",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.hero",
+      "text": "Say Hi is for the human path 🙂 Work is where the receipts start.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.technology",
+      "text": "Technology has always pulled me in 📱 the iPhone era felt unreal, and AI feels like that again.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.technology",
+      "text": "This card is my habit: YouTube, podcasts, newsletters, X, LinkedIn, always checking the signal ⚡",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.technology",
+      "text": "I get genuinely hyped by new tech 🤓 not every tool matters, but I love finding what becomes useful.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.technology",
+      "text": "The through-line is simple: keep up, test fast, and turn the hype into something people can use 🛠️",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.technology",
+      "text": "AI feels like another big platform shift 🚀 I’m paying attention because this stuff changes how we build.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.design",
+      "text": "Design started early for me 🎨 Microsoft Paint, tiny Oak, Mickey Mouse at age 3 energy.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.design",
+      "text": "I’ve been drawing and making visual stuff forever, then graphic design really clicked around 2009 ✍️",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.design",
+      "text": "UX found me around 2020, and it made design feel like behavior, not just pretty screens 🧠",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.design",
+      "text": "I love designing for AI agents, websites, apps, tools, all of it 🛠️ especially when the system feels clear.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.design",
+      "text": "Design is how messy AI becomes understandable ✨ that’s why this part is not just decoration.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.bay-area",
+      "text": "Bay Area energy is weird in the best way 🌉 technology, nature, and founder spirit all mixed together.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.bay-area",
+      "text": "I like being around people who are building things 🚀 Silicon Valley makes ambition feel normal.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.bay-area",
+      "text": "The peaceful part matters too 🌿 green areas, mountains, water, bridges, space to think.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.bay-area",
+      "text": "This place keeps both sides alive for me: big technology dreams and calm nature resets 🌁",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.feature.bay-area",
+      "text": "Founder energy plus trees and mountains is a strong combo 😄 it keeps me inspired without frying my brain.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "Content creation starts the loop ✍️ notes become drafts, posts, scripts, and sharper product thinking.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "Meditation stays on the calendar 🧘 quieter attention makes better design calls later.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "Networking is part of the system 🤝 founder and builder conversations keep the signal fresh.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "Life tracking is my spreadsheet brain 📊 patterns show up faster when I actually write them down.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "New ideas usually begin messy 💡 I collect the rough ones before deciding what deserves reps.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "Tech updates are daily inputs ⚡ releases, tools, AI shifts, and platform changes all feed the map.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "Agent systems are the main lab 🛠️ memory, tools, routing, evals, and workflows all get checked off.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "Founder listening is underrated 🎧 how people describe pain often tells me what software should do.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "Designing with software, GenAI, and agents is the fun column 🎨 raw capability becomes usable shape.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.workspace",
+      "text": "Open source keeps me honest 🌐 real code, real constraints, better ways to wire things together.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.work",
+      "text": "Agents need memory, tools, evals, and taste 🧠 that mix is my lane.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.work",
+      "text": "These projects are not trophies 📌 they show where my judgment came from.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.work",
+      "text": "I like AI that does useful work ✅ not just AI that sounds impressive.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "home.proof",
+      "text": "These are not random interests. They explain how I build.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "oakminder.learning",
+      "text": "Next time, I would keep the app and the studio learning together 🌱",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "linkedin-growth.first-success",
+      "text": "Routine work moved out of my hands 🦞",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "linkedin-growth.enterprise",
+      "text": "🚀 This is the pattern I want to keep building.",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "linkedin-growth.enterprise",
+      "text": "The work moved out of my head and into the team 🦞",
+      "attribution": "steve-words"
+    },
+    {
+      "contextId": "oak.character.note",
+      "text": "I’m Oak, Steve’s AI host. I can point you to the project evidence.",
+      "attribution": "oak-ai-host"
+    },
+    {
+      "contextId": "oak.character.steve-quote",
+      "text": "EcoSmartLoop changed how I think about AI products.",
+      "attribution": "steve-quote",
+      "documentId": "work:ecosmartloop",
+      "passageId": "work:ecosmartloop:section-013:passage-001",
+      "citationUrl": "https://steveoak.com/work/ecosmartloop/#what-i-took-with-me"
+    },
+    {
+      "contextId": "home.work",
+      "text": "Ask Steve directly through Say Hi about working together 🤝",
+      "attribution": "oak-ai-host",
+      "replaces": "I’m open to building with founders, hobbyists, and real teams 🤝"
+    },
+    {
+      "contextId": "linkedin-growth.telegram",
+      "text": "The same message could guide me or feed the next agent 📩",
+      "attribution": "steve-words"
+    }
+  ]
+}

@@ -1,0 +1,133 @@
+.oak-openui__compare {
+  display: grid;
+}
+
+.oak-openui__compare-row {
+  display: grid;
+  /* R27g live (live-v34 compare): a 1fr label column left about 250px empty beside each row; the label takes a short column. */
+  grid-template-columns: minmax(0, 7rem) minmax(0, 1fr);
+  gap: var(--space-sm);
+  padding-block: var(--space-sm);
+  border-top: 1px solid var(--line-soft);
+}
+
+.oak-openui__compare-head {
+  display: grid;
+  grid-template-columns: minmax(0, 7rem) repeat(2, minmax(0, 1fr));
+  column-gap: var(--space-md);
+  padding-block-end: var(--space-xs);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-openui__compare-head {
+    display: none;
+  }
+}
+
+.oak-openui__compare-row[data-pair] {
+  grid-template-columns: minmax(0, 7rem) repeat(2, minmax(0, 1fr));
+  column-gap: var(--space-md);
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-openui__compare-row,
+  .oak-openui__compare-row[data-pair] {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.oak-openui__compare-row:last-child {
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.oak-openui__compare-row dt {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-openui__compare-row dd {
+  margin: 0;
+}
+
+.oak-openui__compare-col {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-openui__compare-col {
+    position: static;
+    display: block;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    white-space: normal;
+    color: var(--muted);
+    font-size: var(--text-ui-sm);
+    font-weight: 600;
+    line-height: var(--leading-ui);
+  }
+}
+
+.oak-openui__compare-row dd {
+  color: var(--text);
+  line-height: var(--leading-body);
+}
+
+.oak-openui__compare-row dt {
+  color: color-mix(in srgb, var(--oak-violet) 45%, var(--text));
+}
+
+/* Ticket 57 (Public's side by side): named heads with covers, thin column dividers, labels quieter than values. A filled band
+   here was a top-level frame beside the 48px ones (R14), so the heads sit on the answer itself. */
+.oak-openui__compare-head[data-matrix] {
+  align-items: center;
+  padding: var(--space-xs) 0;
+}
+
+.oak-openui__compare-head[data-matrix] > span {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.oak-openui__compare-cover {
+  flex: none;
+  width: var(--space-lg);
+  aspect-ratio: 1;
+  border-radius: var(--radius-pill);
+  object-fit: cover;
+}
+
+.oak-openui__compare[data-matrix] .oak-openui__compare-row:first-child {
+  border-top: 0;
+}
+
+.oak-openui__compare[data-matrix] .oak-openui__compare-row dt {
+  color: var(--muted);
+}
+
+.oak-openui__compare[data-matrix] .oak-openui__compare-row[data-pair] dd + dd {
+  padding-inline-start: var(--space-md);
+  border-inline-start: 1px solid var(--line-soft);
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-openui__compare[data-matrix] .oak-openui__compare-row[data-pair] dd + dd {
+    padding-inline-start: 0;
+    border-inline-start: 0;
+  }
+}

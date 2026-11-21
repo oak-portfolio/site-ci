@@ -1,0 +1,27 @@
+{
+  "name": "Sources",
+  "claims": null,
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "plan": {
+    "in": {
+      "how-it-works": 3,
+      "stack": 3,
+      "results-metrics": 3
+    },
+    "count": "documents"
+  },
+  "structured": false,
+  "structure": false,
+  "judgeView": {
+    "kind": "label",
+    "text": "[Sources button]"
+  },
+  "taughtPresets": []
+}

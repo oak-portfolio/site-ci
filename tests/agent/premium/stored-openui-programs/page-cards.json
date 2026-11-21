@@ -1,0 +1,98 @@
+[
+ {
+  "id": "answer-openui-page-cards",
+  "question": "Where can I read more about EcoSmartLoop?",
+  "program": "root = Answer([pages])\npages = PageCards([\"claim-1\", \"claim-2\"])",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-007:passage-003",
+       "sectionId": "work:ecosmartloop:section-007",
+       "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "Oakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-006",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-page-cards-four",
+  "question": "Which pages talk about AI agents?",
+  "program": "root = Answer([pages])\npages = PageCards([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\"])",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-007:passage-003",
+       "sectionId": "work:ecosmartloop:section-007",
+       "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "Oakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-006",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+      }
+     ]
+    },
+    {
+     "id": "claim-3",
+     "text": "LinkedIn Growth Loop began as one small daily job: review a list of people, write a note, then record what happened.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-004:passage-002",
+       "sectionId": "work:linkedin-growth-loop:section-004",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/#the-first-daily-loop"
+      }
+     ]
+    },
+    {
+     "id": "claim-4",
+     "text": "Agentic Brain separates short-term working context from durable project memory.",
+     "citations": [
+      {
+       "documentId": "work:agentic-brain",
+       "passageId": "work:agentic-brain:section-001:passage-002",
+       "sectionId": "work:agentic-brain:section-001",
+       "url": "https://steveoak.com/work/agentic-brain/"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

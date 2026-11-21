@@ -1,0 +1,4414 @@
+[
+ {
+  "id": "diagram-flow-agentic-brain",
+  "label": "Diagram (ticket 44): flow, Agentic Brain's five systemMap steps as steps in order, one arrow to the next, the detail panel open below (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Agentic memory, RAG, context engineering",
+    "badge": "Memory systems",
+    "articleStatus": "in-progress-stub",
+    "statusLabel": "Case study in progress",
+    "datePublished": "2026-05-27",
+    "dateUpdated": "2026-05-27",
+    "cover": {
+     "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+     "alt": "Agentic Brain cover art for reliable AI memory systems",
+     "ratio": 1.905
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Short-term context",
+      "description": "Keep the current task, constraints, active files, and working decisions close enough for the next agent step."
+     },
+     {
+      "label": "Durable memory",
+      "description": "Store cross-session decisions, taste rules, failure history, and source references where future sessions can retrieve them."
+     },
+     {
+      "label": "Retrieval",
+      "description": "Route questions through RAG, contextual codebase search, Graphify, wiki pages, or direct source reads depending on what needs to be trusted."
+     },
+     {
+      "label": "Instruction surfaces",
+      "description": "Use AGENTS.md, CLAUDE.md, skills, and plugin instructions to make repeated behavior explicit instead of relying on chat memory."
+     },
+     {
+      "label": "MCP collections",
+      "description": "Group specialized external and local tools so agents can reach the right source, action, or dataset without rebuilding the route each time."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+       "alt": "Agentic Brain cover art for reliable AI memory systems",
+       "ratio": 1.905
+      }
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/agentic-brain/agentic-brain-legacy-memory-hallucination-cover-900.webp",
+       "alt": "Legacy AI memory and hallucination case study cover",
+       "ratio": 1.778
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "State",
+      "value": "Case study in progress"
+     },
+     {
+      "label": "Cover source",
+      "value": "2000x1050 PNG"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Agentic Brain work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain keeps short-term working context apart from durable project memory, so a future agent session does not rediscover the same constraints.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000401",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-flow-oakminder",
+  "label": "Diagram (ticket 44): flow, Oakminder's nine systemMap steps as steps in order, one arrow to the next, the detail panel open below (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Oakminder work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000402",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-layers-agentic-brain",
+  "label": "Diagram (ticket 44): layers, Agentic Brain's five systemMap steps as stacked layers, top to bottom, the detail panel open below (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Agentic memory, RAG, context engineering",
+    "badge": "Memory systems",
+    "articleStatus": "in-progress-stub",
+    "statusLabel": "Case study in progress",
+    "datePublished": "2026-05-27",
+    "dateUpdated": "2026-05-27",
+    "cover": {
+     "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+     "alt": "Agentic Brain cover art for reliable AI memory systems",
+     "ratio": 1.905
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Short-term context",
+      "description": "Keep the current task, constraints, active files, and working decisions close enough for the next agent step."
+     },
+     {
+      "label": "Durable memory",
+      "description": "Store cross-session decisions, taste rules, failure history, and source references where future sessions can retrieve them."
+     },
+     {
+      "label": "Retrieval",
+      "description": "Route questions through RAG, contextual codebase search, Graphify, wiki pages, or direct source reads depending on what needs to be trusted."
+     },
+     {
+      "label": "Instruction surfaces",
+      "description": "Use AGENTS.md, CLAUDE.md, skills, and plugin instructions to make repeated behavior explicit instead of relying on chat memory."
+     },
+     {
+      "label": "MCP collections",
+      "description": "Group specialized external and local tools so agents can reach the right source, action, or dataset without rebuilding the route each time."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+       "alt": "Agentic Brain cover art for reliable AI memory systems",
+       "ratio": 1.905
+      }
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/agentic-brain/agentic-brain-legacy-memory-hallucination-cover-900.webp",
+       "alt": "Legacy AI memory and hallucination case study cover",
+       "ratio": 1.778
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "State",
+      "value": "Case study in progress"
+     },
+     {
+      "label": "Cover source",
+      "value": "2000x1050 PNG"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What are the layers of Agentic Brain?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain keeps short-term working context apart from durable project memory, so a future agent session does not rediscover the same constraints.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000403",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"layers\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-layers-oakminder",
+  "label": "Diagram (ticket 44): layers, Oakminder's nine systemMap steps as stacked layers, top to bottom, the detail panel open below (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What are the layers of Oakminder?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000404",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"layers\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-blockdiag-agentic-brain",
+  "label": "Diagram (ticket 44): blockdiag, Agentic Brain's five systemMap steps as grouped blocks with each step's text, the detail panel open below (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Agentic memory, RAG, context engineering",
+    "badge": "Memory systems",
+    "articleStatus": "in-progress-stub",
+    "statusLabel": "Case study in progress",
+    "datePublished": "2026-05-27",
+    "dateUpdated": "2026-05-27",
+    "cover": {
+     "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+     "alt": "Agentic Brain cover art for reliable AI memory systems",
+     "ratio": 1.905
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Short-term context",
+      "description": "Keep the current task, constraints, active files, and working decisions close enough for the next agent step."
+     },
+     {
+      "label": "Durable memory",
+      "description": "Store cross-session decisions, taste rules, failure history, and source references where future sessions can retrieve them."
+     },
+     {
+      "label": "Retrieval",
+      "description": "Route questions through RAG, contextual codebase search, Graphify, wiki pages, or direct source reads depending on what needs to be trusted."
+     },
+     {
+      "label": "Instruction surfaces",
+      "description": "Use AGENTS.md, CLAUDE.md, skills, and plugin instructions to make repeated behavior explicit instead of relying on chat memory."
+     },
+     {
+      "label": "MCP collections",
+      "description": "Group specialized external and local tools so agents can reach the right source, action, or dataset without rebuilding the route each time."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+       "alt": "Agentic Brain cover art for reliable AI memory systems",
+       "ratio": 1.905
+      }
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/agentic-brain/agentic-brain-legacy-memory-hallucination-cover-900.webp",
+       "alt": "Legacy AI memory and hallucination case study cover",
+       "ratio": 1.778
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "State",
+      "value": "Case study in progress"
+     },
+     {
+      "label": "Cover source",
+      "value": "2000x1050 PNG"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Walk me through the architecture of Agentic Brain"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain keeps short-term working context apart from durable project memory, so a future agent session does not rediscover the same constraints.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000405",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"blockdiag\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-blockdiag-oakminder",
+  "label": "Diagram (ticket 44): blockdiag, Oakminder's nine systemMap steps as grouped blocks with each step's text, the detail panel open below (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Walk me through the architecture of Oakminder"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000406",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"blockdiag\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-step",
+  "label": "Diagram (ticket 44): flow on Oakminder with the third node pressed, the panel below showing step 3 of 9 (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "open": "diagram-step",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Oakminder work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000407",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-list",
+  "label": "Diagram (ticket 44): Show as list pressed, the ordered steps in place of the drawing (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "open": "diagram-list",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Oakminder work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000408",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-swimlanes",
+  "label": "Diagram (ticket 44): swimlanes asked for, drawn as flow because no record carries lane data (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Agentic memory, RAG, context engineering",
+    "badge": "Memory systems",
+    "articleStatus": "in-progress-stub",
+    "statusLabel": "Case study in progress",
+    "datePublished": "2026-05-27",
+    "dateUpdated": "2026-05-27",
+    "cover": {
+     "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+     "alt": "Agentic Brain cover art for reliable AI memory systems",
+     "ratio": 1.905
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Short-term context",
+      "description": "Keep the current task, constraints, active files, and working decisions close enough for the next agent step."
+     },
+     {
+      "label": "Durable memory",
+      "description": "Store cross-session decisions, taste rules, failure history, and source references where future sessions can retrieve them."
+     },
+     {
+      "label": "Retrieval",
+      "description": "Route questions through RAG, contextual codebase search, Graphify, wiki pages, or direct source reads depending on what needs to be trusted."
+     },
+     {
+      "label": "Instruction surfaces",
+      "description": "Use AGENTS.md, CLAUDE.md, skills, and plugin instructions to make repeated behavior explicit instead of relying on chat memory."
+     },
+     {
+      "label": "MCP collections",
+      "description": "Group specialized external and local tools so agents can reach the right source, action, or dataset without rebuilding the route each time."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+       "alt": "Agentic Brain cover art for reliable AI memory systems",
+       "ratio": 1.905
+      }
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/agentic-brain/agentic-brain-legacy-memory-hallucination-cover-900.webp",
+       "alt": "Legacy AI memory and hallucination case study cover",
+       "ratio": 1.778
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "State",
+      "value": "Case study in progress"
+     },
+     {
+      "label": "Cover source",
+      "value": "2000x1050 PNG"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Agentic Brain work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain keeps short-term working context apart from durable project memory, so a future agent session does not rediscover the same constraints.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000409",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"swimlanes\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-reduced",
+  "label": "Diagram (ticket 44): flow on Oakminder with the visitor's reduced-motion setting on, nothing animates (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "reducedMotion": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Oakminder work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000410",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-forced-colors",
+  "label": "Diagram (ticket 44): layers on Oakminder for a forced-colors check, the selected node keeps a real outline (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What are the layers of Oakminder?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000411",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"layers\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-streaming",
+  "label": "Diagram (ticket 44): streaming, the ghost drawing while the record facts load",
+  "diagram": true,
+  "recordFacts": "pending",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Oakminder work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000412",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-off",
+  "label": "Diagram (ticket 44) with the constant off: the plain Steps list with the claim placed once",
+  "diagram": false,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Oakminder work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000413",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "diagram-mindmap-oakminder",
+  "label": "Diagram (ticket 45): mindmap on Oakminder, drawn from the reviewed record fields only (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 2,
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What are the parts of Oakminder?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder is one product split into an app, its backend, billing, urgency, voice, docs, distribution, research and creative parts.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-001",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000450",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"mindmap\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "diagramPresets": [
+   "mindmap",
+   "treeview",
+   "radar",
+   "quadrant"
+  ]
+ },
+ {
+  "id": "diagram-mindmap-linkedin-growth-loop",
+  "label": "Diagram (ticket 45): mindmap on LinkedIn Growth Loop, drawn from the reviewed record fields only (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "dek": "My first real success with high-autonomy agent teams: a bounded relationship workflow where agents started running, evaluating, researching, and improving without me operating every step.",
+    "category": "High-autonomy agents, Agent orchestration, Browser control, Trace-based evals",
+    "articleStatus": "full",
+    "datePublished": "2026-04-20",
+    "cover": {
+     "src": "/assets/generated/work/linkedin-growth-loop/linkedin-growth-loop-cover-900.webp",
+     "alt": "Non-human loop diagram for LinkedIn Growth Loop showing OpenClaw execution, Hermes research, Telegram reports, Convex state, and Oak override"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Daily list",
+      "description": "CRM and LinkedIn Navigator sources produced a bounded list of people to inspect, score, and act on."
+     },
+     {
+      "label": "Networking Connector",
+      "description": "Handles target discovery, scoring, queueing, connection-note generation, send-or-skip decisions, and follow-up state."
+     },
+     {
+      "label": "Feed Engager",
+      "description": "Reads relevant feed and target-audience posts, scores fit, respects cooldowns, checks duplicates, and records interaction outcomes."
+     },
+     {
+      "label": "OpenClaw orchestrator",
+      "description": "Runs the agent lanes, coordinates reporting, and owns the improvement path around observed outcomes."
+     },
+     {
+      "label": "Hermes research advisor",
+      "description": "Collects outside research, platform drift, memory context, and risk signals before future changes are proposed."
+     },
+     {
+      "label": "Telegram control room",
+      "description": "Shows human-readable summaries first, then keeps run details, metrics, proof trail, and controls available underneath."
+     },
+     {
+      "label": "Learning history",
+      "description": "Preserves accepted, pending, failed, skipped, response, run-note, good-example, and proposed-change signals for future review."
+     },
+     {
+      "label": "Cost-aware browser control",
+      "description": "Uses programmatic SOPs, page calibration, recorder flows, and minimal-intelligence recovery before paying for heavier model judgment."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "AI Agent Reality image",
+      "status": "verified"
+     },
+     {
+      "label": "LinkedIn Networking image",
+      "status": "verified"
+     },
+     {
+      "label": "Daily loop screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "More Context Survived Each Run",
+      "status": "verified"
+     },
+     {
+      "label": "Relationship-loop visual",
+      "status": "verified"
+     },
+     {
+      "label": "Agent-team responsibility map",
+      "status": "verified"
+     },
+     {
+      "label": "Telegram control room",
+      "status": "verified"
+     },
+     {
+      "label": "Browser-control calibration",
+      "status": "verified"
+     },
+     {
+      "label": "OpenClaw vs Hermes visual",
+      "status": "verified"
+     },
+     {
+      "label": "First-success animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "Reviewer-shift animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "What The Report Had To Separate",
+      "status": "verified"
+     },
+     {
+      "label": "Evaluation matrix",
+      "status": "verified"
+     },
+     {
+      "label": "Improvement-loop diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Self-improvement report",
+      "status": "verified"
+     },
+     {
+      "label": "Duplicate-risk guardrail diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Where Autonomy Was Allowed",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1,
+    "metrics": [
+     {
+      "label": "Run evaluation",
+      "value": "Target + action + health"
+     },
+     {
+      "label": "Traceable reports",
+      "value": "Telegram control room"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "agents-are-overhyped-until-they-own-the-work",
+      "title": "Agents Are Overhyped Until They Own The Work"
+     },
+     {
+      "anchor": "the-in-house-need-made-it-serious",
+      "title": "The In-House Need Made It Serious"
+     },
+     {
+      "anchor": "linkedin-became-the-first-real-success",
+      "title": "LinkedIn Became The First Real Success"
+     },
+     {
+      "anchor": "the-first-daily-loop",
+      "title": "The First Daily Loop"
+     },
+     {
+      "anchor": "orchestrator-workers-validators",
+      "title": "Orchestrator, Workers, Validators"
+     },
+     {
+      "anchor": "harnesses-were-just-the-tools",
+      "title": "Harnesses Were Just The Tools"
+     },
+     {
+      "anchor": "telegram-became-the-control-room",
+      "title": "Telegram Became The Control Room"
+     },
+     {
+      "anchor": "browser-control-kept-the-cost-honest",
+      "title": "Browser Control Kept The Cost Honest"
+     },
+     {
+      "anchor": "evaluation-turned-runs-into-learning",
+      "title": "Evaluation Turned Runs Into Learning"
+     },
+     {
+      "anchor": "one-failure-that-forced-better-rules",
+      "title": "One Failure That Forced Better Rules"
+     },
+     {
+      "anchor": "what-moved-out-of-my-head",
+      "title": "What Moved Out Of My Head"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What are the parts of LinkedIn Growth Loop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop runs as a set of agents and tools around one daily list.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000451",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"mindmap\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "diagramPresets": [
+   "mindmap",
+   "treeview",
+   "radar",
+   "quadrant"
+  ]
+ },
+ {
+  "id": "diagram-treeview-agentic-brain",
+  "label": "Diagram (ticket 45): treeview on Agentic Brain, drawn from the reviewed record fields only (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Agentic memory, RAG, context engineering",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-27",
+    "cover": {
+     "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+     "alt": "Agentic Brain cover art for reliable AI memory systems"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Short-term context",
+      "description": "Keep the current task, constraints, active files, and working decisions close enough for the next agent step."
+     },
+     {
+      "label": "Durable memory",
+      "description": "Store cross-session decisions, taste rules, failure history, and source references where future sessions can retrieve them."
+     },
+     {
+      "label": "Retrieval",
+      "description": "Route questions through RAG, contextual codebase search, Graphify, wiki pages, or direct source reads depending on what needs to be trusted."
+     },
+     {
+      "label": "Instruction surfaces",
+      "description": "Use AGENTS.md, CLAUDE.md, skills, and plugin instructions to make repeated behavior explicit instead of relying on chat memory."
+     },
+     {
+      "label": "MCP collections",
+      "description": "Group specialized external and local tools so agents can reach the right source, action, or dataset without rebuilding the route each time."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified"
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3,
+    "metrics": [
+     {
+      "label": "State",
+      "value": "Case study in progress"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What are the parts of Agentic Brain?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain keeps short-term working context apart from durable project memory.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000452",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"treeview\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "diagramPresets": [
+   "mindmap",
+   "treeview",
+   "radar",
+   "quadrant"
+  ]
+ },
+ {
+  "id": "diagram-radar",
+  "label": "Diagram (ticket 45): radar on EcoSmartLoop, Agentic Brain, drawn from the reviewed record fields only (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "AI agents, behavior change, California SB 1383",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "cover": {
+     "src": "/assets/generated/work/ecosmartloop/ecosmartloop-cover-900.webp",
+     "alt": "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified"
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified"
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified"
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     },
+     {
+      "label": "Capstone poster and flyer",
+      "status": "verified"
+     },
+     {
+      "label": "Team-origin grid",
+      "status": "verified"
+     },
+     {
+      "label": "B2B direction context",
+      "status": "verified"
+     },
+     {
+      "label": "Challenge-resolution animation",
+      "status": "verified"
+     },
+     {
+      "label": "Tech stack visual",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1,
+    "metrics": [
+     {
+      "label": "Dataset",
+      "value": "8K+ images"
+     },
+     {
+      "label": "Model output",
+      "value": "4 classes"
+     },
+     {
+      "label": "Context",
+      "value": "California SB 1383"
+     },
+     {
+      "label": "Global problem",
+      "value": "$640.3B"
+     },
+     {
+      "label": "California scale",
+      "value": "450K businesses"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ]
+   },
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Agentic memory, RAG, context engineering",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-27",
+    "cover": {
+     "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+     "alt": "Agentic Brain cover art for reliable AI memory systems"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Short-term context",
+      "description": "Keep the current task, constraints, active files, and working decisions close enough for the next agent step."
+     },
+     {
+      "label": "Durable memory",
+      "description": "Store cross-session decisions, taste rules, failure history, and source references where future sessions can retrieve them."
+     },
+     {
+      "label": "Retrieval",
+      "description": "Route questions through RAG, contextual codebase search, Graphify, wiki pages, or direct source reads depending on what needs to be trusted."
+     },
+     {
+      "label": "Instruction surfaces",
+      "description": "Use AGENTS.md, CLAUDE.md, skills, and plugin instructions to make repeated behavior explicit instead of relying on chat memory."
+     },
+     {
+      "label": "MCP collections",
+      "description": "Group specialized external and local tools so agents can reach the right source, action, or dataset without rebuilding the route each time."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified"
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3,
+    "metrics": [
+     {
+      "label": "State",
+      "value": "Case study in progress"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Where are Steve's strengths across EcoSmartLoop and Agentic Brain?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop publishes far more proof than Agentic Brain, which is still a case study in progress.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         },
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000453",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"radar\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "diagramPresets": [
+   "mindmap",
+   "treeview",
+   "radar",
+   "quadrant"
+  ]
+ },
+ {
+  "id": "diagram-quadrant",
+  "label": "Diagram (ticket 45): quadrant on EcoSmartLoop, Oakminder, LinkedIn Growth Loop, Agentic Brain, OmniSocial, drawn from the reviewed record fields only (fixture facts)",
+  "diagram": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "AI agents, behavior change, California SB 1383",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "cover": {
+     "src": "/assets/generated/work/ecosmartloop/ecosmartloop-cover-900.webp",
+     "alt": "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Scan",
+      "description": "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+     },
+     {
+      "label": "Classify",
+      "description": "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+     },
+     {
+      "label": "Explain",
+      "description": "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+     },
+     {
+      "label": "Record",
+      "description": "The app saves the decision with user and organization context for history and analytics."
+     },
+     {
+      "label": "Repeat",
+      "description": "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified"
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified"
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified"
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     },
+     {
+      "label": "Capstone poster and flyer",
+      "status": "verified"
+     },
+     {
+      "label": "Team-origin grid",
+      "status": "verified"
+     },
+     {
+      "label": "B2B direction context",
+      "status": "verified"
+     },
+     {
+      "label": "Challenge-resolution animation",
+      "status": "verified"
+     },
+     {
+      "label": "Tech stack visual",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1,
+    "metrics": [
+     {
+      "label": "Dataset",
+      "value": "8K+ images"
+     },
+     {
+      "label": "Model output",
+      "value": "4 classes"
+     },
+     {
+      "label": "Context",
+      "value": "California SB 1383"
+     },
+     {
+      "label": "Global problem",
+      "value": "$640.3B"
+     },
+     {
+      "label": "California scale",
+      "value": "450K businesses"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "the-three-bin-pause",
+      "title": "The three-bin pause"
+     },
+     {
+      "anchor": "the-questions-going-in",
+      "title": "The questions going in"
+     },
+     {
+      "anchor": "where-the-direction-came-from",
+      "title": "Where the direction came from"
+     },
+     {
+      "anchor": "why-a-california-waste-sorting-prototype-was-worth-building",
+      "title": "Why a California waste-sorting prototype was worth building"
+     },
+     {
+      "anchor": "what-i-had-to-make-work",
+      "title": "What I had to make work"
+     },
+     {
+      "anchor": "the-decision-loop",
+      "title": "The decision loop"
+     },
+     {
+      "anchor": "leaf-engine-classified-orbi-explained",
+      "title": "LEAF Engine classified. Orbi explained."
+     },
+     {
+      "anchor": "from-scanner-to-behavior-loop",
+      "title": "From scanner to behavior loop"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     },
+     {
+      "anchor": "the-stack-behind-the-scan",
+      "title": "The stack behind the scan"
+     },
+     {
+      "anchor": "what-the-evidence-actually-showed",
+      "title": "What the evidence actually showed"
+     },
+     {
+      "anchor": "why-we-did-not-turn-it-into-a-company-yet",
+      "title": "Why we did not turn it into a company yet"
+     },
+     {
+      "anchor": "what-i-took-with-me",
+      "title": "What I took with me"
+     }
+    ]
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 2,
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   },
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "dek": "My first real success with high-autonomy agent teams: a bounded relationship workflow where agents started running, evaluating, researching, and improving without me operating every step.",
+    "category": "High-autonomy agents, Agent orchestration, Browser control, Trace-based evals",
+    "articleStatus": "full",
+    "datePublished": "2026-04-20",
+    "cover": {
+     "src": "/assets/generated/work/linkedin-growth-loop/linkedin-growth-loop-cover-900.webp",
+     "alt": "Non-human loop diagram for LinkedIn Growth Loop showing OpenClaw execution, Hermes research, Telegram reports, Convex state, and Oak override"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Daily list",
+      "description": "CRM and LinkedIn Navigator sources produced a bounded list of people to inspect, score, and act on."
+     },
+     {
+      "label": "Networking Connector",
+      "description": "Handles target discovery, scoring, queueing, connection-note generation, send-or-skip decisions, and follow-up state."
+     },
+     {
+      "label": "Feed Engager",
+      "description": "Reads relevant feed and target-audience posts, scores fit, respects cooldowns, checks duplicates, and records interaction outcomes."
+     },
+     {
+      "label": "OpenClaw orchestrator",
+      "description": "Runs the agent lanes, coordinates reporting, and owns the improvement path around observed outcomes."
+     },
+     {
+      "label": "Hermes research advisor",
+      "description": "Collects outside research, platform drift, memory context, and risk signals before future changes are proposed."
+     },
+     {
+      "label": "Telegram control room",
+      "description": "Shows human-readable summaries first, then keeps run details, metrics, proof trail, and controls available underneath."
+     },
+     {
+      "label": "Learning history",
+      "description": "Preserves accepted, pending, failed, skipped, response, run-note, good-example, and proposed-change signals for future review."
+     },
+     {
+      "label": "Cost-aware browser control",
+      "description": "Uses programmatic SOPs, page calibration, recorder flows, and minimal-intelligence recovery before paying for heavier model judgment."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "AI Agent Reality image",
+      "status": "verified"
+     },
+     {
+      "label": "LinkedIn Networking image",
+      "status": "verified"
+     },
+     {
+      "label": "Daily loop screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "More Context Survived Each Run",
+      "status": "verified"
+     },
+     {
+      "label": "Relationship-loop visual",
+      "status": "verified"
+     },
+     {
+      "label": "Agent-team responsibility map",
+      "status": "verified"
+     },
+     {
+      "label": "Telegram control room",
+      "status": "verified"
+     },
+     {
+      "label": "Browser-control calibration",
+      "status": "verified"
+     },
+     {
+      "label": "OpenClaw vs Hermes visual",
+      "status": "verified"
+     },
+     {
+      "label": "First-success animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "Reviewer-shift animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "What The Report Had To Separate",
+      "status": "verified"
+     },
+     {
+      "label": "Evaluation matrix",
+      "status": "verified"
+     },
+     {
+      "label": "Improvement-loop diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Self-improvement report",
+      "status": "verified"
+     },
+     {
+      "label": "Duplicate-risk guardrail diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Where Autonomy Was Allowed",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1,
+    "metrics": [
+     {
+      "label": "Run evaluation",
+      "value": "Target + action + health"
+     },
+     {
+      "label": "Traceable reports",
+      "value": "Telegram control room"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "agents-are-overhyped-until-they-own-the-work",
+      "title": "Agents Are Overhyped Until They Own The Work"
+     },
+     {
+      "anchor": "the-in-house-need-made-it-serious",
+      "title": "The In-House Need Made It Serious"
+     },
+     {
+      "anchor": "linkedin-became-the-first-real-success",
+      "title": "LinkedIn Became The First Real Success"
+     },
+     {
+      "anchor": "the-first-daily-loop",
+      "title": "The First Daily Loop"
+     },
+     {
+      "anchor": "orchestrator-workers-validators",
+      "title": "Orchestrator, Workers, Validators"
+     },
+     {
+      "anchor": "harnesses-were-just-the-tools",
+      "title": "Harnesses Were Just The Tools"
+     },
+     {
+      "anchor": "telegram-became-the-control-room",
+      "title": "Telegram Became The Control Room"
+     },
+     {
+      "anchor": "browser-control-kept-the-cost-honest",
+      "title": "Browser Control Kept The Cost Honest"
+     },
+     {
+      "anchor": "evaluation-turned-runs-into-learning",
+      "title": "Evaluation Turned Runs Into Learning"
+     },
+     {
+      "anchor": "one-failure-that-forced-better-rules",
+      "title": "One Failure That Forced Better Rules"
+     },
+     {
+      "anchor": "what-moved-out-of-my-head",
+      "title": "What Moved Out Of My Head"
+     }
+    ]
+   },
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Agentic memory, RAG, context engineering",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-27",
+    "cover": {
+     "src": "/assets/generated/work/agentic-brain/agentic-brain-cover-900.webp",
+     "alt": "Agentic Brain cover art for reliable AI memory systems"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Short-term context",
+      "description": "Keep the current task, constraints, active files, and working decisions close enough for the next agent step."
+     },
+     {
+      "label": "Durable memory",
+      "description": "Store cross-session decisions, taste rules, failure history, and source references where future sessions can retrieve them."
+     },
+     {
+      "label": "Retrieval",
+      "description": "Route questions through RAG, contextual codebase search, Graphify, wiki pages, or direct source reads depending on what needs to be trusted."
+     },
+     {
+      "label": "Instruction surfaces",
+      "description": "Use AGENTS.md, CLAUDE.md, skills, and plugin instructions to make repeated behavior explicit instead of relying on chat memory."
+     },
+     {
+      "label": "MCP collections",
+      "description": "Group specialized external and local tools so agents can reach the right source, action, or dataset without rebuilding the route each time."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified"
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3,
+    "metrics": [
+     {
+      "label": "State",
+      "value": "Case study in progress"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ]
+   },
+   "work:omnisocial": {
+    "kind": "work",
+    "dek": "An agentic content-production system where specialized AI agents discover and queue content ideas, route them through evergreen or human approval flows, and turn approved ideas into platform-specific social text, video and audio concepts, SEO/AEO articles, and publishing workflows through APIs, browser-control harnesses, CLIs, agents, skills, and plugins.",
+    "category": "Agentic content production, browser harness, API publishing",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-09",
+    "cover": {
+     "src": "/assets/generated/work/omnisocial/omnisocial-cover-900.webp",
+     "alt": "OmniSocial cover showing Browser greater than API with social platform icons"
+    },
+    "coverTint": "#687cee",
+    "systemMap": [
+     {
+      "label": "Inspiration discovery",
+      "description": "Agents and browser workflows collect ideas, examples, trends, source pages, and reusable context before a production pass starts."
+     },
+     {
+      "label": "Human approval",
+      "description": "A human review step decides what idea, source angle, brand constraint, or client direction should move forward."
+     },
+     {
+      "label": "Content production",
+      "description": "Specialized agents turn the approved idea into platform-aware drafts for social text, video and audio concepts, and article surfaces."
+     },
+     {
+      "label": "SEO/AEO article path",
+      "description": "Long-form output keeps source context, answer-engine usefulness, and visible claim boundaries close to the human-readable draft."
+     },
+     {
+      "label": "Publishing harness",
+      "description": "The system can publish or prepare handoff through official APIs where available and browser-control harnesses where UI execution is the realistic path."
+     },
+     {
+      "label": "Reusable tooling",
+      "description": "CLIs, skills, plugins, and agent roles keep recurring production steps repeatable instead of trapped in one-off prompts."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "Content Creation cover",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3,
+    "metrics": [
+     {
+      "label": "State",
+      "value": "Case study in progress"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "work-in-progress-panel-title",
+      "title": "Case study in progress"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Which case studies have the most proof behind them?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop and EcoSmartLoop carry the most published artifacts; Agentic Brain and OmniSocial are still in progress.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         },
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-001",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         },
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         },
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         },
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-001",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000454",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"quadrant\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "diagramPresets": [
+   "mindmap",
+   "treeview",
+   "radar",
+   "quadrant"
+  ]
+ }
+]

@@ -1,0 +1,617 @@
+{
+  "icons": {
+    "aws": {
+      "provider": "aws",
+      "assetPath": "/assets/brand-icons/aws.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 144,
+        "height": 144
+      }
+    },
+    "cursor": {
+      "provider": "cursor",
+      "assetPath": "/assets/brand-icons/cursor.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "fastapi": {
+      "provider": "fastapi",
+      "assetPath": "/assets/brand-icons/fastapi.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 144,
+        "height": 144
+      }
+    },
+    "figma": {
+      "provider": "figma",
+      "assetPath": "/assets/brand-icons/figma.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "github": {
+      "provider": "github",
+      "assetPath": "/assets/brand-icons/github.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "lovable": {
+      "provider": "lovable",
+      "assetPath": "/assets/brand-icons/lovable.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 192,
+        "height": 192
+      }
+    },
+    "motion": {
+      "provider": "motion",
+      "assetPath": "/assets/brand-icons/motion.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 192,
+        "height": 192
+      }
+    },
+    "reactnative": {
+      "provider": "reactnative",
+      "assetPath": "/assets/brand-icons/reactnative.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "v0": {
+      "provider": "v0",
+      "assetPath": "/assets/brand-icons/v0.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "claude": {
+      "provider": "claude",
+      "assetPath": "/assets/brand-icons/claude.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "google": {
+      "provider": "google",
+      "assetPath": "/assets/brand-icons/google.png",
+      "contentType": "image/x-icon",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    "linkedin": {
+      "provider": "linkedin",
+      "assetPath": "/assets/brand-icons/linkedin.png",
+      "contentType": "image/x-icon",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    "nextjs": {
+      "provider": "nextjs",
+      "assetPath": "/assets/brand-icons/nextjs.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "openai": {
+      "provider": "openai",
+      "assetPath": "/assets/brand-icons/openai.png",
+      "contentType": "image/x-icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "perplexity": {
+      "provider": "perplexity",
+      "assetPath": "/assets/brand-icons/perplexity.png",
+      "contentType": "image/x-icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "vercel": {
+      "provider": "vercel",
+      "assetPath": "/assets/brand-icons/vercel.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    "chatgpt": {
+      "provider": "chatgpt",
+      "assetPath": "/assets/brand-icons/chatgpt.png",
+      "contentType": "image/x-icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "calrecycle": {
+      "provider": "calrecycle",
+      "assetPath": "/assets/brand-icons/calrecycle.png",
+      "contentType": "image/webp",
+      "dimensions": {
+        "width": 192,
+        "height": 192
+      }
+    },
+    "browseruse": {
+      "provider": "browseruse",
+      "assetPath": "/assets/brand-icons/browseruse.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "claudecode": {
+      "provider": "claudecode",
+      "assetPath": "/assets/brand-icons/claudecode.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    "codex": {
+      "provider": "codex",
+      "assetPath": "/assets/brand-icons/codex.png",
+      "contentType": "image/x-icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "discord": {
+      "provider": "discord",
+      "assetPath": "/assets/brand-icons/discord.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    "factory": {
+      "provider": "factory",
+      "assetPath": "/assets/brand-icons/factory.png",
+      "contentType": "image/svg+xml",
+      "dimensions": {
+        "width": 508,
+        "height": 508
+      }
+    },
+    "gemini": {
+      "provider": "gemini",
+      "assetPath": "/assets/brand-icons/gemini.png",
+      "contentType": "image/svg+xml",
+      "dimensions": {
+        "width": 192,
+        "height": 192
+      }
+    },
+    "hermes": {
+      "provider": "hermes",
+      "assetPath": "/assets/brand-icons/hermes.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "imessage": {
+      "provider": "imessage",
+      "assetPath": "/assets/brand-icons/imessage.png",
+      "contentType": "image/x-icon",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    "openclaw": {
+      "provider": "openclaw",
+      "assetPath": "/assets/brand-icons/openclaw.png",
+      "contentType": "image/svg+xml",
+      "dimensions": {
+        "width": 120,
+        "height": 120
+      }
+    },
+    "playwright": {
+      "provider": "playwright",
+      "assetPath": "/assets/brand-icons/playwright.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    "slack": {
+      "provider": "slack",
+      "assetPath": "/assets/brand-icons/slack.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 35,
+        "height": 34
+      }
+    },
+    "stagehand": {
+      "provider": "stagehand",
+      "assetPath": "/assets/brand-icons/stagehand.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    "telegram": {
+      "provider": "telegram",
+      "assetPath": "/assets/brand-icons/telegram.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 180,
+        "height": 180
+      }
+    },
+    "convex": {
+      "provider": "convex",
+      "assetPath": "/assets/brand-icons/convex.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "expo": {
+      "provider": "expo",
+      "assetPath": "/assets/brand-icons/expo.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "clerk": {
+      "provider": "clerk",
+      "assetPath": "/assets/brand-icons/clerk.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    "revenuecat": {
+      "provider": "revenuecat",
+      "assetPath": "/assets/brand-icons/revenuecat.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "mintlify": {
+      "provider": "mintlify",
+      "assetPath": "/assets/brand-icons/mintlify.png",
+      "contentType": "image/x-icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "remotion": {
+      "provider": "remotion",
+      "assetPath": "/assets/brand-icons/remotion.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 100,
+        "height": 100
+      }
+    },
+    "postiz": {
+      "provider": "postiz",
+      "assetPath": "/assets/brand-icons/postiz.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "apple": {
+      "provider": "apple",
+      "assetPath": "/assets/brand-icons/apple.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    "android": {
+      "provider": "android",
+      "assetPath": "/assets/brand-icons/android.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "tiktok": {
+      "provider": "tiktok",
+      "assetPath": "/assets/brand-icons/tiktok.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "superwall": {
+      "provider": "superwall",
+      "assetPath": "/assets/brand-icons/superwall.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "openrouter": {
+      "provider": "openrouter",
+      "assetPath": "/assets/brand-icons/openrouter.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "cloudflare": {
+      "provider": "cloudflare",
+      "assetPath": "/assets/brand-icons/cloudflare.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 99,
+        "height": 96
+      }
+    },
+    "astro": {
+      "provider": "astro",
+      "assetPath": "/assets/brand-icons/astro.png",
+      "contentType": "image/svg+xml",
+      "dimensions": {
+        "width": 128,
+        "height": 128
+      }
+    },
+    "aisdk": {
+      "provider": "aisdk",
+      "assetPath": "/assets/brand-icons/aisdk.png",
+      "contentType": "image/svg+xml",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    "betterauth": {
+      "provider": "betterauth",
+      "assetPath": "/assets/brand-icons/betterauth.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "capacitor": {
+      "provider": "capacitor",
+      "assetPath": "/assets/brand-icons/capacitor.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 192,
+        "height": 192
+      }
+    },
+    "deepgram": {
+      "provider": "deepgram",
+      "assetPath": "/assets/brand-icons/deepgram.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    "exa": {
+      "provider": "exa",
+      "assetPath": "/assets/brand-icons/exa.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    "googlecloud": {
+      "provider": "googlecloud",
+      "assetPath": "/assets/brand-icons/googlecloud.png",
+      "contentType": "image/x-icon",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    "instagram": {
+      "provider": "instagram",
+      "assetPath": "/assets/brand-icons/instagram.png",
+      "contentType": "image/webp",
+      "dimensions": {
+        "width": 32,
+        "height": 32
+      }
+    },
+    "langsmith": {
+      "provider": "langsmith",
+      "assetPath": "/assets/brand-icons/langsmith.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "mcp": {
+      "provider": "mcp",
+      "assetPath": "/assets/brand-icons/mcp.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 192,
+        "height": 192
+      }
+    },
+    "notion": {
+      "provider": "notion",
+      "assetPath": "/assets/brand-icons/notion.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    "obsidian": {
+      "provider": "obsidian",
+      "assetPath": "/assets/brand-icons/obsidian.png",
+      "contentType": "image/svg+xml",
+      "dimensions": {
+        "width": 256,
+        "height": 256
+      }
+    },
+    "posthog": {
+      "provider": "posthog",
+      "assetPath": "/assets/brand-icons/posthog.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "prisma": {
+      "provider": "prisma",
+      "assetPath": "/assets/brand-icons/prisma.png",
+      "contentType": "image/svg+xml",
+      "dimensions": {
+        "width": 263,
+        "height": 264
+      }
+    },
+    "python": {
+      "provider": "python",
+      "assetPath": "/assets/brand-icons/python.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 144,
+        "height": 144
+      }
+    },
+    "reddit": {
+      "provider": "reddit",
+      "assetPath": "/assets/brand-icons/reddit.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 64,
+        "height": 64
+      }
+    },
+    "resend": {
+      "provider": "resend",
+      "assetPath": "/assets/brand-icons/resend.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 180,
+        "height": 180
+      }
+    },
+    "sentry": {
+      "provider": "sentry",
+      "assetPath": "/assets/brand-icons/sentry.png",
+      "contentType": "image/vnd.microsoft.icon",
+      "dimensions": {
+        "width": 48,
+        "height": 48
+      }
+    },
+    "supabase": {
+      "provider": "supabase",
+      "assetPath": "/assets/brand-icons/supabase.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "telegrambotapi": {
+      "provider": "telegrambotapi",
+      "assetPath": "/assets/brand-icons/telegrambotapi.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 180,
+        "height": 180
+      }
+    },
+    "tremendous": {
+      "provider": "tremendous",
+      "assetPath": "/assets/brand-icons/tremendous.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "typescript": {
+      "provider": "typescript",
+      "assetPath": "/assets/brand-icons/typescript.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "x": {
+      "provider": "x",
+      "assetPath": "/assets/brand-icons/x.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 512,
+        "height": 512
+      }
+    },
+    "youtube": {
+      "provider": "youtube",
+      "assetPath": "/assets/brand-icons/youtube.png",
+      "contentType": "image/png",
+      "dimensions": {
+        "width": 144,
+        "height": 144
+      }
+    }
+  },
+  "generatedAt": "2026-10-27T14:58:00.441Z"
+}

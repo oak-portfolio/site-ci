@@ -1,0 +1,3318 @@
+[
+ {
+  "id": "answer-openui-settled",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "ccccccc2-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000001-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "How do EcoSmartLoop and Agentic Brain fit in Steve's timeline?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000001-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "EcoSmartLoop was a team capstone built from September to December 2025, during Steve's SFBU graduate period. That capstone was a project, not an employer role. The timeline separately mentions part-time student support.\n\nThe older article was published on January 30, 2026. The later Agentic Brain page describes a newer memory-systems workstream after that January experiment and lists May 2026 as its project period. Publication dates and project periods do not establish current employment or availability.\n\nHe put that training to work in the EcoSmartLoop case study and an older memory experiment.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop was a team capstone built from September to December 2025, during Steve's SFBU graduate period. That capstone was a project, not an employer role. The timeline separately mentions part-time student support.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-001",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         },
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-006",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The older article was published on January 30, 2026. The later Agentic Brain page describes a newer memory-systems workstream after that January experiment and lists May 2026 as its project period. Publication dates and project periods do not establish current employment or availability.",
+        "citations": [
+         {
+          "documentId": "legacy:agentic-brain",
+          "passageId": "legacy:agentic-brain:section-001:passage-001",
+          "sectionId": "legacy:agentic-brain:section-001",
+          "url": "https://independent-performance-642823.framer.app/codex/ai-memory-hallucination-solution"
+         },
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "He put that training to work in the EcoSmartLoop case study and an older memory experiment.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000001-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([h, t, p, src, next])\nh = Heading(\"In order\")\nt = Timeline([a, b])\na = TimelineItem(\"September to December 2025\", \"claim-1\")\nb = TimelineItem(\"January 30, 2026\", \"claim-2\")\np = Prose(\"claim-3\")\nsrc = Sources()\nnext = Pills([\"What did EcoSmartLoop ship?\", \"What is Agentic Brain about?\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000001-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-proposal",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "ccccccc4-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000003-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What design training has Steve completed?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000003-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Coursera reports that Steve completed the Google UX Design professional certificate.\n\nHype4 Academy lists his high-fidelity mobile UI course as completed.\n\nHe put that training to work in the EcoSmartLoop case study and an older memory experiment.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "nextTool": "role",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Coursera reports that Steve completed the Google UX Design professional certificate.",
+        "citations": [
+         {
+          "documentId": "credential:google-ux",
+          "passageId": "credential:google-ux:issuer-reported-completion-and-scope",
+          "sectionId": "credential:google-ux",
+          "url": "https://www.coursera.org/account/accomplishments/professional-cert/UJEHHCJ3AKXK"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Hype4 Academy lists his high-fidelity mobile UI course as completed.",
+        "citations": [
+         {
+          "documentId": "credential:hifi-ui-2",
+          "passageId": "credential:hifi-ui-2:issuer-reported-completion-and-scope",
+          "sectionId": "credential:hifi-ui-2",
+          "url": "https://hype4.academy/certificate/mobile-ui-2/f08054aa-6d89-46e1-972e-9e7145cab2df"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "He put that training to work in the EcoSmartLoop case study and an older memory experiment.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000003-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([pts, p, src, offer])\npts = Points([\"claim-1\", \"claim-2\"])\np = Prose(\"claim-3\")\nsrc = Sources()\noffer = Proposal(\"compareRole\", \"Compare a role you have in mind\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000003-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-partial",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "note": "claim-1 keeps its first 2 of 3 citations",
+  "record": {
+   "conversationId": "ccccccc6-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000005-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "We need someone who has built chatbots, growth funnels and onboarding tools. How does Steve's work cover each?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000005-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "The parts of Steve's case studies I read show that he built the assistant Orbi AI using Vercel AI SDK to search, cite sources, and call tools rather than acting as a standalone themed chatbot, studied growth loops and onboarding via Superwall, and worked on a self-improving LinkedIn interaction loop, but they do not show him implementing dedicated growth funnels or onboarding tools.\n\nIn EcoSmartLoop, Steve built the assistant Orbi AI with the Vercel AI SDK to search, cite sources, call database-backed tools, and render structured UI, exploring whether guidance could feel integrated into the product rather than operating as a themed chatbot.\n\nIn Oakminder, Steve studied channels like Superwall to learn how startup and indie mobile founders handle paywalls, onboarding, user-generated content, pricing, and growth loops, noting that product and distribution are often distinct strengths.\n\nIn his LinkedIn Growth Loop project, Steve utilized LinkedIn feedback outcomes such as connects, replies, or ignored messages for a self-improving relationship agent system to learn from real interactions.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "gap",
+      "acknowledgment": "The parts of Steve's case studies I read show that he built the assistant Orbi AI using Vercel AI SDK to search, cite sources, and call tools rather than acting as a standalone themed chatbot, studied growth loops and onboarding via Superwall, and worked on a self-improving LinkedIn interaction loop, but they do not show him implementing dedicated growth funnels or onboarding tools.",
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, Steve built the assistant Orbi AI with the Vercel AI SDK to search, cite sources, call database-backed tools, and render structured UI, exploring whether guidance could feel integrated into the product rather than operating as a themed chatbot.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-002:passage-002",
+          "sectionId": "work:ecosmartloop:section-002",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-questions-going-in"
+         },
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-002:passage-004",
+          "sectionId": "work:ecosmartloop:section-002",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-questions-going-in"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "In Oakminder, Steve studied channels like Superwall to learn how startup and indie mobile founders handle paywalls, onboarding, user-generated content, pricing, and growth loops, noting that product and distribution are often distinct strengths.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-008:passage-006",
+          "sectionId": "work:oakminder:section-008",
+          "url": "https://steveoak.com/work/oakminder/#after-the-app-store-distribution-started"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "In his LinkedIn Growth Loop project, Steve utilized LinkedIn feedback outcomes such as connects, replies, or ignored messages for a self-improving relationship agent system to learn from real interactions.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-003:passage-005",
+          "sectionId": "work:linkedin-growth-loop:section-003",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/#linkedin-became-the-first-real-success"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000005-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([intro_head, comparison, src, follow_ups])\nintro_head = Heading(\"Capabilities Overview\")\ncomparison = Compare([row1, row2, row3])\nrow1 = CompareRow(\"Chatbots\", \"claim-1\")\nrow2 = CompareRow(\"Onboarding & funnels\", \"claim-2\")\nrow3 = CompareRow(\"Growth loops\", \"claim-3\")\nsrc = Sources()\nfollow_ups = Pills([\"How did Orbi AI render structured UI?\", \"What tech stack was used for the LinkedIn agent?\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000005-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-projects",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "ccccccc8-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000007-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Which projects has Steve built with AI agents?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000007-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve has built two AI products end to end: EcoSmartLoop, a recycling app whose Orbi AI assistant explains each sort, and Oakminder, an iOS-first reminders app now live on the App Store.\n\nIn EcoSmartLoop, Steve built Orbi AI on the Vercel AI SDK, so the app could stream answers, show source chips and visible tool progress, and run quiz actions.\n\nHis team shipped it as responsive web plus a Capacitor iOS shell, reusing the Next.js app, auth, API routes and database logic.\n\nFor Oakminder, he chose Convex as the shared source of truth for reminders, recurrence and completion history.\n\nOakminder is iOS-first and live on the App Store, on an account-backed foundation so iOS and Android can share the same reminders over time.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve has built two AI products end to end: EcoSmartLoop, a recycling app whose Orbi AI assistant explains each sort, and Oakminder, an iOS-first reminders app now live on the App Store.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-005",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         },
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-003:passage-006",
+          "sectionId": "work:oakminder:section-003",
+          "url": "https://steveoak.com/work/oakminder/#notification-actions-had-to-carry-more"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "In EcoSmartLoop, Steve built Orbi AI on the Vercel AI SDK, so the app could stream answers, show source chips and visible tool progress, and run quiz actions.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-005",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "His team shipped it as responsive web plus a Capacitor iOS shell, reusing the Next.js app, auth, API routes and database logic.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-009:passage-002",
+          "sectionId": "work:ecosmartloop:section-009",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-tradeoffs-that-made-it-real"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "For Oakminder, he chose Convex as the shared source of truth for reminders, recurrence and completion history.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-003",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "Oakminder is iOS-first and live on the App Store, on an account-backed foundation so iOS and Android can share the same reminders over time.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-003:passage-006",
+          "sectionId": "work:oakminder:section-003",
+          "url": "https://steveoak.com/work/oakminder/#notification-actions-had-to-carry-more"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000007-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, eco, mind, tools, src, next])\neco = Project([\"claim-2\", \"claim-3\"])\nmind = Project([\"claim-4\", \"claim-5\"])\ntools = Stack()\nsrc = Sources()\nnext = Pills([\"What did Orbi AI do?\", \"How does Oakminder sync reminders?\"])\nlead = Prose(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000007-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-stack",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "note": "claim-1 keeps its first 2 of 3 citations",
+  "record": {
+   "conversationId": "cccccc10-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000009-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What tech stack does Steve use?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000009-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Across Oak Labs, EcoSmartLoop, and Oakminder, Steve uses technologies including React Native, GCP, Next.js, TypeScript, Supabase, FastAPI, Convex, and Expo.\n\nFor Oak Labs, the listed technologies are React Native, WebMCP, MCP, Anthropic Claude, Google Gemini, and GCP.\n\nFor EcoSmartLoop, the stack includes Next.js, TypeScript, Capacitor, Supabase, Prisma, BetterAuth, AWS, FastAPI, Python, Vercel AI SDK, Tremendous, and Motion.\n\nFor Oakminder, Steve chose Convex to make real-time data changes easier to build without spending the whole project buried in infrastructure decisions, pairing it with Expo, Clerk, and RevenueCat.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Across Oak Labs, EcoSmartLoop, and Oakminder, Steve uses technologies including React Native, GCP, Next.js, TypeScript, Supabase, FastAPI, Convex, and Expo.",
+        "citations": [
+         {
+          "documentId": "experience:oaklabs",
+          "passageId": "experience:oaklabs:passage-001",
+          "sectionId": "experience:oaklabs",
+          "url": "https://steveoak.com/work#oaklabs"
+         },
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-004:passage-003",
+          "sectionId": "work:ecosmartloop:section-004",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "For Oak Labs, the listed technologies are React Native, WebMCP, MCP, Anthropic Claude, Google Gemini, and GCP.",
+        "citations": [
+         {
+          "documentId": "experience:oaklabs",
+          "passageId": "experience:oaklabs:passage-002",
+          "sectionId": "experience:oaklabs",
+          "url": "https://steveoak.com/work#oaklabs"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "For EcoSmartLoop, the stack includes Next.js, TypeScript, Capacitor, Supabase, Prisma, BetterAuth, AWS, FastAPI, Python, Vercel AI SDK, Tremendous, and Motion.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-004:passage-003",
+          "sectionId": "work:ecosmartloop:section-004",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "For Oakminder, Steve chose Convex to make real-time data changes easier to build without spending the whole project buried in infrastructure decisions, pairing it with Expo, Clerk, and RevenueCat.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-003",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000009-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, ol, eco, mind, tools, src, next])\nlead = Prose(\"claim-1\")\nol = Role([\"claim-2\"])\neco = Project([\"claim-3\"])\nmind = Project([\"claim-4\"])\ntools = Stack()\nsrc = Sources()\nnext = Pills([\"What did he build with Convex?\", \"How does he use AI agents?\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000009-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-framed",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc12-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000011-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Which projects has Steve built with AI agents?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000011-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "In EcoSmartLoop, Steve built Orbi AI on the Vercel AI SDK, so the app could stream answers, show source chips and visible tool progress, and run quiz actions.\n\nHis team shipped it as responsive web plus a Capacitor iOS shell, reusing the Next.js app, auth, API routes and database logic.\n\nFor Oakminder, he chose Convex as the shared source of truth for reminders, recurrence and completion history.\n\nOakminder is iOS-first and live on the App Store, on an account-backed foundation so iOS and Android can share the same reminders over time.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, Steve built Orbi AI on the Vercel AI SDK, so the app could stream answers, show source chips and visible tool progress, and run quiz actions.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-005",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "His team shipped it as responsive web plus a Capacitor iOS shell, reusing the Next.js app, auth, API routes and database logic.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-009:passage-002",
+          "sectionId": "work:ecosmartloop:section-009",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-tradeoffs-that-made-it-real"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "For Oakminder, he chose Convex as the shared source of truth for reminders, recurrence and completion history.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-003",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Oakminder is iOS-first and live on the App Store, on an account-backed foundation so iOS and Android can share the same reminders over time.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-003:passage-006",
+          "sectionId": "work:oakminder:section-003",
+          "url": "https://steveoak.com/work/oakminder/#notification-actions-had-to-carry-more"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000011-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([eco, mind, src])\neco = Project([\"claim-1\", \"claim-2\"])\nmind = Project([\"claim-3\", \"claim-4\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000011-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-partial-cards",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc14-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000013-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Which projects has Steve built with AI agents?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000013-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "The case studies I read show what Steve built in EcoSmartLoop and Oakminder, but they do not say how many people use either app today.\n\nIn EcoSmartLoop, Steve built Orbi AI on the Vercel AI SDK, so the app could stream answers, show source chips and visible tool progress, and run quiz actions.\n\nHis team shipped it as responsive web plus a Capacitor iOS shell, reusing the Next.js app, auth, API routes and database logic.\n\nFor Oakminder, he chose Convex as the shared source of truth for reminders, recurrence and completion history.\n\nOakminder is iOS-first and live on the App Store, on an account-backed foundation so iOS and Android can share the same reminders over time.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "gap",
+      "acknowledgment": "The case studies I read show what Steve built in EcoSmartLoop and Oakminder, but they do not say how many people use either app today.",
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, Steve built Orbi AI on the Vercel AI SDK, so the app could stream answers, show source chips and visible tool progress, and run quiz actions.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-005",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "His team shipped it as responsive web plus a Capacitor iOS shell, reusing the Next.js app, auth, API routes and database logic.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-009:passage-002",
+          "sectionId": "work:ecosmartloop:section-009",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-tradeoffs-that-made-it-real"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "For Oakminder, he chose Convex as the shared source of truth for reminders, recurrence and completion history.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-003",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Oakminder is iOS-first and live on the App Store, on an account-backed foundation so iOS and Android can share the same reminders over time.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-003:passage-006",
+          "sectionId": "work:oakminder:section-003",
+          "url": "https://steveoak.com/work/oakminder/#notification-actions-had-to-carry-more"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000013-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([eco, mind, tools, src, next])\neco = Project([\"claim-1\", \"claim-2\"])\nmind = Project([\"claim-3\", \"claim-4\"])\ntools = Stack()\nsrc = Sources()\nnext = Pills([\"What did Orbi AI do?\", \"How does Oakminder sync reminders?\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000013-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-roles",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc16-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000015-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What did Steve do at HyperSkalers and Uhttention?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000015-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Across his two most recent roles, Steve moved from shipping AI marketing systems at Uhttention to owning agent evaluation and pipelines on client systems at HyperSkalers.\n\nAt HyperSkalers, Steve owned the evaluation layer for agent decisions, creative and offer variants, and human-review outcomes.\n\nHe built and deployed Python and TypeScript support and sales-call pipelines on client systems.\n\nAt Uhttention, he shipped AI-driven SEO, chatbot routing, lead-generation funnels, and content systems.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Across his two most recent roles, Steve moved from shipping AI marketing systems at Uhttention to owning agent evaluation and pipelines on client systems at HyperSkalers.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         },
+         {
+          "documentId": "experience:uhttention",
+          "passageId": "experience:uhttention:passage-004",
+          "sectionId": "experience:uhttention",
+          "url": "https://steveoak.com/work#uhttention"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "At HyperSkalers, Steve owned the evaluation layer for agent decisions, creative and offer variants, and human-review outcomes.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "He built and deployed Python and TypeScript support and sales-call pipelines on client systems.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-003",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "At Uhttention, he shipped AI-driven SEO, chatbot routing, lead-generation funnels, and content systems.",
+        "citations": [
+         {
+          "documentId": "experience:uhttention",
+          "passageId": "experience:uhttention:passage-004",
+          "sectionId": "experience:uhttention",
+          "url": "https://steveoak.com/work#uhttention"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000015-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, hs, uh, src])\nhs = Role([\"claim-2\", \"claim-3\"])\nuh = Role([\"claim-4\"])\nsrc = Sources()\nlead = Prose(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000015-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-source",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc18-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000017-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Where can I read about Oakminder's launch, and has Steve done UX training?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000017-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Putting Oakminder on the App Store answered his first question: whether he could ship the app.\n\nCoursera reports that Steve completed the Google UX Design professional certificate.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Putting Oakminder on the App Store answered his first question: whether he could ship the app.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-008:passage-001",
+          "sectionId": "work:oakminder:section-008",
+          "url": "https://steveoak.com/work/oakminder/#after-the-app-store-distribution-started"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Coursera reports that Steve completed the Google UX Design professional certificate.",
+        "citations": [
+         {
+          "documentId": "credential:google-ux",
+          "passageId": "credential:google-ux:issuer-reported-completion-and-scope",
+          "sectionId": "credential:google-ux",
+          "url": "https://www.coursera.org/account/accomplishments/professional-cert/UJEHHCJ3AKXK"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000017-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([launch, ux, src])\nlaunch = Source(\"claim-1\")\nux = Source(\"claim-2\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000017-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-stats",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc20-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000019-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "How big was the EcoSmartLoop model?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000019-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.\n\nLEAF Engine had 8K+ images of training context behind it.\n\nIt sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "LEAF Engine had 8K+ images of training context behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000019-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, nums, src])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000019-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-steps",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc22-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000021-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "How did Steve build the LinkedIn Growth Loop, step by step?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000021-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "LinkedIn Growth Loop began as one small daily job: review a list of people, understand why each belonged there, write a personalized connection note, send or skip, then record what happened.\n\nTarget review gave the loop a real starting point: who this person is, why they fit, and whether the next action should happen.\n\nResponse tracking made the next run smarter: the system could keep the outcome, compare it with prior choices, and decide what changed.\n\nLater, the scope widened into target discovery, feed interaction, response tracking, follow-up state, and outcome comparison.\n\nSteve then stopped treating the workflow as one agent and split it into two operating groups: people work, and public interaction.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop began as one small daily job: review a list of people, understand why each belonged there, write a personalized connection note, send or skip, then record what happened.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Target review gave the loop a real starting point: who this person is, why they fit, and whether the next action should happen.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-005",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Response tracking made the next run smarter: the system could keep the outcome, compare it with prior choices, and decide what changed.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-006",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Later, the scope widened into target discovery, feed interaction, response tracking, follow-up state, and outcome comparison.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-004",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "Steve then stopped treating the workflow as one agent and split it into two operating groups: people work, and public interaction.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-005:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-005",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         },
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-005:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-005",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000021-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, how, src])\nlead = Prose(\"claim-1\")\nhow = Steps([\"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000021-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-steps-linkedin",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc24-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000023-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What steps did Steve take to build the LinkedIn Growth Loop?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000023-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve defined the basic daily task around evaluating a targeted list from CRM context and Navigator-style targeting, drafting personalized notes, deciding whether to send or skip, and logging the outcomes.\n\nRather than relying on a single agent, Steve divided the workflow into two dedicated operating groups: one managing people work such as target scoring, notes, and follow-ups, and another handling public interactions like posts, cooldowns, duplicate risks, and response signals.\n\nHe set up OpenClaw as the primary worker and orchestrator to execute recurring tasks, coordinate tools, report status, and maintain lane progress.\n\nSteve constructed a Telegram control room where harnesses reported structured updates with status, key metrics, failures, controls, and machine-readable data.\n\nTo increase autonomy, Steve routed reports, research notes, and failures back into the next agent group so the system self-improved instead of routing every suggestion through him.\n\nHe connected run outcomes and learning history with Hermes research signals and OpenClaw improvement proposals, feeding bounded changes into subsequent runs and Telegram updates.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve defined the basic daily task around evaluating a targeted list from CRM context and Navigator-style targeting, drafting personalized notes, deciding whether to send or skip, and logging the outcomes.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Rather than relying on a single agent, Steve divided the workflow into two dedicated operating groups: one managing people work such as target scoring, notes, and follow-ups, and another handling public interactions like posts, cooldowns, duplicate risks, and response signals.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-005:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-005",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "He set up OpenClaw as the primary worker and orchestrator to execute recurring tasks, coordinate tools, report status, and maintain lane progress.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-004",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Steve constructed a Telegram control room where harnesses reported structured updates with status, key metrics, failures, controls, and machine-readable data.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-005",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "To increase autonomy, Steve routed reports, research notes, and failures back into the next agent group so the system self-improved instead of routing every suggestion through him.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-006",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-6",
+        "text": "He connected run outcomes and learning history with Hermes research signals and OpenClaw improvement proposals, feeding bounded changes into subsequent runs and Telegram updates.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-005:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-005",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000023-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([how, src, next])\nhow = Steps([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\", \"claim-6\"])\nsrc = Sources()\nnext = Pills([\"How did the agents self-improve?\", \"What tools and stack did he use?\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000023-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-steps-continued",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc26-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000025-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "How did Steve build the LinkedIn Growth Loop, step by step?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000025-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "LinkedIn Growth Loop began as one small daily job: review a list of people, understand why each belonged there, write a personalized connection note, send or skip, then record what happened.\n\nTarget review gave the loop a real starting point: who this person is, why they fit, and whether the next action should happen.\n\nResponse tracking made the next run smarter: the system could keep the outcome, compare it with prior choices, and decide what changed.\n\nLater, the scope widened into target discovery, feed interaction, response tracking, follow-up state, and outcome comparison.\n\nSteve then stopped treating the workflow as one agent and split it into two operating groups: people work, and public interaction.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop began as one small daily job: review a list of people, understand why each belonged there, write a personalized connection note, send or skip, then record what happened.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Target review gave the loop a real starting point: who this person is, why they fit, and whether the next action should happen.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-005",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Response tracking made the next run smarter: the system could keep the outcome, compare it with prior choices, and decide what changed.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-006",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Later, the scope widened into target discovery, feed interaction, response tracking, follow-up state, and outcome comparison.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-004",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "Steve then stopped treating the workflow as one agent and split it into two operating groups: people work, and public interaction.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-005:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-005",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         },
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-005:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-005",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000025-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, h1, a, h2, b, src])\nlead = Prose(\"claim-1\")\nh1 = Heading(\"First build\")\na = Steps([\"claim-2\", \"claim-3\"])\nh2 = Heading(\"Later versions\")\nb = Steps([\"claim-4\", \"claim-5\"], 3)\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000025-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-meter",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc28-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000027-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What results did Steve get at Uhttention?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000027-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "At Uhttention, Steve shipped AI-driven SEO, chatbot routing, lead-generation funnels, affiliate and community loops, and content systems.\n\nThose systems grew organic traffic about 200%.\n\nThey also cut cost per lead about 40%.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "At Uhttention, Steve shipped AI-driven SEO, chatbot routing, lead-generation funnels, affiliate and community loops, and content systems.",
+        "citations": [
+         {
+          "documentId": "experience:uhttention",
+          "passageId": "experience:uhttention:passage-004",
+          "sectionId": "experience:uhttention",
+          "url": "https://steveoak.com/work#uhttention"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Those systems grew organic traffic about 200%.",
+        "citations": [
+         {
+          "documentId": "experience:uhttention",
+          "passageId": "experience:uhttention:passage-004",
+          "sectionId": "experience:uhttention",
+          "url": "https://steveoak.com/work#uhttention"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "They also cut cost per lead about 40%.",
+        "citations": [
+         {
+          "documentId": "experience:uhttention",
+          "passageId": "experience:uhttention:passage-004",
+          "sectionId": "experience:uhttention",
+          "url": "https://steveoak.com/work#uhttention"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000027-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, nums, src])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Organic traffic\", \"200%\", \"claim-2\")\nb = Meter(\"Cost per lead cut\", 40, \"claim-3\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000027-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-numbers-pages",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc30-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000029-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What impact numbers does Steve have for his work?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000029-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve's work records show roughly $600K in attributed sales on $60K ad spend at HyperSkalers, and a chatbot that reached 1,000+ users with a reported 60% reduction in response time.\n\nAt HyperSkalers, he worked with the team on a home-service client's first-month campaign that generated roughly $600K attributed sales on $60K ad spend.\n\nThe chatbot reached 1,000+ users, with a reported 60% reduction in response time.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve's work records show roughly $600K in attributed sales on $60K ad spend at HyperSkalers, and a chatbot that reached 1,000+ users with a reported 60% reduction in response time.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         },
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "At HyperSkalers, he worked with the team on a home-service client's first-month campaign that generated roughly $600K attributed sales on $60K ad spend.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "The chatbot reached 1,000+ users, with a reported 60% reduction in response time.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000029-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, nums, src])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Attributed sales\", \"$600K\", \"claim-2\")\nb = Meter(\"Response time reduction\", 60, \"claim-3\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000029-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-stats-mixed",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc32-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000031-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What impact numbers does Steve have for his work?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000031-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve's work shows roughly $600K attributed sales on $60K ad spend at HyperSkalers, a 60% reduction in response time for 1,000+ users at San Francisco Bay University, and 50-100M monthly organic views plus about 30% improved conversion.\n\nAt HyperSkalers, he worked with the team on a home-service client's first-month campaign that generated roughly $600K attributed sales on $60K ad spend, illustrating the value of owning an evaluation layer for agent decisions and variants.\n\nAt San Francisco Bay University, the chatbot reached 1,000+ users with a reported 60% reduction in response time, demonstrating how focused conversational tools can improve service speed for learners.\n\nAt HyperSkalers, he built hook-generation and repurposing workflows that helped scale team content to 50-100M organic views per month, showing how generative automation supports reach across social platforms.\n\nAt HyperSkalers, his audience-routed chatbots and newsletter automation connected user intent to funnel paths, improving conversion by about 30%.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve's work shows roughly $600K attributed sales on $60K ad spend at HyperSkalers, a 60% reduction in response time for 1,000+ users at San Francisco Bay University, and 50-100M monthly organic views plus about 30% improved conversion.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         },
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "At HyperSkalers, he worked with the team on a home-service client's first-month campaign that generated roughly $600K attributed sales on $60K ad spend, illustrating the value of owning an evaluation layer for agent decisions and variants.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "At San Francisco Bay University, the chatbot reached 1,000+ users with a reported 60% reduction in response time, demonstrating how focused conversational tools can improve service speed for learners.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "At HyperSkalers, he built hook-generation and repurposing workflows that helped scale team content to 50-100M organic views per month, showing how generative automation supports reach across social platforms.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "At HyperSkalers, his audience-routed chatbots and newsletter automation connected user intent to funnel paths, improving conversion by about 30%.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000031-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, nums, src])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b, c, d])\na = Metric(\"Attributed sales\", \"$600K\", \"claim-2\")\nb = Meter(\"Response time reduction\", 60, \"claim-3\")\nc = Metric(\"Monthly organic views\", \"50-100M\", \"claim-4\")\nd = Meter(\"Conversion improvement\", 30, \"claim-5\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000031-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-stats-two-lines",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc34-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000033-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What impact numbers does Steve have for his work?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000033-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Across projects, recorded metrics include roughly $600K in sales on $60K ad spend at HyperSkalers, and 1,000+ users with a 60% response time reduction at San Francisco Bay University.\n\nAt HyperSkalers, Steve owned the evaluation layer while working with the team on a home-service client's first-month campaign that generated roughly $600K attributed sales on $60K ad spend.\n\nAt San Francisco Bay University, the chatbot reached 1,000+ users, with a reported 60% reduction in response time.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Across projects, recorded metrics include roughly $600K in sales on $60K ad spend at HyperSkalers, and 1,000+ users with a 60% response time reduction at San Francisco Bay University.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         },
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "At HyperSkalers, Steve owned the evaluation layer while working with the team on a home-service client's first-month campaign that generated roughly $600K attributed sales on $60K ad spend.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "At San Francisco Bay University, the chatbot reached 1,000+ users, with a reported 60% reduction in response time.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000033-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, nums, src])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Attributed sales\", \"$600K\", \"claim-2\")\nb = Metric(\"Users reached\", \"1,000+\", \"claim-3\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000033-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-stats-uneven",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc36-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000035-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What impact numbers does Steve have for his work?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000035-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve's work records show roughly $600K in attributed sales on $60K ad spend at HyperSkalers, and a chatbot that reached 1,000+ users with a reported 60% reduction in response time.\n\nAt HyperSkalers, he worked with the team on a home-service client's first-month campaign that generated roughly $600K attributed sales on $60K ad spend, while owning the evaluation layer for agent decisions, creative and offer variants, and human-review outcomes.\n\nThe chatbot reached 1,000+ users.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve's work records show roughly $600K in attributed sales on $60K ad spend at HyperSkalers, and a chatbot that reached 1,000+ users with a reported 60% reduction in response time.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         },
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "At HyperSkalers, he worked with the team on a home-service client's first-month campaign that generated roughly $600K attributed sales on $60K ad spend, while owning the evaluation layer for agent decisions, creative and offer variants, and human-review outcomes.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "The chatbot reached 1,000+ users.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000035-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, nums, src])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Attributed sales\", \"$600K\", \"claim-2\")\nb = Metric(\"Users reached\", \"1,000+\", \"claim-3\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000035-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-compare-paired",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc38-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000037-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Compare Oakminder and EcoSmartLoop.",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000037-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Oakminder is Steve's solo productivity AI agent for reminders, while EcoSmartLoop was a team capstone that helps people sort waste at the bin.\n\nOakminder started from the friction of reminders that fall apart around snoozing, completion and bulk changes.\n\nEcoSmartLoop started from the few seconds of hesitation at the bin, where signage and memory are not enough.\n\nOakminder turns a typed, tapped or spoken request into a real reminder with its title, time and category.\n\nEcoSmartLoop had to explain the scan's answer, save it and make the next decision easier.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder is Steve's solo productivity AI agent for reminders, while EcoSmartLoop was a team capstone that helps people sort waste at the bin.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         },
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder started from the friction of reminders that fall apart around snoozing, completion and bulk changes.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "EcoSmartLoop started from the few seconds of hesitation at the bin, where signage and memory are not enough.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Oakminder turns a typed, tapped or spoken request into a real reminder with its title, time and category.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-002:passage-004",
+          "sectionId": "work:oakminder:section-002",
+          "url": "https://steveoak.com/work/oakminder/#from-tap-flow-to-voice-agent"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "EcoSmartLoop had to explain the scan's answer, save it and make the next decision easier.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-010",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000037-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, cmp, src])\nlead = Prose(\"claim-1\")\ncmp = Compare([why, how])\nwhy = CompareRow(\"Problem\", \"claim-2\", \"claim-3\")\nhow = CompareRow(\"What it does\", \"claim-4\", \"claim-5\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000037-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-callout",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc40-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000039-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "How big is the problem EcoSmartLoop goes after?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000039-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "A CalRecycle SB 1383 cost scenario uses 450,000 California businesses with at least five employees, which is what made EcoSmartLoop feel large without pretending it had reached them.\n\nSB 1383 gave the prototype a concrete operating context: education, collection, inspection, and contamination monitoring.\n\nThe CalRecycle figures are external targets and requirements, not EcoSmartLoop outcomes.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "A CalRecycle SB 1383 cost scenario uses 450,000 California businesses with at least five employees, which is what made EcoSmartLoop feel large without pretending it had reached them.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-004:passage-003",
+          "sectionId": "work:ecosmartloop:section-004",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "SB 1383 gave the prototype a concrete operating context: education, collection, inspection, and contamination monitoring.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-004:passage-006",
+          "sectionId": "work:ecosmartloop:section-004",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "The CalRecycle figures are external targets and requirements, not EcoSmartLoop outcomes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-004:passage-009",
+          "sectionId": "work:ecosmartloop:section-004",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000039-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, ctx, note, src])\nlead = Prose(\"claim-1\")\nctx = Prose(\"claim-2\")\nnote = Callout(\"claim-3\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000039-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-web-blend",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc42-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000041-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What is Agentic Brain, and how do current guides say to measure hallucination?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000041-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Agentic Brain is Steve's memory-systems workstream: it connects short-term context, long-term memory, retrieval, codebase search, context engines, memory graphs, instruction files, MCP collections, skills, and plugins so future agent sessions can recover the right project context.\n\nIt separates short-term working context from durable project memory, so future agent sessions do not need to rediscover the same constraints.\n\nIt uses RAG, contextual codebase search, and direct source reads when the next step needs grounded project context.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory-systems workstream: it connects short-term context, long-term memory, retrieval, codebase search, context engines, memory graphs, instruction files, MCP collections, skills, and plugins so future agent sessions can recover the right project context.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "It separates short-term working context from durable project memory, so future agent sessions do not need to rediscover the same constraints.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It uses RAG, contextual codebase search, and direct source reads when the next step needs grounded project context.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-003",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000041-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, how, src])\nlead = Prose(\"claim-1\")\nhow = Points([\"claim-2\", \"claim-3\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000041-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-roles-three",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "note": "claim-1 keeps its first 2 of 3 citations",
+  "record": {
+   "conversationId": "cccccc44-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000043-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Walk me through Steve's roles at Uhttention, HyperSkalers and Oak Labs.",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000043-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Across these three roles Steve moved from shipping AI marketing systems at Uhttention, to agent evaluation and pipelines at HyperSkalers, to independent AI consulting at Oak Labs.\n\nAt Oak Labs, Steve builds and maintains client AI solutions, from web and CMS delivery and SEO/AEO workflows to agentic iOS and web apps and internal automation.\n\nHe integrates WebMCP into existing pages and builds custom agent skills and plugins for client and internal workflows.\n\nAt HyperSkalers, Steve owned the evaluation layer for agent decisions, creative and offer variants, and human-review outcomes.\n\nHe built and deployed Python and TypeScript support and sales-call pipelines on client systems.\n\nAt Uhttention, he shipped AI-driven SEO, chatbot routing, lead-generation funnels, and content systems.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Across these three roles Steve moved from shipping AI marketing systems at Uhttention, to agent evaluation and pipelines at HyperSkalers, to independent AI consulting at Oak Labs.",
+        "citations": [
+         {
+          "documentId": "experience:oaklabs",
+          "passageId": "experience:oaklabs:passage-001",
+          "sectionId": "experience:oaklabs",
+          "url": "https://steveoak.com/work#oaklabs"
+         },
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "At Oak Labs, Steve builds and maintains client AI solutions, from web and CMS delivery and SEO/AEO workflows to agentic iOS and web apps and internal automation.",
+        "citations": [
+         {
+          "documentId": "experience:oaklabs",
+          "passageId": "experience:oaklabs:passage-002",
+          "sectionId": "experience:oaklabs",
+          "url": "https://steveoak.com/work#oaklabs"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "He integrates WebMCP into existing pages and builds custom agent skills and plugins for client and internal workflows.",
+        "citations": [
+         {
+          "documentId": "experience:oaklabs",
+          "passageId": "experience:oaklabs:passage-003",
+          "sectionId": "experience:oaklabs",
+          "url": "https://steveoak.com/work#oaklabs"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "At HyperSkalers, Steve owned the evaluation layer for agent decisions, creative and offer variants, and human-review outcomes.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "He built and deployed Python and TypeScript support and sales-call pipelines on client systems.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-003",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-6",
+        "text": "At Uhttention, he shipped AI-driven SEO, chatbot routing, lead-generation funnels, and content systems.",
+        "citations": [
+         {
+          "documentId": "experience:uhttention",
+          "passageId": "experience:uhttention:passage-004",
+          "sectionId": "experience:uhttention",
+          "url": "https://steveoak.com/work#uhttention"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000043-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, ol, hs, uh, src])\nlead = Prose(\"claim-1\")\nol = Role([\"claim-2\", \"claim-3\"])\nhs = Role([\"claim-4\", \"claim-5\"])\nuh = Role([\"claim-6\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000043-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-project-one",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc46-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000045-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Tell me about Oakminder.",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000045-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Oakminder is an iOS-first reminders app, live on the App Store.\n\nFor Oakminder, Steve chose Convex as the shared source of truth for reminders, recurrence and completion history.\n\nIts foundation is account-backed, so iOS and Android can share the same reminder state over time.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder is an iOS-first reminders app, live on the App Store.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-003:passage-006",
+          "sectionId": "work:oakminder:section-003",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "For Oakminder, Steve chose Convex as the shared source of truth for reminders, recurrence and completion history.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-003",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Its foundation is account-backed, so iOS and Android can share the same reminder state over time.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-003:passage-006",
+          "sectionId": "work:oakminder:section-003",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000045-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([lead, app, src])\nlead = Prose(\"claim-1\")\napp = Project([\"claim-2\", \"claim-3\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000045-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-source-gap",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc48-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000047-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What impact numbers does Steve have for his work?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000047-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "The parts of Steve's case studies I read do not provide impact numbers for his work.\n\nFor EcoSmartLoop, numbers like the 450,000 California businesses modeled under an SB 1383 cost scenario describe the problem scale, but they do not describe EcoSmartLoop adoption, savings, compliance, or impact.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "k",
+      "kind": "gap",
+      "acknowledgment": "The parts of Steve's case studies I read do not provide impact numbers for his work.",
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "For EcoSmartLoop, numbers like the 450,000 California businesses modeled under an SB 1383 cost scenario describe the problem scale, but they do not describe EcoSmartLoop adoption, savings, compliance, or impact.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-004:passage-003",
+          "sectionId": "work:ecosmartloop:section-004",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000047-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([eco, src])\neco = Source(\"claim-1\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000047-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-ownership",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc58-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000057-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Who did what on EcoSmartLoop?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000057-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve owned the product side of EcoSmartLoop: the requirements, the mobile app and the dataset.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product side of EcoSmartLoop: the requirements, the mobile app and the dataset.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-003",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000057-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([own])\nown = Ownership(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000057-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-profile",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc50-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000049-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Who is Steve?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000049-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve Oak is Okkar Kyaw: a Bay Area AI/design engineer building applied AI systems, retrieval and tool workflows, evaluation loops, and product surfaces that make model behavior easier to inspect and trust.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve Oak is Okkar Kyaw: a Bay Area AI/design engineer building applied AI systems, retrieval and tool workflows, evaluation loops, and product surfaces that make model behavior easier to inspect and trust.",
+        "citations": [
+         {
+          "documentId": "profile:steve-oak",
+          "passageId": "profile:steve-oak:section-001:passage-001",
+          "sectionId": "profile:steve-oak:section-001",
+          "url": "https://steveoak.com/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000049-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([who])\nwho = Profile(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000049-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-quote",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc64-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000051-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "How does Steve approach evals?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000051-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve checks every agent run against evals so a run ends as something he can learn from.\n\nHe sets the checks up before the agents run, so each result is comparable.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve checks every agent run against evals so a run ends as something he can learn from.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "He sets the checks up before the agents run, so each result is comparable.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000051-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([q])\nq = Quote([\"claim-1\", \"claim-2\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000051-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-quote-quotes",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc66-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000053-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What has Steve written about agents?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000053-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve checks every agent run against evals so a run ends as something he can learn from.\n\nHe sets the checks up before the agents run, so each result is comparable.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve checks every agent run against evals so a run ends as something he can learn from.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "He sets the checks up before the agents run, so each result is comparable.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000053-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([q])\nq = Quote([\"claim-1\", \"claim-2\"], \"quotes\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000053-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-quote-bridge",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc68-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000055-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "How does Steve approach evals?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000055-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Steve checks every agent run against evals so a run ends as something he can learn from.\n\nHe sets the checks up before the agents run, so each result is comparable.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve checks every agent run against evals so a run ends as something he can learn from.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "He sets the checks up before the agents run, so each result is comparable.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000055-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([q])\nq = Quote([\"claim-1\", \"claim-2\"], \"bridge\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000055-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-stack-map",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc69-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000058-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What tools does Steve use?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000058-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "EcoSmartLoop's app is Next.js and TypeScript, shipped to phones through Capacitor.\n\nThe LinkedIn growth loop is TypeScript driving Playwright.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop's app is Next.js and TypeScript, shipped to phones through Capacitor.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-003",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The LinkedIn growth loop is TypeScript driving Playwright.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000058-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000058-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-stack-map-venn",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccccc70-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000059-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What do Oakminder and the LinkedIn growth loop share?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000059-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Oakminder is an Expo and SwiftUI app on Convex, with RevenueCat for subscriptions.\n\nThe LinkedIn growth loop runs TypeScript and Playwright, with its state in Convex.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder is an Expo and SwiftUI app on Convex, with RevenueCat for subscriptions.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The LinkedIn growth loop runs TypeScript and Playwright, with its state in Convex.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000059-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"], \"venn\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000059-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-table-matrix",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "c33c0000-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000330-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Compare EcoSmartLoop and Oakminder",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000330-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "EcoSmartLoop, published in 2025, is an AI recycling coach Steve led from product requirements to the mobile app.\n\nOakminder, published in 2026, is Steve's productivity agent with a voice agent and native reminders.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop, published in 2025, is an AI recycling coach Steve led from product requirements to the mobile app.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-002",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder, published in 2026, is Steve's productivity agent with a voice agent and native reminders.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-002",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000330-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\"], \"matrix\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000330-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-table-sctable",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "c33c0001-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000331-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Which roles were contract and which were full time?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000331-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "HyperSkalers was a contract role, Feb 2026 - May 2026, building agent evaluation and call pipelines.\n\nAt Uhttention Steve worked part-time with founders, Jan 2024 - Jan 2025, on AI products and automation.\n\nPNPP Solutions was full-time full-stack engineering and design, Nov 2018 - Jan 2024.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "HyperSkalers was a contract role, Feb 2026 - May 2026, building agent evaluation and call pipelines.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-001",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "At Uhttention Steve worked part-time with founders, Jan 2024 - Jan 2025, on AI products and automation.",
+        "citations": [
+         {
+          "documentId": "experience:uhttention",
+          "passageId": "experience:uhttention:passage-001",
+          "sectionId": "experience:uhttention",
+          "url": "https://steveoak.com/work#uhttention"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "PNPP Solutions was full-time full-stack engineering and design, Nov 2018 - Jan 2024.",
+        "citations": [
+         {
+          "documentId": "experience:pnppsolutions",
+          "passageId": "experience:pnppsolutions:passage-001",
+          "sectionId": "experience:pnppsolutions",
+          "url": "https://steveoak.com/work#pnppsolutions"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000331-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\", \"claim-3\"], \"sctable\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000331-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-table-smap",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "c33c0002-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000332-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What pages does the site have?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000332-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "The home page introduces Steve and the AI products he designs and builds.\n\nThe work page holds the case studies and the career timeline, starting with Oak Labs.\n\nEach case study has its own page, such as Oakminder's.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "The home page introduces Steve and the AI products he designs and builds.",
+        "citations": [
+         {
+          "documentId": "profile:steve-oak",
+          "passageId": "profile:steve-oak:section-001:passage-001",
+          "sectionId": "profile:steve-oak:section-001",
+          "url": "https://steveoak.com/#hero-title"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The work page holds the case studies and the career timeline, starting with Oak Labs.",
+        "citations": [
+         {
+          "documentId": "experience:oaklabs",
+          "passageId": "experience:oaklabs:passage-001",
+          "sectionId": "experience:oaklabs",
+          "url": "https://steveoak.com/work#oaklabs"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Each case study has its own page, such as Oakminder's.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-002",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000332-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\", \"claim-3\"], \"smap\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000332-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-project-wall",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "c31c0000-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "c31c0000-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What has Steve built?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "c31c0000-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.\n\nOakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.\n\nLinkedIn Growth Loop began as one small daily job: review a list of people, write a note, then record what happened.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "LinkedIn Growth Loop began as one small daily job: review a list of people, write a note, then record what happened.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-004:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-004",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "c31c0000-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([wall])\nwall = ProjectWall([\"claim-1\", \"claim-2\", \"claim-3\"])",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "c31c0000-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-screens",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "c39c0000-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "c39c0000-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Show me EcoSmartLoop",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "c39c0000-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "c39c0000-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "c39c0000-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ }
+]

@@ -1,0 +1,1729 @@
+[
+ {
+  "id": "evidence-proof",
+  "label": "EvidenceChart (ticket 40): proof, published and held artifacts per record as stacked bars (Work facts)",
+  "evidenceChart": true,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-27",
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified"
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified"
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified"
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified"
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     },
+     {
+      "label": "Capstone poster and flyer",
+      "status": "verified"
+     },
+     {
+      "label": "Team-origin grid",
+      "status": "verified"
+     },
+     {
+      "label": "B2B direction context",
+      "status": "verified"
+     },
+     {
+      "label": "Challenge-resolution animation",
+      "status": "verified"
+     },
+     {
+      "label": "Tech stack visual",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-04-20",
+    "artifacts": [
+     {
+      "label": "AI Agent Reality image",
+      "status": "verified"
+     },
+     {
+      "label": "LinkedIn Networking image",
+      "status": "verified"
+     },
+     {
+      "label": "Daily loop screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "More Context Survived Each Run",
+      "status": "verified"
+     },
+     {
+      "label": "Relationship-loop visual",
+      "status": "verified"
+     },
+     {
+      "label": "Agent-team responsibility map",
+      "status": "verified"
+     },
+     {
+      "label": "Telegram control room",
+      "status": "verified"
+     },
+     {
+      "label": "Browser-control calibration",
+      "status": "verified"
+     },
+     {
+      "label": "OpenClaw vs Hermes visual",
+      "status": "verified"
+     },
+     {
+      "label": "First-success animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "Reviewer-shift animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "What The Report Had To Separate",
+      "status": "verified"
+     },
+     {
+      "label": "Evaluation matrix",
+      "status": "verified"
+     },
+     {
+      "label": "Improvement-loop diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Self-improvement report",
+      "status": "verified"
+     },
+     {
+      "label": "Duplicate-risk guardrail diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Where Autonomy Was Allowed",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 2
+   },
+   "work:omnisocial": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-09",
+    "artifacts": [
+     {
+      "label": "Content Creation cover",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How much of this work is verified?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop has the most published proof: its posts, charts and outreach screens.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "EcoSmartLoop's case study shows its published dataset, model output and demo screens.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "OakMinder's write-up carries its launch screens and docs.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-003",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Agentic Brain shows its memory cover and the legacy memory case study; the rest is still held.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "OmniSocial shows one published artifact so far, its content creation cover.",
+        "citations": [
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-005",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000401",
+      "program": "root = Answer([chart])\nchart = EvidenceChart([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"])",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "evidence-donut",
+  "label": "EvidenceChart (ticket 40): donut, the published share of every artifact (Work facts)",
+  "evidenceChart": true,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-27",
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified"
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified"
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified"
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified"
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     },
+     {
+      "label": "Capstone poster and flyer",
+      "status": "verified"
+     },
+     {
+      "label": "Team-origin grid",
+      "status": "verified"
+     },
+     {
+      "label": "B2B direction context",
+      "status": "verified"
+     },
+     {
+      "label": "Challenge-resolution animation",
+      "status": "verified"
+     },
+     {
+      "label": "Tech stack visual",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-04-20",
+    "artifacts": [
+     {
+      "label": "AI Agent Reality image",
+      "status": "verified"
+     },
+     {
+      "label": "LinkedIn Networking image",
+      "status": "verified"
+     },
+     {
+      "label": "Daily loop screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "More Context Survived Each Run",
+      "status": "verified"
+     },
+     {
+      "label": "Relationship-loop visual",
+      "status": "verified"
+     },
+     {
+      "label": "Agent-team responsibility map",
+      "status": "verified"
+     },
+     {
+      "label": "Telegram control room",
+      "status": "verified"
+     },
+     {
+      "label": "Browser-control calibration",
+      "status": "verified"
+     },
+     {
+      "label": "OpenClaw vs Hermes visual",
+      "status": "verified"
+     },
+     {
+      "label": "First-success animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "Reviewer-shift animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "What The Report Had To Separate",
+      "status": "verified"
+     },
+     {
+      "label": "Evaluation matrix",
+      "status": "verified"
+     },
+     {
+      "label": "Improvement-loop diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Self-improvement report",
+      "status": "verified"
+     },
+     {
+      "label": "Duplicate-risk guardrail diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Where Autonomy Was Allowed",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 2
+   },
+   "work:omnisocial": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-09",
+    "artifacts": [
+     {
+      "label": "Content Creation cover",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How much of this work is verified?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop has the most published proof: its posts, charts and outreach screens.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "EcoSmartLoop's case study shows its published dataset, model output and demo screens.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "OakMinder's write-up carries its launch screens and docs.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-003",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Agentic Brain shows its memory cover and the legacy memory case study; the rest is still held.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "OmniSocial shows one published artifact so far, its content creation cover.",
+        "citations": [
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-005",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000402",
+      "program": "root = Answer([chart])\nchart = EvidenceChart([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"], \"donut\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "evidence-sankey",
+  "label": "EvidenceChart (ticket 40): sankey, each record flowing to published and held, the first path highlighted (Work facts)",
+  "evidenceChart": true,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-27",
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified"
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified"
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified"
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified"
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     },
+     {
+      "label": "Capstone poster and flyer",
+      "status": "verified"
+     },
+     {
+      "label": "Team-origin grid",
+      "status": "verified"
+     },
+     {
+      "label": "B2B direction context",
+      "status": "verified"
+     },
+     {
+      "label": "Challenge-resolution animation",
+      "status": "verified"
+     },
+     {
+      "label": "Tech stack visual",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-04-20",
+    "artifacts": [
+     {
+      "label": "AI Agent Reality image",
+      "status": "verified"
+     },
+     {
+      "label": "LinkedIn Networking image",
+      "status": "verified"
+     },
+     {
+      "label": "Daily loop screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "More Context Survived Each Run",
+      "status": "verified"
+     },
+     {
+      "label": "Relationship-loop visual",
+      "status": "verified"
+     },
+     {
+      "label": "Agent-team responsibility map",
+      "status": "verified"
+     },
+     {
+      "label": "Telegram control room",
+      "status": "verified"
+     },
+     {
+      "label": "Browser-control calibration",
+      "status": "verified"
+     },
+     {
+      "label": "OpenClaw vs Hermes visual",
+      "status": "verified"
+     },
+     {
+      "label": "First-success animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "Reviewer-shift animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "What The Report Had To Separate",
+      "status": "verified"
+     },
+     {
+      "label": "Evaluation matrix",
+      "status": "verified"
+     },
+     {
+      "label": "Improvement-loop diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Self-improvement report",
+      "status": "verified"
+     },
+     {
+      "label": "Duplicate-risk guardrail diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Where Autonomy Was Allowed",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 2
+   },
+   "work:omnisocial": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-09",
+    "artifacts": [
+     {
+      "label": "Content Creation cover",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What proof is there for each project?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop has the most published proof: its posts, charts and outreach screens.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "EcoSmartLoop's case study shows its published dataset, model output and demo screens.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "OakMinder's write-up carries its launch screens and docs.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-003",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Agentic Brain shows its memory cover and the legacy memory case study; the rest is still held.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "OmniSocial shows one published artifact so far, its content creation cover.",
+        "citations": [
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-005",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000403",
+      "program": "root = Answer([chart])\nchart = EvidenceChart([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"], \"sankey\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "evidence-sankey-1",
+  "label": "EvidenceChart (ticket 40): sankey for one project, ribbons meet both bars",
+  "evidenceChart": true,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-27",
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified"
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified"
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified"
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified"
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     },
+     {
+      "label": "Capstone poster and flyer",
+      "status": "verified"
+     },
+     {
+      "label": "Team-origin grid",
+      "status": "verified"
+     },
+     {
+      "label": "B2B direction context",
+      "status": "verified"
+     },
+     {
+      "label": "Challenge-resolution animation",
+      "status": "verified"
+     },
+     {
+      "label": "Tech stack visual",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-04-20",
+    "artifacts": [
+     {
+      "label": "AI Agent Reality image",
+      "status": "verified"
+     },
+     {
+      "label": "LinkedIn Networking image",
+      "status": "verified"
+     },
+     {
+      "label": "Daily loop screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "More Context Survived Each Run",
+      "status": "verified"
+     },
+     {
+      "label": "Relationship-loop visual",
+      "status": "verified"
+     },
+     {
+      "label": "Agent-team responsibility map",
+      "status": "verified"
+     },
+     {
+      "label": "Telegram control room",
+      "status": "verified"
+     },
+     {
+      "label": "Browser-control calibration",
+      "status": "verified"
+     },
+     {
+      "label": "OpenClaw vs Hermes visual",
+      "status": "verified"
+     },
+     {
+      "label": "First-success animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "Reviewer-shift animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "What The Report Had To Separate",
+      "status": "verified"
+     },
+     {
+      "label": "Evaluation matrix",
+      "status": "verified"
+     },
+     {
+      "label": "Improvement-loop diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Self-improvement report",
+      "status": "verified"
+     },
+     {
+      "label": "Duplicate-risk guardrail diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Where Autonomy Was Allowed",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 2
+   },
+   "work:omnisocial": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-09",
+    "artifacts": [
+     {
+      "label": "Content Creation cover",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What proof is there for each project?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop has the most published proof: its posts, charts and outreach screens.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000404",
+      "program": "root = Answer([chart])\nchart = EvidenceChart([\"claim-1\"], \"sankey\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "evidence-streaming",
+  "label": "EvidenceChart (ticket 40): the ghost while the record facts load",
+  "evidenceChart": true,
+  "recordFacts": "pending",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How much of this work is verified?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop has the most published proof: its posts, charts and outreach screens.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "EcoSmartLoop's case study shows its published dataset, model output and demo screens.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "OakMinder's write-up carries its launch screens and docs.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-003",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Agentic Brain shows its memory cover and the legacy memory case study; the rest is still held.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "OmniSocial shows one published artifact so far, its content creation cover.",
+        "citations": [
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-005",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000405",
+      "program": "root = Answer([chart])\nchart = EvidenceChart([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"])",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "evidence-off",
+  "label": "EvidenceChart (ticket 40): constant off, the plain Points list",
+  "evidenceChart": false,
+  "recordFacts": {
+   "work:agentic-brain": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-27",
+    "artifacts": [
+     {
+      "label": "Memory cover",
+      "status": "verified"
+     },
+     {
+      "label": "Legacy memory and hallucination case study",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2025-12-15",
+    "artifacts": [
+     {
+      "label": "Original retrospective source",
+      "status": "verified"
+     },
+     {
+      "label": "Public overview repo",
+      "status": "verified"
+     },
+     {
+      "label": "Prototype demo",
+      "status": "verified"
+     },
+     {
+      "label": "Bin-side scanner moment",
+      "status": "verified"
+     },
+     {
+      "label": "Orbi guidance UI",
+      "status": "verified"
+     },
+     {
+      "label": "Behavior-loop media",
+      "status": "verified"
+     },
+     {
+      "label": "Organization analytics",
+      "status": "verified"
+     },
+     {
+      "label": "Mobile and desktop demos",
+      "status": "verified"
+     },
+     {
+      "label": "Capstone poster and flyer",
+      "status": "verified"
+     },
+     {
+      "label": "Team-origin grid",
+      "status": "verified"
+     },
+     {
+      "label": "B2B direction context",
+      "status": "verified"
+     },
+     {
+      "label": "Challenge-resolution animation",
+      "status": "verified"
+     },
+     {
+      "label": "Tech stack visual",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-04-20",
+    "artifacts": [
+     {
+      "label": "AI Agent Reality image",
+      "status": "verified"
+     },
+     {
+      "label": "LinkedIn Networking image",
+      "status": "verified"
+     },
+     {
+      "label": "Daily loop screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "More Context Survived Each Run",
+      "status": "verified"
+     },
+     {
+      "label": "Relationship-loop visual",
+      "status": "verified"
+     },
+     {
+      "label": "Agent-team responsibility map",
+      "status": "verified"
+     },
+     {
+      "label": "Telegram control room",
+      "status": "verified"
+     },
+     {
+      "label": "Browser-control calibration",
+      "status": "verified"
+     },
+     {
+      "label": "OpenClaw vs Hermes visual",
+      "status": "verified"
+     },
+     {
+      "label": "First-success animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "Reviewer-shift animated WebP",
+      "status": "verified"
+     },
+     {
+      "label": "What The Report Had To Separate",
+      "status": "verified"
+     },
+     {
+      "label": "Evaluation matrix",
+      "status": "verified"
+     },
+     {
+      "label": "Improvement-loop diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Self-improvement report",
+      "status": "verified"
+     },
+     {
+      "label": "Duplicate-risk guardrail diagram",
+      "status": "verified"
+     },
+     {
+      "label": "Where Autonomy Was Allowed",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 1
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 2
+   },
+   "work:omnisocial": {
+    "kind": "work",
+    "articleStatus": "in-progress-stub",
+    "datePublished": "2026-05-09",
+    "artifacts": [
+     {
+      "label": "Content Creation cover",
+      "status": "verified"
+     }
+    ],
+    "heldArtifacts": 3
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What proof is there for each project?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop has the most published proof: its posts, charts and outreach screens.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "EcoSmartLoop's case study shows its published dataset, model output and demo screens.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "OakMinder's write-up carries its launch screens and docs.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-003",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Agentic Brain shows its memory cover and the legacy memory case study; the rest is still held.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       },
+       {
+        "id": "claim-5",
+        "text": "OmniSocial shows one published artifact so far, its content creation cover.",
+        "citations": [
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-005",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000406",
+      "program": "root = Answer([chart])\nchart = EvidenceChart([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"], \"sankey\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ }
+]

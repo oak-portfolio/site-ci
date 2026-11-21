@@ -1,0 +1,141 @@
+[
+ {
+  "id": "card-after-answer",
+  "label": "Card after answer (ticket 230): a mixed contact and work ask gets the sourced answer, then the Contact card closes the turn before the action row; no bare Contact Steve button (fixture)",
+  "cardAfterAnswer": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "I need the training setup behind EcoSmartLoop's classifier. How do I contact Steve?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "LEAF Engine had 8K+ images of training context behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000002301",
+      "program": "root = Answer([lead, nums, src])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()",
+      "status": "done"
+     },
+     "cards": [
+      {
+       "kind": "contact",
+       "label": "Say Hi",
+       "url": "/contact"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "clarify-then-card",
+  "label": "Clarify then card (ticket 230, ruling 28): the model narrows a mixed contact and work ask, and the Contact card follows the narrowing question; no bare Contact Steve button (fixture)",
+  "cardAfterAnswer": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "I need the stack of the agent project. How do I contact Steve?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      { "id": "understand", "operation": "understand", "state": "done", "startedAt": -3600, "endedAt": -2900 },
+      { "id": "search-1", "operation": "search", "state": "done", "startedAt": -2900, "endedAt": -1600 }
+     ],
+     "answer": {
+      "kind": "clarify",
+      "question": "Steve built a few agent projects. Which one should I focus on?",
+      "options": ["Agentic Brain, agent memory", "Oakminder, a productivity agent", "This Oak AI Agent"]
+     },
+     "cards": [
+      {
+       "kind": "contact",
+       "label": "Say Hi",
+       "url": "/contact"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

@@ -1,0 +1,200 @@
+---
+import { Icon } from "@/components/ui/Icon";
+import { featureCards, heroCopy, media } from "@/data/homePage";
+import "../styles/global.css";
+
+const variants = [
+  { label: "Variant A", background: undefined },
+  { label: "Variant B", background: "/assets/dev/hero-variants/variant-b.png" },
+  { label: "Variant C", background: "/assets/dev/hero-variants/variant-c.png" },
+  { label: "Variant D", background: "/assets/dev/hero-variants/variant-d.png" },
+] as const;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <title>Dev Hero Variants</title>
+  </head>
+  <body class="dev-hero-page">
+    <main aria-labelledby="dev-hero-title">
+      <header class="dev-hero-page__bar">
+        <div>
+          <p>Internal dev page</p>
+          <h1 id="dev-hero-title">Hero variants</h1>
+        </div>
+        <span>/__dev/hero-variants/</span>
+      </header>
+
+      <div class="dev-hero-page__stack">
+        {
+          variants.map((variant) => (
+            <section
+              class:list={["hero-stage", "dev-hero-variant", variant.background && "dev-hero-variant--custom-bg"]}
+              style={variant.background ? `--dev-hero-bg: url("${variant.background}")` : undefined}
+              aria-labelledby={`${variant.label.toLowerCase().replace(" ", "-")}-title`}
+            >
+              <div class="dev-hero-variant__label" aria-hidden="true">
+                {variant.label}
+              </div>
+              <div class="page-container hero-stage__inner">
+                <div class="hero-copy">
+                  <img
+                    class="app-icon app-icon--portrait"
+                    data-hero-portrait
+                    src={media.welcomePortrait}
+                    alt="Steve Oak welcoming"
+                    width="409"
+                    height="500"
+                    decoding="async"
+                    fetchpriority={variant.label === "Variant A" ? "high" : "auto"}
+                  />
+                  <h2 id={`${variant.label.toLowerCase().replace(" ", "-")}-title`}>{heroCopy.title}</h2>
+                  <p>{heroCopy.description}</p>
+                  <span class="dev-contact-placeholder" aria-label="Inert Say Hi placeholder">
+                    Say Hi
+                  </span>
+                </div>
+                <div class="feature-card-grid" aria-label={`${variant.label} feature highlights`}>
+                  {
+                    featureCards.map((card) => (
+                      <article class="feature-card">
+                        <span class="feature-card__media" aria-hidden="true">
+                          <img src={card.image} alt="" width="56" height="56" decoding="async" />
+                          <Icon name={card.icon} size={26} />
+                        </span>
+                        <h3>{card.title}</h3>
+                        <p>{card.description}</p>
+                      </article>
+                    ))
+                  }
+                </div>
+              </div>
+            </section>
+          ))
+        }
+      </div>
+    </main>
+  </body>
+</html>
+
+<style>
+  :global(.dev-hero-page) {
+    min-width: 320px;
+    margin: 0;
+    background: #050505;
+    color: #ffffff;
+  }
+
+  .dev-hero-page__bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    padding: 16px 24px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.16);
+    background: rgba(5, 5, 5, 0.86);
+    backdrop-filter: blur(18px);
+  }
+
+  .dev-hero-page__bar p,
+  .dev-hero-page__bar h1 {
+    margin: 0;
+  }
+
+  .dev-hero-page__bar p,
+  .dev-hero-page__bar span {
+    color: rgba(255, 255, 255, 0.56);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+  }
+
+  .dev-hero-page__bar h1 {
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 28px;
+    letter-spacing: 0;
+  }
+
+  .dev-hero-page__stack {
+    display: grid;
+    gap: 1px;
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .dev-hero-variant {
+    min-height: 1040px;
+  }
+
+  .dev-hero-variant--custom-bg {
+    background-color: #12347f !important;
+    background-image: var(--dev-hero-bg) !important;
+    background-position: center top !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+  }
+
+  .dev-hero-variant__label {
+    position: absolute;
+    top: 24px;
+    left: 24px;
+    z-index: 2;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    border-radius: 999px;
+    padding: 8px 12px;
+    background: rgba(5, 5, 5, 0.54);
+    color: rgba(255, 255, 255, 0.72);
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    backdrop-filter: blur(14px);
+  }
+
+  .hero-copy h2 {
+    margin: 0;
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: 0;
+  }
+
+  .dev-contact-placeholder {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 140px;
+    height: 56px;
+    border-radius: 999px;
+    background: #dceeff;
+    color: #050505;
+    font-family: "Inter", system-ui, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  @media (max-width: 640px) {
+    .dev-hero-page__bar {
+      position: relative;
+      align-items: flex-start;
+      flex-direction: column;
+      padding: 14px 16px;
+    }
+
+    .dev-hero-variant__label {
+      top: 16px;
+      left: 16px;
+    }
+
+    .hero-copy h2 {
+      font-size: 44px;
+    }
+  }
+</style>

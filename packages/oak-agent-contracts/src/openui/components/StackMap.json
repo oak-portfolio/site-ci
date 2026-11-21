@@ -1,0 +1,25 @@
+{
+  "name": "StackMap",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": "views/stack-map.ts",
+  "plan": {
+    "in": {
+      "skills": 2,
+      "stack": 1
+    }
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

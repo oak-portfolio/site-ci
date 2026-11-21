@@ -1,0 +1,26 @@
+{
+ "composer-chips": {
+  "iconOnly": true,
+  "reason": "PR 1d: the page and quote chips with their remove buttons are the visual; no art competes with the message box."
+ },
+ "composer-streaming": {
+  "iconOnly": true,
+  "reason": "PR 1d: the Stop button in the place Send was, and the working glow on the box, are the visual."
+ },
+ "composer-counter": {
+  "iconOnly": true,
+  "reason": "PR 1d: the character counter under a long message is the visual; no art competes with the message box."
+ },
+ "composer-paste-offer": {
+  "iconOnly": true,
+  "reason": "PR 1d: the one-line Compare a role offer under a pasted job post is the visual."
+ },
+ "composer-safe-area": {
+  "iconOnly": true,
+  "reason": "PR 1d: the chips and counter fitting a narrow screen inside its safe area are the visual."
+ },
+ "composer-dictation": {
+  "iconOnly": true,
+  "reason": "PR 1d: the dictation strip opened inside the box is the visual; the Dictate panel keeps its own art."
+ }
+}

@@ -1,0 +1,336 @@
+---
+import { media, socialLinks } from "@/data/homePage";
+import { isDraftStage } from "@/data/siteVisibility";
+import { getOptimizedImage } from "@/data/generated/optimizedImages";
+import { jsonForScript } from "@/lib/jsonForScript";
+import { SiteHeader } from "@/components/SiteHeader";
+import SiteContactBand from "@/components/SiteContactBand.astro";
+import SiteFooter from "@/components/SiteFooter.astro";
+import { HumanMachineMode } from "@/components/HumanMachineMode";
+import { OakWorkspace } from "@/components/agent/OakWorkspace";
+import { oakAgentSprites } from "@/data/oakAgentSprites";
+import { getMachinePages } from "@/data/machineContent.server";
+import { siteProfile } from "@/data/machineContent";
+import { knowledgeRevision, knowledgeSnapshot } from "@/lib/knowledge/snapshot";
+import { oakCitationLabelsWithCovers } from "@/lib/oakCitationCovers.server";
+import { getMachinePageByPath as findMachinePageByPath } from "@/lib/machineMarkdown";
+import { ClientRouter } from "astro:transitions";
+import "../styles/theme.css";
+
+type JsonLdNode = Record<string, unknown>;
+
+type Props = {
+  title?: string;
+  description?: string;
+  canonicalUrl?: string;
+  noindex?: boolean;
+  ogType?: string;
+  ogImage?: string;
+  ogImageAlt?: string;
+  ogImageWidth?: number;
+  ogImageHeight?: number;
+  preloadImages?: Array<{
+    href: string;
+    type?: string;
+    media?: string;
+    fetchpriority?: "high" | "low" | "auto";
+  }>;
+  showContactBand?: boolean;
+  showOakAgent?: boolean;
+  showOakMascot?: boolean;
+  webPageMainEntityId?: string;
+  jsonLdGraph?: JsonLdNode[];
+};
+
+const {
+  title = "Steve Oak | Applied AI Systems + Design Engineering",
+  description = "Bay Area AI/design engineer building applied agentic AI systems, RAG/tool workflows, evaluation loops, and product-quality AI surfaces.",
+  canonicalUrl,
+  noindex = isDraftStage(),
+  ogType = "website",
+  ogImage = media.openGraph,
+  ogImageAlt = "Steve Oak portfolio preview",
+  ogImageWidth = 1200,
+  ogImageHeight = 630,
+  preloadImages = [],
+  showContactBand = true,
+  showOakAgent = true,
+  showOakMascot = true,
+  webPageMainEntityId,
+  jsonLdGraph = [],
+} = Astro.props;
+
+const siteUrl = Astro.site ?? "https://steveoak.com";
+const canonical = canonicalUrl ?? new URL(Astro.url.pathname, siteUrl).toString();
+const resolvedOgImage = new URL(ogImage, Astro.site ?? "https://steveoak.com").toString();
+const sameAsLinks = socialLinks.map((link) => link.href);
+const portrait = getOptimizedImage(media.oakProfile);
+const portraitSources = portrait ? { avif: portrait.sources.avif, webp: portrait.sources.webp, sizes: portrait.sizes } : undefined;
+const oakSourceIds = knowledgeSnapshot.documents.find((entry) => new URL(entry.canonicalUrl).pathname.replace(/\/+$/, "") === Astro.url.pathname.replace(/\/+$/, ""))?.passages.slice(0, 3).map((passage) => passage.id) ?? [];
+const oakCitationLabels = await oakCitationLabelsWithCovers();
+const machinePages = await getMachinePages();
+const normalizedMachinePath = Astro.url.pathname === "/404.html" ? "/404" : Astro.url.pathname;
+const currentMachinePage =
+  findMachinePageByPath(machinePages, normalizedMachinePath) ??
+  findMachinePageByPath(machinePages, "/") ??
+  machinePages[0];
+const currentMachineMarkdownHref = currentMachinePage.markdownHref;
+const currentMachineJsonHref = currentMachinePage.machineJsonHref;
+const isProfilePage = new URL(canonical).pathname === "/";
+const shouldNoindex = noindex || isDraftStage();
+const personJsonLd = {
+  "@type": "Person",
+  "@id": "https://steveoak.com/#person",
+  "name": siteProfile.name,
+  "alternateName": siteProfile.alternateNames,
+  "url": siteProfile.url,
+  "image": siteProfile.image,
+  "description": siteProfile.description,
+  "jobTitle": siteProfile.jobTitle,
+  "homeLocation": {
+    "@type": "Place",
+    "name": "Bay Area"
+  },
+  "knowsAbout": siteProfile.focus,
+  "sameAs": sameAsLinks
+};
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@graph": [
+    personJsonLd,
+    {
+      "@type": "WebSite",
+      "@id": "https://steveoak.com/#website",
+      "url": "https://steveoak.com/",
+      "name": "SteveOak.com",
+      "description": "Personal portfolio for Steve Oak / Okkar Kyaw, focused on applied AI systems and design engineering.",
+      "publisher": { "@id": "https://steveoak.com/#person" },
+      "inLanguage": "en-US"
+    },
+    {
+      "@type": isProfilePage ? "ProfilePage" : "WebPage",
+      "@id": `${canonical}#webpage`,
+      "url": canonical,
+      "name": title,
+      "description": description,
+      "isPartOf": { "@id": "https://steveoak.com/#website" },
+      "about": { "@id": "https://steveoak.com/#person" },
+      "author": { "@id": "https://steveoak.com/#person" },
+      "primaryImageOfPage": resolvedOgImage,
+      ...(webPageMainEntityId ? { "mainEntity": { "@id": webPageMainEntityId } } : {}),
+      ...(isProfilePage ? { "mainEntity": { "@id": "https://steveoak.com/#person" } } : {}),
+      "inLanguage": "en-US"
+    },
+    ...(isProfilePage
+      ? [
+          {
+            "@type": "BreadcrumbList",
+            "@id": `${canonical}#breadcrumbs`,
+            "itemListElement": [
+              {
+                "@type": "ListItem",
+                "position": 1,
+                "name": "Home",
+                "item": "https://steveoak.com/",
+              },
+            ],
+          },
+        ]
+      : []),
+    ...jsonLdGraph
+  ]
+};
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta name="knowledge-revision" content={knowledgeRevision} />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="theme-color" content="#050505" />
+    <!-- P03-G6: Zod reads this before any schema exists, so its `new Function` probe never trips the CSP's eval rule. -->
+    <script is:inline>globalThis.__zod_globalConfig = Object.assign(globalThis.__zod_globalConfig || {}, { jitless: true });</script>
+    {shouldNoindex && <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />}
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
+    <link rel="icon" href="/favicon-16x16.png" type="image/png" sizes="16x16" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" sizes="180x180" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="SteveOak.com page summary" />
+    <link rel="alternate" type="text/plain" href="/llms-full.txt" title="SteveOak.com full public context" />
+    <link rel="alternate" type="application/json" href="/profile.json" title="Steve Oak profile data" />
+    <link rel="alternate" type="application/json" href="/.well-known/agent-profile.json" title="SteveOak.com public profile" />
+    <link rel="alternate" type="text/markdown" href="/skill.md" title="SteveOak.com skill profile" />
+    {currentMachineMarkdownHref && <link rel="alternate" type="text/markdown" href={currentMachineMarkdownHref} title={`${currentMachinePage.shortTitle} Markdown mirror`} />}
+    {currentMachineJsonHref && <link rel="alternate" type="application/json" href={currentMachineJsonHref} title={`${currentMachinePage.shortTitle} public JSON`} />}
+    {sameAsLinks.map((href) => <link rel="me" href={href} />)}
+    {
+      preloadImages.map((image) => (
+        <link
+          rel="preload"
+          as="image"
+          href={image.href}
+          type={image.type}
+          media={image.media}
+          fetchpriority={image.fetchpriority}
+        />
+      ))
+    }
+    <title>{title}</title>
+    <meta name="author" content="Steve Oak" />
+    <meta name="description" content={description} />
+    <link rel="canonical" href={canonical} />
+    <link rel="sitemap" href="/sitemap-index.xml" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:type" content={ogType} />
+    <meta property="og:url" content={canonical} />
+    <meta property="og:image" content={resolvedOgImage} />
+    <meta property="og:image:width" content={String(ogImageWidth)} />
+    <meta property="og:image:height" content={String(ogImageHeight)} />
+    <meta property="og:image:alt" content={ogImageAlt} />
+    <meta property="og:site_name" content="SteveOak.com" />
+    <meta property="og:locale" content="en_US" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={resolvedOgImage} />
+    <meta name="twitter:image:alt" content={ogImageAlt} />
+    <script is:inline type="application/ld+json" set:html={jsonForScript(jsonLd)} />
+    <script is:inline>
+      (() => {
+        if ("startViewTransition" in document) {
+          document.startViewTransition = undefined;
+        }
+
+        if (window.__steveOakRouteTransitionShell) return;
+        window.__steveOakRouteTransitionShell = true;
+
+        let clearTimer;
+        let exitTimer;
+        let pendingExitLayer;
+        const root = document.documentElement;
+        const prefersReducedMotion = () => window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+        const setActive = () => {
+          window.clearTimeout(clearTimer);
+          root.dataset.routeTransition = "active";
+        };
+        const clearActive = () => {
+          window.clearTimeout(clearTimer);
+          clearTimer = window.setTimeout(() => {
+            delete root.dataset.routeTransition;
+          }, 560);
+        };
+        const removeExitLayer = () => {
+          document.querySelectorAll(".route-exit-layer").forEach((layer) => layer.remove());
+          pendingExitLayer = undefined;
+        };
+        const prepareExitLayer = () => {
+          setActive();
+          window.clearTimeout(exitTimer);
+          removeExitLayer();
+
+          if (prefersReducedMotion()) return;
+
+          const source = document.querySelector(".route-surface");
+          if (!source) return;
+
+          const layer = document.createElement("div");
+          layer.className = "route-exit-layer";
+
+          const scrollY = window.scrollY || document.documentElement.scrollTop || 0;
+          const clone = source.cloneNode(true);
+          clone.classList.add("route-exit-layer__content");
+          clone.style.setProperty("--route-exit-offset-y", `${-scrollY}px`);
+          layer.append(clone);
+          pendingExitLayer = layer;
+          document.body.append(layer);
+
+          requestAnimationFrame(() => {
+            if (layer.isConnected && layer.dataset.state !== "leaving") {
+              layer.dataset.state = "preparing";
+            }
+          });
+        };
+        const carryExitLayerIntoNewDocument = (event) => {
+          if (event.newDocument?.documentElement) {
+            event.newDocument.documentElement.dataset.routeTransition = "active";
+          }
+          if (!pendingExitLayer || !event.newDocument?.body) return;
+
+          const layer = event.newDocument.importNode(pendingExitLayer, true);
+          event.newDocument.body.append(layer);
+        };
+        const animateExitLayer = () => {
+          window.clearTimeout(exitTimer);
+          const layers = document.querySelectorAll(".route-exit-layer");
+          if (!layers.length) return;
+
+          layers.forEach((layer) => {
+            layer.dataset.state = "leaving";
+          });
+          exitTimer = window.setTimeout(removeExitLayer, 520);
+        };
+        const animateEnteredRoute = () => {
+          if (prefersReducedMotion()) {
+            removeExitLayer();
+            return;
+          }
+
+          const route = document.querySelector(".route-surface");
+          if (!route) {
+            animateExitLayer();
+            return;
+          }
+
+          route.classList.add("route-surface--entering");
+          requestAnimationFrame(() => {
+            animateExitLayer();
+            requestAnimationFrame(() => {
+              route.classList.remove("route-surface--entering");
+            });
+          });
+        };
+
+        document.addEventListener("astro:before-preparation", prepareExitLayer);
+        document.addEventListener("astro:before-swap", carryExitLayerIntoNewDocument);
+        document.addEventListener("astro:after-swap", animateEnteredRoute);
+        document.addEventListener("astro:page-load", clearActive);
+      })();
+    </script>
+    <ClientRouter fallback="swap" />
+  </head>
+  <body data-oak-agent-eligible={showOakAgent ? "true" : "false"} data-oak-mascot-eligible={showOakMascot ? "true" : "false"} data-oak-source-ids={JSON.stringify(oakSourceIds)}>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+    {showOakAgent && <a class="skip-link" href="#oak-agent-launcher">Skip to Oak AI Agent</a>}
+    <SiteHeader
+      client:load
+      logoSrc={media.logo}
+      portraitSrc={media.oakProfile}
+      portraitSources={portraitSources}
+      currentPath={Astro.url.pathname}
+      transition:name="site-header"
+      transition:animate="none"
+      transition:persist="site-header"
+      transition:persist-props
+    />
+    <div class="route-surface">
+      <main id="main-content" tabindex="-1">
+        <slot />
+      </main>
+      {showContactBand && <SiteContactBand />}
+      <SiteFooter />
+    </div>
+    <HumanMachineMode
+      client:load
+      currentPath={Astro.url.pathname}
+      transition:name="oak-browse-chrome"
+      transition:animate="none"
+      transition:persist="oak-browse-chrome"
+      transition:persist-props
+    />
+    <OakWorkspace citationLabels={oakCitationLabels} activitySprites={oakAgentSprites()} client:load transition:name="oak-workspace" transition:animate="none" transition:persist="oak-workspace" />
+  </body>
+</html>

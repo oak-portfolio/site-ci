@@ -1,0 +1,79 @@
+---
+type PlaceholderItem = {
+  label: string;
+  detail?: string;
+};
+
+type Props = {
+  eyebrow?: string;
+  title: string;
+  kind?: "excalidraw" | "media" | "chart";
+  summary?: string;
+  items?: PlaceholderItem[];
+  caption?: string;
+};
+
+const { eyebrow, title, kind = "media", summary, items = [], caption } = Astro.props;
+const kindMeta = {
+  excalidraw: {
+    label: "Diagram slot",
+    cue: "diagram / excalidraw",
+    brief: "System shape",
+  },
+  media: {
+    label: "Media slot",
+    cue: "screenshot / video",
+    brief: "Product proof",
+  },
+  chart: {
+    label: "Chart slot",
+    cue: "chart / data visual",
+    brief: "Evidence view",
+  },
+}[kind];
+---
+
+<figure
+  class={`work-mdx-artifact-placeholder work-mdx-artifact-placeholder--${kind}`}
+  data-kind={kind}
+>
+  <div class="work-mdx-artifact-placeholder__shell">
+    <div class="work-mdx-artifact-placeholder__frame" aria-hidden="true">
+      <span class="work-mdx-artifact-placeholder__frame-cue">{kindMeta.cue}</span>
+      <span class="work-mdx-artifact-placeholder__frame-line"></span>
+      <span class="work-mdx-artifact-placeholder__frame-brief">{kindMeta.brief}</span>
+    </div>
+
+    <div class="work-mdx-artifact-placeholder__body">
+      <div class="work-mdx-artifact-placeholder__header">
+        <span>{eyebrow ?? "Artifact brief"}</span>
+        <strong>{kindMeta.label}</strong>
+      </div>
+
+      <h3>{title}</h3>
+      {summary && <p class="work-mdx-artifact-placeholder__summary">{summary}</p>}
+
+      {
+        items.length > 0 && (
+          <ul class="work-mdx-artifact-placeholder__items" aria-label="Artifact requirements">
+            {items.map((item) => (
+              <li>
+                <span>{item.label}</span>
+                {item.detail && <p>{item.detail}</p>}
+              </li>
+            ))}
+          </ul>
+        )
+      }
+    </div>
+  </div>
+
+  {
+    caption && (
+      <figcaption>
+        <span>Caption direction</span>
+        {caption}
+      </figcaption>
+    )
+  }
+</figure>

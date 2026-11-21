@@ -1,0 +1,63 @@
+---
+import OptimizedPicture from "@/components/OptimizedPicture.astro";
+import { Icon } from "@/components/ui/Icon";
+
+type Props = {
+  href: string;
+  image: string;
+  imageAlt: string;
+  eyebrow: string;
+  category?: string;
+  title: string;
+  date: string;
+  dateTime?: string;
+  summary: string;
+  note: string;
+  ctaLabel?: string;
+};
+
+const {
+  href,
+  image,
+  imageAlt,
+  eyebrow,
+  category,
+  title,
+  date,
+  dateTime,
+  summary,
+  note,
+  ctaLabel = "Read legacy case study",
+} = Astro.props;
+---
+
+<a
+  class="work-mdx-legacy-card"
+  href={href}
+  target="_blank"
+  rel="noopener noreferrer"
+  aria-label={`${ctaLabel}: ${title}`}
+>
+  <span class="card-art work-mdx-legacy-card__media">
+    <OptimizedPicture
+      src={image}
+      alt={imageAlt}
+      sizes="(max-width: 760px) calc(100vw - 48px), 680px"
+      loading="lazy"
+      decoding="async"
+    />
+  </span>
+  <span class="work-mdx-legacy-card__body">
+    <span class="work-mdx-legacy-card__meta">
+      <span class="work-mdx-legacy-card__tag">{eyebrow}</span>
+      {category && <span class="work-mdx-legacy-card__tag">{category}</span>}
+      <time datetime={dateTime}>{date}</time>
+    </span>
+    <span class="work-mdx-legacy-card__title">{title}</span>
+    <span class="work-mdx-legacy-card__summary">{summary} {note}</span>
+    <span class="work-mdx-legacy-card__cta">
+      {ctaLabel}
+      <Icon name="arrowUpRight" size={16} />
+    </span>
+  </span>
+</a>

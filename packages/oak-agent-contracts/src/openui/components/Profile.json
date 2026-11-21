@@ -1,0 +1,28 @@
+{
+  "name": "Profile",
+  "claims": "one",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": {
+    "line": "Here is Steve at a glance:"
+  },
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "plan": {
+    "in": {
+      "overview": 1
+    },
+    "count": "hits"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "text": "[profile card: portrait, hero title and facts, from Steve's public profile]",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

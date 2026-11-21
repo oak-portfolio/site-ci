@@ -1,0 +1,16 @@
+{
+  "ok": true,
+  "asset": "/assets/mascot/oak-home-feature-bay-area.webp",
+  "runtimeAssetUrl": "/assets/mascot/oak-home-feature-bay-area.webp",
+  "contextId": "home.feature.bay-area",
+  "animation": "homeFeatureBayArea",
+  "format": "WEBP",
+  "width": 1536,
+  "height": 208,
+  "frameWidth": 192,
+  "frameHeight": 208,
+  "columns": 8,
+  "rows": 1,
+  "frames": 8,
+  "fps": 6
+}

@@ -1,0 +1,190 @@
+/* Ticket 40: EvidenceChart. Every mode sits in OakFigure. Published is the one leaf accent (solid); held is a neutral hatch
+ * and the word "Held", so status never rests on color alone (E4). The sankey's three columns have no gap, so each ribbon
+ * starts on its record's bar and ends on its status bar (Oak, R6-C16: links meet their nodes); rows are 44px with 8px between,
+ * --space-xs, the numbers views/evidence-chart.ts lays the ribbons out with. */
+.oak-evidence {
+  --oak-evidence-published: var(--oak-leaf);
+  --oak-evidence-lead: var(--oak-violet);
+  --oak-evidence-held: var(--muted);
+  --oak-figure-2: var(--oak-evidence-held);
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.oak-evidence [data-status="published"] { fill: var(--oak-evidence-published); }
+.oak-evidence__hatch-ground { fill: color-mix(in srgb, var(--oak-evidence-held) 22%, transparent); }
+.oak-evidence__hatch-line { fill: var(--oak-evidence-held); }
+
+.oak-evidence__legend {
+  display: grid;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-evidence__legend > li {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.oak-evidence__key {
+  inline-size: 12px;
+  block-size: 12px;
+  border-radius: var(--radius-pill);
+}
+
+.oak-evidence__key[data-status="published"] { background-color: var(--oak-evidence-published); }
+.oak-evidence__key[data-status="held"] {
+  background-color: color-mix(in srgb, var(--oak-evidence-held) 22%, transparent);
+  background-image: repeating-linear-gradient(45deg, var(--oak-evidence-held) 0 2px, transparent 2px 5px);
+}
+
+.oak-evidence__value {
+  color: var(--muted);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Donut: the ring and its centered total share one grid cell; the legend sits beside it, below it when narrow. 440px is the
+ * wrap point (10rem ring + --space-md + 16rem legend); below it the ring centers above a full-width legend (ticket 148). */
+.oak-evidence__donut {
+  container-type: inline-size;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-md);
+}
+
+.oak-evidence__ring {
+  display: grid;
+  inline-size: 10rem;
+  aspect-ratio: 1;
+  flex: none;
+}
+
+.oak-evidence__ring > * { grid-area: 1 / 1; }
+.oak-evidence__ring svg { inline-size: 100%; block-size: 100%; display: block; }
+
+.oak-evidence__center {
+  display: grid;
+  place-self: center;
+  margin: 0;
+  text-align: center;
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  color: var(--muted);
+}
+
+.oak-evidence__center-value {
+  color: var(--text);
+  font-size: var(--text-ui-md);
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-evidence__donut .oak-evidence__legend { flex: 0 1 16rem; min-width: 0; }
+
+@container (max-width: calc(26rem + 23.98px)) {
+  .oak-evidence__ring { margin-inline: auto; }
+  .oak-evidence__donut .oak-evidence__legend { flex-basis: 100%; }
+}
+.oak-evidence__name { color: var(--text); }
+
+/* Sankey */
+.oak-evidence__sankey {
+  display: grid;
+  grid-template-columns: minmax(0, 4fr) minmax(2.5rem, 2fr) minmax(0, max-content);
+  align-items: stretch;
+  gap: 0;
+  min-width: 0;
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-evidence__sources,
+.oak-evidence__targets {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+
+.oak-evidence__sources { grid-auto-rows: 44px; align-content: start; }
+.oak-evidence__targets { grid-template-rows: 1fr; }
+.oak-evidence__targets[data-count="2"] { grid-template-rows: 1fr 1fr; }
+
+.oak-evidence__node,
+.oak-evidence__target {
+  display: grid;
+  align-content: center;
+  min-width: 0;
+}
+
+.oak-evidence__node {
+  padding-inline-end: var(--space-xs);
+  border-inline-end: 4px solid var(--oak-evidence-held);
+  text-align: end;
+}
+
+.oak-evidence__node[data-lead] { border-inline-end-color: var(--oak-evidence-lead); }
+.oak-evidence__node[data-lead] .oak-evidence__name { color: var(--text); font-weight: 600; }
+
+.oak-evidence__target {
+  padding-inline-start: var(--space-xs);
+  border-inline-start: 4px solid var(--oak-evidence-published);
+}
+
+.oak-evidence__target[data-status="held"] {
+  border-image: repeating-linear-gradient(45deg, var(--oak-evidence-held) 0 2px, transparent 2px 5px) 1;
+}
+
+.oak-evidence__name,
+.oak-evidence__node .oak-evidence__value {
+  overflow: clip;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.oak-evidence__ribbons {
+  display: block;
+  inline-size: 100%;
+  min-width: 0;
+}
+
+.oak-evidence__ribbons [data-status="published"] { fill: color-mix(in srgb, var(--oak-evidence-published) 38%, transparent); }
+.oak-evidence__ribbons [data-status="published"][data-lead] { fill: color-mix(in srgb, var(--oak-evidence-lead) 80%, transparent); }
+.oak-evidence__ribbons [data-status="held"] { opacity: 0.6; }
+.oak-evidence__ribbons [data-status="held"][data-lead] { opacity: 1; }
+
+/* Ghost: the caption row, a drawing-sized block and the legend row; skeleton.css's shimmer stills under reduced motion. */
+.oak-evidence__ghost-head {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.oak-evidence__ghost-drawing {
+  display: block;
+  min-block-size: 13rem;
+  border-radius: var(--oak-r-frame);
+  background: var(--line-soft);
+}
+
+@media (forced-colors: active) {
+  .oak-evidence svg,
+  .oak-evidence__key,
+  .oak-evidence__node,
+  .oak-evidence__target { forced-color-adjust: none; }
+  .oak-evidence { --oak-evidence-published: CanvasText; --oak-evidence-lead: Highlight; --oak-evidence-held: CanvasText; }
+  .oak-evidence__hatch-ground { fill: Canvas; }
+  .oak-evidence__name, .oak-evidence__node[data-lead] .oak-evidence__name { color: CanvasText; }
+  .oak-evidence__value, .oak-evidence__center { color: CanvasText; }
+  .oak-evidence__key { outline: 1px solid CanvasText; }
+}

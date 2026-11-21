@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "asset": "/assets/mascot/claw-linkedin-growth-collapsed-claw.webp",
+  "runtimeAssetUrl": "/assets/mascot/claw-linkedin-growth-collapsed-claw.webp",
+  "contextId": "linkedin-growth.hero",
+  "animation": "clawLinkedinGrowthCollapsedClaw",
+  "format": "WEBP",
+  "width": 1536,
+  "height": 208,
+  "frameWidth": 192,
+  "frameHeight": 208,
+  "columns": 8,
+  "rows": 1,
+  "frames": 8,
+  "fps": 6,
+  "chromaKey": "#FF00FF",
+  "keyThreshold": 208
+}

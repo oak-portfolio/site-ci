@@ -1,0 +1,19 @@
+{
+  "name": "CompareRow",
+  "claims": "pair",
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "planned": false,
+  "structured": false,
+  "structure": false,
+  "judgeView": {
+    "kind": "compare-row"
+  },
+  "taughtPresets": []
+}

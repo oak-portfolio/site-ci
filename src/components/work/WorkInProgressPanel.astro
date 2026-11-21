@@ -1,0 +1,48 @@
+---
+import { Icon, type IconName } from "@/components/ui/Icon";
+
+type Capability = {
+  icon: IconName;
+  label: string;
+  detail: string;
+};
+
+type Props = {
+  eyebrow?: string;
+  title: string;
+  summary: string;
+  items: Capability[];
+};
+
+const { eyebrow = "Public work in progress", title, summary, items } = Astro.props;
+---
+
+<section class="work-in-progress-panel" aria-labelledby="work-in-progress-panel-title">
+  <div class="work-in-progress-panel__grid" aria-hidden="true">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
+  <div class="work-in-progress-panel__content">
+    <p class="work-in-progress-panel__eyebrow">{eyebrow}</p>
+    <h2 id="work-in-progress-panel-title">{title}</h2>
+    <p class="work-in-progress-panel__summary">{summary}</p>
+  </div>
+
+  <div class="work-in-progress-panel__items" aria-label={`${title} scope`}>
+    {
+      items.map((item) => (
+        <article class="work-in-progress-panel__item">
+          <span class="work-in-progress-panel__icon" aria-hidden="true">
+            <Icon name={item.icon} size={18} />
+          </span>
+          <div>
+            <h3>{item.label}</h3>
+            <p>{item.detail}</p>
+          </div>
+        </article>
+      ))
+    }
+  </div>
+</section>

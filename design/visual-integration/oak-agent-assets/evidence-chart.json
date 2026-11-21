@@ -1,0 +1,26 @@
+{
+ "evidence-proof": {
+  "iconOnly": true,
+  "reason": "40: EvidenceChart fixture, proof, the figure carries it, with no pose of its own."
+ },
+ "evidence-donut": {
+  "iconOnly": true,
+  "reason": "40: EvidenceChart fixture, donut, the figure carries it, with no pose of its own."
+ },
+ "evidence-sankey": {
+  "iconOnly": true,
+  "reason": "40: EvidenceChart fixture, sankey, the figure carries it, with no pose of its own."
+ },
+ "evidence-sankey-1": {
+  "iconOnly": true,
+  "reason": "40: EvidenceChart fixture, sankey-1, the figure carries it, with no pose of its own."
+ },
+ "evidence-streaming": {
+  "iconOnly": true,
+  "reason": "40: EvidenceChart fixture, streaming, the figure carries it, with no pose of its own."
+ },
+ "evidence-off": {
+  "iconOnly": true,
+  "reason": "40: EvidenceChart fixture, off, the figure carries it, with no pose of its own."
+ }
+}

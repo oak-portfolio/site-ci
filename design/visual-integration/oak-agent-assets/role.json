@@ -1,0 +1,22 @@
+{
+ "role-entry-linked": {
+  "iconOnly": true,
+  "reason": "42: Role fixture, entry-linked: the role card and its rows carry it, with no pose of its own."
+ },
+ "role-entry-unlinked": {
+  "iconOnly": true,
+  "reason": "42: Role fixture, entry-unlinked: the role card and its rows carry it, with no pose of its own."
+ },
+ "role-tags-folded": {
+  "iconOnly": true,
+  "reason": "42: Role fixture, tags-folded: the role card and its rows carry it, with no pose of its own."
+ },
+ "role-streaming": {
+  "iconOnly": true,
+  "reason": "42: Role fixture, streaming: the role card and its rows carry it, with no pose of its own."
+ },
+ "role-off": {
+  "iconOnly": true,
+  "reason": "42: Role fixture, off: the role card and its rows carry it, with no pose of its own."
+ }
+}

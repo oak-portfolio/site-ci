@@ -1,0 +1,37 @@
+---
+type Row = {
+  area: string;
+  status: string;
+  detail: string;
+};
+
+type Props = {
+  rows: Row[];
+};
+
+const { rows } = Astro.props;
+---
+
+<div class="work-mdx-outcome-table" role="region" aria-label="Outcome status table" tabindex="0">
+  <table>
+    <caption class="sr-only">Outcome status table</caption>
+    <thead>
+      <tr>
+        <th scope="col">Area</th>
+        <th scope="col">Status</th>
+        <th scope="col">Detail</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        rows.map((row) => (
+          <tr>
+            <th scope="row">{row.area}</th>
+            <td>{row.status}</td>
+            <td>{row.detail}</td>
+          </tr>
+        ))
+      }
+    </tbody>
+  </table>
+</div>

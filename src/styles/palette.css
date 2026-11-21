@@ -1,0 +1,411 @@
+/* Ticket 47: the no-AI command palette. Glass on the panel only; rows stay flat (DESIGN.md, never glass on glass). */
+.oak-palette-trigger.ui-button {
+  gap: var(--space-xs);
+  height: 40px;
+  min-width: 200px;
+  padding-inline: calc(var(--space-xs) + var(--space-micro)) var(--space-xs);
+  justify-content: flex-start;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-pill);
+  color: var(--muted);
+  font-size: var(--text-ui-md);
+}
+
+.oak-palette-trigger__label {
+  flex: 1;
+  text-align: start;
+}
+
+.oak-palette-trigger__key {
+  padding: var(--space-micro) var(--space-xs);
+  border-radius: var(--radius-pill);
+  background: var(--line-soft);
+  font: inherit;
+  font-size: var(--text-ui-sm);
+  line-height: 1;
+}
+
+.oak-workspace__header-actions .oak-palette-trigger.ui-button {
+  min-width: 168px;
+}
+
+@media (max-width: 1024px) {
+  .site-header__inner .header-actions:has(.oak-palette-trigger) {
+    position: absolute;
+    top: 50%;
+    right: 82px;
+    display: flex;
+    height: auto;
+    transform: translateY(-50%);
+  }
+
+  .site-header__inner .header-actions:has(.oak-palette-trigger) > :not(.oak-palette-trigger) {
+    display: none;
+  }
+
+  .site-header__inner .oak-palette-trigger.ui-button {
+    min-width: 0;
+    width: 44px;
+    height: 44px;
+    padding: 0;
+    justify-content: center;
+    border-color: transparent;
+  }
+
+  .site-header__inner .oak-palette-trigger__label,
+  .site-header__inner .oak-palette-trigger__key {
+    display: none;
+  }
+}
+
+@media (max-width: 720px) {
+  .oak-workspace__header-actions .oak-palette-trigger.ui-button {
+    min-width: 0;
+    width: 44px;
+    padding: 0;
+    justify-content: center;
+    border-color: transparent;
+  }
+
+  .oak-workspace__header-actions .oak-palette-trigger__label,
+  .oak-workspace__header-actions .oak-palette-trigger__key {
+    display: none;
+  }
+}
+
+/* The ui dialog owns focus, portal and fade; the palette restyles its popup from inside. At 1280 it hangs under the header's right edge. */
+.ui-dialog__popup:has(> .oak-palette) {
+  top: calc(env(safe-area-inset-top, 0px) + 88px);
+  right: calc((100vw - min(var(--container), 100vw - max(var(--space-gutter), var(--safe-x)) * 2)) / 2);
+  left: auto;
+  z-index: var(--z-overlay);
+  display: flex;
+  width: min(640px, calc(100vw - var(--space-gutter)));
+  max-height: min(560px, calc(100dvh - 112px));
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--radius-md);
+  background: var(--glass-sheen), var(--glass-fill-overlay);
+  box-shadow: var(--shadow-glass);
+  transform: none;
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+}
+
+.oak-workspace .ui-dialog__popup:has(> .oak-palette) {
+  top: calc(var(--space-lg) * 2);
+  right: auto;
+  left: 50%;
+  width: min(640px, calc(100% - var(--space-gutter)));
+  max-height: calc(100% - var(--space-lg) * 3);
+  translate: -50% 0;
+}
+
+.oak-workspace .ui-dialog__popup:has(> .oak-palette .oak-palette__field) {
+  padding: 0;
+  border-radius: var(--radius-md);
+}
+
+.oak-palette {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.oak-palette .ui-dialog__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.oak-palette__field {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: calc(var(--space-xs) + var(--space-micro)) var(--space-sm);
+  border-bottom: 1px solid var(--line-soft);
+}
+
+.oak-palette__field:has(.oak-palette__input:focus-visible) {
+  border-bottom-color: var(--quiet);
+  outline: 2px solid var(--muted);
+  outline-offset: -6px;
+  border-radius: calc(var(--radius-md) - var(--space-xs));
+}
+
+.oak-palette__glyph {
+  flex: none;
+  color: var(--muted);
+}
+
+.oak-palette__input {
+  flex: 1;
+  min-width: 0;
+  height: 32px;
+  border: 0;
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: var(--text-body-md);
+  outline: none;
+}
+
+.oak-palette__input:focus-visible,
+.oak-workspace .oak-palette__input:focus-visible {
+  outline: none;
+}
+
+.oak-palette__input::placeholder {
+  color: var(--muted);
+}
+
+.oak-palette__clear,
+.oak-palette__cancel,
+.oak-palette__empty-clear {
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  cursor: pointer;
+}
+
+.oak-palette__clear {
+  display: inline-grid;
+  place-items: center;
+  width: 32px;
+  height: 32px;
+  border-radius: var(--radius-pill);
+}
+
+.oak-palette__cancel {
+  display: none;
+  min-height: 44px;
+  padding-inline: var(--space-xs);
+  color: var(--text);
+}
+
+.oak-palette__clear:focus-visible,
+.oak-palette__cancel:focus-visible,
+.oak-palette__empty-clear:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.oak-palette__list {
+  flex: 1;
+  min-height: 0;
+  padding: var(--space-xs);
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scroll-padding-block: var(--space-xs);
+}
+
+.oak-palette__group + .oak-palette__group {
+  margin-top: var(--space-xs);
+}
+
+.oak-palette__group-label {
+  padding: var(--space-xs) calc(var(--space-xs) + var(--space-micro)) var(--space-micro);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+}
+
+.oak-palette__row {
+  display: flex;
+  align-items: center;
+  gap: calc(var(--space-xs) + var(--space-micro));
+  min-height: 40px;
+  padding-inline: calc(var(--space-xs) + var(--space-micro));
+  border-radius: var(--radius-pill);
+  color: var(--text);
+  font-size: var(--text-ui-md);
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 120ms ease;
+}
+
+/* Base UI keeps row 1 highlighted while Tab focuses another row, so the focused row takes the state and only one row reads active (ticket 192). */
+.oak-palette__row[data-highlighted],
+.oak-palette__row:focus-visible {
+  background: var(--line-soft);
+}
+
+.oak-palette:has(.oak-palette__row:focus-visible) .oak-palette__row[data-highlighted]:not(:focus-visible) {
+  background: transparent;
+}
+
+.oak-palette__icon {
+  flex: none;
+  color: var(--muted);
+}
+
+.oak-palette__row[data-kind="ask"] .oak-palette__icon {
+  color: var(--text);
+}
+
+.oak-palette__label {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.oak-palette__detail {
+  flex: none;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-palette__enter {
+  display: none;
+  margin-left: auto;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-palette__enter kbd {
+  padding: 0 var(--space-micro);
+  border-radius: var(--radius-sm);
+  background: var(--line-soft);
+  font: inherit;
+}
+
+.oak-palette__row[data-highlighted] .oak-palette__enter,
+.oak-palette__row:focus-visible .oak-palette__enter {
+  display: inline-flex;
+  gap: var(--space-micro);
+  align-items: center;
+}
+
+.oak-palette:has(.oak-palette__row:focus-visible) .oak-palette__row[data-highlighted]:not(:focus-visible) .oak-palette__enter {
+  display: none;
+}
+
+.oak-palette__chevron {
+  display: none;
+  margin-left: auto;
+  color: var(--muted);
+}
+
+.oak-palette__empty {
+  display: grid;
+  justify-items: center;
+  gap: var(--space-micro);
+  padding: var(--space-md) var(--space-sm) var(--space-xs);
+  color: var(--muted);
+  text-align: center;
+}
+
+.oak-palette__empty-title {
+  margin: var(--space-micro) 0 0;
+  color: var(--text);
+  font-size: var(--text-body-md);
+  font-weight: 600;
+}
+
+.oak-palette__empty-hint {
+  margin: 0;
+  font-size: var(--text-ui-sm);
+}
+
+.oak-palette__empty-clear {
+  min-height: 36px;
+  margin-top: var(--space-xs);
+  padding-inline: var(--space-sm);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-pill);
+  color: var(--text);
+}
+
+.oak-palette__footer {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  padding: var(--space-xs) var(--space-sm);
+  border-top: 1px solid var(--line-soft);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-palette__keys {
+  margin-left: auto;
+}
+
+@media (max-width: 560px) {
+  .ui-dialog__popup:has(> .oak-palette),
+  .oak-workspace .ui-dialog__popup:has(> .oak-palette) {
+    inset: 0;
+    width: 100%;
+    max-height: none;
+    border: 0;
+    border-radius: 0;
+    translate: none;
+  }
+
+  .oak-palette__field {
+    padding-top: max(var(--space-xs), env(safe-area-inset-top));
+  }
+
+  .oak-palette__cancel {
+    display: inline-block;
+  }
+
+  .oak-palette__clear {
+    width: 44px;
+    height: 44px;
+  }
+
+  .oak-palette__row {
+    min-height: 48px;
+  }
+
+  .oak-palette__enter,
+  .oak-palette__row[data-highlighted] .oak-palette__enter,
+  .oak-palette__row:focus-visible .oak-palette__enter,
+  .oak-palette__keys {
+    display: none;
+  }
+
+  .oak-palette__chevron {
+    display: inline-block;
+  }
+
+  .oak-palette__footer {
+    padding-bottom: max(var(--space-xs), env(safe-area-inset-bottom));
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-palette__row {
+    transition: none;
+  }
+}
+
+@media (prefers-reduced-transparency: reduce) {
+  .ui-dialog__popup:has(> .oak-palette) {
+    background: var(--glass-fill-solid);
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-palette__field:has(.oak-palette__input:focus-visible) {
+    outline: 2px solid Highlight;
+    outline-offset: -2px;
+  }
+
+  .oak-palette__row[data-highlighted] {
+    outline: 2px solid Highlight;
+  }
+
+  .oak-palette:has(.oak-palette__row:focus-visible) .oak-palette__row[data-highlighted]:not(:focus-visible) {
+    outline: none;
+  }
+}

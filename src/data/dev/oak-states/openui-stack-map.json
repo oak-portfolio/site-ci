@@ -1,0 +1,518 @@
+[
+ {
+  "id": "stack-map-tools-4",
+  "label": "StackMap (ticket 32): tools, 4 named tools across two projects, shared first, used in N with one pip per page",
+  "stackMap": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What tools does Steve use?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop's app is Next.js and TypeScript, shipped to phones through Capacitor.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-003",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The LinkedIn growth loop is TypeScript driving Playwright.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e1",
+      "status": "done",
+      "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"])"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "stack-map-tools-12",
+  "label": "StackMap (ticket 32): tools, 12 named tools across three projects, even tiles at every width",
+  "stackMap": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What tools does Steve use?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop runs on Next.js, TypeScript and the Vercel AI SDK, with Supabase and Prisma behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-003",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Oakminder is an Expo and React Native app with SwiftUI widgets on Convex, with Clerk sign-in and RevenueCat.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "The LinkedIn growth loop is TypeScript on Convex, driving Playwright.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e2",
+      "status": "done",
+      "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\", \"claim-3\"])"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "stack-map-disclosure",
+  "label": "StackMap (ticket 32): a tool's disclosure open, naming and linking the pages that use it",
+  "stackMap": true,
+  "open": "stack-map-tool",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Which projects used TypeScript?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop's app is Next.js and TypeScript, shipped to phones through Capacitor.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-003",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The LinkedIn growth loop is TypeScript driving Playwright.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e3",
+      "status": "done",
+      "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"])"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "stack-map-venn",
+  "label": "StackMap (ticket 32): venn, only Oakminder, both and only LinkedIn Growth Loop inside the accessible figure",
+  "stackMap": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What do Oakminder and the LinkedIn growth loop share?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder is an Expo and SwiftUI app on Convex, with RevenueCat for subscriptions.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The LinkedIn growth loop runs TypeScript and Playwright, with its state in Convex.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e4",
+      "status": "done",
+      "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"], \"venn\")"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "stack-map-streaming",
+  "label": "StackMap (ticket 32): streaming, a ghost of tool tiles while the claims arrive",
+  "stackMap": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What tools does Steve use?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": []
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000ea",
+      "status": "streaming",
+      "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"])"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "stack-map-off",
+  "label": "StackMap (ticket 32) with the constant off: the plain tool chips and the Points list",
+  "stackMap": false,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What tools does Steve use?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop's app is Next.js and TypeScript, shipped to phones through Capacitor.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-003",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The LinkedIn growth loop is TypeScript driving Playwright.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e5",
+      "status": "done",
+      "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"])"
+     }
+    }
+   ]
+  }
+ }
+]
