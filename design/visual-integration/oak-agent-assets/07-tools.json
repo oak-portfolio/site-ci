@@ -1,0 +1,103 @@
+{
+ "role-fit": {
+  "asset": "oak-reviewing-v1"
+ },
+ "advice": {
+  "asset": "lantern"
+ },
+ "contact-brief": {
+  "asset": "mailbox"
+ },
+ "contact-brief-start": {
+  "asset": "mailbox",
+  "variantOf": "contact-brief",
+  "reason": "Review v4: the empty brief with example pills is the same panel before anything is typed, so it keeps the brief's mailbox."
+ },
+ "contact-brief-ready": {
+  "asset": "brief-letter"
+ },
+ "saved-list": {
+  "asset": "saved-archive"
+ },
+ "delete-confirm": {
+  "asset": "delete-review"
+ },
+ "min-window": {
+  "asset": "oak-larger-window"
+ },
+ "phone-390": {
+  "iconOnly": true,
+  "reason": "R30-G27: the sourced answer at 390 px wide; citations and answer text carry the result, as in answer-sourced."
+ },
+ "reduced-motion": {
+  "asset": "weighing-loop",
+  "variantOf": "reasoning-weighing",
+  "reason": "R30-G27: the same weighing moment as reasoning-weighing with reduced motion on, so it keeps that state's art."
+ },
+ "question-draft": {
+  "asset": "asking"
+ },
+ "role-fit-answer": {
+  "asset": "comparing"
+ },
+ "advice-intake": {
+  "asset": "planning"
+ },
+ "research-consent": {
+  "asset": "researching"
+ },
+ "research-sources": {
+  "asset": "web-globe"
+ },
+ "research-unavailable": {
+  "asset": "web-globe-off"
+ },
+ "contact-menu": {
+  "iconOnly": true,
+  "reason": "A compact menu needs recognizable action icons."
+ },
+ "tools-menu": {
+  "iconOnly": true,
+  "reason": "R11 (Oak, review v8): the menu is three short message modes like Claude's plus menu; each row's tinted tile is the visual, so the toolbox header was cut."
+ },
+ "verification": {
+  "asset": "shield"
+ },
+ "account-menu": {
+  "iconOnly": true,
+  "reason": "R11: an account and settings menu reads by its identity line and row icons, like ChatGPT's and Claude's profile menus."
+ },
+ "account-menu-signed-in": {
+  "iconOnly": true,
+  "reason": "R11: the signed-in account menu leads with the visitor's initial and identity line; art would crowd a compact menu."
+ },
+ "account-menu-signed-in-initials": {
+  "iconOnly": true,
+  "reason": "R12: the signed-in account menu with the initials fallback when the profile photo fails; art would crowd a compact menu."
+ },
+ "onboarding-tips": {
+  "iconOnly": true,
+  "reason": "The welcome greeting is the one picture; the tip under it leads with a tinted bulb tile."
+ },
+ "sign-in-again": {
+  "asset": "session-expired"
+ },
+ "sign-in-unavailable": {
+  "asset": "gate-closed"
+ },
+ "account-purpose": {
+  "asset": "purpose"
+ },
+ "saved-loading": {
+  "asset": "hourglass"
+ },
+ "saved-empty": {
+  "asset": "empty-chest"
+ },
+ "connection-lost": {
+  "asset": "unplugged"
+ },
+ "agent-unavailable": {
+  "asset": "closed"
+ }
+}

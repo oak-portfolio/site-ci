@@ -1,0 +1,30 @@
+{
+  "name": "Table",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": "views/table.ts",
+  "plan": {
+    "in": {
+      "compare-projects": 1,
+      "employer-experience": 1
+    },
+    "count": "hits",
+    "replaces": [
+      "Compare"
+    ]
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "text": "[table shown with these claims: a header row (Project, Stack, Steve's part, Published; for roles Organization, Role, Type, Period), then one row per project or role the claims cite, each cell filled from that record's page]",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

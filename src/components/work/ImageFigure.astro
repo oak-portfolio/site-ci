@@ -1,0 +1,70 @@
+---
+import OptimizedPicture from "@/components/OptimizedPicture.astro";
+
+type Props = {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  srcset?: string;
+  sizes?: string;
+  caption?: string;
+  variant?: "default" | "contained" | "frameless" | "contained-frameless";
+  maxWidth?: number;
+  loading?: "eager" | "lazy";
+  preserveAnimation?: boolean;
+};
+
+const {
+  src,
+  alt,
+  width,
+  height,
+  srcset,
+  sizes,
+  caption,
+  variant = "default",
+  maxWidth,
+  loading = "lazy",
+  preserveAnimation = false,
+} = Astro.props;
+const figureStyle = maxWidth ? `--work-image-max-width: ${maxWidth}px;` : undefined;
+const isContained = variant === "contained" || variant === "contained-frameless";
+const isFrameless = variant === "frameless" || variant === "contained-frameless";
+---
+
+<figure
+  class:list={[
+    "work-mdx-image",
+    isContained && "work-mdx-image--contained",
+    isFrameless && "work-mdx-image--frameless",
+  ]}
+  style={figureStyle}
+>
+  {
+    preserveAnimation ? (
+      <img
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        srcset={srcset}
+        sizes={srcset ? sizes : undefined}
+        loading={loading}
+        decoding="async"
+      />
+    ) : (
+      <OptimizedPicture
+        src={src}
+        alt={alt}
+        width={width}
+        height={height}
+        fallbackSrcSet={srcset}
+        sizes={sizes}
+        loading={loading}
+        decoding="async"
+      />
+    )
+  }
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>

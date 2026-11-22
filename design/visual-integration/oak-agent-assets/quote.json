@@ -1,0 +1,26 @@
+{
+ "quote-pull": {
+  "iconOnly": true,
+  "reason": "29: Quote fixture pull: the quote, card or line carries it, with no pose of its own."
+ },
+ "quote-carousel": {
+  "iconOnly": true,
+  "reason": "29: Quote fixture carousel: the quote, card or line carries it, with no pose of its own."
+ },
+ "quote-bridge": {
+  "iconOnly": true,
+  "reason": "29: Quote fixture bridge: the quote, card or line carries it, with no pose of its own."
+ },
+ "quote-related": {
+  "iconOnly": true,
+  "reason": "29: Quote fixture related: the quote, card or line carries it, with no pose of its own."
+ },
+ "quote-streaming": {
+  "iconOnly": true,
+  "reason": "29: Quote fixture streaming: the quote, card or line carries it, with no pose of its own."
+ },
+ "quote-off": {
+  "iconOnly": true,
+  "reason": "29: Quote fixture off: the quote, card or line carries it, with no pose of its own."
+ }
+}

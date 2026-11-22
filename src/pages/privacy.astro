@@ -1,0 +1,28 @@
+---
+import OakUtilityLayout from '@/layouts/OakUtilityLayout.astro';
+import '../styles/oakOwner.css';
+---
+<OakUtilityLayout title="Privacy | SteveOak.com" description="How SteveOak.com and the Oak AI Agent handle what you send.">
+  <div class="oak-owner">
+    <a href="/">SteveOak.com</a>
+    <header><h1>Privacy</h1><p class="oak-owner__note">Last updated October 16, 2026.</p></header>
+    <div class="oak-owner__content">
+      <section>
+        <h2>What the Oak AI Agent keeps</h2>
+        <p>Messages, uploaded documents and voice clips are sent to model, search, speech and reading providers to produce an answer. Conversations are saved only when you sign in and choose to save them. You can export or delete them at any time, and saved chats are removed 30 days after the last new message.</p>
+      </section>
+      <section>
+        <h2>Sign-in and abuse protection</h2>
+        <p>Sign-in runs through Clerk, including Google sign-in, which shares your name and email address. Cloudflare Turnstile checks that requests come from a person.</p>
+      </section>
+      <section>
+        <h2>Diagnostics</h2>
+        <p>Errors go to Sentry. Product usage is counted with PostHog without cookies. Failed and reported answers, and a monthly share of other answers, are traced in LangSmith to check answer quality. Nothing is sold or used for advertising.</p>
+      </section>
+      <section>
+        <h2>Contact</h2>
+        <p>For a privacy question or a deletion request, email <a href="mailto:okkark.pro@gmail.com">okkark.pro@gmail.com</a>.</p>
+      </section>
+    </div>
+  </div>
+</OakUtilityLayout>

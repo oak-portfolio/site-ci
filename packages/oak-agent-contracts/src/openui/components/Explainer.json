@@ -1,0 +1,20 @@
+{
+  "name": "Explainer",
+  "claims": null,
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "planned": false,
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "label",
+    "text": "[explainer drawn by Oak AI: a general topic in steps from a reviewed fixture, no claim about Steve, a Bridge line to related work]"
+  },
+  "taughtPresets": ["concept", "xmap"]
+}

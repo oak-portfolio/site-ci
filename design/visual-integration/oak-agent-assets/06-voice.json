@@ -1,0 +1,17 @@
+{
+ "voice-recording": {
+  "asset": "microphone-loop"
+ },
+ "voice-off": {
+  "asset": "voice-off"
+ },
+ "voice-daily-limit": {
+  "asset": "keep-calendar"
+ },
+ "voice-transcribing": {
+  "asset": "listening"
+ },
+ "voice-review": {
+  "asset": "voice-scroll"
+ }
+}

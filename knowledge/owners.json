@@ -1,0 +1,243 @@
+{
+  "schema": "oak.content-owners.v1",
+  "owners": [
+    {
+      "id": "profile-home",
+      "status": "approved",
+      "channels": [
+        "page",
+        "answer",
+        "ai-files"
+      ],
+      "path": "src/data/homePage.ts",
+      "format": "typescript",
+      "names": [
+        "socialLinks",
+        "featureCards",
+        "heroCopy",
+        "profileSummary",
+        "machineProfile",
+        "proofSections",
+        "platformCards",
+        "workspaceRows"
+      ],
+      "outputs": [
+        "/",
+        "/index.md",
+        "/api/md",
+        "/profile.json",
+        "/.well-known/agent-profile.json",
+        "/llms-full.txt",
+        "/skill.md"
+      ]
+    },
+    {
+      "id": "profile-machine",
+      "status": "approved",
+      "channels": [
+        "answer",
+        "ai-files"
+      ],
+      "path": "src/data/machineContent.ts",
+      "format": "typescript",
+      "names": [
+        "siteProfile"
+      ],
+      "outputs": [
+        "/profile.json",
+        "/.well-known/agent-profile.json",
+        "/llms-full.txt",
+        "/skill.md"
+      ],
+      "guardPublicCopy": true
+    },
+    {
+      "id": "experience",
+      "status": "approved",
+      "channels": [
+        "page",
+        "answer",
+        "ai-files"
+      ],
+      "path": "src/data/careerTimeline.ts",
+      "format": "typescript",
+      "names": [
+        "careerTimelineIntro",
+        "careerTimelineItems"
+      ],
+      "outputs": [
+        "/work",
+        "/work.md",
+        "/api/md/work"
+      ]
+    },
+    {
+      "id": "legacy-cards",
+      "status": "approved",
+      "channels": [
+        "page",
+        "ai-files"
+      ],
+      "path": "src/data/legacyWork.ts",
+      "format": "typescript",
+      "names": [
+        "framerBaseUrl",
+        "legacyFramerCaseStudies"
+      ],
+      "outputs": [
+        "/work",
+        "/work.md"
+      ]
+    },
+    {
+      "id": "home-authored-copy",
+      "status": "approved",
+      "channels": [
+        "page",
+        "ai-files"
+      ],
+      "path": "src/pages/index.astro",
+      "format": "astro",
+      "outputs": [
+        "/",
+        "/index.md",
+        "/api/md"
+      ]
+    },
+    {
+      "id": "work",
+      "status": "approved",
+      "channels": [
+        "page",
+        "answer",
+        "ai-files"
+      ],
+      "directory": "src/content/work",
+      "extension": ".mdx",
+      "format": "file",
+      "outputs": [
+        "/work/{slug}",
+        "/work/{slug}.md",
+        "/api/md/work/{slug}",
+        "/api/machine/{slug}.json",
+        "/llms-full.txt"
+      ]
+    },
+    {
+      "id": "kusala",
+      "status": "approved",
+      "channels": [
+        "page",
+        "answer",
+        "ai-files"
+      ],
+      "paths": [
+        "src/pages/apps/kusala-daily/index.astro",
+        "src/pages/apps/kusala-daily/support/index.astro",
+        "src/pages/apps/kusala-daily/privacy/index.astro"
+      ],
+      "format": "astro",
+      "outputs": [
+        "/apps/kusala-daily",
+        "/apps/kusala-daily/support",
+        "/apps/kusala-daily/privacy"
+      ]
+    },
+    {
+      "id": "external-intake",
+      "status": "approved",
+      "channels": [
+        "answer",
+        "ai-files"
+      ],
+      "paths": [
+        "artifacts/oak-ai-agent-2026-10-03/knowledge-inventory/LEGACY-EXTRACTS.json",
+        "artifacts/oak-ai-agent-2026-10-03/knowledge-inventory/AGENTIC-BRAIN-EXTRACT.json",
+        "knowledge/external-candidates.json"
+      ],
+      "format": "file",
+      "outputs": [
+        "/api/knowledge.json",
+        "/llms-full.txt",
+        "/api/md/work/agentic-brain"
+      ]
+    },
+    {
+      "id": "machine-reader-copy",
+      "status": "approved",
+      "channels": [
+        "ai-files"
+      ],
+      "path": "src/lib/machineMarkdown.ts",
+      "format": "typescript",
+      "names": [],
+      "guardPublicCopy": true,
+      "outputs": [
+        "Machine pages",
+        "Markdown mirrors",
+        "LLM files"
+      ]
+    },
+    {
+      "id": "machine-server-copy",
+      "status": "approved",
+      "channels": [
+        "ai-files"
+      ],
+      "path": "src/data/machineContent.server.ts",
+      "format": "typescript",
+      "names": [],
+      "guardPublicCopy": true,
+      "outputs": [
+        "Machine endpoints",
+        "Markdown mirrors",
+        "LLM files"
+      ]
+    }
+  ],
+  "separateOwners": {
+    "disclosure": {
+      "path": "knowledge/review.json",
+      "validator": "scripts/knowledge/corpus.mjs",
+      "outputs": [
+        "all public evidence"
+      ]
+    },
+    "eligibilityPolicy": {
+      "path": "knowledge/policy.json",
+      "validator": "src/lib/knowledge/eligibility.ts",
+      "outputs": [
+        "all public evidence"
+      ]
+    },
+    "character": {
+      "path": "agent-policy/character.json",
+      "validator": "tests/agent/fixtures.test.mjs (version, identity and reference review)",
+      "outputs": [
+        "model system instructions via workers/oak-agent/src/knowledge/snapshot.ts"
+      ],
+      "boundary": "Reviewed character guidance is serialized into the live model system instructions. It can shape model behavior but cannot grant tools, spending, principal identity or private-source access."
+    },
+    "hardPolicy": {
+      "path": "agent-policy/hard-policy.json",
+      "validator": "packages/oak-agent-contracts/src/output.ts; packages/oak-agent-contracts/src/policy.ts; tests/agent/fixtures.test.mjs",
+      "outputs": [
+        "model system instructions for capability and funding boundaries"
+      ],
+      "boundary": "Hard-policy guidance is serialized into the live model system instructions. Server routes separately own permitted tools and operations, principal checks, private context and funding."
+    },
+    "providerSecrets": {
+      "path": null,
+      "mechanism": "deployment Worker secret/runtime environment; server-side Env fields consume configured values, which never enter the content workflow"
+    },
+    "serviceStatus": {
+      "path": null,
+      "mechanism": "private owner-services page and authenticated Worker endpoint, plus the local scripts/oak-service-status.mjs operator client; runtime readout, never an authored static fact"
+    }
+  },
+  "generatedOutputs": [
+    "src/data/generated/knowledgeSnapshot.json",
+    "knowledge/releases/",
+    "knowledge/active.json"
+  ]
+}

@@ -1,0 +1,189 @@
+[
+ {
+  "id": "saved-2026-10-20",
+  "source": "before genui-rest (Q17 layout as first shipped)",
+  "record": {
+   "conversationId": "cccccc60-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000057-dddd-4ddd-8ddd-dddddddddddd:user",
+     "role": "user",
+     "text": "How do EcoSmartLoop and Agentic Brain fit in Steve's timeline?",
+     "answer": null,
+     "cards": [],
+     "page": "/work",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000057-dddd-4ddd-8ddd-dddddddddddd",
+     "role": "assistant",
+     "text": "EcoSmartLoop was a team capstone built from September to December 2025, during Steve's SFBU graduate period. That capstone was a project, not an employer role. The timeline separately mentions part-time student support.\n\nThe older article was published on January 30, 2026. The later Agentic Brain page describes a newer memory-systems workstream after that January experiment and lists May 2026 as its project period. Publication dates and project periods do not establish current employment or availability.\n\nHe put that training to work in the EcoSmartLoop case study and an older memory experiment.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "knowledge-2026-10",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop was a team capstone built from September to December 2025, during Steve's SFBU graduate period. That capstone was a project, not an employer role. The timeline separately mentions part-time student support.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-001",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         },
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-006",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The older article was published on January 30, 2026. The later Agentic Brain page describes a newer memory-systems workstream after that January experiment and lists May 2026 as its project period. Publication dates and project periods do not establish current employment or availability.",
+        "citations": [
+         {
+          "documentId": "legacy:agentic-brain",
+          "passageId": "legacy:agentic-brain:section-001:passage-001",
+          "sectionId": "legacy:agentic-brain:section-001",
+          "url": "https://independent-performance-642823.framer.app/codex/ai-memory-hallucination-solution"
+         },
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "He put that training to work in the EcoSmartLoop case study and an older memory experiment.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [
+      {
+       "kind": "navigate",
+       "label": "Read the work page",
+       "url": "https://steveoak.com/work"
+      }
+     ],
+     "page": "/work",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000057-dddd-4ddd-8ddd-dddddddddddd",
+      "program": "root = Answer([h, t, p, src, next])\nh = Heading(\"In order\")\nt = Timeline([a, b])\na = TimelineItem(\"September to December 2025\", \"claim-1\")\nb = TimelineItem(\"January 30, 2026\", \"claim-2\")\np = Prose(\"claim-3\")\nsrc = Sources()\nnext = Pills([\"What did EcoSmartLoop ship?\", \"What is Agentic Brain about?\"])",
+      "status": "done"
+     }
+    },
+    {
+     "id": "00000058-dddd-4ddd-8ddd-dddddddddddd:user",
+     "role": "user",
+     "text": "Did EcoSmartLoop ship to real users?",
+     "answer": null,
+     "cards": [],
+     "page": "/work",
+     "taskKind": "question",
+     "quoted": {
+      "quotes": [
+       "EcoSmartLoop was a team capstone"
+      ],
+      "text": "Did EcoSmartLoop ship to real users?"
+     }
+    },
+    {
+     "id": "00000058-dddd-4ddd-8ddd-dddddddddddd",
+     "role": "assistant",
+     "text": "The site does not say how many people used it.\n\nEcoSmartLoop was a team capstone built from September to December 2025, during Steve's SFBU graduate period. That capstone was a project, not an employer role. The timeline separately mentions part-time student support.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "knowledge-2026-10",
+      "kind": "gap",
+      "acknowledgment": "The site does not say how many people used it.",
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop was a team capstone built from September to December 2025, during Steve's SFBU graduate period. That capstone was a project, not an employer role. The timeline separately mentions part-time student support.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-001",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         },
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-006",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/work",
+     "taskKind": "question",
+     "research": {
+      "topicId": "workers-limits",
+      "provider": "Exa",
+      "phase": "zero-results",
+      "reason": "none",
+      "returnedSources": 0,
+      "sources": [],
+      "requestId": "00000058-dddd-4ddd-8ddd-dddddddddddd"
+     }
+    },
+    {
+     "id": "00000059-dddd-4ddd-8ddd-dddddddddddd:user",
+     "role": "user",
+     "text": "And Agentic Brain?",
+     "answer": null,
+     "cards": [],
+     "page": "/work",
+     "taskKind": "question"
+    }
+   ],
+   "interruptedTurns": [
+    {
+     "requestId": "00000059-dddd-4ddd-8ddd-dddddddddddd",
+     "state": "interrupted",
+     "retryIntent": "explicit-user-action-required"
+    }
+   ],
+   "createdAt": 1792454400000,
+   "lastSavedMessageAt": 1792454400000,
+   "updatedAt": 1792454400000,
+   "expiresAt": 1795046400000,
+   "lastNewSavedMessageId": "00000059-dddd-4ddd-8ddd-dddddddddddd:user"
+  }
+ }
+]

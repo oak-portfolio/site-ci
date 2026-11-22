@@ -1,0 +1,50 @@
+[
+ {
+  "id": "answer-openui-explainer-concept",
+  "question": "What is RAG?",
+  "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"concept\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+     "citations": [
+      {
+       "documentId": "work:agentic-brain",
+       "passageId": "work:agentic-brain:section-001:passage-001",
+       "sectionId": "work:agentic-brain:section-001",
+       "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-explainer-xmap",
+  "question": "What topics can Oak explain?",
+  "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"agent-memory\", \"xmap\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+     "citations": [
+      {
+       "documentId": "work:agentic-brain",
+       "passageId": "work:agentic-brain:section-001:passage-001",
+       "sectionId": "work:agentic-brain:section-001",
+       "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

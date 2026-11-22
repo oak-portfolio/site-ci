@@ -1,0 +1,28 @@
+---
+import OptimizedPicture from "@/components/OptimizedPicture.astro";
+import { Icon } from "@/components/ui/Icon";
+import { featureCards } from "@/data/homePage";
+import { featureContextByTitle } from "@/data/homeRegistry";
+
+interface Props {
+  "aria-label": string;
+  alt: string;
+}
+
+const { "aria-label": label, alt } = Astro.props;
+---
+
+<div class="feature-card-grid" aria-label={label}>
+  {
+    featureCards.map((card) => (
+      <article class="feature-card" data-oak-context={featureContextByTitle[card.title]}>
+        <span class="feature-card__media" aria-hidden="true">
+          <OptimizedPicture src={card.image} alt={alt} width="56" height="56" decoding="async" />
+          <Icon name={card.icon} size={26} />
+        </span>
+        <h2>{card.title}</h2>
+        <p>{card.description}</p>
+      </article>
+    ))
+  }
+</div>

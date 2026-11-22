@@ -1,0 +1,31 @@
+{
+  "name": "Role",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": {
+    "count": "roles"
+  },
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": "role",
+  "view": null,
+  "plan": {
+    "in": {
+      "employer-experience": 1
+    },
+    "count": "roles",
+    "leadsFor": [
+      "recruiter"
+    ]
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "text": "[role row: title, company and dates, from the cited experience entry]",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

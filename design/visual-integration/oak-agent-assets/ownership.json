@@ -1,0 +1,26 @@
+{
+ "ownership-split": {
+  "iconOnly": true,
+  "reason": "27: Ownership fixture, split: the two lists and the folded rest carry it, with no pose of its own."
+ },
+ "ownership-tree": {
+  "iconOnly": true,
+  "reason": "27: Ownership fixture, tree: the nested list and its list equivalent carry it, with no pose of its own."
+ },
+ "ownership-roll": {
+  "iconOnly": true,
+  "reason": "27: Ownership fixture, roll: the bars and the list equivalent carry it, with no pose of its own."
+ },
+ "ownership-no-collaborators": {
+  "iconOnly": true,
+  "reason": "27: Ownership fixture, an empty collaborators line carries it, with no pose of its own."
+ },
+ "ownership-streaming": {
+  "iconOnly": true,
+  "reason": "27: Ownership fixture, the ghost's bars carry it, with no pose of its own."
+ },
+ "ownership-off": {
+  "iconOnly": true,
+  "reason": "27: Ownership fixture, the plain Points list carries it, with no pose of its own."
+ }
+}

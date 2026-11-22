@@ -1,0 +1,12 @@
+---
+import OakUtilityLayout from '@/layouts/OakUtilityLayout.astro';
+import { OakOwnerServices } from '@/components/owner/OakOwnerServices';
+import '../styles/oakOwner.css';
+---
+<OakUtilityLayout title="Service usage | SteveOak.com" description="Private owner service usage and email alert controls.">
+  <div class="oak-owner">
+    <a href="/">SteveOak.com</a>
+    <header><p class="oak-owner__note">Owner access</p><h1>Service usage</h1></header>
+    <OakOwnerServices client:load />
+  </div>
+</OakUtilityLayout>

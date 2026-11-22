@@ -1,0 +1,88 @@
+{
+  "schema": "oak.active-knowledge.v1",
+  "revision": "oak-52cdb625adcd9c5c2fa0762fcd5bd78f26ee294bd79bc243815c8a03d3ac7828",
+  "manifestHash": "51674145feb10b450a6327b196137e9aa3c0d799c3ebc8b8b33a303157d80543",
+  "lifecycle": {
+    "schema": "oak.owner-lifecycle.v1",
+    "contentIdentity": "3d1d94c25b3919bedd693caf55979944b34f0a96cc120d3d256b6dfa013bab36",
+    "reviewIdentity": "428a6f1f4aa4203ae5988bf28e55d828a718330e2c1590793630aa7e85853126",
+    "revocations": {
+      "generation": 1,
+      "documents": [
+        "work:owner-synthetic:cp230-owner-delete",
+        "work:owner-synthetic:cp230-owner-edit",
+        "work:owner-synthetic:cp230-owner-restrict",
+        "work:owner-synthetic:cp230-owner-retain-a",
+        "work:owner-synthetic:cp230-owner-retain-b"
+      ],
+      "passages": [],
+      "text": []
+    },
+    "approved": {
+      "oak-7de137a393006ca5e8f1e3e100cb775bb201e3f5ba013a0bf863f3872ef0718f": {
+        "archivePath": "knowledge/archives/oak-7de137a393006ca5e8f1e3e100cb775bb201e3f5ba013a0bf863f3872ef0718f.json",
+        "archiveHash": "0d12721e3ace24e48a90e20b184b27f43879f87502600707d49b8efc1fbabca8",
+        "authority": "Root independently accepted T02 bootstrap",
+        "contentIdentity": "7c84cd9cfda2843e21301269aebbb3d44271f79addc1714762dab238b0cfca54"
+      },
+      "oak-e982b76b10efdf5e56b769dd7076b5d761a98fd35ef474c1432285695f7f0cd0": {
+        "archivePath": "knowledge/archives/oak-e982b76b10efdf5e56b769dd7076b5d761a98fd35ef474c1432285695f7f0cd0.json",
+        "archiveHash": "0037c430139384be90d972510be2f7e627cf3d706d645f926c4c1011401b0993",
+        "authority": "User-approved through-T26 implementation. Root reviewed exact T07 local contact-copy candidate; authority record artifacts/oak-ai-agent-2026-10-03/interface-build/knowledge-candidate/root-local-approval.json. No external publication.",
+        "candidate": "candidate-1eaa6ea406a4840d077d229a004b4d616b42df88a5792fcf20c7b703ae43e46b",
+        "contentIdentity": "1c938795eac4d32550eca9094c2a0b2c643cf1d2da670ac177e597871ae6d6fa"
+      },
+      "oak-9b37301221a6069c3bf395a9529e66b7966e8723fd009617746fe12278d3bfc0": {
+        "archivePath": "knowledge/archives/oak-9b37301221a6069c3bf395a9529e66b7966e8723fd009617746fe12278d3bfc0.json",
+        "archiveHash": "0037c430139384be90d972510be2f7e627cf3d706d645f926c4c1011401b0993",
+        "authority": "Oak standing T01-T26 implementation and publication authorization; root approves exact R2 candidate after independent public-safety and 611-vector compatibility PASS. This local content release does not activate semantic serving or accept whole T01/R56.",
+        "candidate": "candidate-814f239fbeeace8707bde0a487f2785f954f0aebd184582ff6d8b0a145099ad6",
+        "contentIdentity": "1c938795eac4d32550eca9094c2a0b2c643cf1d2da670ac177e597871ae6d6fa"
+      },
+      "oak-ca1ac2a63b2eff844ddefa5ad50417eff3a4cf27be72c6eb0b09402703bee9e9": {
+        "archivePath": "knowledge/archives/oak-ca1ac2a63b2eff844ddefa5ad50417eff3a4cf27be72c6eb0b09402703bee9e9.json",
+        "archiveHash": "2a2dcb2ad5c55c6aafa02289752634eb931c7375a3524a165805fd22d1e25c8e",
+        "authority": "Oak standing T01 implementation authorization; root exact-candidate review plus independent REVIEW-v125. Approve only content fingerprint refresh with unchanged22 documents621 passages611 inputs. Four profile records remain pending; no new fact approval or semantic activation.",
+        "candidate": "candidate-8a5d5ffa82150e922819de84aeb49161418a716e324ab0c45a4eb1baf31a64ac",
+        "contentIdentity": "2f992bdb664cea3d27e32ce09473063ea507f98da6114d1fd48d4f00fbf020d8"
+      },
+      "oak-26b8dd273ba11987a8fc3a2743725af13de70c5c45bb18c04859cded471a9c88": {
+        "archivePath": "knowledge/archives/oak-26b8dd273ba11987a8fc3a2743725af13de70c5c45bb18c04859cded471a9c88.json",
+        "archiveHash": "09d282f041673b126b5d77c392ac0f51cdcf75ba0f66d5f94ec8f95bbb398369",
+        "authority": "Scoped Codex source review of two issuer-verified Hype4 certificates under Oak authorization and 2026-10-08 owner alias confirmation. Exact candidate 1f008708 reviewed with unchanged prior 22 documents; no other facts promoted or remote publication authorized by this local receipt.",
+        "candidate": "candidate-1f0087082d497688bd20fc7860376ea7cb2bd716f58dcc1e638f96b1232c0ed0",
+        "contentIdentity": "47b321602aeb2407d55541c490a53d9585a98f963324b5b4199441c49eb35dd8"
+      },
+      "oak-4592ccaf46ec3615c107c41a42c2b60e00198390d472c75e2d2c78600da5dbbc": {
+        "archivePath": "knowledge/archives/oak-4592ccaf46ec3615c107c41a42c2b60e00198390d472c75e2d2c78600da5dbbc.json",
+        "archiveHash": "44a0d9840bb4346154f1db793ccabb631ba46a69f4645bc72c3caf9a1a1a7aed",
+        "authority": "Oak authorized T01 source intake; CP144 root exact candidate and independent source review, local knowledge revision only; native semantic serving remains gated",
+        "candidate": "candidate-9fe1d0160b671bb64505b23eeea5381a36c043c2e35ee52dd81134f36346a960",
+        "contentIdentity": "7d6be33640962d4d112a113e4cc84b44c46612bb933414b73046b9c502d70605"
+      },
+      "oak-d714a1f72d371ae996bc7a9026691af464b295a419d0e7f996996af880816467": {
+        "archivePath": "knowledge/archives/oak-d714a1f72d371ae996bc7a9026691af464b295a419d0e7f996996af880816467.json",
+        "archiveHash": "44a0d9840bb4346154f1db793ccabb631ba46a69f4645bc72c3caf9a1a1a7aed",
+        "authority": "Oak authorized reviewed T01 public-source intake; CP144 root exact figure candidate and independent source review; local knowledge revision only; native semantic serving remains gated",
+        "candidate": "candidate-db5566eacb8dca7acb8670078faacfc39f6efb3dfcccf291b9c5f22c812ea7ee",
+        "contentIdentity": "7d6be33640962d4d112a113e4cc84b44c46612bb933414b73046b9c502d70605"
+      },
+      "oak-a9725cc34ca7785475ad509b9e116324b76a97c948fd278de06f195fe38cda4c": {
+        "archivePath": "knowledge/archives/oak-a9725cc34ca7785475ad509b9e116324b76a97c948fd278de06f195fe38cda4c.json",
+        "archiveHash": "44a0d9840bb4346154f1db793ccabb631ba46a69f4645bc72c3caf9a1a1a7aed",
+        "authority": "Root under Oak standing goal private setup and local implementation approval; reviewed exact candidate digest, all513 pins, five fixed byte changes, unchanged public documents/query map, genuine completed native lifecycle and query/full-trace outcome.",
+        "candidate": "candidate-61b3a7c543022e4a3e66021c4ce7ec2872caab4a3827fe907f6aa8e3a7435679",
+        "contentIdentity": "7d6be33640962d4d112a113e4cc84b44c46612bb933414b73046b9c502d70605",
+        "derivedNativeRereleaseOf": "oak-d714a1f72d371ae996bc7a9026691af464b295a419d0e7f996996af880816467"
+      },
+      "oak-52cdb625adcd9c5c2fa0762fcd5bd78f26ee294bd79bc243815c8a03d3ac7828": {
+        "archivePath": "knowledge/archives/oak-52cdb625adcd9c5c2fa0762fcd5bd78f26ee294bd79bc243815c8a03d3ac7828.json",
+        "archiveHash": "fc974bfd718a8b30c57294a1a13f0fc53698bf1b3f7a1e430fbbdcba9e611888",
+        "authority": "ticket 207, date format and Mintlify link only, genui-rest goal approvals (Oak 2026-11-04)",
+        "candidate": "candidate-498887e29b82d451c6a6bc473848024f60d4722edf53d86796869f0790e2c96a",
+        "contentIdentity": "3d1d94c25b3919bedd693caf55979944b34f0a96cc120d3d256b6dfa013bab36"
+      }
+    },
+    "sequence": 8
+  }
+}

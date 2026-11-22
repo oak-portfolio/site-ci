@@ -1,0 +1,26 @@
+{
+  "name": "Quote",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "plan": {
+    "in": {
+      "method-process": 2,
+      "lessons": 2
+    },
+    "count": "hits"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

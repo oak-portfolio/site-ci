@@ -1,0 +1,28 @@
+{
+  "name": "Stack",
+  "claims": null,
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "plan": {
+    "in": {
+      "skills": 1,
+      "stack": 2
+    },
+    "leadsFor": [
+      "collaborator"
+    ]
+  },
+  "structured": false,
+  "structure": true,
+  "judgeView": {
+    "kind": "label",
+    "text": "[stack chips: tools the cited pages list]"
+  },
+  "taughtPresets": []
+}

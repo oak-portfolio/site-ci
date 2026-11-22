@@ -1,0 +1,18 @@
+{
+ "record-only-saver": {
+  "iconOnly": true,
+  "reason": "46: record-only fixture, the lead, Ownership and Project blocks carry it, with no pose of its own."
+ },
+ "record-only-saver-pending": {
+  "iconOnly": true,
+  "reason": "46: record-only fixture while the record facts load, the streaming lead carries it, with no pose of its own."
+ },
+ "record-only-funded": {
+  "iconOnly": true,
+  "reason": "46: record-only fixture, the lead, Screens and PageCards blocks carry it, with no pose of its own."
+ },
+ "record-only-off": {
+  "iconOnly": true,
+  "reason": "46: record-only fixture with the constant off, the plain answer carries it, with no pose of its own."
+ }
+}

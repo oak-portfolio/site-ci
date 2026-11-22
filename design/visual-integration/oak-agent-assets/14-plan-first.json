@@ -1,0 +1,30 @@
+{
+ "plan-first-plan-no-program": {
+  "iconOnly": true,
+  "reason": "Ticket 17: the lead slot and one ghost per planned block carry the state under the live trail, which keeps its art; no pose of its own."
+ },
+ "plan-first-plan-no-answer": {
+  "iconOnly": true,
+  "reason": "Ticket 122: one ghost per planned block carries the state under the live trail before the answer; no pose of its own."
+ },
+ "plan-first-partial": {
+  "iconOnly": true,
+  "reason": "Ticket 17: the drawn lead and the Steps ghost holding its four planned steps carry the state; no pose of its own."
+ },
+ "plan-first-steps-arriving": {
+  "iconOnly": true,
+  "reason": "Ticket 17: the Steps block streaming into its ghost's place carries the state; no pose of its own."
+ },
+ "plan-first-before-drop": {
+  "iconOnly": true,
+  "reason": "Ticket 17: the drawn lead and the Points and Steps ghosts just before the layout skips Points carry the state; no pose of its own."
+ },
+ "plan-first-dropped": {
+  "iconOnly": true,
+  "reason": "Ticket 17: the drawn Steps block after the layout skipped the planned Points carries the state; the Points ghost has left; no pose of its own."
+ },
+ "plan-first-off": {
+  "iconOnly": true,
+  "reason": "Ticket 17 with the constant off: the same partial layout drawn exactly as main draws it, held under the live trail; no pose of its own."
+ }
+}

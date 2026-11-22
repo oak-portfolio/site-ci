@@ -1,0 +1,505 @@
+[
+  {
+    "id": "legacy-personal-software-era",
+    "kind": "legacy",
+    "title": "I Built 5 Apps for 2 Hackathons in 4 Weeks And I realized we're living in the Personal Software era.",
+    "canonicalUrl": "https://independent-performance-642823.framer.app/codex/personal-software-era-ai",
+    "published": "2026-01-31",
+    "cardTitle": "Craftie Universe",
+    "cardPublished": "2025-12-25",
+    "reason": "Original authored body reviewed for the initial historical baseline. Safe attributed passages are eligible; denied outcomes, awards and unclear ownership remain excluded under claim-level exceptions.",
+    "qualifiers": [
+      "Steve Oak (Okkar Kyaw)"
+    ],
+    "gaps": [
+      "Portfolio card publication date differs from the source-visible article date. Neither date establishes the work period.",
+      "Original rendered fragment identifiers were not returned. Citations use the canonical article URL.",
+      "Historical source attribution does not establish current status or independently verify excluded outcome, award or client claims."
+    ],
+    "conflicts": [
+      "Publication metadata differs. Card date 2025-12-25; source-visible article date 2026-01-31. Dates remain separate pending reconciliation.",
+      "The portfolio card date/title should not be used as the article's publication metadata without correction.",
+      "The article is not an exact description of Craftie Universe; it covers Craftie Essence, Craftie Clarity, Craftie Import Extension, Craftie Mail, and YouSoul.",
+      "The Complex Prize and Discord Coach Grand Prize claims have no linked award evidence in the retrieved text.",
+      "Tool/market comments are dated January 2026 and are not current product recommendations."
+    ],
+    "titleRelation": "project/archive label; exact relation unresolved"
+  },
+  {
+    "id": "legacy-matcha-by-maryam",
+    "kind": "legacy",
+    "title": "Vibe coding won't make your product stand out. Here's what will + CASE STUDY",
+    "canonicalUrl": "https://independent-performance-642823.framer.app/codex/matchabymaryam",
+    "published": "2026-01-17",
+    "cardTitle": "Matcha by Maryam",
+    "cardPublished": "2025-11-15",
+    "reason": "Original authored body reviewed for the initial historical baseline. Safe attributed passages are eligible; denied outcomes, awards and unclear ownership remain excluded under claim-level exceptions.",
+    "qualifiers": [
+      "Steve Oak (Okkar Kyaw)"
+    ],
+    "gaps": [
+      "Portfolio card publication date differs from the source-visible article date. Neither date establishes the work period.",
+      "Original rendered fragment identifiers were not returned. Citations use the canonical article URL.",
+      "Historical source attribution does not establish current status or independently verify excluded outcome, award or client claims."
+    ],
+    "conflicts": [
+      "Publication metadata differs. Card date 2025-11-15; source-visible article date 2026-01-17. Dates remain separate pending reconciliation.",
+      "The article includes broad numerical claims about AI-generated product conversion, layouts, brand recall, discomfort, and a 65% trust boost. The retrieved text gives no primary source, measurement method, sample, or scope for these numbers; exclude them from factual assistant answers unless separately sourced and approved.",
+      "The page says the site improved trust and deal confidence but provides no measured project outcome in the retrieved text. Do not state quantified client impact.",
+      "A destination/demo link is mentioned but the actual link target was not returned in the extracted body."
+    ],
+    "titleRelation": "project label vs editorial headline"
+  },
+  {
+    "id": "legacy-sparkit-ai-automation-cloud",
+    "kind": "legacy",
+    "title": "AI, Automation & Cloud",
+    "canonicalUrl": "https://independent-performance-642823.framer.app/codex/ai-automation-cloud",
+    "published": "2025-09-25",
+    "cardTitle": "Spark.it",
+    "cardPublished": "2025-05-18",
+    "reason": "Original authored body reviewed for the initial historical baseline. Safe attributed passages are eligible; denied outcomes, awards and unclear ownership remain excluded under claim-level exceptions.",
+    "qualifiers": [
+      "Steve Oak (Okkar Kyaw)"
+    ],
+    "gaps": [
+      "Portfolio card publication date differs from the source-visible article date. Neither date establishes the work period.",
+      "Original rendered fragment identifiers were not returned. Citations use the canonical article URL.",
+      "Historical source attribution does not establish current status or independently verify excluded outcome, award or client claims."
+    ],
+    "conflicts": [
+      "Publication metadata differs. Card date 2025-05-18; source-visible article date 2025-09-25. Dates remain separate pending reconciliation.",
+      "The current timeline contains an overlapping Uhttention role. The fetched page does not name that employer in its body; do not silently attribute Spark.It to Uhttention.",
+      "No source link or artifact was extracted from this page."
+    ],
+    "titleRelation": "project label vs editorial headline"
+  },
+  {
+    "id": "legacy-b2b-b2c-growth-uhttention",
+    "kind": "legacy",
+    "title": "B2C & B2B Growth",
+    "canonicalUrl": "https://independent-performance-642823.framer.app/codex/b2b-b2c-growth",
+    "published": "2025-10-11",
+    "cardTitle": "Uhttention Partners",
+    "cardPublished": "2025-01-09",
+    "reason": "Original authored body reviewed for the initial historical baseline. Safe attributed passages are eligible; denied outcomes, awards and unclear ownership remain excluded under claim-level exceptions.",
+    "qualifiers": [
+      "Steve Oak (Okkar Kyaw)"
+    ],
+    "gaps": [
+      "Portfolio card publication date differs from the source-visible article date. Neither date establishes the work period.",
+      "Original rendered fragment identifiers were not returned. Citations use the canonical article URL.",
+      "Historical source attribution does not establish current status or independently verify excluded outcome, award or client claims."
+    ],
+    "conflicts": [
+      "Publication metadata differs. Card date 2025-01-09; source-visible article date 2025-10-11. Dates remain separate pending reconciliation.",
+      "The older page says Uhttention as a company achieved 900% growth in five months. Current Career Timeline says work helped deliver a 900% revenue increase in 150 days across client products (src/data/careerTimeline.ts:241-245). These attribution/period descriptions are not interchangeable; hold the numeric claim pending owner/source reconciliation.",
+      "The USD 80K MRR statement about Wava AI lacks a date, measurement basis, ownership attribution, and linked evidence in the fetched text.",
+      "The seven-figure client deal, 20+ product/partnership count and named-company relationships have no linked evidence in the fetched text and may involve client disclosure boundaries."
+    ],
+    "titleRelation": "employer/collection label vs editorial headline"
+  },
+  {
+    "id": "legacy-weird-fun-impact",
+    "kind": "legacy",
+    "title": "Weird, Fun & Impact",
+    "canonicalUrl": "https://independent-performance-642823.framer.app/codex/weird-fun-impact",
+    "published": "2025-04-13",
+    "cardTitle": "Weird, Fun & Impact",
+    "cardPublished": "2025-01-15",
+    "reason": "Original authored body reviewed for the initial historical baseline. Safe attributed passages are eligible; denied outcomes, awards and unclear ownership remain excluded under claim-level exceptions.",
+    "qualifiers": [
+      "Steve Oak (Okkar Kyaw)"
+    ],
+    "gaps": [
+      "Portfolio card publication date differs from the source-visible article date. Neither date establishes the work period.",
+      "Original rendered fragment identifiers were not returned. Citations use the canonical article URL.",
+      "Historical source attribution does not establish current status or independently verify excluded outcome, award or client claims."
+    ],
+    "conflicts": [
+      "Publication metadata differs. Card date 2025-01-15; source-visible article date 2025-04-13. Dates remain separate pending reconciliation.",
+      "The article contains an unusual chronology statement (MS Paint in 2003, other tools from 2009, project/competition work since 2010) that should remain attributed or be checked before using as precise chronology.",
+      "No links, project evidence, or collaborator attribution were returned in the extracted article body."
+    ],
+    "titleRelation": "same title"
+  },
+  {
+    "id": "legacy-research-to-redesign",
+    "kind": "legacy",
+    "title": "Research to Redesign",
+    "canonicalUrl": "https://independent-performance-642823.framer.app/codex/research-to-redesign",
+    "published": "2025-01-28",
+    "cardTitle": "mmLink & Concepts",
+    "cardPublished": "2023-04-27",
+    "reason": "Original authored body reviewed for the initial historical baseline. Safe attributed passages are eligible; denied outcomes, awards and unclear ownership remain excluded under claim-level exceptions.",
+    "qualifiers": [
+      "Steve Oak (Okkar Kyaw)"
+    ],
+    "gaps": [
+      "Portfolio card publication date differs from the source-visible article date. Neither date establishes the work period.",
+      "Original rendered fragment identifiers were not returned. Citations use the canonical article URL.",
+      "Historical source attribution does not establish current status or independently verify excluded outcome, award or client claims."
+    ],
+    "conflicts": [
+      "Publication metadata differs. Card date 2023-04-27; source-visible article date 2025-01-28. Dates remain separate pending reconciliation.",
+      "No direct link to the telecom app, certificate issuer page, or concept prototypes was returned in the extracted body.",
+      "The article's wording about pursuing credentials does not establish completion, exact title, issuer, or current validity."
+    ],
+    "titleRelation": "project/collection label vs editorial headline"
+  },
+  {
+    "id": "legacy:agentic-brain",
+    "kind": "legacy",
+    "title": "How a Small ML Project Accidentally Helped Me Solve AI's Biggest Problems: Memory & Hallucination",
+    "canonicalUrl": "https://independent-performance-642823.framer.app/codex/ai-memory-hallucination-solution",
+    "reason": "Original Jan 2026 authored body reviewed for the historical baseline. Design narrative and lessons are eligible; unverified quantified results and research assertions are excluded.",
+    "gaps": [
+      "Original rendered fragment identifiers were not returned. Citations use the canonical article URL.",
+      "Author-reported performance lacks datasets, methodology, baselines and independent verification.",
+      "Historical job-search, tooling and project descriptions do not establish current status."
+    ],
+    "published": "2026-01-30",
+    "qualifiers": [
+      "Steve Oak (Okkar Kyaw)"
+    ],
+    "conflicts": [
+      "The article reports SOKK hallucination rate falling from about 24% to under 3%, retrieval accuracy increasing 13.89%, and token reduction of 67-95%; methodology, baselines, datasets, sample sizes, and independent verification are not supplied in this page.",
+      "It compares descriptions of RAGTruth, HALoGen, and two arXiv studies with the author's observations, but the page alone does not verify those external research claims or establish that the cited studies support each wording.",
+      "The narrative identifies its time of writing as while the author was job searching; this is historical self-report, not current status."
+    ]
+  },
+  {
+    "id": "external-profile:linkedin",
+    "kind": "external-profile",
+    "title": "LinkedIn profile",
+    "canonicalUrl": "https://www.linkedin.com/in/whoisoak/",
+    "reason": "Retrieved snapshot is incomplete and unreviewed. Third-party inferred fields excluded.",
+    "gaps": [
+      "Selected owner profile/story/experience/education material absent."
+    ],
+    "profileRecord": {
+      "schema": "oak.profile-record.v1",
+      "family": "profile",
+      "author": "Steve Oak",
+      "subject": "Steve Oak / Okkar Kyaw",
+      "displayedName": null,
+      "identity": "unresolved",
+      "role": "Profile subject",
+      "period": null,
+      "issuer": null,
+      "issued": null,
+      "expiry": {
+        "status": "unknown",
+        "date": null
+      },
+      "statements": [],
+      "qualifiers": [],
+      "collaborators": [],
+      "disclosure": "public",
+      "conflicts": [],
+      "sources": [
+        {
+          "url": "https://www.linkedin.com/in/whoisoak/",
+          "observedAt": "2026-10-02",
+          "attribution": "retrieved-public-snapshot",
+          "verification": "unverified"
+        }
+      ],
+      "review": {
+        "state": "pending",
+        "date": null,
+        "authority": null
+      }
+    }
+  },
+  {
+    "id": "credential:hifi-ui-2",
+    "kind": "credential",
+    "title": "High Fidelity UI Design 2",
+    "canonicalUrl": "https://hype4.academy/certificate/mobile-ui-2/f08054aa-6d89-46e1-972e-9e7145cab2df",
+    "published": "2021-08-21",
+    "reason": "Owner alias confirmation and issuer evidence were reviewed for this exact credential record.",
+    "gaps": [],
+    "profileRecord": {
+      "schema": "oak.profile-record.v1",
+      "family": "credential",
+      "author": "Steve Oak",
+      "subject": "Steve Oak / Okkar Kyaw",
+      "displayedName": "Oak Kar",
+      "identity": "matched",
+      "role": "Credential holder",
+      "period": null,
+      "issuer": "SquarePlanet (certificate page on Hype4 Academy)",
+      "issued": "2021-08-21",
+      "expiry": {
+        "status": "unknown",
+        "date": null
+      },
+      "statements": [
+        {
+          "id": "issuer-reported-completion-and-scope",
+          "text": "The issuer reports successful completion of a course covering high-fidelity mobile app design, including onboarding, product pages, forms, and navigation, within its mid-to-high-fidelity iOS and mobile-screen scope."
+        }
+      ],
+      "qualifiers": [
+        "The certificate uses Oak Kar, another name used by Steve Oak (Okkar Kyaw).",
+        "Certificate page identifies Michal Malewicz as Course Instructor and says the final exercise was reviewed, tested, and approved."
+      ],
+      "collaborators": [],
+      "disclosure": "public",
+      "conflicts": [],
+      "sources": [
+        {
+          "url": "https://hype4.academy/certificate/mobile-ui-2/f08054aa-6d89-46e1-972e-9e7145cab2df",
+          "observedAt": "2026-10-08",
+          "attribution": "issuer",
+          "verification": "verified"
+        }
+      ],
+      "review": {
+        "state": "owner-reviewed",
+        "date": "2026-10-08",
+        "authority": "Oak confirmed on 2026-10-08 that both certificates issued to Oak Kar belong to him; the two issuer pages were reviewed for these exact credential records only."
+      }
+    }
+  },
+  {
+    "id": "credential:mobile-ui-1",
+    "kind": "credential",
+    "title": "Mobile App UI Design 1",
+    "canonicalUrl": "https://hype4.academy/certificate/mobile-ui-1/39afef05-d191-421b-97ac-827954fd0c06",
+    "published": "2021-06-22",
+    "reason": "Owner alias confirmation and issuer evidence were reviewed for this exact credential record.",
+    "gaps": [],
+    "profileRecord": {
+      "schema": "oak.profile-record.v1",
+      "family": "credential",
+      "author": "Steve Oak",
+      "subject": "Steve Oak / Okkar Kyaw",
+      "displayedName": "Oak Kar",
+      "identity": "matched",
+      "role": "Credential holder",
+      "period": null,
+      "issuer": "SquarePlanet (certificate page on Hype4 Academy)",
+      "issued": "2021-06-22",
+      "expiry": {
+        "status": "unknown",
+        "date": null
+      },
+      "statements": [
+        {
+          "id": "issuer-reported-completion-and-scope",
+          "text": "The issuer reports successful completion of a course covering mobile design principles, grids, layouts, hierarchy, and constraints. It describes the course scope as mid-to-high-fidelity iOS app design, including form-design practices and common mobile screens."
+        }
+      ],
+      "qualifiers": [
+        "The certificate uses Oak Kar, another name used by Steve Oak (Okkar Kyaw).",
+        "Certificate page identifies Michal Malewicz as Course Instructor and says the final exercise was reviewed, tested, and approved."
+      ],
+      "collaborators": [],
+      "disclosure": "public",
+      "conflicts": [],
+      "sources": [
+        {
+          "url": "https://hype4.academy/certificate/mobile-ui-1/39afef05-d191-421b-97ac-827954fd0c06",
+          "observedAt": "2026-10-08",
+          "attribution": "issuer",
+          "verification": "verified"
+        }
+      ],
+      "review": {
+        "state": "owner-reviewed",
+        "date": "2026-10-08",
+        "authority": "Oak confirmed on 2026-10-08 that both certificates issued to Oak Kar belong to him; the two issuer pages were reviewed for these exact credential records only."
+      }
+    }
+  },
+  {
+    "id": "credential:google-ux",
+    "kind": "credential",
+    "title": "Google UX Design Professional Certificate",
+    "canonicalUrl": "https://www.coursera.org/account/accomplishments/professional-cert/UJEHHCJ3AKXK",
+    "published": "2021-04-14",
+    "reason": "Coursera issuer page confirms this exact Google UX Design Professional Certificate and completion date for Okkar Kyaw.",
+    "gaps": [],
+    "profileRecord": {
+      "schema": "oak.profile-record.v1",
+      "family": "credential",
+      "author": "Steve Oak",
+      "subject": "Steve Oak / Okkar Kyaw",
+      "displayedName": "Okkar Kyaw",
+      "identity": "matched",
+      "role": "Credential holder",
+      "period": null,
+      "issuer": "Google (professional certificate hosted on Coursera)",
+      "issued": "2021-04-14",
+      "expiry": {
+        "status": "unknown",
+        "date": null
+      },
+      "statements": [
+        {
+          "id": "issuer-reported-completion-and-scope",
+          "text": "The issuer records completion of the Google UX Design Professional Certificate on 2021-04-14 and lists seven completed courses."
+        }
+      ],
+      "qualifiers": [],
+      "collaborators": [],
+      "disclosure": "public",
+      "conflicts": [],
+      "sources": [
+        {
+          "url": "https://www.coursera.org/account/accomplishments/professional-cert/UJEHHCJ3AKXK",
+          "observedAt": "2026-10-08",
+          "attribution": "issuer",
+          "verification": "verified"
+        }
+      ],
+      "review": {
+        "state": "owner-reviewed",
+        "date": "2026-10-08",
+        "authority": "Owner review is limited to this exact Coursera credential page and the previously approved Steve Oak / Okkar Kyaw identity."
+      }
+    }
+  },
+  {
+    "id": "linked-resource:95e7f1710b5743c3",
+    "kind": "resource",
+    "title": "https://docs.oakminder.com/llms.txt",
+    "canonicalUrl": "https://docs.oakminder.com/llms.txt",
+    "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state.",
+    "gaps": [
+      "Remote body not imported into reviewed evidence."
+    ]
+  },
+  {
+    "id": "linked-resource:bc8923f1059b7d21",
+    "kind": "resource",
+    "title": "https://docs.oakminder.com/introduction.md",
+    "canonicalUrl": "https://docs.oakminder.com/introduction.md",
+    "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state.",
+    "gaps": [
+      "Remote body not imported into reviewed evidence."
+    ]
+  },
+  {
+    "id": "linked-resource:cf62901d12abd3a8",
+    "kind": "resource",
+    "title": "https://docs.oakminder.com/support/about.md",
+    "canonicalUrl": "https://docs.oakminder.com/support/about.md",
+    "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state.",
+    "gaps": [
+      "Remote body not imported into reviewed evidence."
+    ]
+  },
+  {
+    "id": "linked-resource:a21bc531a63afa21",
+    "kind": "resource",
+    "title": "https://youtu.be/ZZW_znaKGVg",
+    "canonicalUrl": "https://youtu.be/ZZW_znaKGVg",
+    "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state.",
+    "gaps": [
+      "Remote body not imported into reviewed evidence."
+    ]
+  },
+  {
+    "id": "linked-resource:c816aa7251acba64",
+    "kind": "resource",
+    "title": "https://youtu.be/nFu3c7aQzoU",
+    "canonicalUrl": "https://youtu.be/nFu3c7aQzoU",
+    "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state.",
+    "gaps": [
+      "Remote body not imported into reviewed evidence."
+    ]
+  },
+  {
+    "id": "linked-resource:7aff9c894a8888e1",
+    "kind": "resource",
+    "title": "https://youtu.be/ipTu7eJEpm4",
+    "canonicalUrl": "https://youtu.be/ipTu7eJEpm4",
+    "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state.",
+    "gaps": [
+      "Remote body not imported into reviewed evidence."
+    ]
+  },
+  {
+    "id": "linked-resource:e287653cfa00a046",
+    "kind": "resource",
+    "title": "https://forbiddentrust.com/codex/ecosmartloop-ai-waste-classification",
+    "canonicalUrl": "https://forbiddentrust.com/codex/ecosmartloop-ai-waste-classification",
+    "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state.",
+    "gaps": [
+      "Remote body not imported into reviewed evidence."
+    ]
+  },
+  {
+    "id": "linked-resource:5142090b294807f3",
+    "kind": "resource",
+    "title": "https://github.com/Absorber97/Ecosmartloop-Overview",
+    "canonicalUrl": "https://github.com/Absorber97/Ecosmartloop-Overview",
+    "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state.",
+    "gaps": [
+      "Remote body not imported into reviewed evidence."
+    ]
+  },
+  {
+    "id": "linked-resource:b440b051e9b1d47d",
+    "kind": "resource",
+    "title": "https://eco-smart-loop.vercel.app/",
+    "canonicalUrl": "https://eco-smart-loop.vercel.app/",
+    "reason": "Public linked artifact candidate. URL presence does not independently verify remote body or current state.",
+    "gaps": [
+      "Remote body not imported into reviewed evidence."
+    ]
+  },
+  {
+    "id": "external-profile:32595f4e7a23606a",
+    "kind": "external-profile",
+    "title": "https://github.com/Absorber97",
+    "canonicalUrl": "https://github.com/Absorber97",
+    "reason": "Account link only. Whole account content intake is not authorized.",
+    "gaps": [
+      "Selected individual public evidence is not supplied."
+    ]
+  },
+  {
+    "id": "external-profile:d3882238c1e28776",
+    "kind": "external-profile",
+    "title": "https://x.com/ForbiddenSteve",
+    "canonicalUrl": "https://x.com/ForbiddenSteve",
+    "reason": "Account link only. Whole account content intake is not authorized.",
+    "gaps": [
+      "Selected individual public evidence is not supplied."
+    ]
+  },
+  {
+    "id": "external-profile:de228bc890f4ba8c",
+    "kind": "external-profile",
+    "title": "https://www.youtube.com/@notforbiddensteve",
+    "canonicalUrl": "https://www.youtube.com/@notforbiddensteve",
+    "reason": "Account link only. Whole account content intake is not authorized.",
+    "gaps": [
+      "Selected individual public evidence is not supplied."
+    ]
+  },
+  {
+    "id": "external-profile:58530f2580a6d63f",
+    "kind": "external-profile",
+    "title": "https://www.instagram.com/notforbiddensteve/",
+    "canonicalUrl": "https://www.instagram.com/notforbiddensteve/",
+    "reason": "Account link only. Whole account content intake is not authorized.",
+    "gaps": [
+      "Selected individual public evidence is not supplied."
+    ]
+  },
+  {
+    "id": "external-profile:16474adb3c04b537",
+    "kind": "external-profile",
+    "title": "https://www.reddit.com/user/Top_Structure_1805/",
+    "canonicalUrl": "https://www.reddit.com/user/Top_Structure_1805/",
+    "reason": "Account link only. Whole account content intake is not authorized.",
+    "gaps": [
+      "Selected individual public evidence is not supplied."
+    ]
+  }
+]

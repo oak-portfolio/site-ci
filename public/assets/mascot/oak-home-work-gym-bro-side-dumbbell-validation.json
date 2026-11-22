@@ -1,0 +1,17 @@
+{
+  "ok": true,
+  "asset": "/assets/mascot/oak-home-work-gym-bro-side-dumbbell.webp",
+  "runtimeAssetUrl": "/assets/mascot/oak-home-work-gym-bro-side-dumbbell.webp",
+  "contextId": "home.work",
+  "animation": "homeWorkGymBro",
+  "width": 1536,
+  "height": 208,
+  "frameWidth": 192,
+  "frameHeight": 208,
+  "columns": 8,
+  "rows": 1,
+  "frames": 8,
+  "fps": 6,
+  "chromaKey": "#FF00FF",
+  "keyThreshold": 90
+}

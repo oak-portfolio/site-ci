@@ -1,0 +1,19 @@
+{
+  "ok": true,
+  "asset": "/assets/mascot/oak-home-hero-intro.webp",
+  "runtimeAssetUrl": "/assets/mascot/oak-home-hero-intro.webp",
+  "contextId": "home.hero",
+  "animation": "homeHeroIntro",
+  "stateIntent": "hero intro wave",
+  "format": "WEBP",
+  "width": 1536,
+  "height": 208,
+  "frameWidth": 192,
+  "frameHeight": 208,
+  "columns": 8,
+  "rows": 1,
+  "frames": 8,
+  "fps": 7,
+  "chromaKey": "#FF00FF",
+  "keyThreshold": 210
+}

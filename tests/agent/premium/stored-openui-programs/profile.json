@@ -1,0 +1,26 @@
+[
+ {
+  "id": "answer-openui-profile",
+  "question": "Who is Steve?",
+  "program": "root = Answer([who])\nwho = Profile(\"claim-1\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Steve Oak is Okkar Kyaw: a Bay Area AI/design engineer building applied AI systems, retrieval and tool workflows, evaluation loops, and product surfaces that make model behavior easier to inspect and trust.",
+     "citations": [
+      {
+       "documentId": "profile:steve-oak",
+       "passageId": "profile:steve-oak:section-001:passage-001",
+       "sectionId": "profile:steve-oak:section-001",
+       "url": "https://steveoak.com/"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

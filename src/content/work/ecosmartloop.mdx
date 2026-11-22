@@ -1,0 +1,974 @@
+---
+title: "EcoSmartLoop: AI Agent Platform for a $640B Waste Problem and 450K California Businesses"
+projectName: "EcoSmartLoop"
+eyebrow: "Applied AI case study"
+dek: "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback."
+description: "Steve Oak case study on EcoSmartLoop, a team-built SFBU AI waste-sorting prototype built in Fremont with LEAF Engine, Orbi AI, rewards, web/iOS UX, and California SB 1383 context."
+role: "Product-side full-stack owner / AI product engineer"
+timeline: "September to December 2025"
+stack:
+  - "Next.js"
+  - "TypeScript"
+  - "Vercel AI SDK"
+  - "Capacitor"
+  - "Supabase"
+  - "Prisma"
+  - "BetterAuth"
+  - "AWS"
+  - "FastAPI"
+  - "Python ML"
+  - "Tremendous"
+  - "Motion"
+datePublished: "2025-12-15"
+dateUpdated: "2025-12-15"
+featured: true
+draft: false
+order: 1
+card:
+  title: "EcoSmartLoop"
+  category: "AI agents, behavior change, California SB 1383"
+  image: "/assets/work/ecosmartloop/ecosmartloop-cover.png"
+  imageAlt: "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context"
+  badge: "Applied AI"
+hero:
+  image: "/assets/work/ecosmartloop/ecosmartloop-cover.png"
+  imageAlt: "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context"
+  caption: "This is the moment I kept building toward: a confusing item, Orbi ready to explain, and LEAF Engine doing the image read behind the scenes."
+social:
+  image: "/assets/work/ecosmartloop/ecosmartloop-cover-og.png"
+  imageAlt: "EcoSmartLoop Orbi AI social preview with waste-item examples and 8000 plus training context"
+  width: 1200
+  height: 630
+problem:
+  summary: "EcoSmartLoop was built around a small physical moment inside a much larger waste problem: someone stands in front of recycling, compost, and landfill with an ambiguous item and guesses. V2 is where the product stopped being only a scanner: we added gift-card rewards, leaderboard pressure, quizzes, history, and admin controls so better sorting had a reason to repeat."
+  stakes:
+    - "CalRecycle says businesses must provide organic-waste collection access, educate employees, tenants, contractors, and customers, inspect organic-waste containers for contamination, and inform employees when containers are contaminated."
+    - "CalRecycle's contamination guidance ties clean organic streams to processing, diversion from landfill, and marketable recycled products."
+    - "UNEP's Global Waste Management Outlook 2024 projects global annual waste costs could reach USD 640.3B by 2050 without urgent action, which made the capstone problem feel worth taking seriously."
+    - "A CalRecycle SB 1383 cost scenario uses 450,000 California businesses with at least five employees; this is statewide scale context, not EcoSmartLoop adoption."
+    - "The green-mission angle was practical: do more than push a sustainability message. The product had to guide the person, incentivize better sorting, make progress visible, and give admins a way to adjust the program while behavior can still change."
+ownership:
+  oak:
+    - "Owned the product-side full stack: scanner, upload/API flow, product backend, Orbi AI, cited guidance UX, rewards, quizzes, analytics, admin surfaces, responsive UI, and Capacitor iOS shell."
+    - "Integrated LEAF Engine classification output into a user-facing decision loop with confidence, uncertainty handling, saved history, and organization context."
+    - "Led the V1 to V2 product shift from scanner/dashboard utility into a rewards-backed behavior-change flow with gift cards, quizzes, leaderboards, user history, and organization controls."
+  collaborators:
+    - "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving."
+    - "Neelofar contributed frontend and data-analytics work."
+    - "Professor Ahmed Banafa advised the capstone."
+  openQuestions: []
+systemMap:
+  - label: "Scan"
+    description: "A user scans or uploads a waste item from the responsive web app or Capacitor iOS prototype."
+  - label: "Classify"
+    description: "LEAF Engine returns compost, recycle, landfill, or unknown with confidence/probability output."
+  - label: "Explain"
+    description: "Orbi AI explains the recommendation with cited guidance and app-aware actions."
+  - label: "Record"
+    description: "The app saves the decision with user and organization context for history and analytics."
+  - label: "Repeat"
+    description: "Gift-card rewards, quizzes, achievements, leaderboards, and admin views turn one recommendation into repeat practice for users and stakeholders."
+metrics:
+  - label: "Dataset"
+    value: "8K+ images"
+    status: "verified"
+    note: "Used as classifier training context; the public page does not include per-class model-card metrics."
+  - label: "Model output"
+    value: "4 classes"
+    status: "verified"
+    note: "Compost, recycle, landfill, and unknown with confidence/probability output."
+  - label: "Role"
+    value: "Product-side full stack"
+    status: "verified"
+    note: "Scanner, product APIs, Orbi, mobile shell, UX, rewards, analytics, and admin surfaces."
+  - label: "Context"
+    value: "California SB 1383"
+    status: "verified"
+    note: "Used as the compliance and behavior-change context for the product direction."
+  - label: "Global problem"
+    value: "$640.3B"
+    status: "verified"
+    note: "UNEP 2024 projection for annual global waste-management cost by 2050 without urgent action; not an EcoSmartLoop outcome."
+  - label: "California scale"
+    value: "450K businesses"
+    status: "verified"
+    note: "CalRecycle SB 1383 cost scenario count for businesses with at least five employees; used as statewide scale context, not customer adoption."
+evidenceStatus:
+  publishMode: "publish-ready"
+  summary: "Public artifacts include the three-bin hesitation scene, team-origin grid, B2B context image, SB 1383 context visual and chart, team-contribution chart, Excalidraw decision/architecture/workflow embeds, Orbi cited-guidance screenshot, desktop and mobile demos, rewards/admin/analytics/leaderboard/history media, challenge-resolution animation and table, tech-stack visual, LEAF Engine training-context visual, product-depth chart, model-card table, capstone poster/flyer, public overview, live demo, and original retrospective. They support a prototype case study, not production adoption or measured impact claims."
+  checks:
+    - "Final model-card metrics are not attached to the public page yet."
+    - "Business outcome metrics belong with a real deployment or pilot."
+    - "The mobile evidence focuses on responsive web and the Capacitor iOS shell."
+    - "Earlier retrospective language about exact business counts, engagement, gift-card catalog size, and auto-retraining stays conservative until stronger evidence is attached."
+artifacts:
+  - label: "Original retrospective source"
+    href: "https://forbiddentrust.com/codex/ecosmartloop-ai-waste-classification"
+    status: "verified"
+    note: "Earlier public writeup that documented the first version of the project story."
+  - label: "Public overview repo"
+    href: "https://github.com/Absorber97/Ecosmartloop-Overview"
+    status: "verified"
+    note: "Public overview, team roles, screenshots, and capstone context."
+  - label: "Prototype demo"
+    href: "https://eco-smart-loop.vercel.app/"
+    status: "verified"
+    note: "Public Vercel demo for the capstone prototype; claims remain scoped to prototype behavior."
+  - label: "Bin-side scanner moment"
+    status: "verified"
+    note: "Mobile-first scan/upload surface and three-bin hesitation context."
+  - label: "Orbi guidance UI"
+    status: "verified"
+    note: "Combined assistant media showing source-backed guidance, progress, tool results, and product actions."
+  - label: "Behavior-loop media"
+    status: "verified"
+    note: "Local media covers rewards, achievements, personal history, leaderboard, reward setup, and organization views."
+  - label: "Organization analytics"
+    status: "verified"
+    note: "Institution-facing behavior and reporting view for repeated sorting patterns."
+  - label: "Mobile and desktop demos"
+    status: "verified"
+    note: "Video embeds showing desktop breadth and mobile bin-side flow."
+  - label: "Capstone poster and flyer"
+    status: "verified"
+    note: "Presentation artifacts showing product direction, scan path, dataset framing, architecture, and startup-shaped pitch context."
+  - label: "Team-origin grid"
+    status: "verified"
+    note: "Local media showing capstone teammates and public-facing role labels from SFBU / Startup Grind context."
+  - label: "B2B direction context"
+    status: "verified"
+    note: "Local media showing the LinkedIn-building and career-fair context that shaped the institution-facing angle."
+  - label: "Challenge-resolution animation"
+    status: "verified"
+    note: "Animated local media used as visual context for the capstone challenge/fix table; preserved as animation."
+  - label: "Tech stack visual"
+    status: "verified"
+    note: "Local media showing the frontend, backend, database, AI, infrastructure, mobile, auth, and payment tools used in the capstone."
+  - label: "Pitch deck"
+    status: "needs-oak"
+    note: "Original article linked a Google Slides pitch deck, but this page should not publish that link until Oak confirms it is ready for the public page."
+jobMappings:
+  - roleFamily: "Applied AI Engineer"
+    use: "Use for model integration, confidence handling, low-confidence feedback paths, and model-card discipline."
+  - roleFamily: "AI Product Engineer"
+    use: "Use for turning model output into a full product flow: scan, explain, save, reward, analyze, and iterate."
+  - roleFamily: "Design Engineer / UX Engineer"
+    use: "Use for trust-focused UX, cited guidance, responsive mobile surfaces, and making uncertain AI output understandable."
+  - roleFamily: "Bay Area AI teams"
+    use: "Use as factual California/SB 1383 context plus applied AI product judgment, not as local-business SEO."
+tbdQueue: []
+seo:
+  title: "EcoSmartLoop AI Waste Sorting | Steve Oak"
+  description: "How Steve Oak contributed to a team-built SFBU AI waste-sorting prototype with LEAF Engine classification, Orbi AI guidance, rewards, analytics, and web/iOS UX."
+  keywords:
+    - "AI agents waste sorting"
+    - "AI agents for waste management"
+    - "640 billion waste management problem"
+    - "450K California businesses waste sorting"
+    - "AI behavior change waste sorting"
+    - "climate software behavior change"
+    - "gift card rewards waste sorting"
+    - "recycling gamification"
+    - "AI waste sorting case study"
+    - "AI waste classification"
+    - "computer vision recycling app"
+    - "SB 1383"
+    - "California SB 1383 businesses"
+    - "California waste sorting"
+    - "Bay Area AI product engineer"
+    - "applied AI product engineering"
+    - "AI trust UX"
+    - "Steve Oak"
+schema:
+  headline: "EcoSmartLoop: AI Agent Platform for a $640B Waste Problem and 450K California Businesses"
+  description: "A team-built cross-platform web and iOS AI-agent waste-sorting and behavior-change prototype case study with LEAF Engine classification, Orbi AI guidance and app actions, rewards, analytics, and California SB 1383 business context."
+  about:
+    - "EcoSmartLoop"
+    - "LEAF Engine"
+    - "Orbi AI"
+    - "AI agents"
+    - "AI waste sorting"
+    - "behavior change"
+    - "computer vision"
+    - "applied AI"
+    - "AI product engineering"
+    - "California SB 1383"
+    - "SFBU"
+    - "Fremont"
+    - "Bay Area applied AI"
+sources:
+  - label: "Original EcoSmartLoop retrospective"
+    href: "https://forbiddentrust.com/codex/ecosmartloop-ai-waste-classification"
+  - label: "EcoSmartLoop overview repository"
+    href: "https://github.com/Absorber97/Ecosmartloop-Overview"
+  - label: "EcoSmartLoop live demo"
+    href: "https://eco-smart-loop.vercel.app/"
+  - label: "UNEP Global Waste Management Outlook 2024"
+    href: "https://www.unep.org/resources/global-waste-management-outlook-2024"
+  - label: "UNEP waste-era press release"
+    href: "https://www.unep.org/news-and-stories/press-release/world-must-move-beyond-waste-era-and-turn-rubbish-resource-un-report"
+  - label: "CalRecycle SB 1383 organics program"
+    href: "https://calrecycle.ca.gov/organics/slcp/"
+  - label: "CalRecycle SB 1383 business collection requirements"
+    href: "https://calrecycle.ca.gov/organics/slcp/collection/"
+  - label: "CalRecycle contamination monitoring"
+    href: "https://calrecycle.ca.gov/organics/slcp/collection/contamination/"
+  - label: "CalRecycle SB 1383 recordkeeping"
+    href: "https://www.calrecycle.ca.gov/organics/slcp/recordkeeping"
+  - label: "CalRecycle SB 1383 cost scenario PDF"
+    href: "https://www2.calrecycle.ca.gov/Docs/Web/115980"
+  - label: "Cool California business sustainability guidance"
+    href: "https://coolcalifornia.arb.ca.gov/sustainability-improves-business-profitability"
+  - label: "California Grants Portal recycling innovation grant example"
+    href: "https://www.grants.ca.gov/grants/beverage-container-redemption-innovation-grant/"
+  - label: "EPA automated waste sorting at point of disposal"
+    href: "https://cfpub.epa.gov/ncer_abstracts/index.cfm/fuseaction/display.abstractDetail/abstract_id/11235/report/0"
+  - label: "NIST AI and recycling efficiency"
+    href: "https://www.nist.gov/blogs/taking-measure/trash-cash-how-ai-and-machine-learning-can-help-make-recycling-less-expensive"
+  - label: "Behavior change interventions for pro-environmental behavior"
+    href: "https://pmc.ncbi.nlm.nih.gov/articles/PMC9486705/"
+  - label: "Campus Race to Zero Waste behavior change strategy guide"
+    href: "https://campusracetozerowaste.org/wp-content/uploads/2017/09/RM-Behavior-Change-Strategy-Guide-1.pdf"
+  - label: "Google AI features and websites"
+    href: "https://developers.google.com/search/docs/appearance/ai-features"
+  - label: "NN/g portfolio guidance"
+    href: "https://www.nngroup.com/videos/ux-portfolios-hiring/"
+machineSummary: "EcoSmartLoop is Steve Oak's San Francisco Bay University (SFBU) case study for an AI Agent Platform concept around waste sorting: a team-built cross-platform web and iOS prototype that starts at the bin, where a person has to choose between recycling, compost, landfill, or unknown. The public scale anchors are UNEP's USD 640.3B 2050 waste-cost projection and a CalRecycle SB 1383 scenario with 450,000 California businesses. LEAF Engine read the waste image and returned class confidence. Orbi AI used that result, source guidance, app context, and product actions to explain the recommendation, cite reasons, save decisions, trigger quizzes and rewards, and feed analytics/admin workflows. Steve owned the product-side full stack around the classifier: scanner UX, upload/API flow, classifier integration, Orbi AI, cited guidance UX, rewards, quizzes, analytics, admin surfaces, responsive web UI, and the Capacitor iOS shell. V2 added Tremendous gift-card rewards, leaderboard visibility, quizzes, achievements, scan history, and admin controls so better sorting could become repeat behavior instead of a one-time answer. The organization-side startup hypothesis is that better behavior at the bin can create cleaner reporting data, training insight, public sustainability storytelling, and possible grant, rebate, or tax-incentive paths where a real deployment qualifies. Public evidence supports EcoSmartLoop as a capstone prototype and product-engineering case study, with no production adoption, compliance savings, measured behavior-change impact, guaranteed tax benefit, Android release, or final public model-accuracy claim."
+machineQuestions:
+  - heading: "What is EcoSmartLoop?"
+    answer: "EcoSmartLoop is a team-built cross-platform web and iOS AI waste-sorting prototype from Steve Oak's San Francisco Bay University (SFBU) capstone in Fremont, California. The case study frames it as an AI Agent Platform direction for a large waste-sorting problem: LEAF Engine classifies the item, Orbi AI explains and acts on the result, and the app connects the scan to rewards, quizzes, history, analytics, and admin workflows."
+  - heading: "What problem does EcoSmartLoop solve?"
+    answer: "EcoSmartLoop focuses on the few seconds before a waste-sorting mistake happens. A person is holding an ambiguous item and choosing between recycling, compost, landfill, or unknown. The product brings decision support to that moment first, then turns the scan into saved learning, reward progress, organization analytics, and admin feedback."
+  - heading: "How do LEAF Engine and Orbi AI work together?"
+    answer: "LEAF Engine handles image classification. It returns compost, recycle, landfill, or unknown with confidence/probability output. Orbi AI handles the agent layer after the label: it uses sources, app context, tool calls, generated UI, and product actions to explain the recommendation, show uncertainty, save context, and guide the next step."
+  - heading: "What did Steve Oak build?"
+    answer: "Steve owned the product-side full stack around the classifier: scanner UX, image upload and API flow, classifier integration, product backend, Orbi AI, cited guidance UX, rewards, quizzes, analytics, admin surfaces, responsive web UI, and a Capacitor iOS shell. Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving. Neelofar contributed frontend and analytics work. Professor Ahmed Banafa advised the capstone."
+  - heading: "What changed in V2?"
+    answer: "V2 added the behavior-change layer. EcoSmartLoop integrated Tremendous-backed gift-card reward paths, leaderboard visibility, quizzes, achievements, scan history, and admin controls. The goal was to turn the whole sorting experience into a learning path: scan the item, understand the reason, save the result, practice through quizzes and rewards, and give the organization cleaner signals later."
+  - heading: "Why does the California and Bay Area context matter?"
+    answer: "EcoSmartLoop was built at San Francisco Bay University (SFBU) in Fremont, so California waste-sorting rules were a practical product context. California SB 1383 creates education, collection, inspection, contamination-monitoring, recordkeeping, and reporting pressure for businesses and institutions. For Bay Area applied-AI teams, the case study shows how AI product work can connect a physical workflow, policy context, web/iOS UX, organization feedback, and sustainability reporting."
+  - heading: "How big is the problem EcoSmartLoop points at?"
+    answer: "The page uses public scale anchors to explain why Oak cared about the problem. UNEP's Global Waste Management Outlook 2024 projects annual global waste-management costs could reach USD 640.3B by 2050 without urgent action. A CalRecycle SB 1383 cost scenario uses 450,000 California businesses with at least five employees. EcoSmartLoop did not produce those numbers; it targeted one small part of the larger workflow, the decision before an item hits the wrong bin."
+  - heading: "What makes EcoSmartLoop an applied AI product case study?"
+    answer: "EcoSmartLoop is an applied AI product case study because the work is around the model, not only inside the model. The product captures the item, handles confidence and uncertainty, explains the recommendation, cites guidance, saves the decision, rewards repeat learning, exposes analytics, and gives admins a way to understand where people need help."
+  - heading: "How could organizations benefit if EcoSmartLoop became a startup?"
+    answer: "The startup hypothesis is that organizations would benefit when user behavior changes before reporting happens. A deployed version could help teams collect cleaner decision data, see where training fails, show participation publicly, prepare sustainability reporting, and evaluate grant, rebate, or tax-incentive paths where they qualify."
+  - heading: "What artifacts explain the case study?"
+    answer: "The case study includes the original retrospective, public overview repository at https://github.com/Absorber97/Ecosmartloop-Overview, live demo, screenshots, diagrams, video captures, capstone poster and flyer, Orbi guidance media, rewards and analytics surfaces, California SB 1383 sources, UNEP waste-management context, EPA point-of-disposal AI sorting context, NIST recycling-efficiency context, behavior-change references, and business sustainability sources."
+---
+
+## The three-bin pause
+
+You are holding a greasy takeout container, and all three bins look partly right.
+
+That became the product brief.
+
+[UNEP's 2024 outlook](https://www.unep.org/resources/global-waste-management-outlook-2024) says annual global waste costs could reach USD 640.3B by 2050 without urgent action. In California, one SB 1383 cost scenario models [450,000 businesses with at least five employees](https://www2.calrecycle.ca.gov/Docs/Web/115980). Those numbers explain the scale of the problem. They do not describe EcoSmartLoop adoption, savings, compliance, or impact.
+
+Because we built it at SFBU in Fremont, the California context felt close. [SB 1383](https://calrecycle.ca.gov/organics/slcp/) turned waste sorting into real work for campuses, offices, restaurants, and city-scale programs around the Bay Area. Still, all of that work can come down to one person holding one confusing item.
+
+Maybe it is a pizza box. Maybe it is a coffee cup lid, a takeout container, or a compostable-looking cup that is only compostable somewhere else. The bins are right there: <KeywordBadge>recycling</KeywordBadge>, <KeywordBadge>compost</KeywordBadge>, <KeywordBadge>landfill</KeywordBadge>. Someone may be waiting behind you. You pick the bin that feels least wrong.
+
+The dashboard can come later. The report can come later. First, the person at the bin needs enough confidence to act and move on.
+
+I built the product around that hesitation. The user should not have to become a waste-policy expert to throw something away correctly. The app should bring the decision support to the moment, explain why the recommendation makes sense, and make the next decision feel less random.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/three-bin-hesitation.webp"
+  alt="A person hesitating in front of trash recycling and compost bins"
+  width={1600}
+  height={900}
+  srcset="/assets/work/ecosmartloop/responsive/three-bin-hesitation-900.webp 900w, /assets/work/ecosmartloop/responsive/three-bin-hesitation-1200.webp 1200w, /assets/work/ecosmartloop/three-bin-hesitation.webp 1600w"
+  sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1240px) calc(100vw - 64px), 1120px"
+  caption="The product starts at the bin: a few seconds where signage, memory, and social pressure are not enough."
+/>
+
+<Callout title="The bet" tone="proof">
+  <p>A scan was only the first move. EcoSmartLoop had to explain the answer, save it, and make the next decision less of a guess for the person at the bin and the organization reviewing the program later.</p>
+</Callout>
+
+The scanner gave us a door into the problem. It did not create trust on its own. A label like "recycle" or "compost" helps only if the person believes it, understands it, and has a way to learn from it later.
+
+The <KeywordBadge>AI agents</KeywordBadge> part only mattered if it helped after the label. Orbi had to explain the answer, cite the reason, remember the decision, and help the user do the next thing.
+
+## The questions going in
+
+I kept testing the capstone against four questions.
+
+Would someone actually use it while standing at a bin? Could Orbi feel like an assistant inside the product instead of a green-themed chatbot? Could the whole thing work on a phone without turning into a separate native-app project? And would a business or institution care after the demo was over?
+
+Those questions kept pulling me back from the easy version. A scanner that says "recycle" or "compost" is a good demo. The product I wanted had to explain, remember, teach, and show where the same confusion kept coming back.
+
+<OutcomeTable
+  rows={[
+    { area: "Engagement", status: "User test", detail: "Would a normal person use it while standing at a bin?" },
+    { area: "Orbi", status: "Assistant test", detail: "Could guidance feel like part of the product instead of a themed chatbot?" },
+    { area: "Mobile access", status: "Engineering test", detail: "Could the bin-side flow work on a phone without a separate native-app project?" },
+    { area: "Organization fit", status: "Market test", detail: "Could the scanner matter to a campus, office, or food-service team after the demo?" }
+  ]}
+/>
+
+I used those questions as a filter. If a feature did not make the answer faster, the reasoning clearer, the phone moment easier, or the organization view better, it probably did not belong.
+
+From there, the work moved beyond <KeywordBadge>image classification</KeywordBadge>: cited guidance, rewards, history, quizzes, leaderboards, analytics, and admin surfaces.
+
+## Where the direction came from
+
+EcoSmartLoop did not start as a polished idea. We were kicking around capstone directions, including a multicultural-event scheduling app, before Glenn brought up waste sorting. The room changed a little when we talked about it. It was physical, confusing, local to California, and deep enough for both AI work and product judgment.
+
+The team split became clear by doing the work. Frank Baah and Glenn Marvin Musoke primarily pushed <KeywordBadge>LEAF Engine</KeywordBadge> training and serving. Neelofar helped on frontend and analytics. I took the app around the classifier: scanner, API integration, Orbi AI, rewards, analytics, admin views, responsive UI, and the mobile shell.
+
+<div className="work-mdx-image-grid" aria-label="EcoSmartLoop capstone teammate role photos">
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/ecosmartloop/team-capstone-origin-1800.avif') type('image/avif'), url('/assets/generated/work/ecosmartloop/team-capstone-origin-1800.webp') type('image/webp'), url('/assets/work/ecosmartloop/team-capstone-origin.webp') type('image/webp'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/ecosmartloop/team-capstone-origin.webp"
+        alt="EcoSmartLoop teammates at an SFBU Startup Grind event with public role labels for Glenn, Frank, and Oak"
+        width={3200}
+        height={2400}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>After the capstone project event with Glenn, Frank, and me, once the EcoSmartLoop work was already behind us.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/ecosmartloop/team-capstone-questions-1800.avif') type('image/avif'), url('/assets/generated/work/ecosmartloop/team-capstone-questions-1800.webp') type('image/webp'), url('/assets/work/ecosmartloop/team-capstone-questions.webp') type('image/webp'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/ecosmartloop/team-capstone-questions.webp"
+        alt="EcoSmartLoop teammates at SFBU with public role labels for Neelofar, Frank, and Oak"
+        width={3200}
+        height={2400}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>Another post-capstone event photo with Neelofar, Frank, and me, after the frontend, analytics, AI, and product pieces had come together.</figcaption>
+  </figure>
+</div>
+
+These were taken after the capstone project event, not during the messy middle of the build. By then, the split was easier to see: Frank and Glenn had pushed the model work, Neelofar had helped the frontend and analytics come together, and I had spent most of my energy making sure the classifier became something a person could actually use.
+
+<ChartFigure
+  eyebrow="Ownership map"
+  title="My lane was the product around the model"
+  summary="The classifier could return an answer. My work was making that answer usable through scanner UX, Orbi guidance, rewards, analytics, and a mobile flow."
+  type="radar"
+  layout="wide"
+  aspectRatio="1.85 / 1"
+  categoryKey="label"
+  valueFormatter="number"
+  maxValue={2}
+  series={[
+    { key: "oak", label: "Oak", tone: "green" },
+    { key: "frank", label: "Frank", tone: "blue" },
+    { key: "glenn", label: "Glenn", tone: "pale-blue" },
+    { key: "neelofar", label: "Neelofar", tone: "amber" }
+  ]}
+  data={[
+    {
+      label: "Product UX",
+      oak: 2,
+      frank: 0,
+      glenn: 0,
+      neelofar: 1,
+      detail: "I owned the product UX around scanner, results, Orbi, rewards, and admin surfaces; Neelofar contributed frontend implementation work."
+    },
+    {
+      label: "Frontend",
+      oak: 2,
+      frank: 0,
+      glenn: 0,
+      neelofar: 2,
+      detail: "I owned the product surfaces and responsive behavior; Neelofar contributed frontend work."
+    },
+    {
+      label: "Orbi AI",
+      oak: 2,
+      frank: 0,
+      glenn: 0,
+      neelofar: 0,
+      detail: "Product-side cited guidance, tools, quizzes, rewards, and analytics actions."
+    },
+    {
+      label: "Product APIs",
+      oak: 1,
+      frank: 1,
+      glenn: 1,
+      neelofar: 0,
+      detail: "I integrated the classifier and product API layer while Frank and Glenn collaborated around the model-serving contract."
+    },
+    {
+      label: "LEAF training",
+      oak: 1,
+      frank: 2,
+      glenn: 2,
+      neelofar: 0,
+      detail: "Frank and Glenn primarily owned LEAF Engine training; I contributed behavior direction, research, testing, and product-side feedback."
+    },
+    {
+      label: "Model serving",
+      oak: 1,
+      frank: 2,
+      glenn: 2,
+      neelofar: 0,
+      detail: "Frank and Glenn primarily owned model serving; I integrated the endpoint into the product workflow."
+    },
+    {
+      label: "Analytics",
+      oak: 1,
+      frank: 0,
+      glenn: 0,
+      neelofar: 2,
+      detail: "Organization and data-analytics surfaces, with Neelofar contributing analytics work."
+    },
+    {
+      label: "Mobile shell",
+      oak: 2,
+      frank: 0,
+      glenn: 0,
+      neelofar: 0,
+      detail: "Responsive web plus Capacitor iOS shell work."
+    }
+  ]}
+  caption="The role split was simple by the end: Frank and Glenn pushed LEAF Engine, Neelofar supported frontend and analytics, and I connected the classifier to the product experience people would actually touch."
+/>
+
+The split mattered during the build. Frank and Glenn were deep in model training and serving. Neelofar helped on frontend and analytics. I was usually worrying about what happened after the model response hit the app: scanner UX, Orbi, product APIs, mobile shell, rewards, and admin analytics.
+
+The institution angle came later. At a career fair on top of the <BrandIconLink provider="linkedin" label="LinkedIn" /> building, I kept hearing a version of the same problem from people around larger teams and startups. Institutions already had waste analytics, diversion reports, and sustainability dashboards. The weak spot was earlier than the report. Most tools helped teams see what happened after the behavior. I kept thinking about the person holding the confusing item before the wrong bin, and the organization that would later have to explain the pattern.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/b2b-career-fair-context.webp"
+  alt="LinkedIn building and rooftop context from the career-fair moment that shaped EcoSmartLoop's B2B direction"
+  width={1600}
+  height={900}
+  variant="contained"
+  maxWidth={760}
+  caption="The B2B angle came from a simple gap: institutions could report on waste, but the person at the bin still needed help before the mistake."
+/>
+
+EcoSmartLoop started to look useful for institutions too. The scan still helped the individual first. But if enough people changed the decision at the bin, the organization got better data afterward: cleaner reporting, clearer training gaps, more visible participation, and a better story to tell in sustainability updates. The <KeywordBadge>behavior change</KeywordBadge> work was practical: do more than push the sustainability message. Help the person practice better sorting, reward the right behavior, and give the organization a reason to improve the program.
+
+## Why a California waste-sorting prototype was worth building
+
+EcoSmartLoop came out of my SFBU M.S. capstone in Fremont, and <BrandIconLink provider="calrecycle" label="CalRecycle" href="https://calrecycle.ca.gov/organics/slcp/" /> gave the idea a real California operating context. [SB 1383](https://calrecycle.ca.gov/organics/slcp/collection/) means businesses and institutions have to think about education, container access, inspection, recordkeeping, and what happens when organic-waste containers are contaminated.
+
+In practice, the problem was bigger than a recycling lookup. In an office, campus, or food-service environment, one wrong guess can become repeated behavior: confusing signage, contaminated bins, weak training, and no feedback after the decision. <BrandIconLink provider="calrecycle" label="CalRecycle contamination monitoring" href="https://calrecycle.ca.gov/organics/slcp/collection/contamination/" /> made that obvious to me. The hard part was not only knowing the class. It was helping people learn around the bin.
+
+A CalRecycle SB 1383 cost scenario uses [450,000 California businesses with at least five employees](https://www2.calrecycle.ca.gov/Docs/Web/115980). The number stuck with me because it made the project feel large without pretending we had adoption. Nearly half a million businesses in one state is a reminder that waste sorting is a repeated workplace workflow, not a once-a-year climate pledge.
+
+I also did not want the product to guilt people into caring more. People already try. The better green mission is more practical: make the right action easier and give people a reason to repeat it. The person gets a clearer answer at the bin. The product rewards better sorting. The organization sees what keeps going wrong. The admin has a reason to teach, incentivize, adjust the program, and keep better records for reporting later.
+
+That mattered because the organization benefit is not only "make a prettier dashboard." CalRecycle has separate <BrandIconLink provider="calrecycle" label="recordkeeping guidance" href="https://www.calrecycle.ca.gov/organics/slcp/recordkeeping" /> for SB 1383, and California's [Cool California business guidance](https://coolcalifornia.arb.ca.gov/sustainability-improves-business-profitability) frames sustainability as part of long-term resilience, efficiency, and public accountability. I read those as a startup clue: if the product can improve behavior before the mistake, the organization has cleaner records, better training evidence, and a stronger story after the scan.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/california-sb1383-context.webp"
+  alt="California SB 1383 organics recycling law context card over produce waste"
+  width={1280}
+  height={720}
+  caption="SB 1383 gave the prototype a concrete operating context: education, collection, inspection, and contamination monitoring."
+/>
+
+The policy context shaped the language of the app. I did not want EcoSmartLoop to sound like a rulebook. It needed to answer the question someone has while holding the item: what is this, why does it go there, and what should I do next?
+
+<ChartFigure
+  eyebrow="SB 1383 context"
+  title="The operating pressure was real before the prototype existed"
+  summary="California organics rules created education, inspection, and contamination-monitoring work before our prototype existed. Feedback around the bin was worth designing because the work already existed for real organizations."
+  type="bar"
+  layout="narrow"
+  aspectRatio="1.35 / 1"
+  minWidth={520}
+  orientation="vertical"
+  categoryKey="label"
+  valueFormatter="percent"
+  axisFormatter="percent"
+  maxValue={100}
+  ticks={[0, 25, 50, 75, 100]}
+  series={[
+    { key: "percent", label: "Percent", tone: "pale-blue" }
+  ]}
+  data={[
+    {
+      label: "Landfill",
+      percent: 75,
+      tone: "green",
+      detail: "California SB 1383 target for reducing organic waste sent to landfills by 2025."
+    },
+    {
+      label: "Food recovery",
+      percent: 20,
+      tone: "amber",
+      detail: "California SB 1383 target for recovering currently disposed unsold edible food."
+    },
+    {
+      label: "Community",
+      percent: 97,
+      tone: "pale-blue",
+      detail: "CalRecycle-reported organics capacity context for required communities."
+    },
+    {
+      label: "Business",
+      percent: 75,
+      tone: "blue",
+      detail: "CalRecycle-reported organics capacity context for required businesses."
+    }
+  ]}
+  caption="CalRecycle context for why a bin-side sorting product had a real operating problem behind it. These are external targets and requirements, not EcoSmartLoop outcomes."
+/>
+
+The global waste numbers made the stakes feel worth taking seriously, but I try to keep them in the background. UNEP also summarized the report with a sharper public line: the world has to move beyond the ["waste era"](https://www.unep.org/news-and-stories/press-release/world-must-move-beyond-waste-era-and-turn-rubbish-resource-un-report). For this project, the big idea was simple: a huge waste problem still shows up as small repeated decisions.
+
+There was a real reason to use AI here too. The [EPA has funded point-of-disposal AI sorting work](https://cfpub.epa.gov/ncer_abstracts/index.cfm/fuseaction/display.abstractDetail/abstract_id/11235/report/0), and [NIST has written about AI and machine learning](https://www.nist.gov/blogs/taking-measure/trash-cash-how-ai-and-machine-learning-can-help-make-recycling-less-expensive) as a way to make recycling more efficient and less expensive for local governments. EcoSmartLoop was a student prototype, but it was aimed at a real physical workflow.
+
+## What I had to make work
+
+Once the team split was clear, my work became easier to describe. I was taking <KeywordBadge>LEAF Engine</KeywordBadge> out of the model notebook and putting it into a product someone could use while holding trash: capture the image, call the classifier safely, show the answer, handle weak confidence, save the scan, and connect the result to Orbi, rewards, history, and organization analytics.
+
+Most of the judgment lived in the in-between states. A classifier can say "recycle." The app still has to answer the real user questions: how sure are we, why should I trust this, what if the answer is uncertain, and what changes after I scan?
+
+## The decision loop
+
+I did not want the app to stop at "take a picture, get a bin." That helps once. A real product needed memory.
+
+The sequence became: scan, classify, explain, record, reward, learn, and make the next decision better. The <KeywordBadge>AI agents</KeywordBadge> part was Orbi. It could use sources and app context, make database-backed tool calls, generate UI, trigger app actions, expose uncertainty, and help the user complete the next step.
+
+<ExcalidrawFigure
+  src="https://link.excalidraw.com/readonly/UE147bVB2zCjbwVUDXsj?darkMode=true"
+  title="EcoSmartLoop decision loop Excalidraw diagram"
+  caption="The diagram shows what happened after classification: explanation, memory, rewards, and the next scan."
+/>
+
+After that, EcoSmartLoop stopped feeling like a scanner with a model attached. The scan result now had a place to go: explanation, history, incentives, and organization analytics.
+
+The architecture had to stay readable too. The user-facing app, classifier service, AI assistant, data layer, and organization views could not blur into one mystery box.
+
+## LEAF Engine classified. Orbi explained.
+
+EcoSmartLoop had two AI pieces, and I wanted the split to be obvious:
+
+The simplest version: LEAF Engine decided what the item appeared to be, and Orbi helped the person understand what to do with that answer.
+
+1. <KeywordBadge>LEAF Engine</KeywordBadge> did the photo read. It looked at the uploaded waste image and returned one of four outcomes: compost, recycle, landfill, or unknown, plus confidence/probability output. The shareable model story is simple: four classes, 8K+ image training context, MobileNetV2 transfer learning, 224x224 image input, <BrandIconLink provider="fastapi" label="FastAPI" /> serving, prediction logging, and a <KeywordBadge>low-confidence path</KeywordBadge>.
+
+2. <KeywordBadge>Orbi AI</KeywordBadge> handled what happened after the label. I built it with <BrandIconLink provider="vercel" label="Vercel AI SDK" /> so the assistant could stay model-swappable instead of locked to one provider. Orbi could search and cite sources, call database-backed app tools, render structured UI, generate quiz/reward actions, and take product actions without making the user dig through a dashboard.
+
+Today I would call Orbi the agent part of the product, but I do not mean that in a sci-fi way. It used context, sources, tool calls, generated UI, and product actions to move a user from "I think this is compost" to "here is the recommendation, here is why, here is what changed, and here is what to do next."
+
+I started from <BrandIconLink provider="vercel" label="Vercel AI SDK v5" /> and Vercel AI Elements because the app needed more than a text box: streaming answers, source chips, visible tool progress, quiz actions, reward-aware responses, and app context. A generic prompt would have been faster. It also would have missed the whole reason Orbi existed: knowing where the user was in the product and what action could happen next.
+
+<ExcalidrawFigure
+  src="https://link.excalidraw.com/readonly/igFOoM3aHuFh2V5iBOIo?darkMode=true"
+  title="EcoSmartLoop product architecture Excalidraw diagram"
+  caption="The architecture kept the scanner, classifier, Orbi, memory, rewards, analytics, and admin workflows understandable."
+/>
+
+Keeping those jobs separate made the product easier to debug and explain. LEAF Engine handled image classification. Orbi handled explanation and product actions. The app stitched both into scanner, history, rewards, analytics, and admin workflows.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/orbi-guidance-actions-combined.avif"
+  alt="Orbi AI assistant screens showing cited guidance, sources, related prompts, and product-aware tool actions"
+  width={1600}
+  height={706}
+  caption="Orbi was where the answer had to earn trust: sources, tool progress, app context, and a next action in the same place."
+/>
+
+The Orbi UI came after studying how <BrandIconLink provider="perplexity" label="Perplexity" /> makes sources visible and how <BrandIconLink provider="openai" label="ChatGPT" href="https://chatgpt.com" /> exposes tool calls, generated UI, and agentic behavior. I wanted the waste answer to show its work: what the model thinks, what source the app used, how uncertain the answer is, and what next action the user can take.
+
+## From scanner to behavior loop
+
+V1 had the obvious pieces: scanner, classification result, dashboard, and basic analytics. It worked, but it felt thin. If the product only tells someone the answer once, why would they come back? And if people do not come back, why would an institution care beyond a one-time demo?
+
+V2 is where it stopped feeling like only a camera flow. We integrated gift-card rewards, leaderboard features, quizzes, achievements, scan history, and admin controls. The question changed from "what bin is this?" to "how do we make the better choice worth repeating?"
+
+A slogan can tell people recycling is important. That is not enough when someone is holding a messy container and the line behind them is moving. The product has to guide the person in the moment, give them feedback, make progress visible, and help the organization see where the confusion keeps coming back.
+
+That direction matched what I was reading about pro-environment behavior. A [systematic review of behavior-change interventions](https://pmc.ncbi.nlm.nih.gov/articles/PMC9486705/) points to feedback, goals, and gamified elements like challenges, points, badges, and leaderboards as useful patterns, while also warning that incentives alone are not magic. The [Campus Race to Zero Waste behavior guide](https://campusracetozerowaste.org/wp-content/uploads/2017/09/RM-Behavior-Change-Strategy-Guide-1.pdf) makes a similar practical point for recycling programs: rewards can help people try new behavior, especially when they are tied to performance.
+
+That is the lane V2 moved into. In EcoSmartLoop, the reward was not supposed to be a random prize pasted on top of a green app. The scan created the learning moment. Orbi explained it. The leaderboard made participation visible. Tremendous gave us a gift-card path an admin could configure. We did not prove redemption at scale, but we did build the surfaces a campus or workplace would need to test whether incentives helped people come back and sort more carefully.
+
+<VideoFigure
+  youtubeUrl="https://youtu.be/CU9rZ-e4r0g?si=vBdqOrQzHN5Zb7OQ"
+  label="EcoSmartLoop desktop demo showing rewards, Orbi, leaderboard, analytics, and login"
+  aspectRatio="16 / 9"
+  caption="The desktop demo shows the V2 shift: scan once, then keep the user moving through Orbi, rewards, leaderboard progress, achievements, and analytics."
+/>
+
+A scan result could lead into Orbi guidance. Progress could lead into a quiz. The same activity could later show up in analytics. That was the behavior-change story I wanted: not one perfect answer, but a product that nudges the next answer to be better.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/rewards-behavior-loop.webp"
+  alt="EcoSmartLoop rewards behavior loop shown across app cards and dashboard"
+  width={1400}
+  height={1075}
+  variant="frameless"
+  caption="Rewards were the V2 behavior-change bet: connect points, gift-card potential, progress, and repeat sorting instead of leaving the scan as a one-off answer."
+/>
+
+Rewards only made sense if they were tied to real product behavior. I did not want points sprinkled on top of sustainability. I wanted repeated scanning, learning, and correction to feel visible enough that a normal person had a reason to try again, and a manager had a reason to care about the pattern.
+
+<div className="work-mdx-image-grid" aria-label="EcoSmartLoop behavior loop proof screenshots">
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/ecosmartloop/achievements-loop-1600.avif') type('image/avif'), url('/assets/generated/work/ecosmartloop/achievements-loop-1600.webp') type('image/webp'), url('/assets/work/ecosmartloop/achievements-loop.webp') type('image/webp'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/ecosmartloop/achievements-loop.webp"
+        alt="EcoSmartLoop achievements screen showing tier progress and achievement cards"
+        width={1600}
+        height={1792}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>Achievements turned repeat sorting into visible progress.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/ecosmartloop/organization-analytics-1800.avif') type('image/avif'), url('/assets/generated/work/ecosmartloop/organization-analytics-1800.webp') type('image/webp'), url('/assets/work/ecosmartloop/organization-analytics.webp') type('image/webp'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/ecosmartloop/organization-analytics.webp"
+        alt="EcoSmartLoop organization analytics dashboard"
+        width={1800}
+        height={1060}
+        fallbackSrcSet="/assets/work/ecosmartloop/responsive/organization-analytics-900.webp 900w, /assets/work/ecosmartloop/responsive/organization-analytics-1200.webp 1200w, /assets/work/ecosmartloop/organization-analytics.webp 1800w"
+        sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1240px) calc((100vw - 82px) / 2), 532px"
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>The organization view turned individual behavior into reporting context: where people were confused, where participation was happening, and what needed training.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/ecosmartloop/organization-leaderboard-1800.avif') type('image/avif'), url('/assets/generated/work/ecosmartloop/organization-leaderboard-1800.webp') type('image/webp'), url('/assets/work/ecosmartloop/organization-leaderboard.webp') type('image/webp'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/ecosmartloop/organization-leaderboard.webp"
+        alt="EcoSmartLoop organization leaderboard with ranked users and points"
+        width={1800}
+        height={1054}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>The leaderboard made participation visible, which matters when the goal is repeated behavior instead of a single correct answer.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/ecosmartloop/personal-history-1800.avif') type('image/avif'), url('/assets/generated/work/ecosmartloop/personal-history-1800.webp') type('image/webp'), url('/assets/work/ecosmartloop/personal-history.webp') type('image/webp'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/ecosmartloop/personal-history.webp"
+        alt="EcoSmartLoop personal scan history screen"
+        width={1800}
+        height={1031}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>History made the product remember decisions, so Orbi and the user had context next time.</figcaption>
+  </figure>
+</div>
+
+Those four screens show what happened after the scan: personal progress, organization analytics, leaderboard pressure, and scan history. Alone, each screen is small. Together, they made V2 feel less like "scan and leave" and more like a place where better habits could build up and organizations could see the change.
+
+The incentive bet was practical: turn the whole sorting experience into a learning path. A person scans an item, understands the reason, saves the result, gets nudged through quizzes and rewards, sees progress on the leaderboard, and gives the organization a clearer view of where people need help. That is much closer to behavior change than just pushing the message harder, and it is more useful for institutions because the report is now connected to the behavior happening at the bin.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/rewards-admin-flow.webp"
+  alt="EcoSmartLoop admin reward configuration screen"
+  width={1800}
+  height={1057}
+  caption="The admin side made rewards operational: setup, point rules, and Tremendous-backed gift-card redemption."
+/>
+
+The admin screen made the behavior-change idea more serious. A consumer app can hard-code a challenge. An institution-facing product needs someone to decide who can participate, which gift-card rewards are available, how points work, what the leaderboard encourages, and which sorting behaviors are actually worth reinforcing. If this became a startup, that admin layer is where I would explore the business upside too: better participation records, stronger sustainability storytelling, public recognition, and possible grants, rebates, or tax-incentive paths where a real deployment actually qualifies.
+
+<ExcalidrawFigure
+  src="https://link.excalidraw.com/readonly/d6jPfEHJcOjBoc36QXrA?darkMode=true"
+  title="EcoSmartLoop scan workflow Excalidraw diagram"
+  caption="The scan path had to come back around: capture, classify, explain, reward, save, and make the next decision easier."
+/>
+
+After this point in the build, the scanner was no longer carrying the product by itself. The answer had to be clear at the bin, saved for later, and easier to trust next time.
+
+## The tradeoffs that made it real
+
+Mobile was non-negotiable because the use case happens in front of a bin. Nobody wants to open a desktop dashboard to classify trash.
+
+With a short capstone timeline, we chose <KeywordBadge>responsive web plus Capacitor</KeywordBadge> and focused on the iOS shell. That let us reuse the <BrandIconLink provider="nextjs" label="Next.js" /> app, auth behavior, API routes, database logic, and UI work. It also exposed the stuff browser demos hide: WebView cache behavior, login-session persistence, responsive edge cases, and real device differences.
+
+It worked on phones in the end. Getting there was the painful part. If I were building the long-term mobile product, I would rather use <BrandIconLink provider="reactnative" label="React Native" /> or native SDKs than keep paying the WebView debugging tax.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/capacitor-mobile-debugging.webp"
+  alt="EcoSmartLoop mobile debugging animation showing the app running in a phone-shaped shell"
+  width={636}
+  height={356}
+  variant="contained"
+  maxWidth={636}
+  caption="Capacitor helped us move fast with one codebase, then real-phone behavior exposed the cost."
+/>
+
+The debugging changed my opinion of hybrid mobile. It is fast until platform behavior leaks through. For a capstone, the trade was acceptable. For a real product, I would plan the mobile quality path much earlier.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/mobile-product-shell.webp"
+  alt="EcoSmartLoop mobile app shell shown on two phones"
+  width={1400}
+  height={1050}
+  variant="contained-frameless"
+  maxWidth={560}
+  caption="The mobile shell kept the product honest: the decision had to work at the bin, not later from a desktop."
+/>
+
+The phone version changed the way I thought about the product. On desktop, I could make a rich dashboard and hide complexity in space. On mobile, the scanner, upload state, confidence feedback, and Orbi answer had to fit into a few quick taps. The pressure helped. It forced the app to respect the real moment: someone standing at a bin, probably not wanting to think about waste policy.
+
+<VideoFigure
+  youtubeUrl="https://youtu.be/FzPD-xXaJKw?si=JuCBMuyschEQJIoj"
+  label="EcoSmartLoop mobile demo showing scanner, upload, achievements, and Orbi quiz"
+  aspectRatio="16 / 9"
+  caption="The mobile demo keeps the flow small: scanner, upload, progress states, achievements, and Orbi inside the same shell."
+/>
+
+The classifier integration had its own constraint. The web product needed to talk to a classifier service without brittle browser-to-service behavior, so the app used a <KeywordBadge>server-side classifier proxy</KeywordBadge>.
+
+The other big tradeoff was how I worked with AI assistance while the codebase was growing. I started in <BrandIconLink provider="cursor" label="Cursor" />. At that time, Cursor felt slower to adopt the newer agent-coding habits I wanted: repo-aware work, terminal-native iteration, custom instructions, tool calls, and repeatable context. A lot of developers were recommending <BrandIconLink provider="claude" label="Claude Code" /> because it was moving quickly in that direction, so I switched about a month in.
+
+The switch helped, but it was not magic. Early AI coding felt easy either way. The hard part was building a way of working around the tool: project instructions, source notes, task boundaries, and small checks after each change.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/claude-code-switch.webp"
+  alt="Cursor and Claude Code comparison visual used to explain the mid-project tool switch"
+  width={2912}
+  height={1402}
+  variant="contained"
+  maxWidth={740}
+  caption="The switch was about workflow: better repo context, terminal-first iteration, and clearer checks around the agent."
+/>
+
+Claude Code gave me a better base, but I still had to make it fit EcoSmartLoop. The real improvement came from the setup around it: clear project context, narrow tasks, failure evidence, and checks after each change.
+
+Around then, <KeywordBadge>context engineering</KeywordBadge> started feeling more important than prompt tricks. Better wording did not matter as much as better inputs: logs, source notes, design-spec markdown, and small verification loops. Once the agent saw the exact product state, the exact failure, and the exact design target, the work got less random.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/context-engineering-logs.webp"
+  alt="Context engineering versus prompt engineering visual"
+  width={1792}
+  height={2368}
+  variant="contained"
+  maxWidth={520}
+  caption="The shift was giving the agent precise project context so it had to guess less."
+/>
+
+The same discipline shaped the visual work. Backend progress was fast with AI help, but frontend taste was harder. I tried tools like Bolt, <BrandIconLink provider="lovable" label="Lovable" />, <BrandIconLink provider="figma" label="Figma MCP" />, and <BrandIconLink provider="v0" label="v0" />. Most could produce working screens. Too often, the screens still felt like the same generic AI app in different colors.
+
+What finally clicked was <BrandIconLink provider="figma" label="Figma Make" />. I designed in Figma, used Figma Make's <BrandIconLink provider="github" label="GitHub connector" /> and click inspector to extract component structure, then turned the design into explicit markdown specs for <BrandIconLink provider="claude" label="Claude Code" />. That extra step kept the design reasoning alive instead of handing the agent a screenshot and hoping it guessed the intent.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/figma-make-ai-slop-workflow.webp"
+  alt="EcoSmartLoop design workflow visual showing Figma Make and AI-assisted frontend iteration"
+  width={2480}
+  height={2967}
+  variant="contained"
+  maxWidth={540}
+  caption="The design workflow became specific on purpose: Figma structure, inspected components, markdown specs, then Claude Code implementation."
+/>
+
+The frontend and design workflow took more steps, but it upgraded the experience for both sides. As a developer, I had clearer intent before asking Claude Code to implement. As a user, the app felt more intentional: scanner feedback, rewards, Orbi, and analytics started to feel like one product instead of the same-looking AI slop with different labels.
+
+Motion was part of the same push. I bought access to <BrandIconLink provider="motion" label="Motion Plus" /> so I could study how better products use motion for feedback, continuity, and state changes. That showed up in scanner progress, achievement feedback, leaderboard updates, and transitions that made the app feel more intuitive instead of flat.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/motion-plus-animation-polish.avif"
+  alt="EcoSmartLoop interface animation polish concept showing Motion Plus interaction design"
+  width={1600}
+  height={900}
+  caption="Motion was not decoration here. It helped scan results, achievement feedback, and leaderboard updates feel responsive."
+/>
+
+The challenge list became clearer as the product got more real. There was no heroic rewrite. There were small, specific improvements: train more, test on real devices, make Orbi use tools, tighten the design, and build the missing AI UI pieces ourselves.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/challenge-resolution-loop.webp"
+  alt="Animated EcoSmartLoop challenge-resolution visual showing a celebration moment"
+  width={498}
+  height={308}
+  variant="contained"
+  maxWidth={498}
+  loading="eager"
+  preserveAnimation
+  caption="The animation marks the moment the fixes started to feel connected: model consistency, mobile behavior, Orbi specificity, UI polish, and custom AI chat states."
+/>
+
+The lesson was simple enough to reuse later: take a vague product risk, make it concrete, and check whether the fix actually changed the experience.
+
+<OutcomeTable
+  rows={[
+    { area: "LEAF consistency", status: "Still needed evaluation", detail: "Frank and Glenn expanded the 8K+ training context and serving path; exact public accuracy still needs a separate evaluation run." },
+    { area: "Mobile cache", status: "Resolved for prototype", detail: "Real device testing exposed WebView cache, login-session, and responsive-state issues that browser testing missed." },
+    { area: "Generic AI", status: "Improved", detail: "Orbi moved toward tools, cited guidance, quiz actions, rewards context, and organization data." },
+    { area: "Flat UI", status: "Improved", detail: "Figma Make, explicit design specs, and Motion Plus helped the app feel intentionally designed instead of generic." },
+    { area: "AI chat UI", status: "Implemented", detail: "Vercel AI SDK and AI Elements became the base for streaming, source chips, tool progress, and structured product states." }
+  ]}
+/>
+
+By the end, the open questions were clearer than they had been at the start. The prototype held together, and the next work was obvious: model evaluation, production mobile reliability, deeper Orbi behavior, and real organization usage.
+
+## The stack behind the scan
+
+I do not want the stack to read like a grocery list. The reason it mattered was movement: the item had to move from camera to classifier to Orbi to history, rewards, and admin review without feeling like five disconnected demos.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/tech-stack-visual.avif"
+  alt="EcoSmartLoop tech stack visual showing the frontend, backend, database, AI, infrastructure, mobile, authentication, and payment tools used in the capstone"
+  width={1690}
+  height={1388}
+  variant="contained"
+  maxWidth={740}
+  caption="The stack connected the scanner, classifier service, Orbi, database, rewards, mobile shell, and motion work."
+/>
+
+<BrandIconLink provider="nextjs" label="Next.js" /> and TypeScript carried the app people touched. Capacitor put that app into an iOS shell. Supabase, Prisma, and BetterAuth handled identity, scans, rewards, and organization data. AWS, FastAPI, and Python kept the classifier callable. Vercel AI SDK powered Orbi. Tremendous shaped the reward path. Motion helped the product respond instead of sitting there like a static dashboard.
+
+## What the evidence actually showed
+
+The $640.3B waste-cost projection and the 450K California-business cost scenario explain why I cared about the problem. EcoSmartLoop did not produce those numbers. It was a prototype aimed at one small part of that bigger operating mess: the decision before the item hits the wrong bin.
+
+The prototype was still interesting without pretending it was already deployed. We had a working path from image classification to Orbi guidance, rewards, analytics, mobile shell, and admin views. Missing was the operating evidence a real institution would ask for: production pilots, repeated usage, compliance results, incentive-program fit, and final model-quality reporting.
+
+For LEAF Engine, I can describe the public shape clearly: 8K+ images as training context, four output classes, confidence/probability output, and a serving path the product could call. Before I would make a stronger model-quality claim, I would want the exact split, thresholds, confusion matrix, precision, recall, and failure examples sitting beside it.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/leaf-engine-8000-training-context.webp"
+  alt="EcoSmartLoop training context visual showing 8000 plus images around Orbi"
+  width={1000}
+  height={900}
+  srcset="/assets/work/ecosmartloop/responsive/leaf-engine-8000-training-context-720.webp 720w, /assets/work/ecosmartloop/responsive/leaf-engine-8000-training-context-900.webp 900w, /assets/work/ecosmartloop/leaf-engine-8000-training-context.webp 1000w"
+  sizes="(max-width: 760px) calc(100vw - 32px), 520px"
+  variant="contained-frameless"
+  maxWidth={520}
+  caption="LEAF Engine had enough shape to build around: 8K+ image context, four classes, confidence output, and a serving path the product could call."
+/>
+
+The next version would need a clean evaluation run, not better screenshots. I would test confusing California waste items across unaided human guesses, LEAF-only output, and LEAF plus Orbi guidance. That benchmark would show whether the product actually beats guesswork.
+
+<ChartFigure
+  eyebrow="Scan depth"
+  title="Each scan gained more context"
+  summary="The product improved as the scan gained context: classify the item, explain the answer, remember the decision, and make the next attempt easier."
+  type="line"
+  layout="narrow"
+  aspectRatio="1.38 / 1"
+  minWidth={560}
+  xKey="stage"
+  valueFormatter="number"
+  axisFormatter="number"
+  maxValue={5}
+  yAxisLabel="Context added"
+  ticks={[0, 1, 2, 3, 4, 5]}
+  series={[
+    { key: "layers", label: "Context added", tone: "pale-blue" }
+  ]}
+  data={[
+    {
+      stage: "Scan",
+      layers: 1,
+      detail: "Scanner and upload flow: the user captures the waste item at the bin-side moment."
+    },
+    {
+      stage: "Classify",
+      layers: 2,
+      detail: "LEAF Engine adds a four-class prediction with confidence and probability output."
+    },
+    {
+      stage: "Explain",
+      layers: 3,
+      detail: "Orbi AI adds cited, app-aware guidance instead of leaving the classifier label unexplained."
+    },
+    {
+      stage: "Record",
+      layers: 4,
+      detail: "History and analytics preserve the decision with user and organization context."
+    },
+    {
+      stage: "Repeat",
+      layers: 5,
+      detail: "Rewards, quizzes, achievements, leaderboards, and admin workflows turn one answer into repeated learning."
+    }
+  ]}
+  caption="The product became more convincing when one answer turned into memory, guidance, rewards, and a better next scan."
+/>
+
+At that point, EcoSmartLoop felt bigger than a scanner demo to me. A classifier can answer once. A product can remember the answer, explain it, incentivize better behavior, and show an organization where confusion keeps happening.
+
+<OutcomeTable
+  rows={[
+    { area: "Task", status: "Known", detail: "Classify waste images into compost, recycle, landfill, or unknown." },
+    { area: "Architecture", status: "Known", detail: "MobileNetV2 transfer learning, 224x224 image input, and FastAPI serving." },
+    { area: "Dataset", status: "Known", detail: "8K+ labeled images used as classifier training context." },
+    { area: "Output", status: "Known", detail: "Predicted class, confidence, and probability data returned to the product." },
+    { area: "Final metrics", status: "Needs evaluation", detail: "Exact accuracy, precision, recall, F1, thresholds, split, and confusion matrix still need a dedicated evaluation run." }
+  ]}
+/>
+
+The prototype can honestly say this much: it turned a classifier result into guidance, memory, rewards, and an organization view. Stronger model-quality numbers should come from the next evaluation run.
+
+## Why we did not turn it into a company yet
+
+We treated the capstone like a possible startup for a while. We prepared venture-style pitches, thought through customer segments, and talked seriously about what it would take to move from prototype to institution-ready product.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/capstone-poster-board.webp"
+  alt="EcoSmartLoop capstone poster showing vision, intelligence, growth loop, and architecture"
+  width={1600}
+  height={901}
+  srcset="/assets/work/ecosmartloop/responsive/capstone-poster-board-900.webp 900w, /assets/work/ecosmartloop/responsive/capstone-poster-board-1200.webp 1200w, /assets/work/ecosmartloop/capstone-poster-board.webp 1600w"
+  sizes="(max-width: 760px) calc(100vw - 32px), (max-width: 1240px) calc(100vw - 64px), 1120px"
+  caption="The capstone poster captures the direction we were pitching by the end: vision, intelligence, growth loop, and architecture."
+/>
+
+By the end, the pitch had grown into the whole product arc: computer vision at the bin, Orbi explaining the recommendation, incentives helping people repeat better sorting, and organization tools around the activity.
+
+<ImageFigure
+  src="/assets/work/ecosmartloop/capstone-pitch-flyer.webp"
+  alt="EcoSmartLoop pitch flyer with QR code and app screenshots"
+  width={1600}
+  height={1143}
+  caption="The pitch flyer is the startup-shaped version of the project before we chose to take the learning into industry first."
+/>
+
+Then we made the decision that fit where we actually were: take the learning into industry first.
+
+A serious waste-tech company needs more than a strong capstone. It needs pilots, operations knowledge, procurement cycles, compliance proof, model evaluation, customer support, deployment discipline, and a clear path through institutions. It would also need to prove the business case honestly: better sorting behavior, cleaner reporting, stronger public sustainability stories, and possible incentive, grant, rebate, or tax-credit opportunities where the organization actually qualifies. I would treat those as next-step business research, not as something the capstone already proved. We were early in our careers and wanted more experience before taking on that burden.
+
+That decision belongs in the story. EcoSmartLoop was a serious team-built prototype, and it taught me how to think about AI products, incentives, and evidence. I am glad we treated it with ambition. I am also glad we did not pretend a capstone was already a company.
+
+## What I took with me
+
+EcoSmartLoop changed how I think about AI products.
+
+Before this project, I cared mostly about making the AI work. After it, I cared more about the product around the AI: <KeywordBadge>context engineering</KeywordBadge>, tool design, source trust, user feedback, low-confidence handling, analytics, and the interface states that make a model usable.
+
+It changed the way I build too. I started writing better source notes before asking an agent to help. I got stricter about logs, screenshots, design specs, and acceptance checks. I became more interested in the moment between model output and user action than in the model result alone.
+
+I still use that lesson in my current work. After EcoSmartLoop, I built mini AI apps like Craftie and YouSoul faster because the workflow had changed: smaller context packets, better logs, reusable agent skills, clearer design specs, and more aggressive verification. I no longer treat AI as a blank chat box. I ask what context it has, what tools it can use, what it remembers, what needs to be checked, and how the user can see why the answer should be trusted.
+
+The model mattered. Orbi made the answer usable. What I still care about most is the work around the model: make the prediction work, then make the decision clearer, safer, and easier to repeat.

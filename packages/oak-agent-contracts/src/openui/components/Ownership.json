@@ -1,0 +1,25 @@
+{
+  "name": "Ownership",
+  "claims": "one",
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "plan": {
+    "in": {
+      "who-did-what": 1
+    },
+    "count": "hits"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

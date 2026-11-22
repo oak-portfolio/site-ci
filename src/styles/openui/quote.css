@@ -1,0 +1,247 @@
+/* Ticket 29: Quote. Steve's own words set as a pull quote, a peeking carousel, or the Bridge card. Unframed column; only the repeated
+ * slide and the one Bridge card carry a surface, never a card in a card. */
+.oak-quote {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.oak-quote__words {
+  margin: 0;
+  padding-left: var(--space-sm);
+  border-left: 2px solid var(--line);
+  color: var(--text);
+  font-size: var(--text-body-md);
+  line-height: 1.625;
+  overflow-wrap: anywhere;
+}
+
+.oak-quote__words p {
+  margin: 0;
+}
+
+.oak-quote__name {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-micro) var(--space-xs);
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  overflow-wrap: anywhere;
+}
+
+.oak-quote__name a {
+  color: var(--text);
+}
+
+.oak-quote__lead {
+  flex-basis: 100%;
+  color: var(--text);
+  font-size: var(--text-ui-md);
+}
+
+.oak-quote__list {
+  display: grid;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-quote__rail {
+  display: grid;
+  gap: var(--space-xs);
+  min-width: 0;
+  overflow-x: clip;
+}
+
+.oak-quote__viewport {
+  width: calc(100% - var(--space-lg));
+  min-width: 0;
+  overflow: visible;
+  touch-action: pan-y;
+}
+
+.oak-quote__viewport .ticker-item,
+.oak-quote__viewport .clone-item {
+  flex: 0 0 100%;
+  width: 100%;
+}
+
+.oak-quote__slide {
+  display: grid;
+  gap: var(--space-xs);
+  align-content: start;
+  height: 100%;
+  min-width: 0;
+  margin: 0;
+  padding: var(--oak-pad-frame);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+}
+
+/* R14 (batch A2): the picture's box takes its ratio before the image loads, as the Role art does. An inline picture sat on the
+ * text baseline 7px above its box's foot, and an unloaded peeking slide's art was 0px tall, so the frame's top and bottom drifted. */
+.oak-quote__art,
+.oak-bridge__art {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--oak-art-ratio, 1.905);
+  overflow: hidden;
+  border-radius: var(--oak-r-row);
+  background: var(--oak-well);
+}
+
+.oak-quote__art img,
+.oak-bridge__art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.oak-quote__controls {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+  margin-top: var(--space-xs);
+}
+
+.oak-quote__count {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-quote__dots {
+  display: flex;
+  gap: var(--space-micro);
+}
+
+.oak-quote__button,
+.oak-quote__dot {
+  display: inline-grid;
+  place-items: center;
+  border: 1px solid var(--line-soft);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+}
+
+.oak-quote__button {
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-pill);
+}
+
+.oak-quote__button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
+.oak-quote__dot {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  border: 0;
+  border-radius: var(--radius-pill);
+}
+
+.oak-quote__dot::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: var(--radius-pill);
+  background: var(--muted);
+  opacity: 0.5;
+}
+
+.oak-quote__dot[aria-current="true"]::before {
+  background: var(--text);
+  opacity: 1;
+}
+
+.oak-quote__button:focus-visible,
+.oak-quote__dot:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+@media (forced-colors: active) {
+  .oak-quote__dot::before {
+    border: 1px solid CanvasText;
+    opacity: 1;
+  }
+
+  .oak-quote__dot[aria-current="true"]::before {
+    border-width: 4px;
+  }
+}
+
+@media (max-width: 519px) {
+  .oak-quote__dots {
+    gap: 0;
+  }
+
+  .oak-quote__dot {
+    width: 44px;
+    height: 44px;
+  }
+
+  .oak-quote__dot:focus-visible {
+    outline-offset: -2px;
+  }
+}
+
+.oak-bridge__card {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 40%);
+  gap: var(--space-sm);
+  align-items: center;
+  min-width: 0;
+  padding: var(--oak-pad-frame);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-bridge__card {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.oak-bridge__body {
+  display: grid;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+
+.oak-bridge__tag {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  text-transform: none;
+}
+
+.oak-bridge__related {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  overflow-wrap: anywhere;
+}
+
+.oak-bridge__related a {
+  color: inherit;
+  text-decoration: underline;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-quote__viewport * {
+    scroll-behavior: auto;
+  }
+}

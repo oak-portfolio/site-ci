@@ -1,0 +1,269 @@
+/* Ticket 27: Ownership. One unframed column: the claim as the lead line, the mode switch, then the body. The split body is one raised
+ * group of even rows (never a card in a card); tree and roll sit in OakFigure's own frame.
+ * R14 (batch A2): the hairlines between sides and rows are inset shadows, not borders. A bordered half-width row is a nested frame
+ * 1px from the 40px corner; a hairline is a rule inside one frame. Forced colors drop shadows, so that block draws real borders. */
+.oak-ownership {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.oak-ownership__lead {
+  margin: 0;
+  color: var(--text);
+  line-height: var(--leading-body);
+  overflow-wrap: anywhere;
+}
+
+.oak-ownership__switch {
+  justify-self: start;
+  min-width: 0;
+}
+
+.oak-ownership__switch .ui-radio-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-micro);
+}
+
+.oak-ownership__switch .ui-radio-segment {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 var(--space-sm);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: var(--text-ui-sm);
+  cursor: pointer;
+}
+
+.oak-ownership__switch .ui-radio-segment[data-checked] {
+  background: rgba(255, 255, 255, 0.08);
+  color: var(--text);
+}
+
+.oak-ownership__switch .ui-radio-segment:hover {
+  color: var(--text);
+}
+
+.oak-ownership__switch .ui-radio-segment:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+.oak-ownership__split {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  min-width: 0;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-ownership__split {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}
+
+.oak-ownership__side {
+  display: grid;
+  align-content: start;
+  min-width: 0;
+}
+
+.oak-ownership__side + .oak-ownership__side {
+  box-shadow: inset 1px 0 0 var(--line-soft);
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-ownership__side + .oak-ownership__side {
+    box-shadow: inset 0 1px 0 var(--line-soft);
+  }
+}
+
+.oak-openui .oak-ownership__title {
+  margin: 0;
+  /* The title's short ui line sits higher in its box than a body row's, so it takes a micro step more to match the last row's gap. */
+  padding: calc(var(--space-sm) + var(--space-micro)) var(--oak-pad-frame) var(--space-sm);
+  color: var(--quiet);
+  font-size: var(--text-ui-sm);
+  font-weight: 500;
+  line-height: var(--leading-ui);
+}
+
+.oak-ownership__rows {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-ownership__side .oak-ownership__rows > .oak-ownership__row,
+.oak-ownership__empty {
+  min-height: 2.75rem;
+  padding: var(--space-sm) var(--oak-pad-frame);
+  box-shadow: inset 0 1px 0 var(--line-soft);
+  color: var(--text);
+  line-height: var(--leading-body);
+  overflow-wrap: anywhere;
+}
+
+.oak-ownership__empty {
+  margin: 0;
+  color: var(--muted);
+}
+
+.oak-ownership__side .oak-openui-card__more {
+  /* The card's 8px gap still sits under the pill (the closed panel's empty track), so the bottom pad gives that back and the pill sits 12px from each line, the height of a text row. */
+  padding: calc((var(--space-xs) + var(--space-sm)) / 2) var(--oak-pad-frame) calc((var(--space-sm) - var(--space-xs)) / 2);
+  box-shadow: inset 0 1px 0 var(--line-soft);
+}
+
+.oak-ownership__side > .oak-ownership__rows > .oak-ownership__row:last-child {
+  padding-block-end: calc(var(--space-sm) + var(--space-micro));
+}
+
+/* Where the row closes the frame (the last side, or every side when they sit side by side) its bottom matches the title's top. */
+.oak-ownership__side:last-child .oak-openui-card__more:last-child {
+  padding-block-end: var(--space-sm);
+}
+
+@container oak-openui (min-width: 520px) {
+  .oak-ownership__side .oak-openui-card__more:last-child {
+    padding-block-end: var(--space-sm);
+  }
+}
+
+.oak-ownership__side .oak-openui-card__more-panel .oak-ownership__rows {
+  margin-inline: calc(var(--oak-pad-frame) * -1);
+}
+
+/* The tree: nested lists, connectors drawn as borders, so the drawing is words and lines only. */
+.oak-ownership__tree,
+.oak-ownership__tree ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-ownership__tree ul {
+  margin-inline-start: var(--space-sm);
+  padding-inline-start: var(--space-md);
+}
+
+.oak-ownership__tree li {
+  position: relative;
+  display: grid;
+  gap: var(--space-xs);
+  padding-block: var(--space-xs);
+  min-width: 0;
+}
+
+/* R14 (batch A2): nested last rows each added 8px below the last leaf (51px against a 25px top), so the last row ends flush. */
+.oak-ownership__tree li:last-child {
+  padding-block-end: 0;
+}
+
+.oak-ownership__tree ul > li::before {
+  content: "";
+  position: absolute;
+  inset-block-start: calc(var(--space-xs) + 0.75em);
+  inset-inline-start: calc(var(--space-md) * -1);
+  width: var(--space-sm);
+  border-block-start: 1px solid var(--line-soft);
+}
+
+/* One rail per row: the last row's rail stops at its stub, so no line runs past the last leaf. */
+.oak-ownership__tree ul > li::after {
+  content: "";
+  position: absolute;
+  inset-block: 0;
+  inset-inline-start: calc(var(--space-md) * -1);
+  border-inline-start: 1px solid var(--line-soft);
+}
+
+.oak-ownership__tree ul > li:last-child::after {
+  inset-block-end: auto;
+  height: calc(var(--space-xs) + 0.75em);
+}
+
+.oak-ownership__node,
+.oak-ownership__leaf {
+  min-width: 0;
+  line-height: var(--leading-ui);
+  overflow-wrap: anywhere;
+}
+
+.oak-ownership__node {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.oak-ownership__leaf {
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-ownership__leaf[data-empty] {
+  color: var(--muted);
+}
+
+@media (forced-colors: active) {
+  .oak-ownership__switch .ui-radio-segment[data-checked] {
+    outline: 2px solid CanvasText;
+  }
+
+  .oak-ownership__tree ul > li::before {
+    border-block-start-color: CanvasText;
+  }
+
+  .oak-ownership__tree ul > li::after {
+    border-inline-start-color: CanvasText;
+  }
+
+  .oak-ownership__split {
+    border-color: CanvasText;
+  }
+
+  .oak-ownership__side + .oak-ownership__side {
+    border-inline-start: 1px solid CanvasText;
+  }
+
+  @container oak-openui (max-width: 519px) {
+    .oak-ownership__side + .oak-ownership__side {
+      border-inline-start: 0;
+      border-block-start: 1px solid CanvasText;
+    }
+  }
+
+  .oak-ownership__side .oak-openui-card__more,
+  .oak-ownership__side .oak-ownership__rows > .oak-ownership__row,
+  .oak-ownership__empty {
+    border-top: 1px solid CanvasText;
+  }
+}
+
+/* The ghost mirrors the settled split (lead, switch, two sides) so the answer does not jump when it settles. */
+.oak-ownership[data-pending] .oak-ownership__lead {
+  display: grid;
+  gap: var(--space-xs);
+  min-height: 3.5rem;
+}
+
+.oak-ownership[data-pending] .oak-ownership__switch {
+  width: 14rem;
+  max-width: 100%;
+  min-height: 3.25rem;
+}
+
+.oak-ownership[data-pending] .oak-ownership__side > .oak-ownership__row {
+  display: grid;
+  align-items: center;
+  min-height: 3.5rem;
+  padding: var(--space-sm) var(--oak-pad-frame);
+  box-shadow: inset 0 1px 0 var(--line-soft);
+}

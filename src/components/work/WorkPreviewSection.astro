@@ -1,0 +1,73 @@
+---
+import WorkPreviewCard from "@/components/work/WorkPreviewCard.astro";
+import type { WorkPreviewCard as WorkPreviewCardData } from "@/lib/workPreviews";
+
+type Props = {
+  id?: string;
+  title: string;
+  description?: string;
+  items: WorkPreviewCardData[];
+  viewAllHref?: string;
+  viewAllLabel?: string;
+  headingId: string;
+  className?: string;
+  headingClassName?: string;
+  dataOakSection?: string;
+  dataOakContext?: string;
+  width?: string | number;
+  height?: string | number;
+  imageWidth?: string | number;
+  imageHeight?: string | number;
+};
+
+const {
+  id,
+  title,
+  description,
+  items,
+  viewAllHref,
+  viewAllLabel = "View all",
+  headingId,
+  className,
+  headingClassName = "section-title section-title--small",
+  dataOakSection = "home.work",
+  dataOakContext = "home.work",
+  width,
+  height,
+  imageWidth = width ?? "1200",
+  imageHeight = height ?? "630",
+} = Astro.props;
+---
+
+{
+  items.length > 0 && (
+    <section
+      id={id}
+      class:list={["work-preview-section", className]}
+      aria-labelledby={headingId}
+      data-oak-section={dataOakSection}
+      data-oak-context={dataOakContext}
+    >
+      <div class="page-container">
+        <div class="work-preview-section__heading">
+          <div>
+            <h2 id={headingId} class={headingClassName}>
+              {title}
+            </h2>
+            {description && <p>{description}</p>}
+          </div>
+          {viewAllHref && (
+            <a class="work-preview-section__action" href={viewAllHref} data-astro-prefetch="viewport">
+              {viewAllLabel}
+            </a>
+          )}
+        </div>
+        <div class="work-preview-grid">
+          {items.map((item) => (
+            <WorkPreviewCard item={item} imageWidth={imageWidth} imageHeight={imageHeight} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )
+}

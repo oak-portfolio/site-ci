@@ -1,0 +1,22 @@
+---
+import { ContactMorph } from "@/components/ContactMorph";
+import OptimizedPicture from "@/components/OptimizedPicture.astro";
+import { media } from "@/data/homePage";
+---
+
+<section class="cta-band" aria-labelledby="site-contact-heading" data-oak-section="home.contact">
+  <OptimizedPicture
+    class="ambient-video ambient-video--conclusion"
+    src={media.conclusionBackground}
+    alt=""
+    width="1817"
+    height="866"
+    loading="lazy"
+    decoding="async"
+    aria-hidden="true"
+  />
+  <div class="page-container" data-oak-context="home.contact">
+    <h2 id="site-contact-heading">Shape powerful AI with taste</h2>
+    <ContactMorph client:visible={{ rootMargin: "240px" }} appearance="hero" side="top" align="center" />
+  </div>
+</section>

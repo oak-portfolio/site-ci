@@ -1,0 +1,462 @@
+[
+ {
+  "id": "answer-openui-diagram-flow",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc4401-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00004401-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "How does Oakminder work?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00004401-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00004401-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00004401-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-diagram-layers",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc4402-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00004402-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What are the layers of Agentic Brain?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00004402-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Agentic Brain keeps short-term working context apart from durable project memory, so a future agent session does not rediscover the same constraints.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain keeps short-term working context apart from durable project memory, so a future agent session does not rediscover the same constraints.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-002",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00004402-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"layers\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00004402-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-diagram-blockdiag",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc4403-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00004403-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Walk me through the architecture of Oakminder",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00004403-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00004403-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"blockdiag\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00004403-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-diagram-mindmap",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc4404-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00004404-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What are the parts of Oakminder?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00004404-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Oakminder is one product split into an app, its backend, billing, urgency, voice, docs, distribution, research and creative parts.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder is one product split into an app, its backend, billing, urgency, voice, docs, distribution, research and creative parts.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-001",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00004404-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"mindmap\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00004404-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-diagram-treeview",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc4405-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00004405-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What are the parts of LinkedIn Growth Loop?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00004405-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "LinkedIn Growth Loop runs as a set of agents and tools around one daily list.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop runs as a set of agents and tools around one daily list.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00004405-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"treeview\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00004405-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-diagram-radar",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc4406-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00004406-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Which case studies have the most proof behind them?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00004406-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "EcoSmartLoop publishes far more proof than Agentic Brain, which is still a case study in progress.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop publishes far more proof than Agentic Brain, which is still a case study in progress.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         },
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00004406-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"radar\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00004406-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-diagram-quadrant",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc4407-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00004407-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "Which of his case studies have the most proof behind them?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00004407-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "LinkedIn Growth Loop carries the most published artifacts; OmniSocial is still in progress.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop carries the most published artifacts; OmniSocial is still in progress.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         },
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-001",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00004407-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"quadrant\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00004407-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ }
+]

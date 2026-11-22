@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>mount-width</title>
+<link rel="stylesheet" href="base.css">
+</head>
+<body>
+<main class="oak-workspace">
+  <div id="host" style="display:flex"></div>
+</main>
+<script>
+  if (innerWidth <= 320) document.getElementById("host").innerHTML = '<p style="width:56px;font-size:14px">Narrow column that wraps</p>';
+</script>
+</body>
+</html>

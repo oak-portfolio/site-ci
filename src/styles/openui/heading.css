@@ -1,0 +1,52 @@
+.oak-openui__heading {
+  margin: 0 0 calc(var(--space-xs) - var(--space-md));
+  color: var(--text);
+  font-size: var(--text-body-md);
+  font-weight: 600;
+  line-height: var(--leading-body);
+}
+
+/* Arranged answers: a section mark on headings, a rail of nodes for a timeline, numbered steps and an icon on a callout. */
+.oak-openui__heading {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+/* Ticket 14 (the explored block header): an icon tile, the words, then a hairline that fills the rest of the line. */
+.oak-openui__heading::after {
+  flex: 1 1 var(--space-md);
+  min-width: var(--space-sm);
+  /* A border, not a background, so the hairline survives forced colors. */
+  border-block-start: 1px solid var(--line-soft);
+  content: "";
+}
+
+.oak-openui__heading-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.oak-openui__heading-mark {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-pill);
+  background: var(--oak-tint-violet);
+  color: color-mix(in srgb, var(--oak-violet) 70%, var(--text));
+}
+
+/* Ticket 57 (map Heading row): the provenance chip closes the line after the hairline. */
+.oak-openui__heading-chip {
+  flex: none;
+  order: 1;
+  padding: var(--space-micro) var(--space-xs);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-row);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 500;
+  line-height: var(--leading-ui);
+}

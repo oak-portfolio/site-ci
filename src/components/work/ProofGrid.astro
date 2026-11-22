@@ -1,0 +1,26 @@
+---
+type Item = {
+  label: string;
+  status: string;
+  detail: string;
+  href?: string;
+};
+
+type Props = {
+  items: Item[];
+};
+
+const { items } = Astro.props;
+---
+
+<div class="work-mdx-proof-grid">
+  {
+    items.map((item) => (
+      <article>
+        <span>{item.status}</span>
+        <strong>{item.href ? <a href={item.href} target="_blank" rel="noreferrer">{item.label}</a> : item.label}</strong>
+        <p>{item.detail}</p>
+      </article>
+    ))
+  }
+</div>

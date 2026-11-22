@@ -1,0 +1,26 @@
+{
+ "board-stand-2": {
+  "iconOnly": true,
+  "reason": "34: Board fixture, stand, two cards in two columns carry it, with no pose of its own."
+ },
+ "board-stand-5": {
+  "iconOnly": true,
+  "reason": "34: Board fixture, stand, five cards in two columns carry it, with no pose of its own."
+ },
+ "board-sboard-2": {
+  "iconOnly": true,
+  "reason": "34: Board fixture, sboard, two cards in engagement columns carry it, with no pose of its own."
+ },
+ "board-sboard-5": {
+  "iconOnly": true,
+  "reason": "34: Board fixture, sboard, five cards in engagement columns carry it, with no pose of its own."
+ },
+ "board-streaming": {
+  "iconOnly": true,
+  "reason": "34: Board fixture, the ghost columns carry it, with no pose of its own."
+ },
+ "board-off": {
+  "iconOnly": true,
+  "reason": "34: Board fixture, the plain Points list carry it, with no pose of its own."
+ }
+}

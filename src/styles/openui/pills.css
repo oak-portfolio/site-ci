@@ -1,0 +1,5 @@
+:where(.oak-openui__pills) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}

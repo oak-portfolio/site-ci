@@ -1,0 +1,50 @@
+.oak-openui-card__name {
+  display: grid;
+  gap: var(--space-micro);
+  min-width: 0;
+}
+
+.oak-openui .oak-openui-card__meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  text-wrap: pretty;
+}
+
+/* R18 (review v15, Mobbin: Perplexity finance grid): the page's verified numbers are label-over-value cells, told apart
+   by one fill step and no border (gray on gray carries no border), each cell's corner the frame's less the frame pad. */
+.oak-openui-card__metrics {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 160px), 1fr));
+  gap: var(--space-xs);
+  margin: 0;
+}
+
+.oak-openui-card__metric {
+  display: grid;
+  gap: var(--space-micro);
+  padding: var(--oak-pad-block) var(--space-sm);
+  border-radius: var(--oak-r-row);
+  background: var(--oak-bubble);
+}
+
+.oak-openui-card__metric dt {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-openui-card__metric dd {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--text-card-title);
+  font-weight: 600;
+  line-height: var(--leading-title);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-openui-project .oak-openui-card__lead {
+  font-size: var(--text-ui-md);
+  color: var(--text);
+}

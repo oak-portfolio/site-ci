@@ -1,0 +1,140 @@
+[
+  {
+    "id": "profile-home",
+    "status": "approved",
+    "channels": [
+      "page",
+      "answer",
+      "ai-files"
+    ],
+    "outputs": [
+      "/",
+      "/index.md",
+      "/api/md",
+      "/profile.json",
+      "/.well-known/agent-profile.json",
+      "/llms-full.txt",
+      "/skill.md"
+    ]
+  },
+  {
+    "id": "profile-machine",
+    "status": "approved",
+    "channels": [
+      "answer",
+      "ai-files"
+    ],
+    "outputs": [
+      "/profile.json",
+      "/.well-known/agent-profile.json",
+      "/llms-full.txt",
+      "/skill.md"
+    ]
+  },
+  {
+    "id": "experience",
+    "status": "approved",
+    "channels": [
+      "page",
+      "answer",
+      "ai-files"
+    ],
+    "outputs": [
+      "/work",
+      "/work.md",
+      "/api/md/work"
+    ]
+  },
+  {
+    "id": "legacy-cards",
+    "status": "approved",
+    "channels": [
+      "page",
+      "ai-files"
+    ],
+    "outputs": [
+      "/work",
+      "/work.md"
+    ]
+  },
+  {
+    "id": "home-authored-copy",
+    "status": "approved",
+    "channels": [
+      "page",
+      "ai-files"
+    ],
+    "outputs": [
+      "/",
+      "/index.md",
+      "/api/md"
+    ]
+  },
+  {
+    "id": "work",
+    "status": "approved",
+    "channels": [
+      "page",
+      "answer",
+      "ai-files"
+    ],
+    "outputs": [
+      "/work/{slug}",
+      "/work/{slug}.md",
+      "/api/md/work/{slug}",
+      "/api/machine/{slug}.json",
+      "/llms-full.txt"
+    ]
+  },
+  {
+    "id": "kusala",
+    "status": "approved",
+    "channels": [
+      "page",
+      "answer",
+      "ai-files"
+    ],
+    "outputs": [
+      "/apps/kusala-daily",
+      "/apps/kusala-daily/support",
+      "/apps/kusala-daily/privacy"
+    ]
+  },
+  {
+    "id": "external-intake",
+    "status": "approved",
+    "channels": [
+      "answer",
+      "ai-files"
+    ],
+    "outputs": [
+      "/api/knowledge.json",
+      "/llms-full.txt",
+      "/api/md/work/agentic-brain"
+    ]
+  },
+  {
+    "id": "machine-reader-copy",
+    "status": "approved",
+    "channels": [
+      "ai-files"
+    ],
+    "outputs": [
+      "Machine pages",
+      "Markdown mirrors",
+      "LLM files"
+    ]
+  },
+  {
+    "id": "machine-server-copy",
+    "status": "approved",
+    "channels": [
+      "ai-files"
+    ],
+    "outputs": [
+      "Machine endpoints",
+      "Markdown mirrors",
+      "LLM files"
+    ]
+  }
+]

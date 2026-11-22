@@ -1,0 +1,95 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import CareerTimeline from "@/components/work/CareerTimeline";
+import WorkPreviewSection from "@/components/work/WorkPreviewSection.astro";
+import { careerTimelineItems } from "@/data/careerTimeline";
+import { isDraftStage } from "@/data/siteVisibility";
+import { getWorkEntries, workEntryToCaseStudy } from "@/lib/workContent";
+import { getLegacyFramerWorkPreviewCards, getLiveWorkPreviewCards } from "@/lib/workPreviews";
+
+const workEntries = await getWorkEntries();
+const caseStudies = workEntries.map(workEntryToCaseStudy);
+const livePreviewCards = getLiveWorkPreviewCards(workEntries);
+const legacyPreviewCards = getLegacyFramerWorkPreviewCards();
+const canonical = new URL("/work/", Astro.site ?? "https://steveoak.com").toString();
+const noindex = isDraftStage();
+const jsonLdGraph = [
+  {
+    "@type": "CollectionPage",
+    "@id": `${canonical}#collection`,
+    "name": "Steve Oak Work",
+    "description": "Career timeline, applied AI case studies, and legacy work by Steve Oak / Okkar Kyaw.",
+    "isPartOf": { "@id": "https://steveoak.com/#website" },
+    "about": { "@id": "https://steveoak.com/#person" },
+    "inLanguage": "en-US",
+  },
+  {
+    "@type": "ItemList",
+    "@id": `${canonical}#work-list`,
+    "name": "Steve Oak work index",
+    "itemListElement": caseStudies.map((caseStudy, index) => ({
+      "@type": "ListItem",
+      "position": index + 1,
+      "url": new URL(`/work/${caseStudy.slug}/`, Astro.site ?? "https://steveoak.com").toString(),
+      "name": caseStudy.projectName,
+      "description": caseStudy.dek,
+    })),
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumbs`,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Home",
+        "item": "https://steveoak.com/",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Work",
+        "item": canonical,
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title="AI Case Studies and Career Timeline | Steve Oak"
+  description="Explore Steve Oak case studies, career timeline, agent systems, product builds, and legacy work across applied AI, design engineering, and automation."
+  canonicalUrl={canonical}
+  noindex={noindex}
+  jsonLdGraph={jsonLdGraph}
+>
+  <article class="work-index-page">
+    <header class="work-intro" data-oak-section="home.work" data-oak-context="home.work">
+      <div class="page-container work-intro__inner">
+        <h1 class="section-title">Work that shaped my direction</h1>
+      </div>
+    </header>
+
+    <CareerTimeline client:load items={careerTimelineItems} initialVisibleCount={1} initiallyExpanded showAllLabel="View All" showLessLabel="View Latest" />
+
+    <WorkPreviewSection
+      title="Case studies"
+      description="Current projects with the story, system shape, tools, and public evidence in one place."
+      items={livePreviewCards}
+      headingId="live-work-heading"
+      className="work-section work-section--live"
+      width="1200"
+      height="630"
+    />
+
+    <WorkPreviewSection
+      title="Legacy"
+      description="Older external case studies kept for chronology and background."
+      items={legacyPreviewCards}
+      headingId="staged-work-heading"
+      className="work-section work-section--staged"
+      width="1200"
+      height="630"
+    />
+  </article>
+</BaseLayout>

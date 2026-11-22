@@ -1,0 +1,18 @@
+{
+ "metric-kind-result": {
+  "iconOnly": true,
+  "reason": "43: Metric kinds fixture result: the numbers, chips and rows carry it, with no pose of their own."
+ },
+ "metric-kind-no-result": {
+  "iconOnly": true,
+  "reason": "43: Metric kinds fixture no result: the calm row and the numbers carry it, with no pose of their own."
+ },
+ "metric-kind-streaming": {
+  "iconOnly": true,
+  "reason": "43: Metric kinds fixture streaming: the arriving tiles and skeletons carry it, with no pose of their own."
+ },
+ "metric-kind-off": {
+  "iconOnly": true,
+  "reason": "43: Metric kinds fixture off: today's number tiles carry it, with no pose of their own."
+ }
+}

@@ -1,0 +1,50 @@
+.oak-openui__meter {
+  display: grid;
+  gap: var(--space-xs);
+  /* Ticket 14 (the explored hero fact): a number or meter on its own is a framed tile with a glyph, the look a Stats tile has.
+     Inside Stats the tile is the frame, so the rules below take this one off. */
+  padding: var(--oak-pad-frame);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+}
+
+.oak-openui__meter-head {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 500;
+  line-height: var(--leading-ui);
+}
+
+.oak-openui__meter-head {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-openui__meter-track {
+  display: block;
+  height: var(--space-xs);
+  overflow: hidden;
+  border-radius: var(--oak-r-control);
+  background: var(--line-soft);
+}
+
+.oak-openui__meter-fill {
+  display: block;
+  width: calc(var(--oak-openui-share, 0) * 100%);
+  height: 100%;
+  border-radius: inherit;
+  background: var(--oak-leaf);
+}
+
+@media (forced-colors: active) {
+  .oak-openui__meter-track {
+    border: 1px solid CanvasText;
+  }
+
+  .oak-openui__meter-fill {
+    background: Highlight;
+  }
+}

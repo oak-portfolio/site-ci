@@ -1,0 +1,69 @@
+---
+import { ContactMorph } from "@/components/ContactMorph";
+import { Icon } from "@/components/ui/Icon";
+import { navItems, socialLinks, upcomingNavItems } from "@/data/homePage";
+
+const copyrightYear = new Date().getFullYear();
+const footerPrimaryItems = navItems.filter((item) => !item.disabled);
+const footerUpcomingItems = upcomingNavItems;
+---
+
+<footer class="site-footer" data-oak-section="site.footer">
+  <div class="footer-columns" data-oak-context="site.footer">
+    <nav aria-label="Footer portfolio links">
+      <h2>Portfolio</h2>
+      <ul>
+        {
+          footerPrimaryItems.map((item) => (
+            <li>
+              <a class="footer-link" href={item.href ?? "/work"}>{item.label}</a>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <nav aria-label="Footer resource links">
+      <h2>Resources</h2>
+      <ul>
+        {
+          footerUpcomingItems.map((item) => (
+            <li>
+              <span class="footer-link footer-link--disabled" aria-disabled="true">
+                <span>{item.label}</span>
+                {item.badge && <span class="ui-badge ui-badge--outline footer-link__badge">{item.badge}</span>}
+              </span>
+            </li>
+          ))
+        }
+      </ul>
+    </nav>
+    <nav aria-label="Footer contact">
+      <h2>Contact</h2>
+      <ul>
+        <li><ContactMorph client:visible={{ rootMargin: "240px" }} appearance="footer" side="top" align="end" /></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="footer-bottom">
+    <nav class="social-links" aria-label="Social links">
+      {
+        socialLinks.map((link) => (
+          <a class="social-link" href={link.href} aria-label={link.label} target="_blank" rel="noreferrer">
+            <Icon name={link.icon} size={20} />
+          </a>
+        ))
+      }
+    </nav>
+    <p>Steve Oak &copy; <time data-current-year datetime={String(copyrightYear)}>{copyrightYear}</time></p>
+  </div>
+</footer>
+
+<script is:inline>
+  (() => {
+    const year = String(new Date().getFullYear());
+    document.querySelectorAll("[data-current-year]").forEach((node) => {
+      node.textContent = year;
+      node.setAttribute("datetime", year);
+    });
+  })();
+</script>

@@ -1,0 +1,133 @@
+.oak-openui__metric {
+  display: grid;
+  gap: var(--space-xs);
+  /* Ticket 14 (the explored hero fact): a number or meter on its own is a framed tile with a glyph, the look a Stats tile has.
+     Inside Stats the tile is the frame, so the rules below take this one off. */
+  padding: var(--oak-pad-frame);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+}
+
+.oak-openui__metric-value {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-xs);
+  color: var(--text);
+  font-size: var(--text-card-title);
+  font-weight: 600;
+  line-height: var(--leading-title);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-openui__metric-label {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 500;
+  line-height: var(--leading-ui);
+}
+
+.oak-openui__metric-suffix {
+  margin-inline-start: var(--space-micro);
+  -webkit-text-fill-color: var(--muted);
+  color: var(--muted);
+  font-size: calc(var(--space-md) + var(--space-micro));
+  line-height: 1;
+  vertical-align: 0.9em;
+}
+
+/* The label reads first, the number under it, as Graphite and Apple's keynote numerals do. */
+.oak-openui__metric-value {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-start;
+  gap: var(--space-xs);
+}
+
+.oak-openui__metric-value > span:first-child {
+  max-width: 100%;
+  overflow-wrap: anywhere;
+  background: linear-gradient(180deg, var(--text) 35%, color-mix(in srgb, var(--text) 62%, transparent) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: var(--text-display);
+  font-weight: 600;
+  line-height: var(--leading-display);
+}
+
+/* Ticket 57 (R14-C1, results only): the numeral takes the display face, a step larger, lit by its cover's tint. */
+.oak-openui__metric[data-result] .oak-openui__metric-value > span:first-child {
+  background: linear-gradient(180deg, var(--text) 30%, color-mix(in srgb, var(--oak-metric-tint) 70%, var(--text)) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: var(--font-heading);
+  font-size: calc(var(--text-display) * 1.25);
+}
+
+.oak-openui__metric[data-result] .oak-openui__metric-value {
+  filter: drop-shadow(0 0 var(--space-md) color-mix(in srgb, var(--oak-metric-tint) 45%, transparent));
+}
+
+@media (forced-colors: active) {
+  .oak-openui__metric[data-result] .oak-openui__metric-value {
+    filter: none;
+  }
+
+  .oak-openui__metric[data-result] .oak-openui__metric-value > span:first-child {
+    background: none;
+    color: CanvasText;
+  }
+}
+
+/* Ticket 43 (Q38 A): the kind chip reads by its word; the border keeps it a chip in forced colors. */
+.oak-openui__metric-kind {
+  justify-self: start;
+  padding: var(--space-micro) var(--space-xs);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-row);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 500;
+  line-height: var(--leading-ui);
+}
+
+/* A result's chip and the record's period share one line above the number (RR10). */
+.oak-openui__metric-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+}
+
+.oak-openui__metric-period {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+/* Scope and context are small rows, value then label, never the display numeral. */
+.oak-openui__metric-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--space-xs) var(--space-sm);
+  margin: 0;
+}
+
+.oak-openui__metric-row-value {
+  color: var(--text);
+  font-size: var(--text-ui-md);
+  font-weight: 500;
+  font-variant-numeric: tabular-nums;
+  overflow-wrap: anywhere;
+}
+
+@media (forced-colors: active) {
+  .oak-openui__metric-kind {
+    border-color: CanvasText;
+    color: CanvasText;
+  }
+}

@@ -1,0 +1,119 @@
+[
+ {
+  "id": "ticket-83-failed-turn-then-reask-web-summary",
+  "source": "tests/agent/saved-history-client.test.mjs (ticket 83 flow)",
+  "note": "A turn failed on sign-in-required, the re-ask needed one automatic re-ask, and its open-web summary cites the visible turn.",
+  "record": {
+   "conversationId": "cccc8301-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "fdfb76fd-76c7-429e-b3ae-7052dac8f04d:user",
+     "role": "user",
+     "text": "What do current guides say about agent evaluation?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "b8121f7f-06fc-4893-a674-599bfba216f9:user",
+     "role": "user",
+     "text": "What do current guides say about agent evaluation?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "b8121f7f-06fc-4893-a674-599bfba216f9",
+     "role": "assistant",
+     "text": "Steve ships agent work with evaluation built in.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "knowledgeRevision": "k",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve ships agent work with evaluation built in.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "public-passage",
+          "sectionId": "ownership",
+          "url": "https://steveoak.com/work/ecosmartloop/#ownership"
+         }
+        ]
+       }
+      ],
+      "acknowledgment": null
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "research": {
+      "requestId": "b8121f7f-06fc-4893-a674-599bfba216f9",
+      "topicId": "web",
+      "provider": "Exa",
+      "phase": "completed",
+      "reason": "none",
+      "returnedSources": 2,
+      "sources": [
+       {
+        "sourceId": "external:b8121f7f-06fc-4893-a674-599bfba216f9:1",
+        "origin": "external-web",
+        "title": "Field guide 1",
+        "url": "https://guides1.example.org/a",
+        "publishedAt": null,
+        "retrievedAt": 1762300000000,
+        "excerpt": "A public excerpt.",
+        "contentStatus": "read"
+       },
+       {
+        "sourceId": "external:b8121f7f-06fc-4893-a674-599bfba216f9:2",
+        "origin": "external-web",
+        "title": "Field guide 2",
+        "url": "https://guides2.example.org/a",
+        "publishedAt": null,
+        "retrievedAt": 1762300000000,
+        "excerpt": "A public excerpt.",
+        "contentStatus": "read"
+       }
+      ],
+      "synthesis": {
+       "sentences": [
+        {
+         "text": "Both guides describe the same approach",
+         "cites": [
+          "external:b8121f7f-06fc-4893-a674-599bfba216f9:1",
+          "external:b8121f7f-06fc-4893-a674-599bfba216f9:2"
+         ]
+        }
+       ]
+      }
+     }
+    }
+   ],
+   "interruptedTurns": [
+    {
+     "requestId": "fdfb76fd-76c7-429e-b3ae-7052dac8f04d",
+     "state": "interrupted",
+     "retryIntent": "explicit-user-action-required"
+    }
+   ],
+   "createdAt": 1794700800000,
+   "lastSavedMessageAt": 1794700800000,
+   "updatedAt": 1794700800000,
+   "expiresAt": 1797292800000,
+   "lastNewSavedMessageId": "b8121f7f-06fc-4893-a674-599bfba216f9"
+  }
+ }
+]

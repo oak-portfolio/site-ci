@@ -1,0 +1,94 @@
+{
+ "explainer-concept-rag": {
+  "iconOnly": true,
+  "reason": "52: Explainer fixture, concept-rag: the labeled steps, topic map and Bridge line carry it, with no pose of its own."
+ },
+ "explainer-concept-voice-agents": {
+  "iconOnly": true,
+  "reason": "52: Explainer fixture, concept-voice-agents: the labeled steps, topic map and Bridge line carry it, with no pose of its own."
+ },
+ "explainer-concept-embeddings": {
+  "iconOnly": true,
+  "reason": "52: Explainer fixture, concept-embeddings: the labeled steps, topic map and Bridge line carry it, with no pose of its own."
+ },
+ "explainer-xmap-agent-memory": {
+  "iconOnly": true,
+  "reason": "52: Explainer fixture, xmap-agent-memory: the labeled steps, topic map and Bridge line carry it, with no pose of its own."
+ },
+ "explainer-reduced": {
+  "iconOnly": true,
+  "reason": "52: Explainer fixture, reduced: the labeled steps, topic map and Bridge line carry it, with no pose of its own."
+ },
+ "explainer-forced-colors": {
+  "iconOnly": true,
+  "reason": "52: Explainer fixture, forced-colors: the labeled steps, topic map and Bridge line carry it, with no pose of its own."
+ },
+ "explainer-off": {
+  "iconOnly": true,
+  "reason": "52: Explainer fixture, off: the labeled steps, topic map and Bridge line carry it, with no pose of its own."
+ },
+ "explainer-xrag": {
+  "iconOnly": true,
+  "reason": "53: Explainer preset xrag: the labeled drawing, its control and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-xemb": {
+  "iconOnly": true,
+  "reason": "53: Explainer preset xemb: the labeled drawing, its control and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-xtool": {
+  "iconOnly": true,
+  "reason": "53: Explainer preset xtool: the labeled drawing, its control and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-statediag": {
+  "iconOnly": true,
+  "reason": "53: Explainer preset statediag: the labeled drawing, its control and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-xtool-reduced": {
+  "iconOnly": true,
+  "reason": "53: Explainer preset xtool, reduced motion: the labeled drawing, its control and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-xeval": {
+  "iconOnly": true,
+  "reason": "53: Explainer preset xeval: the labeled drawing, its control and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-xgrad": {
+  "iconOnly": true,
+  "reason": "53: Explainer preset xgrad: the labeled drawing, its control and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-xoffsteps": {
+  "iconOnly": true,
+  "reason": "53: Explainer preset xoffsteps: the labeled drawing and its control carry it, with no pose of its own."
+ },
+ "explainer-drawn": {
+  "iconOnly": true,
+  "reason": "54: Explainer drawn: the labeled drawing, its list equivalent and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-mermaid-sequence": {
+  "iconOnly": true,
+  "reason": "54: Explainer mermaid-sequence: the labeled drawing, its list equivalent and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-mermaid-state": {
+  "iconOnly": true,
+  "reason": "54: Explainer mermaid-state: the labeled drawing, its list equivalent and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-mermaid-journey": {
+  "iconOnly": true,
+  "reason": "54: Explainer mermaid-journey: the labeled drawing, its list equivalent and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-mermaid-gitgraph": {
+  "iconOnly": true,
+  "reason": "54: Explainer mermaid-gitgraph: the labeled drawing, its list equivalent and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-mermaid-c4": {
+  "iconOnly": true,
+  "reason": "54: Explainer mermaid-c4: the labeled drawing, its list equivalent and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-drawn-invalid": {
+  "iconOnly": true,
+  "reason": "54: Explainer drawn-invalid: the labeled drawing, its list equivalent and the Bridge line carry it, with no pose of its own."
+ },
+ "explainer-drawn-off": {
+  "iconOnly": true,
+  "reason": "54: Explainer drawn-off: the labeled drawing, its list equivalent and the Bridge line carry it, with no pose of its own."
+ }
+}

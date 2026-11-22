@@ -1,0 +1,26 @@
+{
+ "web-beside-paired": {
+  "iconOnly": true,
+  "reason": "55: the web globe and bookshelf tiles head the two cards; no pose of its own."
+ },
+ "web-beside-unpaired": {
+  "iconOnly": true,
+  "reason": "55: the same two cards with Related rows; the globe and bookshelf tiles carry it, no pose of its own."
+ },
+ "web-beside-partial": {
+  "iconOnly": true,
+  "reason": "55: the same two cards with one unread result; the globe and bookshelf tiles carry it, no pose of its own."
+ },
+ "web-beside-looking": {
+  "iconOnly": true,
+  "reason": "55: the working status line carries it while the lookup runs; no pose of its own."
+ },
+ "web-beside-off": {
+  "iconOnly": true,
+  "reason": "55: the lookup-off notice and the bookshelf tile carry it; no pose of its own."
+ },
+ "web-beside-constant-off": {
+  "iconOnly": true,
+  "reason": "55 with the constant off: today's web card exactly as main draws it; no pose of its own."
+ }
+}

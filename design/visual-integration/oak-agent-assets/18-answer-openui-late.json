@@ -1,0 +1,110 @@
+{
+ "stack-map-streaming": {
+  "iconOnly": true,
+  "reason": "32: StackMap fixture streaming: the ghost tool tiles carry it, with no pose of its own."
+ },
+ "timeline-lanes-2": {
+  "iconOnly": true,
+  "reason": "57: Timeline lanes fixture, two lanes on one month grid carry it, with no pose of its own."
+ },
+ "timeline-lanes-5": {
+  "iconOnly": true,
+  "reason": "57: Timeline lanes fixture, five lanes on one month grid carry it, with no pose of its own."
+ },
+ "timeline-lanes-off": {
+  "iconOnly": true,
+  "reason": "57: Timeline lanes constant off, today's rail carries it, with no pose of its own."
+ },
+ "compare-matrix": {
+  "iconOnly": true,
+  "reason": "57: Compare matrix fixture, the two named columns carry it, with no pose of its own."
+ },
+ "source-button": {
+  "iconOnly": true,
+  "reason": "57: Source button fixture, the page cards carry it, with no pose of its own."
+ },
+ "metric-result": {
+  "iconOnly": true,
+  "reason": "57: Metric result fixture, the glowing numeral carries it, with no pose of its own."
+ },
+ "callout-held": {
+  "iconOnly": true,
+  "reason": "57: Callout held fixture, the typed banner carries it, with no pose of its own."
+ },
+ "callout-now": {
+  "iconOnly": true,
+  "reason": "57: Callout now fixture, the typed banner carries it, with no pose of its own."
+ },
+ "callout-off": {
+  "iconOnly": true,
+  "reason": "57: Callout off fixture, the typed banner carries it, with no pose of its own."
+ },
+ "callout-guard": {
+  "iconOnly": true,
+  "reason": "57: Callout guard fixture, the typed banner carries it, with no pose of its own."
+ },
+ "heading-chip": {
+  "iconOnly": true,
+  "reason": "57: Heading chip fixture, the timeline answer carries it, with no pose of its own."
+ },
+ "site-card-app": {
+  "iconOnly": true,
+  "reason": "59: SiteCard fixture, the site item card carries it, with no pose of its own."
+ },
+ "site-card-resource": {
+  "iconOnly": true,
+  "reason": "59: SiteCard fixture, the site item card carries it, with no pose of its own."
+ },
+ "site-card-section": {
+  "iconOnly": true,
+  "reason": "59: SiteCard fixture, the site item card carries it, with no pose of its own."
+ },
+ "site-card-career-rail": {
+  "iconOnly": true,
+  "reason": "59: SiteCard fixture, the site item card carries it, with no pose of its own."
+ },
+ "site-card-proof": {
+  "iconOnly": true,
+  "reason": "59: SiteCard fixture, the site item card carries it, with no pose of its own."
+ },
+ "site-card-social": {
+  "iconOnly": true,
+  "reason": "59: SiteCard fixture, the site item card carries it, with no pose of its own."
+ },
+ "site-card-notonsite": {
+  "iconOnly": true,
+  "reason": "59: SiteCard fixture, the site item card carries it, with no pose of its own."
+ },
+ "site-card-streaming": {
+  "iconOnly": true,
+  "reason": "59: SiteCard fixture, the site item card carries it, with no pose of its own."
+ },
+ "site-card-off": {
+  "iconOnly": true,
+  "reason": "59: SiteCard fixture, the site item card carries it, with no pose of its own."
+ },
+ "contact-card-hiring": {
+  "iconOnly": true,
+  "reason": "49: Contact card fixture, Steve's portrait carries it, with no pose of its own."
+ },
+ "contact-card-availability": {
+  "iconOnly": true,
+  "reason": "49: Contact card fixture with availability, the portrait carries it, with no pose of its own."
+ },
+ "contact-card-focus": {
+  "iconOnly": true,
+  "reason": "49: Contact card focus state, the portrait and reason pills carry it, with no pose of its own."
+ },
+ "contact-card-declined": {
+  "iconOnly": true,
+  "reason": "49: Contact card declined, the quiet receipt carries it, with no pose of its own."
+ },
+ "contact-card-streaming": {
+  "iconOnly": true,
+  "reason": "49: Contact card fixture streaming, the answer carries it, with no pose of its own."
+ },
+ "contact-card-off": {
+  "iconOnly": true,
+  "reason": "49: Contact card fixture off, the next-step row carries it, with no pose of its own."
+ }
+}

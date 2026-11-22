@@ -1,0 +1,25 @@
+{
+  "name": "Board",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": "board",
+  "pendingCap": 6,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": "views/board.ts",
+  "plan": {
+    "in": {
+      "overview": 3
+    },
+    "count": "documents"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

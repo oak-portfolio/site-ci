@@ -1,0 +1,134 @@
+[
+ {
+  "id": "answer-openui-table-matrix",
+  "question": "Compare EcoSmartLoop and Oakminder",
+  "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\"], \"matrix\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "EcoSmartLoop, published in 2025, is an AI recycling coach Steve led from product requirements to the mobile app.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-001:passage-002",
+       "sectionId": "work:ecosmartloop:section-001",
+       "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "Oakminder, published in 2026, is Steve's productivity agent with a voice agent and native reminders.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-002",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-table-sctable",
+  "question": "Which roles were contract and which were full time?",
+  "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\", \"claim-3\"], \"sctable\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "HyperSkalers was a contract role, Feb 2026 - May 2026, building agent evaluation and call pipelines.",
+     "citations": [
+      {
+       "documentId": "experience:hyperskalers",
+       "passageId": "experience:hyperskalers:passage-001",
+       "sectionId": "experience:hyperskalers",
+       "url": "https://steveoak.com/work#hyperskalers"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "At Uhttention Steve worked part-time with founders, Jan 2024 - Jan 2025, on AI products and automation.",
+     "citations": [
+      {
+       "documentId": "experience:uhttention",
+       "passageId": "experience:uhttention:passage-001",
+       "sectionId": "experience:uhttention",
+       "url": "https://steveoak.com/work#uhttention"
+      }
+     ]
+    },
+    {
+     "id": "claim-3",
+     "text": "PNPP Solutions was full-time full-stack engineering and design, Nov 2018 - Jan 2024.",
+     "citations": [
+      {
+       "documentId": "experience:pnppsolutions",
+       "passageId": "experience:pnppsolutions:passage-001",
+       "sectionId": "experience:pnppsolutions",
+       "url": "https://steveoak.com/work#pnppsolutions"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-table-smap",
+  "question": "What pages does the site have?",
+  "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\", \"claim-3\"], \"smap\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "The home page introduces Steve and the AI products he designs and builds.",
+     "citations": [
+      {
+       "documentId": "profile:steve-oak",
+       "passageId": "profile:steve-oak:section-001:passage-001",
+       "sectionId": "profile:steve-oak:section-001",
+       "url": "https://steveoak.com/#hero-title"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "The work page holds the case studies and the career timeline, starting with Oak Labs.",
+     "citations": [
+      {
+       "documentId": "experience:oaklabs",
+       "passageId": "experience:oaklabs:passage-001",
+       "sectionId": "experience:oaklabs",
+       "url": "https://steveoak.com/work#oaklabs"
+      }
+     ]
+    },
+    {
+     "id": "claim-3",
+     "text": "Each case study has its own page, such as Oakminder's.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-002",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

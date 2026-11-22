@@ -1,0 +1,18 @@
+{
+  "ok": true,
+  "asset": "/assets/mascot/orbi-ecosmartloop-cap-rotation.webp",
+  "runtimeAssetUrl": "/assets/mascot/orbi-ecosmartloop-cap-rotation.webp",
+  "contextId": "ecosmartloop.hero",
+  "animation": "ecosmartloopOrbiCapCollapsed",
+  "format": "WEBP",
+  "width": 1536,
+  "height": 208,
+  "frameWidth": 192,
+  "frameHeight": 208,
+  "columns": 8,
+  "rows": 1,
+  "frames": 8,
+  "fps": 7,
+  "chromaKey": "#FF00FF",
+  "keyThreshold": 128
+}

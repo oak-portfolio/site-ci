@@ -1,0 +1,1901 @@
+{
+  "source": [
+    "src/content/work",
+    "src/data/brandIconRegistry.ts"
+  ],
+  "assets": [
+    {
+      "id": "c90e4e4057d3",
+      "src": "/assets/brand-icons/aisdk.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to ai-sdk.dev",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "AI SDK logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "73f932c8a3f4",
+      "src": "/assets/brand-icons/android.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to developer.android.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Android logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "9ab06166acc4",
+      "src": "/assets/brand-icons/apple.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to developer.apple.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Apple logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "d38ce7ae2e04",
+      "src": "/assets/brand-icons/astro.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to astro.build",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Astro logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "358bbb3b891d",
+      "src": "/assets/brand-icons/aws.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to aws.amazon.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "AWS logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "15423d6d95fb",
+      "src": "/assets/brand-icons/betterauth.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to better-auth.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "BetterAuth logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "50ba4d65babe",
+      "src": "/assets/brand-icons/browseruse.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to browser-use.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "browser-use logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "38c7cf87cf9c",
+      "src": "/assets/brand-icons/calrecycle.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to calrecycle.ca.gov",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "CalRecycle logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "f178dec53f94",
+      "src": "/assets/brand-icons/capacitor.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to capacitorjs.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Capacitor logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "17341f93f6d2",
+      "src": "/assets/brand-icons/chatgpt.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to openai.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "ChatGPT logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "f85870f3fad9",
+      "src": "/assets/brand-icons/claude.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to claude.ai",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Claude logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "5d5c19fe836e",
+      "src": "/assets/brand-icons/claudecode.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.anthropic.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Claude Code logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "8da7c6a0edfb",
+      "src": "/assets/brand-icons/clerk.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to clerk.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Clerk logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "d721acf16737",
+      "src": "/assets/brand-icons/cloudflare.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to cloudflare.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Cloudflare logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "eed1fd6f77c9",
+      "src": "/assets/brand-icons/codex.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to openai.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Codex logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "5dec59b1e676",
+      "src": "/assets/brand-icons/convex.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.convex.dev",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Convex logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "8105ebb0276b",
+      "src": "/assets/brand-icons/cursor.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.cursor.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Cursor logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "6982c69f6a74",
+      "src": "/assets/brand-icons/deepgram.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to deepgram.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Deepgram logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "bd2f2f2e9866",
+      "src": "/assets/brand-icons/discord.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to discord.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Discord logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "78d948aa4478",
+      "src": "/assets/brand-icons/exa.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to exa.ai",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Exa logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "4f1c906de3a7",
+      "src": "/assets/brand-icons/expo.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to expo.dev",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Expo logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "2fcb4f9df699",
+      "src": "/assets/brand-icons/factory.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to factory.ai",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Factory logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "a9a3de08f15b",
+      "src": "/assets/brand-icons/fastapi.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to fastapi.tiangolo.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "FastAPI logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "70f1428fc79d",
+      "src": "/assets/brand-icons/figma.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.figma.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Figma logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "6e6724ba3c5b",
+      "src": "/assets/brand-icons/gemini.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to gemini.google.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Gemini logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "0f465c4df686",
+      "src": "/assets/brand-icons/github.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to github.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "GitHub logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "a62a01a006d6",
+      "src": "/assets/brand-icons/google.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to google.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Google logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "71d3efecea50",
+      "src": "/assets/brand-icons/googlecloud.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to cloud.google.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Google Cloud logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "2c23d90aad25",
+      "src": "/assets/brand-icons/hermes.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to hermes-agent.nousresearch.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Hermes logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "b57f5deeb3aa",
+      "src": "/assets/brand-icons/imessage.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.apple.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "iMessage logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "41903bc4c28f",
+      "src": "/assets/brand-icons/instagram.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to instagram.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Instagram logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "ce492dfc9fb2",
+      "src": "/assets/brand-icons/langsmith.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to smith.langchain.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "LangSmith logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "df3946a9db97",
+      "src": "/assets/brand-icons/linkedin.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.linkedin.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "LinkedIn logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "1e9232451922",
+      "src": "/assets/brand-icons/lovable.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to lovable.dev",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Lovable logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "4086973e9c05",
+      "src": "/assets/brand-icons/mcp.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to modelcontextprotocol.io",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Model Context Protocol logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "b5d9b3d61704",
+      "src": "/assets/brand-icons/mintlify.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.mintlify.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Mintlify logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "23474b027b37",
+      "src": "/assets/brand-icons/motion.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to motion.dev",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Motion logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "8995e0943aef",
+      "src": "/assets/brand-icons/nextjs.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to nextjs.org",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Next.js logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "896d30bf62e2",
+      "src": "/assets/brand-icons/notion.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to notion.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Notion logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "0ce30b078845",
+      "src": "/assets/brand-icons/obsidian.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to obsidian.md",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Obsidian logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "8675bc475b4f",
+      "src": "/assets/brand-icons/openai.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to openai.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "OpenAI logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "68a9cc96bdbd",
+      "src": "/assets/brand-icons/openclaw.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to openclaw.ai",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "OpenClaw logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "37ef4ece32b7",
+      "src": "/assets/brand-icons/openrouter.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to openrouter.ai",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "OpenRouter logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "d8da9872b0bd",
+      "src": "/assets/brand-icons/perplexity.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.perplexity.ai",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Perplexity logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "8676c6241408",
+      "src": "/assets/brand-icons/playwright.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to playwright.dev",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Playwright logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "e27f0cdb33fb",
+      "src": "/assets/brand-icons/posthog.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to posthog.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "PostHog logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "b246e576390a",
+      "src": "/assets/brand-icons/postiz.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to postiz.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Postiz logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "d64da4cf63a5",
+      "src": "/assets/brand-icons/prisma.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to prisma.io",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Prisma logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "89a52c804e86",
+      "src": "/assets/brand-icons/python.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to python.org",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Python logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "324c4a3d781b",
+      "src": "/assets/brand-icons/reactnative.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to reactnative.dev",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "React Native logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "d68b47f334e7",
+      "src": "/assets/brand-icons/reddit.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to reddit.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Reddit logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "0e38d172d82c",
+      "src": "/assets/brand-icons/remotion.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.remotion.dev",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Remotion logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "a332473548fc",
+      "src": "/assets/brand-icons/resend.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to resend.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Resend logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "502236f4582d",
+      "src": "/assets/brand-icons/revenuecat.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.revenuecat.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "RevenueCat logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "c92dcb7fde09",
+      "src": "/assets/brand-icons/sentry.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to sentry.io",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Sentry logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "93507a31beb0",
+      "src": "/assets/brand-icons/slack.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to slack.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Slack logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "1131951eac6f",
+      "src": "/assets/brand-icons/stagehand.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.browserbase.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Stagehand logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "130af7d43c0f",
+      "src": "/assets/brand-icons/supabase.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to supabase.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Supabase logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "ff6236f6874b",
+      "src": "/assets/brand-icons/superwall.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to superwall.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Superwall logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "db51daf1becb",
+      "src": "/assets/brand-icons/telegram.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to telegram.org",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Telegram logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "6c698552da2c",
+      "src": "/assets/brand-icons/telegrambotapi.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to core.telegram.org",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Telegram Bot API logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "00e51d9f2bcc",
+      "src": "/assets/brand-icons/tiktok.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.tiktok.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "TikTok logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "6f4bebd54ec1",
+      "src": "/assets/brand-icons/tremendous.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to tremendous.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Tremendous logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "aa49fc0aaae3",
+      "src": "/assets/brand-icons/typescript.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to typescriptlang.org",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "TypeScript logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "f8c963338cdd",
+      "src": "/assets/brand-icons/v0.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to v0.dev",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "v0 logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "4f8cd875cdf1",
+      "src": "/assets/brand-icons/vercel.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to sdk.vercel.ai",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "Vercel logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "6acd37c3dac3",
+      "src": "/assets/brand-icons/x.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to x.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "X logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "c41ed3e2acd4",
+      "src": "/assets/brand-icons/youtube.png",
+      "kind": "brand",
+      "focal": "center",
+      "rights": "Third-party mark, linked to www.youtube.com",
+      "uses": [
+        {
+          "use": "brand icon",
+          "alt": "YouTube logo",
+          "where": "src/data/brandIconRegistry.ts"
+        }
+      ],
+      "usedIn": [
+        "src/data/brandIconRegistry.ts"
+      ]
+    },
+    {
+      "id": "0b67c7e9f281",
+      "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "card",
+          "alt": "Agentic Brain cover art for reliable AI memory systems",
+          "where": "src/content/work/agentic-brain.mdx"
+        },
+        {
+          "use": "hero",
+          "alt": "Agentic Brain cover art for reliable AI memory systems",
+          "where": "src/content/work/agentic-brain.mdx"
+        },
+        {
+          "use": "social",
+          "alt": "Agentic Brain cover art for reliable AI memory systems",
+          "where": "src/content/work/agentic-brain.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/agentic-brain.mdx"
+      ]
+    },
+    {
+      "id": "e690cd771da8",
+      "src": "/assets/work/ecosmartloop/b2b-career-fair-context.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "LinkedIn building and rooftop context from the career-fair moment that shaped EcoSmartLoop's B2B direction",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "0e1889239312",
+      "src": "/assets/work/ecosmartloop/california-sb1383-context.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "California SB 1383 organics recycling law context card over produce waste",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "c4b58157a4e2",
+      "src": "/assets/work/ecosmartloop/capacitor-mobile-debugging.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop mobile debugging animation showing the app running in a phone-shaped shell",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "ba15891dfc9c",
+      "src": "/assets/work/ecosmartloop/capstone-pitch-flyer.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop pitch flyer with QR code and app screenshots",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "1a51307b4b63",
+      "src": "/assets/work/ecosmartloop/capstone-poster-board.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop capstone poster showing vision, intelligence, growth loop, and architecture",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "794ec9175138",
+      "src": "/assets/work/ecosmartloop/challenge-resolution-loop.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Animated EcoSmartLoop challenge-resolution visual showing a celebration moment",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "957340e3d86d",
+      "src": "/assets/work/ecosmartloop/claude-code-switch.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Cursor and Claude Code comparison visual used to explain the mid-project tool switch",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "b66bcc11c3f9",
+      "src": "/assets/work/ecosmartloop/context-engineering-logs.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Context engineering versus prompt engineering visual",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "9a1b158f8ebd",
+      "src": "/assets/work/ecosmartloop/ecosmartloop-cover-og.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "social",
+          "alt": "EcoSmartLoop Orbi AI social preview with waste-item examples and 8000 plus training context",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "c8654dca8a6c",
+      "src": "/assets/work/ecosmartloop/ecosmartloop-cover.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "card",
+          "alt": "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context",
+          "where": "src/content/work/ecosmartloop.mdx"
+        },
+        {
+          "use": "hero",
+          "alt": "EcoSmartLoop Orbi AI cover with waste-item examples, assistant panel, and 8000 plus training context",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "c207ee88bab0",
+      "src": "/assets/work/ecosmartloop/figma-make-ai-slop-workflow.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop design workflow visual showing Figma Make and AI-assisted frontend iteration",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "81afe5575689",
+      "src": "/assets/work/ecosmartloop/leaf-engine-8000-training-context.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop training context visual showing 8000 plus images around Orbi",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "f489041f5067",
+      "src": "/assets/work/ecosmartloop/mobile-product-shell.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop mobile app shell shown on two phones",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "c45989ef37a6",
+      "src": "/assets/work/ecosmartloop/motion-plus-animation-polish.avif",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop interface animation polish concept showing Motion Plus interaction design",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "02c22be7eebe",
+      "src": "/assets/work/ecosmartloop/orbi-guidance-actions-combined.avif",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Orbi AI assistant screens showing cited guidance, sources, related prompts, and product-aware tool actions",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "6df3ad29dc90",
+      "src": "/assets/work/ecosmartloop/rewards-admin-flow.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop admin reward configuration screen",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "cf480672f1ac",
+      "src": "/assets/work/ecosmartloop/rewards-behavior-loop.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop rewards behavior loop shown across app cards and dashboard",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "2be3f7ce5a93",
+      "src": "/assets/work/ecosmartloop/tech-stack-visual.avif",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "EcoSmartLoop tech stack visual showing the frontend, backend, database, AI, infrastructure, mobile, authentication, and payment tools used in the capstone",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "8f940b88d29b",
+      "src": "/assets/work/ecosmartloop/three-bin-hesitation.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "A person hesitating in front of trash recycling and compost bins",
+          "where": "src/content/work/ecosmartloop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/ecosmartloop.mdx"
+      ]
+    },
+    {
+      "id": "f873eabf30a6",
+      "src": "/assets/work/linkedin-growth-loop/ai-agent-reality.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "AI agent reality diagram showing why one-off task completion is not enough without state, recovery, evaluation, and next-step ownership",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/linkedin-growth-loop.mdx"
+      ]
+    },
+    {
+      "id": "760774647082",
+      "src": "/assets/work/linkedin-growth-loop/browser-control.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Browser control workflow visual showing programmatic browser steps, checks, recovery, and selective model judgment",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/linkedin-growth-loop.mdx"
+      ]
+    },
+    {
+      "id": "f11601022b9a",
+      "src": "/assets/work/linkedin-growth-loop/first-success-reaction.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Animated reaction GIF representing the moment the LinkedIn Growth Loop started working against real feedback",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/linkedin-growth-loop.mdx"
+      ]
+    },
+    {
+      "id": "2a577b70ef7a",
+      "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover-og.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "social",
+          "alt": "LinkedIn Growth Loop non-human-loop preview with OpenClaw, Hermes, Telegram, Convex, and Oak override",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/linkedin-growth-loop.mdx"
+      ]
+    },
+    {
+      "id": "cd52ca4c50b0",
+      "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "card",
+          "alt": "Non-human loop diagram for LinkedIn Growth Loop showing OpenClaw execution, Hermes research, Telegram reports, Convex state, and Oak override",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        },
+        {
+          "use": "hero",
+          "alt": "Non-human loop diagram for LinkedIn Growth Loop showing OpenClaw execution, Hermes research, Telegram reports, Convex state, and Oak override",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/linkedin-growth-loop.mdx"
+      ]
+    },
+    {
+      "id": "07d6155e3165",
+      "src": "/assets/work/linkedin-growth-loop/linkedin-networking.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "LinkedIn networking workflow scene showing professional relationship building as a repeatable agent-supported workflow",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/linkedin-growth-loop.mdx"
+      ]
+    },
+    {
+      "id": "91fa8fdcb3bf",
+      "src": "/assets/work/linkedin-growth-loop/openclaw-vs-hermes.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "OpenClaw and Hermes comparison visual showing orchestrator and advisor responsibilities in the LinkedIn Growth Loop agent team",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/linkedin-growth-loop.mdx"
+      ]
+    },
+    {
+      "id": "901819805a01",
+      "src": "/assets/work/linkedin-growth-loop/reviewer-shift-reaction.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Animated reaction GIF representing the shift from manually operating each run to reviewing an agent team",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/linkedin-growth-loop.mdx"
+      ]
+    },
+    {
+      "id": "427fca4564e6",
+      "src": "/assets/work/linkedin-growth-loop/self-improving-report.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Self-improving agent report showing a proposed improvement, evidence, risk, and next action",
+          "where": "src/content/work/linkedin-growth-loop.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/linkedin-growth-loop.mdx"
+      ]
+    },
+    {
+      "id": "d81b334e6d9d",
+      "src": "/assets/work/oakminder-cover.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "card",
+          "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+          "where": "src/content/work/oakminder.mdx"
+        },
+        {
+          "use": "hero",
+          "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+          "where": "src/content/work/oakminder.mdx"
+        },
+        {
+          "use": "social",
+          "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "b2d6db36b9e5",
+      "src": "/assets/work/oakminder/app-store/oakminder-app-store-page.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Oakminder App Store listing screenshot showing the app page and marketplace presence.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "9387a4456c62",
+      "src": "/assets/work/oakminder/distribution-studio/tiktok-playbook.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Oakminder internal distribution studio screenshot showing a TikTok playbook dashboard for product marketing research and content strategy.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "8f0ea680a1ca",
+      "src": "/assets/work/oakminder/docs/mintlify-docs-page.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Oakminder documentation page built with Mintlify showing product docs navigation and content.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "d7f4bb2f998a",
+      "src": "/assets/work/oakminder/learning-sources/superwall-youtube-channel.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Superwall YouTube channel page showing mobile app founder interviews and growth content.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "94d7ca04550f",
+      "src": "/assets/work/oakminder/memes/friction-facepalm.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Animated reaction meme showing the frustration of facing the same reminder workflow problem for years.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "42c712fc8339",
+      "src": "/assets/work/oakminder/memes/instant-notification-sync.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Animated reaction meme representing the need for instant notification actions and synchronized reminder state.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "4be55b064f0f",
+      "src": "/assets/work/oakminder/memes/reusable-learning.webp",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Animated reaction meme representing the project becoming reusable learning for later product and agent work.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "ca880254ebb5",
+      "src": "/assets/work/oakminder/publishing-feedback/publishing-processing.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Oakminder distribution studio publishing screen for final post details, processing state, and scheduling handoff.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "bac72e317ee3",
+      "src": "/assets/work/oakminder/ugc-drafts/draft-flow-management.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Oakminder distribution studio management screen for AI agent handoff, UGC creator coordination, and TikTok account management.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "07ccdf27a071",
+      "src": "/assets/work/oakminder/ugc-drafts/draft-flow-telegram.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "figure",
+          "alt": "Oakminder distribution studio Telegram-style control surface for OpenClaw agents tied to AI accounts and UGC creators.",
+          "where": "src/content/work/oakminder.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/oakminder.mdx"
+      ]
+    },
+    {
+      "id": "479ffb87e712",
+      "src": "/assets/work/omnisocial/omnisocial-cover.png",
+      "kind": "work",
+      "focal": "center",
+      "rights": "Not recorded",
+      "uses": [
+        {
+          "use": "card",
+          "alt": "OmniSocial cover showing Browser greater than API with social platform icons",
+          "where": "src/content/work/omnisocial.mdx"
+        },
+        {
+          "use": "hero",
+          "alt": "OmniSocial cover showing Browser greater than API with social platform icons",
+          "where": "src/content/work/omnisocial.mdx"
+        },
+        {
+          "use": "social",
+          "alt": "OmniSocial cover showing Browser greater than API with social platform icons",
+          "where": "src/content/work/omnisocial.mdx"
+        }
+      ],
+      "usedIn": [
+        "src/content/work/omnisocial.mdx"
+      ]
+    }
+  ]
+}

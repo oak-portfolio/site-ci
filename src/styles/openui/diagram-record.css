@@ -1,0 +1,289 @@
+/* Ticket 45: Diagram record presets. Mindmap, radar and quadrant are SVG drawings inside OakFigure (inert, the list is
+   their text); treeview is an HTML outline. Hairline strokes in --line, one accent (--oak-violet) on the selected branch,
+   the hub ring and the first record, never a second hue. */
+.oak-diagram-map {
+  display: block;
+  max-width: 100%;
+  overflow: visible;
+}
+
+.oak-diagram-map__branch {
+  fill: none;
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+
+.oak-diagram-map__branch[data-selected] {
+  stroke: var(--oak-violet);
+  stroke-width: 2;
+}
+
+.oak-diagram-map__hub {
+  fill: none;
+  stroke: var(--oak-violet);
+  stroke-width: 2;
+}
+
+.oak-diagram-map__cover {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.oak-diagram-map__node {
+  cursor: pointer;
+}
+
+.oak-diagram-map__node circle {
+  fill: var(--bg);
+  stroke: var(--line);
+  stroke-width: 1.5;
+}
+
+.oak-diagram-map__node[data-selected] circle {
+  fill: var(--oak-violet);
+  stroke: var(--oak-violet);
+}
+
+.oak-diagram-map__num {
+  fill: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+}
+
+.oak-diagram-map__node[data-selected] .oak-diagram-map__num {
+  fill: var(--bg);
+}
+
+.oak-diagram-map__label {
+  fill: var(--text);
+  font-size: var(--text-ui-md);
+}
+
+.oak-diagram-map__node[data-selected] .oak-diagram-map__label {
+  font-weight: 600;
+}
+
+/* Treeview: the root, then each part hanging off a vertical hairline by a short elbow; the last part's line stops at its elbow. */
+.oak-diagram-tree {
+  display: grid;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+
+.oak-diagram-tree__root {
+  justify-self: start;
+  margin: 0;
+  padding: var(--space-micro) var(--space-sm);
+  border: 1px solid var(--oak-violet);
+  border-radius: var(--oak-r-row);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-diagram-tree__parts {
+  display: grid;
+  margin: 0 0 0 var(--space-sm);
+  padding: 0;
+  list-style: none;
+}
+
+.oak-diagram-tree__part {
+  position: relative;
+  display: grid;
+  gap: var(--space-micro);
+  min-width: 0;
+  padding: 0 0 var(--space-xs) var(--space-md);
+}
+
+.oak-diagram-tree__part::before,
+.oak-diagram-tree__part::after {
+  position: absolute;
+  inset-inline-start: 0;
+  content: "";
+}
+
+.oak-diagram-tree__part::before {
+  inset-block-start: 0.7em;
+  width: calc(var(--space-md) - 6px);
+  border-block-start: 1.5px solid var(--line);
+}
+
+.oak-diagram-tree__part::after {
+  inset-block: calc(-1 * var(--space-xs)) 0;
+  border-inline-start: 1.5px solid var(--line);
+}
+
+.oak-diagram-tree__part:last-child {
+  padding-block-end: 0;
+}
+
+.oak-diagram-tree__part:last-child::after {
+  inset-block-end: auto;
+  height: calc(0.7em + var(--space-xs) + 1.5px);
+}
+
+.oak-diagram-tree__label {
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-diagram-tree__text {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  overflow-wrap: anywhere;
+}
+
+/* Radar and quadrant: drawn in real pixels at the column's measured width, axis text that says what it counts. */
+.oak-diagram-chart {
+  display: grid;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+
+.oak-diagram-chart__svg {
+  display: block;
+  max-width: 100%;
+  justify-self: center;
+  overflow: visible;
+}
+
+.oak-diagram-chart__ring,
+.oak-diagram-chart__plot {
+  fill: none;
+  stroke: var(--line-soft);
+  stroke-width: 1;
+}
+
+.oak-diagram-chart__spoke,
+.oak-diagram-chart__divide {
+  stroke: var(--line);
+  stroke-width: 1;
+}
+
+.oak-diagram-chart__divide[data-dashed] {
+  stroke-dasharray: 4 4;
+}
+
+.oak-diagram-chart__leader {
+  stroke: var(--muted);
+  stroke-width: 1;
+}
+
+.oak-diagram-chart__axis,
+.oak-diagram-chart__name {
+  fill: var(--text);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-diagram-chart__band,
+.oak-diagram-chart__tick,
+.oak-diagram-chart__count {
+  fill: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-diagram-chart__shape {
+  fill: color-mix(in srgb, var(--oak-violet) 22%, transparent);
+  stroke: var(--oak-violet);
+  stroke-width: 2;
+  stroke-linejoin: round;
+}
+
+.oak-diagram-chart__shape:not([data-series="1"]) {
+  fill: none;
+  stroke: var(--text);
+  stroke-width: 1.5;
+  stroke-dasharray: 6 4;
+}
+
+.oak-diagram-chart__shape[data-series="3"] {
+  stroke-dasharray: 1.5 4;
+}
+
+.oak-diagram-chart__point circle {
+  fill: var(--oak-violet);
+}
+
+.oak-diagram-chart__key {
+  display: inline-block;
+  width: 18px;
+  height: 0;
+  margin-inline-end: var(--space-micro);
+  border-block-start: 2px solid var(--oak-violet);
+  vertical-align: middle;
+}
+
+.oak-diagram-chart__key:not([data-series="1"]) {
+  border-block-start: 1.5px dashed var(--text);
+}
+
+.oak-diagram-chart__key[data-series="3"] {
+  border-block-start-style: dotted;
+}
+
+.oak-diagram-chart__note {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+@media (forced-colors: active) {
+  .oak-diagram-map__branch,
+  .oak-diagram-map__node circle,
+  .oak-diagram-chart__ring,
+  .oak-diagram-chart__plot,
+  .oak-diagram-chart__spoke,
+  .oak-diagram-chart__divide,
+  .oak-diagram-chart__shape {
+    stroke: CanvasText;
+  }
+
+  .oak-diagram-map__hub,
+  .oak-diagram-map__branch[data-selected],
+  .oak-diagram-map__node[data-selected] circle,
+  .oak-diagram-chart__shape[data-series="1"] {
+    stroke: Highlight;
+  }
+
+  .oak-diagram-map__node[data-selected] circle,
+  .oak-diagram-chart__point circle {
+    fill: Highlight;
+  }
+
+  .oak-diagram-map__node circle {
+    fill: Canvas;
+  }
+
+  .oak-diagram-map__node[data-selected] .oak-diagram-map__num {
+    fill: HighlightText;
+  }
+
+  .oak-diagram-map__label,
+  .oak-diagram-map__num,
+  .oak-diagram-chart__axis,
+  .oak-diagram-chart__name,
+  .oak-diagram-chart__band,
+  .oak-diagram-chart__tick,
+  .oak-diagram-chart__count {
+    fill: CanvasText;
+  }
+
+  .oak-diagram-chart__shape {
+    fill: none;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .oak-diagram-map__branch,
+  .oak-diagram-map__node circle {
+    transition: stroke var(--motion-quick) var(--motion-standard), fill var(--motion-quick) var(--motion-standard);
+  }
+}

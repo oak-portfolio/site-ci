@@ -1,0 +1,5 @@
+tests/quality/ci-browser-guards.test.mjs
+tests/quality/fanout-audit.test.mjs
+tests/quality/frontier.test.mjs
+tests/quality/premium-scripts.test.mjs
+tests/quality/scripted-tests.test.mjs

@@ -1,0 +1,41 @@
+{
+ "answer-document": {
+  "asset": "quoting"
+ },
+ "saved-reopened": {
+  "iconOnly": true,
+  "reason": "The dated marker carries the reopen, and the reopen toast already shows the bookmark art."
+ },
+ "saved-reopened-last-question": {
+  "iconOnly": true,
+  "reason": "PR 1a: a long saved conversation opening on its last question. The dated marker and the transcript carry the state; a picture would crowd a dense reading view."
+ },
+ "saved-reopened-today": {
+  "iconOnly": true,
+  "reason": "PR 1a: the Today marker between saved turns and a new question. The dated marker and the transcript carry the state; a picture would crowd a dense reading view."
+ },
+ "saved-reopened-today-reduced": {
+  "iconOnly": true,
+  "reason": "PR 1a: the Today marker state with reduced motion on. The dated marker and the transcript carry the state; a picture would crowd a dense reading view."
+ },
+ "allowance-guest": {
+  "iconOnly": true,
+  "reason": "The answers-left ring is the visual; more art would crowd the composer."
+ },
+ "meter-answers-low": {
+  "iconOnly": true,
+  "reason": "R17: The composer meter's gold ring is the visual; more art would crowd the composer."
+ },
+ "meter-memory-low": {
+  "iconOnly": true,
+  "reason": "R17: The composer meter's gold ring and memory glyph are the visual."
+ },
+ "meter-memory-out": {
+  "iconOnly": true,
+  "reason": "R17: The composer meter's red ring and memory glyph are the visual."
+ },
+ "research-web": {
+  "iconOnly": true,
+  "reason": "R19: the same research card as research-sources, whose web-globe art it shows; the cited synthesis and source rows are the visual."
+ }
+}

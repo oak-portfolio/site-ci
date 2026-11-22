@@ -1,0 +1,79 @@
+[
+  {
+    "id": "answer-openui-role-entry",
+    "source": "tests/agent/premium/stored-openui-programs.json",
+    "note": null,
+    "record": {
+      "conversationId": "cccc4201-cccc-4ccc-8ccc-cccccccccccc",
+      "version": 1,
+      "createdAt": 1793750400000,
+      "lastSavedMessageAt": 1793750400000,
+      "updatedAt": 1793750400000,
+      "expiresAt": 1796342400000,
+      "lastNewSavedMessageId": "00004201-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "messages": [
+        {
+          "id": "00004201-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+          "role": "user",
+          "text": "Where did Steve work on EcoSmartLoop?",
+          "answer": null,
+          "cards": [],
+          "page": "/",
+          "taskKind": "question"
+        },
+        {
+          "id": "00004201-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+          "role": "assistant",
+          "text": "Completed an M.S. in Computer Science while working part-time on student support and contributing to EcoSmartLoop, a team-built AI waste-sorting capstone.\n\nCompleted an M.S. in Computer Science with a 3.89 / 4.0 GPA and a 100% Presidential Scholarship.",
+          "answer": {
+            "schema": "oak.answer.v1",
+            "speaker": "oak-ai-host",
+            "characterVersion": "oak-v1",
+            "hardPolicyVersion": "policy-v1",
+            "operations": [
+              "search",
+              "read"
+            ],
+            "kind": "sourced",
+            "knowledgeRevision": "k",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "Completed an M.S. in Computer Science while working part-time on student support and contributing to EcoSmartLoop, a team-built AI waste-sorting capstone.",
+                "citations": [
+                  {
+                    "documentId": "experience:sanfranciscobayuniversity",
+                    "passageId": "experience:sanfranciscobayuniversity:passage-001",
+                    "sectionId": "experience:sanfranciscobayuniversity",
+                    "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+                  }
+                ]
+              },
+              {
+                "id": "claim-2",
+                "text": "Completed an M.S. in Computer Science with a 3.89 / 4.0 GPA and a 100% Presidential Scholarship.",
+                "citations": [
+                  {
+                    "documentId": "experience:sanfranciscobayuniversity",
+                    "passageId": "experience:sanfranciscobayuniversity:passage-002",
+                    "sectionId": "experience:sanfranciscobayuniversity",
+                    "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+                  }
+                ]
+              }
+            ]
+          },
+          "cards": [],
+          "page": "/",
+          "taskKind": "question",
+          "ui": {
+            "requestId": "00004201-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+            "program": "root = Answer([r])\nr = Role([\"claim-1\", \"claim-2\"], \"entry\")",
+            "status": "done"
+          }
+        }
+      ]
+    }
+  }
+]

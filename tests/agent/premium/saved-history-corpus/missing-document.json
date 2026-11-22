@@ -1,0 +1,84 @@
+[
+ {
+  "id": "cites-removed-document",
+  "source": "ARCH-REVIEW A9",
+  "record": {
+   "conversationId": "cccccc62-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000061-eeee-4eee-8eee-eeeeeeeeeeee:user",
+     "role": "user",
+     "text": "What was the retired case study about?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000061-eeee-4eee-8eee-eeeeeeeeeeee",
+     "role": "assistant",
+     "text": "The retired case study described an early prototype of the portfolio assistant.\n\nThe older article was published on January 30, 2026. The later Agentic Brain page describes a newer memory-systems workstream after that January experiment and lists May 2026 as its project period. Publication dates and project periods do not establish current employment or availability.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "knowledge-2026-11",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "The retired case study described an early prototype of the portfolio assistant.",
+        "citations": [
+         {
+          "documentId": "work:retired-case-study",
+          "passageId": "work:retired-case-study:section-001:passage-001",
+          "sectionId": "work:retired-case-study:section-001",
+          "url": "https://steveoak.com/work/retired-case-study/#overview"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The older article was published on January 30, 2026. The later Agentic Brain page describes a newer memory-systems workstream after that January experiment and lists May 2026 as its project period. Publication dates and project periods do not establish current employment or availability.",
+        "citations": [
+         {
+          "documentId": "legacy:agentic-brain",
+          "passageId": "legacy:agentic-brain:section-001:passage-001",
+          "sectionId": "legacy:agentic-brain:section-001",
+          "url": "https://independent-performance-642823.framer.app/codex/ai-memory-hallucination-solution"
+         },
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000061-eeee-4eee-8eee-eeeeeeeeeeee",
+      "program": "root = Answer([p, q, src])\np = Prose(\"claim-1\")\nq = Prose(\"claim-2\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000061-eeee-4eee-8eee-eeeeeeeeeeee"
+  }
+ }
+]

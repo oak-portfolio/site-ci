@@ -1,0 +1,115 @@
+---
+import { Icon } from "@/components/ui/Icon";
+
+type ProviderAction = {
+  id: "chatgpt" | "claude" | "perplexity";
+  label: string;
+  iconSrc: string;
+};
+
+type Props = {
+  markdownApiHref: string;
+  providerSourceHref: string;
+  menuId: string;
+  pageTitle: string;
+  variant?: "rail" | "panel";
+};
+
+const { markdownApiHref, providerSourceHref, menuId, pageTitle, variant = "rail" } = Astro.props;
+const oakPrompt = `Tell me about the ${pageTitle} case study: what Steve built and what it shows.`;
+const providerActions: ProviderAction[] = [
+  {
+    id: "chatgpt",
+    label: "Ask ChatGPT",
+    iconSrc: "/assets/brand-icons/chatgpt.png",
+  },
+  {
+    id: "claude",
+    label: "Ask Claude",
+    iconSrc: "/assets/brand-icons/claude.png",
+  },
+  {
+    id: "perplexity",
+    label: "Ask Perplexity",
+    iconSrc: "/assets/brand-icons/perplexity.png",
+  },
+];
+---
+
+<div class={`work-toc__actions work-toc__actions--${variant}`} data-work-toc-actions>
+  <button
+    class="work-toc__copy-trigger"
+    type="button"
+    aria-haspopup="menu"
+    aria-expanded="false"
+    aria-controls={menuId}
+    data-work-toc-action-trigger
+  >
+    <Icon name="copy" size={13} />
+    <span data-work-toc-copy-label>Copy page</span>
+    <Icon name="arrowDown" size={11} className="work-toc__copy-chevron" />
+  </button>
+  <div class="work-toc__copy-menu" id={menuId} role="menu" aria-label="Page actions" data-work-toc-action-menu hidden>
+    <button
+      class="work-toc__copy-menu-item"
+      type="button"
+      role="menuitem"
+      data-work-toc-copy
+      data-markdown-href={markdownApiHref}
+    >
+      <span class="work-toc__copy-menu-icon" aria-hidden="true">
+        <Icon name="copy" size={15} />
+      </span>
+      <span class="work-toc__copy-menu-copy">
+        <strong>Copy Markdown</strong>
+        <em>Copy page as Markdown for LLMs</em>
+      </span>
+    </button>
+    <button
+      class="work-toc__copy-menu-item"
+      type="button"
+      role="menuitem"
+      data-work-toc-oak
+      data-oak-prompt={oakPrompt}
+    >
+      <span class="work-toc__copy-menu-icon" aria-hidden="true">
+        <Icon name="aiChat" size={15} />
+      </span>
+      <span class="work-toc__copy-menu-copy">
+        <strong>Ask Oak AI Agent</strong>
+        <em>Ask about this page here</em>
+      </span>
+    </button>
+    {
+      providerActions.map((action) => (
+        <button
+          class="work-toc__copy-menu-item"
+          type="button"
+          role="menuitem"
+          data-work-toc-provider={action.id}
+          data-provider-source={providerSourceHref}
+        >
+          <span class="work-toc__copy-menu-icon" aria-hidden="true">
+            <img class="work-toc__copy-provider-icon" src={action.iconSrc} alt="" loading="lazy" />
+          </span>
+          <span class="work-toc__copy-menu-copy">
+            <strong>{action.label}</strong>
+            <em>Ask questions about this page</em>
+          </span>
+          <Icon name="arrowUpRight" size={12} className="work-toc__copy-menu-external" />
+        </button>
+      ))
+    }
+  </div>
+</div>
+
+<script>
+  import { askOakSuggestion, requestOakWorkspace } from "@/lib/oakWorkspace";
+
+  // The menu script (inline, in the page) closes the menu and fires this event; the agent store lives in this bundle.
+  window.addEventListener("work-toc:ask-oak", (event) => {
+    const { prompt, opener } = (event as CustomEvent<{ prompt: string; opener: HTMLElement | null }>).detail;
+    if (!requestOakWorkspace(opener)) return;
+    if (!askOakSuggestion(prompt)) requestAnimationFrame(() => document.getElementById("oak-composer-input")?.focus());
+  });
+</script>

@@ -1,0 +1,34 @@
+{
+ "project-wall-two": {
+  "iconOnly": true,
+  "reason": "31: ProjectWall fixture, the two cover tiles carry it, with no pose of its own."
+ },
+ "project-wall-three": {
+  "iconOnly": true,
+  "reason": "31: ProjectWall fixture, the tiles, filter chips and sort carry it, with no pose of its own."
+ },
+ "project-wall-five": {
+  "iconOnly": true,
+  "reason": "31: ProjectWall fixture, the five tiles and their covers carry it, with no pose of its own."
+ },
+ "project-wall-path": {
+  "iconOnly": true,
+  "reason": "31: ProjectWall fixture, the numbered path and its reason chips carry it, with no pose of its own."
+ },
+ "project-wall-legacy": {
+  "iconOnly": true,
+  "reason": "31: ProjectWall fixture, the legacy covers carry it, with no pose of its own."
+ },
+ "project-wall-streaming": {
+  "iconOnly": true,
+  "reason": "31: ProjectWall fixture, the tile ghosts carry it, with no pose of its own."
+ },
+ "project-wall-filter": {
+  "iconOnly": true,
+  "reason": "31: ProjectWall fixture, the filter chips and the narrowed tiles carry it, with no pose of its own."
+ },
+ "project-wall-off": {
+  "iconOnly": true,
+  "reason": "31: ProjectWall fixture, the plain Project list carries it, with no pose of its own."
+ }
+}

@@ -1,0 +1,371 @@
+/* Ticket 67: the chat-first home. One DOM; html[data-oak-home] picks the chat or the Classic layout. */
+html:not([data-oak-home]) .home-chat__top,
+html:not([data-oak-home]) .home-chat__composer {
+  display: none;
+}
+
+.home-chat__top {
+  position: relative;
+  z-index: 40;
+}
+
+.home-chat__bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  max-width: var(--container);
+  margin-inline: auto;
+  padding: var(--space-sm) var(--gutter-x);
+}
+
+.home-chat__brand {
+  margin: 0;
+  font-family: var(--font-heading);
+  font-size: var(--text-card-title);
+  font-weight: 600;
+  color: var(--text);
+}
+
+.home-chat__brand span {
+  color: var(--muted);
+}
+
+.home-chat__opening {
+  max-width: 760px;
+  margin: 0 auto var(--space-md);
+  padding-inline: var(--gutter-x);
+  color: var(--muted);
+  font-size: var(--text-body-md);
+  line-height: var(--leading-body);
+}
+
+.home-chat__composer {
+  position: sticky;
+  bottom: calc(var(--space-md) + env(safe-area-inset-bottom, 0px));
+  z-index: 40;
+  display: grid;
+  gap: var(--space-xs);
+  width: min(760px, calc(100% - 2 * var(--gutter-x)));
+  margin: var(--space-lg) auto var(--space-md);
+  padding: var(--space-sm) var(--space-sm) var(--space-xs);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background: var(--glass-fill-solid);
+  box-shadow: var(--shadow-workspace);
+}
+
+.home-chat__composer .ui-textarea {
+  min-height: 44px;
+  max-height: 160px;
+  resize: none;
+}
+
+.home-chat__composer .ui-textarea:focus-visible {
+  outline: none;
+}
+
+.home-chat__composer:has(.ui-textarea:focus-visible) {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.home-chat__composer-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-sm);
+}
+
+.home-chat__modes {
+  display: inline-flex;
+  gap: 2px;
+  padding: 2px;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-pill);
+}
+
+.home-chat__mode {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  padding: 0 14px;
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--muted);
+  font: inherit;
+  font-size: var(--text-ui-sm);
+  cursor: pointer;
+}
+
+.home-chat__mode::before {
+  content: "";
+  position: absolute;
+  inset: -6px 0;
+  min-height: 44px;
+}
+
+.home-chat__mode[data-pressed] {
+  background: var(--panel-soft);
+  color: var(--text);
+}
+
+.home-chat__mode:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.home-chat__notice {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: var(--space-xs) var(--space-xs) 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: 1.45;
+}
+
+.home-chat__notice:empty {
+  padding: 0;
+  margin-bottom: calc(-1 * var(--space-xs));
+}
+
+.home-chat__gate {
+  justify-self: start;
+}
+
+.home-chat__notice svg {
+  flex: none;
+  margin-top: 2px;
+}
+
+.home-chat__notice strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.home-chat__notice[data-notice="limit"] {
+  display: grid;
+  justify-items: center;
+  gap: 2px;
+  padding: 0;
+  text-align: center;
+}
+
+.home-chat__refill-title {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-heading);
+  font-size: var(--text-body-md);
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.home-chat__refill-more {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.home-chat__refill {
+  display: grid;
+  gap: 2px;
+  margin: 0;
+  padding: 4px 0 0;
+  border-top: 1px solid var(--line-soft);
+  list-style: none;
+  overflow-y: auto;
+  max-height: min(320px, 45svh);
+}
+
+.home-chat__refill-row {
+  display: grid;
+  grid-template-columns: 20px minmax(0, 1fr) 16px;
+  align-items: center;
+  gap: var(--space-sm);
+  width: 100%;
+  min-height: 44px;
+  padding: 4px var(--space-sm);
+  border: 0;
+  border-radius: var(--radius-md);
+  background: var(--panel-soft);
+  color: var(--text);
+  font: inherit;
+  text-align: left;
+}
+
+button.home-chat__refill-row {
+  cursor: pointer;
+}
+
+button.home-chat__refill-row:hover {
+  background: var(--line-soft);
+}
+
+button.home-chat__refill-row:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.home-chat__refill-text {
+  display: grid;
+  min-width: 0;
+  font-size: var(--text-ui-sm);
+  line-height: 1.35;
+}
+
+.home-chat__refill-text strong {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.home-chat__refill-text span {
+  color: var(--muted);
+}
+
+.home-chat__left {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  text-align: center;
+}
+
+html[data-oak-home="chat"] .site-header,
+html[data-oak-home="chat"] .oak-mascot,
+html[data-oak-home="chat"] .oak-workspace-launcher {
+  display: none;
+}
+
+html[data-oak-home="chat"] #main-content {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+  padding-top: env(safe-area-inset-top, 0px);
+}
+
+html[data-oak-home="chat"] #main-content > section {
+  width: min(1040px, calc(100% - 2 * var(--gutter-x)));
+  margin-inline: auto;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--radius-md);
+  overflow: clip;
+}
+
+html[data-oak-home="chat"] #main-content > .hero-stage {
+  min-height: 0;
+  padding-top: var(--space-md);
+  padding-bottom: var(--space-lg);
+}
+
+html[data-oak-home="chat"] {
+  --home-composer-reserve: 168px;
+}
+
+html[data-oak-home="chat"] #main-content > section :is(a, button, input, select, textarea, [tabindex]) {
+  scroll-margin-bottom: var(--home-composer-reserve);
+}
+
+html[data-oak-home="chat"] .hero-copy .app-icon--portrait {
+  width: 104px;
+  margin-bottom: var(--space-sm);
+}
+
+html[data-oak-home="chat"] .hero-copy h1 {
+  font-size: 48px;
+}
+
+html[data-oak-home="chat"] .hero-copy p {
+  margin: var(--space-sm) 0 var(--space-md);
+}
+
+html[data-oak-home="classic"] .home-chat__top {
+  position: absolute;
+  inset: calc(88px + env(safe-area-inset-top, 0px)) 0 auto;
+}
+
+html[data-oak-home="classic"] .home-chat__brand,
+html[data-oak-home="classic"] .home-chat__opening,
+html[data-oak-home="classic"] .home-chat__composer {
+  display: none;
+}
+
+html[data-oak-home="classic"] .home-chat__bar {
+  justify-content: flex-end;
+}
+
+@media (max-width: 480px) {
+  html[data-oak-home="classic"] .home-chat__top {
+    top: calc(64px + env(safe-area-inset-top, 0px));
+  }
+
+  html[data-oak-home="chat"] {
+    --home-composer-reserve: 132px;
+  }
+
+  html[data-oak-home="chat"] .hero-copy .app-icon--portrait {
+    width: 80px;
+    margin-bottom: var(--space-xs);
+  }
+
+  html[data-oak-home="chat"] .hero-copy h1 {
+    font-size: 44px;
+  }
+
+  .home-chat__opening {
+    margin-bottom: var(--space-sm);
+  }
+
+  .home-chat__composer {
+    margin-bottom: var(--space-sm);
+    padding-block: var(--space-xs);
+  }
+
+  .home-chat__mode span {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip-path: inset(50%);
+    white-space: nowrap;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home-chat__mode {
+    transition: none;
+  }
+}
+
+.home-chat__thread {
+  width: min(100% - 2 * var(--space-md), 760px);
+  margin: 0 auto;
+  padding: var(--space-lg) 0 0;
+  scroll-margin-bottom: var(--home-composer-reserve, 168px);
+}
+
+.home-chat__thread .oak-conversation__viewport {
+  overflow: visible;
+  mask-image: none;
+  scrollbar-gutter: auto;
+}
+
+/* shortcut: without anchor positioning the toast sits at the composer reserve and can touch a tall composer; fine until a browser we support lacks anchors. */
+.home-chat__toasts .ui-toast-viewport {
+  position: fixed;
+  bottom: calc(var(--home-composer-reserve, 168px) + var(--space-sm));
+}
+
+@supports (anchor-name: --home-composer) {
+  .home-chat__composer {
+    anchor-name: --home-composer;
+  }
+
+  .home-chat__toasts .ui-toast-viewport {
+    position-anchor: --home-composer;
+    bottom: calc(anchor(top) + var(--space-sm));
+  }
+}

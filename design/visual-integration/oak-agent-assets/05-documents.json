@@ -1,0 +1,47 @@
+{
+ "document-upload": {
+  "asset": "doc-stack"
+ },
+ "document-parsing": {
+  "asset": "document-parsing"
+ },
+ "document-selected": {
+  "asset": "highlighting"
+ },
+ "ocr-consent": {
+  "asset": "scanner"
+ },
+ "document-staged": {
+  "asset": "doc-stack",
+  "variantOf": "document-upload",
+  "reason": "R12: files chosen but not yet prepared are the upload panel one step later, so it keeps the upload's stack of document types."
+ },
+ "document-error": {
+  "asset": "doc-stack",
+  "variantOf": "document-upload",
+  "reason": "R12: a file that could not be prepared returns the visitor to the upload panel, so it keeps the upload's stack of document types."
+ },
+ "document-too-long": {
+  "asset": "highlighting",
+  "variantOf": "document-selected",
+  "reason": "R12: an over-limit selection is the same picker with too much ticked, so it keeps the picker's highlighting art."
+ },
+ "document-expired": {
+  "asset": "highlighting",
+  "variantOf": "document-selected",
+  "reason": "R12: an expired preview is the same picker after its reading time ends, so it keeps the picker's highlighting art."
+ },
+ "document-restored": {
+  "asset": "document-upload"
+ },
+ "ocr-too-many": {
+  "asset": "scanner",
+  "variantOf": "ocr-consent",
+  "reason": "R12: more pages than today's allowance is the same scan review with its action blocked, so it keeps the scanner art."
+ },
+ "ocr-paused": {
+  "asset": "scanner",
+  "variantOf": "ocr-consent",
+  "reason": "R12: paused scanning is the same scan review offering paste instead, so it keeps the scanner art."
+ }
+}

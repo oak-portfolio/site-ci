@@ -1,0 +1,504 @@
+[
+ {
+  "id": "kind-decisions",
+  "label": "Request kinds (ticket 60): Points decisions mode, Steve’s ownership.oak lines on the cited record and a link to its tradeoffs section (fixture lines)",
+  "kindDecisions": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack",
+      "Scanner, upload/API flow, product backend",
+      "Led the V1 to V2 product shift",
+      "Integrated LEAF Engine classification output"
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving",
+      "Neelofar contributed frontend and data-analytics work",
+      "Professor Ahmed Banafa advised the capstone"
+     ]
+    },
+    "sections": [
+     {
+      "anchor": "the-problem",
+      "title": "The problem"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What did Steve decide on EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend. Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e1",
+      "program": "root = Answer([pts])\npts = Points([\"claim-1\"], \"decisions\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "kind-decisions-off",
+  "label": "Request kinds (ticket 60): decisions constant off, the same question renders today’s Points list",
+  "kindDecisions": false,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack",
+      "Scanner, upload/API flow, product backend",
+      "Led the V1 to V2 product shift",
+      "Integrated LEAF Engine classification output"
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving",
+      "Neelofar contributed frontend and data-analytics work",
+      "Professor Ahmed Banafa advised the capstone"
+     ]
+    },
+    "sections": [
+     {
+      "anchor": "the-problem",
+      "title": "The problem"
+     },
+     {
+      "anchor": "the-tradeoffs-that-made-it-real",
+      "title": "The tradeoffs that made it real"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What did Steve decide on EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend. Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e2",
+      "program": "root = Answer([pts])\npts = Points([\"claim-1\"], \"decisions\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "kind-similar",
+  "label": "Request kinds (ticket 60): advice with the one cited case study beside it as Steve’s record",
+  "kindSimilar": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What should I settle before building an AI classifier interface?",
+     "taskKind": "advice"
+    },
+    {
+     "role": "assistant",
+     "taskKind": "advice",
+     "answer": {
+      "kind": "advice",
+      "scope": "supported-expertise",
+      "proposal": {
+       "recommendation": "Start with retrieval over the pages you already publish, and add one read-only tool once answers are cited and reviewed.",
+       "assumptions": [
+        "Your docs are public and change weekly.",
+        "Visitors mostly ask how-to questions."
+       ],
+       "tradeoffs": [
+        "Retrieval first is cheaper to evaluate, but it cannot take actions.",
+        "Tools first shows more capability, but every tool needs its own guardrails."
+       ],
+       "nextStep": "List the twenty questions visitors ask most and check which pages answer them."
+      },
+      "evidence": [
+       {
+        "id": "evidence-1",
+        "text": "Agentic Brain uses RAG, contextual codebase search, and direct source reads when the next step needs grounded project context.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-003",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       }
+      ],
+      "uncertainty": "This is general guidance from public work, not a review of your system.",
+      "contactOffer": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "kind-similar-off",
+  "label": "Request kinds (ticket 60): similar-build constant off, today’s advice card",
+  "kindSimilar": false,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What should I settle before building an AI classifier interface?",
+     "taskKind": "advice"
+    },
+    {
+     "role": "assistant",
+     "taskKind": "advice",
+     "answer": {
+      "kind": "advice",
+      "scope": "supported-expertise",
+      "proposal": {
+       "recommendation": "Start with retrieval over the pages you already publish, and add one read-only tool once answers are cited and reviewed.",
+       "assumptions": [
+        "Your docs are public and change weekly.",
+        "Visitors mostly ask how-to questions."
+       ],
+       "tradeoffs": [
+        "Retrieval first is cheaper to evaluate, but it cannot take actions.",
+        "Tools first shows more capability, but every tool needs its own guardrails."
+       ],
+       "nextStep": "List the twenty questions visitors ask most and check which pages answer them."
+      },
+      "evidence": [
+       {
+        "id": "evidence-1",
+        "text": "Agentic Brain uses RAG, contextual codebase search, and direct source reads when the next step needs grounded project context.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-003",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       }
+      ],
+      "uncertainty": "This is general guidance from public work, not a review of your system.",
+      "contactOffer": true
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "kind-unresolved",
+  "label": "Request kinds (ticket 60): a document answer lists the questions its quotes leave open, private turn only",
+  "kindUnresolved": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What does this proposal leave unresolved?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6100,
+       "endedAt": -5300
+      },
+      {
+       "id": "weigh-1",
+       "operation": "weigh",
+       "state": "done",
+       "startedAt": -5300,
+       "endedAt": -900
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -900,
+       "endedAt": -900
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -900,
+       "endedAt": -900
+      }
+     ],
+     "answer": {
+      "kind": "document",
+      "claims": [
+       {
+        "id": "document-claim-1",
+        "quote": "What we need: an AI classifier interface for support tickets.\n\nWho owns the retry policy when the model is unsure?",
+        "citation": {
+         "sourceId": "visitor-document:00000000-0000-4000-8000-000000000200:section-1:0-114",
+         "label": "Document 1",
+         "sectionId": "section-1",
+         "start": 0,
+         "end": 114
+        }
+       },
+       {
+        "id": "document-claim-3",
+        "quote": "What error rate is acceptable before a human reviews?",
+        "citation": {
+         "sourceId": "visitor-document:00000000-0000-4000-8000-000000000200:section-3:147-200",
+         "label": "Document 1",
+         "sectionId": "section-3",
+         "start": 147,
+         "end": 200
+        }
+       }
+      ],
+      "coverage": {
+       "scope": "selected-spans-only",
+       "offsetUnit": "utf16",
+       "includedUtf16": 167,
+       "availableUtf16": 200,
+       "omittedUtf16": 33,
+       "quotedUtf16": 167,
+       "extractionCompleteness": "complete"
+      }
+     }
+    }
+   ]
+  },
+  "documents": {
+   "select": [
+    1,
+    2,
+    3
+   ],
+   "use": true,
+   "docs": [
+    {
+     "kind": "text",
+     "name": "proposal.txt",
+     "text": "What we need: an AI classifier interface for support tickets.\n\nWho owns the retry policy when the model is unsure?\n\nThe launch is planned for Q3.\n\nWhat error rate is acceptable before a human reviews?"
+    }
+   ]
+  }
+ },
+ {
+  "id": "kind-unresolved-off",
+  "label": "Request kinds (ticket 60): unresolved constant off, today’s document card",
+  "kindUnresolved": false,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What does this proposal leave unresolved?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6100,
+       "endedAt": -5300
+      },
+      {
+       "id": "weigh-1",
+       "operation": "weigh",
+       "state": "done",
+       "startedAt": -5300,
+       "endedAt": -900
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -900,
+       "endedAt": -900
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -900,
+       "endedAt": -900
+      }
+     ],
+     "answer": {
+      "kind": "document",
+      "claims": [
+       {
+        "id": "document-claim-1",
+        "quote": "What we need: an AI classifier interface for support tickets.\n\nWho owns the retry policy when the model is unsure?",
+        "citation": {
+         "sourceId": "visitor-document:00000000-0000-4000-8000-000000000200:section-1:0-114",
+         "label": "Document 1",
+         "sectionId": "section-1",
+         "start": 0,
+         "end": 114
+        }
+       },
+       {
+        "id": "document-claim-3",
+        "quote": "What error rate is acceptable before a human reviews?",
+        "citation": {
+         "sourceId": "visitor-document:00000000-0000-4000-8000-000000000200:section-3:147-200",
+         "label": "Document 1",
+         "sectionId": "section-3",
+         "start": 147,
+         "end": 200
+        }
+       }
+      ],
+      "coverage": {
+       "scope": "selected-spans-only",
+       "offsetUnit": "utf16",
+       "includedUtf16": 167,
+       "availableUtf16": 200,
+       "omittedUtf16": 33,
+       "quotedUtf16": 167,
+       "extractionCompleteness": "complete"
+      }
+     }
+    }
+   ]
+  },
+  "documents": {
+   "select": [
+    1,
+    2,
+    3
+   ],
+   "use": true,
+   "docs": [
+    {
+     "kind": "text",
+     "name": "proposal.txt",
+     "text": "What we need: an AI classifier interface for support tickets.\n\nWho owns the retry policy when the model is unsure?\n\nThe launch is planned for Q3.\n\nWhat error rate is acceptable before a human reviews?"
+    }
+   ]
+  }
+ }
+]

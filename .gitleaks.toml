@@ -1,0 +1,51 @@
+[extend]
+useDefault = true
+
+[[rules]]
+id = "openrouter-api-key"
+description = "OpenRouter API key"
+regex = '''sk-or-v1-[a-f0-9]{64}'''
+keywords = ["sk-or-v1-"]
+
+[[rules]]
+id = "resend-api-key"
+description = "Resend API key"
+regex = '''\bre_[A-Za-z0-9_]{20,}'''
+keywords = ["re_"]
+
+[[rules]]
+id = "linear-api-key"
+description = "Linear API key"
+regex = '''lin_api_[A-Za-z0-9]{30,}'''
+keywords = ["lin_api_"]
+
+[[rules]]
+id = "google-ai-key-aq"
+description = "Google AI or Vertex API key, AQ. format"
+regex = '''\bAQ\.[A-Za-z0-9_\-\.]{40,}'''
+keywords = ["aq."]
+
+[[rules]]
+id = "deepgram-api-key"
+description = "Deepgram API key next to its provider name"
+regex = '''(?i)deepgram[_ -]?(api[_ -]?)?key\b[\s"'`:=]{0,8}([a-f0-9]{40})\b'''
+secretGroup = 2
+keywords = ["deepgram"]
+
+[[rules]]
+id = "exa-api-key"
+description = "Exa API key next to its provider name"
+regex = '''(?i)\bexa[_ -]?(api[_ -]?)?key\b[\s"'`:=]{0,8}([0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12})\b'''
+secretGroup = 2
+keywords = ["exa"]
+
+[[allowlists]]
+# tests/ stays allowlisted: without it gitleaks ran 10+ minutes at full CPU on the multi-MB fixture JSON (2026-10-15),
+# which would stall every test commit. Real keys never belong in fixtures; workers read them from secrets.
+description = "generated and historical trees"
+paths = ['''^artifacts/''', '''^missions/''', '''^graphify-out/''', '''^dist/''', '''^node_modules/''', '''^knowledge/releases/''', '''^src/data/dev/''', '''^\.serena/''', '''(^|/)tests?/''']
+
+[[allowlists]]
+description = "content hashes, commit ids, storage names and design file keys, not secrets"
+regexTarget = "line"
+regexes = ['''(?i)sha-?256''', '''(?i)\bcommit\b''', '''\bfileKey\b''', '''\bSTORE_KEY\b''', '''(?i)\bdigest\b''']

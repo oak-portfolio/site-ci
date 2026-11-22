@@ -1,0 +1,134 @@
+/* Ticket 58 (Q19 B, O39): the answer ornament and sheet depth, behind oakAnswerOrnament. theme.css imports it after oakAgent.css. */
+
+/* One frosted capsule under the answer being read: the only glass on the turn, so the answer above it stays solid.
+   It stays in flow, never sticky: pinned to the window it would ride over body copy on a long answer (DESIGN.md glass rule). */
+.oak-ornament {
+  /* The shared --glass-fill (alpha 0.56) leaves the labels at 4.28:1 over the brightest text that can sit behind the
+     capsule (at 390 the judge finds the dev gallery caption there); 0.6 is the least fill that clears 4.5:1 (QJ11,
+     root ruling 13). Same tone as --glass-fill, which other glass shares and stays 0.56. */
+  --oak-ornament-fill: rgba(18, 18, 18, 0.6);
+  display: inline-flex;
+  /* At 200% text the three actions outgrow a 390 column; they wrap inside the capsule instead of bleeding off its edges. */
+  flex-wrap: wrap;
+  justify-content: center;
+  max-inline-size: 100%;
+  align-self: center;
+  align-items: center;
+  gap: var(--space-micro);
+  margin-block: calc(var(--space-xs) * -1) var(--space-xs);
+  padding: var(--space-micro);
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--radius-pill);
+  background: var(--glass-sheen), var(--oak-ornament-fill);
+  box-shadow: var(--shadow-glass);
+  backdrop-filter: var(--glass-blur);
+}
+
+.oak-ornament__action {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-micro);
+  min-height: var(--space-gutter);
+  padding-inline: var(--space-sm);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  color: var(--text);
+  font: inherit;
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  white-space: nowrap;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color var(--motion-quick) var(--motion-standard);
+}
+
+.oak-ornament__action:hover {
+  background: rgba(255, 255, 255, 0.08);
+}
+
+/* The lazy ornament's placeholder: the capsule's own box and labels, not drawn. */
+.oak-ornament[data-ornament-ghost] {
+  visibility: hidden;
+}
+
+.oak-ornament__action:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+/* The ornamented turn's own Copy steps aside, so Copy exists once; every other row keeps it. The placeholder's turn does
+   too, so the footer keeps its wrap when the ornament lands. */
+[data-message-id]:has([data-ornament-ghost]) .oak-turn__actions [data-answer-copy],
+[data-ornament] .oak-turn__actions [data-answer-copy] {
+  display: none;
+}
+
+@media (max-width: 559px) {
+  /* Linux metrics need a few px more than the 328px column at 390; the end paddings keep the arc. */
+  .oak-ornament__action {
+    padding-inline: var(--space-micro);
+  }
+
+  .oak-ornament__action:first-child {
+    padding-inline-start: var(--space-xs);
+  }
+
+  .oak-ornament__action:last-child {
+    padding-inline-end: var(--space-xs);
+  }
+}
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .oak-ornament {
+    background: var(--glass-fill-solid);
+    backdrop-filter: none;
+  }
+}
+
+/* Depth: while the Sources sheet is open the conversation behind it steps back and dims (scale about 0.98). */
+.oak-workspace__body[data-receded] {
+  transform: scale(0.98);
+  transform-origin: 50% 0;
+  opacity: 0.6;
+  transition: transform var(--motion-mode) var(--motion-standard), opacity var(--motion-mode) var(--motion-standard);
+}
+
+/* The chip's popover grows from the chip's own corner instead of rising into place. */
+.ui-popover__popup.oak-source-popover[data-grow] {
+  padding: var(--oak-pad-nest);
+  border-radius: var(--oak-r-frame);
+  transform-origin: var(--transform-origin);
+  transition: opacity var(--motion-quick) var(--motion-standard), transform var(--motion-quick) var(--motion-standard);
+}
+
+.ui-popover__popup.oak-source-popover[data-grow] .oak-source-popover__cover {
+  width: calc(100% - 2 * var(--space-xs));
+  margin: var(--space-xs) var(--space-xs) var(--space-sm);
+  border-radius: var(--oak-r-row);
+}
+
+.ui-popover__popup.oak-source-popover[data-grow]:is([data-starting-style], [data-ending-style]) {
+  transform: scale(0.92);
+}
+
+.oak-source-popover__record {
+  margin: 0;
+  padding: var(--space-micro) var(--space-xs) var(--space-xs);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-workspace__body[data-receded],
+  .ui-popover__popup.oak-source-popover[data-grow],
+  .ui-popover__popup.oak-source-popover[data-grow]:is([data-starting-style], [data-ending-style]) {
+    transform: none;
+    transition: opacity var(--motion-quick) var(--motion-standard);
+  }
+
+  .oak-ornament__action {
+    transition: none;
+  }
+}

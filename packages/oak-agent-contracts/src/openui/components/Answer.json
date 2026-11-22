@@ -1,0 +1,20 @@
+{
+  "name": "Answer",
+  "claims": null,
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "planned": false,
+  "structured": false,
+  "structure": false,
+  "judgeView": {
+    "kind": "walk",
+    "prop": "children"
+  },
+  "taughtPresets": []
+}

@@ -1,0 +1,272 @@
+/* R19 (Oak, review v16, third flag; Mobbin ChatGPT citations, Perplexity artifacts; HIG clear glass over media): a source
+   is a citation card in one frame. Kicker (icon tile, site, kind), the claim as a pull quote, then the page as a picture
+   nested one --oak-pad-nest in with the card radius (concentric), its title on a scrim and a glass open control. */
+.oak-openui-source {
+  display: grid;
+  gap: var(--space-md);
+  padding: var(--oak-pad-nest);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+}
+
+.oak-openui .oak-openui-source__kicker {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: 0 var(--space-xs);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-openui-source__kind {
+  margin-inline-start: auto;
+  color: var(--quiet);
+}
+
+/* R21 (Oak, review v18: "too much text, they look the same hierarchy"): the page title on the picture is the one strong
+   line; the claim is quieter body text under the site line, so the card reads title, claim, site. */
+.oak-openui .oak-openui-source__excerpt {
+  margin: 0;
+  padding: 0 var(--space-xs);
+  color: var(--muted);
+  font-family: var(--font-body);
+  /* R22 live: the claim is the answer's prose size, never louder than the written answer above it. */
+  font-size: var(--text-ui-md);
+  font-weight: 400;
+  line-height: var(--leading-body);
+}
+
+.oak-openui-source__page {
+  position: relative;
+  /* R22: the picture is its own stack, so the cover and scrim sit under the title without the title being positioned, and
+     the title link's target (below) can cover the whole picture, the open arrow included. */
+  isolation: isolate;
+  display: flex;
+  align-items: flex-end;
+  min-height: calc(var(--space-lg) * 4);
+  overflow: hidden;
+  padding: var(--space-md);
+  border-radius: var(--oak-r-card);
+  background: var(--oak-well);
+}
+
+/* No cover: a quiet panel as tall as its open control plus one --space-sm round it, so the control sits concentric. */
+.oak-openui-source[data-face="tile"] .oak-openui-source__title {
+  max-width: none;
+}
+
+.oak-openui-source[data-face="tile"] .oak-openui-source__page {
+  min-height: 0;
+  align-items: center;
+  gap: var(--space-sm);
+  padding: var(--oak-pad-nest) calc(var(--space-gutter) + var(--space-lg)) var(--oak-pad-nest) var(--oak-pad-nest);
+}
+
+/* R19 visual review: no cover reads as a page, not a button: a 48px site tile, then the title over its host. */
+.oak-openui-source__face-tile {
+  display: none;
+}
+
+.oak-openui-source[data-face="tile"] .oak-openui-source__face-tile {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: calc(var(--space-lg) + var(--space-xs));
+  height: calc(var(--space-lg) + var(--space-xs));
+  border-radius: var(--oak-r-row);
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  color: var(--muted);
+}
+
+.oak-openui-source__face-tile img {
+  width: var(--space-md);
+  height: var(--space-md);
+}
+
+.oak-openui-source__face-text {
+  display: grid;
+  gap: var(--space-micro);
+  min-width: 0;
+}
+
+/* R22 code review: on a picture the text column spans the picture, so the title's 50% is half the picture, not half its
+   own one-line width (the same shrink-wrap made R19's 42% stack three lines). */
+.oak-openui-source[data-face="image"] .oak-openui-source__face-text {
+  flex: 1;
+}
+
+.oak-openui-source__host {
+  display: none;
+}
+
+.oak-openui-source[data-face="tile"] .oak-openui-source__host {
+  display: block;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-openui-source__cover {
+  position: absolute;
+  z-index: var(--z-under);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 30%;
+}
+
+/* HIG: clear glass over media needs a dimming layer; the scrim also carries the title. */
+.oak-openui-source__scrim {
+  position: absolute;
+  z-index: var(--z-under);
+  inset: 0;
+  border-radius: inherit;
+  /* R19 visual review: the title never runs over the picture's subject; dark at the foot and along the title's side. */
+  background: linear-gradient(180deg, rgb(0 0 0 / 0) 35%, rgb(0 0 0 / 0.88) 100%), linear-gradient(90deg, rgb(0 0 0 / 0.55), transparent 65%);
+}
+
+/* The open control is the card's one arrow; the title's own external mark would repeat it. */
+.oak-openui-source__title .oak-openui-card__external {
+  display: none;
+}
+
+/* Ticket 15 (the explored media backdrop): the picture shows whole, never cropped, over a blurred, darkened copy of itself
+   that fills the rest of the Source frame at its documented 2:1 ratio (DESIGN.md:482). The scrim still carries the title. */
+.oak-openui-source__page[data-backdrop] {
+  aspect-ratio: 2 / 1;
+}
+
+.oak-openui-source__backdrop {
+  position: absolute;
+  z-index: var(--z-under);
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: scale(1.12);
+  filter: blur(18px) saturate(1.1) brightness(0.65);
+}
+
+.oak-openui-source__page[data-backdrop] .oak-openui-source__cover {
+  object-fit: contain;
+  object-position: 50% 50%;
+}
+
+.oak-openui .oak-openui-source__title {
+  /* R19 visual review: on a picture the title stays in the darkened left part, clear of the picture's subject.
+     R22 (Oak, live cards/10-numbers: "too many big text"): a page title stacked three heading lines; it now takes half
+     the picture, or the whole of a narrow one, and shows two lines at most (screen readers still read the full title). */
+  max-width: max(50%, min(100%, calc(var(--space-lg) * 8)));
+  font-size: var(--text-body-md);
+  line-height: var(--leading-body);
+}
+
+/* The clamp sits on the link (or on the title when an unverified source has none); the link's whole-picture target is
+   anchored to the picture, outside the clip. A clipped two-line pill would round off its first letters, so the clamped
+   link is square; its focus ring is drawn on the picture it opens. */
+.oak-openui .oak-openui-source__title a,
+.oak-openui .oak-openui-source__title:not(:has(a)) {
+  display: -webkit-box;
+  overflow: hidden;
+  border-radius: 0;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.oak-openui .oak-openui-source__title a:focus-visible {
+  outline: none;
+}
+
+.oak-openui-source__page:has(.oak-openui-source__title a:focus-visible) {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+/* The title link covers the page, so the whole picture is one target (R22: it measured from the title before, so the open
+   arrow and most of the picture did nothing). */
+.oak-openui-source__title a::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+}
+
+.oak-openui-source__page:has(a:hover) .oak-openui-source__cover {
+  transform: scale(1.02);
+}
+
+.oak-openui-source__cover {
+  transition: transform var(--motion-mode) var(--motion-standard);
+}
+
+.oak-openui-source__open {
+  position: absolute;
+  right: var(--space-sm);
+  bottom: var(--space-sm);
+  display: grid;
+  place-items: center;
+  width: var(--space-lg);
+  height: var(--space-lg);
+  border-radius: var(--radius-pill);
+  background: var(--glass-fill);
+  box-shadow: var(--shadow-glass);
+  backdrop-filter: var(--glass-blur);
+  color: var(--text);
+  pointer-events: none;
+}
+
+.oak-openui-source[data-face="tile"] .oak-openui-source__open {
+  top: 50%;
+  right: var(--oak-pad-nest);
+  bottom: auto;
+  translate: 0 -50%;
+}
+
+/* Ticket 57 (R11-C4): a white icon on a capsule whose corners run concentric with the page's, the page radius less the inset. */
+.oak-openui-source__open[data-button] {
+  right: var(--space-xs);
+  bottom: var(--space-xs);
+  width: calc(var(--space-lg) + var(--space-md));
+  height: var(--space-lg);
+  border-radius: calc(var(--oak-r-card) - var(--space-xs));
+  background: var(--glass-fill-overlay, var(--glass-fill));
+  color: var(--text);
+}
+
+@media (forced-colors: active) {
+  .oak-openui-source__open[data-button] {
+    border: 1px solid CanvasText;
+    color: CanvasText;
+  }
+}
+
+.oak-openui-source__tile {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: var(--space-md);
+  aspect-ratio: 1;
+  overflow: hidden;
+  border-radius: var(--radius-pill);
+  background: var(--oak-well);
+}
+
+.oak-openui-source__tile img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.oak-openui .oak-openui-source__excerpt {
+  margin: 0;
+  color: var(--muted);
+  line-height: var(--leading-body);
+}
+
+.oak-openui-source__excerpt[data-one-source] .oak-source-chip {
+  display: none;
+}

@@ -1,0 +1,92 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import FeatureCards from "@/components/home/blocks/FeatureCards.astro";
+import WorkspaceTable from "@/components/home/blocks/WorkspaceTable.astro";
+import { OakChatFirstHome, OakHomeThread } from "@/components/home/OakChatFirstHome";
+import { OakHomeComposer } from "@/components/home/OakHomeComposer";
+import HomeHero from "@/components/home/sections/HomeHero.astro";
+import HomeProof from "@/components/home/sections/HomeProof.astro";
+import HomeWorkspace from "@/components/home/sections/HomeWorkspace.astro";
+import WorkPreviewSection from "@/components/work/WorkPreviewSection.astro";
+import { careerTimelineItems } from "@/data/careerTimeline";
+import { oakChatFirstHomeOn } from "@/lib/oakFlags/chatFirstHome";
+import { getWorkEntries } from "@/lib/workContent";
+import { getWorkPreviewCards } from "@/lib/workPreviews";
+import type { WorkPreviewCard } from "@/lib/workPreviews";
+import homeChatCss from "@/styles/home-chat.css?url";
+
+const chatForced = oakChatFirstHomeOn();
+const chatFirst = chatForced || import.meta.env.DEV;
+const workEntries = await getWorkEntries();
+const latestCareerItem = careerTimelineItems[0];
+const latestCareerPreviewCard: WorkPreviewCard = {
+  kind: "staged",
+  title: latestCareerItem.place,
+  description: latestCareerItem.title,
+  primaryTag: latestCareerItem.contexts[0].title,
+  dateLabel: latestCareerItem.label,
+  href: `/work#${latestCareerItem.id}`,
+  image: latestCareerItem.media.fallbackSrc,
+  imageAlt: latestCareerItem.media.alt,
+  disabled: false,
+};
+const homeWorkPreviewCards = [
+  latestCareerPreviewCard,
+  ...getWorkPreviewCards(workEntries, { includeStaged: true }),
+];
+---
+
+<BaseLayout
+  title="Steve Oak | Applied AI Systems + Design Engineering"
+  description="Bay Area AI/design engineer building applied agentic AI systems, RAG/tool workflows, evaluation loops, and product-quality AI surfaces."
+  preloadImages={[
+    {
+      href: "/assets/generated/hero/oak-hero-bg-1440.avif",
+      type: "image/avif",
+      media: "(min-width: 1025px)",
+      fetchpriority: "high",
+    },
+    {
+      href: "/assets/generated/hero/oak-hero-bg-tablet-1024.avif",
+      type: "image/avif",
+      media: "(min-width: 481px) and (max-width: 1024px)",
+      fetchpriority: "high",
+    },
+    {
+      href: "/assets/generated/hero/oak-hero-bg-mobile-768.avif",
+      type: "image/avif",
+      media: "(max-width: 480px)",
+      fetchpriority: "high",
+    },
+  ]}
+>
+  {chatFirst && <link rel="stylesheet" href={homeChatCss} />}
+  {chatFirst && <script is:inline define:vars={{ chatForced }}>if (chatForced || new URLSearchParams(location.search).get("oakChatFirstHome") === "1") document.documentElement.dataset.oakHome = (() => { try { return localStorage.getItem("oak.home.mode") === "classic" ? "classic" : "chat"; } catch { return "chat"; } })();</script>}
+  {chatFirst && <div class="home-chat__top" data-oak-chat-home><OakChatFirstHome client:load /></div>}
+
+  <HomeHero alt="Steve Oak welcoming" id="hero-title">
+    <FeatureCards aria-label="Feature highlights" alt="" />
+  </HomeHero>
+
+  <HomeProof id="standard-heading">Here's the bet I am making</HomeProof>
+
+  <WorkPreviewSection
+    id="work"
+    title="Work that shaped my direction"
+    items={homeWorkPreviewCards}
+    viewAllHref="/work"
+    viewAllLabel="View all"
+    headingId="platform-heading"
+    className="section-block platform-block"
+    width="1200"
+    height="630"
+  />
+
+  <HomeWorkspace id="workspace-heading">
+    A few things I keep coming back to
+    <WorkspaceTable slot="table" aria-label="Recurring interests and practices" alt="" />
+  </HomeWorkspace>
+
+  {chatFirst && <OakHomeThread client:load />}
+  {chatFirst && <OakHomeComposer client:load />}
+</BaseLayout>

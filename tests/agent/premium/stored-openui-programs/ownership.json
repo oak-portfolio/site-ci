@@ -1,0 +1,26 @@
+[
+ {
+  "id": "answer-openui-ownership",
+  "question": "Who did what on EcoSmartLoop?",
+  "program": "root = Answer([own])\nown = Ownership(\"claim-1\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Steve owned the product side of EcoSmartLoop: the requirements, the mobile app and the dataset.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-001:passage-003",
+       "sectionId": "work:ecosmartloop:section-001",
+       "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

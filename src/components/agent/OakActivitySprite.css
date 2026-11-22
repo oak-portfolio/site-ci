@@ -1,0 +1,88 @@
+.oak-activity-sprite {
+  display: inline-block;
+  flex: none;
+  vertical-align: middle;
+}
+
+.oak-activity-sprite__frame {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+}
+
+.oak-activity-sprite__sheet {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.oak-activity-sprite[data-layout="animated"] .oak-activity-sprite__sheet {
+  width: 200%;
+  height: 200%;
+}
+
+.oak-activity-sprite__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: fill;
+  user-select: none;
+}
+
+.oak-activity-sprite[data-layout="single"] .oak-activity-sprite__image {
+  object-fit: contain;
+}
+
+.oak-activity-sprite[data-size="medium"] .oak-activity-sprite__frame {
+  width: 48px;
+  height: 48px;
+}
+
+.oak-activity-sprite[data-size="badge"] .oak-activity-sprite__frame {
+  width: 24px;
+  height: 24px;
+}
+
+.oak-activity-sprite[data-size="large"] .oak-activity-sprite__frame {
+  width: 56px;
+  height: 56px;
+}
+
+/* A hero-sized pose for a whole-window notice. */
+.oak-activity-sprite[data-size="hero"] .oak-activity-sprite__frame {
+  width: 132px;
+  height: 88px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .oak-activity-sprite[data-layout="animated"] .oak-activity-sprite__sheet {
+    animation: oak-activity-sprite-frames calc(var(--motion-page) * 4) steps(1, end) infinite;
+  }
+}
+
+@keyframes oak-activity-sprite-frames {
+  0%, 100% { transform: translate(0, 0); }
+  25% { transform: translate(-50%, 0); }
+  50% { transform: translate(0, -50%); }
+  75% { transform: translate(-50%, -50%); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-activity-sprite,
+  .oak-activity-sprite__sheet,
+  .oak-activity-sprite__image {
+    animation: none;
+    transition: none;
+  }
+
+  .oak-activity-sprite[data-layout="animated"] .oak-activity-sprite__sheet {
+    width: 100%;
+    height: 100%;
+    transform: none;
+  }
+}

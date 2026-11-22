@@ -1,0 +1,22 @@
+{
+ "answer-openui-project-one-claim": {
+  "iconOnly": true,
+  "reason": "178: a one-claim work answer is its case study's Project card, which wears that page's own cover, so no pose is added."
+ },
+ "answer-openui-project-multi-cite": {
+  "iconOnly": true,
+  "reason": "211: a claim about several case studies prints as the plain list with no project card, so there is no page cover to wear and no pose is added."
+ },
+ "answer-openui-project-two-pages": {
+  "iconOnly": true,
+  "reason": "227: a claim citing two pages prints as the plain list with no project card, so there is no page cover to wear and no pose is added."
+ },
+ "answer-openui-project-multi-cite-counted": {
+  "iconOnly": true,
+  "reason": "227: the multi-cite state with the counted Framing line; still the plain list with no project card, so no pose is added."
+ },
+ "answer-openui-project-two-pages-counted": {
+  "iconOnly": true,
+  "reason": "227 (counted Framing line): a claim citing two pages prints as the plain list with no project card, so there is no page cover to wear and no pose is added."
+ }
+}

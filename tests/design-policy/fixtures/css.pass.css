@@ -1,0 +1,7 @@
+.fixture {
+  /* A URL fragment is data, not a color. */
+  background: url("/assets/example.svg#part") rgba(255, 255, 255, 0.12);
+  color: var(--text);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+@media (max-width: 640px) { .fixture { width: min(100%, calc(760px - 32px)); } }

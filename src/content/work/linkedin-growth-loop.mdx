@@ -1,0 +1,803 @@
+---
+title: "LinkedIn Growth Loop: High-Autonomy Agent Teams That Self-Improve"
+projectName: "LinkedIn Growth Loop"
+eyebrow: "Applied AI case study"
+dek: "My first real success with high-autonomy agent teams: a bounded relationship workflow where agents started running, evaluating, researching, and improving without me operating every step."
+description: "An agent system for professional relationship workflows, combining OpenClaw orchestration, Hermes research, browser recovery, and trace-based evaluation."
+role: "Agent workflow owner / AI product engineer"
+timeline: "February to April 2026"
+stack:
+  - "TypeScript"
+  - "OpenClaw"
+  - "Hermes"
+  - "Telegram Bot API"
+  - "Playwright"
+  - "Patchright"
+  - "Convex"
+  - "Thompson sampling"
+  - "Gemini Flash-class model"
+datePublished: "2026-04-20"
+dateUpdated: "2026-04-20"
+featured: false
+draft: false
+order: 2
+card:
+  title: "LinkedIn Growth Loop"
+  category: "High-autonomy agents, Agent orchestration, Browser control, Trace-based evals"
+  image: "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png"
+  imageAlt: "Non-human loop diagram for LinkedIn Growth Loop showing OpenClaw execution, Hermes research, Telegram reports, Convex state, and Oak override"
+  badge: "Self-improving agents"
+hero:
+  image: "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png"
+  imageAlt: "Non-human loop diagram for LinkedIn Growth Loop showing OpenClaw execution, Hermes research, Telegram reports, Convex state, and Oak override"
+  caption: "Execution, research, reports, memory, and override had to become separate responsibilities before the team could run without daily hand-holding."
+social:
+  image: "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover-og.png"
+  imageAlt: "LinkedIn Growth Loop non-human-loop preview with OpenClaw, Hermes, Telegram, Convex, and Oak override"
+  width: 1200
+  height: 630
+problem:
+  summary: "LinkedIn Growth Loop is a bounded professional relationship workflow used to test whether a small agent team can run, evaluate, research, report, and improve routine work without Oak operating each daily step."
+  stakes:
+    - "The first useful loop was small: a CRM and LinkedIn Navigator list, daily targets, personalized notes, send-or-skip decisions, and outcome tracking."
+    - "The work later widened into two agent groups: one for people and connection flow, and one for public interaction, audience context, cooldowns, and response signals."
+    - "The hard part was making browser steps, model judgment, cost limits, readable reports, learning history, and improvement rules work together."
+    - "HyperSkalers remains story context only: one in-house relationship-building need helped shape the question; client results, revenue, and named enterprise deployment stay out of scope."
+    - "The public claim stays scoped: bounded routine runs can move away from daily human operation while sensitive changes retain approval, rollback, redaction, and Oak override paths."
+ownership:
+  oak:
+    - "Designed and implemented the bounded relationship workflow, starting from CRM and LinkedIn Navigator target lists and expanding into connector and feed-engagement agent lanes."
+    - "Built the Telegram control room so run summaries, metrics, run details, and operator controls stayed readable instead of becoming another pile of logs."
+    - "Paired OpenClaw as the worker/orchestrator with Hermes as the research and improvement advisor so execution, research, evaluation, and improvement could work together."
+    - "Designed cost-aware browser-control paths with programmatic SOPs, page calibration, recorder flows, and selective model calls for judgment-heavy steps."
+  collaborators:
+    - "No project collaborators are confirmed for this internal build."
+    - "External platforms and tools include LinkedIn, Telegram Bot API, Convex, Playwright/Patchright, OpenClaw, Hermes, model providers, and related agent frameworks. Avoid describing them as sponsors, partners, endorsers, or proof of platform approval."
+  openQuestions:
+    - "Which exact outcome metrics can become public, resume-only, interview-only, or forbidden?"
+    - "Which redacted Telegram screenshots are approved as proof?"
+    - "Which HyperSkalers or client-service details are approved beyond generalized story context?"
+systemMap:
+  - label: "Daily list"
+    description: "CRM and LinkedIn Navigator sources produced a bounded list of people to inspect, score, and act on."
+  - label: "Networking Connector"
+    description: "Handles target discovery, scoring, queueing, connection-note generation, send-or-skip decisions, and follow-up state."
+  - label: "Feed Engager"
+    description: "Reads relevant feed and target-audience posts, scores fit, respects cooldowns, checks duplicates, and records interaction outcomes."
+  - label: "OpenClaw orchestrator"
+    description: "Runs the agent lanes, coordinates reporting, and owns the improvement path around observed outcomes."
+  - label: "Hermes research advisor"
+    description: "Collects outside research, platform drift, memory context, and risk signals before future changes are proposed."
+  - label: "Telegram control room"
+    description: "Shows human-readable summaries first, then keeps run details, metrics, proof trail, and controls available underneath."
+  - label: "Learning history"
+    description: "Preserves accepted, pending, failed, skipped, response, run-note, good-example, and proposed-change signals for future review."
+  - label: "Cost-aware browser control"
+    description: "Uses programmatic SOPs, page calibration, recorder flows, and minimal-intelligence recovery before paying for heavier model judgment."
+metrics:
+  - label: "Run evaluation"
+    value: "Target + action + health"
+    status: "verified"
+    note: "The public system story identifies target fit, action success, skip/failure state, response signal, browser health, and proposed-change records as evaluation inputs."
+  - label: "Traceable reports"
+    value: "Telegram control room"
+    status: "verified"
+    note: "The Telegram report examples show the intended operator pattern: a fast human summary first, with detailed structured state available underneath."
+  - label: "Learning history"
+    value: "Internal response signals"
+    status: "needs-oak"
+    note: "The system preserves response, skip, failure, run-note, good-example, and proposed-change signals. Public metrics are summarized only when supported by visible aggregate evidence."
+  - label: "Self-improvement proposals"
+    value: "OpenClaw + Hermes"
+    status: "needs-oak"
+    note: "Use as guarded self-improvement: Hermes supplies research and memory context, while OpenClaw turns run evidence into proposed changes that still respect approval and rollback paths."
+  - label: "Human operation reduction"
+    value: "Routine daily operation moved into the team"
+    status: "needs-oak"
+    note: "Safe public wording is bounded: routine runs moved away from daily manual operation, while override, approval, rollback, and sensitive-change gates remained present."
+  - label: "Cost optimization"
+    value: "Browser control + selective model calls"
+    status: "needs-oak"
+    note: "The architecture supports cost-aware operation through known browser steps, recovery paths, and selective model calls. Exact cost savings require a separate measured export before public use."
+evidenceStatus:
+  publishMode: "publish-ready"
+  summary: "The public story explains the system architecture, operator controls, self-improvement loop, Bay Area hiring fit, and source links."
+  checks:
+    - "Keep the page noindex until Oak approves public metric disclosure, redaction, and launch/indexing."
+    - "Do not publish exact private metrics, rates, schedules, caps, profile data, comments, notes, Telegram IDs, tokens, Convex deployment details, or raw ledgers."
+    - "Do not claim LinkedIn approval, partnership, official API authorization, guaranteed growth, guaranteed referrals, named client deployment, public SaaS status, or unrestricted autonomy."
+    - "Frame Bay Area relevance as hiring and collaboration context, not LocalBusiness, address, phone, map, reviews, service area, or near-me positioning."
+    - "Complete security and redaction cleanup before any repo excerpts, screenshots, metrics, or code snippets are shared beyond the approved draft."
+artifacts:
+  - label: "AI Agent Reality image"
+    status: "verified"
+    note: "Intro image frames the operating-layer problem: one-off task completion was not enough without memory, recovery, reports, evaluation, and a next decision."
+  - label: "LinkedIn Networking image"
+    status: "verified"
+    note: "Networking image supports the professional-relationship test surface: fit, context, tone, follow-up, and response signals."
+  - label: "Daily loop screenshot grid"
+    status: "verified"
+    note: "Two daily-loop screenshots show target review and response tracking, which made the first workflow small enough to evaluate."
+  - label: "More Context Survived Each Run"
+    status: "verified"
+    note: "Qualitative chart explains how reports, approval, memory, browser checks, rules, research, and proposals gave later runs more context."
+  - label: "Relationship-loop visual"
+    status: "verified"
+    note: "Relationship-loop visual shows the small repeatable workflow before the broader agent-team architecture."
+  - label: "Agent-team responsibility map"
+    status: "verified"
+    note: "Excalidraw diagram explains the team shape: orchestrator, people-work agents, public-interaction agents, validators, reports, memory, research, and Oak override."
+  - label: "Telegram control room"
+    status: "verified"
+    note: "Six optimized Telegram screenshots show the report glance, LinkedIn worker formats, Hermes advisor format, and machine-detail accordion views."
+  - label: "Browser-control calibration"
+    status: "verified"
+    note: "Browser-control visual shows the split between cheap known steps, recovery paths, and model judgment."
+  - label: "OpenClaw vs Hermes visual"
+    status: "verified"
+    note: "Comparison visual supports the harness-choice section and the OpenClaw runner plus Hermes advisor split."
+  - label: "First-success animated WebP"
+    status: "verified"
+    note: "Source clip was converted to a compact source-FPS animated WebP for the first-success beat."
+  - label: "Reviewer-shift animated WebP"
+    status: "verified"
+    note: "Source clip was converted to a compact source-FPS animated WebP for the closing reflection."
+  - label: "What The Report Had To Separate"
+    status: "verified"
+    note: "Donut chart groups the evaluation surface into reader-friendly areas without exposing private outcome counts, rates, schedules, or run totals."
+  - label: "Evaluation matrix"
+    status: "verified"
+    note: "Visible OutcomeTable explains target quality, action success, response signals, duplicate risk, run health, proposal decisions, and intervention count without exposing private numbers."
+  - label: "Improvement-loop diagram"
+    status: "verified"
+    note: "Approved Excalidraw diagram explains how a report became input for the next run."
+  - label: "Self-improvement report"
+    status: "verified"
+    note: "Self-improvement report visual shows how a proposed change stayed tied to evidence, risk, and next action."
+  - label: "Duplicate-risk guardrail diagram"
+    status: "verified"
+    note: "Excalidraw diagram explains the duplicate-risk rule: if the agent cannot prove the object, it stops."
+  - label: "Where Autonomy Was Allowed"
+    status: "verified"
+    note: "Radar chart shows the qualitative boundary between routine work, approval paths, recovery, and Oak override."
+  - label: "Metrics decision"
+    status: "needs-oak"
+    note: "Rounded counts, acceptance rates, intervention reduction, run frequency, cost deltas, and outcome snapshots require Oak approval before public use."
+jobMappings:
+  - roleFamily: "Agentic AI / AI Platform / LLMOps"
+    use: "Lead with long-running agents, state, observability, eval loops, bounded autonomy, cost control, browser resilience, and rollback-aware improvement."
+  - roleFamily: "AI Product Engineer / Custom Agents"
+    use: "Show how recurring workflows, operator UX, target scoring, reporting, and agent decisions become inspectable product surfaces."
+  - roleFamily: "Applied AI Engineer"
+    use: "Use for tool-using agents, feedback loops, model/provider routing, browser automation, outcome ledgers, and production-quality guardrails."
+  - roleFamily: "Design Engineer / AI UX"
+    use: "Use for Telegram as the operator experience: readable summary first, traceable detail underneath."
+  - roleFamily: "Growth / marketing AI systems"
+    use: "Use as support only. Frame as controlled targeted networking infrastructure with approval gates and relationship-quality constraints."
+  - roleFamily: "Bay Area AI engineering teams"
+    use: "Use as hiring and collaboration proof for teams evaluating agent workflows, internal tools, browser agents, LLMOps, and AI product surfaces."
+tbdQueue:
+  - "Which metrics can become public, resume-only, interview-only, or forbidden?"
+  - "Which Telegram and browser-control screenshots are approved for public use after final redaction?"
+  - "Has security and redaction cleanup been completed before screenshots, repo excerpts, metrics, or code snippets are shared?"
+  - "Which HyperSkalers origin details are approved beyond generalized story context?"
+  - "Should Hermes, Convex, and OpenClaw remain named publicly on the final indexable version?"
+  - "Can cost savings be measured, or should cost remain an architectural decision instead of a metric claim?"
+  - "What final launch gate will move this page from noindex-draft to publish-ready?"
+seo:
+  title: "LinkedIn Growth Loop Agent Teams | Steve Oak"
+  description: "Steve Oak's LinkedIn Growth Loop uses OpenClaw, Hermes, and trace-based evals to test autonomous agents for professional relationship workflows."
+  keywords:
+    - "high-autonomy agent teams"
+    - "self-improving agents case study"
+    - "agent orchestration case study"
+    - "AI agent workflow case study"
+    - "browser agents portfolio"
+    - "browser-control recovery"
+    - "production AI agent observability"
+    - "trace-based agent evals"
+    - "Telegram AI agent reporting"
+    - "Telegram control room for agents"
+    - "cost-aware browser control"
+    - "self-healing browser automation"
+    - "bounded autonomy agent system"
+    - "agent approval gates"
+    - "agent rollback workflow"
+    - "agent operating system"
+    - "AI agent portfolio case study"
+    - "Bay Area AI agent engineer"
+    - "Bay Area applied AI engineer"
+    - "AI agent friendly portfolio"
+    - "LLMOps agent evaluation workflow"
+    - "OpenClaw orchestration"
+    - "Hermes research advisor"
+    - "Steve Oak"
+schema:
+  headline: "LinkedIn Growth Loop: High-Autonomy Agent Teams That Self-Improve"
+  description: "A Steve Oak case study about testing whether bounded agent teams can run, evaluate, research, report, and improve a professional relationship workflow without daily human operation."
+  about:
+    - "LinkedIn Growth Loop"
+    - "OpenClaw"
+    - "Hermes"
+    - "AI agents"
+    - "agentic AI"
+    - "Bay Area AI portfolio"
+    - "Bay Area applied AI engineering"
+    - "AI agent friendly portfolio"
+    - "self-improving agents"
+    - "high-autonomy agent teams"
+    - "agent orchestration"
+    - "agent observability"
+    - "browser control"
+    - "browser agents"
+    - "browser-control recovery"
+    - "Telegram reporting"
+    - "Telegram control room"
+    - "trace-based evaluation"
+    - "bounded autonomy"
+    - "approval gates"
+    - "rollback"
+    - "Convex observability"
+    - "Thompson sampling"
+    - "LLMOps"
+sources:
+  - label: "PaperclipAI/paperclip"
+    href: "https://github.com/paperclipai/paperclip"
+  - label: "Karpathy autoresearch"
+    href: "https://github.com/karpathy/autoresearch"
+  - label: "Fortune coverage of the Karpathy Loop"
+    href: "https://fortune.com/2026/03/17/andrej-karpathy-loop-autonomous-ai-agents-future/"
+  - label: "Ralph Loop"
+    href: "https://blakecrosley.com/blog/ralph-agent-architecture"
+  - label: "OpenAI Codex /goal release notes"
+    href: "https://github.com/openai/codex/releases/tag/rust-v0.128.0"
+  - label: "Factory Missions"
+    href: "https://factory.ai/news/missions"
+  - label: "Anthropic long-running harnesses"
+    href: "https://www.anthropic.com/engineering/effective-harnesses-for-long-running-agents"
+  - label: "Arize agent harness telemetry"
+    href: "https://arize.com/blog/closing-the-loop-coding-agents-telemetry-and-the-path-to-self-improving-software/"
+  - label: "OpenAI agent evals"
+    href: "https://developers.openai.com/api/docs/guides/agent-evals"
+  - label: "OpenAI guardrails and human review"
+    href: "https://developers.openai.com/api/docs/guides/agents/guardrails-approvals"
+  - label: "Anthropic evals for AI agents"
+    href: "https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents"
+  - label: "LangGraph persistence and checkpointing"
+    href: "https://docs.langchain.com/oss/python/langgraph/persistence"
+  - label: "OpenTelemetry GenAI agent spans"
+    href: "https://opentelemetry.io/docs/specs/semconv/gen-ai/gen-ai-agent-spans/"
+  - label: "OWASP LLM06 Excessive Agency"
+    href: "https://genai.owasp.org/llmrisk/llm062025-excessive-agency/"
+  - label: "NIST AI RMF Generative AI Profile"
+    href: "https://www.nist.gov/publications/artificial-intelligence-risk-management-framework-generative-artificial-intelligence"
+  - label: "NIST AI Agent Standards Initiative"
+    href: "https://www.nist.gov/artificial-intelligence/ai-agent-standards-initiative"
+  - label: "Microsoft AgentRx"
+    href: "https://www.microsoft.com/en-us/research/blog/systematic-debugging-for-ai-agents-introducing-the-agentrx-framework/"
+  - label: "Stagehand caching actions"
+    href: "https://www.browserbase.com/stagehand"
+  - label: "Playwright Test Agents"
+    href: "https://playwright.dev/docs/test-agents"
+  - label: "browser-use/browser-harness"
+    href: "https://github.com/browser-use/browser-harness"
+machineSummary: |
+  LinkedIn Growth Loop is Steve Oak's case study about high-autonomy agent teams for a bounded professional relationship workflow. The system used OpenClaw as the main runner and orchestrator, Hermes as the research and memory advisor, Telegram as the control room, browser-control recovery for execution, and state ledgers for continuity. The core lesson is that agent autonomy became more trustworthy when routine work, reporting, evaluation, research, approval, rollback, and Oak override were separated into an operating layer around the model.
+machineQuestions:
+  - heading: "What is LinkedIn Growth Loop?"
+    answer: "LinkedIn Growth Loop is Steve Oak's case study about testing whether a bounded agent team can run, evaluate, research, report, and improve a professional relationship workflow without Oak operating each daily step."
+  - heading: "What did Oak build?"
+    answer: "Oak built two agent groups: one for target discovery and connection workflow, and one for public interaction and response signals. Around those groups, he built the Telegram control room, learning history, browser-control recovery paths, approval gates, and an OpenClaw plus Hermes improvement loop."
+  - heading: "Why are OpenClaw and Hermes both part of the system?"
+    answer: "OpenClaw acted as the recurring runner and orchestrator. Hermes acted as the research and memory advisor, adding outside context, platform drift, and risk signals. The split made execution, research, evaluation, and improvement cooperate instead of forcing one harness to own every job."
+  - heading: "What does no daily human operation mean?"
+    answer: "It means bounded routine runs no longer required Oak to manually select every target, rewrite every note, inspect every routine interaction, or upgrade the system every day. Oversight, approval gates, rollback, and intervention paths still stayed in the system."
+  - heading: "How are the agents evaluated?"
+    answer: "The system evaluates target quality, send-or-skip decisions, action success, response and conversation signals, duplicate risk, run health, selector/browser health, proposal decisions, research findings, cost-sensitive model usage, and intervention count. The public page explains the evaluation categories without presenting exact performance numbers."
+  - heading: "How does the self-improvement loop work?"
+    answer: "A run produces report rows, run notes, outcomes, skips, failures, response signals, and proposed changes. That history updates good examples, strategy memory, and future run context. Hermes adds outside research and memory context. OpenClaw turns the evidence into proposed improvements, then applies low-risk changes or routes sensitive work through approval and rollback."
+  - heading: "Why did browser control change the build?"
+    answer: "Browser control reduced dependency on expensive or limited APIs, but it introduced page-change and recovery problems. Oak handled that with SOPs, recorder flows, page calibration, programmatic retries, and minimal-intelligence recovery before paying for heavier model judgment."
+  - heading: "Why is this relevant to Bay Area AI teams?"
+    answer: "The case study is useful hiring and collaboration proof for Bay Area AI teams evaluating agent workflows, LLMOps, browser agents, internal tools, AI product surfaces, and design engineering around trustworthy automation. It is not a local-service business page."
+---
+
+## Agents Are Overhyped Until They Own The Work
+
+I had been using agents for long enough to feel the gap between the demo and the daily reality.
+
+Paid tools, other teams' agents, and agents I built myself could all do impressive one-off tasks. The weak point came after the task finished. I still had to read the logs, inspect the run, patch the prompt, notice the missing report, update the browser step, and decide what should happen tomorrow.
+
+That made the word "agent" feel inflated. If I still carried the plan, the memory, the judgment, and the next decision, I was still the operator. The tool had improved the interface, but the work still lived in my head.
+
+The industry has been circling the same problem. Anthropic writes about long-running harnesses because agents need state, budgets, continuation, and recovery. <BrandIconLink provider="codex" label="Codex /goal" href="https://github.com/openai/codex/releases/tag/rust-v0.128.0" /> exists because longer work needs a persistent objective. Ralph-style loops, Paperclip, Karpathy's <BrandIconLink provider="github" label="autoresearch" href="https://github.com/karpathy/autoresearch" />, and Arize's telemetry writing all point in the same direction: once the work lasts longer than one chat, the model becomes only one piece of the job.
+
+The idea that really stuck with me came from <BrandIconLink provider="factory" label="Factory Missions" href="https://factory.ai/news/missions" />. Their framing was simple: stop trying to make one agent do everything. Use an orchestrator, workers, validators, and research agents because each role fails in a different way. That changed how I thought about my own systems. I stopped asking, "Can one agent handle this?" and started asking, "What team would make this work trustworthy?"
+
+<ImageFigure
+  src="/assets/work/linkedin-growth-loop/ai-agent-reality.png"
+  alt="AI agent reality diagram showing why one-off task completion is not enough without state, recovery, evaluation, and next-step ownership"
+  width={2000}
+  height={1050}
+  caption="The gap was around the run: memory, recovery, reports, evaluation, and a trustworthy next decision."
+/>
+
+<Callout title="THE OPERATING LAYER" tone="proof" icon="agentSystems">
+  Trust came from the operating layer around the model: state, reports, validators, research, recovery, and a next decision the system could explain.
+</Callout>
+
+## The In-House Need Made It Serious
+
+The need became concrete during a brief HyperSkalers project. One of the projects there was about building relationships through in-house agent teams instead of handing the work to another vendor workflow and hoping it adapted.
+
+While working through that, the actual shape of the problem became clearer: find the right people, understand why they fit, keep the outreach relevant, follow the conversation, and avoid turning serious networking into noisy outbound.
+
+The obvious tools had tradeoffs. Some were expensive. Some were locked into one platform. Some were slow to adapt when the platform changed. Some created restriction risk because the user had very little control over how the work was being done.
+
+The conclusion was clear enough: an in-house agent team would be more interesting than another vendor workflow. It could stay close to the data, explain its own runs, improve from real outcomes, and keep sensitive choices behind approval.
+
+That was the point where I started going deeper. The goal was bigger than <BrandIconLink provider="linkedin" label="LinkedIn automation" />: I wanted to know whether agent teams could run an actual business workflow without me holding every step together.
+
+<ImageFigure
+  src="/assets/work/linkedin-growth-loop/linkedin-networking.png"
+  alt="LinkedIn networking workflow scene showing professional relationship building as a repeatable agent-supported workflow"
+  width={1536}
+  height={1024}
+  variant="contained"
+  maxWidth={780}
+  caption="Networking was the useful test surface because it forced the system to care about fit, context, tone, follow-up, and real response signals."
+/>
+
+## LinkedIn Became The First Real Success
+
+LinkedIn Growth Loop became the first project where the idea actually worked for me.
+
+The visible workflow was relationship work. The deeper project was autonomy: agents choosing targets, preparing context, acting inside limits, reporting what happened, learning from outcomes, and feeding the next pass without me manually operating the whole thing.
+
+Among the agent projects I had tried, this was my first real success with multiple agents doing the jobs at high autonomy. The autonomy was bounded: routine work moved out of my hands, while override, approval, and rollback stayed available.
+
+<ImageFigure
+  src="/assets/work/linkedin-growth-loop/first-success-reaction.webp"
+  alt="Animated reaction GIF representing the moment the LinkedIn Growth Loop started working against real feedback"
+  width={420}
+  height={286}
+  variant="contained"
+  maxWidth={420}
+  loading="eager"
+  preserveAnimation
+  caption="The first real win was the moment the loop finally had real feedback to react to."
+/>
+
+<BrandIconLink provider="linkedin" label="LinkedIn" /> was useful because the feedback was immediate and hard to fake. Someone connects, ignores, replies, keeps talking, or makes it obvious the note missed. In professional and high-skill relationship work, that is risky. A bad interaction is public enough to care about. But it is also worth it because those real outcomes are what a self-improving system can actually learn from.
+
+The discovery was almost accidental. Start with one small skill, run it against the real world, evaluate the result, then widen the loop only after the team can explain what happened. Without that feedback, agent work turns into weeks of polishing imaginary behavior.
+
+<ChartFigure
+  type="line"
+  layout="narrow"
+  aspectRatio="1.38 / 1"
+  minWidth={560}
+  eyebrow="Operating layer"
+  title="More Context Survived Each Run"
+  summary="The loop started working when each run left more usable context for the next one: reports, approval, memory, browser checks, research, and better rules."
+  data={[
+    { stage: "Report", context: 1, detail: "The run told me what happened." },
+    { stage: "Approval", context: 2, detail: "Sensitive changes had a place to ask first." },
+    { stage: "Memory", context: 3, detail: "Results started carrying into the next pass." },
+    { stage: "Browser", context: 4, detail: "Known browser steps became repeatable." },
+    { stage: "Rules", context: 5, detail: "Risky public actions had stop conditions." },
+    { stage: "Research", context: 6, detail: "Hermes fed platform and audience context back into the loop." },
+    { stage: "Proposal", context: 7, detail: "The next change had to explain itself." },
+    { stage: "Repeat", context: 8, detail: "The team could run, report, learn, and improve again." }
+  ]}
+  series={[{ key: "context", label: "Context carried forward", tone: "pale-blue" }]}
+  categoryKey="stage"
+  xKey="stage"
+  maxValue={8}
+  yAxisLabel="Context kept"
+  ticks={[0, 2, 4, 6, 8]}
+  valueFormatter="raw"
+  axisFormatter="raw"
+  caption="The work moved out of my head when the next run could start from reports, memory, checks, research, and rules instead of starting from me."
+/>
+
+## The First Daily Loop
+
+The first version was intentionally small.
+
+I had a list of people from CRM context and <BrandIconLink provider="linkedin" label="LinkedIn" /> Navigator-style targeting. The daily job was simple: review the list, understand why each person belonged there, write a personalized connection note, send or skip, then record what happened.
+
+That small loop had the right shape. It had a target, context, an action, a result, and a next decision. It also had real constraints: avoid generic notes, avoid blasting people, stop repeating stale examples, and save model calls for decisions that needed judgment.
+
+Later, the scope widened into target discovery, feed interaction, response tracking, follow-up state, and outcome comparison. Starting small made that expansion possible because the early runs created feedback quickly instead of hiding problems behind a large automation plan.
+
+<div className="work-mdx-image-grid" aria-label="LinkedIn Growth Loop first daily loop screenshots">
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/linkedin-growth-loop/relationship-loop-targeting-2284.avif') type('image/avif'), url('/assets/generated/work/linkedin-growth-loop/relationship-loop-targeting-2284.webp') type('image/webp'), url('/assets/work/linkedin-growth-loop/relationship-loop-targeting.png') type('image/png'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/linkedin-growth-loop/relationship-loop-targeting.png"
+        alt="LinkedIn Growth Loop target review screenshot showing the start of the relationship workflow"
+        width={2284}
+        height={1690}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>Target review gave the loop a real starting point: who this person is, why they fit, and whether the next action should happen.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/linkedin-growth-loop/relationship-loop-response-2222.avif') type('image/avif'), url('/assets/generated/work/linkedin-growth-loop/relationship-loop-response-2222.webp') type('image/webp'), url('/assets/work/linkedin-growth-loop/relationship-loop-response.png') type('image/png'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/linkedin-growth-loop/relationship-loop-response.png"
+        alt="LinkedIn Growth Loop response and follow-up screenshot showing how the workflow keeps context after an action"
+        width={2222}
+        height={1300}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>Response tracking made the next run smarter: the system could keep the outcome, compare it with prior choices, and decide what changed.</figcaption>
+  </figure>
+</div>
+
+The first loop had to stay small enough that a weak target, a bland note, a missed follow-up, or a broken browser action would show up immediately.
+
+## Orchestrator, Workers, Validators
+
+The first real design decision was to stop treating the workflow as one agent. I split it into two operating groups:
+
+1. <KeywordBadge>People work</KeywordBadge> handled target lists, scoring, context, connection notes, send-or-skip decisions, and follow-up state.
+2. <KeywordBadge>Public interaction</KeywordBadge> handled relevant posts, cooldown checks, duplicate-risk watching, and response signals.
+
+Around those groups, I needed the same shape I liked from Factory's mission model: an orchestrator to keep the work moving, workers to own specific jobs, validators to stop unsafe actions, and research agents to keep the environment fresh.
+
+A bad target, a weak note, a browser miss, and a duplicate-risk problem needed separate owners. Filing all of them under "the agent failed" would hide the fix.
+
+<ExcalidrawFigure
+  src="https://link.excalidraw.com/readonly/tQztYo0ovuHt7spN4DEr?darkMode=true"
+  title="LinkedIn Growth Loop team shape Excalidraw diagram"
+  caption="The team became easier to trust when execution, research, reports, memory, validation, and override had separate jobs."
+/>
+
+Once the roles were separated, the reports got sharper. I could tell whether a miss belonged to targeting, writing, browser control, duplicate prevention, research, or orchestration instead of treating everything as a prompt problem.
+
+## Harnesses Were Just The Tools
+
+<BrandIconLink provider="openclaw" label="OpenClaw" /> was my main worker and orchestrator for this version. It ran the recurring work, coordinated tools, reported status, and kept the lanes moving.
+
+<BrandIconLink provider="hermes" label="Hermes" /> was useful in a different role. The overall sentiment around it was that Hermes worked better for self-improvement and memory-oriented work, so I treated it more like an advisor: research what changed, learn from the feedback loop, keep audience and platform signals fresh, and feed better advice back into the next decision.
+
+That pairing was personal preference. I could have forced everything into one harness, but I wanted to see what each one was actually good at, then make them cooperate instead of pretending one tool should own every job.
+
+The broader lesson traveled beyond the specific tools. Today the same operating model could be built with <BrandIconLink provider="codex" label="Codex" />, <BrandIconLink provider="claudecode" label="Claude Code" />, <BrandIconLink provider="openai" label="OpenAI Agents" />, Ralph-style loops, Factory-style missions, or another open-source harness. The team design mattered most: execution, research, memory, reporting, review, validation, and approval each needed a clear job.
+
+That separation made autonomy easier to trust. The research side could advise without silently changing live behavior. The orchestrator had to turn evidence into a proposal, a low-risk change, a skip, or an approval path.
+
+<ImageFigure
+  src="/assets/work/linkedin-growth-loop/openclaw-vs-hermes.png"
+  alt="OpenClaw and Hermes comparison visual showing orchestrator and advisor responsibilities in the LinkedIn Growth Loop agent team"
+  width={1536}
+  height={1024}
+  variant="contained"
+  maxWidth={780}
+  caption="OpenClaw kept the recurring work moving. Hermes stayed closer to research, memory, and improvement advice. The system worked because those jobs were separate."
+/>
+
+## Telegram Became The Control Room
+
+Modern agent harnesses are moving beyond the terminal because messaging channels already feel natural. <BrandIconLink provider="telegram" label="Telegram" />, <BrandIconLink provider="slack" label="Slack" />, <BrandIconLink provider="discord" label="Discord" />, <BrandIconLink provider="imessage" label="iMessage" />, and similar surfaces are where people already check status and respond quickly. That makes agent work feel less like babysitting a terminal and more like managing a teammate.
+
+<BrandIconLink provider="openclaw" label="OpenClaw" /> and <BrandIconLink provider="hermes" label="Hermes" /> already supported messaging channels, including Telegram-style control. The built-in reporting worked, but each channel has different formatting strengths. Plain text was leaving too much value on the table, and over months it drained attention. A report would arrive, but I still had to parse the story: what changed, what failed, whether I needed to care, and where the useful detail lived.
+
+So I built a dedicated <KeywordBadge>Telegram control room</KeywordBadge> and forced the harnesses to report through it. It supported the richer Telegram formats I actually wanted: sections, formatting, controls, compact summaries, and hidden detail. Every message had two versions inside it. The visible layer was human-friendly and ADHD-friendly: status, key metrics, failures, recommendation, and controls. Underneath, the same message carried machine-friendly detail: run IDs, run details, artifact paths, source references, proposed changes, logs, and control actions.
+
+<div className="work-mdx-image-grid" aria-label="LinkedIn Growth Loop Telegram control room report screenshots">
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/linkedin-growth-loop/telegram-report-1-342.avif') type('image/avif'), url('/assets/generated/work/linkedin-growth-loop/telegram-report-1-342.webp') type('image/webp'), url('/assets/work/linkedin-growth-loop/telegram-report-1.png') type('image/png'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/linkedin-growth-loop/telegram-report-1.png"
+        alt="Telegram agent report glance showing the control room report surface"
+        width={342}
+        height={291}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>The first view was a report glance: enough status to know whether the run needed attention.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/linkedin-growth-loop/telegram-report-2-489.avif') type('image/avif'), url('/assets/generated/work/linkedin-growth-loop/telegram-report-2-489.webp') type('image/webp'), url('/assets/work/linkedin-growth-loop/telegram-report-2.png') type('image/png'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/linkedin-growth-loop/telegram-report-2.png"
+        alt="Human-friendly Telegram report format for a LinkedIn worker agent"
+        width={489}
+        height={431}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>Worker reports used human-friendly formatting first: what happened, what changed, and what I should do next.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/linkedin-growth-loop/telegram-report-3-528.avif') type('image/avif'), url('/assets/generated/work/linkedin-growth-loop/telegram-report-3-528.webp') type('image/webp'), url('/assets/work/linkedin-growth-loop/telegram-report-3.png') type('image/png'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/linkedin-growth-loop/telegram-report-3.png"
+        alt="Second human-friendly Telegram report format for a LinkedIn worker agent"
+        width={528}
+        height={307}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>The LinkedIn worker reports stayed compact so I could scan target, action, failure, and recommendation without opening logs.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/linkedin-growth-loop/telegram-report-4-395.avif') type('image/avif'), url('/assets/generated/work/linkedin-growth-loop/telegram-report-4-395.webp') type('image/webp'), url('/assets/work/linkedin-growth-loop/telegram-report-4.png') type('image/png'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/linkedin-growth-loop/telegram-report-4.png"
+        alt="Human-friendly Telegram report format for Hermes advisor agent"
+        width={395}
+        height={442}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>Hermes reported like an advisor: research, risks, and next recommendations instead of pretending to be another executor.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/linkedin-growth-loop/telegram-report-5-521.avif') type('image/avif'), url('/assets/generated/work/linkedin-growth-loop/telegram-report-5-521.webp') type('image/webp'), url('/assets/work/linkedin-growth-loop/telegram-report-5.png') type('image/png'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/linkedin-growth-loop/telegram-report-5.png"
+        alt="Machine-friendly Telegram accordion default view with hidden detail available to agents"
+        width={521}
+        height={284}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>The machine layer lived underneath the human summary: run detail, reusable context, and next-agent handoff data.</figcaption>
+  </figure>
+
+  <figure>
+    <div
+      className="work-mdx-image-grid__media"
+      style={{ "--work-grid-bg": "image-set(url('/assets/generated/work/linkedin-growth-loop/telegram-report-6-496.avif') type('image/avif'), url('/assets/generated/work/linkedin-growth-loop/telegram-report-6-496.webp') type('image/webp'), url('/assets/work/linkedin-growth-loop/telegram-report-6.png') type('image/png'))" }}
+    >
+      <OptimizedPicture
+        src="/assets/work/linkedin-growth-loop/telegram-report-6.png"
+        alt="Machine-friendly Telegram accordion collapsed mode hiding detailed agent context until needed"
+        width={496}
+        height={390}
+        loading="lazy"
+        decoding="async"
+      />
+    </div>
+    <figcaption>Collapsed mode kept the channel readable while preserving the deeper machine-friendly format for follow-up investigation.</figcaption>
+  </figure>
+</div>
+
+That changed the development pace. I could scan the summary during the day, then hand the same message to another agent when something needed deeper investigation. The report stopped being a status ping and became shared working memory.
+
+## Browser Control Kept The Cost Honest
+
+APIs are more valuable than ever in the agent era. They are still the cleanest path when they expose the work clearly. I kept running into cases where the practical route still lived in the browser.
+
+Some workflows live inside the same browser surfaces humans already use. API paths can be limited, expensive, messy, or too narrow for the actual job. In those cases, browser control becomes part of the agent stack.
+
+That choice reduced API dependency and created a different kind of work. Browsers change. Platforms change. Labels move. DOM structure shifts. A browser agent has to handle small changes cheaply instead of spending a heavy model call on every tiny step.
+
+I made routine actions as programmatic as possible: SOPs, recorder flows, page calibration, cached control knowledge, button and field checks, page-state checks, and bounded recovery before heavier intelligence. Known actions should run cheaply. Changed pages should try narrow recovery before asking a model to reason from scratch.
+
+The model still belonged in the judgment-heavy moments: understanding a person's context, deciding whether a note sounded human, comparing interaction strategies, and summarizing the result. A <BrandIconLink provider="gemini" label="Gemini Flash-class model" /> was enough for those steps. I saved the heavier models for work that actually needed them.
+
+<ImageFigure
+  src="/assets/work/linkedin-growth-loop/browser-control.png"
+  alt="Browser control workflow visual showing programmatic browser steps, checks, recovery, and selective model judgment"
+  width={1684}
+  height={1319}
+  variant="contained"
+  maxWidth={780}
+  caption="Browser control stayed useful when it was treated as an operating surface: known steps stayed cheap, changed pages had recovery paths, and judgment-heavy moments still went to the model."
+/>
+
+That pressure is showing up across browser-agent work too. <BrandIconLink provider="stagehand" label="Stagehand action caching" href="https://www.browserbase.com/stagehand" /> avoids repeated inference for known actions. <BrandIconLink provider="playwright" label="Playwright Test Agents" href="https://playwright.dev/docs/test-agents" /> separates planner, generator, and healer roles around repeatable browser tasks. If I were rebuilding this now, I would also look hard at <BrandIconLink provider="browseruse" label="browser-use/browser-harness" href="https://browser-use.com" /> because I only found it after the project was already far along, and its open-source browser-harness direction is closer to the self-healing foundation I wish I had started with.
+
+## Evaluation Turned Runs Into Learning
+
+The team became more reliable when each run stopped ending as one vague success or failure. I needed to know what kind of failure happened and which agent should learn from it.
+
+<ChartFigure
+  type="donut"
+  eyebrow="Learning surface"
+  title="What The Report Had To Separate"
+  summary="The report had to separate quality, safety, cost, outcome, and change decisions so the next agent knew where to improve."
+  data={[
+    { area: "Run quality", value: 2, detail: "Target fit and action result.", tone: "green" },
+    { area: "Report health", value: 2, detail: "Browser readiness and run status.", tone: "pale-blue" },
+    { area: "Outcome signals", value: 2, detail: "Response signals and intervention counts.", tone: "muted" },
+    { area: "Public safety", value: 1, detail: "Duplicate risk before action.", tone: "amber" },
+    { area: "Change review", value: 1, detail: "Whether a proposed change can apply or has to ask.", tone: "orange" },
+    { area: "Cost discipline", value: 1, detail: "Which steps stay deterministic and which need model judgment.", tone: "blue" }
+  ]}
+  series={[{ key: "value", label: "Areas", tone: "pale-blue" }]}
+  categoryKey="area"
+  valueKey="value"
+  centerValue="9"
+  centerLabel="areas watched"
+  valueFormatter="number"
+  axisFormatter="raw"
+  caption="The report shape made the next improvement obvious without exposing individual outcomes or exact run numbers."
+/>
+
+<OutcomeTable
+  rows={[
+    {
+      area: "Target quality",
+      status: "Tracked",
+      detail: "Did the person match the audience, source rule, and relationship goal?"
+    },
+    {
+      area: "Action success",
+      status: "Tracked",
+      detail: "Did the intended action complete, skip safely, or fail with a useful reason?"
+    },
+    {
+      area: "Response signal",
+      status: "Private",
+      detail: "Connection, reply, conversation, pending, failed, and follow-up signals stay in private learning history."
+    },
+    {
+      area: "Duplicate risk",
+      status: "Guarded",
+      detail: "Reliable post identity, seen-state, cooldowns, and learning-history checks protect public interactions."
+    },
+    {
+      area: "Browser health",
+      status: "Reported",
+      detail: "Selector misses, page drift, timing, browser readiness, and recovery attempts are tracked separately from model judgment."
+    },
+    {
+      area: "Run health",
+      status: "Reported",
+      detail: "Reports carry status, duration, errors, run details, skipped work, and next-run notes."
+    },
+    {
+      area: "Cost behavior",
+      status: "Designed",
+      detail: "Programmatic steps stay cheap; model calls are reserved for personalization, summaries, and proposal judgment."
+    },
+    {
+      area: "Proposal decision",
+      status: "Approval based",
+      detail: "An improvement can apply, wait, skip, need approval, or require a way to undo it."
+    },
+    {
+      area: "Intervention count",
+      status: "Summarized",
+      detail: "The workflow tracks where Oak still steps in; the public page explains the category without presenting exact reduction numbers."
+    }
+  ]}
+/>
+
+The scorecard was necessary because the system mixed deterministic and non-deterministic behavior. A browser miss, a stale target, a weak note, and a risky proposal each needed to teach a different lesson.
+
+At first, the report was for me. It summarized the run, gave research notes, suggested rule changes, and told me where to look next.
+
+The higher-autonomy step came later, when I stopped being the main destination for every suggestion. The report became input for the next group of agents. Research notes, failures, examples, and proposed rules flowed back into the growth loop instead of stopping with me.
+
+After that, improvement became a chain instead of a feeling:
+
+1. A run created run details, outcomes, skips, failures, and report rows.
+2. Learning history updated examples, run notes, and strategy memory.
+3. <BrandIconLink provider="hermes" label="Hermes" /> added research, memory context, and platform-risk signals.
+4. <BrandIconLink provider="openclaw" label="OpenClaw" /> turned that evidence into a proposed improvement or a bounded change.
+5. The next Telegram report explained what changed, what stayed blocked, and what the following run should use.
+
+<ExcalidrawFigure
+  src="https://link.excalidraw.com/readonly/M2y9t1dGfJOxpgCkzmn2?darkMode=true"
+  title="LinkedIn Growth Loop learning loop Excalidraw diagram"
+  caption="The report stopped being the end of the run. It became the handoff that helped the next agent improve the next pass."
+/>
+
+The loop became useful when the proposed change stayed readable. The next report had to show why a change was worth making, what would actually change, and where the system should stop or ask before touching live behavior.
+
+<ImageFigure
+  src="/assets/work/linkedin-growth-loop/self-improving-report.png"
+  alt="Self-improving agent report showing a proposed improvement, evidence, risk, and next action"
+  width={564}
+  height={574}
+  variant="contained"
+  maxWidth={520}
+  caption="Self-improvement became trustworthy when the proposal stayed small: evidence, change, risk, and a clear next action."
+/>
+
+Low-risk changes could apply automatically. Weak ideas were skipped. Sensitive changes went through approval because they touched platform behavior, schedules, or public-facing actions. Anything risky needed a way to undo it before it came near the live workflow.
+
+That matched where agent tooling was already heading. [OpenAI agent evals](https://developers.openai.com/api/docs/guides/agent-evals) and [Anthropic's agent eval writing](https://www.anthropic.com/engineering/demystifying-evals-for-ai-agents) both push people to inspect trajectories, tool calls, and handoffs alongside final answers. [Paperclip](https://github.com/paperclipai/paperclip), [Ralph Loop](https://blakecrosley.com/blog/ralph-agent-architecture), and [Karpathy's autoresearch](https://github.com/karpathy/autoresearch) point toward agents that keep or discard changes based on measured outcomes. Inside this workflow, the same idea became practical when reports became the next run's working material.
+
+## One Failure That Forced Better Rules
+
+There were plenty of failures over months: stale selectors, noisy targets, weak examples, missing context, skipped reports, and decisions that looked reasonable until real feedback exposed the gap.
+
+One visible failure came from the feed agent sometimes struggling to tell two posts apart. Different posts from the same person could look too similar unless the run proved exactly which post it was touching.
+
+For relationship work, that mistake is visible. A duplicate public interaction makes the system look careless. It also exposed a rule I wanted everywhere: prove the object first, or stop.
+
+<ExcalidrawFigure
+  src="https://link.excalidraw.com/readonly/yclnfYDTW0bAkZ0gjv4P?darkMode=true"
+  title="LinkedIn Growth Loop stop rule Excalidraw diagram"
+  caption="The failure turned into a simple rule: prove the object first, or stop before public action."
+/>
+
+I moved that risk into rules and run memory. The agent needed fewer chances to be careful and more places where the run would refuse to continue.
+
+After that change, a report could show more than completion. It could show that the risky behavior had a clear stop condition around it. The next version required reliable post identity before action instead of trusting the agent to notice the problem later.
+
+## What Moved Out Of My Head
+
+For me, this was the first clear success at building agents that self-automate in a bounded lane without me operating every step.
+
+<ChartFigure
+  type="radar"
+  eyebrow="Decision boundary"
+  title="Where Autonomy Was Allowed"
+  summary="The team worked because routine actions, approval paths, recovery, and override were separated instead of all being called autonomy."
+  data={[
+    { boundary: "Runs alone", value: 6, detail: "Scheduled runs, local state updates, examples/reflections, research collection, reports, and eligible low-risk changes." },
+    { boundary: "Asks first", value: 6, detail: "Structural changes, sensitive platform behavior, schedule changes, rollback actions, mission dispatches, and risky proposals." },
+    { boundary: "Can recover", value: 5, detail: "A way back: pending action, canary/eval check, pause/resume, and event log." },
+    { boundary: "Oak can stop", value: 1, detail: "Final stop, direction, and approval authority." }
+  ]}
+  series={[{ key: "value", label: "Decision boundary", tone: "green" }]}
+  categoryKey="boundary"
+  maxValue={6}
+  valueFormatter="raw"
+  axisFormatter="raw"
+  caption="Trust came from the boundary: routine work could move, sensitive changes had to ask, and risky changes needed a way back."
+/>
+
+High-autonomy agents can take over routine work when the surrounding operating layer is strong enough. The model matters, but so do orchestration, worker roles, validators, evaluation, reports, cost controls, browser resilience, approval paths, rollback, and memory.
+
+<BrandIconLink provider="linkedin" label="LinkedIn Growth Loop" /> is the relationship-work version of that idea. The same approach applies to serious applied-AI systems: start with one small real skill, launch it, collect real feedback, make the work readable, route reports back into the agent team, and expand autonomy only after the team can explain itself.
+
+The daily feeling changed. I was no longer waking up to manage every tiny run. I was watching a small team do the work, explain the result, check the environment, and improve the next pass. My job moved from operator to reviewer, and even the review suggestions started becoming inputs for other agents.
+
+<ImageFigure
+  src="/assets/work/linkedin-growth-loop/reviewer-shift-reaction.webp"
+  alt="Animated reaction GIF representing the shift from manually operating each run to reviewing an agent team"
+  width={420}
+  height={280}
+  variant="contained"
+  maxWidth={420}
+  loading="lazy"
+  preserveAnimation
+  caption="That was the shift: I was no longer pushing every step forward. I was watching the system carry the loop."
+/>
+
+I want to keep building in that direction: high-autonomy harnesses, internal tools, plugins, browser agents, and workflows where orchestrators, workers, validators, research, memory, and reports keep improving each other.

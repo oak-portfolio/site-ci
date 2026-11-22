@@ -1,0 +1,30 @@
+---
+import OptimizedPicture from "@/components/OptimizedPicture.astro";
+import { Icon } from "@/components/ui/Icon";
+import { workspaceRows } from "@/data/homePage";
+
+interface Props {
+  "aria-label": string;
+  alt: string;
+}
+
+const { "aria-label": label, alt } = Astro.props;
+---
+
+<div class="workspace-table" role="table" aria-label={label}>
+  {
+    workspaceRows.map((row) => (
+      <div class="workspace-row" role="row" data-oak-context="home.workspace">
+        {row.map((item) => (
+          <div role="cell">
+            <span class="workspace-badge" aria-hidden="true">
+              <OptimizedPicture src={item.image} alt={alt} width="34" height="34" loading="lazy" decoding="async" />
+              <Icon name={item.icon} size={17} />
+            </span>
+            <span>{item.label}</span>
+          </div>
+        ))}
+      </div>
+    ))
+  }
+</div>

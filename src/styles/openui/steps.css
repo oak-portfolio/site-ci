@@ -1,0 +1,107 @@
+.oak-openui__steps {
+  display: grid;
+  gap: var(--space-sm);
+  padding-left: var(--space-md);
+}
+
+.oak-openui__steps li::marker {
+  color: var(--quiet);
+  font-variant-numeric: tabular-nums;
+}
+
+/* A long unbroken token wraps inside its step instead of running past the list (R25b review). */
+.oak-openui__step-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/* Ticket 17: a ghost step, point or paragraph sized by its hidden claim; the bars sit over it and clip to its lines. */
+.oak-openui-ghost__bars {
+  display: block;
+}
+
+:is(.oak-openui__step-text, .oak-openui__point-text, .oak-openui__prose)[data-sized] {
+  position: relative;
+}
+
+:is(.oak-openui__step-text, .oak-openui__point-text, .oak-openui__prose)[data-sized] > .oak-openui-ghost__claim {
+  visibility: hidden;
+}
+
+:is(.oak-openui__step-text, .oak-openui__point-text, .oak-openui__prose)[data-sized] > .oak-openui-ghost__bars {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.oak-workspace .oak-openui__steps {
+  counter-reset: oak-step;
+  display: grid;
+  gap: var(--space-xs);
+  padding: 0;
+  list-style: none;
+}
+
+.oak-workspace .oak-openui__steps[data-from] {
+  /* R27k: a list that continues an earlier one starts its count where that one ended (Steps from). */
+  counter-reset: oak-step var(--oak-openui-step-from);
+}
+
+.oak-workspace .oak-openui__steps > li {
+  counter-increment: oak-step;
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  gap: var(--space-sm);
+}
+
+.oak-workspace .oak-openui__steps > li::before {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-pill);
+  background: var(--oak-raised);
+  color: var(--text);
+  content: counter(oak-step);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+}
+
+.oak-workspace .oak-openui__steps > li {
+  color: var(--text);
+  line-height: var(--leading-body);
+}
+
+.oak-workspace .oak-openui__steps {
+  gap: var(--space-sm);
+}
+
+.oak-workspace .oak-openui__steps > li::before {
+  border: 1px solid color-mix(in srgb, var(--oak-violet) 45%, var(--line-soft));
+  background: var(--oak-tint-violet);
+  color: color-mix(in srgb, var(--oak-violet) 45%, var(--text));
+  font-variant-numeric: tabular-nums;
+}
+
+/* Steps view (genui merge 13). Each number disc runs a rail down to the next, so the order reads as one path. It stays a
+   real <ol start>, so the numbers and the count still come from the list itself. Compare keeps main's rows and plain column
+   names: filled cells would be frames in the reading column (DESIGN.md frame rule), and chip heads read as buttons. */
+.oak-workspace .oak-openui__steps > li {
+  position: relative;
+}
+
+.oak-workspace .oak-openui__steps > li:not(:last-child)::after {
+  position: absolute;
+  inset-block: calc(24px + var(--space-micro)) calc(var(--space-micro) - var(--space-sm));
+  inset-inline-start: 11px;
+  width: 2px;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--oak-violet) 45%, var(--line-soft));
+  content: "";
+}
+
+@media (forced-colors: active) {
+  .oak-workspace .oak-openui__steps > li:not(:last-child)::after {
+    background: CanvasText;
+  }
+}

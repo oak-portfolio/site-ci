@@ -1,0 +1,136 @@
+---
+import OakUtilityLayout from '@/layouts/OakUtilityLayout.astro';
+import '../../../styles/oakOwner.css';
+---
+<OakUtilityLayout title="OpenRouter connection | SteveOak.com" description="Return to the Oak conversation after an OpenRouter connection attempt.">
+  <script is:inline slot="early-head">
+    (() => {
+      const opener = window.opener;
+      const origin = window.location.origin;
+      const pathname = window.location.pathname;
+      const rawSearch = window.location.search;
+      const rawHash = window.location.hash;
+      let captured = null;
+      let queryIsValid = false;
+      try {
+        if (rawSearch.length <= 2048 && rawHash.length <= 2048 && rawSearch.startsWith('?') &&
+          rawSearch.slice(1).length > 0 && !rawSearch.slice(1).includes('&') && !/%(?![0-9A-Fa-f]{2})/u.test(rawSearch)) {
+          const entries = Array.from(new URLSearchParams(rawSearch).entries());
+          if (entries.length === 1 && rawHash === '') {
+            const [name, value] = entries[0];
+            if (name === 'code' && value.length >= 1 && value.length <= 512 && !value.includes('\uFFFD') && !/[\s\u0000-\u001f\u007f]/u.test(value)) {
+              captured = { code: value };
+              queryIsValid = true;
+            } else if (name === 'error' && value.length >= 1 && value.length <= 256 && !value.includes('\uFFFD') && !/[\u0000-\u001f\u007f]/u.test(value)) {
+              captured = { error: 'cancelled' };
+              queryIsValid = true;
+            }
+          }
+        }
+      } catch { /* Keep a safe failure result and scrub the URL below. */ }
+
+      let historyWasScrubbed = false;
+      try {
+        window.history.replaceState(null, '', pathname);
+        historyWasScrubbed = true;
+      } catch { /* Do not send a result if the sensitive URL could not be removed. */ }
+
+      let pendingStatus = 'Checking the authorization response. Keep this window open while Oak verifies it.';
+      const renderStatus = () => {
+        const element = document.querySelector('[data-funding-status]');
+        if (element) element.textContent = pendingStatus;
+      };
+      const setStatus = value => {
+        pendingStatus = value;
+        if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', renderStatus, { once: true });
+        else renderStatus();
+      };
+
+      if (!historyWasScrubbed) {
+        captured = null;
+        setStatus('The authorization response could not be secured. Return to your original Oak tab and try again.');
+        return;
+      }
+      if (!opener) {
+        captured = null;
+        setStatus('The original Oak tab is unavailable. Return there and start the connection again.');
+        return;
+      }
+
+      let challenge;
+      try {
+        const bytes = new Uint8Array(32);
+        window.crypto.getRandomValues(bytes);
+        challenge = btoa(String.fromCharCode(...bytes)).replaceAll('+', '-').replaceAll('/', '_').replaceAll('=', '');
+      } catch {
+        captured = null;
+        setStatus('This window could not verify the authorization response. Return to Oak and try again.');
+        return;
+      }
+
+      let terminal = false;
+      let handshakeTimer = null;
+      const handshakeDeadline = Date.now() + 12_000;
+      const cleanupHandshake = () => {
+        if (terminal) return false;
+        terminal = true;
+        captured = null;
+        window.removeEventListener('message', onBind);
+        window.removeEventListener('pagehide', onPageHide);
+        if (handshakeTimer !== null) window.clearTimeout(handshakeTimer);
+        handshakeTimer = null;
+        return true;
+      };
+      const onPageHide = () => {
+        if (cleanupHandshake()) setStatus('This authorization window closed before Oak confirmed the response. Return to your original tab and try again.');
+      };
+      const expireHandshake = () => {
+        if (cleanupHandshake()) setStatus('Oak did not confirm the authorization response in time. Return to your original tab and start again.');
+      };
+      const onBind = event => {
+        if (terminal) return;
+        if (Date.now() >= handshakeDeadline) {
+          expireHandshake();
+          return;
+        }
+        if (event.source !== opener || event.origin !== origin) return;
+        const message = event.data;
+        if (!message || typeof message !== 'object' || Array.isArray(message)) return;
+        const keys = Object.keys(message);
+        if (keys.length !== 3 || !keys.includes('type') || !keys.includes('challenge') || !keys.includes('nonce') ||
+          message.type !== 'oak-funding-bind' || message.challenge !== challenge ||
+          typeof message.nonce !== 'string' || !/^[A-Za-z0-9_-]{43}$/u.test(message.nonce)) return;
+
+        const result = queryIsValid && captured?.code
+          ? { type: 'oak-funding-callback', nonce: message.nonce, code: captured.code }
+          : { type: 'oak-funding-callback', nonce: message.nonce, error: captured?.error ?? 'unavailable' };
+        cleanupHandshake();
+        try {
+          opener.postMessage(result, origin);
+          setStatus('The authorization response was sent to Oak. Check your original tab for the final connection status.');
+        } catch {
+          setStatus('Oak could not receive the authorization response. Return to your original tab and try again.');
+        }
+      };
+
+      window.addEventListener('message', onBind);
+      window.addEventListener('pagehide', onPageHide, { once: true });
+      handshakeTimer = window.setTimeout(expireHandshake, 12_000);
+      setStatus(queryIsValid
+        ? 'Waiting for your original Oak tab to confirm the authorization response.'
+        : 'The authorization response could not be verified. Waiting for your original Oak tab to report the connection status.');
+      try {
+        opener.postMessage({ type: 'oak-funding-ready', challenge }, origin);
+      } catch {
+        cleanupHandshake();
+        setStatus('Oak could not receive the authorization response. Return to your original tab and try again.');
+      }
+    })();
+  </script>
+  <div class="oak-owner">
+    <h1>Return to your conversation</h1>
+    <p role="status" aria-live="polite" data-funding-status>Checking the authorization response. Keep this window open while Oak verifies it.</p>
+    <p>This page does not confirm a connection or payment. Check the status shown in your original Oak tab.</p>
+    <a href="/">SteveOak.com</a>
+  </div>
+</OakUtilityLayout>

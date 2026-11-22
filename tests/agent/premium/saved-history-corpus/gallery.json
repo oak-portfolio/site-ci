@@ -1,0 +1,261 @@
+[
+ {
+  "id": "answer-openui-stats-long-value",
+  "source": "src/data/dev/oak-states.json",
+  "record": {
+   "conversationId": "cccccc52-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000051-bbbb-4bbb-8bbb-bbbbbbbbbbbb:user",
+     "role": "user",
+     "text": "What impact numbers does Steve have for his work?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000051-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+     "role": "assistant",
+     "text": "Across projects, recorded metrics include roughly $600K in attributed sales at HyperSkalers and 1,000+ users at San Francisco Bay University.\n\nAt HyperSkalers, a home-service client's first-month campaign generated roughly $600K attributed sales on $60K ad spend.\n\nAt San Francisco Bay University, the chatbot reached 1,000+ users.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "knowledge-2026-11",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Across projects, recorded metrics include roughly $600K in attributed sales at HyperSkalers and 1,000+ users at San Francisco Bay University.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         },
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "At HyperSkalers, a home-service client's first-month campaign generated roughly $600K attributed sales on $60K ad spend.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "At San Francisco Bay University, the chatbot reached 1,000+ users.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000051-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+      "program": "root = Answer([lead, nums, src])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Attributed sales\", \"roughly $600K\", \"claim-2\")\nb = Metric(\"Users reached\", \"1,000+\", \"claim-3\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000051-bbbb-4bbb-8bbb-bbbbbbbbbbbb"
+  }
+ },
+ {
+  "id": "answer-openui-metric",
+  "source": "src/data/dev/oak-states.json",
+  "record": {
+   "conversationId": "cccccc54-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000053-bbbb-4bbb-8bbb-bbbbbbbbbbbb:user",
+     "role": "user",
+     "text": "How many people used the chatbot?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000053-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+     "role": "assistant",
+     "text": "The San Francisco Bay University chatbot reached 1,000+ users, with a reported 60% reduction in response time.\n\nThe chatbot reached 1,000+ users.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "knowledge-2026-11",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "The San Francisco Bay University chatbot reached 1,000+ users, with a reported 60% reduction in response time.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "The chatbot reached 1,000+ users.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-005",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000053-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+      "program": "root = Answer([lead, num, src])\nlead = Prose(\"claim-1\")\nnum = Metric(\"Users reached\", \"1,000+\", \"claim-2\")\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000053-bbbb-4bbb-8bbb-bbbbbbbbbbbb"
+  }
+ },
+ {
+  "id": "answer-openui-proposal-topics",
+  "source": "src/data/dev/oak-states.json",
+  "record": {
+   "conversationId": "cccccc56-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00000055-bbbb-4bbb-8bbb-bbbbbbbbbbbb:user",
+     "role": "user",
+     "text": "How can I reach Steve about EcoSmartLoop?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00000055-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+     "role": "assistant",
+     "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.\n\nLEAF Engine had 8K+ images of training context behind it.\n\nIt sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "knowledgeRevision": "knowledge-2026-11",
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "LEAF Engine had 8K+ images of training context behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ],
+      "nextTool": "brief"
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00000055-bbbb-4bbb-8bbb-bbbbbbbbbbbb",
+      "program": "root = Answer([lead, nums, src, offer])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()\noffer = Proposal(\"prepareBrief\", \"Write to Steve about this\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00000055-bbbb-4bbb-8bbb-bbbbbbbbbbbb"
+  }
+ }
+]
