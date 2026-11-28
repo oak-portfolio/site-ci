@@ -1,0 +1,50 @@
+[
+ {
+  "id": "answer-openui-project-wall",
+  "question": "What has Steve built?",
+  "program": "root = Answer([wall])\nwall = ProjectWall([\"claim-1\", \"claim-2\", \"claim-3\"])",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-007:passage-003",
+       "sectionId": "work:ecosmartloop:section-007",
+       "url": "https://steveoak.com/work/ecosmartloop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "Oakminder is a voice-first reminder agent Steve built on his own, from the app to the backend.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-006",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/"
+      }
+     ]
+    },
+    {
+     "id": "claim-3",
+     "text": "LinkedIn Growth Loop began as one small daily job: review a list of people, write a note, then record what happened.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-004:passage-002",
+       "sectionId": "work:linkedin-growth-loop:section-004",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

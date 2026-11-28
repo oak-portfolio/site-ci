@@ -1,0 +1,4630 @@
+[
+ {
+  "id": "explainer-concept-rag",
+  "label": "Explainer (ticket 52): concept on RAG, labeled Drawn by Oak AI, three fixed steps with the first current, the Bridge line to Agentic Brain (fixture text)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What is RAG?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005200",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"concept\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true
+ },
+ {
+  "id": "explainer-concept-voice-agents",
+  "label": "Explainer (ticket 52): concept on voice agents, three fixed steps, the Bridge line to Oakminder (fixture text)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How do voice agents work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder turns a typed, tapped or spoken request into a real reminder, with its date, time and snooze.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-002:passage-004",
+          "sectionId": "work:oakminder:section-002",
+          "url": "https://steveoak.com/work/oakminder/#from-tap-flow-to-voice-agent"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005201",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"voice-agents\", \"concept\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true
+ },
+ {
+  "id": "explainer-concept-embeddings",
+  "label": "Explainer (ticket 52): concept on embeddings, no record names the topic, so the Bridge line says Related and claims no use (fixture text)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Explain embeddings simply"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005202",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"embeddings\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true
+ },
+ {
+  "id": "explainer-xmap-agent-memory",
+  "label": "Explainer (ticket 52): the topic map with agent memory selected, its wires lit, the panel naming the two case studies that use it (fixture text)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What topics can Oak explain?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005203",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"agent-memory\", \"xmap\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true
+ },
+ {
+  "id": "explainer-reduced",
+  "label": "Explainer (ticket 52): concept on RAG with the visitor reduced-motion setting on, nothing animates (fixture text)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What is RAG?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005204",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"concept\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "reducedMotion": true
+ },
+ {
+  "id": "explainer-forced-colors",
+  "label": "Explainer (ticket 52): the topic map for a forced-colors check, the selected topic and its wires keep a system color (fixture text)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What topics can Oak explain?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005205",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"agent-memory\", \"xmap\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true
+ },
+ {
+  "id": "explainer-off",
+  "explainer": false,
+  "label": "Explainer (ticket 52) with the constant off: the topic summary as one Prose paragraph",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What is RAG?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005206",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"concept\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "explainer-xrag",
+  "label": "Explainer (ticket 53): xrag, top-k chips over six fixture passages ranked by score, top 3 kept, labeled Drawn by Oak AI, the Bridge line (fixture data)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does retrieval pick passages?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005300",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"xrag\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag"
+  ]
+ },
+ {
+  "id": "explainer-xemb",
+  "label": "Explainer (ticket 53): xemb, a native Neighbours slider over ten fixture words, the 3 nearest to puppy joined, labeled Drawn by Oak AI, the Bridge line (fixture data)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How do embeddings find similar words?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005301",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"embeddings\", \"xemb\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag"
+  ]
+ },
+ {
+  "id": "explainer-xtool",
+  "label": "Explainer (ticket 53): xtool, a stepped sequence of Visitor, Model and Tool, step 1 current, labeled Drawn by Oak AI, the Bridge line (fixture data)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does a tool call work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005302",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"tool-calling\", \"xtool\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag"
+  ]
+ },
+ {
+  "id": "explainer-statediag",
+  "label": "Explainer (ticket 53): statediag, a state diagram laid out by the dagre helper, Idle current, the return wire to Idle, labeled Drawn by Oak AI, the Bridge line (fixture data)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What states does a voice agent move through?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder turns a typed, tapped or spoken request into a real reminder, with its date, time and snooze.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-002:passage-004",
+          "sectionId": "work:oakminder:section-002",
+          "url": "https://steveoak.com/work/oakminder/#from-tap-flow-to-voice-agent"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005303",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"voice-agents\", \"statediag\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag"
+  ]
+ },
+ {
+  "id": "explainer-xtool-reduced",
+  "label": "Explainer (ticket 53): xtool with reduced motion, no autoplay and no transition (fixture data)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does a tool call work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005304",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"tool-calling\", \"xtool\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag"
+  ],
+  "reducedMotion": true
+ },
+ {
+  "id": "explainer-xeval",
+  "label": "Explainer (ticket 53): xeval, three fixture checks against a 90% bar, Round 1 pressed, each row saying whether it clears, labeled Drawn by Oak AI, the Bridge line (fixture data)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How do evals improve an agent?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005311",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"xeval\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps"
+  ]
+ },
+ {
+  "id": "explainer-xgrad",
+  "label": "Explainer (ticket 53): xgrad, a native Learning rate slider over five fixture rates at 0.2, the descent drawn on one loss curve, labeled Drawn by Oak AI, the Bridge line (fixture data)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What does learning rate do?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine reads the waste photo and returns compost, recycle, landfill or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005312",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"image-classification\", \"xgrad\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps"
+  ]
+ },
+ {
+  "id": "explainer-xoffsteps",
+  "label": "Explainer (ticket 53): xoffsteps, how a leaf makes food in four fixture steps, step 1 current, labeled Drawn by Oak AI, no Bridge line (fixture data)",
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does a leaf make food?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005313",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"xoffsteps\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps"
+  ]
+ },
+ {
+  "id": "explainer-drawn",
+  "judgeLike": "explainer-statediag",
+  "label": "Explainer (ticket 54): a drawn RAG flow from question to cited answer, labeled Drawn by Oak AI, the Bridge line (fixture spec)",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does RAG answer a question?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005401",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"drawn\", \"How RAG answers a question\\nQuestion -> Retriever: finds passages\\nRetriever -> Model: hands over the passages\\nModel -> Answer: writes it with citations\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps",
+   "drawn",
+   "mermaid"
+  ],
+  "drawnDiagrams": true
+ },
+ {
+  "id": "explainer-mermaid-sequence",
+  "judgeLike": "explainer-statediag",
+  "label": "Explainer (ticket 54): a sequence diagram of one tool call, labeled Drawn by Oak AI, the Bridge line (fixture spec)",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does a tool call flow?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005402",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"tool-calling\", \"mermaid\", \"How a tool call flows\\nsequenceDiagram\\nUser->>Agent: asks for a reminder\\nAgent->>Tool: calls create reminder\\nTool-->>Agent: returns the reminder\\nAgent-->>User: confirms it\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps",
+   "drawn",
+   "mermaid"
+  ],
+  "drawnDiagrams": true
+ },
+ {
+  "id": "explainer-mermaid-state",
+  "judgeLike": "explainer-statediag",
+  "label": "Explainer (ticket 54): a state diagram of a voice agent taking turns, labeled Drawn by Oak AI, the Bridge line (fixture spec)",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does a voice agent take turns?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder turns a typed, tapped or spoken request into a real reminder, with its date, time and snooze.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-002:passage-004",
+          "sectionId": "work:oakminder:section-002",
+          "url": "https://steveoak.com/work/oakminder/#from-tap-flow-to-voice-agent"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005403",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"voice-agents\", \"mermaid\", \"How a voice agent takes turns\\nstateDiagram-v2\\n[*] --> Idle\\nIdle --> Listening: tap to talk\\nListening --> Thinking: speech ends\\nThinking --> Speaking: reply ready\\nSpeaking --> Idle: done\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps",
+   "drawn",
+   "mermaid"
+  ],
+  "drawnDiagrams": true
+ },
+ {
+  "id": "explainer-mermaid-journey",
+  "judgeLike": "explainer-statediag",
+  "label": "Explainer (ticket 54): a user journey for a spoken reminder, labeled Drawn by Oak AI, the Bridge line (fixture spec)",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What does a voice reminder journey look like?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Oakminder turns a typed, tapped or spoken request into a real reminder, with its date, time and snooze.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-002:passage-004",
+          "sectionId": "work:oakminder:section-002",
+          "url": "https://steveoak.com/work/oakminder/#from-tap-flow-to-voice-agent"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005404",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"voice-agents\", \"mermaid\", \"A voice reminder, start to finish\\njourney\\nsection Ask\\nSay remind me at five: 4: Visitor\\nVoice agent repeats it: 4: Visitor\\nsection Follow through\\nSnooze ten minutes: 5: Visitor\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps",
+   "drawn",
+   "mermaid"
+  ],
+  "drawnDiagrams": true
+ },
+ {
+  "id": "explainer-mermaid-gitgraph",
+  "judgeLike": "explainer-statediag",
+  "label": "Explainer (ticket 54): a git graph of an agent team's branch merging back, labeled Drawn by Oak AI, the Bridge line (fixture spec)",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Draw how an agent team merges its work"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop splits its agent team into an orchestrator that keeps the work moving and workers that own specific jobs.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-005:passage-003",
+          "sectionId": "work:linkedin-growth-loop:section-005",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/#orchestrator-workers-validators"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005405",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"multi-agent\", \"mermaid\", \"How an agent team merges its work\\ngitGraph\\ncommit\\nbranch research\\ncheckout research\\ncommit\\ncommit\\ncheckout main\\nmerge research\\ncommit\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps",
+   "drawn",
+   "mermaid"
+  ],
+  "drawnDiagrams": true
+ },
+ {
+  "id": "explainer-mermaid-c4",
+  "judgeLike": "explainer-statediag",
+  "label": "Explainer (ticket 54): a C4 context diagram of an orchestrator and its workers, labeled Drawn by Oak AI, the Bridge line (fixture spec)",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What does a C4 view of an agent team show?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "LinkedIn Growth Loop splits its agent team into an orchestrator that keeps the work moving and workers that own specific jobs.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-005:passage-003",
+          "sectionId": "work:linkedin-growth-loop:section-005",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/#orchestrator-workers-validators"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005406",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"multi-agent\", \"mermaid\", \"What a C4 view of an agent team shows\\nC4Context\\nPerson(op, \\\"Operator\\\", \\\"Sets the goal\\\")\\nSystem(lead, \\\"Orchestrator\\\", \\\"Plans and assigns\\\")\\nSystem_Ext(work, \\\"Worker agents\\\", \\\"Research and draft\\\")\\nRel(op, lead, \\\"Gives the goal\\\")\\nRel(lead, work, \\\"Hands out tasks\\\")\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps",
+   "drawn",
+   "mermaid"
+  ],
+  "drawnDiagrams": true
+ },
+ {
+  "id": "explainer-drawn-invalid",
+  "judgeLike": "explainer-statediag",
+  "label": "Explainer (ticket 54): a spec naming Steve's project, rejected, so the block degrades to the topic summary as Prose (fixture spec)",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How did Steve build Agentic Brain?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005409",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"mermaid\", \"How Agentic Brain uses retrieval\\nsequenceDiagram\\nUser->>Agentic Brain: stores a note\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps",
+   "drawn",
+   "mermaid"
+  ],
+  "drawnDiagrams": true
+ },
+ {
+  "id": "explainer-drawn-off",
+  "judgeLike": "explainer-statediag",
+  "label": "Explainer (ticket 54): constant off, so the mermaid preset draws the concept preset (fixture spec)",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does a tool call flow?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000005410",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"tool-calling\", \"mermaid\", \"How a tool call flows\\nsequenceDiagram\\nUser->>Agent: asks for a reminder\\nAgent->>Tool: calls create reminder\\nTool-->>Agent: returns the reminder\\nAgent-->>User: confirms it\")",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "explainer": true,
+  "explainerPresets": [
+   "concept",
+   "xmap",
+   "xrag",
+   "xemb",
+   "xtool",
+   "statediag",
+   "xeval",
+   "xgrad",
+   "xoffsteps",
+   "drawn",
+   "mermaid"
+  ],
+  "drawnDiagrams": false
+ }
+]

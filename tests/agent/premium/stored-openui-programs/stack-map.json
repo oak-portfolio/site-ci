@@ -1,0 +1,74 @@
+[
+ {
+  "id": "answer-openui-stack-map",
+  "question": "What tools does Steve use?",
+  "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"])",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "EcoSmartLoop's app is Next.js and TypeScript, shipped to phones through Capacitor.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-001:passage-003",
+       "sectionId": "work:ecosmartloop:section-001",
+       "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "The LinkedIn growth loop is TypeScript driving Playwright.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-stack-map-venn",
+  "question": "What do Oakminder and the LinkedIn growth loop share?",
+  "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"], \"venn\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Oakminder is an Expo and SwiftUI app on Convex, with RevenueCat for subscriptions.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-006",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "The LinkedIn growth loop runs TypeScript and Playwright, with its state in Convex.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-002",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

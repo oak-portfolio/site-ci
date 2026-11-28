@@ -1,0 +1,10 @@
+{
+ "record-undated": {
+  "iconOnly": true,
+  "reason": "327: record-line fixture, undated: the answer's cards carry it, with no pose of its own."
+ },
+ "record-dated": {
+  "iconOnly": true,
+  "reason": "327: record-line fixture, dated: the answer's cards carry it, with no pose of its own."
+ }
+}

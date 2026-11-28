@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>forced colors: a ::before filled rgba(255, 255, 255, 0) (196 r1)</title>
+<style>
+  body { margin: 24px; font: 16px system-ui, sans-serif; }
+  .ring { display: inline-block; }
+  .ring::before { content: ""; display: block; width: 10px; height: 10px; background: rgba(255, 255, 255, 0); }
+</style>
+</head>
+<body>
+<main class="oak-conversation">
+  <p>Ring <span class="ring"></span></p>
+</main>
+</body>
+</html>

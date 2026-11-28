@@ -1,0 +1,10 @@
+{
+ "card-after-answer": {
+  "iconOnly": true,
+  "reason": "Ticket 230: the sourced answer and the Contact card's portrait carry the state; no pose of its own."
+ },
+ "clarify-then-card": {
+  "iconOnly": true,
+  "reason": "Ticket 230 (ruling 28): the narrowing question and the Contact card's portrait carry the state; no pose of its own."
+ }
+}

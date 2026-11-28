@@ -1,0 +1,28 @@
+{
+  "name": "SiteCard",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": {
+    "line": "From Steve's site:"
+  },
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "plan": {
+    "in": {
+      "overview": 1
+    },
+    "count": "hits"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "text": "[site card: the cited site item in its own look, its icon, title and links, from the site's own pages]",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

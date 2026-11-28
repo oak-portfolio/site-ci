@@ -1,0 +1,130 @@
+[
+  {
+    "id": "answer-openui-site-card-app",
+    "source": "tests/agent/premium/stored-openui-programs.json",
+    "record": {
+      "conversationId": "00005900-aaaa-4aaa-8aaa-aaaaaaaaaa00",
+      "version": 1,
+      "messages": [
+        {
+          "id": "00005901-aaaa-4aaa-8aaa-aaaaaaaaaa00:user",
+          "role": "user",
+          "text": "What apps has Steve shipped?",
+          "answer": null,
+          "cards": [],
+          "page": "/",
+          "taskKind": "question"
+        },
+        {
+          "id": "00005901-aaaa-4aaa-8aaa-aaaaaaaaaa00",
+          "role": "assistant",
+          "text": "Kusala Daily is a calm daily practice app Steve shipped, with its own support and privacy pages.",
+          "answer": {
+            "schema": "oak.answer.v1",
+            "speaker": "oak-ai-host",
+            "characterVersion": "oak-v1",
+            "hardPolicyVersion": "policy-v1",
+            "operations": [
+              "search",
+              "read"
+            ],
+            "kind": "sourced",
+            "knowledgeRevision": "k",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "Kusala Daily is a calm daily practice app Steve shipped, with its own support and privacy pages.",
+                "citations": [
+                  {
+                    "documentId": "resource:kusala-daily",
+                    "passageId": "resource:kusala-daily:section-001:passage-001",
+                    "sectionId": "resource:kusala-daily:section-001",
+                    "url": "https://steveoak.com/apps/kusala-daily/"
+                  }
+                ]
+              }
+            ]
+          },
+          "cards": [],
+          "page": "/",
+          "taskKind": "question",
+          "ui": {
+            "requestId": "00005901-aaaa-4aaa-8aaa-aaaaaaaaaa00",
+            "program": "root = Answer([site])\nsite = SiteCard([\"claim-1\"], \"app\")",
+            "status": "done"
+          }
+        }
+      ],
+      "createdAt": 1793750400000,
+      "lastSavedMessageAt": 1793750400000,
+      "updatedAt": 1793750400000,
+      "expiresAt": 1796342400000,
+      "lastNewSavedMessageId": "00005901-aaaa-4aaa-8aaa-aaaaaaaaaa00"
+    }
+  },
+  {
+    "id": "answer-openui-site-card-not-on-site",
+    "source": "tests/agent/premium/stored-openui-programs.json",
+    "record": {
+      "conversationId": "00005900-aaaa-4aaa-8aaa-aaaaaaaaaa01",
+      "version": 1,
+      "messages": [
+        {
+          "id": "00005901-aaaa-4aaa-8aaa-aaaaaaaaaa01:user",
+          "role": "user",
+          "text": "Does Steve have a blog?",
+          "answer": null,
+          "cards": [],
+          "page": "/",
+          "taskKind": "question"
+        },
+        {
+          "id": "00005901-aaaa-4aaa-8aaa-aaaaaaaaaa01",
+          "role": "assistant",
+          "text": "Steve writes on his social channels.",
+          "answer": {
+            "schema": "oak.answer.v1",
+            "speaker": "oak-ai-host",
+            "characterVersion": "oak-v1",
+            "hardPolicyVersion": "policy-v1",
+            "operations": [
+              "search",
+              "read"
+            ],
+            "kind": "sourced",
+            "knowledgeRevision": "k",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "Steve writes on his social channels.",
+                "citations": [
+                  {
+                    "documentId": "profile:steve-oak",
+                    "passageId": "profile:steve-oak:section-001:passage-001",
+                    "sectionId": "profile:steve-oak:section-001",
+                    "url": "https://steveoak.com/"
+                  }
+                ]
+              }
+            ]
+          },
+          "cards": [],
+          "page": "/",
+          "taskKind": "question",
+          "ui": {
+            "requestId": "00005901-aaaa-4aaa-8aaa-aaaaaaaaaa01",
+            "program": "root = Answer([site])\nsite = SiteCard([\"claim-1\"], \"notOnSite\")",
+            "status": "done"
+          }
+        }
+      ],
+      "createdAt": 1793750400000,
+      "lastSavedMessageAt": 1793750400000,
+      "updatedAt": 1793750400000,
+      "expiresAt": 1796342400000,
+      "lastNewSavedMessageId": "00005901-aaaa-4aaa-8aaa-aaaaaaaaaa01"
+    }
+  }
+]

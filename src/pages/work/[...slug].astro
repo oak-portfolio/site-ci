@@ -1,0 +1,618 @@
+---
+import { render } from "astro:content";
+import { jsonForScript } from "@/lib/jsonForScript";
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import ArchitectureDiagram from "@/components/work/ArchitectureDiagram.astro";
+import ArtifactPlaceholder from "@/components/work/ArtifactPlaceholder.astro";
+import ChartFigure from "@/components/work/ChartFigure.astro";
+import Callout from "@/components/work/Callout.astro";
+import ExcalidrawFigure from "@/components/work/ExcalidrawFigure.astro";
+import ImageFigure from "@/components/work/ImageFigure.astro";
+import { BrandIconLink, KeywordBadge, LobeIconLink } from "@/components/work/InlineHighlight";
+import LegacyCaseStudyCard from "@/components/work/LegacyCaseStudyCard.astro";
+import LinkCard from "@/components/work/LinkCard.astro";
+import MetricStrip from "@/components/work/MetricStrip.astro";
+import OutcomeTable from "@/components/work/OutcomeTable.astro";
+import OptimizedPicture from "@/components/OptimizedPicture.astro";
+import ProcessSteps from "@/components/work/ProcessSteps.astro";
+import ProofGrid from "@/components/work/ProofGrid.astro";
+import QuestionAnswer from "@/components/work/QuestionAnswer.astro";
+import TLDR from "@/components/work/Tldr.astro";
+import VideoFigure from "@/components/work/VideoFigure.astro";
+import { oakWorkOpenGraph } from "@/lib/oakSourceCovers";
+import WorkGridLightbox from "@/components/work/WorkGridLightbox";
+import WorkInProgressPanel from "@/components/work/WorkInProgressPanel.astro";
+import WorkImageCarousel from "@/components/work/WorkImageCarousel.astro";
+import WorkPreviewSection from "@/components/work/WorkPreviewSection.astro";
+import WorkTocActions from "@/components/work/WorkTocActions.astro";
+import { isInProgressCaseStudy } from "@/data/caseStudies";
+import { workArticleImageSizes } from "@/data/responsiveImages";
+import { isDraftStage } from "@/data/siteVisibility";
+import { getWorkEntries, getWorkSlug, type WorkEntry, workEntryToCaseStudy } from "@/lib/workContent";
+import { getWorkPreviewCards } from "@/lib/workPreviews";
+
+export async function getStaticPaths() {
+  const entries = await getWorkEntries();
+  return entries.map((entry) => ({
+    params: { slug: getWorkSlug(entry) },
+    props: { entry },
+  }));
+}
+
+type Props = {
+  entry: WorkEntry;
+};
+
+const { entry } = Astro.props;
+const caseStudy = workEntryToCaseStudy(entry);
+const { Content, headings } = await render(entry);
+const isInProgressStub = isInProgressCaseStudy(caseStudy);
+const canonical = new URL(`/work/${caseStudy.slug}/`, Astro.site ?? "https://steveoak.com").toString();
+const noindex = isDraftStage() || caseStudy.evidenceStatus.publishMode !== "publish-ready";
+const articleDate = caseStudy.datePublished;
+const articleDateTime = articleDate.toISOString();
+const articleDateLabel = new Intl.DateTimeFormat("en-US", {
+  month: "long",
+  day: "numeric",
+  year: "numeric",
+  timeZone: "UTC",
+}).format(articleDate);
+const articleTagCandidates = [
+  caseStudy.card.badge,
+  ...caseStudy.card.category.split(",").map((tag) => tag.trim()),
+  ...caseStudy.stack.slice(0, 1),
+];
+const articleTags = Array.from(new Set(articleTagCandidates.filter((tag): tag is string => Boolean(tag))));
+const articleHeaderTags = articleTags.slice(0, 1);
+// One rule with the agent's source covers, so a cited case study wears exactly this og:image.
+const socialImage = oakWorkOpenGraph(caseStudy);
+const socialImageAlt = caseStudy.social?.imageAlt ?? caseStudy.card.imageAlt;
+const keepReadingCards = getWorkPreviewCards(await getWorkEntries(), {
+  excludeSlug: caseStudy.slug,
+  includeStaged: true,
+  limit: 3,
+});
+const markdownApiHref = `/api/md/work/${caseStudy.slug}`;
+const markdownApiUrl = new URL(markdownApiHref, "https://steveoak.com").toString();
+const tocHeadings = headings.filter((heading) => heading.depth === 2 || heading.depth === 3);
+const shouldRenderToc = tocHeadings.length > 1 && !isInProgressStub;
+const workMdxComponents = {
+  ArchitectureDiagram,
+  ArtifactPlaceholder,
+  BrandIconLink,
+  ChartFigure,
+  Callout,
+  ExcalidrawFigure,
+  ImageFigure,
+  KeywordBadge,
+  LegacyCaseStudyCard,
+  LinkCard,
+  LobeIconLink,
+  MetricStrip,
+  OutcomeTable,
+  OptimizedPicture,
+  ProcessSteps,
+  ProofGrid,
+  QuestionAnswer,
+  TLDR,
+  VideoFigure,
+  WorkInProgressPanel,
+  WorkImageCarousel,
+};
+const workArticleOakContextMaps = {
+  oakminder: {
+    "why-i-built-another-reminder-app": "oakminder.problem",
+    "from-tap-flow-to-voice-agent": "oakminder.tap-to-voice",
+    "notification-actions-had-to-carry-more": "oakminder.notification-actions",
+    "the-architecture-behind-a-simple-tap": "oakminder.architecture",
+    "voice-became-the-action-layer": "oakminder.voice-agent",
+    "onboarding-had-to-earn-trust": "oakminder.onboarding",
+    "docs-became-part-of-distribution": "oakminder.docs",
+    "after-the-app-store-distribution-started": "oakminder.distribution-start",
+    "the-distribution-studio-around-the-app": "oakminder.distribution-studio",
+    "the-phone-became-the-research-bridge": "oakminder.mobile-bridge",
+    "saving-the-visual-pattern": "oakminder.visual-extraction",
+    "creative-studio": "oakminder.creative-studio",
+    "ugc-briefs-and-ai-assisted-drafts": "oakminder.ugc-drafts",
+    "publishing-and-feedback": "oakminder.publishing-feedback",
+    "what-i-would-build-again": "oakminder.learning",
+  },
+  ecosmartloop: {
+    "the-three-bin-pause": "ecosmartloop.problem",
+    "the-questions-going-in": "ecosmartloop.problem",
+    "where-the-direction-came-from": "ecosmartloop.origin",
+    "why-a-california-waste-sorting-prototype-was-worth-building": "ecosmartloop.stakes",
+    "what-i-had-to-make-work": "ecosmartloop.ownership",
+    "the-decision-loop": "ecosmartloop.ai-system",
+    "leaf-engine-classified-orbi-explained": "ecosmartloop.ai-system",
+    "from-scanner-to-behavior-loop": "ecosmartloop.behavior-loop",
+    "the-tradeoffs-that-made-it-real": "ecosmartloop.tradeoffs",
+    "the-stack-behind-the-scan": "ecosmartloop.tradeoffs",
+    "what-the-evidence-actually-showed": "ecosmartloop.evidence",
+    "why-we-did-not-turn-it-into-a-company-yet": "ecosmartloop.evidence",
+    "what-i-took-with-me": "ecosmartloop.learning",
+  },
+  "linkedin-growth-loop": {
+    "agents-are-overhyped-until-they-own-the-work": "linkedin-growth.hero",
+    "the-in-house-need-made-it-serious": "linkedin-growth.in-house",
+    "linkedin-became-the-first-real-success": "linkedin-growth.first-success",
+    "the-first-daily-loop": "linkedin-growth.first-loop",
+    "orchestrator-workers-validators": "linkedin-growth.operators",
+    "harnesses-are-a-choice-not-the-point": "linkedin-growth.harness",
+    "telegram-became-the-control-room": "linkedin-growth.telegram",
+    "browser-control-kept-the-cost-honest": "linkedin-growth.browser-control",
+    "evaluation-turned-runs-into-learning": "linkedin-growth.evaluation",
+    "one-failure-that-forced-better-rules": "linkedin-growth.failure-loop",
+    "what-moved-out-of-my-head": "linkedin-growth.enterprise",
+  },
+} as const;
+const workArticleOakContextMap =
+  workArticleOakContextMaps[caseStudy.slug as keyof typeof workArticleOakContextMaps] ?? {};
+const workHeaderOakContext = caseStudy.slug === "linkedin-growth-loop" ? "linkedin-growth.hero" : `${caseStudy.slug}.hero`;
+const jsonLdGraph = [
+  {
+    "@type": ["TechArticle", "CreativeWork"],
+    "@id": `${canonical}#article`,
+    "headline": caseStudy.schema.headline,
+    "description": caseStudy.schema.description,
+    "author": { "@id": "https://steveoak.com/#person" },
+    "publisher": { "@id": "https://steveoak.com/#person" },
+    "about": caseStudy.schema.about,
+    "keywords": caseStudy.seo.keywords.join(", "),
+    "image": new URL(caseStudy.hero.image, Astro.site ?? "https://steveoak.com").toString(),
+    "datePublished": caseStudy.datePublished.toISOString(),
+    "dateModified": (caseStudy.dateUpdated ?? caseStudy.datePublished).toISOString(),
+    "mainEntityOfPage": { "@id": `${canonical}#webpage` },
+    "inLanguage": "en-US",
+  },
+  {
+    "@type": "BreadcrumbList",
+    "@id": `${canonical}#breadcrumbs`,
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Work",
+        "item": "https://steveoak.com/work",
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": caseStudy.projectName,
+        "item": canonical,
+      },
+    ],
+  },
+];
+---
+
+<BaseLayout
+  title={caseStudy.seo.title}
+  description={caseStudy.seo.description}
+  canonicalUrl={canonical}
+  noindex={noindex}
+  ogType="article"
+  ogImage={socialImage}
+  ogImageAlt={socialImageAlt}
+  ogImageWidth={caseStudy.social?.width}
+  ogImageHeight={caseStudy.social?.height}
+  showOakMascot={!isInProgressStub}
+  webPageMainEntityId={`${canonical}#article`}
+  jsonLdGraph={jsonLdGraph}
+>
+  <article class:list={["case-study-page", "work-article-page", isInProgressStub && "work-article-page--in-progress"]}>
+    <header
+      class="work-article-header"
+      data-oak-section={workHeaderOakContext}
+      data-oak-context={workHeaderOakContext}
+    >
+      <div class="page-container work-article-header__inner">
+        <div class="work-article-meta" aria-label={`${caseStudy.projectName} date and tags`}>
+          <time class="work-article-date" datetime={articleDateTime}>{articleDateLabel}</time>
+          {articleHeaderTags.map((tag) => <span>{tag}</span>)}
+        </div>
+        <h1>{caseStudy.title}</h1>
+        <p class="case-dek">{caseStudy.dek}</p>
+        <figure class="work-article-hero-media">
+          <OptimizedPicture
+            src={caseStudy.hero.image}
+            alt={caseStudy.hero.imageAlt}
+            sizes={workArticleImageSizes}
+            decoding="async"
+            fetchpriority="high"
+            loading="eager"
+          />
+          {caseStudy.hero.caption && <figcaption>{caseStudy.hero.caption}</figcaption>}
+        </figure>
+      </div>
+    </header>
+
+    <div class:list={["page-container", "work-article-layout", !shouldRenderToc && "work-article-layout--without-toc"]} data-oak-section={`${caseStudy.slug}.system`}>
+      <section class="work-article-body" aria-label={`${caseStudy.projectName} case study body`}>
+        <Content components={workMdxComponents} />
+        <WorkGridLightbox client:idle />
+        <script
+          is:inline
+          id="work-oak-context-map"
+          type="application/json"
+          set:html={jsonForScript(workArticleOakContextMap)}
+        />
+        <script is:inline data-astro-rerun>
+          (() => {
+            const mapElement = document.getElementById("work-oak-context-map");
+            const body = document.querySelector(".work-article-body");
+            if (!mapElement || !(body instanceof HTMLElement)) return;
+
+            let contextMap = {};
+            try {
+              contextMap = JSON.parse(mapElement.textContent || "{}");
+            } catch {
+              return;
+            }
+
+            let activeContext = "";
+            for (const element of Array.from(body.children)) {
+              if (!(element instanceof HTMLElement)) continue;
+              const tagName = element.tagName.toLowerCase();
+              if (tagName === "h2") {
+                activeContext = contextMap[element.id] || "";
+              }
+              if (["script", "style", "link", "template"].includes(tagName)) continue;
+              if (!activeContext) continue;
+              element.dataset.oakContext = activeContext;
+              element.dataset.oakSection = activeContext;
+            }
+          })();
+        </script>
+      </section>
+      {
+        shouldRenderToc && (
+          <aside class="work-toc" aria-label="On this page" data-work-toc data-open="false">
+            <div class="work-toc__header">
+              <p class="work-toc__eyebrow">On this page</p>
+              <WorkTocActions markdownApiHref={markdownApiHref} providerSourceHref={markdownApiUrl} menuId="work-toc-action-menu" pageTitle={caseStudy.projectName} />
+            </div>
+            <button
+              class="work-toc__toggle"
+              type="button"
+              aria-expanded="false"
+              aria-controls="work-toc-nav"
+              data-work-toc-toggle
+            >
+              <span class="work-toc__toggle-label">On this page</span>
+              <span class="work-toc__current" data-work-toc-current>{tocHeadings[0]?.text ?? "Sections"}</span>
+              <span class="work-toc__chevron" aria-hidden="true"></span>
+            </button>
+            <div class="work-toc__panel-actions">
+              <WorkTocActions markdownApiHref={markdownApiHref} providerSourceHref={markdownApiUrl} menuId="work-toc-action-menu-panel" pageTitle={caseStudy.projectName} variant="panel" />
+            </div>
+            <nav id="work-toc-nav" class="work-toc__nav" data-work-toc-nav aria-label="Case study sections">
+              {
+                tocHeadings.map((heading, index) => (
+                  <a
+                    href={`#${heading.slug}`}
+                    data-depth={heading.depth}
+                    data-heading-id={heading.slug}
+                    data-work-toc-link
+                    aria-current={index === 0 ? "true" : undefined}
+                  >
+                    {heading.text}
+                  </a>
+                ))
+              }
+            </nav>
+          </aside>
+        )
+      }
+    </div>
+
+    <script is:inline data-astro-rerun>
+      (() => {
+        window.__workTocCleanup?.();
+
+        const toc = document.querySelector("[data-work-toc]");
+        if (!(toc instanceof HTMLElement)) return;
+
+        const toggle = toc.querySelector("[data-work-toc-toggle]");
+        const currentLabel = toc.querySelector("[data-work-toc-current]");
+        const copyButtons = Array.from(toc.querySelectorAll("[data-work-toc-copy]"));
+        const actionGroups = Array.from(toc.querySelectorAll("[data-work-toc-actions]"));
+        const actionTriggers = Array.from(toc.querySelectorAll("[data-work-toc-action-trigger]"));
+        const actionItems = Array.from(toc.querySelectorAll("[data-work-toc-copy], [data-work-toc-oak], [data-work-toc-provider]"));
+        const oakButtons = Array.from(toc.querySelectorAll("[data-work-toc-oak]"));
+        const links = Array.from(toc.querySelectorAll("[data-work-toc-link]"));
+        const desktopQuery = window.matchMedia("(min-width: 1025px)");
+        const headingPairs = links
+          .map((link) => {
+            const headingId = link.getAttribute("data-heading-id");
+            const heading = headingId ? document.getElementById(headingId) : null;
+            return heading instanceof HTMLElement ? { id: headingId, heading, link } : null;
+          })
+          .filter(Boolean);
+
+        if (!headingPairs.length) return;
+
+        let activeId = "";
+        let frame = 0;
+        let copyResetTimeout = 0;
+
+        const setCopyLabel = (label) => {
+          for (const trigger of actionTriggers) {
+            const labelElement = trigger.querySelector("[data-work-toc-copy-label]");
+            if (labelElement) labelElement.textContent = label;
+          }
+        };
+
+        const resetCopyLabel = () => {
+          if (copyResetTimeout) window.clearTimeout(copyResetTimeout);
+          copyResetTimeout = window.setTimeout(() => setCopyLabel("Copy page"), 1800);
+        };
+
+        const setOpen = (isOpen) => {
+          toc.dataset.open = isOpen ? "true" : "false";
+          toggle?.setAttribute("aria-expanded", String(isOpen));
+        };
+
+        const setActionMenuOpen = (activeGroup, isOpen) => {
+          for (const group of actionGroups) {
+            if (!(group instanceof HTMLElement)) continue;
+            const shouldOpen = isOpen && group === activeGroup;
+            const trigger = group.querySelector("[data-work-toc-action-trigger]");
+            const menu = group.querySelector("[data-work-toc-action-menu]");
+
+            group.dataset.open = shouldOpen ? "true" : "false";
+            trigger?.setAttribute("aria-expanded", String(shouldOpen));
+            if (menu instanceof HTMLElement) menu.hidden = !shouldOpen;
+          }
+        };
+
+        const closeActionMenus = () => {
+          setActionMenuOpen(null, false);
+        };
+
+        const setActive = (nextId) => {
+          if (!nextId || nextId === activeId) return;
+          activeId = nextId;
+
+          for (const pair of headingPairs) {
+            const isActive = pair.id === nextId;
+            if (isActive) {
+              pair.link.setAttribute("aria-current", "true");
+              if (currentLabel) currentLabel.textContent = pair.link.textContent?.trim() || "Current section";
+            } else {
+              pair.link.removeAttribute("aria-current");
+            }
+          }
+        };
+
+        const updateActive = () => {
+          const topOffset = desktopQuery.matches ? 174 : 190;
+          let current = headingPairs[0];
+
+          for (const pair of headingPairs) {
+            if (pair.heading.getBoundingClientRect().top <= topOffset) {
+              current = pair;
+            } else {
+              break;
+            }
+          }
+
+          setActive(current.id);
+        };
+
+        const scheduleUpdate = () => {
+          if (frame) return;
+          frame = window.requestAnimationFrame(() => {
+            frame = 0;
+            updateActive();
+          });
+        };
+
+        const toggleOpen = () => {
+          setOpen(toc.dataset.open !== "true");
+        };
+
+        const toggleActionMenu = (event) => {
+          const trigger = event.currentTarget;
+          if (!(trigger instanceof HTMLElement)) return;
+          const actionGroup = trigger.closest("[data-work-toc-actions]");
+          const isOpen = trigger.getAttribute("aria-expanded") === "true";
+          setActionMenuOpen(actionGroup, !isOpen);
+        };
+
+        const handleActionTriggerKeydown = (event) => {
+          if (event.key !== "ArrowDown" && event.key !== "Enter" && event.key !== " ") return;
+          event.preventDefault();
+
+          const trigger = event.currentTarget;
+          if (!(trigger instanceof HTMLElement)) return;
+          const actionGroup = trigger.closest("[data-work-toc-actions]");
+          setActionMenuOpen(actionGroup, true);
+          const firstItem = actionGroup?.querySelector("[role='menuitem']");
+          if (firstItem instanceof HTMLElement) firstItem.focus();
+        };
+
+        const handleActionItemKeydown = (event) => {
+          const currentIndex = actionItems.indexOf(event.currentTarget);
+
+          if (event.key === "Escape") {
+            event.preventDefault();
+            const actionGroup = event.currentTarget.closest("[data-work-toc-actions]");
+            closeActionMenus();
+            const trigger = actionGroup?.querySelector("[data-work-toc-action-trigger]");
+            if (trigger instanceof HTMLElement) trigger.focus();
+            return;
+          }
+
+          if (event.key === "Tab") {
+            closeActionMenus();
+            return;
+          }
+
+          if (event.key !== "ArrowDown" && event.key !== "ArrowUp") return;
+          event.preventDefault();
+
+          const direction = event.key === "ArrowDown" ? 1 : -1;
+          const actionGroup = event.currentTarget.closest("[data-work-toc-actions]");
+          const groupItems = Array.from(actionGroup?.querySelectorAll("[role='menuitem']") ?? []);
+          const groupIndex = groupItems.indexOf(actionItems[currentIndex]);
+          const nextIndex = (groupIndex + direction + groupItems.length) % groupItems.length;
+          const nextItem = groupItems[nextIndex];
+          if (nextItem instanceof HTMLElement) nextItem.focus();
+        };
+
+        const closeAfterJump = () => {
+          if (!desktopQuery.matches) setOpen(false);
+          closeActionMenus();
+        };
+
+        const closeOnOutsidePointer = (event) => {
+          if (!(event.target instanceof Node)) return;
+
+          const isInsideActions = actionGroups.some((group) => group instanceof HTMLElement && group.contains(event.target));
+          if (!isInsideActions) closeActionMenus();
+
+          if (desktopQuery.matches || toc.dataset.open !== "true") return;
+          if (!toc.contains(event.target)) setOpen(false);
+        };
+
+        const copyPageMarkdown = async (event) => {
+          const button = event.currentTarget;
+          if (!(button instanceof HTMLElement)) return;
+          const markdownHref = button.dataset.markdownHref;
+          if (!markdownHref) return;
+
+          try {
+            const response = await fetch(markdownHref, { headers: { Accept: "text/markdown" } });
+            if (!response.ok) throw new Error(`Markdown fetch failed: ${response.status}`);
+            await navigator.clipboard.writeText(await response.text());
+            setCopyLabel("Copied");
+            closeActionMenus();
+          } catch {
+            setCopyLabel("Copy blocked");
+          }
+
+          resetCopyLabel();
+        };
+
+        const openProvider = (event) => {
+          const button = event.currentTarget;
+          if (!(button instanceof HTMLElement)) return;
+
+          const provider = button.dataset.workTocProvider;
+          const providerSource = button.dataset.providerSource;
+          if (!provider || !providerSource) return;
+
+          const prompt = `Read from ${providerSource} so I can ask questions about it.`;
+          const encodedPrompt = encodeURIComponent(prompt);
+          let providerHref = `https://www.perplexity.ai/?q=${encodedPrompt}`;
+          if (provider === "chatgpt") providerHref = `https://chatgpt.com/?prompt=${encodedPrompt}`;
+          if (provider === "claude") providerHref = `https://claude.ai/new?q=${encodedPrompt}`;
+
+          closeActionMenus();
+          window.open(providerHref, "_blank", "noopener,noreferrer");
+        };
+
+        const askOak = (event) => {
+          const button = event.currentTarget;
+          if (!(button instanceof HTMLElement)) return;
+          const prompt = button.dataset.oakPrompt;
+          if (!prompt) return;
+          const trigger = button.closest("[data-work-toc-actions]")?.querySelector("[data-work-toc-action-trigger]");
+          closeActionMenus();
+          window.dispatchEvent(new CustomEvent("work-toc:ask-oak", { detail: { prompt, opener: trigger instanceof HTMLElement ? trigger : null } }));
+        };
+
+        toggle?.addEventListener("click", toggleOpen);
+        for (const trigger of actionTriggers) {
+          trigger.addEventListener("click", toggleActionMenu);
+          trigger.addEventListener("keydown", handleActionTriggerKeydown);
+        }
+        for (const item of actionItems) {
+          item.addEventListener("keydown", handleActionItemKeydown);
+        }
+        for (const button of copyButtons) {
+          button.addEventListener("click", copyPageMarkdown);
+        }
+        for (const button of Array.from(toc.querySelectorAll("[data-work-toc-provider]"))) {
+          button.addEventListener("click", openProvider);
+        }
+        for (const button of oakButtons) {
+          button.addEventListener("click", askOak);
+        }
+        for (const pair of headingPairs) {
+          pair.link.addEventListener("click", closeAfterJump);
+        }
+        window.addEventListener("scroll", scheduleUpdate, { passive: true });
+        window.addEventListener("resize", scheduleUpdate);
+        document.addEventListener("pointerdown", closeOnOutsidePointer);
+
+        setOpen(false);
+        updateActive();
+
+        window.__workTocCleanup = () => {
+          if (frame) window.cancelAnimationFrame(frame);
+          if (copyResetTimeout) window.clearTimeout(copyResetTimeout);
+          toggle?.removeEventListener("click", toggleOpen);
+          for (const trigger of actionTriggers) {
+            trigger.removeEventListener("click", toggleActionMenu);
+            trigger.removeEventListener("keydown", handleActionTriggerKeydown);
+          }
+          for (const item of actionItems) {
+            item.removeEventListener("keydown", handleActionItemKeydown);
+          }
+          for (const button of copyButtons) {
+            button.removeEventListener("click", copyPageMarkdown);
+          }
+          for (const button of Array.from(toc.querySelectorAll("[data-work-toc-provider]"))) {
+            button.removeEventListener("click", openProvider);
+          }
+          for (const button of oakButtons) {
+            button.removeEventListener("click", askOak);
+          }
+          for (const pair of headingPairs) {
+            pair.link.removeEventListener("click", closeAfterJump);
+          }
+          window.removeEventListener("scroll", scheduleUpdate);
+          window.removeEventListener("resize", scheduleUpdate);
+          document.removeEventListener("pointerdown", closeOnOutsidePointer);
+          window.__workTocCleanup = undefined;
+        };
+      })();
+    </script>
+
+    {
+      !isInProgressStub && (
+        <footer class="work-article-footer" aria-label={`${caseStudy.projectName} article details`}>
+          <div class="page-container work-article-footer__inner">
+            <div class="work-article-footer__facts">
+              <p>
+                <span>Author</span>
+                <strong>Steve Oak</strong>
+              </p>
+              <p>
+                <span>Published</span>
+                <time datetime={articleDateTime}>{articleDateLabel}</time>
+              </p>
+            </div>
+            <div class="work-article-footer__tags" aria-label={`${caseStudy.projectName} tags`}>
+              {articleTags.map((tag) => <span>{tag}</span>)}
+            </div>
+          </div>
+        </footer>
+      )
+    }
+    <WorkPreviewSection
+      title="Keep reading"
+      items={keepReadingCards}
+      viewAllHref="/work"
+      viewAllLabel="View all"
+      headingId="work-keep-reading-heading"
+      className="work-preview-section--article"
+      dataOakSection="home.work"
+      dataOakContext="home.work"
+      width="1200"
+      height="630"
+    />
+  </article>
+</BaseLayout>

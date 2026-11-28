@@ -1,0 +1,183 @@
+/* Ticket 60: request-kind blocks (Points decisions, the similar build beside advice, a document's open questions). Imported by the components that render them. */
+
+.oak-kind-decisions {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+
+.oak-kind-decisions__head,
+.oak-kind-similar__head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  min-width: 0;
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--text-ui-md);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-kind-decisions__rows,
+.oak-kind-unresolved ul {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-micro);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-kind-decisions__rows li {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  min-width: 0;
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  overflow-wrap: anywhere;
+}
+
+.oak-kind-decisions__rows li:last-child {
+  border-bottom: 0;
+}
+
+.oak-kind-decisions__rows svg {
+  flex: none;
+  margin-top: calc(var(--space-micro) / 2);
+  color: var(--oak-gold);
+}
+
+.oak-kind-decisions__link {
+  margin: 0;
+  font-size: var(--text-ui-sm);
+}
+
+.oak-kind-decisions__link a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: var(--oak-violet);
+  text-underline-offset: 0.2em;
+}
+
+.oak-kind-decisions__link a:hover {
+  text-decoration-thickness: 0.15em;
+}
+
+.oak-kind-similar {
+  container: oak-kind-similar / inline-size;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-width: 0;
+  margin-block-start: var(--space-sm);
+}
+
+/* The card sits outside .oak-openui, so its title, meta and narrow cover take the answer card's rules here. */
+.oak-kind-similar .oak-openui-card__title {
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--text-ui-md);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-kind-similar .oak-openui-card__meta {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+@container oak-kind-similar (max-width: 519px) {
+  .oak-kind-similar .oak-openui-card__head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .oak-kind-similar .oak-openui-card__thumb {
+    height: calc(var(--space-lg) + var(--space-sm));
+  }
+}
+
+.oak-kind-similar__tag,
+.oak-kind-similar__capsule {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-micro);
+  padding: calc(var(--space-micro) / 2) var(--space-xs);
+  border-radius: var(--radius-pill);
+  font-size: var(--text-ui-sm);
+  font-weight: 500;
+  line-height: var(--leading-ui);
+}
+
+.oak-kind-similar__tag {
+  border: 1px solid var(--line);
+  color: var(--muted);
+}
+
+.oak-kind-similar__capsule {
+  align-self: flex-start;
+  margin: 0;
+  background: var(--oak-tint-gold);
+  color: var(--oak-gold);
+}
+
+.oak-kind-similar__line {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-kind-unresolved {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-width: 0;
+  padding-block-start: var(--space-sm);
+}
+
+.oak-kind-unresolved h4 {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+}
+
+.oak-kind-unresolved h4 svg {
+  color: var(--oak-gold);
+}
+
+.oak-kind-unresolved li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-micro) var(--space-sm);
+  min-width: 0;
+  padding: var(--space-xs) 0;
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  overflow-wrap: anywhere;
+}
+
+.oak-kind-unresolved li:last-child {
+  border-bottom: 0;
+}

@@ -1,0 +1,16 @@
+---
+type Props = {
+  href: string;
+  eyebrow?: string;
+  title: string;
+  description: string;
+};
+
+const { href, eyebrow, title, description } = Astro.props;
+---
+
+<a class="work-mdx-link-card" href={href}>
+  {eyebrow && <span>{eyebrow}</span>}
+  <strong>{title}</strong>
+  <p>{description}</p>
+</a>

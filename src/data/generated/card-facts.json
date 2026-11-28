@@ -1,0 +1,201 @@
+{
+  "https://steveoak.com/work/agentic-brain": {
+    "kind": "work",
+    "title": "Agentic Brain",
+    "role": "Agent memory systems owner / AI product engineer",
+    "period": "May 2026",
+    "stack": [
+      "RAG",
+      "Context engineering",
+      "Codebase search",
+      "Memory graphs",
+      "Obsidian workflows",
+      "AGENTS.md management",
+      "CLAUDE.md management",
+      "MCP collections"
+    ]
+  },
+  "https://steveoak.com/work/ecosmartloop": {
+    "kind": "work",
+    "title": "EcoSmartLoop",
+    "role": "Product-side full-stack owner / AI product engineer",
+    "period": "September to December 2025",
+    "stack": [
+      "Next.js",
+      "TypeScript",
+      "Vercel AI SDK",
+      "Capacitor",
+      "Supabase",
+      "Prisma",
+      "BetterAuth",
+      "AWS"
+    ]
+  },
+  "https://steveoak.com/work/linkedin-growth-loop": {
+    "kind": "work",
+    "title": "LinkedIn Growth Loop",
+    "role": "Agent workflow owner / AI product engineer",
+    "period": "February to April 2026",
+    "stack": [
+      "TypeScript",
+      "OpenClaw",
+      "Hermes",
+      "Telegram Bot API",
+      "Playwright",
+      "Patchright",
+      "Convex",
+      "Thompson sampling"
+    ]
+  },
+  "https://steveoak.com/work/oakminder": {
+    "kind": "work",
+    "title": "Oakminder",
+    "role": "Solo founder-engineer / AI product engineer",
+    "period": "January to March 2026",
+    "stack": [
+      "Expo",
+      "React Native",
+      "SwiftUI",
+      "Convex",
+      "Clerk",
+      "RevenueCat",
+      "Sentry",
+      "PostHog"
+    ]
+  },
+  "https://steveoak.com/work/omnisocial": {
+    "kind": "work",
+    "title": "OmniSocial",
+    "role": "Agent workflow owner / AI product engineer",
+    "period": "May 2026",
+    "stack": [
+      "TypeScript",
+      "Browser harness",
+      "API publishing",
+      "Agent skills",
+      "CLI workflows",
+      "Content production",
+      "SEO/AEO workflows"
+    ]
+  },
+  "https://independent-performance-642823.framer.app/codex/personal-software-era-ai": {
+    "kind": "work",
+    "title": "Craftie Universe"
+  },
+  "https://independent-performance-642823.framer.app/codex/matchabymaryam": {
+    "kind": "work",
+    "title": "Matcha by Maryam"
+  },
+  "https://independent-performance-642823.framer.app/codex/ai-automation-cloud": {
+    "kind": "work",
+    "title": "Spark.it"
+  },
+  "https://independent-performance-642823.framer.app/codex/b2b-b2c-growth": {
+    "kind": "work",
+    "title": "Uhttention Partners"
+  },
+  "https://independent-performance-642823.framer.app/codex/weird-fun-impact": {
+    "kind": "work",
+    "title": "Weird, Fun & Impact"
+  },
+  "https://independent-performance-642823.framer.app/codex/research-to-redesign": {
+    "kind": "work",
+    "title": "mmLink & Concepts"
+  },
+  "https://steveoak.com/work#oaklabs": {
+    "kind": "role",
+    "title": "AI Solutions Engineer",
+    "period": "May 2026 - Present",
+    "place": "Oak Labs",
+    "stack": [
+      "React Native",
+      "WebMCP",
+      "MCP",
+      "Anthropic Claude",
+      "Google Gemini",
+      "GCP",
+      "Web applications",
+      "CMS"
+    ]
+  },
+  "https://steveoak.com/work#hyperskalers": {
+    "kind": "role",
+    "title": "Agentic AI Engineer, Design Engineer, Forward Deployed",
+    "period": "Feb 2026 - May 2026",
+    "place": "HyperSkalers",
+    "stack": [
+      "Python",
+      "TypeScript",
+      "SQL",
+      "NoSQL",
+      "Vector search",
+      "LLM APIs",
+      "CRM",
+      "Advertising"
+    ]
+  },
+  "https://steveoak.com/work#sanfranciscobayuniversity": {
+    "kind": "role",
+    "title": "GenAI Engineer, Student Assistant",
+    "period": "May 2024 - Dec 2025",
+    "place": "San Francisco Bay University",
+    "stack": [
+      "Python",
+      "Flask",
+      "JavaScript",
+      "OpenAI API",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Prisma"
+    ]
+  },
+  "https://steveoak.com/work#uhttention": {
+    "kind": "role",
+    "title": "AI Automation Engineer, Lead Designer, Forward Deployed",
+    "period": "Jan 2024 - Jan 2025",
+    "place": "Uhttention",
+    "stack": [
+      "Webflow",
+      "Figma",
+      "OpenAI API",
+      "Conversion UX",
+      "Landing pages",
+      "Full-stack development",
+      "RAG",
+      "Memory"
+    ]
+  },
+  "https://steveoak.com/work#globaledtechorganization": {
+    "kind": "role",
+    "title": "AI Workflow Engineer, Organic Funnel Marketing",
+    "period": "Nov 2022 - Feb 2024",
+    "place": "Global EdTech Organization",
+    "stack": [
+      "Stable Diffusion",
+      "LLMs",
+      "ChatGPT",
+      "Adobe Photoshop",
+      "Adobe Creative Cloud",
+      "CapCut",
+      "Webflow",
+      "Figma"
+    ]
+  },
+  "https://steveoak.com/work#pnppsolutions": {
+    "kind": "role",
+    "title": "Full-Stack Engineer, AI ML & Design Systems",
+    "period": "Nov 2018 - Jan 2024",
+    "place": "PNPP Solutions",
+    "stack": [
+      "React",
+      "TypeScript",
+      "Python",
+      "JavaScript",
+      "Java",
+      "PHP",
+      "MySQL",
+      "Linux"
+    ]
+  }
+}

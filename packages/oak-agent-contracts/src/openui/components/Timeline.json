@@ -1,0 +1,25 @@
+{
+  "name": "Timeline",
+  "claims": null,
+  "holds": [],
+  "opensOnCard": false,
+  "intro": null,
+  "pendingKind": "timeline",
+  "pendingCap": 6,
+  "salvageContainer": true,
+  "skeleton": null,
+  "view": null,
+  "plan": {
+    "in": {
+      "timeline": 1
+    },
+    "count": "documents"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "walk",
+    "prop": "items"
+  },
+  "taughtPresets": []
+}

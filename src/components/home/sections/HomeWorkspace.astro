@@ -1,0 +1,21 @@
+---
+interface Props {
+  id: string;
+}
+
+const { id } = Astro.props;
+---
+
+<section
+  class="section-block workspace-block"
+  aria-labelledby={id}
+  data-oak-section="home.workspace"
+  data-oak-context="home.workspace"
+>
+  <div class="page-container">
+    <h2 id={id} class="section-title section-title--small">
+      <slot />
+    </h2>
+    <slot name="table" />
+  </div>
+</section>

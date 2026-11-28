@@ -1,0 +1,24 @@
+---
+import { Icon, type IconName } from "@/components/ui/Icon";
+
+type Props = {
+  title?: string;
+  tone?: "note" | "warning" | "proof";
+  icon?: IconName;
+};
+
+const { title = "Note", tone = "note", icon } = Astro.props;
+const iconName = icon ?? (tone === "proof" ? "ideas" : tone === "warning" ? "crawlerPolicy" : "quote");
+---
+
+<aside class={`work-mdx-callout work-mdx-callout--${tone}`}>
+  <div class="work-mdx-callout__header">
+    <span class="work-mdx-callout__icon" aria-hidden="true">
+      <Icon name={iconName} size={18} />
+    </span>
+    <p class="work-mdx-callout__title">{title}</p>
+  </div>
+  <div class="work-mdx-callout__content">
+    <slot />
+  </div>
+</aside>

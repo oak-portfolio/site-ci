@@ -1,0 +1,250 @@
+{
+ "answer-narrowing": {
+  "iconOnly": true,
+  "reason": "Q04 narrowing: the folded trail keeps the search pose and the pills carry the choice; Q10 draws a dedicated choosing pose."
+ },
+ "answer-proposal": {
+  "iconOnly": true,
+  "reason": "Q04 proposal: a mail-send glyph in the violet tile until Q10 draws Oak's own proposal pose, so no handoff art is borrowed."
+ },
+ "answer-openui-streaming": {
+  "iconOnly": true,
+  "reason": "Q17: the arranged layout builds over the answer's own claims; the folded trail keeps its art and the layout adds none."
+ },
+ "answer-openui-timeline-date-once": {
+  "iconOnly": true,
+  "reason": "Ticket 213: the timeline and source chips carry the answer, as in answer-openui-settled."
+ },
+ "answer-openui-timeline-date-later": {
+  "iconOnly": true,
+  "reason": "Ticket 250: the timeline and source chips carry the answer, as in answer-openui-settled."
+ },
+ "answer-openui-stats-label-stated": {
+  "iconOnly": true,
+  "reason": "Ticket 213: the stat numbers and source chips carry the answer, as in answer-openui-stats."
+ },
+ "answer-openui-stats-opening-figure": {
+  "iconOnly": true,
+  "reason": "Ticket 298: the sentence that opens with its number and the source chips carry the answer, as in answer-openui-stats."
+ },
+ "answer-openui-stats-label-in-sentence": {
+  "iconOnly": true,
+  "reason": "Ticket 309: the sentence that holds its label and number and the source chips carry the answer, as in answer-openui-stats."
+ },
+ "answer-openui-settled": {
+  "iconOnly": true,
+  "reason": "Q17: headings, the timeline and source chips carry the arranged answer, as in a plain sourced answer."
+ },
+ "openui-figure": {
+  "iconOnly": true,
+  "reason": "06: a dev fixture of the figure alone; its caption, patterned bars and Show as list switch carry it, with no pose of its own."
+ },
+ "openui-figure-four-series": {
+  "iconOnly": true,
+  "reason": "06: the four-series figure fixture reflowed at 390; each series' pattern and the list carry it, with no pose of its own."
+ },
+ "answer-openui-projects": {
+  "iconOnly": true,
+  "reason": "R16: each Project card wears its case study's own cover from the cited page, so the answer needs no pose of its own."
+ },
+ "answer-openui-stack": {
+  "iconOnly": true,
+  "reason": "R30-G30: the live tech-stack answer, role and project cards with each tool listed once; the cards and chips carry the answer; no pose of its own."
+ },
+ "answer-openui-projects-streaming": {
+  "iconOnly": true,
+  "reason": "R16: a card still arriving is a skeleton that reserves its cover; the settled cards wear their pages' covers."
+ },
+ "answer-openui-partial-cards": {
+  "iconOnly": true,
+  "reason": "R16: a partial answer keeps the Evidence gap note above its cards, and each card wears its own page's cover."
+ },
+ "answer-openui-roles": {
+  "iconOnly": true,
+  "reason": "R16: each Role card wears that role's own timeline artwork from the Work page, so no pose is added."
+ },
+ "answer-openui-source": {
+  "iconOnly": true,
+  "reason": "R16: a Source card wears the cited page's Open Graph image, or the site's own icon tile when it has none."
+ },
+ "answer-openui-framed": {
+  "iconOnly": true,
+  "reason": "R18: the app's framing line and the project rows carry the answer; no pose of its own."
+ },
+ "answer-openui-roles-streaming": {
+  "iconOnly": true,
+  "reason": "R18: the streaming role rows and their skeleton carry the state; no pose of its own."
+ },
+ "role-fit-answer-strong": {
+  "iconOnly": true,
+  "reason": "R18: the verdict, bar and requirement rows carry the answer; role-fit-answer already wears the comparing pose."
+ },
+ "answer-openui-stats": {
+  "iconOnly": true,
+  "reason": "R16: the tiles' numbers and their claims carry the answer, as Metric blocks do; no pose of its own."
+ },
+ "answer-openui-steps": {
+  "iconOnly": true,
+  "reason": "R20: the numbered list and its source chips carry the how-it-was-done answer; no pose of its own."
+ },
+ "answer-openui-steps-linkedin": {
+  "iconOnly": true,
+  "reason": "R30-G29: the live LinkedIn Growth Loop steps answer, the framing line and then the whole numbered list (its claim 1 is a real step); the text and source chips carry the answer; no pose of its own."
+ },
+ "answer-openui-meter": {
+  "iconOnly": true,
+  "reason": "R20: the stated share is drawn as its own meter beside a number tile, so the figures carry the answer; no pose of its own."
+ },
+ "answer-openui-numbers-pages": {
+  "iconOnly": true,
+  "reason": "R25: the live numbers answer's shape, a number tile and a meter tile citing two roles; the figures carry the answer; no pose of its own."
+ },
+ "answer-openui-stats-label-held": {
+  "iconOnly": true,
+  "reason": "Ticket 325: the w25 numbers Stats group; tiles whose sentences hold their labels show number and sentence, the figures carry the answer; no pose of its own."
+ },
+ "answer-openui-stats-mixed": {
+  "iconOnly": true,
+  "reason": "R27n: the live-v41 numbers answer, two number tiles and two meter tiles of different lengths, which stack; the figures carry the answer; no pose of its own."
+ },
+ "answer-openui-stats-two-lines": {
+  "iconOnly": true,
+  "reason": "R28: the live-v43 numbers answer, two number tiles two lines apart, which stack once measured; the figures carry the answer; no pose of its own."
+ },
+ "answer-openui-stats-uneven": {
+  "iconOnly": true,
+  "reason": "R27g: numbers whose sentences differ a lot stack as rows, number left and sentence right; the figures carry the answer; no pose of its own."
+ },
+ "answer-openui-stats-long-value": {
+  "iconOnly": true,
+  "reason": "Ticket 14: a number longer than nine characters stacks its tiles so it never wraps in a narrow half; the figures carry the answer; no pose of its own."
+ },
+ "answer-openui-metric": {
+  "iconOnly": true,
+  "reason": "Ticket 14: one number set apart as its own tile; the figure and its sentence carry the answer; no pose of its own."
+ },
+ "answer-openui-stats-streaming": {
+  "iconOnly": true,
+  "reason": "Ticket 16: the number tile that has arrived and the skeleton tiles holding the places of the rest carry the state; no pose of its own."
+ },
+ "answer-openui-compare-streaming": {
+  "iconOnly": true,
+  "reason": "Ticket 16: the compare row that has arrived and the skeleton row holding the next carry the state; no pose of its own."
+ },
+ "answer-openui-timeline-streaming": {
+  "iconOnly": true,
+  "reason": "Ticket 16: the timeline's skeleton items on their rail carry the state while the dated items stream; no pose of its own."
+ },
+ "answer-openui-proposal-topics": {
+  "iconOnly": true,
+  "reason": "Ticket 16: the numbers answer and the contact-brief proposal that names its pages carry the state; no pose of its own."
+ },
+ "answer-openui-steps-continued": {
+  "iconOnly": true,
+  "reason": "R27k: a steps answer in two sections, the second list continuing the count under its own heading; the numbered steps carry the answer, with no pose of its own."
+ },
+ "answer-openui-compare-paired": {
+  "iconOnly": true,
+  "reason": "R27g: a compare of two projects, one shared point per row with both claims side by side; the rows carry the answer, with no pose of its own."
+ },
+ "answer-openui-callout": {
+  "iconOnly": true,
+  "reason": "R20: the callout's info mark and its claim carry the one caveat; no pose of its own."
+ },
+ "answer-openui-source-streaming": {
+  "iconOnly": true,
+  "reason": "R20: a source card still arriving is a skeleton that reserves its icon tile; the settled cards wear their pages' images."
+ },
+ "answer-openui-source-gap": {
+  "iconOnly": true,
+  "reason": "R22: a partial answer's one Source card wears the cited case study's Open Graph image; the gap line above it carries the evidence-gap mark."
+ },
+ "answer-off-topic": {
+  "iconOnly": true,
+  "reason": "R22: an off-topic decline is one line under its \"Outside Steve's work\" mark; no source, so no picture."
+ },
+ "answer-openui-web-blend": {
+  "iconOnly": true,
+  "reason": "R20: the web research block keeps its own source faces and Unverified marker, so the answer adds no pose."
+ },
+ "answer-openui-roles-three": {
+  "iconOnly": true,
+  "reason": "R20: each Role card wears that role's own timeline artwork on one career rail, so no pose is added."
+ },
+ "answer-openui-project-one": {
+  "iconOnly": true,
+  "reason": "R20: the single Project card wears its case study's own cover from the cited page, so no pose is added."
+ },
+ "answer-openui-fallback": {
+  "iconOnly": true,
+  "reason": "Q17: a layout that fails its check renders the plain sourced answer, which carries no art of its own."
+ },
+ "answer-openui-partial": {
+  "iconOnly": true,
+  "reason": "R6 Q23: a partial answer keeps the Evidence gap status icon and its note; the comparison rows carry the rest, with no pose of its own."
+ },
+ "answer-openui-proposal": {
+  "iconOnly": true,
+  "reason": "Q17: the proposal wears the Compare a role tile from the Tools menu, so the tool, not a pose, carries it."
+ },
+ "answer-openui-projects-five": {
+  "iconOnly": true,
+  "reason": "Ticket 214: card answers keep their cited pages' own covers and timeline art; the claim-first order adds no pose."
+ },
+ "answer-openui-role-employer": {
+  "iconOnly": true,
+  "reason": "Ticket 214: card answers keep their cited pages' own covers and timeline art; the claim-first order adds no pose."
+ },
+ "answer-openui-project-one-streaming": {
+  "iconOnly": true,
+  "reason": "Ticket 214: card answers keep their cited pages' own covers and timeline art; the claim-first order adds no pose."
+ },
+ "answer-openui-projects-plan-streaming": {
+  "iconOnly": true,
+  "reason": "Ticket 214: card answers keep their cited pages' own covers and timeline art; the claim-first order adds no pose."
+ },
+ "answer-openui-roles-three-streaming": {
+  "iconOnly": true,
+  "reason": "Ticket 214: card answers keep their cited pages' own covers and timeline art; the claim-first order adds no pose."
+ },
+ "answer-openui-projects-five-streaming": {
+  "iconOnly": true,
+  "reason": "Ticket 214: card answers keep their cited pages' own covers and timeline art; the claim-first order adds no pose."
+ },
+ "answer-openui-one-page-card": {
+  "iconOnly": true,
+  "reason": "Ticket 251: one claim and its Sources row carry the answer, as in answer-openui-settled."
+ },
+ "answer-openui-one-row-compare": {
+  "iconOnly": true,
+  "reason": "Ticket 251: the answer's paragraphs and Sources row carry it, as in answer-openui-settled."
+ },
+ "answer-openui-one-card-role-topic": {
+  "iconOnly": true,
+  "reason": "Ticket 254: one claim and its Sources row carry the answer, as in answer-openui-settled."
+ },
+ "answer-openui-one-card-source": {
+  "iconOnly": true,
+  "reason": "Ticket 254: one claim and its Sources row carry the answer, as in answer-openui-settled."
+ },
+ "answer-openui-tools-cards": {
+  "iconOnly": true,
+  "reason": "Ticket 295: the cards beside the Stack carry the answer by title, cover and stack, as in answer-openui-stack; no pose of its own."
+ },
+ "answer-openui-evidence-stack-cards": {
+  "iconOnly": true,
+  "reason": "Ticket 307: the cards beside the Stack carry the answer by claim, cover and stack, as in answer-openui-stack; no pose of its own."
+ },
+ "answer-openui-lone-card-quote-method": {
+  "iconOnly": true,
+  "reason": "Ticket 296: the claims as sentences and their Sources row carry the answer, as in answer-openui-settled."
+ },
+ "answer-openui-lone-card-role-employer": {
+  "iconOnly": true,
+  "reason": "Ticket 296: the claims as sentences and their Sources row carry the answer, as in answer-openui-settled."
+ },
+ "answer-openui-lone-card-profile-who": {
+  "iconOnly": true,
+  "reason": "Ticket 296: one sentence and its Sources row carry the answer, as in answer-openui-settled."
+ }
+}

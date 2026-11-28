@@ -1,0 +1,455 @@
+[
+ {
+  "id": "role-entry-linked",
+  "label": "Role (ticket 42): entry card for the cited career entry, with a stand-in approved link to its case study",
+  "role": true,
+  "roleLinks": [
+   {
+    "entry": "experience:sanfranciscobayuniversity",
+    "caseStudy": "work:ecosmartloop",
+    "approved": true
+   }
+  ],
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Where did Steve work on EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Completed an M.S. in Computer Science while working part-time on student support and contributing to EcoSmartLoop, a team-built AI waste-sorting capstone.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-001",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Completed an M.S. in Computer Science with a 3.89 / 4.0 GPA and a 100% Presidential Scholarship.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-002",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000f0",
+      "status": "done",
+      "program": "root = Answer([r])\nr = Role([\"claim-1\", \"claim-2\"], \"entry\")"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "role-entry-unlinked",
+  "label": "Role (ticket 42): entry card with no approved link row, so no case-study line",
+  "role": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What was his role at HyperSkalers?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Contract AI engineering for a growth partner serving home-service businesses.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-001",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Owned the evaluation layer for agent decisions, creative and offer variants, and human-review outcomes. Worked with the team on one home-service client's first-month campaign, which generated roughly $600K attributed sales on $60K ad spend.",
+        "citations": [
+         {
+          "documentId": "experience:hyperskalers",
+          "passageId": "experience:hyperskalers:passage-002",
+          "sectionId": "experience:hyperskalers",
+          "url": "https://steveoak.com/work#hyperskalers"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000f1",
+      "status": "done",
+      "program": "root = Answer([r])\nr = Role([\"claim-1\", \"claim-2\"], \"entry\")"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "role-tags-folded",
+  "label": "Role (ticket 42): a role with situation tags, a credential row and 4 claims folded under 3 more",
+  "role": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What did Steve do at SFBU?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Completed an M.S. in Computer Science while working part-time on student support and contributing to EcoSmartLoop, a team-built AI waste-sorting capstone.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-001",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Completed an M.S. in Computer Science with a 3.89 / 4.0 GPA and a 100% Presidential Scholarship.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-002",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Studied machine learning, generative AI, data structures and algorithms, and cloud computing.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-003",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "Built a Python, Flask, and JavaScript support chatbot using OpenAI APIs for student and IT questions.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-004",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000f2",
+      "status": "done",
+      "program": "root = Answer([r])\nr = Role([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\"])"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "role-streaming",
+  "label": "Role (ticket 42): streaming, the role ghost while the answer arrives",
+  "role": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What was his role at HyperSkalers?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": []
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000f3",
+      "status": "streaming",
+      "program": "root = Answer([r])\nr = Role([\"claim-1\", \"claim-2\"], \"entry\")"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "role-off",
+  "role": false,
+  "label": "Role (ticket 42): constant off, entry mode draws the shipped Role row",
+  "roleLinks": [
+   {
+    "entry": "experience:sanfranciscobayuniversity",
+    "caseStudy": "work:ecosmartloop",
+    "approved": true
+   }
+  ],
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Where did Steve work on EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Completed an M.S. in Computer Science while working part-time on student support and contributing to EcoSmartLoop, a team-built AI waste-sorting capstone.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-001",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Completed an M.S. in Computer Science with a 3.89 / 4.0 GPA and a 100% Presidential Scholarship.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-002",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000f4",
+      "status": "done",
+      "program": "root = Answer([r])\nr = Role([\"claim-1\", \"claim-2\"], \"entry\")"
+     }
+    }
+   ]
+  }
+ }
+]

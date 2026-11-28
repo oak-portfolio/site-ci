@@ -1,0 +1,130 @@
+[
+ {
+  "id": "answer-openui-explainer-concept",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc5201-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00005201-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What is RAG?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00005201-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00005201-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"rag\", \"concept\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00005201-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ },
+ {
+  "id": "answer-openui-explainer-xmap",
+  "source": "tests/agent/premium/stored-openui-programs.json",
+  "record": {
+   "conversationId": "cccc5202-cccc-4ccc-8ccc-cccccccccccc",
+   "version": 1,
+   "messages": [
+    {
+     "id": "00005202-aaaa-4aaa-8aaa-aaaaaaaaaaaa:user",
+     "role": "user",
+     "text": "What topics can Oak explain?",
+     "answer": null,
+     "cards": [],
+     "page": "/",
+     "taskKind": "question"
+    },
+    {
+     "id": "00005202-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+     "role": "assistant",
+     "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+     "answer": {
+      "schema": "oak.answer.v1",
+      "speaker": "oak-ai-host",
+      "characterVersion": "oak-v1",
+      "hardPolicyVersion": "policy-v1",
+      "operations": [
+       "search",
+       "read"
+      ],
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is Steve's memory system for agents, from short-term context to retrieval.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "cards": [],
+     "page": "/",
+     "taskKind": "question",
+     "ui": {
+      "requestId": "00005202-aaaa-4aaa-8aaa-aaaaaaaaaaaa",
+      "program": "root = Answer([p, e])\np = Prose(\"claim-1\")\ne = Explainer(\"agent-memory\", \"xmap\")",
+      "status": "done"
+     }
+    }
+   ],
+   "createdAt": 1793750400000,
+   "lastSavedMessageAt": 1793750400000,
+   "updatedAt": 1793750400000,
+   "expiresAt": 1796342400000,
+   "lastNewSavedMessageId": "00005202-aaaa-4aaa-8aaa-aaaaaaaaaaaa"
+  }
+ }
+]

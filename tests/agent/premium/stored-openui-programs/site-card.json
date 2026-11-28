@@ -1,0 +1,50 @@
+[
+  {
+    "id": "answer-openui-site-card-app",
+    "question": "What apps has Steve shipped?",
+    "program": "root = Answer([site])\nsite = SiteCard([\"claim-1\"], \"app\")",
+    "answer": {
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+        {
+          "id": "claim-1",
+          "text": "Kusala Daily is a calm daily practice app Steve shipped, with its own support and privacy pages.",
+          "citations": [
+            {
+              "documentId": "resource:kusala-daily",
+              "passageId": "resource:kusala-daily:section-001:passage-001",
+              "sectionId": "resource:kusala-daily:section-001",
+              "url": "https://steveoak.com/apps/kusala-daily/"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  {
+    "id": "answer-openui-site-card-not-on-site",
+    "question": "Does Steve have a blog?",
+    "program": "root = Answer([site])\nsite = SiteCard([\"claim-1\"], \"notOnSite\")",
+    "answer": {
+      "kind": "sourced",
+      "knowledgeRevision": "k",
+      "acknowledgment": null,
+      "claims": [
+        {
+          "id": "claim-1",
+          "text": "Steve writes on his social channels.",
+          "citations": [
+            {
+              "documentId": "profile:steve-oak",
+              "passageId": "profile:steve-oak:section-001:passage-001",
+              "sectionId": "profile:steve-oak:section-001",
+              "url": "https://steveoak.com/"
+            }
+          ]
+        }
+      ]
+    }
+  }
+]

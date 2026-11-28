@@ -1,0 +1,31 @@
+{
+ "long-conversation": {
+  "iconOnly": true,
+  "reason": "Avoid repeated art in a dense transcript."
+ },
+ "quota-reached": {
+  "asset": "stopwatch"
+ },
+ "quota-reached-guest": {
+  "iconOnly": true,
+  "reason": "The same spent-allowance card as quota-reached with guest wording; it shows the stopwatch art through the card, so the state adds none of its own."
+ },
+ "sign-in": {
+  "asset": "oak-sign-in"
+ },
+ "flow-revoked-real-2": {
+  "iconOnly": true,
+  "reason": "205: the session-ended panel below the failed card carries the session-expired pose, so the state adds none of its own."
+ },
+ "funding": {
+  "asset": "coins"
+ },
+ "grant-redeemed": {
+  "iconOnly": true,
+  "reason": "Q11-G5: the funding panel's coin pouch stays the one picture; the result line's checkmark and bold 'Added N answers' carry the moment."
+ },
+ "grant-invalid": {
+  "iconOnly": true,
+  "reason": "Q11-G5: the funding panel's coin pouch stays the one picture; the result line's alert mark and plain next step carry the miss."
+ }
+}

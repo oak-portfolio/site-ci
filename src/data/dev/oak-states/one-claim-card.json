@@ -1,0 +1,420 @@
+[
+ {
+  "id": "answer-openui-project-one-claim",
+  "label": "Arranged one-claim answer as its project card: cover, role and dates over the single sentence",
+  "judgeLike": "answer-openui-project-one",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Steve's OmniSocial publish to platforms that lack a reliable API?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "OmniSocial uses browser harnesses as the primary path for UI-only platform controls, formatting, scheduling, and unsupported API workflows, while routing publishing through APIs when those are reliable.",
+        "citations": [
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-006",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000178",
+      "program": "root = Answer([card, src])\ncard = Project([\"claim-1\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-project-multi-cite",
+  "label": "Arranged answer whose one claim cites three case studies: it prints as the plain list, under no project card",
+  "judgeLike": "answer-openui-proposal",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Which of his case studies have the most proof behind them?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "The excerpts I read explain that proof comes early before permission prompts in Oakminder, while EcoSmartLoop notes a company needs compliance proof and model evaluation, and OmniSocial mentions outcome evidence stays under review.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-006:passage-006",
+          "sectionId": "work:oakminder:section-006",
+          "url": "https://steveoak.com/work/oakminder/#onboarding-had-to-earn-trust"
+         },
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-012:passage-006",
+          "sectionId": "work:ecosmartloop:section-012",
+          "url": "https://steveoak.com/work/ecosmartloop/#why-we-did-not-turn-it-into-a-company-yet"
+         },
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-001",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000211",
+      "program": "root = Answer([card, src])\ncard = Project([\"claim-1\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-project-two-pages",
+  "label": "Arranged answer whose one claim cites two pages of one project (its case study and its older write-up): it prints as the plain list under one Framing line for one case study",
+  "judgeLike": "answer-openui-proposal",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What is Agentic Brain about?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is the newer memory-systems workstream after the January 2026 experiment, which named memory and hallucination as the pains of working with LLMs.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         },
+         {
+          "documentId": "legacy:agentic-brain",
+          "passageId": "legacy:agentic-brain:section-001:passage-006",
+          "sectionId": "legacy:agentic-brain:section-001",
+          "url": "https://independent-performance-642823.framer.app/codex/ai-memory-hallucination-solution"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000227",
+      "program": "root = Answer([card, src])\ncard = Project([\"claim-1\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-project-multi-cite-counted",
+  "label": "Arranged answer whose one claim cites three case studies: it prints as the plain list, under no project card (framingLineCount on: three case studies read as several)",
+  "judgeLike": "answer-openui-proposal",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Which of his case studies have the most proof behind them?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "The excerpts I read explain that proof comes early before permission prompts in Oakminder, while EcoSmartLoop notes a company needs compliance proof and model evaluation, and OmniSocial mentions outcome evidence stays under review.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-006:passage-006",
+          "sectionId": "work:oakminder:section-006",
+          "url": "https://steveoak.com/work/oakminder/#onboarding-had-to-earn-trust"
+         },
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-012:passage-006",
+          "sectionId": "work:ecosmartloop:section-012",
+          "url": "https://steveoak.com/work/ecosmartloop/#why-we-did-not-turn-it-into-a-company-yet"
+         },
+         {
+          "documentId": "work:omnisocial",
+          "passageId": "work:omnisocial:section-001:passage-001",
+          "sectionId": "work:omnisocial:section-001",
+          "url": "https://steveoak.com/work/omnisocial/#work-in-progress-panel-title"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000228",
+      "program": "root = Answer([card, src])\ncard = Project([\"claim-1\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "framingLineCount": true
+ },
+ {
+  "id": "answer-openui-project-two-pages-counted",
+  "label": "Arranged answer whose one claim cites two pages of one project (its case study and its older write-up): it prints as the plain list under one Framing line for one case study (framingLineCount on: two pages of one project still read as one)",
+  "judgeLike": "answer-openui-proposal",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What is Agentic Brain about?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Agentic Brain is the newer memory-systems workstream after the January 2026 experiment, which named memory and hallucination as the pains of working with LLMs.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+         },
+         {
+          "documentId": "legacy:agentic-brain",
+          "passageId": "legacy:agentic-brain:section-001:passage-006",
+          "sectionId": "legacy:agentic-brain:section-001",
+          "url": "https://independent-performance-642823.framer.app/codex/ai-memory-hallucination-solution"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000229",
+      "program": "root = Answer([card, src])\ncard = Project([\"claim-1\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "framingLineCount": true
+ }
+]

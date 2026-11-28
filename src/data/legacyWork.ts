@@ -1,0 +1,58 @@
+const framerBaseUrl = "https://independent-performance-642823.framer.app/codex";
+
+export const legacyFramerCaseStudies = [
+  {
+    title: "Craftie Universe",
+    primaryTag: "AI apps",
+    category: "AI Hackathons, Craft Apps, Personal Software Era",
+    datePublished: "2025-12-25T10:08:00.000Z",
+    href: `${framerBaseUrl}/personal-software-era-ai`,
+    image: "/assets/work/legacy-framer/personal-software-era.png",
+    imageAlt: "Craftie Universe Framer case-study cover",
+  },
+  {
+    title: "Matcha by Maryam",
+    primaryTag: "Brand & dev",
+    category: "Building Website and App for Matcha Community",
+    datePublished: "2025-11-15T13:00:00.000Z",
+    href: `${framerBaseUrl}/matchabymaryam`,
+    image: "/assets/work/legacy-framer/matcha-by-maryam.png",
+    imageAlt: "Matcha by Maryam Framer case-study cover",
+  },
+  {
+    title: "Spark.it",
+    primaryTag: "AI Coding",
+    category: "Developing Solutions with Agentic Tools",
+    datePublished: "2025-05-18T00:00:00.000Z",
+    href: `${framerBaseUrl}/ai-automation-cloud`,
+    image: "/assets/work/legacy-framer/ai-automation-cloud.png",
+    imageAlt: "Spark.it Framer case-study cover",
+  },
+  {
+    title: "Uhttention Partners",
+    primaryTag: "Growth design",
+    category: "Makeup Transformation for Software Launches",
+    datePublished: "2025-01-09T15:00:00.000Z",
+    href: `${framerBaseUrl}/b2b-b2c-growth`,
+    image: "/assets/work/legacy-framer/b2b-b2c-growth.png",
+    imageAlt: "Uhttention Partners Framer case-study cover",
+  },
+  {
+    title: "Weird, Fun & Impact",
+    primaryTag: "Creative tech",
+    category: "Games, dashboards, public-good tools",
+    datePublished: "2025-01-15T06:00:00.000Z",
+    href: `${framerBaseUrl}/weird-fun-impact`,
+    image: "/assets/work/legacy-framer/weird-fun-impact.png",
+    imageAlt: "Weird, Fun and Impact Framer case-study cover",
+  },
+  {
+    title: "mmLink & Concepts",
+    primaryTag: "UX design",
+    category: "Telecom redesign, concept apps, certificates",
+    datePublished: "2023-04-27T06:00:00.000Z",
+    href: `${framerBaseUrl}/research-to-redesign`,
+    image: "/assets/work/legacy-framer/research-to-redesign.png",
+    imageAlt: "mmLink and Concepts Framer case-study cover",
+  },
+] as const;

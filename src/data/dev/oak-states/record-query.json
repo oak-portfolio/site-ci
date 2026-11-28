@@ -1,0 +1,325 @@
+[
+ {
+  "id": "record-query-loading",
+  "judgeLike": "answer-openui-settled",
+  "label": "Record query (ticket 72, on for the gallery only): the block's Query still loading the record, so its heading shows the program's placeholder words (fixture, the asset held)",
+  "recordQuery": true,
+  "recordFacts": "pending",
+  "atRest": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What is EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e1",
+      "program": "root = Answer([head, about])\nrec = Query(\"oak_record\", { \"documentId\": \"work:ecosmartloop\" }, { \"badge\": \"Loading the record\" })\nhead = Heading(rec.badge)\nabout = Prose(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "record-query-settled",
+  "judgeLike": "answer-openui-settled",
+  "label": "Record query (ticket 72, on for the gallery only): the same block once the record loaded, its heading now the record's own badge and never the placeholder (fixture record)",
+  "recordQuery": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "badge": "Applied AI",
+    "category": "AI agents, behavior change",
+    "period": "September to December 2025",
+    "dek": "A capstone that turned waste classification into guidance at the bin."
+   }
+  },
+  "atRest": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What is EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e2",
+      "program": "root = Answer([head, about])\nrec = Query(\"oak_record\", { \"documentId\": \"work:ecosmartloop\" }, { \"badge\": \"Loading the record\" })\nhead = Heading(rec.badge)\nabout = Prose(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "record-query-failed",
+  "judgeLike": "answer-openui-settled",
+  "label": "Record query (ticket 342, on for the gallery only): the block reads a record the asset does not hold, so its heading settles to the empty line and never the placeholder (fixture, empty asset)",
+  "recordQuery": true,
+  "recordFacts": {},
+  "atRest": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What is EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e3",
+      "program": "root = Answer([head, about])\nrec = Query(\"oak_record\", { \"documentId\": \"work:ecosmartloop\" }, { \"badge\": \"Loading the record\" })\nhead = Heading(rec.badge)\nabout = Prose(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "record-query-off",
+  "judgeLike": "answer-openui-settled",
+  "label": "Record query (ticket 342): the same program with the constant off, so no record is read and the heading shows the empty line and never the placeholder",
+  "recordQuery": false,
+  "atRest": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What is EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000e4",
+      "program": "root = Answer([head, about])\nrec = Query(\"oak_record\", { \"documentId\": \"work:ecosmartloop\" }, { \"badge\": \"Loading the record\" })\nhead = Heading(rec.badge)\nabout = Prose(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ }
+]

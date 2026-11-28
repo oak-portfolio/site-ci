@@ -1,0 +1,40 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { Icon } from "@/components/ui/Icon";
+---
+
+<BaseLayout
+  title="Page not found | Steve Oak"
+  description="The requested Steve Oak portfolio page was not found. Use the recovery links to return to Work or Home."
+  noindex={true}
+>
+  <article class="not-found-page" data-oak-section="404.hero" data-oak-context="404.hero">
+    <section class="not-found-hero" aria-labelledby="not-found-heading">
+      <div class="page-container not-found-hero__inner">
+        <p class="case-status">404</p>
+        <h1 id="not-found-heading">This page is not here.</h1>
+        <p class="case-dek">
+          The useful routes are below. Work is the fastest recovery path if you came here for proof, projects, or current portfolio context.
+        </p>
+        <div class="not-found-actions" aria-label="Recovery links">
+          <a class="not-found-card" href="/work" data-oak-context="404.work">
+            <span aria-hidden="true">
+              <Icon name="documentCode" size={22} />
+            </span>
+            <strong>Go to Work</strong>
+            <em>Return to the current proof shelf and work index.</em>
+            <Icon name="arrowUpRight" size={15} className="not-found-card__arrow" />
+          </a>
+          <a class="not-found-card" href="/" data-oak-context="404.home">
+            <span aria-hidden="true">
+              <Icon name="human" size={22} />
+            </span>
+            <strong>Back Home</strong>
+            <em>Return to the main portfolio entry point.</em>
+            <Icon name="arrowUpRight" size={15} className="not-found-card__arrow" />
+          </a>
+        </div>
+      </div>
+    </section>
+  </article>
+</BaseLayout>

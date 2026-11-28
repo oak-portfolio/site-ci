@@ -1,0 +1,26 @@
+{
+ "show-me-as-recruiter": {
+  "iconOnly": true,
+  "reason": "Ticket 19: the answer's blocks reordered for a recruiter with the capsule and Undo carry the state; no pose of its own."
+ },
+ "show-me-as-collaborator": {
+  "iconOnly": true,
+  "reason": "Ticket 19: the answer's blocks reordered for a collaborator with the capsule and Undo carry the state; no pose of its own."
+ },
+ "show-me-as-learner": {
+  "iconOnly": true,
+  "reason": "Ticket 19: the answer's blocks reordered for a learner with the capsule and Undo carry the state; no pose of its own."
+ },
+ "show-me-as-sections": {
+  "iconOnly": true,
+  "reason": "Ticket 19: a sectioned answer reordered with each Heading kept above its block carries the state; no pose of its own."
+ },
+ "show-me-as-none": {
+  "iconOnly": true,
+  "reason": "Ticket 19: with no purpose known, the Show me as switch under the answer carries the state; no pose of its own."
+ },
+ "show-me-as-off": {
+  "iconOnly": true,
+  "reason": "Ticket 19 with the constant off: the answer drawn exactly as main draws it; no pose of its own."
+ }
+}

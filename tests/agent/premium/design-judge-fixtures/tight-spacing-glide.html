@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>tight-spacing-glide</title>
+<link rel="stylesheet" href="base.css">
+<style>
+.reader { width: 320px; height: 120px; overflow-y: auto; }
+.reader .spacer { height: 300px; }
+.reader .row { gap: 4px; }
+.chip { width: 100px; }
+</style>
+</head>
+<body>
+<main class="oak-workspace">
+  <div class="reader">
+    <div class="spacer"></div>
+    <div class="row">
+      <button type="button" class="chip">End one</button>
+      <button type="button" class="chip">End two</button>
+    </div>
+  </div>
+</main>
+<script>
+const reader = document.querySelector(".reader");
+let left = 24;
+const glide = () => { reader.scrollTop = 0; if (--left > 0) requestAnimationFrame(glide); };
+requestAnimationFrame(glide);
+</script>
+</body>
+</html>

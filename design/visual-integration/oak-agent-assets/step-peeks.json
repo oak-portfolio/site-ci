@@ -1,0 +1,18 @@
+{
+ "step-peeks-open": {
+  "iconOnly": true,
+  "reason": "26a: Step peeks fixture, open: the What I read lists under each step carry it, with no pose of its own."
+ },
+ "step-peeks-closed": {
+  "iconOnly": true,
+  "reason": "26a: Step peeks fixture, closed: one quiet line under each step carries it, with no pose of its own."
+ },
+ "step-peeks-seven": {
+  "iconOnly": true,
+  "reason": "26a: Step peeks fixture, seven passages: the capped list and its more line carry it, with no pose of its own."
+ },
+ "step-peeks-off": {
+  "iconOnly": true,
+  "reason": "26a: Step peeks fixture with the constant off: the trail drawn exactly as main draws it, with no pose of its own."
+ }
+}

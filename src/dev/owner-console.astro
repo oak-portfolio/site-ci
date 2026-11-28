@@ -1,0 +1,9 @@
+---
+// Dev-only (injected in astro.config.mjs under astro dev). Owner reads go through the loopback token proxy; the page never holds the token.
+import OakUtilityLayout from '@/layouts/OakUtilityLayout.astro';
+import { OwnerConsole } from '@/components/owner/console/OwnerConsole';
+import '../styles/owner-console.css';
+---
+<OakUtilityLayout title="Owner console | SteveOak.com" description="Private owner console for keys, usage and service health.">
+  <OwnerConsole client:only="react" />
+</OakUtilityLayout>

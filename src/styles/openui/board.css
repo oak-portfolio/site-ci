@@ -1,0 +1,113 @@
+/* Ticket 34: Board. Columns are unframed lanes (a framed lane holding cards would be a card in a card, E5); each card is one flat
+ * raised frame with Oak's room (--oak-pad-frame, 32px since ticket 25; 16px between cards, R6-C15). Headers are neutral; the one accent is the newest
+ * card's outline, and its "Most recent" words carry the same fact without color. The ghost reuses skeleton.css's shimmer,
+ * which already stills under reduced motion. */
+.oak-board {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+/* At most two equal columns per row (four engagement columns side by side were the "too tight" Kanban, R6-C15); below about
+ * 2 x 14rem they stack to one. */
+.oak-board__columns {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, max(14rem, calc(50% - var(--space-gutter) / 2))), 1fr));
+  gap: var(--space-md) var(--space-gutter);
+  align-items: start;
+  min-width: 0;
+}
+
+.oak-board__column {
+  display: grid;
+  gap: var(--space-xs);
+  align-content: start;
+  min-width: 0;
+}
+
+.oak-openui .oak-board__head {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: 0 var(--oak-pad-frame) var(--oak-pad-block);
+  border-block-end: 1px solid var(--line-soft);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-weight: 500;
+  line-height: var(--leading-ui);
+}
+
+.oak-board__count {
+  color: var(--quiet);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-board__list {
+  display: grid;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-board__card {
+  display: grid;
+  gap: var(--space-xs);
+  min-width: 0;
+  padding: var(--oak-pad-frame);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+  overflow-wrap: anywhere;
+}
+
+.oak-board__card[data-newest] {
+  outline: 1px solid color-mix(in srgb, var(--oak-violet) 70%, transparent);
+  outline-offset: -1px;
+}
+
+.oak-board__title {
+  color: var(--text);
+  font-size: var(--text-body-md);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+/* The footer closes the card: "Most recent" at the right, after the claims. */
+.oak-board__foot {
+  display: flex;
+  justify-content: end;
+  margin-block-start: var(--oak-pad-block);
+}
+
+.oak-board__newest {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-board__claim {
+  margin: 0;
+  color: var(--text);
+  line-height: var(--leading-body);
+}
+
+.oak-board[data-pending] .oak-board__card {
+  min-height: 7.5rem;
+  align-content: start;
+}
+
+@media (forced-colors: active) {
+  .oak-board__card {
+    border: 1px solid CanvasText;
+  }
+
+  .oak-board__card[data-newest] {
+    outline: 2px solid Highlight;
+  }
+}
+
+/* One chip per page: the card title already links to it. */
+.oak-board__claim[data-own-page] .oak-source-chip {
+  display: none;
+}

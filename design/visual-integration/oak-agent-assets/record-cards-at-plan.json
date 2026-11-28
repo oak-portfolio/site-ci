@@ -1,0 +1,18 @@
+{
+ "record-cards-at-plan-before-claims": {
+  "iconOnly": true,
+  "reason": "Ticket 169: the plan-time Role cards and the lead ghost carry the state under the live trail, which keeps its art; no pose of its own."
+ },
+ "record-cards-at-plan-claims-landed": {
+  "iconOnly": true,
+  "reason": "Ticket 169: the settled arranged answer carries the state; no pose of its own."
+ },
+ "record-cards-at-plan-wall": {
+  "iconOnly": true,
+  "reason": "Ticket 221: the plan-time wall tiles and the lead ghost carry the state under the live trail, which keeps its art; no pose of its own."
+ },
+ "record-cards-at-plan-wall-landed": {
+  "iconOnly": true,
+  "reason": "Ticket 221: the settled arranged wall carries the state; no pose of its own."
+ }
+}

@@ -1,0 +1,586 @@
+[
+ {
+  "id": "lead-claim-streaming",
+  "label": "Lead claim (ticket 334): diagram-how mid-stream, the arranger wrote the diagram first; claim 1 already leads above it, as it will settle",
+  "judgeLike": "diagram-flow-oakminder",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Oakminder work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve designed Oakminder as a productivity AI agent meant to handle task details directly from notifications, including snoozing and completing reminders.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Rather than relying on a chat interface, Oakminder uses voice input to capture reminders quickly while on the move.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Its architectural setup coordinates actions between the phone interface and the backend.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "The app covers features spanning voice interaction, agendas, progress tracking, snoozing, alarms, and actionable notifications.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000334",
+      "program": "root = Answer([diag, lead, details, src])\ndiag = Diagram(\"claim-3\", \"flow\")\nlead = Prose(\"claim-1\")\ndetails = Points([\"claim-2\", \"cla",
+      "status": "streaming"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "lead-claim-settled",
+  "label": "Lead claim (ticket 334): diagram-how settled, claim 1 above the diagram in the same place it streamed",
+  "judgeLike": "diagram-flow-oakminder",
+  "diagram": true,
+  "recordFacts": {
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Productivity AI agent, voice agent, distribution studio",
+    "badge": "Voice agent",
+    "articleStatus": "full",
+    "datePublished": "2026-03-09",
+    "dateUpdated": "2026-06-13",
+    "cover": {
+     "src": "/assets/generated/work/cards/oakminder-cover-900.webp",
+     "alt": "Oakminder cover artwork for the productivity AI agent and distribution studio case study",
+     "ratio": 1.905
+    },
+    "coverTint": "#4b87e9",
+    "systemMap": [
+     {
+      "label": "Productivity agent app",
+      "description": "The App Store live Expo app handles onboarding, agenda views, reminder creation, voice entry, settings, paywall routing, notifications, alarms, and Live Activity."
+     },
+     {
+      "label": "Backend state",
+      "description": "Convex owns reminder records, recurrence, completion, devices, notification scheduling, premium access, AI credits, and backend actions."
+     },
+     {
+      "label": "Identity and billing",
+      "description": "Clerk identifies the account. RevenueCat and Water Drops make subscription access and AI usage visible inside the product model."
+     },
+     {
+      "label": "Native urgency",
+      "description": "Push, APNs/FCM, notification actions, AlarmKit, Live Activity, and silent cleanup keep reminders visible and synchronized."
+     },
+     {
+      "label": "Voice agent actions",
+      "description": "Gemini / Vertex AI turns voice into structured reminder and category actions that land back in app state."
+     },
+     {
+      "label": "Product documentation",
+      "description": "Mintlify-style docs, llms.txt, and MCP make the product easier for people and AI tools to understand."
+     },
+     {
+      "label": "Distribution studio",
+      "description": "The internal studio tracks product context, TikTok and UGC research, competitors, creators, hooks, drafts, creative assets, exports, and feedback."
+     },
+     {
+      "label": "Research bridge",
+      "description": "Mobile and desktop surfaces move TikTok links, traces, transcripts, frames, OCR text, and account tags back into the studio."
+     },
+     {
+      "label": "Creative production",
+      "description": "Slideshow editing, caption rewrite, image workflows, hook factory, Remotion video editing, mobile review, and Postiz handoff turn research into testable assets."
+     }
+    ],
+    "artifacts": [
+     {
+      "label": "App screenshot carousel",
+      "status": "verified"
+     },
+     {
+      "label": "Onboarding screenshot grid",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder/onboarding-grid/intro.png",
+       "alt": "Oakminder onboarding intro screen",
+       "ratio": 0.461
+      }
+     },
+     {
+      "label": "Voice agent",
+      "status": "verified"
+     },
+     {
+      "label": "Voice agent scenario",
+      "status": "verified"
+     },
+     {
+      "label": "Docs and MCP surface",
+      "status": "verified"
+     },
+     {
+      "label": "Distribution studio map",
+      "status": "verified"
+     },
+     {
+      "label": "Trace and extraction",
+      "status": "verified"
+     },
+     {
+      "label": "Creative studio",
+      "status": "verified",
+      "image": {
+       "src": "/assets/generated/work/oakminder/creative-studio/slideshow-editor-900.webp",
+       "alt": "Oakminder distribution studio slideshow carousel editor with shortcuts, tools, and AI features.",
+       "ratio": 1.336
+      }
+     }
+    ],
+    "metrics": [
+     {
+      "label": "Launch status",
+      "value": "App Store live"
+     },
+     {
+      "label": "App surface",
+      "value": "Productivity AI agent"
+     },
+     {
+      "label": "Distribution surface",
+      "value": "Internal TikTok and UGC studio"
+     },
+     {
+      "label": "Docs surface",
+      "value": "Docs + llms.txt + MCP"
+     }
+    ],
+    "sections": [
+     {
+      "anchor": "why-i-built-another-reminder-app",
+      "title": "Why I Built Another Reminder App"
+     },
+     {
+      "anchor": "from-tap-flow-to-voice-agent",
+      "title": "From Tap Flow To Voice Agent"
+     },
+     {
+      "anchor": "notification-actions-had-to-carry-more",
+      "title": "Notification Actions Had To Carry More"
+     },
+     {
+      "anchor": "the-architecture-behind-a-simple-tap",
+      "title": "The Architecture Behind A Simple Tap"
+     },
+     {
+      "anchor": "voice-became-the-action-layer",
+      "title": "Voice Became The Action Layer"
+     },
+     {
+      "anchor": "onboarding-had-to-earn-trust",
+      "title": "Onboarding Had To Earn Trust"
+     },
+     {
+      "anchor": "docs-became-part-of-distribution",
+      "title": "Docs Became Part Of Distribution"
+     },
+     {
+      "anchor": "after-the-app-store-distribution-started",
+      "title": "After The App Store, Distribution Started"
+     },
+     {
+      "anchor": "the-distribution-studio-around-the-app",
+      "title": "The Distribution Studio Around The App"
+     },
+     {
+      "anchor": "the-phone-became-the-research-bridge",
+      "title": "The Phone Became The Research Bridge"
+     },
+     {
+      "anchor": "saving-the-visual-pattern",
+      "title": "Saving The Visual Pattern"
+     },
+     {
+      "anchor": "creative-studio",
+      "title": "Creative Studio"
+     },
+     {
+      "anchor": "ugc-briefs-and-ai-assisted-drafts",
+      "title": "UGC Briefs And AI-Assisted Drafts"
+     },
+     {
+      "anchor": "publishing-and-feedback",
+      "title": "Publishing And Feedback"
+     },
+     {
+      "anchor": "what-i-would-build-again",
+      "title": "What I Would Build Again"
+     }
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Oakminder work?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve designed Oakminder as a productivity AI agent meant to handle task details directly from notifications, including snoozing and completing reminders.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Rather than relying on a chat interface, Oakminder uses voice input to capture reminders quickly while on the move.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Its architectural setup coordinates actions between the phone interface and the backend.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       },
+       {
+        "id": "claim-4",
+        "text": "The app covers features spanning voice interaction, agendas, progress tracking, snoozing, alarms, and actionable notifications.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-004:passage-004",
+          "sectionId": "work:oakminder:section-004",
+          "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000000335",
+      "program": "root = Answer([lead, diag, details, src])\ndiag = Diagram(\"claim-3\", \"flow\")\nlead = Prose(\"claim-1\")\ndetails = Points([\"claim-2\", \"claim-4\"])\nsrc = Sources()",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ }
+]

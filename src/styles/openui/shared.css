@@ -1,0 +1,66 @@
+/*
+ * Q17: an arranged answer (OpenUI over validated claims). Prose-first and unframed like Perplexity and ChatGPT answers on
+ * iOS (Mobbin bed8a6ad, 3eaf4e44): headings and lists sit in the reading column, no block wears a card, and only the
+ * proposal keeps the sheet card every generated next step uses.
+ */
+.oak-openui-answer,
+.oak-openui {
+  /* One block gap, shared with the role rows that join across it. */
+  --oak-openui-gap: var(--space-md);
+  display: grid;
+  gap: var(--oak-openui-gap);
+  min-width: 0;
+}
+
+.oak-openui-answer > p,
+.oak-openui p,
+.oak-openui ul,
+.oak-openui ol,
+.oak-openui dl {
+  margin: 0;
+}
+
+.oak-openui__quote {
+  quotes: "\201C" "\201D";
+}
+
+.oak-openui__glyph {
+  display: grid;
+  place-items: center;
+  justify-self: start;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+  background: var(--oak-tint-violet);
+  color: color-mix(in srgb, var(--oak-violet) 70%, var(--text));
+}
+
+.oak-openui__waiting {
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .oak-openui > * {
+    animation: oak-openui-in var(--motion-quick) var(--motion-standard) both;
+  }
+}
+
+@keyframes oak-openui-in {
+  from { opacity: 0; transform: translateY(var(--space-micro)); }
+}
+
+/*
+ * R17 answer items (Project, Role, Source, Stack, Stats). Oak's review v14 read R16's cover cards as slop: always two
+ * columns, the same picture on every card, the answer opening on a wall of art. Every assistant checked (ChatGPT,
+ * Perplexity, Pin, Figma Sites resumes) and Apple's HIG (Lists and tables: "a small leading image followed by a brief
+ * label") open with sentences and then list items as rows, so each item is one full-width row in the reading column, at
+ * any count. A row is a frame (48px, one soft edge, the raised fill) padded by its role: --oak-pad-frame around copy.
+ * Its thumbnail sits one --oak-pad-nest from the corner and takes frame less nest, so the corners stay concentric.
+ */
+.oak-openui-answer {
+  container: oak-openui / inline-size;
+}
+
+.oak-openui-answer:has(.oak-openui [data-pending]) .oak-openui__waiting {
+  display: none;
+}

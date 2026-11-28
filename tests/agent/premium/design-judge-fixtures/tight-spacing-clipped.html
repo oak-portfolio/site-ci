@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>tight-spacing-clipped</title>
+<link rel="stylesheet" href="base.css">
+<style>
+.stage { position: relative; height: 320px; }
+.reader { position: absolute; top: 0; left: 0; width: 320px; height: 120px; overflow-y: auto; }
+.reader .row { gap: 4px; }
+.fold { height: 164px; }
+.composer { position: absolute; top: 200px; left: 104px; width: 100px; }
+.chip { width: 100px; }
+</style>
+</head>
+<body>
+<main class="oak-workspace">
+  <div class="stage">
+    <div class="reader">
+      <div class="row">
+        <button type="button" class="chip">In view</button>
+        <button type="button" class="chip">Beside</button>
+      </div>
+      <div class="fold"></div>
+      <button type="button" class="chip" data-hidden>Below fold</button>
+    </div>
+    <button type="button" class="chip composer">Send</button>
+  </div>
+</main>
+</body>
+</html>

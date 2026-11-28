@@ -1,0 +1,12 @@
+Senior Design Engineer, AI Products
+
+About the team
+We build the assistant people use to explore and compare work. You will join a small product team that ships weekly.
+
+What you'll do
+- Build agent interfaces in React and TypeScript, from first sketch to production.
+- Own accessibility and performance for every surface you ship.
+
+Requirements
+- 5+ years of experience building production web interfaces.
+- Comfort working with language models, evaluations and prompt design.

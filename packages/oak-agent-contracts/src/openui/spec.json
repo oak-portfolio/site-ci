@@ -1,0 +1,765 @@
+{
+  "root": "Answer",
+  "components": {
+    "Answer": {
+      "signature": "Answer(children: (Heading | Prose | Points | Steps | Compare | Metric | Meter | Timeline | Callout | Sources | Pills | Proposal | Project | Role | Source | Stack | Stats | Profile | ProjectWall | Table | PageCards | Diagram)[])",
+      "description": "The root of every arranged answer: its blocks in reading order."
+    },
+    "Heading": {
+      "signature": "Heading(text: string)",
+      "description": "A 2 to 5 word section label above a block, never a sentence or a fact. Only in answers with 2 or more sections."
+    },
+    "Prose": {
+      "signature": "Prose(claim: string)",
+      "description": "One claim as a paragraph. The default block; use it when the claim is not part of a list, sequence, comparison or number."
+    },
+    "Points": {
+      "signature": "Points(claims: string[])",
+      "description": "2 to 5 parallel claims as bullets. Not for an ordered sequence (Steps) or dated events (Timeline)."
+    },
+    "Steps": {
+      "signature": "Steps(claims: string[], from?: number)",
+      "description": "2 to 8 claims that happened, or should be done, in this order, as a numbered list. from: the number of its first step when it continues an earlier list."
+    },
+    "Compare": {
+      "signature": "Compare(rows: CompareRow[])",
+      "description": "2 to 5 rows when the visitor compares things they named: two of Steve's projects or roles side by side (each row one shared point with both items' claims), or requirements, options or skills against his work."
+    },
+    "CompareRow": {
+      "signature": "CompareRow(label: string, claim: string, also?: string)",
+      "description": "One point the compared items share (what it is, who it serves, how it was built, his role, the outcome), in a few words, the first item's claim on it and, in also, the second item's claim on the same point."
+    },
+    "Metric": {
+      "signature": "Metric(label: string, value: string, claim: string)",
+      "description": "One number a claim states, copied exactly as the claim writes it (\"40%\", \"3 weeks\"), with a 1 to 4 word label."
+    },
+    "Meter": {
+      "signature": "Meter(label: string, percent: number, claim: string)",
+      "description": "A share of a whole that a claim states as a percentage, 0 to 100, with a 1 to 4 word label."
+    },
+    "Timeline": {
+      "signature": "Timeline(items: TimelineItem[])",
+      "description": "2 to 6 dated claims, oldest first. Only when every item's claim states its date."
+    },
+    "TimelineItem": {
+      "signature": "TimelineItem(date: string, claim: string)",
+      "description": "One dated claim. date is copied exactly as the claim writes it (\"2023\", \"March 2024\")."
+    },
+    "Callout": {
+      "signature": "Callout(claim: string)",
+      "description": "One claim the visitor must not miss, such as a limit or a caveat. At most one per answer."
+    },
+    "Pills": {
+      "signature": "Pills(questions: string[])",
+      "description": "2 or 3 short follow-up questions in the visitor's voice, each under 60 characters. Last block, at most once."
+    },
+    "Sources": {
+      "signature": "Sources()",
+      "description": "The answer's sources button. Place it after the last claim block, before Pills or Proposal."
+    },
+    "Proposal": {
+      "signature": "Proposal(action: \"compareRole\" | \"prepareBrief\" | \"openDocuments\" | \"getAdvice\", label: string)",
+      "description": "Offer one next step Oak can open with the visitor's question: compareRole (a job they have), prepareBrief (writing to Steve), openDocuments (a resume or job post they have), getAdvice (their own project). label is a 3 to 7 word offer. Opening never sends anything. At most one, last."
+    },
+    "Project": {
+      "signature": "Project(claims: string[])",
+      "description": "One case study as a card: the claims that cite it, under its cover, role, period and stack from Steve's page."
+    },
+    "Role": {
+      "signature": "Role(claims: string[], mode?: \"row\" | \"entry\")",
+      "description": "When the visitor asks about Steve's role at an employer or where he worked on something: shows that role from his timeline as a card, with the claims from its experience page under its title, dates and place. The rest of the answer keeps its usual blocks. Mode \"entry\" frames it as the career entry the answer cites."
+    },
+    "Source": {
+      "signature": "Source(claim: string)",
+      "description": "One claim as a link card to the page it cites, with that page's title, site and preview image."
+    },
+    "Stack": {
+      "signature": "Stack()",
+      "description": "Chips of the tools the cited pages list that the claims name. Takes no props; shows nothing under 2 matches."
+    },
+    "Stats": {
+      "signature": "Stats(items: (Metric | Meter)[])",
+      "description": "2 to 4 Metric or Meter blocks grouped as one list of numbers."
+    },
+    "Profile": {
+      "signature": "Profile(claim: string, size?: \"brief\" | \"full\")",
+      "description": "Only when the visitor asks who Steve is or for a summary of him: his portrait, hero title and profile facts as one card. size brief (default) or full (adds his hero paragraph and what he knows about). Never for questions about a project, a role or how something was built."
+    },
+    "ProjectWall": {
+      "signature": "ProjectWall(claims: string[], mode?: \"wall\" | \"path\" | \"legacy\", audience?: string)",
+      "description": "For an overview of Steve's work (what has he built or made, show me his AI work, where to start): two or more of his projects as cover tiles, every claim about them in this one block, never a card per project. Mode wall (default; visitors filter and sort), path (a reading order for the audience named) or legacy (his older work). Never for how one project works or which tools he used."
+    },
+    "Table": {
+      "signature": "Table(claims: string[], kind?: \"matrix\" | \"sctable\" | \"smap\")",
+      "description": "Rows and columns when the visitor wants several of Steve's records lined up: kind matrix (projects by stack, his part and year), sctable (career roles by contract, part-time or full-time), or smap (the site's pages and sections). Two or more records the claims cite; never for one project."
+    },
+    "PageCards": {
+      "signature": "PageCards(claims: string[])",
+      "description": "Only when the visitor asks which pages cover a topic or where to read more about something: pass every claim, even just one; it shows one card per cited page with its cover and title, the first open on the cited section. For those questions it replaces the Source card. Never for contact."
+    },
+    "Diagram": {
+      "signature": "Diagram(claim: string, preset?: \"flow\" | \"layers\" | \"blockdiag\" | \"swimlanes\" | \"agentflow\" | \"mindmap\" | \"treeview\" | \"radar\" | \"quadrant\", from?: number)",
+      "description": "How one project works, for a question like \"how does <project> work?\", \"walk me through its architecture\" or \"what are the layers of <project>?\": the steps of the record the one claim cites, drawn as a diagram, even when that claim names only one part of it. preset: flow (default, steps in order), layers (stacked layers, for a layers question) or blockdiag (boxes with a line each). from: the number of its first step when it continues an earlier list. Never for how the work went (research, prototype, testing) or when it was built."
+    }
+  },
+  "schema": {
+    "$schema": "https://json-schema.org/draft/2020-12/schema",
+    "type": "object",
+    "properties": {
+      "Answer": {
+        "$ref": "#/$defs/Answer"
+      },
+      "Heading": {
+        "$ref": "#/$defs/Heading"
+      },
+      "Prose": {
+        "$ref": "#/$defs/Prose"
+      },
+      "Points": {
+        "$ref": "#/$defs/Points"
+      },
+      "Steps": {
+        "$ref": "#/$defs/Steps"
+      },
+      "Compare": {
+        "$ref": "#/$defs/Compare"
+      },
+      "CompareRow": {
+        "$ref": "#/$defs/CompareRow"
+      },
+      "Metric": {
+        "$ref": "#/$defs/Metric"
+      },
+      "Meter": {
+        "$ref": "#/$defs/Meter"
+      },
+      "Timeline": {
+        "$ref": "#/$defs/Timeline"
+      },
+      "TimelineItem": {
+        "$ref": "#/$defs/TimelineItem"
+      },
+      "Callout": {
+        "$ref": "#/$defs/Callout"
+      },
+      "Pills": {
+        "$ref": "#/$defs/Pills"
+      },
+      "Sources": {
+        "$ref": "#/$defs/Sources"
+      },
+      "Proposal": {
+        "$ref": "#/$defs/Proposal"
+      },
+      "Project": {
+        "$ref": "#/$defs/Project"
+      },
+      "Role": {
+        "$ref": "#/$defs/Role"
+      },
+      "Source": {
+        "$ref": "#/$defs/Source"
+      },
+      "Stack": {
+        "$ref": "#/$defs/Stack"
+      },
+      "Stats": {
+        "$ref": "#/$defs/Stats"
+      },
+      "Profile": {
+        "$ref": "#/$defs/Profile"
+      },
+      "ProjectWall": {
+        "$ref": "#/$defs/ProjectWall"
+      },
+      "Table": {
+        "$ref": "#/$defs/Table"
+      },
+      "PageCards": {
+        "$ref": "#/$defs/PageCards"
+      },
+      "Diagram": {
+        "$ref": "#/$defs/Diagram"
+      }
+    },
+    "required": [
+      "Answer",
+      "Heading",
+      "Prose",
+      "Points",
+      "Steps",
+      "Compare",
+      "CompareRow",
+      "Metric",
+      "Meter",
+      "Timeline",
+      "TimelineItem",
+      "Callout",
+      "Pills",
+      "Sources",
+      "Proposal",
+      "Project",
+      "Role",
+      "Source",
+      "Stack",
+      "Stats",
+      "Profile",
+      "ProjectWall",
+      "Table",
+      "PageCards",
+      "Diagram"
+    ],
+    "additionalProperties": false,
+    "$defs": {
+      "Answer": {
+        "type": "object",
+        "properties": {
+          "children": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Heading"
+                },
+                {
+                  "$ref": "#/$defs/Prose"
+                },
+                {
+                  "$ref": "#/$defs/Points"
+                },
+                {
+                  "$ref": "#/$defs/Steps"
+                },
+                {
+                  "$ref": "#/$defs/Compare"
+                },
+                {
+                  "$ref": "#/$defs/Metric"
+                },
+                {
+                  "$ref": "#/$defs/Meter"
+                },
+                {
+                  "$ref": "#/$defs/Timeline"
+                },
+                {
+                  "$ref": "#/$defs/Callout"
+                },
+                {
+                  "$ref": "#/$defs/Sources"
+                },
+                {
+                  "$ref": "#/$defs/Pills"
+                },
+                {
+                  "$ref": "#/$defs/Proposal"
+                },
+                {
+                  "$ref": "#/$defs/Project"
+                },
+                {
+                  "$ref": "#/$defs/Role"
+                },
+                {
+                  "$ref": "#/$defs/Source"
+                },
+                {
+                  "$ref": "#/$defs/Stack"
+                },
+                {
+                  "$ref": "#/$defs/Stats"
+                },
+                {
+                  "$ref": "#/$defs/Profile"
+                },
+                {
+                  "$ref": "#/$defs/ProjectWall"
+                },
+                {
+                  "$ref": "#/$defs/Table"
+                },
+                {
+                  "$ref": "#/$defs/PageCards"
+                },
+                {
+                  "$ref": "#/$defs/Diagram"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "children"
+        ],
+        "additionalProperties": false,
+        "description": "The root of every arranged answer: its blocks in reading order."
+      },
+      "Heading": {
+        "type": "object",
+        "properties": {
+          "text": {
+            "type": "string",
+            "maxLength": 48
+          }
+        },
+        "required": [
+          "text"
+        ],
+        "additionalProperties": false,
+        "description": "A 2 to 5 word section label above a block, never a sentence or a fact. Only in answers with 2 or more sections."
+      },
+      "Prose": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim"
+        ],
+        "additionalProperties": false,
+        "description": "One claim as a paragraph. The default block; use it when the claim is not part of a list, sequence, comparison or number."
+      },
+      "Points": {
+        "type": "object",
+        "properties": {
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "claims"
+        ],
+        "additionalProperties": false,
+        "description": "2 to 5 parallel claims as bullets. Not for an ordered sequence (Steps) or dated events (Timeline)."
+      },
+      "Steps": {
+        "type": "object",
+        "properties": {
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "from": {
+            "type": "integer",
+            "minimum": 2,
+            "maximum": 40
+          }
+        },
+        "required": [
+          "claims"
+        ],
+        "additionalProperties": false,
+        "description": "2 to 8 claims that happened, or should be done, in this order, as a numbered list. from: the number of its first step when it continues an earlier list."
+      },
+      "Compare": {
+        "type": "object",
+        "properties": {
+          "rows": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/CompareRow"
+            }
+          }
+        },
+        "required": [
+          "rows"
+        ],
+        "additionalProperties": false,
+        "description": "2 to 5 rows when the visitor compares things they named: two of Steve's projects or roles side by side (each row one shared point with both items' claims), or requirements, options or skills against his work."
+      },
+      "CompareRow": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxLength": 60
+          },
+          "claim": {
+            "type": "string"
+          },
+          "also": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "claim"
+        ],
+        "additionalProperties": false,
+        "description": "One point the compared items share (what it is, who it serves, how it was built, his role, the outcome), in a few words, the first item's claim on it and, in also, the second item's claim on the same point."
+      },
+      "Metric": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "value": {
+            "type": "string",
+            "maxLength": 24
+          },
+          "claim": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "value",
+          "claim"
+        ],
+        "additionalProperties": false,
+        "description": "One number a claim states, copied exactly as the claim writes it (\"40%\", \"3 weeks\"), with a 1 to 4 word label."
+      },
+      "Meter": {
+        "type": "object",
+        "properties": {
+          "label": {
+            "type": "string",
+            "maxLength": 40
+          },
+          "percent": {
+            "type": "number"
+          },
+          "claim": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "label",
+          "percent",
+          "claim"
+        ],
+        "additionalProperties": false,
+        "description": "A share of a whole that a claim states as a percentage, 0 to 100, with a 1 to 4 word label."
+      },
+      "Timeline": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "$ref": "#/$defs/TimelineItem"
+            }
+          }
+        },
+        "required": [
+          "items"
+        ],
+        "additionalProperties": false,
+        "description": "2 to 6 dated claims, oldest first. Only when every item's claim states its date."
+      },
+      "TimelineItem": {
+        "type": "object",
+        "properties": {
+          "date": {
+            "type": "string",
+            "maxLength": 24
+          },
+          "claim": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "date",
+          "claim"
+        ],
+        "additionalProperties": false,
+        "description": "One dated claim. date is copied exactly as the claim writes it (\"2023\", \"March 2024\")."
+      },
+      "Callout": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim"
+        ],
+        "additionalProperties": false,
+        "description": "One claim the visitor must not miss, such as a limit or a caveat. At most one per answer."
+      },
+      "Sources": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false,
+        "description": "The answer's sources button. Place it after the last claim block, before Pills or Proposal."
+      },
+      "Pills": {
+        "type": "object",
+        "properties": {
+          "questions": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "maxLength": 80
+            }
+          }
+        },
+        "required": [
+          "questions"
+        ],
+        "additionalProperties": false,
+        "description": "2 or 3 short follow-up questions in the visitor's voice, each under 60 characters. Last block, at most once."
+      },
+      "Proposal": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "compareRole",
+              "prepareBrief",
+              "openDocuments",
+              "getAdvice"
+            ]
+          },
+          "label": {
+            "type": "string",
+            "maxLength": 60
+          }
+        },
+        "required": [
+          "action",
+          "label"
+        ],
+        "additionalProperties": false,
+        "description": "Offer one next step Oak can open with the visitor's question: compareRole (a job they have), prepareBrief (writing to Steve), openDocuments (a resume or job post they have), getAdvice (their own project). label is a 3 to 7 word offer. Opening never sends anything. At most one, last."
+      },
+      "Project": {
+        "type": "object",
+        "properties": {
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "claims"
+        ],
+        "additionalProperties": false,
+        "description": "One case study as a card: the claims that cite it, under its cover, role, period and stack from Steve's page."
+      },
+      "Role": {
+        "type": "object",
+        "properties": {
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "row",
+              "entry"
+            ]
+          }
+        },
+        "required": [
+          "claims"
+        ],
+        "additionalProperties": false,
+        "description": "When the visitor asks about Steve's role at an employer or where he worked on something: shows that role from his timeline as a card, with the claims from its experience page under its title, dates and place. The rest of the answer keeps its usual blocks. Mode \"entry\" frames it as the career entry the answer cites."
+      },
+      "Source": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "claim"
+        ],
+        "additionalProperties": false,
+        "description": "One claim as a link card to the page it cites, with that page's title, site and preview image."
+      },
+      "Stack": {
+        "type": "object",
+        "properties": {},
+        "additionalProperties": false,
+        "description": "Chips of the tools the cited pages list that the claims name. Takes no props; shows nothing under 2 matches."
+      },
+      "Stats": {
+        "type": "object",
+        "properties": {
+          "items": {
+            "type": "array",
+            "items": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/Metric"
+                },
+                {
+                  "$ref": "#/$defs/Meter"
+                }
+              ]
+            }
+          }
+        },
+        "required": [
+          "items"
+        ],
+        "additionalProperties": false,
+        "description": "2 to 4 Metric or Meter blocks grouped as one list of numbers."
+      },
+      "Profile": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "size": {
+            "type": "string",
+            "enum": [
+              "brief",
+              "full"
+            ]
+          }
+        },
+        "required": [
+          "claim"
+        ],
+        "additionalProperties": false,
+        "description": "Only when the visitor asks who Steve is or for a summary of him: his portrait, hero title and profile facts as one card. size brief (default) or full (adds his hero paragraph and what he knows about). Never for questions about a project, a role or how something was built."
+      },
+      "ProjectWall": {
+        "type": "object",
+        "properties": {
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "mode": {
+            "type": "string",
+            "enum": [
+              "wall",
+              "path",
+              "legacy"
+            ]
+          },
+          "audience": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "claims"
+        ],
+        "additionalProperties": false,
+        "description": "For an overview of Steve's work (what has he built or made, show me his AI work, where to start): two or more of his projects as cover tiles, every claim about them in this one block, never a card per project. Mode wall (default; visitors filter and sort), path (a reading order for the audience named) or legacy (his older work). Never for how one project works or which tools he used."
+      },
+      "Table": {
+        "type": "object",
+        "properties": {
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "kind": {
+            "type": "string",
+            "enum": [
+              "matrix",
+              "sctable",
+              "smap"
+            ]
+          }
+        },
+        "required": [
+          "claims"
+        ],
+        "additionalProperties": false,
+        "description": "Rows and columns when the visitor wants several of Steve's records lined up: kind matrix (projects by stack, his part and year), sctable (career roles by contract, part-time or full-time), or smap (the site's pages and sections). Two or more records the claims cite; never for one project."
+      },
+      "PageCards": {
+        "type": "object",
+        "properties": {
+          "claims": {
+            "minItems": 1,
+            "maxItems": 4,
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          }
+        },
+        "required": [
+          "claims"
+        ],
+        "additionalProperties": false,
+        "description": "Only when the visitor asks which pages cover a topic or where to read more about something: pass every claim, even just one; it shows one card per cited page with its cover and title, the first open on the cited section. For those questions it replaces the Source card. Never for contact."
+      },
+      "Diagram": {
+        "type": "object",
+        "properties": {
+          "claim": {
+            "type": "string"
+          },
+          "preset": {
+            "type": "string",
+            "enum": [
+              "flow",
+              "layers",
+              "blockdiag",
+              "swimlanes",
+              "agentflow",
+              "mindmap",
+              "treeview",
+              "radar",
+              "quadrant"
+            ]
+          },
+          "from": {
+            "type": "integer",
+            "minimum": 2,
+            "maximum": 40
+          }
+        },
+        "required": [
+          "claim"
+        ],
+        "additionalProperties": false,
+        "description": "How one project works, for a question like \"how does <project> work?\", \"walk me through its architecture\" or \"what are the layers of <project>?\": the steps of the record the one claim cites, drawn as a diagram, even when that claim names only one part of it. preset: flow (default, steps in order), layers (stacked layers, for a layers question) or blockdiag (boxes with a line each). from: the number of its first step when it continues an earlier list. Never for how the work went (research, prototype, testing) or when it was built."
+      }
+    }
+  },
+  "id": "oak-answers",
+  "promptOptions": {
+    "preamble": "You arrange Oak's already-checked answer about Steve Oak's work for a visitor. The input JSON has the visitor's question, the answer's claims (each with an id, its text and source: the kind and title of the page it cites) and nextStep, the one tool the app offers next or null. You choose the layout; you never write a fact. Blocks name claims by id, and the app fills in each claim's checked text and sources, and each card's cover, dates, role and stack from Steve's own pages.",
+    "additionalRules": [
+      "Use every claim id exactly once, in an order that reads well, and no id that is not in the input.",
+      "Prose first; structure only where it carries meaning: Steps for an order, Compare for named items, Timeline when each claim states its date, Metric or Meter for a number the claim states.",
+      "Cards are for what Steve built or did: when the visitor asks which projects, what he built or worked on, or which tools or stack he used, and the claims cover two or more case studies (source.kind \"work\"), give each case study one Project holding only the claims whose source is that page, then a Stack when the question is about tools. When the claims cover roles (source.kind \"experience\"), give each role one Role the same way. A question about when or a timeline uses Timeline; one about results or numbers uses Metric or Stats; one about an order uses Steps; one comparing things the visitor named uses Compare, even across case studies: one CompareRow per point both items share, its label naming the point in a few words, claim the first item's claim on it and also the second item's; a claim with no partner gets its own row. Two or more claims describing one project stay Prose.",
+      "An answer of exactly one claim is one card, chosen by its source.kind: source.kind \"work\" is one Project card, \"experience\" is one Role card, \"legacy\" is one Source card. Stats puts 2 to 4 Metric or Meter blocks in one row, each named by reference. Stack, once after the cards, shows the tools those pages list that the claims name; add it when the visitor asks about tools, stack or skills. Write the Stack statement on the line right after root, before any card statement, and keep it after the cards in root.",
+      "When the answer has Project, Role or Stats blocks, open with one Prose claim before the first of them, so the reply starts with a sentence and not a card: claim-1 when it summarizes the whole answer, otherwise the claim that frames it best, taken from a page that keeps at least one other claim for its own card. When every page has only one claim, open with that page's card instead; the app writes the opening line.",
+      "At most 6 blocks besides Sources, Pills and Proposal. Never nest a block inside another block, except Metric or Meter inside Stats.",
+      "Words you write (Heading, labels, Pills, Proposal) name or ask, never state a fact about Steve, a number or a date.",
+      "Metric value, Meter percent and TimelineItem date are copied exactly from that claim's text.",
+      "End with Sources, then optionally Pills (2 or 3 questions). Add a Proposal only when nextStep is not null, with exactly that action.",
+      "When the claims read best as plain paragraphs, use only Prose blocks."
+    ],
+    "examples": [
+      "root = Answer([lead, how, src, next])\nlead = Prose(\"claim-1\")\nhow = Steps([\"claim-2\", \"claim-3\", \"claim-4\"])\nsrc = Sources()\nnext = Pills([\"What did it change for users?\", \"Which tools did he use?\"])",
+      "root = Answer([lead, eco, brain, tools, src])\ntools = Stack()\nlead = Prose(\"claim-1\")\neco = Project([\"claim-2\"])\nbrain = Project([\"claim-3\", \"claim-4\"])\nsrc = Sources()",
+      "root = Answer([lead, nums, src])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()"
+    ],
+    "builtinFunctions": false,
+    "bindings": false,
+    "toolCalls": false
+  }
+}

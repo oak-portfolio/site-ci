@@ -1,0 +1,220 @@
+/* Ticket 31: ProjectWall. An unframed controls row (filter chips, sort), then a grid of tiles. Each tile is one frame (R14) whose
+ * cover sits one --oak-pad-nest in, so the cover corner is the frame's less that inset (concentric). Grid rows stretch, so tiles in
+ * a row share a height. One accent per tile: its cover tint on the status capsule only (E4 restrained color); the capsule's words
+ * carry the status, so color is never the only signal. Hairlines are inset shadows; forced colors draw real borders instead. */
+.oak-wall {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.oak-wall__controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+
+.oak-wall__chips,
+.oak-wall__controls .ui-radio-group {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-micro);
+  min-width: 0;
+}
+
+.oak-wall__chip,
+.oak-wall__clear,
+.oak-wall__controls .ui-radio-segment {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding: 0 var(--space-sm);
+  border: 0;
+  border-radius: var(--radius-pill);
+  background: transparent;
+  box-shadow: inset 0 0 0 1px var(--line-soft);
+  color: var(--muted);
+  font: inherit;
+  font-size: var(--text-ui-sm);
+  cursor: pointer;
+}
+
+.oak-wall__controls .ui-radio-segment { box-shadow: none; }
+
+.oak-wall__chip[data-pressed],
+.oak-wall__controls .ui-radio-segment[data-checked] {
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  box-shadow: inset 0 0 0 1px var(--line);
+  color: var(--text);
+}
+
+.oak-wall__chip:hover,
+.oak-wall__clear:hover,
+.oak-wall__controls .ui-radio-segment:hover { color: var(--text); }
+
+.oak-wall__chip:focus-visible,
+.oak-wall__clear:focus-visible,
+.oak-wall__controls .ui-radio-segment:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+.oak-wall__grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  align-items: stretch;
+  gap: var(--space-gutter) var(--space-md);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@container oak-openui (min-width: 520px) {
+  .oak-wall__grid { row-gap: var(--space-lg); }
+}
+
+.oak-wall__tile {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-sm);
+  min-width: 0;
+  padding: var(--oak-pad-nest);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+  box-shadow: inset 0 0 0 1px var(--line-soft);
+  overflow-wrap: break-word;
+}
+
+/* The Media backdrop: the frame takes the cover's own ratio before the image loads, and nothing is cropped. */
+.oak-wall__cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: var(--oak-art-ratio, 16 / 9);
+  overflow: hidden;
+  border-radius: var(--oak-r-card);
+  background: var(--oak-well);
+}
+
+/* The title link's focus also rings the cover, so the whole tile reads as the focused target. */
+.oak-wall__tile:has(.oak-wall__title a:focus-visible) .oak-wall__cover {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+/* The status capsule and the path's "Start here" sit on the cover, one --space-sm in from its corner (clears the 24px arc). */
+.oak-wall__media { position: relative; }
+
+.oak-wall__badge,
+.oak-wall__start {
+  position: absolute;
+  inset-inline-start: var(--space-sm);
+  display: inline-flex;
+  align-items: center;
+  height: var(--space-md);
+  padding: 0 var(--space-xs);
+  border-radius: var(--radius-pill);
+  background: var(--bg);
+  box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--oak-wall-tint, var(--text)) 40%, transparent);
+  /* The tint rides the ring only, so a wall of differently tinted covers stays within three hues (R6). */
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  font-weight: 500;
+}
+
+.oak-wall__badge { bottom: var(--space-sm); }
+.oak-wall__start { top: var(--space-sm); }
+
+.oak-wall__cover img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.oak-wall__body {
+  display: grid;
+  flex: 1;
+  align-content: start;
+  gap: var(--space-xs);
+  padding: 0 var(--space-xs);
+}
+
+.oak-wall__meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-wall__step {
+  display: inline-grid;
+  place-items: center;
+  flex: none;
+  min-width: 24px;
+  height: 24px;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  color: var(--text);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-wall__title {
+  display: flex;
+  align-items: start;
+  gap: var(--space-xs);
+  margin: 0;
+  color: var(--text);
+  font-size: var(--text-body-md);
+  font-weight: 600;
+  line-height: var(--space-md);
+}
+
+.oak-wall__caption {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-wall__none {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-sm);
+  color: var(--muted);
+}
+
+.oak-wall__none p { margin: 0; }
+
+.oak-wall[data-pending] .oak-wall__body { gap: var(--space-sm); }
+
+@media (forced-colors: active) {
+  .oak-wall__tile,
+  .oak-wall__chip,
+  .oak-wall__clear,
+  .oak-wall__badge,
+  .oak-wall__start,
+  .oak-wall__controls .ui-radio-segment {
+    border: 1px solid CanvasText;
+    box-shadow: none;
+  }
+
+  .oak-wall__chip[data-pressed],
+  .oak-wall__controls .ui-radio-segment[data-checked] {
+    forced-color-adjust: none;
+    border-width: 2px;
+    background: Highlight;
+    box-shadow: none;
+    color: HighlightText;
+  }
+
+  .oak-wall__chip[data-pressed]:focus-visible,
+  .oak-wall__controls .ui-radio-segment[data-checked]:focus-visible {
+    outline-color: CanvasText;
+  }
+}

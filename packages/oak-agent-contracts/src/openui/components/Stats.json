@@ -1,0 +1,32 @@
+{
+  "name": "Stats",
+  "claims": null,
+  "holds": [
+    "Metric",
+    "Meter"
+  ],
+  "opensOnCard": true,
+  "intro": {
+    "line": "The numbers, as Steve's pages state them:"
+  },
+  "pendingKind": "stats",
+  "pendingCap": 4,
+  "salvageContainer": true,
+  "skeleton": null,
+  "view": "views/stats.ts",
+  "plan": {
+    "in": {
+      "results-metrics": 2
+    },
+    "count": "hits",
+    "leadsFor": [
+      "recruiter"
+    ]
+  },
+  "structured": false,
+  "structure": true,
+  "judgeView": {
+    "kind": "walk-values"
+  },
+  "taughtPresets": []
+}

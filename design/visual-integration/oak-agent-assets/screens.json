@@ -1,0 +1,34 @@
+{
+ "screens-one": {
+  "iconOnly": true,
+  "reason": "39: Screens fixture, the one framed screen carry it, with no pose of its own."
+ },
+ "screens-three": {
+  "iconOnly": true,
+  "reason": "39: Screens fixture, the frame, filmstrip and counter carry it, with no pose of its own."
+ },
+ "screens-six": {
+  "iconOnly": true,
+  "reason": "39: Screens fixture, the six thumbnails carry it, with no pose of its own."
+ },
+ "screens-off-ratio": {
+  "iconOnly": true,
+  "reason": "39: Screens fixture, the tall and wide screens on their backdrops carry it, with no pose of its own."
+ },
+ "screens-viewer": {
+  "iconOnly": true,
+  "reason": "39: Screens fixture, the open viewer carry it, with no pose of its own."
+ },
+ "screens-viewer-no-caption": {
+  "iconOnly": true,
+  "reason": "39: Screens fixture, the open viewer without its caption carry it, with no pose of its own."
+ },
+ "screens-streaming": {
+  "iconOnly": true,
+  "reason": "39: Screens fixture, the frame ghost carry it, with no pose of its own."
+ },
+ "screens-off": {
+  "iconOnly": true,
+  "reason": "39: Screens fixture, the plain Source card carry it, with no pose of its own."
+ }
+}

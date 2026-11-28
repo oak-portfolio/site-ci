@@ -1,0 +1,248 @@
+---
+type Props = {
+  src?: string;
+  poster?: string;
+  caption?: string;
+  label?: string;
+  youtubeId?: string;
+  youtubeUrl?: string;
+  embedUrl?: string;
+  aspectRatio?: string;
+};
+
+const {
+  src,
+  poster,
+  caption,
+  label = "Case study video",
+  youtubeId,
+  youtubeUrl,
+  embedUrl,
+  aspectRatio,
+} = Astro.props;
+
+const extractYouTubeId = (value?: string) => {
+  if (!value) return undefined;
+  if (/^[a-zA-Z0-9_-]{11}$/.test(value)) return value;
+
+  try {
+    const url = new URL(value);
+    if (url.hostname.includes("youtu.be")) return url.pathname.split("/").filter(Boolean)[0];
+    if (url.pathname.includes("/embed/")) return url.pathname.split("/embed/")[1]?.split("/")[0];
+    if (url.pathname.includes("/shorts/")) return url.pathname.split("/shorts/")[1]?.split("/")[0];
+    return url.searchParams.get("v") ?? undefined;
+  } catch {
+    return undefined;
+  }
+};
+
+const resolvedYouTubeId = youtubeId ?? extractYouTubeId(youtubeUrl);
+const resolvedEmbedUrl = embedUrl ?? (resolvedYouTubeId ? `https://www.youtube-nocookie.com/embed/${resolvedYouTubeId}` : undefined);
+const isEmbeddedVideo = Boolean(resolvedEmbedUrl);
+const mediaAspectRatio = aspectRatio ?? (isEmbeddedVideo ? "16 / 9" : undefined);
+const resolvedWatchUrl = youtubeUrl ?? (resolvedYouTubeId ? `https://www.youtube.com/watch?v=${resolvedYouTubeId}` : undefined);
+const isYouTubeEmbed = (value?: string) => {
+  if (!value) return false;
+
+  try {
+    const url = new URL(value);
+    return /(^|\.)youtube(?:-nocookie)?\.com$/.test(url.hostname);
+  } catch {
+    return false;
+  }
+};
+const buildEmbedUrl = (value?: string) => {
+  if (!value) return undefined;
+
+  const url = new URL(value);
+  url.searchParams.set("autoplay", "1");
+  url.searchParams.set("mute", "1");
+  url.searchParams.set("rel", "0");
+  url.searchParams.set("modestbranding", "1");
+  url.searchParams.set("playsinline", "1");
+
+  if (resolvedYouTubeId && isYouTubeEmbed(value)) {
+    url.searchParams.set("enablejsapi", "1");
+    url.searchParams.set("loop", "1");
+    url.searchParams.set("playlist", resolvedYouTubeId);
+  }
+
+  return url.toString();
+};
+const autoplayEmbedUrl = buildEmbedUrl(resolvedEmbedUrl);
+const parseAspectRatio = (value?: string) => {
+  if (!value) return undefined;
+  const [width, height] = value.split("/").map((part) => Number(part.trim()));
+  if (!Number.isFinite(width) || !Number.isFinite(height) || height === 0) return undefined;
+  return width / height;
+};
+const isPortraitVideo = (parseAspectRatio(mediaAspectRatio) ?? 1) < 0.8;
+---
+
+<figure
+  class:list={[
+    "work-mdx-image",
+    "work-mdx-video",
+    isEmbeddedVideo && "work-mdx-video--embed",
+    isPortraitVideo && "work-mdx-video--portrait",
+  ]}
+  style={mediaAspectRatio ? `--work-video-aspect-ratio: ${mediaAspectRatio};` : undefined}
+>
+  {
+    isEmbeddedVideo ? (
+      <div class="work-mdx-video__stage" data-work-video-stage>
+        <iframe
+          class="work-mdx-video__iframe"
+          src={autoplayEmbedUrl}
+          title={label}
+          data-youtube-embed={isYouTubeEmbed(resolvedEmbedUrl) ? "true" : undefined}
+          loading="lazy"
+          width="100%"
+          height="100%"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        />
+        {resolvedWatchUrl && (
+          <noscript>
+            <a href={resolvedWatchUrl}>Open video</a>
+          </noscript>
+        )}
+      </div>
+    ) : (
+      src && (
+        <video src={src} poster={poster} controls muted playsinline preload="metadata" aria-label={label}>
+          Your browser does not support this video.
+        </video>
+      )
+    )
+  }
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
+
+<script>
+  const playYouTubeEmbed = (iframe: HTMLIFrameElement) => {
+    if (!iframe.contentWindow) return;
+
+    const commands = ["mute", "playVideo"];
+    commands.forEach((func) => {
+      iframe.contentWindow?.postMessage(JSON.stringify({ event: "command", func, args: [] }), "*");
+    });
+  };
+
+  const wireYouTubeEmbeds = () => {
+    const embeds = Array.from(document.querySelectorAll<HTMLIFrameElement>("[data-youtube-embed='true']"));
+    if (!embeds.length) return;
+
+    embeds.forEach((iframe) => {
+      try {
+        const url = new URL(iframe.src);
+        if (!url.searchParams.has("origin")) {
+          url.searchParams.set("origin", window.location.origin);
+          iframe.src = url.toString();
+        }
+      } catch {
+        // Keep the authored embed URL if the browser refuses URL parsing.
+      }
+
+      iframe.addEventListener("load", () => playYouTubeEmbed(iframe));
+    });
+
+    if (!("IntersectionObserver" in window)) {
+      embeds.forEach(playYouTubeEmbed);
+      return;
+    }
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          playYouTubeEmbed(entry.target as HTMLIFrameElement);
+        });
+      },
+      { threshold: 0.35 }
+    );
+
+    embeds.forEach((iframe) => observer.observe(iframe));
+  };
+
+  wireYouTubeEmbeds();
+  document.addEventListener("astro:page-load", wireYouTubeEmbeds);
+</script>
+
+<style>
+  .work-mdx-video__stage {
+    position: relative;
+    width: 100%;
+    aspect-ratio: var(--work-video-aspect-ratio, 16 / 9);
+    overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    background: #050505;
+  }
+
+  .work-mdx-video video,
+  :global(.work-mdx-video__iframe) {
+    display: block;
+    width: 100%;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 40px;
+    background: rgba(255, 255, 255, 0.04);
+  }
+
+  .work-mdx-video video {
+    height: auto;
+    max-height: min(78vh, 840px);
+  }
+
+  :global(.work-mdx-video__iframe) {
+    position: absolute;
+    inset: 0;
+    aspect-ratio: var(--work-video-aspect-ratio, 16 / 9);
+    height: 100%;
+    border: 0;
+  }
+
+  @supports (corner-shape: squircle) {
+    .work-mdx-video__stage,
+    .work-mdx-video video,
+    :global(.work-mdx-video__iframe) {
+      border-radius: 56px;
+      corner-shape: squircle;
+    }
+  }
+
+  @media (max-width: 760px) {
+    .work-mdx-video__stage,
+    .work-mdx-video video,
+    :global(.work-mdx-video__iframe) {
+      border-radius: 18px;
+    }
+
+    @supports (corner-shape: squircle) {
+      .work-mdx-video__stage,
+      .work-mdx-video video,
+      :global(.work-mdx-video__iframe) {
+        border-radius: 20px;
+        corner-shape: squircle;
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .work-mdx-video__stage,
+    .work-mdx-video video,
+    :global(.work-mdx-video__iframe) {
+      border-radius: 12px;
+    }
+
+    @supports (corner-shape: squircle) {
+      .work-mdx-video__stage,
+      .work-mdx-video video,
+      :global(.work-mdx-video__iframe) {
+        border-radius: 14px;
+        corner-shape: squircle;
+      }
+    }
+  }
+</style>

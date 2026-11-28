@@ -1,0 +1,146 @@
+.oak-openui__points {
+  display: grid;
+  gap: var(--space-sm);
+  padding-left: var(--space-md);
+}
+
+.oak-openui__points li::marker {
+  color: var(--quiet);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Ticket 14 (the explored rows primitive): a plain Points list is one raised group of rows. Each row leads with a tick tile
+   and ends on a hairline; the tile is decoration, so the list still reads as a list of its claims. A card's own list keeps bullets. */
+.oak-openui__points[data-rows] {
+  gap: 0;
+  padding: calc(var(--oak-pad-nest) - var(--space-sm)) 0;
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--oak-raised);
+  list-style: none;
+}
+
+.oak-openui__points[data-rows] > li {
+  display: grid;
+  grid-template-columns: 24px minmax(0, 1fr);
+  align-items: start;
+  column-gap: var(--space-sm);
+  padding: var(--space-sm) var(--oak-pad-frame);
+}
+
+.oak-openui__points[data-rows] > li + li {
+  border-top: 1px solid var(--line-soft);
+}
+
+/* R14 (batch A2): one row is the whole frame, so it pads its block by the inline pad and the tick tile sits concentric in the curve. */
+.oak-openui__points[data-rows] > li:only-child {
+  padding-block: var(--oak-pad-frame);
+}
+
+.oak-openui__point-mark {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: var(--radius-pill);
+  background: var(--oak-tint-leaf);
+  color: var(--oak-leaf);
+}
+
+.oak-openui__point-text {
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+/*
+ * Ticket 17: a plan ghost's text line (the Prose, Points, Steps and Callout ghosts) is one line box tall with a bar in it, so a
+ * ghost is as tall as the text it stands for. The answer column wraps a claim to about twice the lines below 520px, so the lines
+ * marked narrow show only there.
+ */
+.oak-openui-ghost__line {
+  display: flex;
+  align-items: center;
+  height: 1lh;
+}
+
+.oak-openui-ghost__line > .oak-openui-card__bar {
+  height: 0.6em;
+}
+
+.oak-openui-ghost__line[data-narrow] {
+  display: none;
+}
+
+/* Ticket 236: a pending Points row opens on its tick tile, flush with the top pad, so its last bar closes the row on the line's foot. */
+.oak-openui__points[data-pending] .oak-openui-ghost__line:last-child {
+  align-items: end;
+}
+
+/* A row sized by its hidden claim spreads its bars over the claim's lines, so the last one sits on the claim's last line. */
+.oak-openui__points[data-pending] .oak-openui__point-text[data-sized] > .oak-openui-ghost__bars {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@container oak-openui (max-width: 519px) {
+  .oak-openui-ghost__line[data-narrow] {
+    display: flex;
+  }
+}
+
+/*
+ * Ticket 107: the ghost column stacks its ghosts as blocks. A ghost whose block the layout dropped eases its rows to nothing
+ * over the settle step (a longer step than the fill's, so even the tallest ghost moves the frame by less than a line per
+ * frame), taking its gap with it; reduced motion drops it at once.
+ */
+.oak-openui.oak-openui-ghosts {
+  display: block;
+}
+
+.oak-openui-answer:has(> .oak-openui-ghosts) {
+  row-gap: 0;
+}
+
+.oak-openui-answer:has(> .oak-openui-ghosts) > :not(:first-child):not(.oak-openui-ghosts) {
+  margin-block-start: var(--oak-openui-gap);
+}
+
+.oak-openui-ghost {
+  display: grid;
+  grid-template-rows: 1fr;
+  transition:
+    grid-template-rows var(--motion-settle-duration) linear,
+    margin-block-start var(--motion-settle-duration) linear,
+    opacity var(--motion-settle-duration) ease-in-out,
+    visibility 0s linear var(--motion-settle-duration);
+}
+
+.oak-openui-ghost > .oak-openui {
+  min-height: 0;
+}
+
+.oak-openui-ghosts > .oak-openui-ghost:not([data-fold]) {
+  margin-block-start: var(--oak-openui-gap);
+}
+
+/* Nothing sits above the column before the lead draws, so its first ghost takes no gap. */
+.oak-openui-ghosts:first-child > .oak-openui-ghost:first-child:not([data-fold]) {
+  margin-block-start: 0;
+}
+
+.oak-openui-ghosts > [data-fold] {
+  grid-template-rows: 0fr;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.oak-openui-ghosts > [data-fold] > .oak-openui {
+  overflow: hidden;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-openui-ghost {
+    transition: none;
+  }
+}

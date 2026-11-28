@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>forced colors: a control that draws no focus outline (r201 L)</title>
+<style>
+  body { margin: 24px; font: 16px system-ui, sans-serif;  }
+  .chip { forced-color-adjust: none; background: Canvas; color: CanvasText; border: 1px solid CanvasText; padding: 4px 8px; }
+  .chip:focus-visible { outline: none; }
+</style>
+</head>
+<body>
+<main class="oak-conversation">
+  <p><button>Before</button> <button class="chip">Chip</button></p>
+</main>
+</body>
+</html>

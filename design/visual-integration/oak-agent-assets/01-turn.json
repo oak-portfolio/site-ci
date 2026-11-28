@@ -1,0 +1,30 @@
+{
+ "composing": {
+  "iconOnly": true,
+  "reason": "Keep the visitor's writing surface quiet."
+ },
+ "sending": {
+  "asset": "oak-thinking-v1"
+ },
+ "thinking": {
+  "asset": "oak-thinking-loop"
+ },
+ "tool-running": {
+  "asset": "search-loop"
+ },
+ "tool-done": {
+  "asset": "tool-done"
+ },
+ "tool-error": {
+  "asset": "tool-snag"
+ },
+ "tool-read": {
+  "asset": "tool-read"
+ },
+ "tool-navigate": {
+  "asset": "tool-navigate"
+ },
+ "tool-draft": {
+  "asset": "tool-draft"
+ }
+}

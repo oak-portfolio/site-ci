@@ -1,0 +1,10 @@
+{
+ "lead-claim-streaming": {
+  "iconOnly": true,
+  "reason": "334: diagram-how mid-stream, the lead sentence, diagram and ghost rows carry it, with no pose of its own."
+ },
+ "lead-claim-settled": {
+  "iconOnly": true,
+  "reason": "334: diagram-how settled, the lead sentence and diagram carry it, with no pose of its own."
+ }
+}

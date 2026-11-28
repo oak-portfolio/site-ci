@@ -1,0 +1,26 @@
+{
+ "schema": "oak.answer.v1",
+ "speaker": "oak-ai-host",
+ "characterVersion": "oak-character-2026-10-03-v1",
+ "hardPolicyVersion": "oak-hard-policy-2026-10-03-v1",
+ "knowledgeRevision": "oak-a9725cc34ca7785475ad509b9e116324b76a97c948fd278de06f195fe38cda4c",
+ "kind": "advice",
+ "operations": [
+  "search",
+  "read"
+ ],
+ "scope": "limited-evidence",
+ "proposal": {
+  "recommendation": "Clarify the decision and seek a source or specialist with direct evidence before acting.",
+  "assumptions": [
+   "The available public work does not establish a supported advice plan for this request."
+  ],
+  "tradeoffs": [
+   "Acting without relevant evidence can produce a misleading recommendation; clarification takes another step."
+  ],
+  "nextStep": "What decision do you need to make, and which constraints or current facts must be checked?"
+ },
+ "evidence": [],
+ "uncertainty": "This advice covers prototype interfaces and source-grounded agent workflows only. These are conditional suggestions grounded in dated public work. Current platform features, prices, resources, and project conditions have not been verified.",
+ "contactOffer": false
+}

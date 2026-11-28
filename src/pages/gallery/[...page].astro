@@ -1,0 +1,32 @@
+---
+import BaseLayout from "@/layouts/BaseLayout.astro";
+import { GalleryPage } from "@/components/gallery/GalleryPage";
+import { galleryReplays } from "@/data/galleryReplays";
+import { oakCitationLabelsWithCovers } from "@/lib/oakCitationCovers.server";
+import { oakGalleryPageOn } from "@/lib/oakFlags/galleryPage";
+
+// Ticket 50: off, the route has no path, so no page is written and /gallery is a real 404 (a page answering 404 would be
+// rerouted to the 404 page and written as /gallery/index.html). `OAK_GALLERY_PAGE=1 npm run dev` previews it.
+export function getStaticPaths() {
+  const on = oakGalleryPageOn() || (import.meta.env.DEV && process.env.OAK_GALLERY_PAGE === "1");
+  return on ? [{ params: { page: undefined } }] : [];
+}
+
+const cited = new Set(galleryReplays.flatMap(replay => replay.answer.claims.flatMap(claim => claim.citations.map(citation => citation.documentId))));
+const labels = await oakCitationLabelsWithCovers();
+const citationLabels = { ...labels, documents: labels.documents.filter(document => cited.has(document.documentId)) };
+---
+<BaseLayout
+  title="What Oak can show you | SteveOak.com"
+  description="Reference answers from the Oak AI Agent, each drawn by its live renderer. Play one, or ask it live."
+  noindex={true}
+  showOakMascot={false}
+>
+  <div class="gallery-page">
+    <header class="gallery-page__head">
+      <h1>What Oak can show you</h1>
+      <p>Each tile plays a hand-built reference answer, drawn by the same renderer live answers use. Play it, or ask the same question live.</p>
+    </header>
+    <GalleryPage citationLabels={citationLabels} client:load />
+  </div>
+</BaseLayout>

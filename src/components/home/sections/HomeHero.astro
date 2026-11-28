@@ -1,0 +1,35 @@
+---
+import { ContactMorph } from "@/components/ContactMorph";
+import OptimizedPicture from "@/components/OptimizedPicture.astro";
+import { heroCopy, media } from "@/data/homePage";
+
+interface Props {
+  alt: string;
+  id: string;
+}
+
+const { alt, id } = Astro.props;
+---
+
+<section class="hero-stage" aria-labelledby={id} data-oak-section="home.hero">
+  <div class="page-container hero-stage__inner">
+    <div class="hero-copy" data-oak-context="home.hero">
+      <OptimizedPicture
+        class="app-icon app-icon--portrait"
+        data-hero-portrait
+        src={media.welcomePortrait}
+        alt={alt}
+        width="409"
+        height="500"
+        decoding="async"
+        loading="eager"
+        fetchpriority="high"
+      />
+      <h1 id={id}>{heroCopy.title}</h1>
+      <p>{heroCopy.description}</p>
+      <ContactMorph client:load appearance="hero" side="bottom" align="center" />
+    </div>
+
+    <slot />
+  </div>
+</section>

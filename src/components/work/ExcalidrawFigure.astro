@@ -1,0 +1,25 @@
+---
+type Props = {
+  src: string;
+  title: string;
+  caption?: string;
+  aspectRatio?: string;
+};
+
+const { src, title, caption, aspectRatio = "16 / 9" } = Astro.props;
+---
+
+<figure class="work-mdx-excalidraw">
+  <div class="work-mdx-excalidraw__stage" style={`aspect-ratio: ${aspectRatio};`}>
+    <iframe
+      class="work-mdx-excalidraw__frame"
+      src={src}
+      title={title}
+      loading="lazy"
+      referrerpolicy="strict-origin-when-cross-origin"
+      allowfullscreen
+    ></iframe>
+  </div>
+  {caption && <figcaption>{caption}</figcaption>}
+</figure>
+

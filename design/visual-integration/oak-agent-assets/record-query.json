@@ -1,0 +1,18 @@
+{
+ "record-query-loading": {
+  "iconOnly": true,
+  "reason": "72: Record query fixture, loading: the placeholder heading carries it, with no pose of its own."
+ },
+ "record-query-settled": {
+  "iconOnly": true,
+  "reason": "72: Record query fixture, settled: the record's heading carries it, with no pose of its own."
+ },
+ "record-query-failed": {
+  "iconOnly": true,
+  "reason": "342: Record query fixture, failed: the empty-line heading carries it, with no pose of its own."
+ },
+ "record-query-off": {
+  "iconOnly": true,
+  "reason": "342: Record query fixture, constant off: the empty-line heading carries it, with no pose of its own."
+ }
+}

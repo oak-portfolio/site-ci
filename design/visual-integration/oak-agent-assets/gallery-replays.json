@@ -1,0 +1,34 @@
+{
+ "gallery-replay-diagram": {
+  "iconOnly": true,
+  "reason": "341: the Diagram gallery replay, a record block that carries it, with no pose of its own."
+ },
+ "gallery-replay-table": {
+  "iconOnly": true,
+  "reason": "341: the Table gallery replay, a record block that carries it, with no pose of its own."
+ },
+ "gallery-replay-board": {
+  "iconOnly": true,
+  "reason": "341: the Board gallery replay, a record block that carries it, with no pose of its own."
+ },
+ "gallery-replay-project-wall": {
+  "iconOnly": true,
+  "reason": "341: the Project wall gallery replay, a record block that carries it, with no pose of its own."
+ },
+ "gallery-replay-stack-map": {
+  "iconOnly": true,
+  "reason": "341: the Stack map gallery replay, a record block that carries it, with no pose of its own."
+ },
+ "gallery-replay-screens": {
+  "iconOnly": true,
+  "reason": "341: the Screens gallery replay, a record block that carries it, with no pose of its own."
+ },
+ "gallery-replay-profile": {
+  "iconOnly": true,
+  "reason": "348: the Profile gallery replay, a record block that carries it, with no pose of its own."
+ },
+ "gallery-replay-page-cards": {
+  "iconOnly": true,
+  "reason": "348: the Page cards gallery replay, a record block that carries it, with no pose of its own."
+ }
+}

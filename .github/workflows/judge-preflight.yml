@@ -1,0 +1,67 @@
+# Public mirror oak-portfolio/site-ci: the judge preflight (ticket 312). The source repo keeps it at
+# .circleci/mirror/public/judge-preflight.yml and the snapshot placement writes it here. The landing command's preflight
+# mode pushes a snapshot to a preflight/<label> branch, which starts this run, and deletes the branch after it (a push
+# trigger, as loop.yml explains: GitHub dispatches only a workflow on the default branch). The state list comes from the
+# placed .github/ci/preflight.json. One job judges only those gallery states on Linux (JUDGE_STATES) and uploads
+# judge-findings.json, even when the judge is red: that file is what the preflight reads. Never add pull_request_target
+# or a trigger on main.
+name: judge-preflight
+on:
+  push:
+    branches: ['preflight/**']
+permissions:
+  contents: read
+concurrency:
+  group: judge-preflight-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc.pages
+  NO_COLOR: "1"
+  ASTRO_TELEMETRY_DISABLED: "1"
+
+jobs:
+  judge:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    env:
+      OAK_GALLERY_URL: http://127.0.0.1:4321
+      JUDGE_FINDINGS_OUT: ${{ github.workspace }}/ci-out/judge-findings.json
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+      - name: Install dependencies and Chromium
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          MOTION_PLUS_TOKEN: ${{ secrets.MOTION_PLUS_TOKEN }}
+        run: |
+          npm install --global npm@12.2.0
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y --no-install-recommends ripgrep
+      - name: Plan (the named gallery states)
+        run: |
+          states=$(jq -r '.states | join(",")' .github/ci/preflight.json)
+          [ -n "$states" ] || { echo "no states"; exit 1; }
+          [[ "$states" =~ ^[a-z0-9][a-z0-9,-]*$ ]] || { echo "not a state list: $states"; exit 1; }
+          echo "preflight-plan: $states"
+          echo "JUDGE_STATES=$states" >> "$GITHUB_ENV"
+      - name: Dev server, then the design judge on the named states
+        timeout-minutes: 30
+        run: |
+          mkdir -p ci-out
+          npm run dev:bg
+          for i in $(seq 1 120); do curl -fsS -o /dev/null "$OAK_GALLERY_URL/__dev/oak-states" && break; sleep 2; done
+          curl -fsS -o /dev/null "$OAK_GALLERY_URL/__dev/oak-states"
+          node --test --test-reporter=spec --test-name-pattern="every gallery state passes the judge" tests/agent/premium/design-judge.test.mjs
+      - name: Upload judge findings (text only)
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: judge-findings
+          path: ci-out/judge-findings.json
+          if-no-files-found: ignore
+          retention-days: 14

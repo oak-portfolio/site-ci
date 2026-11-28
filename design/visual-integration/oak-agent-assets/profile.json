@@ -1,0 +1,18 @@
+{
+ "profile-brief": {
+  "iconOnly": true,
+  "reason": "28: Profile fixture, brief: the portrait card carries it, with no pose of its own."
+ },
+ "profile-full": {
+  "iconOnly": true,
+  "reason": "28: Profile fixture, full: the portrait card with its focus chips carries it, with no pose of its own."
+ },
+ "profile-streaming": {
+  "iconOnly": true,
+  "reason": "28: Profile fixture, streaming: the ghost's bars carry it, with no pose of its own."
+ },
+ "profile-off": {
+  "iconOnly": true,
+  "reason": "28: Profile fixture, constant off: the plain Points list carries it, with no pose of its own."
+ }
+}

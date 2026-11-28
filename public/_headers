@@ -1,0 +1,36 @@
+/*
+  X-Content-Type-Options: nosniff
+  Strict-Transport-Security: max-age=31536000
+  Referrer-Policy: strict-origin-when-cross-origin
+  Content-Security-Policy: default-src 'self'; script-src 'self' 'unsafe-inline' https://challenges.cloudflare.com https://*.clerk.accounts.dev https://clerk.steveoak.com https://*.protect.clerk.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: blob: https:; font-src 'self' data:; connect-src 'self' https://challenges.cloudflare.com https://*.clerk.accounts.dev https://clerk.steveoak.com https://*.protect.clerk.com:* https://cloudflareinsights.com https://*.posthog.com https://*.ingest.sentry.io https://*.ingest.us.sentry.io; frame-src https://www.youtube-nocookie.com https://link.excalidraw.com https://challenges.cloudflare.com https://*.clerk.accounts.dev https://clerk.steveoak.com https://*.protect.clerk.com; media-src 'self' blob:; worker-src 'self' blob:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; report-uri /api/oak/csp-report
+
+/_astro/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+/api/md/*
+  Content-Type: text/markdown; charset=utf-8
+
+/*.md
+  Content-Type: text/markdown; charset=utf-8
+
+/work/*.md
+  Content-Type: text/markdown; charset=utf-8
+
+/api/machine/*
+  Content-Type: application/json; charset=utf-8
+
+/.well-known/agent-profile.json
+  Content-Type: application/json; charset=utf-8
+
+/owner/*
+  Cache-Control: no-store
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Referrer-Policy: no-referrer
+
+/oak/funding/callback*
+  Cache-Control: no-store
+  X-Robots-Tag: noindex, nofollow, noarchive, nosnippet
+  Referrer-Policy: no-referrer

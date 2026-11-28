@@ -1,0 +1,133 @@
+# Public mirror oak-portfolio/site-ci. The source repo keeps this file at .circleci/mirror/public/site-ci.yml and the
+# snapshot placement (.circleci/mirror/public/place.mjs) writes it here. Every push to main is one snapshot.
+# The nightly (ticket 247) is a schedule run of this same gate on the mirror's main; the ledger checkpoint reads it (gh run list --event schedule).
+# Never add pull_request_target: forks get no secrets, and every outside contributor's run waits for approval.
+# No artifact holds node_modules, dist or a bundle (Hugeicons Pro and Motion+ licences): text files only.
+name: site-ci
+on:
+  push:
+    branches: [main]
+  schedule:
+    - cron: '17 9 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+# The landing command's four commit statuses read this run, so a later push never cancels it (root note 6).
+concurrency:
+  group: site-ci-${{ github.sha }}
+  cancel-in-progress: false
+env:
+  NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc.pages
+  NO_COLOR: "1"
+  ASTRO_TELEMETRY_DISABLED: "1"
+
+jobs:
+  site-gate:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 40
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+      - name: Install dependencies
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          MOTION_PLUS_TOKEN: ${{ secrets.MOTION_PLUS_TOKEN }}
+        run: |
+          npm install --global npm@12.2.0
+          npm ci --no-audit --no-fund
+      # test:quality drives Chromium (owner-console-shell layout checks) and shells out to rg, as the CircleCI site gate does.
+      - name: Install Chromium and ripgrep
+        run: |
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y --no-install-recommends ripgrep
+      - run: npm run openui:check
+      - run: npm run lint
+      - name: Quality tests (test:quality, less the public-only failures)
+        run: |
+          node .github/ci/pack.mjs files test:quality | grep -vxF -f .github/ci/public-only-failures.txt > "$RUNNER_TEMP/quality.txt"
+          echo "quality test files: $(grep -c . "$RUNNER_TEMP/quality.txt")"
+          xargs -a "$RUNNER_TEMP/quality.txt" -d '\n' node --test
+      - name: Build (check and astro build)
+        run: npm run build
+      - name: Post-build audits
+        run: |
+          node scripts/quality/no-private-routes.mjs
+          node scripts/quality/md-twins-built.mjs
+          npm run audit:metadata
+          npm run audit:search
+          npm run audit:performance
+      # Each fails only because the path it reads is not published; ticket 246 decides each one. Kept as data.
+      - name: Known public-only failures (ticket 246, not gating)
+        if: always()
+        continue-on-error: true
+        run: |
+          code=0
+          for f in $(grep -v '^#' .github/ci/public-only-failures.txt); do node --test "$f" > /dev/null 2>&1 && echo "passes now: $f" || { echo "fails: $f"; code=1; }; done
+          for s in audit:deps audit:knowledge-runtime; do npm run -s "$s" > /dev/null 2>&1 && echo "passes now: npm run $s" || { echo "fails: npm run $s"; code=1; }; done
+          exit $code
+
+  browser:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        shard: [0, 1, 2, 3, 4, 5, 6, 7]
+    env:
+      OAK_GALLERY_URL: http://127.0.0.1:4321
+      # The chat-first home's browser tests (ticket 350) on the same dev server; the query switches the home on outside production.
+      OAK_CHAT_HOME_URL: http://127.0.0.1:4321/?oakChatFirstHome=1
+      JUDGE_FINDINGS_OUT: ${{ github.workspace }}/ci-out/judge-findings.json
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+      - name: Install dependencies and Chromium
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          MOTION_PLUS_TOKEN: ${{ secrets.MOTION_PLUS_TOKEN }}
+        run: |
+          npm install --global npm@12.2.0
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y --no-install-recommends ripgrep
+      # Shard 0 runs design-judge alone: its gallery pass prints nothing until it ends, so a hang shows as this step's own
+      # timeout. The other shards pack longest-first by .github/ci/timings.json (seconds per file from earlier runs); a
+      # file with no timing counts as the mean. Failed files rerun through retry-alone, which tells a flake from a real failure;
+      # shard 0 never reruns, so a real judge failure is red at once instead of running past the step timeout.
+      # d71-reveal is a timing test, allowed until ticket 246 quarantines it.
+      - name: Dev server, then this shard of the browser suite
+        # Shard 0's judge took 29-30 min on land-23/24 and grows with each gallery state; one slow runner passed 40 (ruling 78).
+        timeout-minutes: ${{ matrix.shard == 0 && 52 || 35 }}
+        run: |
+          mkdir -p ci-out
+          node .github/ci/pack.mjs shard ${{ matrix.shard }} ${{ strategy.job-total }} > "$RUNNER_TEMP/shard.txt"
+          npm run dev:bg
+          for i in $(seq 1 120); do curl -fsS -o /dev/null "$OAK_GALLERY_URL/__dev/oak-states" && break; sleep 2; done
+          curl -fsS -o /dev/null "$OAK_GALLERY_URL/__dev/oak-states"
+          code=0
+          xargs -a "$RUNNER_TEMP/shard.txt" -d '\n' node --test --test-concurrency=3 \
+            --test-reporter=spec --test-reporter-destination=stdout \
+            --test-reporter=./.github/ci/timing-reporter.mjs --test-reporter-destination=ci-out/timings-${{ matrix.shard }}.json || code=$?
+          if [ "$code" != 0 ]; then
+            if [ "${{ matrix.shard }}" = 0 ]; then exit "$code"; fi
+            node -e 'const t=require("./ci-out/timings-${{ matrix.shard }}.json");console.log(Object.keys(t).filter(f=>!t[f].passed).join("\n"))' > "$RUNNER_TEMP/failed.txt"
+            echo "failed files:"; cat "$RUNNER_TEMP/failed.txt"
+            if [ ! -s "$RUNNER_TEMP/failed.txt" ]; then exit "$code"; fi
+            xargs -a "$RUNNER_TEMP/failed.txt" -d '\n' -r node scripts/quality/retry-alone.mjs --test-concurrency=3 --timing-allow=d71-reveal
+          fi
+      - name: Upload timings and judge findings (text only)
+        if: always()
+        uses: actions/upload-artifact@cf430e030ddbb5b0abf93d22962f4752f3646cd9 # v7.0.2
+        with:
+          name: shard-${{ matrix.shard }}
+          path: ci-out/*.json
+          if-no-files-found: ignore
+          retention-days: 14

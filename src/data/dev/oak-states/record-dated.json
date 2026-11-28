@@ -1,0 +1,210 @@
+[
+ {
+  "id": "record-undated",
+  "judgeLike": "answer-openui-roles-three",
+  "label": "Record lines (ticket 327): w25 explainer-negative, a question not about roles or time, so each Role card is its name alone",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What did Steve build with RAG?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve built an initial Agentic Brain context layer structured around RAG, memory, and reusable workflows for client AI products and automation.",
+        "citations": [
+         {
+          "documentId": "experience:uhttention",
+          "passageId": "experience:uhttention:passage-005",
+          "sectionId": "experience:uhttention",
+          "url": "https://steveoak.com/work#uhttention"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "His graduate work at San Francisco Bay University also included RAG alongside the Vercel AI SDK.",
+        "citations": [
+         {
+          "documentId": "experience:sanfranciscobayuniversity",
+          "passageId": "experience:sanfranciscobayuniversity:passage-011",
+          "sectionId": "experience:sanfranciscobayuniversity",
+          "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "At Oak Labs, he lists RAG among his core methods alongside multi-agent systems, APIs, browser automation, and computer use.",
+        "citations": [
+         {
+          "documentId": "experience:oaklabs",
+          "passageId": "experience:oaklabs:passage-007",
+          "sectionId": "experience:oaklabs",
+          "url": "https://steveoak.com/work#oaklabs"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000032701",
+      "status": "done",
+      "program": "root = Answer([uhttention, sfbu, oakLabs, src, pills])\nuhttention = Role([\"claim-1\"])\nsfbu = Role([\"claim-2\"])\noakLabs = Role([\"claim-3\"])\nsrc = Sources()\npills = Pills([\"How does his Agentic Brain work?\", \"What multi-agent systems has he built?\", \"Which tools does he pair with RAG?\"])",
+      "dated": false
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "record-dated",
+  "judgeLike": "answer-openui-projects",
+  "label": "Record lines (ticket 327): w25 timeline, a time question, so each Project card keeps its role and dates",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How do EcoSmartLoop and Agentic Brain fit in Steve's timeline?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve developed EcoSmartLoop during a capstone timeline and followed it later with Agentic Brain as a newer memory-systems workstream after a January 2026 experiment.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-009:passage-002",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-tradeoffs-that-made-it-real",
+          "sectionId": "work:ecosmartloop:section-009"
+         },
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title",
+          "sectionId": "work:agentic-brain:section-001"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "EcoSmartLoop was developed under a short capstone timeline using responsive web plus Capacitor to focus on an iOS shell.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-009:passage-002",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-tradeoffs-that-made-it-real",
+          "sectionId": "work:ecosmartloop:section-009"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Agentic Brain represents a newer memory-systems workstream created after Steve's January 2026 memory and hallucination experiment.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title",
+          "sectionId": "work:agentic-brain:section-001"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000032702",
+      "status": "done",
+      "program": "root = Answer([intro, eco, brain, src, pills])\nintro = Prose(\"claim-1\")\neco = Project([\"claim-2\"])\nbrain = Project([\"claim-3\"])\nsrc = Sources()\npills = Pills([\"What tools did he use for Agentic Brain?\", \"How does EcoSmartLoop work?\"])",
+      "dated": true
+     }
+    }
+   ]
+  }
+ }
+]

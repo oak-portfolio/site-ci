@@ -1,0 +1,28 @@
+{
+ "reasoning-understanding": {
+  "asset": "understanding-loop"
+ },
+ "reasoning-weighing": {
+  "asset": "weighing-loop"
+ },
+ "reasoning-writing": {
+  "asset": "composing-loop"
+ },
+ "reasoning-composing": {
+  "iconOnly": true,
+  "reason": "Q10: a finished answer's folded header shows the still done pose (the tool-done state's art); the writing loop belongs to reasoning-writing, while Oak writes."
+ },
+ "reasoning-verifying": {
+  "asset": "verifying-loop"
+ },
+ "reasoning-thoughts": {
+  "asset": "pondering"
+ },
+ "reasoning-slow": {
+  "asset": "snail-patience"
+ },
+ "reasoning-wait": {
+  "iconOnly": true,
+  "reason": "Q03 named wait: the running step keeps its own pose and the clock line names the wait; Q10 draws a dedicated wait pose."
+ }
+}

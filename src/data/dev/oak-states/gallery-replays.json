@@ -1,0 +1,718 @@
+[
+  {
+    "id": "gallery-replay-diagram",
+    "label": "Gallery replay (ticket 341): the Diagram tile's hand-built reference program, drawn from the site's record facts",
+    "judgeLike": "diagram-flow-oakminder",
+    "workspace": {
+      "messages": [
+        {
+          "role": "user",
+          "text": "How does Oakminder work?"
+        },
+        {
+          "role": "assistant",
+          "steps": [
+            {
+              "id": "understand",
+              "operation": "understand",
+              "state": "done",
+              "startedAt": -6200,
+              "endedAt": -5400
+            },
+            {
+              "id": "search-1",
+              "operation": "search",
+              "state": "done",
+              "startedAt": -5400,
+              "endedAt": -3900
+            },
+            {
+              "id": "read-2",
+              "operation": "read",
+              "state": "done",
+              "startedAt": -3900,
+              "endedAt": -2600
+            },
+            {
+              "id": "compose",
+              "operation": "compose",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            },
+            {
+              "id": "verify",
+              "operation": "verify",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            }
+          ],
+          "answer": {
+            "kind": "sourced",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "Oakminder's architecture decision: the backend has to know what happened, and the phone has to make the action feel light.",
+                "citations": [
+                  {
+                    "documentId": "work:oakminder",
+                    "passageId": "work:oakminder:section-004:passage-004",
+                    "sectionId": "work:oakminder:section-004",
+                    "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+                  }
+                ]
+              }
+            ]
+          },
+          "ui": {
+            "requestId": "00000000-0000-4000-8000-000000341000",
+            "status": "done",
+            "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gallery-replay-table",
+    "label": "Gallery replay (ticket 341): the Table tile's hand-built reference program, drawn from the site's record facts",
+    "judgeLike": "table-matrix-2",
+    "workspace": {
+      "messages": [
+        {
+          "role": "user",
+          "text": "How do EcoSmartLoop and Oakminder line up?"
+        },
+        {
+          "role": "assistant",
+          "steps": [
+            {
+              "id": "understand",
+              "operation": "understand",
+              "state": "done",
+              "startedAt": -6200,
+              "endedAt": -5400
+            },
+            {
+              "id": "search-1",
+              "operation": "search",
+              "state": "done",
+              "startedAt": -5400,
+              "endedAt": -3900
+            },
+            {
+              "id": "read-2",
+              "operation": "read",
+              "state": "done",
+              "startedAt": -3900,
+              "endedAt": -2600
+            },
+            {
+              "id": "compose",
+              "operation": "compose",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            },
+            {
+              "id": "verify",
+              "operation": "verify",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            }
+          ],
+          "answer": {
+            "kind": "sourced",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "EcoSmartLoop, an AI agent platform for business waste, ran LEAF Engine for image classification and Orbi for explanation and product actions.",
+                "citations": [
+                  {
+                    "documentId": "work:ecosmartloop",
+                    "passageId": "work:ecosmartloop:section-007:passage-007",
+                    "sectionId": "work:ecosmartloop:section-007",
+                    "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+                  }
+                ]
+              },
+              {
+                "id": "claim-2",
+                "text": "Oakminder, a Productivity AI agent, turns a typed, tapped, or spoken request into a real reminder.",
+                "citations": [
+                  {
+                    "documentId": "work:oakminder",
+                    "passageId": "work:oakminder:section-002:passage-004",
+                    "sectionId": "work:oakminder:section-002",
+                    "url": "https://steveoak.com/work/oakminder/#from-tap-flow-to-voice-agent"
+                  }
+                ]
+              }
+            ]
+          },
+          "ui": {
+            "requestId": "00000000-0000-4000-8000-000000341001",
+            "status": "done",
+            "program": "root = Answer([t])\nt = Table([\"claim-1\", \"claim-2\"], \"matrix\")"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gallery-replay-board",
+    "label": "Gallery replay (ticket 341): the Board tile's hand-built reference program, drawn from the site's record facts",
+    "judgeLike": "board-stand-5",
+    "workspace": {
+      "messages": [
+        {
+          "role": "user",
+          "text": "Which case studies are finished?"
+        },
+        {
+          "role": "assistant",
+          "steps": [
+            {
+              "id": "understand",
+              "operation": "understand",
+              "state": "done",
+              "startedAt": -6200,
+              "endedAt": -5400
+            },
+            {
+              "id": "search-1",
+              "operation": "search",
+              "state": "done",
+              "startedAt": -5400,
+              "endedAt": -3900
+            },
+            {
+              "id": "read-2",
+              "operation": "read",
+              "state": "done",
+              "startedAt": -3900,
+              "endedAt": -2600
+            },
+            {
+              "id": "compose",
+              "operation": "compose",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            },
+            {
+              "id": "verify",
+              "operation": "verify",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            }
+          ],
+          "answer": {
+            "kind": "sourced",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "EcoSmartLoop starts at the bin, where signage, memory, and social pressure are not enough.",
+                "citations": [
+                  {
+                    "documentId": "work:ecosmartloop",
+                    "passageId": "work:ecosmartloop:section-001:passage-008",
+                    "sectionId": "work:ecosmartloop:section-001",
+                    "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+                  }
+                ]
+              },
+              {
+                "id": "claim-2",
+                "text": "Agentic Brain separates short-term working context from durable project memory.",
+                "citations": [
+                  {
+                    "documentId": "work:agentic-brain",
+                    "passageId": "work:agentic-brain:section-001:passage-002",
+                    "sectionId": "work:agentic-brain:section-001",
+                    "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+                  }
+                ]
+              },
+              {
+                "id": "claim-3",
+                "text": "Oakminder's App Store graphics show the product story across voice, agenda, snooze, alarms, and notification actions.",
+                "citations": [
+                  {
+                    "documentId": "work:oakminder",
+                    "passageId": "work:oakminder:section-001:passage-003",
+                    "sectionId": "work:oakminder:section-001",
+                    "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+                  }
+                ]
+              },
+              {
+                "id": "claim-4",
+                "text": "LinkedIn Growth Loop's daily job was simple: review the list, write a personalized connection note, send or skip, then record what happened.",
+                "citations": [
+                  {
+                    "documentId": "work:linkedin-growth-loop",
+                    "passageId": "work:linkedin-growth-loop:section-004:passage-002",
+                    "sectionId": "work:linkedin-growth-loop:section-004",
+                    "url": "https://steveoak.com/work/linkedin-growth-loop/#the-first-daily-loop"
+                  }
+                ]
+              },
+              {
+                "id": "claim-5",
+                "text": "OmniSocial is an agentic content-production system, described on a public in-progress page.",
+                "citations": [
+                  {
+                    "documentId": "work:omnisocial",
+                    "passageId": "work:omnisocial:section-001:passage-001",
+                    "sectionId": "work:omnisocial:section-001",
+                    "url": "https://steveoak.com/work/omnisocial/#work-in-progress-panel-title"
+                  }
+                ]
+              }
+            ]
+          },
+          "ui": {
+            "requestId": "00000000-0000-4000-8000-000000341002",
+            "status": "done",
+            "program": "root = Answer([board])\nboard = Board([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"])"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gallery-replay-project-wall",
+    "label": "Gallery replay (ticket 341): the Project wall tile's hand-built reference program, drawn from the site's record facts",
+    "judgeLike": "project-wall-three",
+    "workspace": {
+      "messages": [
+        {
+          "role": "user",
+          "text": "What has Steve built?"
+        },
+        {
+          "role": "assistant",
+          "steps": [
+            {
+              "id": "understand",
+              "operation": "understand",
+              "state": "done",
+              "startedAt": -6200,
+              "endedAt": -5400
+            },
+            {
+              "id": "search-1",
+              "operation": "search",
+              "state": "done",
+              "startedAt": -5400,
+              "endedAt": -3900
+            },
+            {
+              "id": "read-2",
+              "operation": "read",
+              "state": "done",
+              "startedAt": -3900,
+              "endedAt": -2600
+            },
+            {
+              "id": "compose",
+              "operation": "compose",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            },
+            {
+              "id": "verify",
+              "operation": "verify",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            }
+          ],
+          "answer": {
+            "kind": "sourced",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+                "citations": [
+                  {
+                    "documentId": "work:ecosmartloop",
+                    "passageId": "work:ecosmartloop:section-007:passage-003",
+                    "sectionId": "work:ecosmartloop:section-007",
+                    "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+                  }
+                ]
+              },
+              {
+                "id": "claim-2",
+                "text": "Oakminder is a Productivity AI agent with a Voice agent that does the real reminder work.",
+                "citations": [
+                  {
+                    "documentId": "work:oakminder",
+                    "passageId": "work:oakminder:section-002:passage-002",
+                    "sectionId": "work:oakminder:section-002",
+                    "url": "https://steveoak.com/work/oakminder/#from-tap-flow-to-voice-agent"
+                  }
+                ]
+              },
+              {
+                "id": "claim-3",
+                "text": "LinkedIn Growth Loop's daily job: review the list, write a personalized connection note, then record what happened.",
+                "citations": [
+                  {
+                    "documentId": "work:linkedin-growth-loop",
+                    "passageId": "work:linkedin-growth-loop:section-004:passage-002",
+                    "sectionId": "work:linkedin-growth-loop:section-004",
+                    "url": "https://steveoak.com/work/linkedin-growth-loop/#the-first-daily-loop"
+                  }
+                ]
+              }
+            ]
+          },
+          "ui": {
+            "requestId": "00000000-0000-4000-8000-000000341003",
+            "status": "done",
+            "program": "root = Answer([wall])\nwall = ProjectWall([\"claim-1\", \"claim-2\", \"claim-3\"])"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gallery-replay-stack-map",
+    "label": "Gallery replay (ticket 341): the Stack map tile's hand-built reference program, drawn from the site's record facts",
+    "judgeLike": "stack-map-tools-4",
+    "workspace": {
+      "messages": [
+        {
+          "role": "user",
+          "text": "What tools does Steve use?"
+        },
+        {
+          "role": "assistant",
+          "steps": [
+            {
+              "id": "understand",
+              "operation": "understand",
+              "state": "done",
+              "startedAt": -6200,
+              "endedAt": -5400
+            },
+            {
+              "id": "search-1",
+              "operation": "search",
+              "state": "done",
+              "startedAt": -5400,
+              "endedAt": -3900
+            },
+            {
+              "id": "read-2",
+              "operation": "read",
+              "state": "done",
+              "startedAt": -3900,
+              "endedAt": -2600
+            },
+            {
+              "id": "compose",
+              "operation": "compose",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            },
+            {
+              "id": "verify",
+              "operation": "verify",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            }
+          ],
+          "answer": {
+            "kind": "sourced",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "EcoSmartLoop's app is Next.js and TypeScript, put into an iOS shell by Capacitor.",
+                "citations": [
+                  {
+                    "documentId": "work:ecosmartloop",
+                    "passageId": "work:ecosmartloop:section-010:passage-003",
+                    "sectionId": "work:ecosmartloop:section-010",
+                    "url": "https://steveoak.com/work/ecosmartloop/#the-stack-behind-the-scan"
+                  }
+                ]
+              },
+              {
+                "id": "claim-2",
+                "text": "In the LinkedIn Growth Loop, browser control becomes part of the agent stack when API paths are limited or too narrow.",
+                "citations": [
+                  {
+                    "documentId": "work:linkedin-growth-loop",
+                    "passageId": "work:linkedin-growth-loop:section-008:passage-002",
+                    "sectionId": "work:linkedin-growth-loop:section-008",
+                    "url": "https://steveoak.com/work/linkedin-growth-loop/#browser-control-kept-the-cost-honest"
+                  }
+                ]
+              }
+            ]
+          },
+          "ui": {
+            "requestId": "00000000-0000-4000-8000-000000341004",
+            "status": "done",
+            "program": "root = Answer([map])\nmap = StackMap([\"claim-1\", \"claim-2\"])"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gallery-replay-screens",
+    "label": "Gallery replay (ticket 341): the Screens tile's hand-built reference program, drawn from the site's record facts",
+    "judgeLike": "screens-three",
+    "workspace": {
+      "messages": [
+        {
+          "role": "user",
+          "text": "What does EcoSmartLoop look like?"
+        },
+        {
+          "role": "assistant",
+          "steps": [
+            {
+              "id": "understand",
+              "operation": "understand",
+              "state": "done",
+              "startedAt": -6200,
+              "endedAt": -5400
+            },
+            {
+              "id": "search-1",
+              "operation": "search",
+              "state": "done",
+              "startedAt": -5400,
+              "endedAt": -3900
+            },
+            {
+              "id": "read-2",
+              "operation": "read",
+              "state": "done",
+              "startedAt": -3900,
+              "endedAt": -2600
+            },
+            {
+              "id": "compose",
+              "operation": "compose",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            },
+            {
+              "id": "verify",
+              "operation": "verify",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            }
+          ],
+          "answer": {
+            "kind": "sourced",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "In EcoSmartLoop, LEAF Engine read each waste photo and sorted it into one of 4 classes.",
+                "citations": [
+                  {
+                    "documentId": "work:ecosmartloop",
+                    "passageId": "work:ecosmartloop:section-007:passage-003",
+                    "sectionId": "work:ecosmartloop:section-007",
+                    "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+                  }
+                ]
+              }
+            ]
+          },
+          "ui": {
+            "requestId": "00000000-0000-4000-8000-000000341005",
+            "status": "done",
+            "program": "root = Answer([shots])\nshots = Screens(\"claim-1\")"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gallery-replay-profile",
+    "label": "Gallery replay (ticket 348): the Profile tile's hand-built reference program, drawn from the site's record facts",
+    "judgeLike": "profile-brief",
+    "workspace": {
+      "messages": [
+        {
+          "role": "user",
+          "text": "Who is Steve?"
+        },
+        {
+          "role": "assistant",
+          "steps": [
+            {
+              "id": "understand",
+              "operation": "understand",
+              "state": "done",
+              "startedAt": -6200,
+              "endedAt": -5400
+            },
+            {
+              "id": "search-1",
+              "operation": "search",
+              "state": "done",
+              "startedAt": -5400,
+              "endedAt": -3900
+            },
+            {
+              "id": "read-2",
+              "operation": "read",
+              "state": "done",
+              "startedAt": -3900,
+              "endedAt": -2600
+            },
+            {
+              "id": "compose",
+              "operation": "compose",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            },
+            {
+              "id": "verify",
+              "operation": "verify",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            }
+          ],
+          "answer": {
+            "kind": "sourced",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "Steve Oak, also called Oak or Okkar Kyaw, designs and builds useful AI products: workflows, eval loops, tool systems, and interfaces that make automated work easier to inspect and trust.",
+                "citations": [
+                  {
+                    "documentId": "profile:steve-oak",
+                    "passageId": "profile:steve-oak:section-001:passage-001",
+                    "sectionId": "profile:steve-oak:section-001",
+                    "url": "https://steveoak.com/#hero-title"
+                  }
+                ]
+              }
+            ]
+          },
+          "ui": {
+            "requestId": "00000000-0000-4000-8000-000000348001",
+            "status": "done",
+            "program": "root = Answer([who])\nwho = Profile(\"claim-1\")"
+          }
+        }
+      ]
+    }
+  },
+  {
+    "id": "gallery-replay-page-cards",
+    "label": "Gallery replay (ticket 348): the Page cards tile's hand-built reference program, drawn from the site's record facts",
+    "judgeLike": "page-cards-two",
+    "workspace": {
+      "messages": [
+        {
+          "role": "user",
+          "text": "Where can I read about his agent projects?"
+        },
+        {
+          "role": "assistant",
+          "steps": [
+            {
+              "id": "understand",
+              "operation": "understand",
+              "state": "done",
+              "startedAt": -6200,
+              "endedAt": -5400
+            },
+            {
+              "id": "search-1",
+              "operation": "search",
+              "state": "done",
+              "startedAt": -5400,
+              "endedAt": -3900
+            },
+            {
+              "id": "read-2",
+              "operation": "read",
+              "state": "done",
+              "startedAt": -3900,
+              "endedAt": -2600
+            },
+            {
+              "id": "compose",
+              "operation": "compose",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            },
+            {
+              "id": "verify",
+              "operation": "verify",
+              "state": "done",
+              "startedAt": -2600,
+              "endedAt": -2600
+            }
+          ],
+          "answer": {
+            "kind": "sourced",
+            "acknowledgment": null,
+            "claims": [
+              {
+                "id": "claim-1",
+                "text": "EcoSmartLoop kept two jobs separate: LEAF Engine handled image classification, and Orbi handled explanation and product actions.",
+                "citations": [
+                  {
+                    "documentId": "work:ecosmartloop",
+                    "passageId": "work:ecosmartloop:section-007:passage-007",
+                    "sectionId": "work:ecosmartloop:section-007",
+                    "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+                  }
+                ]
+              },
+              {
+                "id": "claim-2",
+                "text": "Oakminder's voice agent had to do real reminder work: create, edit, complete, snooze, and delete reminders.",
+                "citations": [
+                  {
+                    "documentId": "work:oakminder",
+                    "passageId": "work:oakminder:section-005:passage-005",
+                    "sectionId": "work:oakminder:section-005",
+                    "url": "https://steveoak.com/work/oakminder/#voice-became-the-action-layer"
+                  }
+                ]
+              }
+            ]
+          },
+          "ui": {
+            "requestId": "00000000-0000-4000-8000-000000348002",
+            "status": "done",
+            "program": "root = Answer([pages])\npages = PageCards([\"claim-1\", \"claim-2\"])"
+          }
+        }
+      ]
+    }
+  }
+]

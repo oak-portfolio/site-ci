@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>forced colors: clean</title>
+<style>
+  body { margin: 24px; font: 16px system-ui, sans-serif; }
+  .mark { display: inline-block; width: 10px; height: 10px; }
+  .dot { background: CanvasText; }
+  .ring::before { content: ""; display: block; width: 10px; height: 10px; background: CanvasText; }
+  .icon svg { width: 12px; height: 12px; }
+  .tab { padding: 4px 8px; border: 1px solid ButtonText; }
+  .tab[aria-pressed=true] { border-width: 3px; }
+  .chip { forced-color-adjust: none; background: Canvas; color: CanvasText; border: 1px solid CanvasText; padding: 4px 8px; }
+  .chip:focus-visible { outline: 2px solid CanvasText; outline-offset: 2px; }
+</style>
+</head>
+<body>
+<main class="oak-conversation">
+  <p>Available <span class="mark dot"></span></p>
+  <p>Ring <span class="mark ring"></span></p>
+  <p>Met <span class="mark icon"><svg viewBox="0 0 12 12" aria-hidden="true"><path d="M1 6l3 3 7-7" fill="none" stroke="CanvasText" stroke-width="2"/></svg></span></p>
+  <p><button class="tab" aria-pressed="true">On</button> <button class="tab" aria-pressed="false">Off</button></p>
+  <p><button>Before</button> <button class="chip">Chip</button></p>
+</main>
+</body>
+</html>

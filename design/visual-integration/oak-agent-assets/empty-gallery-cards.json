@@ -1,0 +1,6 @@
+{
+ "empty-gallery-cards": {
+  "iconOnly": true,
+  "reason": "50: the same welcome as empty, whose greeting-loop it shows; only the six gallery cards are added under the starters."
+ }
+}

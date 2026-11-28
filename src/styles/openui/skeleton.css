@@ -1,0 +1,80 @@
+/* Streaming: a pending item is its settled row's shape (thumbnail, dates column or tile beside two bars).
+   Ticket 23 (recruiter nit 9): the pending fill sits one step lighter than the answer bubble, so typed skeletons read at 390. */
+:is(.oak-openui-card, .oak-openui-source, .oak-openui-skel)[data-pending] {
+  --oak-openui-skel-fill: color-mix(in srgb, var(--text) 15%, var(--panel));
+}
+
+.oak-openui-card__bars {
+  display: grid;
+  flex: 1;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+
+.oak-openui-card__bar {
+  display: block;
+  width: 72%;
+  height: var(--space-sm);
+  border-radius: var(--radius-pill);
+  background: var(--oak-bubble);
+}
+
+.oak-openui-card__bar[data-short] {
+  width: 44%;
+}
+
+.oak-openui-card__bar[data-long] {
+  width: 92%;
+}
+
+:is(.oak-openui-card, .oak-openui-source, .oak-openui-skel)[data-pending] :is(.oak-openui-card__thumb, .oak-openui-card__bar, .oak-openui-source__tile, .oak-openui-skel__mark) {
+  background: linear-gradient(90deg, var(--oak-raised) 30%, var(--oak-openui-skel-fill) 50%, var(--oak-raised) 70%);
+  background-size: 220% 100%;
+  animation: oak-turn-shimmer 1.6s var(--motion-standard) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :is(.oak-openui-card, .oak-openui-source, .oak-openui-skel)[data-pending] :is(.oak-openui-card__thumb, .oak-openui-card__bar, .oak-openui-source__tile, .oak-openui-skel__mark) {
+    animation: none;
+    background: var(--oak-openui-skel-fill);
+  }
+}
+
+/* Ticket 91 (F9): forced colors drop the fills, so each placeholder keeps an edge in the system text color. */
+@media (forced-colors: active) {
+  :is(.oak-openui-card, .oak-openui-source, .oak-openui-skel)[data-pending] :is(.oak-openui-card__thumb, .oak-openui-card__bar, .oak-openui-source__tile, .oak-openui-skel__mark, .oak-site__tile) {
+    outline: 1px solid CanvasText;
+    outline-offset: -1px;
+  }
+}
+
+/*
+ * Ticket 16: a Stats, Compare or Timeline whose children are still streaming holds their places with skeletons of the settled
+ * item's own shape, built from the item's own frame, grid and rail so the answer does not move when they land. Bars, marks and
+ * the shimmer are the card skeleton's above; reduced motion holds them still.
+ */
+.oak-openui-skel__mark {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+  background: var(--oak-bubble);
+}
+
+.oak-openui-skel__stack {
+  display: grid;
+  align-content: start;
+  gap: var(--space-xs);
+}
+
+.oak-openui-skel .oak-openui-card__bar[data-value] {
+  width: 48%;
+  height: calc(var(--leading-display) * 0.7);
+  border-radius: var(--oak-r-control);
+}
+
+/* Ticket 16: the source chip row at a Stats tile's foot, a chip's width and height in the same quiet fill. */
+.oak-openui-skel .oak-openui-card__bar[data-chip] {
+  width: calc(var(--space-sm) * 5);
+  height: calc(var(--space-md) + var(--space-micro));
+}

@@ -1,0 +1,1035 @@
+[
+ {
+  "id": "quote-pull",
+  "label": "Quote (ticket 29): one pull quote, the case study's own dek, with the claim as the lead line and the page link (fixture facts)",
+  "quote": true,
+  "recordFacts": {
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "dek": "My first real success with high-autonomy agent teams: a bounded relationship workflow where agents started running, evaluating, researching, and improving without me operating every step.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+     "alt": "LinkedIn Growth Loop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+       "alt": "LinkedIn Growth Loop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/oakminder-cover.png",
+     "alt": "Oakminder cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder-cover.png",
+       "alt": "Oakminder case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+     "alt": "Agentic Brain cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+       "alt": "Agentic Brain case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/ecosmartloop.png",
+     "alt": "EcoSmartLoop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/ecosmartloop.png",
+       "alt": "EcoSmartLoop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Steve work with agents?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve runs agent work as teams with a clear first role for each agent.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000f1",
+      "program": "root = Answer([q])\nq = Quote([\"claim-1\"])",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "quote-carousel",
+  "label": "Quote (ticket 29): quotes in a Motion+ carousel, the next slide peeking, buttons for previous, next and each dot, no autoplay (fixture facts)",
+  "quote": true,
+  "recordFacts": {
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "dek": "My first real success with high-autonomy agent teams: a bounded relationship workflow where agents started running, evaluating, researching, and improving without me operating every step.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+     "alt": "LinkedIn Growth Loop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+       "alt": "LinkedIn Growth Loop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/oakminder-cover.png",
+     "alt": "Oakminder cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder-cover.png",
+       "alt": "Oakminder case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+     "alt": "Agentic Brain cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+       "alt": "Agentic Brain case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/ecosmartloop.png",
+     "alt": "EcoSmartLoop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/ecosmartloop.png",
+       "alt": "EcoSmartLoop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "What has Steve written about agents?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve runs agent work as teams.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "Steve built a voice-first productivity agent.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-001",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "Steve maps memory systems for agent work.",
+        "citations": [
+         {
+          "documentId": "work:agentic-brain",
+          "passageId": "work:agentic-brain:section-001:passage-001",
+          "sectionId": "work:agentic-brain:section-001",
+          "url": "https://steveoak.com/work/agentic-brain/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000f2",
+      "program": "root = Answer([q])\nq = Quote([\"claim-1\", \"claim-2\", \"claim-3\"], \"quotes\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "quote-bridge",
+  "label": "Quote (ticket 29): bridge, a general topic tied to the case study that holds it, Steve's exact words, one image, and the invitation (fixture facts)",
+  "quote": true,
+  "recordFacts": {
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "dek": "My first real success with high-autonomy agent teams: a bounded relationship workflow where agents started running, evaluating, researching, and improving without me operating every step.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+     "alt": "LinkedIn Growth Loop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+       "alt": "LinkedIn Growth Loop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/oakminder-cover.png",
+     "alt": "Oakminder cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder-cover.png",
+       "alt": "Oakminder case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+     "alt": "Agentic Brain cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+       "alt": "Agentic Brain case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/ecosmartloop.png",
+     "alt": "EcoSmartLoop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/ecosmartloop.png",
+       "alt": "EcoSmartLoop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   }
+  },
+  "nextTool": "brief",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Steve approach evals?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve checks every agent run against evals so a run ends as something he can learn from.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ],
+      "nextTool": "brief"
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000f3",
+      "program": "root = Answer([q])\nq = Quote([\"claim-1\"], \"bridge\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "quote-related",
+  "label": "Quote (ticket 29): no record names the topic, so one quiet gray Related line with a link icon and no quote (fixture facts)",
+  "quote": true,
+  "recordFacts": {
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "dek": "My first real success with high-autonomy agent teams: a bounded relationship workflow where agents started running, evaluating, researching, and improving without me operating every step.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+     "alt": "LinkedIn Growth Loop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+       "alt": "LinkedIn Growth Loop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/oakminder-cover.png",
+     "alt": "Oakminder cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder-cover.png",
+       "alt": "Oakminder case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+     "alt": "Agentic Brain cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+       "alt": "Agentic Brain case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/ecosmartloop.png",
+     "alt": "EcoSmartLoop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/ecosmartloop.png",
+       "alt": "EcoSmartLoop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Does Steve know image recognition?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "He has worked on image recognition topics in teams.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-001",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000f4",
+      "program": "root = Answer([q])\nq = Quote([\"claim-1\"], \"bridge\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "quote-streaming",
+  "label": "Quote (ticket 29): while the record facts load, the block draws its own ghost (fixture)",
+  "quote": true,
+  "recordFacts": "pending",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Steve work with agents?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve runs agent work as teams with a clear first role for each agent.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000f5",
+      "program": "root = Answer([q])\nq = Quote([\"claim-1\"])",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "quote-off",
+  "quote": false,
+  "label": "Quote (ticket 29) with the constant off: the plain Points list main draws",
+  "recordFacts": {
+   "work:linkedin-growth-loop": {
+    "kind": "work",
+    "dek": "My first real success with high-autonomy agent teams: a bounded relationship workflow where agents started running, evaluating, researching, and improving without me operating every step.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+     "alt": "LinkedIn Growth Loop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/linkedin-growth-loop/linkedin-growth-loop-cover.png",
+       "alt": "LinkedIn Growth Loop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "dek": "It started with the moment most productivity apps mishandle: a reminder fires while I am already doing something else. I built a productivity AI agent with a voice-agent core for that follow-through moment, then built the distribution studio around it: TikTok research, UGC briefs, source extraction, creative drafts, and feedback that sharpened the product story.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/oakminder-cover.png",
+     "alt": "Oakminder cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/oakminder-cover.png",
+       "alt": "Oakminder case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:agentic-brain": {
+    "kind": "work",
+    "dek": "Reliable short-term and long-term memory systems for agentic development, connecting RAG, contextual codebase search, context engines, memory graphs, Obsidian-style knowledge graphs, AGENTS.md and CLAUDE.md management, MCP collections, skills, and plugins.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+     "alt": "Agentic Brain cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/agentic-brain/agentic-brain-cover.png",
+       "alt": "Agentic Brain case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   },
+   "work:ecosmartloop": {
+    "kind": "work",
+    "dek": "EcoSmartLoop started with the awkward pause before someone guesses between recycling, compost, and landfill. The scale behind that pause was bigger: UNEP puts the 2050 waste-cost risk at $640.3B, and California SB 1383 planning uses 450,000 businesses. My team’s SFBU capstone turned LEAF Engine classification into Orbi AI guidance, rewards, web/iOS UX, and organization feedback.",
+    "category": "Applied AI case study",
+    "articleStatus": "full",
+    "datePublished": "2026-01-01",
+    "cover": {
+     "src": "/assets/work/ecosmartloop.png",
+     "alt": "EcoSmartLoop cover",
+     "ratio": 1.9
+    },
+    "coverTint": "#9ad1ff",
+    "systemMap": [],
+    "artifacts": [
+     {
+      "label": "Cover",
+      "status": "verified",
+      "image": {
+       "src": "/assets/work/ecosmartloop.png",
+       "alt": "EcoSmartLoop case study cover",
+       "ratio": 1.9
+      }
+     }
+    ],
+    "metrics": [],
+    "sections": []
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How does Steve work with agents?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve runs agent work as teams with a clear first role for each agent.",
+        "citations": [
+         {
+          "documentId": "work:linkedin-growth-loop",
+          "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+          "sectionId": "work:linkedin-growth-loop:section-001",
+          "url": "https://steveoak.com/work/linkedin-growth-loop/"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000f6",
+      "program": "root = Answer([q])\nq = Quote([\"claim-1\"])",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ }
+]

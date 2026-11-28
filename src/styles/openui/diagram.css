@@ -1,0 +1,225 @@
+/* Ticket 44: Diagram. One renderer for every preset: absolutely placed HTML nodes and CSS-box edges (1.5px, clip-path
+   arrowheads) that end on the node borders, nodes that grow to fit their labels with 12px padding, the selected node the
+   one accent, and the detail panel below the drawing at every width. */
+.oak-diagram__block,
+.oak-diagram {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+}
+
+.oak-diagram__lead {
+  margin: 0;
+  color: var(--text);
+  line-height: var(--leading-body);
+}
+
+.oak-diagram__canvas {
+  display: grid;
+  justify-items: center;
+  min-width: 0;
+  overflow: clip;
+}
+
+/* Stage, nodes and edges take their dagre boxes (unitless px) from --oak-diagram-x, -y, -w and -h. */
+.oak-diagram__stage,
+.oak-diagram__node,
+.oak-diagram__edge {
+  width: calc(var(--oak-diagram-w) * 1px);
+  height: calc(var(--oak-diagram-h) * 1px);
+}
+
+.oak-diagram__stage {
+  position: relative;
+  max-width: 100%;
+}
+
+.oak-diagram__canvas:not([data-fitted]) .oak-diagram__stage {
+  visibility: hidden;
+}
+
+.oak-diagram__node,
+.oak-diagram__edge {
+  position: absolute;
+  inset-inline-start: calc(var(--oak-diagram-x) * 1px);
+  inset-block-start: calc(var(--oak-diagram-y) * 1px);
+}
+
+/* A row's edge runs across, a column's runs down; 1.5px wide, its arrow tip on the next node's border. */
+.oak-diagram__edge {
+  --oak-diagram-stroke: var(--line);
+  box-sizing: border-box;
+  min-width: 1.5px;
+  min-height: 1.5px;
+  background: var(--oak-diagram-stroke);
+}
+
+.oak-diagram__canvas[data-direction="LR"] .oak-diagram__edge {
+  margin-block-start: -0.75px;
+}
+
+.oak-diagram__canvas[data-direction="TB"] .oak-diagram__edge {
+  margin-inline-start: -0.75px;
+}
+
+.oak-diagram__edge::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: var(--oak-diagram-stroke);
+}
+
+.oak-diagram__canvas[data-direction="LR"] .oak-diagram__edge::after {
+  inset-inline-end: 0;
+  inset-block-start: calc(50% - 4px);
+  clip-path: polygon(0 0, 100% 50%, 0 100%);
+}
+
+.oak-diagram__canvas[data-direction="TB"] .oak-diagram__edge::after {
+  inset-block-end: 0;
+  inset-inline-start: calc(50% - 4px);
+  clip-path: polygon(0 0, 100% 0, 50% 100%);
+}
+
+.oak-diagram__node {
+  box-sizing: border-box;
+  display: grid;
+  align-content: center;
+  gap: var(--space-micro);
+  padding: var(--oak-pad-block);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-row);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.oak-diagram[data-preset="layers"] .oak-diagram__node {
+  justify-items: start;
+  border-color: transparent;
+  background: var(--panel-soft);
+}
+
+.oak-diagram__node[data-selected] {
+  outline: 2px solid color-mix(in srgb, var(--oak-violet) 80%, transparent);
+  outline-offset: -2px;
+}
+
+.oak-diagram__label {
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+  text-align: center;
+  overflow-wrap: anywhere;
+}
+
+.oak-diagram[data-preset="layers"] .oak-diagram__label {
+  text-align: start;
+}
+
+.oak-diagram__text {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: clip;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  text-align: center;
+}
+
+.oak-diagram__ghost {
+  display: grid;
+  gap: var(--space-xs);
+  width: 100%;
+  min-height: 10rem;
+  align-content: center;
+}
+
+.oak-diagram__panel {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: var(--space-sm);
+  min-width: 0;
+  padding: var(--oak-pad-frame);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--panel);
+}
+
+.oak-diagram:has(> .oak-figure[data-view="list"]) > .oak-diagram__panel {
+  display: none;
+}
+
+/* R14 reads a bordered row taller than 40px as a nested frame, so a step row's divider is a hairline shadow. */
+.oak-diagram .oak-figure__row:not(:first-child) {
+  border-top: 0;
+  box-shadow: inset 0 1px var(--line-soft);
+}
+
+.oak-diagram .oak-figure__row:last-child {
+  padding-block-end: 0;
+}
+
+.oak-diagram__panel-body {
+  display: grid;
+  gap: var(--space-micro);
+  min-width: 0;
+}
+
+.oak-diagram__panel-count {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-diagram__panel-title {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--text-body-md);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+  overflow-wrap: anywhere;
+}
+
+.oak-diagram__panel-text {
+  margin: 0;
+  color: var(--text);
+  line-height: var(--leading-body);
+}
+
+.oak-diagram__panel-nav {
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--space-xs);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .oak-diagram__node {
+    transition: outline-color var(--motion-quick) var(--motion-standard), background-color var(--motion-quick) var(--motion-standard);
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-diagram .oak-figure__row:not(:first-child) {
+    border-top: 1px solid CanvasText;
+  }
+
+  .oak-diagram__node {
+    border: 1px solid CanvasText;
+  }
+
+  .oak-diagram__node[data-selected] {
+    outline: 3px double Highlight;
+  }
+
+  .oak-diagram__edge,
+  .oak-diagram__edge::after {
+    forced-color-adjust: none;
+    --oak-diagram-stroke: CanvasText;
+  }
+}

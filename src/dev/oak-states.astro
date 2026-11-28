@@ -1,0 +1,52 @@
+---
+import { realpathSync } from "node:fs";
+import { oakAgentSprites } from "@/data/oakAgentSprites";
+import { oakCitationLabelsWithCovers } from "@/lib/oakCitationCovers.server";
+import { OakStatesGallery } from "./OakStatesGallery";
+import "../styles/theme.css";
+
+const citationLabels = await oakCitationLabelsWithCovers();
+// Dev only (astro.config.mjs injects this route under `astro dev`): validate:pre reads it to refuse a server from another checkout.
+const devRoot = realpathSync(process.cwd());
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="robots" content="noindex, nofollow, noarchive, nosnippet" />
+    <meta name="oak-dev-root" content={devRoot} />
+    <title>Oak AI Agent states</title>
+    <style is:global>
+      .dev-oak-states__caption {
+        position: fixed;
+        left: 24px;
+        bottom: 24px;
+        max-width: 280px;
+        color: var(--muted);
+        font: 13px/1.4 var(--font-body);
+      }
+      .dev-oak-states__caption p { margin: 0 0 4px; }
+      .dev-oak-states__caption a,
+      .dev-oak-states__index a { color: var(--text); }
+      .dev-oak-states__index { padding: 32px; color: var(--text); font: 14px/1.6 var(--font-body); }
+      /* A figure fixture shows on the agent's tokens without the workspace's own frame. */
+      .oak-workspace[data-gallery-figure] {
+        position: static;
+        width: auto;
+        max-width: 540px;
+        height: auto;
+        margin: var(--space-lg) auto;
+        padding: 0 var(--space-md);
+        border: 0;
+        background: none;
+        box-shadow: none;
+      }
+    </style>
+  </head>
+  <body data-oak-agent-eligible="true" data-oak-mascot-eligible="false" data-oak-source-ids="[]">
+    <OakStatesGallery client:only="react" activitySprites={oakAgentSprites()} citationLabels={citationLabels} />
+  </body>
+</html>

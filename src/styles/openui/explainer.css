@@ -1,0 +1,747 @@
+/* Ticket 52: Explainer. The label sits above the title; the concept preset is a row of step tiles with the current one
+   in the one accent, the topic map two aligned columns joined by curves. Steve's work shows only in the Bridge line. */
+.oak-explainer {
+  display: grid;
+  gap: var(--space-sm);
+  min-width: 0;
+  container-type: inline-size;
+}
+
+.oak-explainer__label {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-micro);
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-explainer__title {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--text-body-md);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-explainer__ghost {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.oak-explainer__steps {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(9rem, 1fr));
+  gap: var(--space-xs);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-openui .oak-explainer__steps {
+  margin-block-end: calc(-1 * var(--oak-pad-block));
+}
+
+.oak-explainer__step {
+  position: relative;
+  display: grid;
+  justify-items: start;
+  gap: var(--space-micro);
+  padding: var(--oak-pad-block);
+  border-radius: var(--oak-r-row);
+  color: var(--text);
+}
+
+.oak-explainer__step[data-current] {
+  outline: 2px solid color-mix(in srgb, var(--oak-violet) 80%, transparent);
+  outline-offset: -2px;
+}
+
+.oak-explainer__mark {
+  display: inline-grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background: var(--panel-soft);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-explainer__step[data-current] .oak-explainer__mark {
+  background: var(--oak-violet);
+  color: var(--bg);
+}
+
+.oak-explainer__name {
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-explainer__arrow {
+  position: absolute;
+  inset-block-start: var(--oak-pad-block);
+  inset-inline-end: var(--oak-pad-block);
+  color: var(--muted);
+}
+
+@container (max-width: 30rem) {
+  .oak-explainer__arrow {
+    rotate: 90deg;
+  }
+}
+
+.oak-explainer__stepper {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-width: 0;
+}
+
+.oak-explainer__now {
+  display: grid;
+  flex: 1;
+  order: 1;
+  min-width: 0;
+  margin: 0;
+  color: var(--text);
+  line-height: var(--leading-body);
+}
+
+.oak-explainer__count {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-explainer__bridge {
+  display: flex;
+  align-items: baseline;
+  gap: var(--space-micro);
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-explainer__bridge a {
+  color: var(--text);
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--oak-violet) 50%, transparent);
+  text-underline-offset: 3px;
+}
+
+.oak-explainer__map {
+  min-width: 0;
+}
+
+.oak-explainer__graph {
+  display: grid;
+  grid-template-columns: max-content minmax(1.5rem, 1fr) minmax(0, max-content);
+  min-width: 0;
+}
+
+.oak-explainer__nodes,
+.oak-explainer__projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-explainer__nodes li,
+.oak-explainer__projects li {
+  display: flex;
+  align-items: center;
+  gap: var(--space-micro);
+  height: 36px;
+  white-space: nowrap;
+}
+
+.oak-explainer__projects li {
+  padding-inline-start: var(--space-micro);
+  line-height: var(--leading-ui);
+  white-space: normal;
+}
+
+.oak-explainer__nodes li[data-selected],
+.oak-explainer__projects li[data-selected] {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.oak-explainer__dot {
+  display: inline-grid;
+  place-items: center;
+  width: 1.5rem;
+  height: 1.5rem;
+  border: 1px solid var(--line-soft);
+  border-radius: 50%;
+}
+
+.oak-explainer__nodes li[data-selected] .oak-explainer__dot {
+  border-color: var(--oak-violet);
+  color: var(--oak-violet);
+}
+
+.oak-explainer__wire-box {
+  position: relative;
+  min-width: 0;
+}
+
+.oak-explainer__wires {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.oak-explainer__wires path {
+  fill: none;
+  stroke: color-mix(in srgb, var(--text) 14%, transparent);
+  stroke-width: 1;
+  vector-effect: non-scaling-stroke;
+}
+
+.oak-explainer__wires path[data-selected] {
+  stroke: var(--oak-violet);
+  stroke-width: 1.75;
+}
+
+.oak-explainer__topics {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.oak-explainer__topics [aria-pressed="true"] {
+  border-color: var(--oak-violet);
+  color: var(--text);
+}
+
+.oak-explainer__panel {
+  display: grid;
+  gap: var(--space-xs);
+  min-width: 0;
+  padding: var(--oak-pad-frame);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-frame);
+  background: var(--panel);
+}
+
+.oak-explainer__topic {
+  margin: 0;
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-explainer__summary {
+  margin: 0;
+  color: var(--text);
+  line-height: var(--leading-body);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .oak-explainer__step,
+  .oak-explainer__wires path {
+    transition: outline-color var(--motion-quick) var(--motion-standard), background-color var(--motion-quick) var(--motion-standard), stroke var(--motion-quick) var(--motion-standard);
+  }
+}
+
+/* Ticket 53: the interactive presets. Drawings are hand-drawn SVG at a capped width; the current or kept item is the one
+   accent plus a text cue, never color alone. */
+.oak-explainer__query {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-micro);
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-explainer__passages {
+  display: grid;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-explainer__passages li {
+  display: grid;
+  grid-template-columns: 1.5rem minmax(0, 1fr) minmax(3rem, 6rem) 2.5rem 4.5rem;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-explainer__passages li[data-kept] {
+  color: var(--text);
+}
+
+.oak-explainer__rank,
+.oak-explainer__score-value {
+  font-variant-numeric: tabular-nums;
+}
+
+.oak-explainer__score {
+  width: 100%;
+  height: 6px;
+}
+
+.oak-explainer__score-track {
+  fill: var(--panel-soft);
+}
+
+.oak-explainer__score-fill {
+  fill: color-mix(in srgb, var(--text) 28%, transparent);
+}
+
+.oak-explainer__passages li[data-kept] .oak-explainer__score-fill {
+  fill: var(--oak-violet);
+}
+
+.oak-explainer__passages li[data-kept] .oak-explainer__fate {
+  font-weight: 600;
+}
+
+@container (max-width: 30rem) {
+  .oak-explainer__passages li {
+    grid-template-columns: 1.5rem minmax(0, 1fr) 2.5rem 4.5rem;
+    row-gap: 0;
+  }
+
+  .oak-explainer__passages .oak-explainer__passage {
+    grid-column: 2 / -1;
+  }
+
+  .oak-explainer__score {
+    grid-column: 2;
+  }
+}
+
+.oak-explainer__controls {
+  display: grid;
+  gap: var(--space-xs);
+}
+
+.oak-explainer__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-xs);
+}
+
+.oak-explainer__chips [aria-pressed="true"] {
+  border-color: var(--oak-violet);
+  background: color-mix(in srgb, var(--oak-violet) 22%, transparent);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.oak-explainer__xtool,
+.oak-explainer__xemb,
+.oak-explainer__xstate {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  overflow: visible;
+}
+
+.oak-explainer__xtool {
+  max-width: 30rem;
+}
+
+.oak-explainer__xemb {
+  max-width: 22rem;
+}
+
+.oak-explainer__xstate {
+  max-width: 13rem;
+}
+
+.oak-explainer__state-space {
+  display: block;
+  min-height: 15rem;
+}
+
+.oak-explainer__svg-label {
+  fill: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-explainer__xemb .oak-explainer__svg-label {
+  font-size: calc(var(--text-ui-sm) * 0.3);
+}
+
+@container (max-width: 30rem) {
+  .oak-explainer__xtool .oak-explainer__svg-label {
+    font-size: calc(var(--text-ui-sm) * 1.3);
+  }
+}
+
+.oak-explainer__lane-head,
+.oak-explainer__state rect {
+  fill: var(--panel-soft);
+  stroke: var(--line-soft);
+}
+
+.oak-explainer__lane-head + .oak-explainer__svg-label,
+.oak-explainer__state .oak-explainer__svg-label {
+  fill: var(--text);
+}
+
+.oak-explainer__lifeline {
+  stroke: var(--line-soft);
+  stroke-dasharray: 3 4;
+}
+
+.oak-explainer__call line,
+.oak-explainer__call polyline,
+.oak-explainer__wire polyline,
+.oak-explainer__wire path,
+.oak-explainer__link {
+  fill: none;
+  stroke: color-mix(in srgb, var(--text) 22%, transparent);
+  stroke-width: 1.25;
+  vector-effect: non-scaling-stroke;
+}
+
+.oak-explainer__call[data-done] line,
+.oak-explainer__call[data-done] polyline {
+  stroke: color-mix(in srgb, var(--text) 45%, transparent);
+}
+
+.oak-explainer__call[data-current] line,
+.oak-explainer__call[data-current] polyline,
+.oak-explainer__wire[data-current] polyline,
+.oak-explainer__wire[data-current] path,
+.oak-explainer__link {
+  stroke: var(--oak-violet);
+  stroke-width: 2;
+}
+
+.oak-explainer__call[data-current] .oak-explainer__svg-label {
+  fill: var(--text);
+  font-weight: 600;
+}
+
+.oak-explainer__state[data-current] rect {
+  stroke: var(--oak-violet);
+  stroke-width: 2;
+}
+
+.oak-explainer__state[data-current] .oak-explainer__svg-label {
+  font-weight: 600;
+}
+
+.oak-explainer__reach {
+  fill: color-mix(in srgb, var(--oak-violet) 8%, transparent);
+  stroke: color-mix(in srgb, var(--oak-violet) 60%, transparent);
+  stroke-dasharray: 2 2;
+  vector-effect: non-scaling-stroke;
+}
+
+.oak-explainer__point circle {
+  fill: var(--bg);
+  stroke: var(--muted);
+  vector-effect: non-scaling-stroke;
+}
+
+.oak-explainer__point[data-near] circle {
+  fill: var(--oak-violet);
+  stroke: var(--oak-violet);
+}
+
+.oak-explainer__point[data-near] .oak-explainer__svg-label,
+.oak-explainer__point[data-query] .oak-explainer__svg-label {
+  fill: var(--text);
+  font-weight: 600;
+}
+
+.oak-explainer__point[data-query] rect {
+  fill: var(--text);
+}
+
+.oak-explainer__slider {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-micro) var(--space-xs);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-explainer__slider output {
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+}
+
+.oak-explainer__slider input {
+  grid-column: 1 / -1;
+  width: 100%;
+  min-height: 2.75rem;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color-scheme: dark;
+  accent-color: var(--oak-violet);
+  appearance: none;
+  cursor: pointer;
+}
+
+.oak-explainer__slider input::-webkit-slider-runnable-track {
+  height: var(--space-micro);
+  border-radius: var(--radius-pill);
+  background: var(--line-soft);
+}
+
+.oak-explainer__slider input::-moz-range-track {
+  height: var(--space-micro);
+  border-radius: var(--radius-pill);
+  background: var(--line-soft);
+}
+
+.oak-explainer__slider input::-webkit-slider-thumb {
+  box-sizing: border-box;
+  width: var(--space-sm);
+  height: var(--space-sm);
+  margin-top: calc((var(--space-micro) - var(--space-sm)) / 2);
+  border: 2px solid var(--text);
+  border-radius: var(--radius-pill);
+  background: var(--oak-violet);
+  appearance: none;
+}
+
+.oak-explainer__slider input::-moz-range-thumb {
+  box-sizing: border-box;
+  width: var(--space-sm);
+  height: var(--space-sm);
+  border: 2px solid var(--text);
+  border-radius: var(--radius-pill);
+  background: var(--oak-violet);
+}
+
+@media (forced-colors: active) {
+  .oak-explainer__slider input {
+    appearance: auto;
+  }
+}
+
+.oak-explainer__slider input:focus-visible {
+  outline: 2px solid var(--oak-violet);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .oak-explainer__call line,
+  .oak-explainer__wire path,
+  .oak-explainer__state rect,
+  .oak-explainer__score-fill {
+    transition: stroke var(--motion-quick) var(--motion-standard), fill var(--motion-quick) var(--motion-standard);
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-explainer__svg-label,
+  .oak-explainer__score-fill,
+  .oak-explainer__point[data-query] rect {
+    fill: CanvasText;
+  }
+
+  .oak-explainer__lane-head,
+  .oak-explainer__state rect,
+  .oak-explainer__point circle,
+  .oak-explainer__score-track {
+    fill: Canvas;
+    stroke: CanvasText;
+  }
+
+  .oak-explainer__call line,
+  .oak-explainer__call polyline,
+  .oak-explainer__wire polyline,
+  .oak-explainer__wire path,
+  .oak-explainer__lifeline,
+  .oak-explainer__reach {
+    fill: none;
+    stroke: GrayText;
+  }
+
+  .oak-explainer__call[data-current] line,
+  .oak-explainer__call[data-current] polyline,
+  .oak-explainer__wire[data-current] polyline,
+  .oak-explainer__wire[data-current] path,
+  .oak-explainer__link,
+  .oak-explainer__state[data-current] rect,
+  .oak-explainer__point[data-near] circle,
+  .oak-explainer__passages li[data-kept] .oak-explainer__score-fill {
+    stroke: Highlight;
+  }
+
+  .oak-explainer__point[data-near] circle,
+  .oak-explainer__passages li[data-kept] .oak-explainer__score-fill {
+    fill: Highlight;
+  }
+
+  .oak-explainer__chips [aria-pressed="true"] {
+    outline: 3px double Highlight;
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-explainer__step {
+    border: 1px solid CanvasText;
+  }
+
+  .oak-explainer__step[data-current],
+  .oak-explainer__topics [aria-pressed="true"] {
+    outline: 3px double Highlight;
+  }
+
+  .oak-explainer__wires path {
+    stroke: GrayText;
+  }
+
+  .oak-explainer__wires path[data-selected] {
+    stroke: Highlight;
+  }
+}
+
+/* Ticket 53, xeval, xgrad and xoffsteps: the same rows, track and accent as xrag; the bar mark and the curve stay quiet. */
+.oak-explainer__checks {
+  display: grid;
+  gap: var(--space-sm);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-explainer__checks li {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(3rem, 8rem) 2.5rem 6.5rem;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+}
+
+.oak-explainer__checks li[data-clears] {
+  color: var(--text);
+}
+
+.oak-explainer__checks li[data-clears] .oak-explainer__score-fill {
+  fill: var(--oak-violet);
+}
+
+.oak-explainer__checks li[data-clears] .oak-explainer__fate {
+  font-weight: 600;
+}
+
+.oak-explainer__bar-mark {
+  stroke: var(--text);
+  stroke-width: 1.5;
+  vector-effect: non-scaling-stroke;
+}
+
+@container (max-width: 30rem) {
+  .oak-explainer__checks li {
+    grid-template-columns: minmax(0, 1fr) 2.5rem 6.5rem;
+    row-gap: 0;
+  }
+
+  .oak-explainer__checks .oak-explainer__score {
+    grid-column: 1 / -1;
+    grid-row: 2;
+  }
+
+  .oak-explainer__checks .oak-explainer__score-value {
+    display: inline;
+  }
+}
+
+.oak-explainer__xgrad,
+.oak-explainer__xleaf {
+  display: block;
+  width: 100%;
+  margin-inline: auto;
+  overflow: visible;
+}
+
+.oak-explainer__xgrad {
+  max-width: 24rem;
+}
+
+.oak-explainer__xleaf {
+  max-width: 30rem;
+}
+
+.oak-explainer__axis {
+  stroke: var(--line-soft);
+}
+
+.oak-explainer__curve {
+  fill: none;
+  stroke: color-mix(in srgb, var(--text) 45%, transparent);
+  stroke-width: 1.5;
+}
+
+.oak-explainer__descent {
+  fill: var(--oak-violet);
+}
+
+.oak-explainer__descent[data-start] {
+  fill: var(--bg);
+  stroke: var(--oak-violet);
+  stroke-width: 2;
+}
+
+.oak-explainer__leaf {
+  fill: color-mix(in srgb, var(--text) 6%, transparent);
+  stroke: color-mix(in srgb, var(--text) 45%, transparent);
+  stroke-width: 1.5;
+}
+
+@media (forced-colors: active) {
+  .oak-explainer__bar-mark,
+  .oak-explainer__axis,
+  .oak-explainer__curve,
+  .oak-explainer__leaf {
+    fill: none;
+    stroke: CanvasText;
+  }
+
+  .oak-explainer__descent,
+  .oak-explainer__checks li[data-clears] .oak-explainer__score-fill {
+    fill: Highlight;
+  }
+
+  .oak-explainer__descent[data-start] {
+    fill: Canvas;
+    stroke: Highlight;
+  }
+
+  .oak-explainer__call[data-done] line,
+  .oak-explainer__call[data-done] polyline {
+    stroke: CanvasText;
+  }
+
+  .oak-explainer__call[data-current] .oak-explainer__svg-label {
+    fill: CanvasText;
+  }
+}
+
+.oak-explainer__xgrad .oak-explainer__svg-label {
+  font-size: calc(var(--text-ui-sm) * 0.62);
+}

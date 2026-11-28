@@ -1,0 +1,16 @@
+{
+ "pick": [
+  "div.oak-pick.ui-toolbar[role=toolbar][aria-label=Selected text][data-slot=toolbar](button.ui-button.ui-button--ghost.ui-button--sm[data-slot=toolbar-button][type=button](svg(path()),\"Ask about this\"),div.ui-toolbar__separator[role=separator][data-slot=toolbar-separator](),button.ui-button.ui-button--ghost.ui-button--sm[data-slot=toolbar-button][type=button](svg(path(),path()),\"Copy\"))"
+ ],
+ "briefActions": [
+  "div.oak-brief-actions(button.ui-button.ui-button--secondary.ui-button--sm[type=button](svg(path(),path()),\"Copy brief\"),a.ui-button.ui-button--primary.ui-button--sm(svg(path(),path()),\"Open email draft\"))"
+ ],
+ "briefProposal": [
+  "section.oak-brief__message.oak-brief__proposal[aria-label=Prepared brief](div.ui-field[data-slot=field](label.ui-field__label[data-slot=field-label](\"Review and edit your message\"),div.ui-input-group[role=group][data-slot=input-group](textarea.ui-textarea.ui-textarea--bare[data-slot=textarea](\"Hi Steve,\\n\\nWe are hiring a design engineer for our agent product and would like to talk.\\n\\nConstraints: Remote, US time zones.\\nStart-date question: Is a January start realistic?\\n\\nThanks\"),div.ui-input-group__addon[data-slot=input-group-addon](span[data-slot=field-count](\"184\",\"/\",\"6,000\")))),p.oak-brief__receipt.oak-proposal__receipt(svg(path()),\"Nothing was sent by Oak. You review it and send it yourself.\"))"
+ ],
+ "questions": [
+  "div.oak-turn__question(div.ui-bubble.ui-bubble--default[data-slot=bubble](div.ui-bubble__content[data-slot=bubble-content](p(\"How do EcoSmartLoop and Agentic Brain fit in the timeline?\"))))",
+  "div.oak-turn__question(div.ui-bubble.ui-bubble--default[data-slot=bubble](div.ui-bubble__content[data-slot=bubble-content](p(\"Who built the EcoSmartLoop classifier, and what did Steve own?\"))))",
+  "div.oak-turn__question(div.oak-turn__question-actions(button.ui-button.ui-button--ghost.ui-button--icon[aria-label=Edit question][type=button](span.oak-icon-swap(svg(path())))),div.ui-bubble.ui-bubble--default[data-slot=bubble](div.ui-bubble__content[data-slot=bubble-content](p(\"What areas does the Agentic Brain page cover?\"))))"
+ ]
+}

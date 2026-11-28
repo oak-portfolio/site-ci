@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>tight-spacing-reflow</title>
+<link rel="stylesheet" href="base.css">
+<style>
+.reader { position: fixed; top: 0; left: 0; width: 220px; height: 120px; overflow-y: auto; }
+.reader .spacer { height: 300px; }
+.bar { position: fixed; top: 84px; left: 104px; }
+.chip { width: 100px; }
+</style>
+</head>
+<body>
+<main class="oak-workspace">
+  <div class="reader">
+    <div class="spacer"></div>
+    <button type="button" class="chip">End one</button>
+  </div>
+  <div class="bar"><button type="button" class="chip">Copy</button></div>
+</main>
+<script>
+const reader = document.querySelector(".reader");
+const bar = document.querySelector(".bar");
+reader.addEventListener("scroll", () => requestAnimationFrame(() => {
+  bar.style.top = reader.scrollTop + reader.clientHeight >= reader.scrollHeight - 1 ? "400px" : "84px";
+}));
+</script>
+</body>
+</html>

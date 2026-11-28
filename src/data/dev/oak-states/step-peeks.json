@@ -1,0 +1,435 @@
+[
+ {
+  "id": "step-peeks-open",
+  "label": "Step peeks (ticket 26): a record search that read 3 passages, a read step with 1 and a web step with its fetched day, every \"What I read\" open",
+  "stepPeeks": true,
+  "open": "peeks",
+  "workspace": {
+   "messages": [
+    {
+     "ask": "K01",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -8200,
+       "endedAt": -7400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -7400,
+       "endedAt": -5900,
+       "modelStep": 1,
+       "count": 3,
+       "passages": [
+        {
+         "kind": "record",
+         "documentId": "work:ecosmartloop",
+         "title": "EcoSmartLoop",
+         "section": "The decision loop",
+         "url": "https://steveoak.com/work/ecosmartloop/#the-decision-loop"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:oakminder",
+         "title": "Oakminder",
+         "section": "Voice Became The Action Layer",
+         "url": "https://steveoak.com/work/oakminder/#voice-became-the-action-layer"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:linkedin-growth-loop",
+         "title": "LinkedIn Growth Loop",
+         "section": "The First Daily Loop",
+         "url": "https://steveoak.com/work/linkedin-growth-loop/#the-first-daily-loop"
+        }
+       ],
+       "more": 0
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -5900,
+       "endedAt": -5100,
+       "modelStep": 2,
+       "passages": [
+        {
+         "kind": "record",
+         "documentId": "work:oakminder",
+         "title": "Oakminder",
+         "section": "Why I Built Another Reminder App",
+         "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+        }
+       ],
+       "more": 0
+      },
+      {
+       "id": "research",
+       "operation": "research",
+       "state": "done",
+       "startedAt": -7400,
+       "endedAt": -4300
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -1400,
+       "endedAt": -1400
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -1400,
+       "endedAt": -1400
+      }
+     ],
+     "research": {
+      "requestId": "c96bd54a-516c-4c0a-bae3-31a8839c29bc",
+      "topicId": "workers-limits",
+      "provider": "Exa",
+      "phase": "completed",
+      "reason": "none",
+      "returnedSources": 1,
+      "sources": [
+       {
+        "sourceId": "external:c96bd54a-516c-4c0a-bae3-31a8839c29bc:1",
+        "origin": "external-web",
+        "title": "Limits · Cloudflare Workers docs",
+        "url": "https://developers.cloudflare.com/workers/platform/limits/",
+        "publishedAt": "2026-09-20T00:00:00.000Z",
+        "retrievedAt": 1791824400000,
+        "excerpt": "Limits\nLast updated Oct 12, 2026| Copy as Markdown| View as Markdown| Agent setup\nAccount plan limits\n| Feature | Workers Free | Workers Paid |\n| --- | --- | --- |\n| Requests | 100,000/day | No limit |\n| CPU time | 10 ms | 5 min |\n| Memory | 128 MB | 128 MB |",
+        "contentStatus": "read"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "step-peeks-closed",
+  "label": "Step peeks (ticket 26): the same trail with every \"What I read\" closed: one quiet line under each step, the lists hidden",
+  "stepPeeks": true,
+  "open": "trail",
+  "workspace": {
+   "messages": [
+    {
+     "ask": "K01",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -8200,
+       "endedAt": -7400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -7400,
+       "endedAt": -5900,
+       "modelStep": 1,
+       "count": 3,
+       "passages": [
+        {
+         "kind": "record",
+         "documentId": "work:ecosmartloop",
+         "title": "EcoSmartLoop",
+         "section": "The decision loop",
+         "url": "https://steveoak.com/work/ecosmartloop/#the-decision-loop"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:oakminder",
+         "title": "Oakminder",
+         "section": "Voice Became The Action Layer",
+         "url": "https://steveoak.com/work/oakminder/#voice-became-the-action-layer"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:linkedin-growth-loop",
+         "title": "LinkedIn Growth Loop",
+         "section": "The First Daily Loop",
+         "url": "https://steveoak.com/work/linkedin-growth-loop/#the-first-daily-loop"
+        }
+       ],
+       "more": 0
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -5900,
+       "endedAt": -5100,
+       "modelStep": 2,
+       "passages": [
+        {
+         "kind": "record",
+         "documentId": "work:oakminder",
+         "title": "Oakminder",
+         "section": "Why I Built Another Reminder App",
+         "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+        }
+       ],
+       "more": 0
+      },
+      {
+       "id": "research",
+       "operation": "research",
+       "state": "done",
+       "startedAt": -7400,
+       "endedAt": -4300
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -1400,
+       "endedAt": -1400
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -1400,
+       "endedAt": -1400
+      }
+     ],
+     "research": {
+      "requestId": "c96bd54a-516c-4c0a-bae3-31a8839c29bc",
+      "topicId": "workers-limits",
+      "provider": "Exa",
+      "phase": "completed",
+      "reason": "none",
+      "returnedSources": 1,
+      "sources": [
+       {
+        "sourceId": "external:c96bd54a-516c-4c0a-bae3-31a8839c29bc:1",
+        "origin": "external-web",
+        "title": "Limits · Cloudflare Workers docs",
+        "url": "https://developers.cloudflare.com/workers/platform/limits/",
+        "publishedAt": "2026-09-20T00:00:00.000Z",
+        "retrievedAt": 1791824400000,
+        "excerpt": "Limits\nLast updated Oct 12, 2026| Copy as Markdown| View as Markdown| Agent setup\nAccount plan limits\n| Feature | Workers Free | Workers Paid |\n| --- | --- | --- |\n| Requests | 100,000/day | No limit |\n| CPU time | 10 ms | 5 min |\n| Memory | 128 MB | 128 MB |",
+        "contentStatus": "read"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "step-peeks-seven",
+  "label": "Step peeks (ticket 26): a search that read 7 passages shows 5, then \"2 more\"",
+  "stepPeeks": true,
+  "open": "peeks",
+  "workspace": {
+   "messages": [
+    {
+     "ask": "K01",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -8200,
+       "endedAt": -7400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -7400,
+       "endedAt": -5900,
+       "modelStep": 1,
+       "count": 7,
+       "passages": [
+        {
+         "kind": "record",
+         "documentId": "work:ecosmartloop",
+         "title": "EcoSmartLoop",
+         "section": "The decision loop",
+         "url": "https://steveoak.com/work/ecosmartloop/#the-decision-loop"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:oakminder",
+         "title": "Oakminder",
+         "section": "Voice Became The Action Layer",
+         "url": "https://steveoak.com/work/oakminder/#voice-became-the-action-layer"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:linkedin-growth-loop",
+         "title": "LinkedIn Growth Loop",
+         "section": "The First Daily Loop",
+         "url": "https://steveoak.com/work/linkedin-growth-loop/#the-first-daily-loop"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:oakminder",
+         "title": "Oakminder",
+         "section": "Why I Built Another Reminder App",
+         "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:linkedin-growth-loop",
+         "title": "LinkedIn Growth Loop",
+         "section": "Orchestrator, Workers, Validators",
+         "url": "https://steveoak.com/work/linkedin-growth-loop/#orchestrator-workers-validators"
+        }
+       ],
+       "more": 2
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -5900,
+       "endedAt": -5100,
+       "modelStep": 2
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -1400,
+       "endedAt": -1400
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -1400,
+       "endedAt": -1400
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "step-peeks-off",
+  "label": "Step peeks (ticket 26): the constant off: the same trail as main, no \"What I read\"",
+  "stepPeeks": false,
+  "open": "trail",
+  "workspace": {
+   "messages": [
+    {
+     "ask": "K01",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -8200,
+       "endedAt": -7400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -7400,
+       "endedAt": -5900,
+       "modelStep": 1,
+       "count": 3,
+       "passages": [
+        {
+         "kind": "record",
+         "documentId": "work:ecosmartloop",
+         "title": "EcoSmartLoop",
+         "section": "The decision loop",
+         "url": "https://steveoak.com/work/ecosmartloop/#the-decision-loop"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:oakminder",
+         "title": "Oakminder",
+         "section": "Voice Became The Action Layer",
+         "url": "https://steveoak.com/work/oakminder/#voice-became-the-action-layer"
+        },
+        {
+         "kind": "record",
+         "documentId": "work:linkedin-growth-loop",
+         "title": "LinkedIn Growth Loop",
+         "section": "The First Daily Loop",
+         "url": "https://steveoak.com/work/linkedin-growth-loop/#the-first-daily-loop"
+        }
+       ],
+       "more": 0
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -5900,
+       "endedAt": -5100,
+       "modelStep": 2,
+       "passages": [
+        {
+         "kind": "record",
+         "documentId": "work:oakminder",
+         "title": "Oakminder",
+         "section": "Why I Built Another Reminder App",
+         "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+        }
+       ],
+       "more": 0
+      },
+      {
+       "id": "research",
+       "operation": "research",
+       "state": "done",
+       "startedAt": -7400,
+       "endedAt": -4300
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -1400,
+       "endedAt": -1400
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -1400,
+       "endedAt": -1400
+      }
+     ],
+     "research": {
+      "requestId": "c96bd54a-516c-4c0a-bae3-31a8839c29bc",
+      "topicId": "workers-limits",
+      "provider": "Exa",
+      "phase": "completed",
+      "reason": "none",
+      "returnedSources": 1,
+      "sources": [
+       {
+        "sourceId": "external:c96bd54a-516c-4c0a-bae3-31a8839c29bc:1",
+        "origin": "external-web",
+        "title": "Limits · Cloudflare Workers docs",
+        "url": "https://developers.cloudflare.com/workers/platform/limits/",
+        "publishedAt": "2026-09-20T00:00:00.000Z",
+        "retrievedAt": 1791824400000,
+        "excerpt": "Limits\nLast updated Oct 12, 2026| Copy as Markdown| View as Markdown| Agent setup\nAccount plan limits\n| Feature | Workers Free | Workers Paid |\n| --- | --- | --- |\n| Requests | 100,000/day | No limit |\n| CPU time | 10 ms | 5 min |\n| Memory | 128 MB | 128 MB |",
+        "contentStatus": "read"
+       }
+      ]
+     }
+    }
+   ]
+  }
+ }
+]

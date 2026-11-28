@@ -1,0 +1,686 @@
+/* Ticket 55: the public research card (OakPublicResearch), moved out of oakAgent.css; theme.css imports it right after that file. */
+
+/*
+ * D86: current public research is one card in the answer family. A blue web tile and a card-sized title, a status row
+ * whose tile tint carries the outcome, then numbered source rows: host, linked title, excerpt and a quiet date line.
+ */
+.oak-research {
+  display: grid;
+  gap: var(--oak-card-gap, var(--space-sm));
+  min-width: 0;
+  margin-top: var(--space-sm);
+  padding: var(--oak-pad-nest);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-card-radius, var(--radius-md));
+  background: var(--panel-soft);
+  font-size: var(--text-ui-md);
+  line-height: var(--leading-ui);
+}
+
+.oak-research p,
+.oak-research h3,
+.oak-research h4 {
+  margin: 0;
+}
+
+.oak-research__head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  column-gap: var(--space-sm);
+}
+
+/* D91: the research card's art tile carries the blue of public sources. */
+.oak-research__art.oak-art-tile {
+  border-color: color-mix(in srgb, var(--oak-blue) 32%, var(--line-soft));
+  background: color-mix(in srgb, var(--oak-blue) 12%, var(--oak-raised));
+}
+
+.oak-research__tile {
+  display: grid;
+  place-items: center;
+  width: var(--space-gutter);
+  height: var(--space-gutter);
+  border-radius: var(--radius-pill);
+  background: var(--oak-tint-blue);
+  color: var(--oak-blue);
+}
+
+.oak-research__tile svg {
+  width: 16px;
+  height: 16px;
+}
+
+.oak-research__title {
+  color: var(--text);
+  font-size: var(--text-ui-md);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-research__note,
+.oak-research__date {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-research__status {
+  min-height: 40px;
+  padding: var(--space-xs) var(--space-sm);
+  border-radius: var(--oak-r-card);
+  background: var(--oak-raised);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-research__status > svg {
+  width: 16px;
+  height: 16px;
+}
+
+.oak-research__status[data-tone="done"] > svg {
+  color: var(--oak-leaf);
+}
+
+.oak-research__status[data-tone="working"] > svg {
+  color: var(--oak-blue);
+}
+
+.oak-research__status[data-tone="warn"] > svg {
+  color: var(--oak-gold);
+}
+
+.oak-research__sources {
+  display: grid;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-research__source {
+  padding-block: calc(var(--space-xs) + var(--space-micro));
+}
+
+.oak-research__source + .oak-research__source {
+  border-top: 1px solid var(--line-soft);
+}
+
+.oak-research__body {
+  display: grid;
+  gap: var(--space-micro);
+  min-width: 0;
+}
+
+.oak-research__host {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  color: var(--quiet);
+  font-size: var(--text-ui-sm);
+  overflow-wrap: anywhere;
+}
+
+.oak-research__source-title {
+  font-size: var(--text-ui-md);
+  font-weight: 500;
+}
+
+.oak-research__source-title a {
+  color: var(--text);
+  text-decoration-color: color-mix(in srgb, var(--text) 30%, transparent);
+  text-underline-offset: 3px;
+  overflow-wrap: anywhere;
+}
+
+.oak-research__source-title a:hover {
+  text-decoration-color: var(--text);
+}
+
+.oak-research__excerpt {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--text);
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+  /* A preview: the title opens the full page. */
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  line-clamp: 4;
+}
+
+/* Current public research: roomier status, and the sources as a sideways row of cards. */
+.oak-workspace .oak-research {
+  gap: var(--space-sm);
+  padding: var(--oak-pad-nest);
+}
+
+.oak-workspace .oak-research__status {
+  align-items: flex-start;
+  gap: calc(var(--space-xs) + var(--space-micro) / 2);
+  /* R15: a 24px status row holds its icon one card step in, clear of the curve. R17: and one frame pad above and below. */
+  padding: var(--oak-pad-frame);
+  line-height: 1.5;
+}
+
+.oak-workspace .oak-research__status > svg {
+  margin-top: calc(var(--space-micro) / 2);
+}
+
+.oak-research__cards {
+  margin-block: 0;
+  list-style: none;
+  display: grid;
+  grid-auto-columns: minmax(220px, 72%);
+  grid-auto-flow: column;
+  gap: var(--space-xs);
+  margin-inline: calc(var(--space-sm) * -1);
+  padding: 0 var(--space-sm) var(--space-micro);
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-padding-inline: var(--space-sm);
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+}
+
+.oak-research__card {
+  display: grid;
+  align-content: start;
+  gap: calc(var(--space-xs) - var(--space-micro) / 2);
+  min-width: 0;
+  padding: calc(var(--space-xs) + var(--space-micro));
+  border: 0; /* R14: gray on gray carries no border. */
+  border-radius: var(--oak-r-card);
+  background: var(--oak-raised);
+  color: var(--text);
+  text-decoration: none;
+  scroll-snap-align: start;
+  transition: border-color var(--motion-quick) var(--motion-standard), background-color var(--motion-quick) var(--motion-standard);
+}
+
+.oak-research__card:hover {
+  border-color: var(--line);
+  background: color-mix(in srgb, var(--text) 6%, var(--oak-raised));
+}
+
+.oak-research__card:focus-visible {
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
+}
+
+.oak-research__card .oak-research__host {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  min-width: 0;
+  color: var(--quiet);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-research__card .oak-research__host > span:not(.oak-source-face) {
+  flex: 1;
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.oak-research__card .oak-research__source-title {
+  display: -webkit-box;
+  overflow: hidden;
+  font-size: var(--text-ui-md);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.oak-research__card .oak-research__excerpt {
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+}
+
+.oak-research__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-micro);
+  margin-top: var(--space-micro);
+}
+
+.oak-research__meta > span {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-micro);
+  min-height: 22px;
+  padding: 0 var(--space-xs);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--text) 7%, transparent);
+  color: var(--quiet);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-research__meta > span[data-tone="warn"] {
+  background: color-mix(in srgb, var(--oak-gold) 14%, transparent);
+  color: var(--oak-gold);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-research__card {
+    transition: none;
+  }
+}
+
+.oak-research__cards > li {
+  display: grid;
+  min-width: 0;
+}
+
+/* Review v4: each source is its own full-width row, stacked, never a sideways row of columns. */
+.oak-research__cards {
+  grid-auto-flow: row;
+  grid-auto-columns: auto;
+  grid-template-columns: minmax(0, 1fr);
+  margin-inline: 0;
+  padding: 0;
+  overflow: visible;
+  scroll-snap-type: none;
+}
+
+/* Review v6: rows were 8px corners 8px apart inside a 24px card and read cramped. Each row now rounds at the card's radius
+   less one step (16px), with 12px between rows and 16px inside, so the nesting reads even. */
+.oak-research__cards {
+  gap: calc(var(--space-xs) + var(--space-micro));
+}
+
+.oak-research__card {
+  gap: var(--space-micro);
+  padding: var(--oak-pad-frame); /* R15: copy clears the 24px corner arc; R17: the same pad above and below */
+  border-radius: var(--oak-r-card);
+}
+
+.oak-research__card .oak-research__excerpt {
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.oak-research__cards > li {
+  scroll-snap-align: start;
+}
+
+/* ==== R19 web research (Oak, 2026-10-22: "use web search and combine the sources") ====
+   The open web card: the combine step's sentences lead, each followed by the sources it cites as capsule chips, then the
+   sources as plain rows (number, title, host and date; no favicons). Sentences and rows paint no fill inside the filled
+   frame (R18 tint in tint); a row shows hover on its title and focus with a ring. Copy sits one --space-xs in, level with the
+   frame's title and status. */
+.oak-workspace .oak-research__synthesis,
+.oak-workspace .oak-research__rows {
+  display: grid;
+  margin: 0;
+  padding: 0 var(--space-xs);
+  list-style: none;
+}
+
+.oak-workspace .oak-research__synthesis {
+  gap: var(--space-md);
+  padding-block: var(--space-xs);
+  color: var(--text);
+  font-size: var(--text-ui-md);
+  line-height: 1.6;
+}
+
+.oak-research__cites {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: var(--space-micro);
+  margin-inline-start: var(--space-xs);
+  vertical-align: text-bottom;
+}
+
+.oak-research__cite {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-micro);
+  min-height: 22px;
+  max-width: 100%;
+  padding: 0 var(--space-xs) 0 var(--space-micro);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--oak-blue) 16%, transparent);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  line-height: 1;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: background-color var(--motion-quick) var(--motion-standard);
+}
+
+.oak-research__cite[data-origin="steve"] {
+  padding-inline-start: var(--space-xs);
+  background: color-mix(in srgb, var(--text) 8%, transparent);
+  color: var(--muted);
+}
+
+a.oak-research__cite:hover {
+  background: color-mix(in srgb, var(--oak-blue) 26%, transparent);
+}
+
+.oak-research__cite-number,
+.oak-research__row-number {
+  display: inline-grid;
+  flex-shrink: 0;
+  place-items: center;
+  min-width: 16px;
+  height: 16px;
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--text) 14%, transparent);
+  color: var(--text);
+  font-size: var(--text-ui-sm);
+  font-variant-numeric: tabular-nums;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.oak-research__row-number {
+  min-width: 22px;
+  height: 22px;
+  margin-top: calc(var(--space-micro) / 2);
+}
+
+/* A hairline between rows, drawn as a line rather than a border, so a row is never a square frame inside the 48px card
+   (R14 surface probe). It stops short of the row's own inset, level with the row text. */
+.oak-workspace .oak-research__rows > li + li {
+  position: relative;
+}
+
+.oak-workspace .oak-research__rows > li + li::before {
+  position: absolute;
+  inset-block-start: 0;
+  inset-inline: var(--space-xs);
+  height: 1px;
+  background: var(--line-soft);
+  content: "";
+}
+
+.oak-research__row {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  align-items: start;
+  gap: var(--space-sm);
+  padding: var(--space-sm) 0;
+  border-radius: var(--oak-r-row);
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* The card's own pad already sits under the last row, so the row gives its bottom pad back (top and bottom read level). */
+.oak-workspace .oak-research__rows > li:last-child > .oak-research__row {
+  padding-bottom: 0;
+}
+
+.oak-research__row-text {
+  display: grid;
+  gap: var(--space-micro);
+  min-width: 0;
+}
+
+.oak-research__row-title {
+  font-size: var(--text-ui-md);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+  overflow-wrap: anywhere;
+}
+
+.oak-research__row-meta {
+  color: var(--quiet);
+  font-size: var(--text-ui-sm);
+  overflow-wrap: anywhere;
+}
+
+.oak-research__row > svg {
+  margin-top: var(--space-micro);
+  color: var(--quiet);
+}
+
+.oak-research__row:hover .oak-research__row-title {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+:is(.oak-research__row, .oak-research__cite):focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+.oak-research__row > .oak-web-face {
+  margin-top: calc(var(--space-micro) / 2);
+}
+
+.oak-research__cite .oak-web-face {
+  width: 16px;
+  height: 16px;
+  border-radius: var(--radius-pill);
+}
+
+.oak-research__cite .oak-web-face img {
+  width: 12px;
+  height: 12px;
+}
+
+.oak-research__cite .oak-web-face svg {
+  width: 12px;
+  height: 12px;
+}
+
+/* ==== Ticket 55 (Direction A, Side by Side): Steve's cited case studies and the web's quotes as two sibling glass cards
+   of one height, the model-written summary as a flat block under both. The outer frame paints nothing, so no glass sits
+   on glass; at 390 the cards stack with Steve's work first. ==== */
+.oak-workspace .oak-research.oak-beside {
+  gap: var(--space-sm);
+  padding: 0;
+  border: 0;
+  background: none;
+}
+
+/* The outer frame paints nothing, so the status line is a top-level frame and takes the shell corner (R14). */
+.oak-workspace .oak-beside > .oak-research__status {
+  border-radius: var(--oak-r-shell);
+}
+
+.oak-beside {
+  container-type: inline-size;
+}
+
+.oak-beside__cards {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: stretch;
+  gap: var(--space-sm);
+}
+
+@container (min-width: 520px) {
+  .oak-beside__cards:has(> :nth-child(2)) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .oak-beside__cards:has(> :nth-child(2)) > [data-origin="web"] {
+    grid-area: 1 / 1;
+  }
+
+  .oak-beside__cards:has(> :nth-child(2)) > [data-origin="steve"] {
+    grid-area: 1 / 2;
+  }
+}
+
+.oak-beside__card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xs);
+  min-width: 0;
+  padding: var(--oak-pad-nest);
+  border: 1px solid var(--glass-edge);
+  border-radius: var(--oak-r-shell);
+  background: var(--glass-sheen), var(--glass-fill-overlay);
+  box-shadow: var(--shadow-glass);
+}
+
+.oak-beside__heading {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-micro) var(--space-xs);
+  min-width: 0;
+}
+
+.oak-beside__head {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-items: center;
+  gap: var(--space-sm);
+  padding-inline: var(--space-xs);
+}
+
+.oak-beside__title {
+  margin: 0;
+  color: var(--muted);
+  font-size: var(--text-ui-md);
+  font-weight: 600;
+  line-height: var(--leading-ui);
+}
+
+.oak-beside__label,
+.oak-beside__chip {
+  display: inline-flex;
+  align-items: center;
+  min-height: 22px;
+  padding: 0 var(--space-xs);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.oak-beside__chip[data-match="true"] {
+  background: color-mix(in srgb, var(--oak-leaf) 18%, transparent);
+  color: var(--text);
+}
+
+.oak-beside__chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-micro);
+  margin-top: var(--space-micro);
+}
+
+.oak-beside__rows[data-two-up="true"] {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+  column-gap: var(--space-sm);
+  row-gap: var(--space-sm);
+}
+
+.oak-workspace .oak-beside__rows[data-two-up="true"] > li + li::before {
+  display: none;
+}
+
+/* Two-up rows sit side by side, so none of them carries the bottom pad a stacked row gives its neighbour. */
+.oak-workspace .oak-beside__rows[data-two-up="true"] > li > .oak-research__row {
+  padding-bottom: 0;
+}
+
+/* Equal-height cards (R19) fill the taller one's height by design: each card's footer sits on its bottom pad (R17). */
+.oak-beside__foot {
+  display: flex;
+  align-items: center;
+  gap: var(--space-micro);
+  margin: auto 0 0;
+  padding-inline: var(--space-xs);
+  color: var(--quiet);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  text-decoration: none;
+}
+
+a.oak-beside__foot {
+  align-self: flex-start;
+  color: var(--muted);
+}
+
+a.oak-beside__foot:hover {
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+
+a.oak-beside__foot:focus-visible {
+  outline: 2px solid var(--oak-focus);
+  outline-offset: 2px;
+}
+
+.oak-beside__quote {
+  display: -webkit-box;
+  overflow: hidden;
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+}
+
+.oak-beside__summary {
+  display: grid;
+  gap: var(--space-xs);
+  padding: var(--oak-pad-nest);
+  border: 1px solid transparent;
+  border-radius: var(--oak-r-shell);
+  background: rgba(255, 255, 255, 0.04);
+}
+
+.oak-workspace .oak-beside__summary .oak-research__synthesis {
+  padding-bottom: 0;
+}
+
+.oak-beside__summary-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  margin: 0;
+  padding-inline: var(--space-xs);
+}
+
+.oak-beside__summary-title {
+  color: var(--text);
+  font-weight: 600;
+}
+
+.oak-beside__note {
+  color: var(--quiet);
+  font-size: var(--text-ui-sm);
+}
+
+.oak-beside__off {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-xs);
+  margin: 0;
+  padding: var(--space-sm) var(--oak-pad-frame);
+  border: 1px solid transparent;
+  border-radius: var(--oak-r-shell);
+  background: rgba(255, 255, 255, 0.04);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: 1.5;
+}
+
+.oak-beside__off > svg {
+  flex-shrink: 0;
+  margin-top: calc(var(--space-micro) / 2);
+  color: var(--oak-blue);
+}
+
+@media (prefers-reduced-transparency: reduce), (prefers-contrast: more) {
+  .oak-beside__card {
+    background: var(--glass-fill-solid);
+  }
+}

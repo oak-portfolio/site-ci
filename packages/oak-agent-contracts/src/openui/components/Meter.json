@@ -1,0 +1,21 @@
+{
+  "name": "Meter",
+  "claims": "one",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": {
+    "line": "The numbers, as Steve's pages state them:"
+  },
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "planned": false,
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "meter"
+  },
+  "taughtPresets": []
+}

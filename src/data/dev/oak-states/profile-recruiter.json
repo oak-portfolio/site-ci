@@ -1,0 +1,233 @@
+[
+ {
+  "id": "profile-recruiter-before",
+  "judgeLike": "answer-off-topic",
+  "label": "Recruiter summary (ticket 287), before: keyword search missed the profile, so the answer was a gap with no claims and no program",
+  "profile": true,
+  "recordFacts": {
+   "profile:steve-oak": {
+    "kind": "profile",
+    "hero": {
+     "title": "Hi, I'm Steve Oak",
+     "description": "Also call me Oak or Okkar Kyaw. I design and build useful AI products: workflows, eval loops, tool systems, and interfaces that make automated work easier to inspect and trust."
+    },
+    "summary": {
+     "heading": "About Steve Oak",
+     "description": "Steve Oak is Okkar Kyaw: a Bay Area AI/design engineer building applied AI systems, retrieval and tool workflows, evaluation loops, and product surfaces that make model behavior easier to inspect and trust.",
+     "facts": [
+      {
+       "label": "Name",
+       "value": "Steve Oak / Okkar Kyaw"
+      },
+      {
+       "label": "Based",
+       "value": "Bay Area"
+      },
+      {
+       "label": "Focus",
+       "value": "Applied AI systems"
+      },
+      {
+       "label": "Taste",
+       "value": "Design engineering"
+      }
+     ]
+    },
+    "knowsAbout": [
+     "Applied AI systems",
+     "Design engineering",
+     "AI product surfaces",
+     "Agent workflows",
+     "RAG and tool workflows",
+     "Evaluation loops",
+     "Context engineering",
+     "Human-in-the-loop AI systems"
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Give me a quick summary for a recruiter"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "gap",
+      "acknowledgment": "The sources I read don't give a recruiter summary.",
+      "claims": []
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "profile-recruiter-after",
+  "judgeLike": "profile-brief",
+  "label": "Recruiter summary (ticket 287), after: the profile ranks in search, so the answer cites it in a brief Profile card, a Role card, Sources and follow-up pills",
+  "profile": true,
+  "recordFacts": {
+   "profile:steve-oak": {
+    "kind": "profile",
+    "hero": {
+     "title": "Hi, I'm Steve Oak",
+     "description": "Also call me Oak or Okkar Kyaw. I design and build useful AI products: workflows, eval loops, tool systems, and interfaces that make automated work easier to inspect and trust."
+    },
+    "summary": {
+     "heading": "About Steve Oak",
+     "description": "Steve Oak is Okkar Kyaw: a Bay Area AI/design engineer building applied AI systems, retrieval and tool workflows, evaluation loops, and product surfaces that make model behavior easier to inspect and trust.",
+     "facts": [
+      {
+       "label": "Name",
+       "value": "Steve Oak / Okkar Kyaw"
+      },
+      {
+       "label": "Based",
+       "value": "Bay Area"
+      },
+      {
+       "label": "Focus",
+       "value": "Applied AI systems"
+      },
+      {
+       "label": "Taste",
+       "value": "Design engineering"
+      }
+     ]
+    },
+    "knowsAbout": [
+     "Applied AI systems",
+     "Design engineering",
+     "AI product surfaces",
+     "Agent workflows",
+     "RAG and tool workflows",
+     "Evaluation loops",
+     "Context engineering",
+     "Human-in-the-loop AI systems"
+    ]
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Give me a quick summary for a recruiter"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve Oak, also known as Okkar Kyaw, designs and builds AI products such as workflows, eval loops, tool systems, and interfaces to make automated work easier to inspect and trust.",
+        "citations": [
+         {
+          "documentId": "profile:steve-oak",
+          "passageId": "profile:steve-oak:section-001:passage-001",
+          "sectionId": "profile:steve-oak:section-001",
+          "url": "https://steveoak.com/#hero-title"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "In his work with Oak Labs, he builds and maintains client AI solutions ranging from web, CMS delivery, and SEO/AEO workflows to agentic iOS and web apps and internal automation.",
+        "citations": [
+         {
+          "documentId": "experience:oaklabs",
+          "passageId": "experience:oaklabs:passage-002",
+          "sectionId": "experience:oaklabs",
+          "url": "https://steveoak.com/work#oaklabs"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000028701",
+      "program": "root = Answer([intro, work, src, next])\nintro = Profile(\"claim-1\", \"brief\")\nwork = Role([\"claim-2\"])\nsrc = Sources()\nnext = Pills([\"What projects has he built?\", \"What tools and stack does he use?\", \"Can I see his full resume?\"])",
+      "status": "done"
+     }
+    }
+   ]
+  },
+  "role": true
+ }
+]

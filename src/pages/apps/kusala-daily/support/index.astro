@@ -1,0 +1,73 @@
+---
+import { ContactMorph } from "@/components/ContactMorph";
+import KusalaDailyAppLayout from "@/layouts/KusalaDailyAppLayout.astro";
+---
+
+<KusalaDailyAppLayout
+  title="Support"
+  eyebrow="Kusala Daily"
+  description="Help with prayer tracking, the 24 Paccayo reader, accessibility, and app behavior."
+>
+  <section class="kusala-section" aria-labelledby="support-basics-heading">
+    <h2 id="support-basics-heading">Using Kusala Daily</h2>
+    <h3>Prayer progress</h3>
+    <p>
+      Choose a prayer, then tap the gold count button. Undo changes only the
+      selected prayer. Reset actions always ask for confirmation before
+      clearing progress.
+    </p>
+    <h3>24 Paccayo reader</h3>
+    <p>
+      Open the 24 Paccayo tab to read all sections in one continuous page. Use
+      the list control to jump to a heading, and the text controls to increase
+      or reduce the reader preset toward your system text size.
+    </p>
+  </section>
+
+  <section class="kusala-section" aria-labelledby="support-troubleshooting-heading">
+    <h2 id="support-troubleshooting-heading">Troubleshooting</h2>
+    <ul>
+      <li>If a count looks unchanged, confirm that the intended prayer is selected.</li>
+      <li>At 108, counting stops until you undo or confirm a reset.</li>
+      <li>If text is too large or small, adjust Dynamic Type in iOS Settings and then use the reader controls.</li>
+      <li>If the app behaves unexpectedly, close and reopen it before contacting support.</li>
+    </ul>
+  </section>
+
+  <section class="kusala-section" aria-labelledby="support-accessibility-heading">
+    <h2 id="support-accessibility-heading">Accessibility</h2>
+    <p>
+      Kusala Daily supports Dynamic Type, VoiceOver headings and progress,
+      Voice Control labels, Reduce Motion, Reduce Transparency, Increased
+      Contrast, keyboard navigation, and responsive iPhone and iPad layouts.
+    </p>
+  </section>
+
+  <section class="kusala-section" aria-labelledby="support-contact-heading">
+    <h2 id="support-contact-heading">Contact support</h2>
+    <p>
+      Email <a href="mailto:okkark.pro@gmail.com">okkark.pro@gmail.com</a> and
+      include “Kusala Daily” plus the device model, iOS or iPadOS version, and a
+      short description of what happened. Do not include private prayer notes
+      or other sensitive information.
+    </p>
+    <div class="kusala-support-contact-shell">
+      <ContactMorph
+        client:visible={{ rootMargin: "240px" }}
+        appearance="hero"
+        destination="direct"
+        side="top"
+        align="center"
+        className="kusala-support-contact"
+      />
+    </div>
+  </section>
+</KusalaDailyAppLayout>
+
+<style>
+  .kusala-support-contact-shell {
+    display: grid;
+    justify-items: center;
+    width: 100%;
+  }
+</style>

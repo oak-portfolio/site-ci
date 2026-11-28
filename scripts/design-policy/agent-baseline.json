@@ -1,0 +1,14 @@
+{
+  "note": "Design-rework ratchet (D02). Counts of today's findings per file and rule. New findings fail; a fixed finding must lower its count. D08 empties raw-control and agent-base-ui-import.",
+  "files": {
+    "src/components/agent/OakEmptyState.tsx": {
+      "jsx-a11y-x/no-noninteractive-tabindex": 1
+    },
+    "src/styles/global.css": {
+      "portfolio/agent-tokens": 63
+    },
+    "src/styles/oakOwner.css": {
+      "portfolio/agent-tokens": 0
+    }
+  }
+}

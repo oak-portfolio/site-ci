@@ -1,0 +1,620 @@
+[
+ {
+  "id": "ownership-split",
+  "label": "Ownership (ticket 27): split, Steve's lines beside the collaborators', rows even, the rest folded (fixture lines)",
+  "ownership": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack",
+      "Scanner, upload/API flow, product backend",
+      "Led the V1 to V2 product shift",
+      "Integrated LEAF Engine classification output"
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving",
+      "Neelofar contributed frontend and data-analytics work",
+      "Professor Ahmed Banafa advised the capstone"
+     ]
+    }
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe",
+      "Built the voice-agent lane with speech commands, structured backend actions",
+      "Built the native urgency lane with notification actions, AlarmKit, Live Activity",
+      "Built the App Store launch surface, documentation surface, and observability stack",
+      "Built the internal TikTok and UGC distribution studio"
+     ],
+     "collaborators": []
+    }
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Who did what on EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend. Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000d1",
+      "program": "root = Answer([own])\nown = Ownership(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "ownership-tree",
+  "label": "Ownership (ticket 27): tree inside the accessible figure, project to Steve and Collaborators to rows (fixture lines)",
+  "ownership": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack",
+      "Scanner, upload/API flow, product backend",
+      "Led the V1 to V2 product shift",
+      "Integrated LEAF Engine classification output"
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving",
+      "Neelofar contributed frontend and data-analytics work",
+      "Professor Ahmed Banafa advised the capstone"
+     ]
+    }
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe",
+      "Built the voice-agent lane with speech commands, structured backend actions",
+      "Built the native urgency lane with notification actions, AlarmKit, Live Activity",
+      "Built the App Store launch surface, documentation surface, and observability stack",
+      "Built the internal TikTok and UGC distribution studio"
+     ],
+     "collaborators": []
+    }
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Who did what on EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend. Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000d2",
+      "program": "root = Answer([own])\nown = Ownership(\"claim-1\", \"tree\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "ownership-roll",
+  "label": "Ownership (ticket 27): roll, a count of areas listed across the two cited records, never a rank (fixture lines)",
+  "ownership": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack",
+      "Scanner, upload/API flow, product backend",
+      "Led the V1 to V2 product shift",
+      "Integrated LEAF Engine classification output"
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving",
+      "Neelofar contributed frontend and data-analytics work",
+      "Professor Ahmed Banafa advised the capstone"
+     ]
+    }
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe",
+      "Built the voice-agent lane with speech commands, structured backend actions",
+      "Built the native urgency lane with notification actions, AlarmKit, Live Activity",
+      "Built the App Store launch surface, documentation surface, and observability stack",
+      "Built the internal TikTok and UGC distribution studio"
+     ],
+     "collaborators": []
+    }
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Who did what on EcoSmartLoop and Oakminder?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "EcoSmartLoop: Steve owned the product-side full stack. Oakminder: Steve built Oakminder around the reminder lifecycle.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         },
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000d3",
+      "program": "root = Answer([own])\nown = Ownership(\"claim-1\", \"roll\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "ownership-no-collaborators",
+  "label": "Ownership (ticket 27): an empty collaborators list reads No collaborators listed, never as solo work (fixture lines)",
+  "ownership": true,
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack",
+      "Scanner, upload/API flow, product backend",
+      "Led the V1 to V2 product shift",
+      "Integrated LEAF Engine classification output"
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving",
+      "Neelofar contributed frontend and data-analytics work",
+      "Professor Ahmed Banafa advised the capstone"
+     ]
+    }
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe",
+      "Built the voice-agent lane with speech commands, structured backend actions",
+      "Built the native urgency lane with notification actions, AlarmKit, Live Activity",
+      "Built the App Store launch surface, documentation surface, and observability stack",
+      "Built the internal TikTok and UGC distribution studio"
+     ],
+     "collaborators": []
+    }
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Who did what on Oakminder?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe.",
+        "citations": [
+         {
+          "documentId": "work:oakminder",
+          "passageId": "work:oakminder:section-001:passage-006",
+          "sectionId": "work:oakminder:section-001",
+          "url": "https://steveoak.com/work/oakminder/#why-i-built-another-reminder-app"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000d4",
+      "program": "root = Answer([own])\nown = Ownership(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "ownership-streaming",
+  "label": "Ownership (ticket 27): while the record facts load, the block draws its own ghost (fixture)",
+  "ownership": true,
+  "recordFacts": "pending",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Who did what on EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend. Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000d5",
+      "program": "root = Answer([own])\nown = Ownership(\"claim-1\")",
+      "status": "streaming"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "ownership-off",
+  "ownership": false,
+  "label": "Ownership (ticket 27): constant off, the layout reads as the plain Points list with the claim placed once (fixture)",
+  "recordFacts": {
+   "work:ecosmartloop": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Owned the product-side full stack",
+      "Scanner, upload/API flow, product backend",
+      "Led the V1 to V2 product shift",
+      "Integrated LEAF Engine classification output"
+     ],
+     "collaborators": [
+      "Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving",
+      "Neelofar contributed frontend and data-analytics work",
+      "Professor Ahmed Banafa advised the capstone"
+     ]
+    }
+   },
+   "work:oakminder": {
+    "kind": "work",
+    "ownership": {
+     "oak": [
+      "Built Oakminder around the reminder lifecycle: capture, structure, interrupt, resolve, sync, and observe",
+      "Built the voice-agent lane with speech commands, structured backend actions",
+      "Built the native urgency lane with notification actions, AlarmKit, Live Activity",
+      "Built the App Store launch surface, documentation surface, and observability stack",
+      "Built the internal TikTok and UGC distribution studio"
+     ],
+     "collaborators": []
+    }
+   }
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Who did what on EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "Steve owned the product-side full stack: scanner, upload/API flow, product backend. Frank Baah and Glenn Marvin Musoke primarily owned LEAF Engine training and serving.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-001:passage-008",
+          "sectionId": "work:ecosmartloop:section-001",
+          "url": "https://steveoak.com/work/ecosmartloop/#the-three-bin-pause"
+         }
+        ]
+       }
+      ]
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-0000000000d6",
+      "program": "root = Answer([own])\nown = Ownership(\"claim-1\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ }
+]

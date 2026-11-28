@@ -1,0 +1,21 @@
+{
+  "name": "Screens",
+  "claims": "one",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": null,
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "planned": false,
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "text": "[screens: the cited project's own reviewed images in one frame with a filmstrip, each opening a viewer]",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

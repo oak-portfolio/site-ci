@@ -1,0 +1,182 @@
+[
+ {
+  "id": "answer-openui-diagram-flow",
+  "question": "How does Oakminder work?",
+  "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"flow\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-004:passage-004",
+       "sectionId": "work:oakminder:section-004",
+       "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-diagram-layers",
+  "question": "What are the layers of Agentic Brain?",
+  "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"layers\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Agentic Brain keeps short-term working context apart from durable project memory, so a future agent session does not rediscover the same constraints.",
+     "citations": [
+      {
+       "documentId": "work:agentic-brain",
+       "passageId": "work:agentic-brain:section-001:passage-002",
+       "sectionId": "work:agentic-brain:section-001",
+       "url": "https://steveoak.com/work/agentic-brain/#work-in-progress-panel-title"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-diagram-blockdiag",
+  "question": "Walk me through the architecture of Oakminder",
+  "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"blockdiag\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Oakminder's architecture splits the work: the backend has to know what happened, and the phone has to make the action feel light.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-004:passage-004",
+       "sectionId": "work:oakminder:section-004",
+       "url": "https://steveoak.com/work/oakminder/#the-architecture-behind-a-simple-tap"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-diagram-mindmap",
+  "question": "What are the parts of Oakminder?",
+  "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"mindmap\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Oakminder is one product split into an app, its backend, billing, urgency, voice, docs, distribution, research and creative parts.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-001",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-diagram-treeview",
+  "question": "What are the parts of LinkedIn Growth Loop?",
+  "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"treeview\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "LinkedIn Growth Loop runs as a set of agents and tools around one daily list.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-diagram-radar",
+  "question": "Which case studies have the most proof behind them?",
+  "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"radar\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "EcoSmartLoop publishes far more proof than Agentic Brain, which is still a case study in progress.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-001:passage-001",
+       "sectionId": "work:ecosmartloop:section-001",
+       "url": "https://steveoak.com/work/ecosmartloop/"
+      },
+      {
+       "documentId": "work:agentic-brain",
+       "passageId": "work:agentic-brain:section-001:passage-001",
+       "sectionId": "work:agentic-brain:section-001",
+       "url": "https://steveoak.com/work/agentic-brain/"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-diagram-quadrant",
+  "question": "Which of his case studies have the most proof behind them?",
+  "program": "root = Answer([d])\nd = Diagram(\"claim-1\", \"quadrant\")",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "LinkedIn Growth Loop carries the most published artifacts; OmniSocial is still in progress.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-001",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      },
+      {
+       "documentId": "work:omnisocial",
+       "passageId": "work:omnisocial:section-001:passage-001",
+       "sectionId": "work:omnisocial:section-001",
+       "url": "https://steveoak.com/work/omnisocial/"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

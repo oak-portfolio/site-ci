@@ -1,0 +1,74 @@
+{
+ "diagram-flow-agentic-brain": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, flow on Agentic Brain: the nodes, edges and detail panel carry it, with no pose of its own."
+ },
+ "diagram-flow-oakminder": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, flow on Oakminder: the nodes, edges and detail panel carry it, with no pose of its own."
+ },
+ "diagram-layers-agentic-brain": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, layers on Agentic Brain: the nodes, edges and detail panel carry it, with no pose of its own."
+ },
+ "diagram-layers-oakminder": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, layers on Oakminder: the nodes, edges and detail panel carry it, with no pose of its own."
+ },
+ "diagram-blockdiag-agentic-brain": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, blockdiag on Agentic Brain: the nodes, edges and detail panel carry it, with no pose of its own."
+ },
+ "diagram-blockdiag-oakminder": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, blockdiag on Oakminder: the nodes, edges and detail panel carry it, with no pose of its own."
+ },
+ "diagram-step": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, the pressed node and its detail panel carry it, with no pose of its own."
+ },
+ "diagram-list": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, the ordered step list carries it, with no pose of its own."
+ },
+ "diagram-swimlanes": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, the flow drawing carries it, with no pose of its own."
+ },
+ "diagram-reduced": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, the still drawing carries it, with no pose of its own."
+ },
+ "diagram-forced-colors": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, system-color borders carry it, with no pose of its own."
+ },
+ "diagram-streaming": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, the ghost bars carry it, with no pose of its own."
+ },
+ "diagram-off": {
+  "iconOnly": true,
+  "reason": "44: Diagram fixture, the plain Steps list carries it, with no pose of its own."
+ },
+ "diagram-mindmap-oakminder": {
+  "iconOnly": true,
+  "reason": "45: Diagram fixture, mindmap on Oakminder: the drawing and its list carry it, with no pose of its own."
+ },
+ "diagram-mindmap-linkedin-growth-loop": {
+  "iconOnly": true,
+  "reason": "45: Diagram fixture, mindmap on LinkedIn Growth Loop: the drawing and its list carry it, with no pose of its own."
+ },
+ "diagram-treeview-agentic-brain": {
+  "iconOnly": true,
+  "reason": "45: Diagram fixture, treeview on Agentic Brain: the drawing and its list carry it, with no pose of its own."
+ },
+ "diagram-radar": {
+  "iconOnly": true,
+  "reason": "45: Diagram fixture, radar on EcoSmartLoop, Agentic Brain: the drawing and its list carry it, with no pose of its own."
+ },
+ "diagram-quadrant": {
+  "iconOnly": true,
+  "reason": "45: Diagram fixture, quadrant on EcoSmartLoop, Oakminder, LinkedIn Growth Loop, Agentic Brain, OmniSocial: the drawing and its list carry it, with no pose of its own."
+ }
+}

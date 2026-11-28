@@ -1,0 +1,43 @@
+{
+ "answer-sourced": {
+  "iconOnly": true,
+  "reason": "Citations and answer text carry the result."
+ },
+ "answer-next-step-drawer": {
+  "iconOnly": true,
+  "reason": "The same turn with the Other ways to continue drawer; the drawer and its rows carry the result."
+ },
+ "answer-openui-next-step-drawer": {
+  "iconOnly": true,
+  "reason": "The arranged answer with the Other ways to continue drawer; the portaled follow-up pills carry the result."
+ },
+ "answer-points": {
+  "iconOnly": true,
+  "reason": "Each point's source pills and the closing source stack carry the result."
+ },
+ "answer-sources-web": {
+  "iconOnly": true,
+  "reason": "Q05: source faces (brand, type icon or site initial) and the Unverified marker carry the state; the Sources sheet keeps its bookshelf art."
+ },
+ "quote-chips": {
+  "iconOnly": true,
+  "reason": "The quote icon on each staged chip carries the moment; no art competes with the message box."
+ },
+ "answer-gap": {
+  "asset": "gap"
+ },
+ "answer-declined": {
+  "asset": "nod"
+ },
+ "contact-handoff": {
+  "asset": "handoff"
+ },
+ "contact-handoff-reach": {
+  "asset": "handoff",
+  "variantOf": "contact-handoff",
+  "reason": "The plain contact ask draws the same handoff answer as contact-handoff, reached without a prior work turn, so it keeps the handoff art."
+ },
+ "follow-ups": {
+  "asset": "oak-wave-v1"
+ }
+}

@@ -1,0 +1,36 @@
+{
+  "name": "Project",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": {
+    "count": "case studies"
+  },
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": "project",
+  "view": null,
+  "plan": {
+    "in": {
+      "overview": 1,
+      "project-deep-dive": 1,
+      "how-it-works": 1,
+      "stack": 1,
+      "results-metrics": 1,
+      "who-did-what": 1,
+      "tradeoffs": 1,
+      "method-process": 2,
+      "lessons": 2
+    },
+    "count": "projects"
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "claims",
+    "text": "[project row: title, small thumbnail, role and dates, all from the cited case study page]",
+    "prefix": "- "
+  },
+  "taughtPresets": []
+}

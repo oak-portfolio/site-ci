@@ -1,0 +1,22 @@
+{
+ "stack-map-tools-4": {
+  "iconOnly": true,
+  "reason": "32: StackMap fixture, the tool tiles and their marks carry it, with no pose of its own."
+ },
+ "stack-map-tools-12": {
+  "iconOnly": true,
+  "reason": "32: StackMap fixture, the twelve tool tiles carry it, with no pose of its own."
+ },
+ "stack-map-disclosure": {
+  "iconOnly": true,
+  "reason": "32: StackMap fixture, the open tile's page links carry it, with no pose of its own."
+ },
+ "stack-map-venn": {
+  "iconOnly": true,
+  "reason": "32: StackMap fixture, the three zones and their chips carry it, with no pose of its own."
+ },
+ "stack-map-off": {
+  "iconOnly": true,
+  "reason": "32: StackMap fixture, the plain chips and Points list carry it, with no pose of its own."
+ }
+}

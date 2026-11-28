@@ -1,0 +1,146 @@
+[
+ {
+  "id": "answer-openui-board-stand",
+  "question": "Which case studies are finished?",
+  "program": "root = Answer([board])\nboard = Board([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"])",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "EcoSmartLoop has a full case study: the AI agent platform for business waste.",
+     "citations": [
+      {
+       "documentId": "work:ecosmartloop",
+       "passageId": "work:ecosmartloop:section-001:passage-001",
+       "sectionId": "work:ecosmartloop:section-001",
+       "url": "https://steveoak.com/work/ecosmartloop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "Agentic Brain, the memory system work, is still being written up.",
+     "citations": [
+      {
+       "documentId": "work:agentic-brain",
+       "passageId": "work:agentic-brain:section-001:passage-002",
+       "sectionId": "work:agentic-brain:section-001",
+       "url": "https://steveoak.com/work/agentic-brain/"
+      }
+     ]
+    },
+    {
+     "id": "claim-3",
+     "text": "Oakminder, the productivity agent and distribution studio, has a full write-up.",
+     "citations": [
+      {
+       "documentId": "work:oakminder",
+       "passageId": "work:oakminder:section-001:passage-003",
+       "sectionId": "work:oakminder:section-001",
+       "url": "https://steveoak.com/work/oakminder/"
+      }
+     ]
+    },
+    {
+     "id": "claim-4",
+     "text": "LinkedIn Growth Loop has a full case study on self-improving agent teams.",
+     "citations": [
+      {
+       "documentId": "work:linkedin-growth-loop",
+       "passageId": "work:linkedin-growth-loop:section-001:passage-004",
+       "sectionId": "work:linkedin-growth-loop:section-001",
+       "url": "https://steveoak.com/work/linkedin-growth-loop/"
+      }
+     ]
+    },
+    {
+     "id": "claim-5",
+     "text": "OmniSocial, agentic content production, is a write-up in progress.",
+     "citations": [
+      {
+       "documentId": "work:omnisocial",
+       "passageId": "work:omnisocial:section-001:passage-005",
+       "sectionId": "work:omnisocial:section-001",
+       "url": "https://steveoak.com/work/omnisocial/"
+      }
+     ]
+    }
+   ]
+  }
+ },
+ {
+  "id": "answer-openui-board-sboard",
+  "question": "Which of Steve's roles were contract and which full-time?",
+  "program": "root = Answer([board])\nboard = Board([\"claim-1\", \"claim-2\", \"claim-3\", \"claim-4\", \"claim-5\"])",
+  "answer": {
+   "kind": "sourced",
+   "knowledgeRevision": "k",
+   "acknowledgment": null,
+   "claims": [
+    {
+     "id": "claim-1",
+     "text": "Steve runs Oak Labs as a self-employed AI Solutions Engineer, May 2026 to now.",
+     "citations": [
+      {
+       "documentId": "experience:oaklabs",
+       "passageId": "experience:oaklabs:section-001:passage-001",
+       "sectionId": "experience:oaklabs:section-001",
+       "url": "https://steveoak.com/work#oaklabs"
+      }
+     ]
+    },
+    {
+     "id": "claim-2",
+     "text": "He worked at Hyperskalers on contract from Feb 2026 to May 2026.",
+     "citations": [
+      {
+       "documentId": "experience:hyperskalers",
+       "passageId": "experience:hyperskalers:section-001:passage-002",
+       "sectionId": "experience:hyperskalers:section-001",
+       "url": "https://steveoak.com/work#hyperskalers"
+      }
+     ]
+    },
+    {
+     "id": "claim-3",
+     "text": "At San Francisco Bay University he was a part-time GenAI Engineer, May 2024 to Dec 2025.",
+     "citations": [
+      {
+       "documentId": "experience:sanfranciscobayuniversity",
+       "passageId": "experience:sanfranciscobayuniversity:section-001:passage-003",
+       "sectionId": "experience:sanfranciscobayuniversity:section-001",
+       "url": "https://steveoak.com/work#sanfranciscobayuniversity"
+      }
+     ]
+    },
+    {
+     "id": "claim-4",
+     "text": "He worked part-time at Uhttention from Jan 2024 to Jan 2025.",
+     "citations": [
+      {
+       "documentId": "experience:uhttention",
+       "passageId": "experience:uhttention:section-001:passage-004",
+       "sectionId": "experience:uhttention:section-001",
+       "url": "https://steveoak.com/work#uhttention"
+      }
+     ]
+    },
+    {
+     "id": "claim-5",
+     "text": "He was full-time at PNPP Solutions from Nov 2018 to Jan 2024.",
+     "citations": [
+      {
+       "documentId": "experience:pnppsolutions",
+       "passageId": "experience:pnppsolutions:section-001:passage-005",
+       "sectionId": "experience:pnppsolutions:section-001",
+       "url": "https://steveoak.com/work#pnppsolutions"
+      }
+     ]
+    }
+   ]
+  }
+ }
+]

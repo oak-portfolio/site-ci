@@ -1,0 +1,135 @@
+# Public mirror oak-portfolio/site-ci: the loop workflow (ticket 281). The source repo keeps it at
+# .circleci/mirror/public/loop.yml and the snapshot placement writes it here. The landing command's loop mode pushes a
+# snapshot to a loop/<label> branch, which starts this run, and deletes the branch after it. The push trigger stands in
+# for workflow_dispatch: GitHub dispatches only a workflow on the default branch (HTTP 404 "not found on the default
+# branch", qa/281/assumption.md), and only landings write main. Mode, files and runs come from the placed
+# .github/ci/loop.json. alone: each job runs every named file by itself, once. shard: each job runs, in pack order,
+# every site-ci browser shard that holds a named file. One job per run, at most 20. Each file prints one "loop-file:"
+# line per job. Never add pull_request_target or a trigger on main.
+name: loop
+on:
+  push:
+    branches: ['loop/**']
+permissions:
+  contents: read
+concurrency:
+  group: loop-${{ github.ref }}
+  cancel-in-progress: false
+env:
+  NPM_CONFIG_USERCONFIG: ${{ github.workspace }}/.npmrc.pages
+  NO_COLOR: "1"
+  ASTRO_TELEMETRY_DISABLED: "1"
+
+jobs:
+  plan:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 5
+    outputs:
+      mode: ${{ steps.plan.outputs.mode }}
+      files: ${{ steps.plan.outputs.files }}
+      runs: ${{ steps.plan.outputs.runs }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - id: plan
+        run: |
+          cfg=.github/ci/loop.json
+          mode=$(jq -r .mode "$cfg"); runs=$(jq -r .runs "$cfg"); files=$(jq -r '.files | join(" ")' "$cfg")
+          case "$mode" in alone|shard) ;; *) echo "mode must be alone or shard, got '$mode'"; exit 1 ;; esac
+          case "$runs" in ''|*[!0-9]*) echo "runs must be 1 to 20, got '$runs'"; exit 1 ;; esac
+          if [ "$runs" -lt 1 ] || [ "$runs" -gt 20 ]; then echo "runs must be 1 to 20, got $runs"; exit 1; fi
+          [ -n "$files" ] || { echo "no files"; exit 1; }
+          for f in $files; do [[ "$f" =~ ^tests/[A-Za-z0-9._/-]+\.test\.mjs$ ]] || { echo "not a test file: $f"; exit 1; }; done
+          echo "loop-plan: $mode, $runs runs, $files"
+          { echo "mode=$mode"; echo "files=$files"; echo "runs=[$(seq -s, 1 "$runs")]"; } >> "$GITHUB_OUTPUT"
+
+  loop:
+    needs: plan
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        run: ${{ fromJSON(needs.plan.outputs.runs) }}
+    env:
+      OAK_GALLERY_URL: http://127.0.0.1:4321
+      OAK_CHAT_HOME_URL: http://127.0.0.1:4321/?oakChatFirstHome=1
+      JUDGE_FINDINGS_OUT: ${{ github.workspace }}/ci-out/judge-findings.json
+      LOOP_MODE: ${{ needs.plan.outputs.mode }}
+      LOOP_FILES: ${{ needs.plan.outputs.files }}
+      LOOP_RUN: ${{ matrix.run }}
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version-file: .node-version
+      - name: Install dependencies and Chromium
+        env:
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+          MOTION_PLUS_TOKEN: ${{ secrets.MOTION_PLUS_TOKEN }}
+        run: |
+          npm install --global npm@12.2.0
+          npm ci --no-audit --no-fund
+          npx playwright install --with-deps chromium
+          sudo apt-get install -y --no-install-recommends ripgrep
+      # The reporter prints one line per named file: "loop-file: <file> passed", or "failed :: <test>: <first assert>".
+      # With many files, test:complete comes as a file ends but test:fail in declaration order, so a file's result can
+      # arrive before its failures (f267): the lines are written once every event is in.
+      - name: Dev server, then the named files
+        timeout-minutes: 45
+        run: |
+          mkdir -p ci-out
+          cat > "$RUNNER_TEMP/loop-reporter.mjs" <<'EOF'
+          import { relative, resolve } from 'node:path';
+          const named = new Set(process.env.LOOP_FILES.split(/\s+/).filter(Boolean));
+          export default async function* loop(source) {
+            const first = {}, done = new Map();
+            for await (const { type, data } of source) {
+              if (!data?.file) continue;
+              const file = relative(process.cwd(), data.file);
+              if (type === 'test:fail' && !(file in first)) {
+                const e = data.details?.error;
+                const text = String(e?.cause?.message ?? e?.message ?? e ?? 'failed').split('\n').find((l) => l.trim()) ?? 'failed';
+                first[file] = `${resolve(data.name) === data.file ? 'file' : data.name}: ${text.trim()}`.replace(/\s+/g, ' ').slice(0, 300);
+              }
+              if (type === 'test:complete' && resolve(data.name) === data.file && named.has(file)) done.set(file, data.details.passed);
+            }
+            for (const [file, passed] of done) {
+              yield passed ? `loop-file: ${file} passed\n` : `loop-file: ${file} failed :: ${first[file] ?? 'no assert'}\n`;
+            }
+          }
+          EOF
+          echo "loop-run: $LOOP_RUN ($LOOP_MODE)"
+          for f in $LOOP_FILES; do
+            case "$f" in tests/*.test.mjs) ;; *) echo "loop-missing: $f (not a test file)"; exit 1 ;; esac
+            [ -f "$f" ] || { echo "loop-missing: $f"; exit 1; }
+          done
+          npm run dev:bg
+          for i in $(seq 1 120); do curl -fsS -o /dev/null "$OAK_GALLERY_URL/__dev/oak-states" && break; sleep 2; done
+          curl -fsS -o /dev/null "$OAK_GALLERY_URL/__dev/oak-states"
+          : > ci-out/loop.txt
+          run_files() {
+            : > "$RUNNER_TEMP/part.txt"
+            node --test --test-concurrency=3 --test-reporter=spec --test-reporter-destination=stdout \
+              --test-reporter="$RUNNER_TEMP/loop-reporter.mjs" --test-reporter-destination="$RUNNER_TEMP/part.txt" "$@" || true
+            cat "$RUNNER_TEMP/part.txt" >> ci-out/loop.txt
+          }
+          if [ "$LOOP_MODE" = alone ]; then
+            for f in $LOOP_FILES; do run_files "$f"; done
+          else
+            for s in $(seq 0 7); do
+              node .github/ci/pack.mjs shard "$s" 8 > "$RUNNER_TEMP/shard.txt"
+              hit=0; for f in $LOOP_FILES; do grep -qxF "$f" "$RUNNER_TEMP/shard.txt" && hit=1; done
+              [ "$hit" = 1 ] || continue
+              echo "loop-shard: $s of 8, $(grep -c . "$RUNNER_TEMP/shard.txt") files"
+              mapfile -t shard < "$RUNNER_TEMP/shard.txt"
+              run_files "${shard[@]}"
+            done
+          fi
+          cat ci-out/loop.txt
+          code=0
+          for f in $LOOP_FILES; do grep -qxF "loop-file: $f passed" ci-out/loop.txt || { grep -q "^loop-file: $f " ci-out/loop.txt || echo "loop-file: $f failed :: no result"; code=1; }; done
+          exit $code

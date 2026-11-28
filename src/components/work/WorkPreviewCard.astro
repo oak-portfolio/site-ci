@@ -1,0 +1,99 @@
+---
+import OptimizedPicture from "@/components/OptimizedPicture.astro";
+import { workCardImageSizes } from "@/data/responsiveImages";
+import type { WorkPreviewCard as WorkPreviewCardData } from "@/lib/workPreviews";
+
+type Props = {
+  item: WorkPreviewCardData;
+  imageWidth?: string | number;
+  imageHeight?: string | number;
+};
+
+const { item, imageWidth = "1200", imageHeight = "630" } = Astro.props;
+const cardClass = [
+  "work-preview-card",
+  item.disabled && "work-preview-card--disabled",
+  item.statusLabel && "work-preview-card--with-status",
+];
+const isExternalLink = Boolean(item.href && (item.external || /^https?:\/\//.test(item.href)));
+const statusLabel = item.statusLabel;
+const internalPrefetchMode = "hover";
+---
+
+{
+  item.href ? (
+    <a
+      class:list={cardClass}
+      href={item.href}
+      target={isExternalLink ? "_blank" : undefined}
+      rel={isExternalLink ? "noopener noreferrer" : undefined}
+      data-astro-prefetch={isExternalLink ? undefined : internalPrefetchMode}
+    >
+      <div class="card-art work-preview-card__media">
+        <OptimizedPicture
+          src={item.image}
+          alt={item.imageAlt}
+          width={imageWidth}
+          height={imageHeight}
+          sizes={workCardImageSizes}
+          loading="lazy"
+          decoding="async"
+        />
+        {
+          statusLabel && (
+            <span class="work-preview-card__status" aria-label={statusLabel}>
+              <span class="work-preview-card__status-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>{statusLabel}</span>
+            </span>
+          )
+        }
+      </div>
+      <h3>{item.title}</h3>
+      <p class="work-preview-card__meta">
+        <span class="work-preview-card__meta-label">{item.primaryTag}</span>
+        {item.dateTime ? (
+          <time class="work-preview-card__meta-date" datetime={item.dateTime}>{item.dateLabel}</time>
+        ) : (
+          <span class="work-preview-card__meta-date">{item.dateLabel}</span>
+        )}
+      </p>
+      {item.description && <p class="work-preview-card__description">{item.description}</p>}
+    </a>
+  ) : (
+    <article class:list={cardClass} aria-label={`${item.title} coming soon`}>
+      <div class="card-art work-preview-card__media">
+        <OptimizedPicture
+          src={item.image}
+          alt={item.imageAlt}
+          width={imageWidth}
+          height={imageHeight}
+          sizes={workCardImageSizes}
+          loading="lazy"
+          decoding="async"
+        />
+        {
+          statusLabel && (
+            <span class="work-preview-card__status" aria-label={statusLabel}>
+              <span class="work-preview-card__status-dots" aria-hidden="true">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+              <span>{statusLabel}</span>
+            </span>
+          )
+        }
+      </div>
+      <h3>{item.title}</h3>
+      <p class="work-preview-card__meta">
+        <span class="work-preview-card__meta-label">{item.primaryTag}</span>
+        <span class="work-preview-card__meta-date">{item.dateLabel}</span>
+      </p>
+      {item.description && <p class="work-preview-card__description">{item.description}</p>}
+    </article>
+  )
+}

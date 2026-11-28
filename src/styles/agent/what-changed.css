@@ -1,0 +1,84 @@
+/* Ticket 56: the app's "What changed" note above a replaced answer (OakWhatChanged). theme.css imports it after oakAgent.css. */
+
+.oak-what-changed {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--space-xs);
+  min-width: 0;
+  margin-block-end: var(--space-sm);
+  padding-block-end: var(--space-xs);
+  border-bottom: 1px solid var(--line-soft);
+  color: var(--muted);
+  font-size: var(--text-ui-sm);
+  line-height: var(--leading-ui);
+  animation: oak-what-changed-in var(--motion-quick) var(--motion-standard) both;
+}
+
+.oak-what-changed p {
+  margin: 0;
+}
+
+.oak-what-changed[data-same] {
+  flex-wrap: nowrap;
+}
+
+.oak-what-changed[data-same] p {
+  flex: 1;
+  min-width: 0;
+}
+
+.oak-what-changed__blocks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-micro) var(--space-xs);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.oak-what-changed__blocks li {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-micro);
+  padding: 0 var(--space-xs);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--oak-r-row);
+  color: var(--text);
+  overflow-wrap: anywhere;
+}
+
+.oak-what-changed__blocks li[data-change="dropped"] {
+  border-style: dashed;
+  color: var(--muted);
+}
+
+.oak-what-changed__blocks li[data-change="dropped"] s {
+  text-decoration-thickness: 1px;
+}
+
+.oak-what-changed__blocks li[data-change="added"] {
+  border-color: color-mix(in srgb, var(--oak-leaf) 45%, transparent);
+  background: var(--oak-tint-leaf);
+}
+
+@keyframes oak-what-changed-in {
+  from { opacity: 0; transform: translateY(-2px); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .oak-what-changed {
+    animation: none;
+  }
+}
+
+@media (forced-colors: active) {
+  .oak-what-changed__blocks li {
+    border-color: CanvasText;
+  }
+
+  .oak-what-changed__blocks li[data-change="added"] {
+    border-width: 2px;
+  }
+}

@@ -1,0 +1,617 @@
+[
+ {
+  "id": "contact-card-hiring",
+  "label": "Contact card (ticket 49) on a hiring question: portrait, Send a note, LinkedIn, the ring glow; no availability while the record is unreviewed (fixture)",
+  "contactCard": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How can I hire Steve for a project like EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "LEAF Engine had 8K+ images of training context behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ],
+      "nextTool": "brief"
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000004901",
+      "program": "root = Answer([lead, nums, src, offer])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()\noffer = Proposal(\"prepareBrief\", \"Talk to Steve\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "contact-card-availability",
+  "label": "Contact card (ticket 49) with a reviewed availability line (fixture record, not Oak reviewed)",
+  "contactCard": true,
+  "contactRecord": {
+   "reviewed": true,
+   "availability": "Open to full-time AI engineering roles",
+   "bookingUrl": ""
+  },
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "Is Steve available for work like EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "LEAF Engine had 8K+ images of training context behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ],
+      "nextTool": "brief"
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000004902",
+      "program": "root = Answer([lead, nums, src, offer])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()\noffer = Proposal(\"prepareBrief\", \"Talk to Steve\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "contact-card-focus",
+  "label": "Contact card (ticket 49) focus state: the chat dims behind it, three reason pills, Send a note and Copy email, the bio folded (fixture)",
+  "contactCard": true,
+  "open": "contact-card-focus",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How can I hire Steve for a project like EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "LEAF Engine had 8K+ images of training context behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ],
+      "nextTool": "brief"
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000004903",
+      "program": "root = Answer([lead, nums, src, offer])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()\noffer = Proposal(\"prepareBrief\", \"Talk to Steve\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "contact-card-declined",
+  "label": "Contact card (ticket 49) after Not now: the quiet receipt, no card again in this conversation (fixture)",
+  "contactCard": true,
+  "open": "contact-card-decline",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How can I hire Steve for a project like EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "LEAF Engine had 8K+ images of training context behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ],
+      "nextTool": "brief"
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000004904",
+      "program": "root = Answer([lead, nums, src, offer])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()\noffer = Proposal(\"prepareBrief\", \"Talk to Steve\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ },
+ {
+  "id": "contact-card-streaming",
+  "label": "Contact card (ticket 49) while the answer streams (fixture)",
+  "contactCard": true,
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How can I hire Steve for a project like EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "running",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "running",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "LEAF Engine had 8K+ images of training context behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ],
+      "nextTool": "brief"
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000004905",
+      "program": "root = Answer([lead, nums, src, offer])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()\noffer = Proposal(\"prepareBrief\", \"Talk to Steve\")",
+      "status": "streaming"
+     },
+     "state": "pending"
+    }
+   ],
+   "pending": true
+  }
+ },
+ {
+  "id": "contact-card-off",
+  "contactCard": false,
+  "label": "Contact card (ticket 49) with the constant off: the next-step row main draws",
+  "workspace": {
+   "messages": [
+    {
+     "role": "user",
+     "text": "How can I hire Steve for a project like EcoSmartLoop?"
+    },
+    {
+     "role": "assistant",
+     "steps": [
+      {
+       "id": "understand",
+       "operation": "understand",
+       "state": "done",
+       "startedAt": -6200,
+       "endedAt": -5400
+      },
+      {
+       "id": "search-1",
+       "operation": "search",
+       "state": "done",
+       "startedAt": -5400,
+       "endedAt": -3900
+      },
+      {
+       "id": "read-2",
+       "operation": "read",
+       "state": "done",
+       "startedAt": -3900,
+       "endedAt": -2600
+      },
+      {
+       "id": "compose",
+       "operation": "compose",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      },
+      {
+       "id": "verify",
+       "operation": "verify",
+       "state": "done",
+       "startedAt": -2600,
+       "endedAt": -2600
+      }
+     ],
+     "answer": {
+      "kind": "sourced",
+      "acknowledgment": null,
+      "claims": [
+       {
+        "id": "claim-1",
+        "text": "In EcoSmartLoop, LEAF Engine read each photo against 8K+ training images and sorted it into one of 4 classes, and Orbi AI explained the result to the person sorting.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-2",
+        "text": "LEAF Engine had 8K+ images of training context behind it.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       },
+       {
+        "id": "claim-3",
+        "text": "It sorted each photo into 4 classes: compost, recycle, landfill, or unknown.",
+        "citations": [
+         {
+          "documentId": "work:ecosmartloop",
+          "passageId": "work:ecosmartloop:section-007:passage-003",
+          "sectionId": "work:ecosmartloop:section-007",
+          "url": "https://steveoak.com/work/ecosmartloop/#leaf-engine-classified-orbi-explained"
+         }
+        ]
+       }
+      ],
+      "nextTool": "brief"
+     },
+     "ui": {
+      "requestId": "00000000-0000-4000-8000-000000004906",
+      "program": "root = Answer([lead, nums, src, offer])\nlead = Prose(\"claim-1\")\nnums = Stats([a, b])\na = Metric(\"Training images\", \"8K+\", \"claim-2\")\nb = Metric(\"Outcomes\", \"4\", \"claim-3\")\nsrc = Sources()\noffer = Proposal(\"prepareBrief\", \"Talk to Steve\")",
+      "status": "done"
+     }
+    }
+   ]
+  }
+ }
+]

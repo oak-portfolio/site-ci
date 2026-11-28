@@ -1,0 +1,31 @@
+{
+  "name": "Steps",
+  "claims": "list",
+  "holds": [],
+  "opensOnCard": true,
+  "intro": {
+    "line": "The steps, in order, as Steve's pages describe them:"
+  },
+  "pendingKind": null,
+  "pendingCap": null,
+  "salvageContainer": false,
+  "skeleton": null,
+  "view": null,
+  "plan": {
+    "in": {
+      "how-it-works": 2,
+      "method-process": 1
+    },
+    "count": "hits",
+    "leadsFor": [
+      "collaborator",
+      "learner"
+    ]
+  },
+  "structured": true,
+  "structure": true,
+  "judgeView": {
+    "kind": "numbered"
+  },
+  "taughtPresets": []
+}
